@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/librhash.so.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/librhash0
+/usr/share/doc/librhash0/changelog.Debian.gz
+/usr/share/doc/librhash0/changelog.gz
+/usr/share/doc/librhash0/copyright

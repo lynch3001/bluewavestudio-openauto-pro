@@ -1,0 +1,5 @@
+# this is correct
+openjdk-8-jdk binary: executable-in-usr-lib
+
+# /usr/lib/jvm/…/lib/…
+openjdk-8-jdk binary: repeated-path-segment

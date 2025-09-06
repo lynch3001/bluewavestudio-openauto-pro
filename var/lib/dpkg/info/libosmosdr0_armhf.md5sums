@@ -1,0 +1,4 @@
+ceca32ef35aac1dc78ef5023e83144c2  lib/udev/rules.d/60-libosmosdr0.rules
+4e48bfae4133ec5667f8d192c6e05812  usr/lib/arm-linux-gnueabihf/libosmosdr.so.0.0.0
+4423a3b623cd3b761d1373da075605e0  usr/share/doc/libosmosdr0/changelog.Debian.gz
+02411357449b859c8a7c750e0513270f  usr/share/doc/libosmosdr0/copyright

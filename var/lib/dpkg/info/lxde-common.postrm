@@ -1,0 +1,20 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/xdg/openbox/LXDE/rc.xml -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/xdg/openbox/LXDE/menu.xml -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/xdg/lxsession/LXDE/desktop.conf -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/xdg/lxsession/LXDE/autostart -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper mv_conffile /etc/xdg/lxpanel/profile/LXDE/config /etc/xdg/lxpanel/LXDE/config 0.5.6-1 lxde-common -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper mv_conffile /etc/xdg/lxpanel/profile/LXDE/panels/panel /etc/xdg/lxpanel/LXDE/panels/panel 0.5.6-1 lxde-common -- "$@"
+# End automatically added section

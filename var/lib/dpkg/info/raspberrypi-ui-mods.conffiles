@@ -1,0 +1,14 @@
+/etc/X11/Xsession.d/75source-profile
+/etc/fonts/conf.d/31-mono-substitute.conf
+/etc/xdg/Trolltech.conf
+/etc/xdg/lxpanel/LXDE-pi/config
+/etc/xdg/lxpanel/LXDE-pi/panels/panel
+/etc/xdg/lxpanel/launchtaskbar.cfg
+/etc/xdg/lxsession/LXDE-pi/autostart
+/etc/xdg/lxsession/LXDE-pi/desktop.conf
+/etc/xdg/menus/lxde-pi-applications.menu
+/etc/xdg/openbox/lxde-pi-rc.xml
+/etc/xdg/pcmanfm/LXDE-pi/desktop-items-0.conf
+/etc/xdg/pcmanfm/LXDE-pi/desktop-items-1.conf
+/etc/xdg/pcmanfm/LXDE-pi/pcmanfm.conf
+/etc/xdg/qt5ct/qt5ct.conf

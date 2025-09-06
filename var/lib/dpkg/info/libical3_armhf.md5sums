@@ -1,0 +1,8 @@
+4637ec460c257f1b7f8957cec990b7fd  usr/lib/arm-linux-gnueabihf/libical-glib.so.3.0.4
+19e976eb8954a66f38387e3c9921006b  usr/lib/arm-linux-gnueabihf/libical.so.3.0.4
+9976a0bb3a70fb91fc5bbd5f41235e27  usr/lib/arm-linux-gnueabihf/libical_cxx.so.3.0.4
+615c54042a2524cfd127cbc428f444a3  usr/lib/arm-linux-gnueabihf/libicalss.so.3.0.4
+6ebbdcaa57c7791bd6b0d37aee41f349  usr/lib/arm-linux-gnueabihf/libicalss_cxx.so.3.0.4
+b1f2fde8b9917150cd78a1f2e4e1bdaf  usr/lib/arm-linux-gnueabihf/libicalvcal.so.3.0.4
+9eac9c6cc548a626b547439ab2d7e819  usr/share/doc/libical3/changelog.Debian.gz
+469099d902cda63cb2f0352d54b6cccb  usr/share/doc/libical3/copyright

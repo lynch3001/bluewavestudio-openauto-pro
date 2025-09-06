@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="color-selection" xml:lang="pt-BR">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Use a opção <cmd>--color-selection</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+  <title>Diálogo de seleção de cor</title>
+  <p>Use a opção <cmd>--color-selection</cmd> para criar um diálogo de seleção de cor.</p>
+  <p>O diálogo de seleção de cor oferece suporte às seguintes opções:</p>
+
+  <terms>
+
+    <item>
+      <title><cmd>--color</cmd>=<var>VALOR</var></title>
+      <p>Define a cor inicial.(ex: #FF0000)</p>
+    </item>
+
+    <item>
+      <title><cmd>--show-palette</cmd></title>
+      <p>Mostra a paleta.</p>
+    </item>
+
+  </terms>
+
+  <p>O script de exemplo a seguir mostra como criar um diálogo de seleção de cor:</p>
+
+<code>
+#!/bin/sh
+
+COR=`zenity --color-selection --show-palette`
+
+case $? in
+         0)
+                echo "Você selecionou $COR.";;
+         1)
+                echo "Nenhuma cor selecionada.";;
+        -1)
+                echo "Ocorreu um erro inesperado.";;
+esac
+</code>
+
+  <figure>
+    <title>Exemplo de diálogo de seleção de cor</title>
+    <desc>Exemplo de diálogo de seleção de cor do <app>Zenity</app></desc>
+    <media type="image" mime="image/png" src="figures/zenity-colorselection-screenshot.png"/>
+  </figure>
+
+</page>

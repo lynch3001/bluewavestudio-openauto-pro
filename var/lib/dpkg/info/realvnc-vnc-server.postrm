@@ -1,0 +1,89 @@
+#!/bin/sh
+
+set -e
+
+# This snippet would have been added by debhelper, but dh_icons doesn't exist
+# in Debian Sarge, so we do this manually
+if [ "$1" = "remove" ]; then
+	for dir in /usr/share/icons/hicolor; do
+		if [ -d "$dir" ]; then
+			if [ -f "$dir"/index.theme ] && \
+			   which gtk-update-icon-cache >/dev/null 2>&1
+			then
+				gtk-update-icon-cache --force --quiet "$dir" || true
+			else
+				rm -f "$dir"/icon-theme.cache
+				rmdir -p --ignore-fail-on-non-empty "$dir"
+			fi
+		fi
+	done
+fi
+
+# Would have been added by debhelper, but we need to send output of
+# update-mime-database to /dev/null, to avoid confusing debconf.
+if [ -x "`which update-mime-database 2>/dev/null`" ]; then
+	update-mime-database /usr/share/mime >/dev/null 2>&1
+fi
+
+# This used to be added by dh_desktop
+if [ "$1" = "remove" ] && which update-desktop-database >/dev/null 2>&1 ; then
+    update-desktop-database -q
+fi
+
+
+
+[ "$1" = "purge" ] || exit 0
+
+# Remove the PAM configuration file and entry
+rm -f /etc/pam.d/vncserver
+
+if test -f /etc/pam.conf; then
+  tmpfile=`mktemp /tmp/vnc.pam.XXXXXX`
+  if awk '/^# Default VNC .* PAM configuration/ { comm = 1; pam = 1; }
+          /^#/ && comm == 1 { next }
+          /^vncserver / && pam == 1 { comm = 0; next }
+          1 { comm = 0; pam = 0; print }' /etc/pam.conf > $tmpfile; then
+    # tmpfile has secure permissions; now copy the data into pam.conf while
+    # preserving its owner, group, and mode
+    cat $tmpfile > /etc/pam.conf
+  fi
+  rm $tmpfile
+fi
+
+# Clean up /etc/vnc
+rm -f /etc/vnc/config
+rm -f /etc/vnc/xstartup
+rm -f /etc/vnc/licensekey
+rm -f /etc/vnc/get_primary_ip4
+rm -f /etc/vnc/vncelevate
+rm -f /etc/vnc/vncelevatecfg
+rmdir /etc/vnc || true
+
+# Clean up CUPS symlink if it was installed
+rm -f /usr/lib64/cups/backend/vnc
+
+# Clean up licensing directories
+rm -rf /var/run/.Xvnc4EE
+rm -rf /tmp/.Xvnc4EE
+rm -rf /tmp/.vncserver-license
+
+# Clean up vncserver symlink
+rm -f /usr/bin/vncserver
+
+# Clean up init scripts
+rm -f /etc/init.d/vncserver-x11-serviced
+rm -f /etc/init.d/vncserver-virtuald
+rm -f /usr/lib/systemd/system/vncserver-x11-serviced.service
+rm -f /usr/lib/systemd/system/vncserver-virtuald.service
+
+# Clean up virtual mode Xorg.conf files
+rm -f /etc/X11/vncserver-virtual.conf
+rm -f /etc/X11/vncserver-virtual-dummy.conf
+rm -f /etc/X11/vncserver-virtual-vnc.conf
+
+# Clean up firewalld service configurations
+rm -f /usr/lib/firewalld/services/vncserver-x11-serviced.xml
+rm -f /usr/lib/firewalld/services/vncserver-virtuald.xml
+if [ -x "`which firewall-cmd 2>/dev/null`" ]; then
+  firewall-cmd --reload >/dev/null 2>&1
+fi

@@ -1,0 +1,12 @@
+8eff769b85cff40fb27d88d01b8cc9f2  usr/lib/arm-linux-gnueabihf/qt5/plugins/qmltooling/libqmldbg_debugger.so
+4cf10a0e07b9a59ffeb05be83fb6743a  usr/lib/arm-linux-gnueabihf/qt5/plugins/qmltooling/libqmldbg_inspector.so
+97de2a892b5bafd9c31825529224c4c6  usr/lib/arm-linux-gnueabihf/qt5/plugins/qmltooling/libqmldbg_local.so
+8953c722a24734acc6a49c07a37a5c25  usr/lib/arm-linux-gnueabihf/qt5/plugins/qmltooling/libqmldbg_messages.so
+b08517cec181b619fb259a9fa46c1951  usr/lib/arm-linux-gnueabihf/qt5/plugins/qmltooling/libqmldbg_native.so
+f0430c7b0196a95ff5682a84b3d42ea2  usr/lib/arm-linux-gnueabihf/qt5/plugins/qmltooling/libqmldbg_nativedebugger.so
+4b2c95ae8f8dfea636d0aef71458dde6  usr/lib/arm-linux-gnueabihf/qt5/plugins/qmltooling/libqmldbg_profiler.so
+d3c4b8dd39853cee8d3668c9e5ba3650  usr/lib/arm-linux-gnueabihf/qt5/plugins/qmltooling/libqmldbg_quickprofiler.so
+5359b43c522de60c01a8823d064954f0  usr/lib/arm-linux-gnueabihf/qt5/plugins/qmltooling/libqmldbg_server.so
+121d7f48822ddc08cc44e8983f618995  usr/lib/arm-linux-gnueabihf/qt5/plugins/qmltooling/libqmldbg_tcp.so
+7c881ab818d59da06a8217c2e3f46957  usr/share/doc/qt5-qmltooling-plugins/changelog.Debian.gz
+2753e3a1b37ddc70bc4056f361f5f604  usr/share/doc/qt5-qmltooling-plugins/copyright

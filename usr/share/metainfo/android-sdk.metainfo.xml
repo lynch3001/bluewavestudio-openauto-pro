@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+  <id>android-sdk</id>
+  <project_license>Apache-2.0</project_license>
+  <metadata_license>Apache-2.0</metadata_license>
+  <name>Android SDK</name>
+  <summary>Connect to Android devices uses adb and fastboot</summary>
+  <description>
+    <p>
+      This allows adb and fastboot to connect to Android devices that
+      are connected to Debian via USB.  Android Debug Bridge (adb) is
+      a versatile command line tool that lets you communicate with an
+      emulator instance or connected Android-powered device.  fastboot
+      is a command line tool for flashing an Android device, boot an
+      Android device to fastboot mode, etc.
+    </p>
+  </description>
+  <keywords>
+    <keyword>Android</keyword>
+    <keyword>adb</keyword>
+    <keyword>fastboot</keyword>
+    <keyword>USB</keyword>
+  </keywords>
+  <provides>
+    <modalias>usb:v0451pD00Fd*</modalias>
+    <modalias>usb:v0451pD010d*</modalias>
+    <modalias>usb:v0489pC001d*</modalias>
+    <modalias>usb:v0502p3202d*</modalias>
+    <modalias>usb:v0502p3203d*</modalias>
+    <modalias>usb:v0502p3325d*</modalias>
+    <modalias>usb:v0502p3604d*</modalias>
+    <modalias>usb:v05C6p6769d*</modalias>
+    <modalias>usb:v05C6p901Dd*</modalias>
+    <modalias>usb:v05C6p9025d*</modalias>
+    <modalias>usb:v05E0p2101d*</modalias>
+    <modalias>usb:v0B05p179Ed*</modalias>
+    <modalias>usb:v0B05p179Fd*</modalias>
+    <modalias>usb:v0B05p17A1d*</modalias>
+    <modalias>usb:v0B05p4C80d*</modalias>
+    <modalias>usb:v0B05p4C90d*</modalias>
+    <modalias>usb:v0B05p4C91d*</modalias>
+    <modalias>usb:v0B05p4CA0d*</modalias>
+    <modalias>usb:v0B05p4CA1d*</modalias>
+    <modalias>usb:v0B05p4D00d*</modalias>
+    <modalias>usb:v0B05p4D01d*</modalias>
+    <modalias>usb:v0B05p4DAFd*</modalias>
+    <modalias>usb:v0B05p5410d*</modalias>
+    <modalias>usb:v0B05p5412d*</modalias>
+    <modalias>usb:v0B05p550Fd*</modalias>
+    <modalias>usb:v0B05p7772d*</modalias>
+    <modalias>usb:v0B05p7773d*</modalias>
+    <modalias>usb:v0B05p7774d*</modalias>
+    <modalias>usb:v0B05p7775d*</modalias>
+    <modalias>usb:v0B05p7776d*</modalias>
+    <modalias>usb:v0B05p7777d*</modalias>
+    <modalias>usb:v0C2Ep0BA3d*</modalias>
+    <modalias>usb:v0E79p1411d*</modalias>
+    <modalias>usb:v0E79p1417d*</modalias>
+    <modalias>usb:v0E79p1549d*</modalias>
+    <modalias>usb:v0FCAp8042d*</modalias>
+    <modalias>usb:v12D1p1021d*</modalias>
+    <modalias>usb:v12D1p1038d*</modalias>
+    <modalias>usb:v12D1p103Ad*</modalias>
+    <modalias>usb:v12D1p1050d*</modalias>
+    <modalias>usb:v12D1p1051d*</modalias>
+    <modalias>usb:v12D1p1052d*</modalias>
+    <modalias>usb:v12D1p1057d*</modalias>
+    <modalias>usb:v12D1p107Dd*</modalias>
+    <modalias>usb:v12D1p107Ed*</modalias>
+    <modalias>usb:v12D1p1C2Cd*</modalias>
+    <modalias>usb:v1949p0006d*</modalias>
+    <modalias>usb:v1949p0008d*</modalias>
+    <modalias>usb:v1949p0022d*</modalias>
+    <modalias>usb:v1949p0298d*</modalias>
+    <modalias>usb:v1949p0338d*</modalias>
+    <modalias>usb:v19D2p1351d*</modalias>
+    <modalias>usb:v19D2p1353d*</modalias>
+    <modalias>usb:v19D2p1354d*</modalias>
+    <modalias>usb:v19D2p1355d*</modalias>
+    <modalias>usb:v1BBBp00F2d*</modalias>
+    <modalias>usb:v1BBBp0167d*</modalias>
+    <modalias>usb:v1F3Ap1001d*</modalias>
+    <modalias>usb:v1F3Ap1002d*</modalias>
+    <modalias>usb:v1F3Ap1003d*</modalias>
+    <modalias>usb:v1F3Ap1004d*</modalias>
+    <modalias>usb:v1F3Ap1005d*</modalias>
+    <modalias>usb:v1F3Ap1006d*</modalias>
+    <modalias>usb:v1F3Ap1007d*</modalias>
+    <modalias>usb:v1F3Ap1008d*</modalias>
+    <modalias>usb:v1F3Ap1009d*</modalias>
+    <modalias>usb:v1F3ApEFE8d*</modalias>
+    <modalias>usb:v2207p0000d*</modalias>
+    <modalias>usb:v2207p0010d*</modalias>
+    <modalias>usb:v271DpBF39d*</modalias>
+    <modalias>usb:v2916p9139d*</modalias>
+    <modalias>usb:v2A45p0C02d*</modalias>
+    <modalias>usb:v2A47p0C02d*</modalias>
+    <modalias>usb:v2A47p2008d*</modalias>
+    <modalias>usb:v2A96p201Dd*</modalias>
+    <modalias>usb:v2B0Ep610Dd*</modalias>
+    <modalias>usb:v2E17pC009d*</modalias>
+    <modalias>usb:v2E17pC030d*</modalias>
+    <modalias>usb:v8087p07EFd*</modalias>
+    <modalias>usb:v8087p09EFd*</modalias>
+    <modalias>usb:v8087p09EFd*</modalias>
+    <modalias>usb:v8087p0A16d*</modalias>
+    <modalias>usb:v8087p2A65d*</modalias>
+  </provides>
+</component>

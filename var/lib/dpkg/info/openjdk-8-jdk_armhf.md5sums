@@ -1,0 +1,10 @@
+0365345e5750961701bcbd899a2a2d79  usr/lib/jvm/java-8-openjdk-armhf/bin/appletviewer
+b7dba26ac65fb81e631a78adbad038a2  usr/lib/jvm/java-8-openjdk-armhf/bin/jconsole
+d3b60d06c11b9b3009904eb90ddfb89f  usr/lib/jvm/java-8-openjdk-armhf/include/jawt.h
+eef628b735e640574820d7e7dee0b269  usr/lib/jvm/java-8-openjdk-armhf/include/linux/jawt_md.h
+1961b15ae38fb70df3a6953658cb6e0d  usr/lib/jvm/java-8-openjdk-armhf/lib/jconsole.jar
+3f7261a12b8d3cd6cddb94d623ad9efe  usr/lib/jvm/java-8-openjdk-armhf/man/ja_JP.UTF-8/man1/appletviewer.1.gz
+2d22bbf48a60fb29a1b779e828f1cf0c  usr/lib/jvm/java-8-openjdk-armhf/man/ja_JP.UTF-8/man1/jconsole.1.gz
+fc5492d5e14d9f04537688a465043612  usr/lib/jvm/java-8-openjdk-armhf/man/man1/appletviewer.1.gz
+659e1a6fec2dc8b09a29ec0eee25bbe8  usr/lib/jvm/java-8-openjdk-armhf/man/man1/jconsole.1.gz
+36b359bd2c64581af9bc94fd8f510348  usr/share/lintian/overrides/openjdk-8-jdk

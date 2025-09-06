@@ -1,0 +1,71 @@
+[+0.01s] DEBUG: Logging to /var/log/lightdm/lightdm.log
+[+0.01s] DEBUG: Starting Light Display Manager 1.26.0, UID=0 PID=533
+[+0.01s] DEBUG: Loading configuration dirs from /usr/share/lightdm/lightdm.conf.d
+[+0.01s] DEBUG: Loading configuration from /usr/share/lightdm/lightdm.conf.d/01_debian.conf
+[+0.01s] DEBUG: Loading configuration dirs from /usr/local/share/lightdm/lightdm.conf.d
+[+0.01s] DEBUG: Loading configuration dirs from /etc/xdg/lightdm/lightdm.conf.d
+[+0.01s] DEBUG: Loading configuration from /etc/lightdm/lightdm.conf
+[+0.01s] DEBUG: Registered seat module local
+[+0.01s] DEBUG: Registered seat module xremote
+[+0.01s] DEBUG: Registered seat module unity
+[+0.01s] DEBUG: Using D-Bus name org.freedesktop.DisplayManager
+[+0.10s] DEBUG: Monitoring logind for seats
+[+0.10s] DEBUG: New seat added from logind: seat0
+[+0.10s] DEBUG: Seat seat0: Loading properties from config section Seat:*
+[+0.10s] DEBUG: Seat seat0: Starting
+[+0.10s] DEBUG: Seat seat0: Creating user session
+[+0.11s] WARNING: Error getting user list from org.freedesktop.Accounts: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Accounts was not provided by any .service files
+[+0.11s] DEBUG: Loading user config from /etc/lightdm/users.conf
+[+0.12s] DEBUG: User pi added
+[+0.14s] DEBUG: Seat seat0: Creating display server of type x
+[+0.14s] DEBUG: posix_spawn avoided (fd close requested) 
+[+0.19s] DEBUG: Using VT 7
+[+0.19s] DEBUG: Seat seat0: Starting local X display on VT 7
+[+0.19s] DEBUG: XServer 0: Logging to /var/log/lightdm/x-0.log
+[+0.19s] DEBUG: XServer 0: Writing X server authority to /var/run/lightdm/root/:0
+[+0.19s] DEBUG: XServer 0: Launching X Server
+[+0.20s] DEBUG: Launching process 568: /usr/bin/X -nocursor :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+[+0.20s] DEBUG: XServer 0: Waiting for ready signal from X server :0
+[+0.20s] DEBUG: Acquired bus name org.freedesktop.DisplayManager
+[+0.20s] DEBUG: Registering seat with bus path /org/freedesktop/DisplayManager/Seat0
+[+5.05s] DEBUG: Got signal 10 from process 568
+[+5.05s] DEBUG: XServer 0: Got signal from X server :0
+[+5.05s] DEBUG: XServer 0: Connecting to XServer :0
+[+5.08s] DEBUG: Launching process 588: /usr/share/dispsetup.sh
+[+5.09s] DEBUG: Process 588 exited with return value 0
+[+5.09s] DEBUG: Seat seat0: Exit status of /usr/share/dispsetup.sh: 0
+[+5.09s] DEBUG: posix_spawn avoided (fd close requested) (child_setup specified) 
+[+5.09s] DEBUG: Seat seat0: Display server ready, starting session authentication
+[+5.09s] DEBUG: Session pid=590: Started with service 'lightdm-autologin', username 'pi'
+[+5.14s] DEBUG: Session pid=590: Authentication complete with return value 0: Success
+[+5.14s] DEBUG: Seat seat0: Session authenticated, running command
+[+5.14s] DEBUG: Registering session with bus path /org/freedesktop/DisplayManager/Session0
+[+5.14s] DEBUG: posix_spawn avoided (fd close requested) (child_setup specified) 
+[+5.14s] DEBUG: Session pid=590: Running command /etc/X11/Xsession default
+[+5.14s] DEBUG: Creating shared data directory /var/lib/lightdm/data/pi
+[+5.14s] DEBUG: Session pid=590: Logging to .xsession-errors
+[+5.49s] DEBUG: Activating VT 7
+[+5.49s] DEBUG: Activating login1 session 2
+[+5.49s] DEBUG: Seat seat0 changes active session to 2
+[+5.49s] DEBUG: Session 2 is already active
+[+82.46s] DEBUG: Got signal 15 from process 1
+[+82.46s] DEBUG: Caught Terminated signal, shutting down
+[+82.46s] DEBUG: Stopping display manager
+[+82.46s] DEBUG: Seat seat0: Stopping
+[+82.46s] DEBUG: Seat seat0: Stopping display server
+[+82.46s] DEBUG: Sending signal 15 to process 568
+[+82.46s] DEBUG: Seat seat0: Stopping session
+[+82.46s] DEBUG: Terminating login1 session 2
+[+82.59s] DEBUG: Session pid=590: Sending SIGTERM
+[+83.34s] DEBUG: Session pid=590: Exited with return value 0
+[+83.34s] DEBUG: Seat seat0: Session stopped
+[+83.38s] DEBUG: Seat seat0 changes active session to 
+[+83.39s] DEBUG: Process 568 exited with return value 0
+[+83.39s] DEBUG: XServer 0: X server stopped
+[+83.39s] DEBUG: Releasing VT 7
+[+83.39s] DEBUG: XServer 0: Removing X server authority /var/run/lightdm/root/:0
+[+83.39s] DEBUG: Seat seat0: Display server stopped
+[+83.39s] DEBUG: Seat seat0: Stopped
+[+83.39s] DEBUG: Display manager stopped
+[+83.39s] DEBUG: Stopping daemon
+[+83.39s] DEBUG: Exiting with return value 0

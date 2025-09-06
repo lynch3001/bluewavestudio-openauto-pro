@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="notification" xml:lang="sv">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Använd flaggan <cmd>--notification</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2006, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+  <title>Aviseringsikon</title>
+    <p>Använd flaggan <cmd>--notification</cmd> för att skapa en aviseringsikon.</p>
+
+  <terms>
+    <item>
+      <title><cmd>--text</cmd>=<var>text</var></title>
+      <p>Anger texten som visas i aviseringsytan.</p>
+    </item>
+    <item>
+      <title><cmd>--listen</cmd>=icon: '<var>text</var>', message: '<var>text</var>', tooltip: '<var>text</var>', visible: '<var>text</var>',</title>
+      <p>Lyssnar efter kommandon på standard in. Åtminstone ett kommando måste anges. Kommandon är kommaavgränsade. Ett kommando måste följas av ett kolon och ett värde.</p>
+      <note style="tip">
+        <p>Kommandot <cmd>icon</cmd> accepterar fyra standardikonvärden så som <var>error</var>, <var>info</var>, <var>question</var> och <var>warning</var>.</p>
+      </note>
+    </item>
+  </terms>
+
+  <p>Följande exempelskript visar hur man skapar en aviseringsikon:</p>
+  <code>
+  #!/bin/sh
+
+  zenity --notification\
+    --window-icon="info" \
+    --text="Det finns nödvändiga systemuppdateringar!"
+  </code>
+
+  <figure>
+    <title>Exempel på aviseringsikon</title>
+    <desc><app>Zenity</app>-exempel på aviseringsikon</desc>
+    <media type="image" mime="image/png" src="figures/zenity-notification-screenshot.png"/>
+  </figure>
+
+  <p>Följande exempelskript visar hur man skapar en aviseringsikon tillsammans med <cmd>--listen</cmd>:</p>
+  <code>
+  #!/bin/sh
+  cat &lt;&lt;EOH| zenity --notification --listen
+  message: detta är en meddelandetext
+  EOH
+  </code>
+
+  <figure>
+    <title>Exempel på aviseringsikon med <cmd>--listen</cmd></title>
+    <desc><app>Zenity</app>-aviseringsexempel med <cmd>--listen</cmd></desc>
+    <media type="image" mime="image/png" src="figures/zenity-notification-listen-screenshot.png"/>
+  </figure>
+
+</page>

@@ -1,0 +1,7 @@
+d0aeb45c991cd5e240fc322e792d8981  usr/lib/arm-linux-gnueabihf/libmariadb.so.3
+e845917c47246345dbd1dfe1a826cf5d  usr/lib/arm-linux-gnueabihf/mariadb19/plugin/caching_sha2_password.so
+85eb54ec37b55836e4e58f81e0bc0aa7  usr/lib/arm-linux-gnueabihf/mariadb19/plugin/client_ed25519.so
+a995cd4dfdf5de0206d0da2bf0417054  usr/lib/arm-linux-gnueabihf/mariadb19/plugin/dialog.so
+eccdc9ff676199608e2582ebf97d7d19  usr/lib/arm-linux-gnueabihf/mariadb19/plugin/mysql_clear_password.so
+b22bd67ab9447d9b98aa4146765f80b0  usr/share/doc/libmariadb3/changelog.Debian.gz
+e407e1f8d6f4e45df8b79b3565a11fc2  usr/share/doc/libmariadb3/copyright

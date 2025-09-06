@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="data-cookies" xml:lang="ko">
+
+  <info>
+    <link type="guide" xref="index#privacy"/>
+    <revision pkgversion="3.12" date="2014-01-28" status="final"/>
+
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Baptiste Mille-Mathias</name>
+      <email its:translate="no">baptistem@gnome.org</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>만약 웹사이트가 나를 추적하는 것을 더이상 원하지 않는다면 어떻게 쿠키를 삭제할 수 있나요?</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>ChangSeok Oh</mal:name>
+      <mal:email>changseok@gnome.org</mal:email>
+      <mal:years>2015, 2016, 2017, 2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gyuseok Jung</mal:name>
+      <mal:email>jgyuseok@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>쿠키 삭제하기</title>
+
+  <!-- Include an explanation about cookies. -->
+  <include xmlns="http://www.w3.org/2001/XInclude" href="cookies.xml" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:page/mal:p)"/>
+
+  <p>특정 웹사이트가 더이상 당신을 추적하는 것을 원하지 않는다면, 그 웹사이트가 쿠키를 남겨놓았는지 확인하고 그것을 삭제하세요.</p>
+
+  <steps>
+    <item>
+      <p><guiseq><gui style="menu">웹</gui><gui style="menuitem">기본 설정</gui><gui style="tab">개인정보</gui><gui style="button">쿠키 모음 관리</gui></guiseq>를 여세요.</p>
+    </item>
+    <item>
+      <p>삭제하고 싶은 쿠키를 선택하세요.</p>
+    </item>
+    <item>
+      <p><gui style="button">-</gui>단추를 누르거나 <key>Delete</key>키를 누르세요.</p>
+    </item>
+  </steps>
+
+  <p>또한, <gui style="button">모두 지우기</gui>단추를 사용해서 당신의 모든 쿠키를 삭제할 수도 있습니다.</p>
+
+</page>

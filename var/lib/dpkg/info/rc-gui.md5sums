@@ -1,0 +1,17 @@
+a8387dd7e735bee8f1305c116313fc39  usr/bin/rc_gui
+868f347a364cfdeecb32e7c358697741  usr/lib/rc-gui/pwdrcg.sh
+c7c1128b9fda983441d8407cc0e221fe  usr/share/applications/rc_gui.desktop
+8bcaef0182fccf76b6a6387a6f98e585  usr/share/doc/rc-gui/changelog.gz
+8ded13edf8d403e51c5a4156032d1a61  usr/share/doc/rc-gui/copyright
+a080ec28b052852d084d092023a8abd7  usr/share/icons/hicolor/32x32/apps/rpi.png
+726fbc8946d1797872968adbdabb0c5a  usr/share/locale/de/LC_MESSAGES/rc_gui.mo
+7ddf0671dadd1bab44fea7bf1e23db4f  usr/share/locale/en_GB/LC_MESSAGES/rc_gui.mo
+d048a055b4df3e853cca4c1f96aa2226  usr/share/locale/es/LC_MESSAGES/rc_gui.mo
+6d34928565c229f18a224018b38b8431  usr/share/locale/fr/LC_MESSAGES/rc_gui.mo
+110fb6de73a9965331e43e767ecbceb6  usr/share/locale/id_ID/LC_MESSAGES/rc_gui.mo
+8a423f0b106aa23e2ae44a0696b9373f  usr/share/locale/it/LC_MESSAGES/rc_gui.mo
+3f9e3946e2e72f90a61e0d64fa293133  usr/share/locale/ja/LC_MESSAGES/rc_gui.mo
+dbef0d8b769e5007f96edf902f2f601e  usr/share/locale/nl/LC_MESSAGES/rc_gui.mo
+a688b52a744dce1b5abdedb3c46518af  usr/share/locale/sk/LC_MESSAGES/rc_gui.mo
+32009f0bec24ab1c51d44d260418f756  usr/share/locale/zh_TW/LC_MESSAGES/rc_gui.mo
+b72ef469542d466ab92a7c3e80eaeaf5  usr/share/rc-gui/rc_gui.ui

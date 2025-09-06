@@ -1,0 +1,17 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installinit/12.1.1
+if [ -x "/etc/init.d/gpsd" ]; then
+	invoke-rc.d gpsd stop || exit 1
+fi
+# End automatically added section
+# Automatically added by dh_installsystemd/12.1.1
+if [ -d /run/systemd/system ] && [ "$1" = remove ]; then
+	deb-systemd-invoke stop 'gpsd.service' 'gpsd.socket' >/dev/null || true
+fi
+# End automatically added section
+# Automatically added by dh_installsystemd/12.1.1
+if [ -d /run/systemd/system ] && [ "$1" = remove ]; then
+	deb-systemd-invoke stop 'gpsd.socket' >/dev/null || true
+fi
+# End automatically added section

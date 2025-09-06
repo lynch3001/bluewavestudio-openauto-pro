@@ -1,0 +1,12 @@
+/.
+/etc
+/etc/xdg
+/etc/xdg/gstomx-rpi.conf
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/gstreamer1.0-omx-rpi-config
+/usr/share/doc/gstreamer1.0-omx-rpi-config/README.Debian
+/usr/share/doc/gstreamer1.0-omx-rpi-config/changelog.Debian.gz
+/usr/share/doc/gstreamer1.0-omx-rpi-config/changelog.gz
+/usr/share/doc/gstreamer1.0-omx-rpi-config/copyright

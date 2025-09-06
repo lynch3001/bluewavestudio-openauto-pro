@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="calendar" xml:lang="pl">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Używanie opcji <cmd>--calendar</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+  <title>Okno kalendarza</title>
+    <p>Użyj opcji <cmd>--calendar</cmd>, aby utworzyć okno kalendarza. Zenity zwraca wybraną datę w standardowym wyjściu. Jeśli w wierszu poleceń nie podano daty, to okno używa obecnej.</p>
+    <p>Okno kalendarza obsługuje te opcje:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--text</cmd>=<var>tekst</var></title>
+	<p>Określa tekst wyświetlany w oknie kalendarza.</p>
+      </item>
+     	
+      <item>
+        <title><cmd>--day</cmd>=<var>dzień</var></title>
+	<p>Określa dzień wybrany w oknie kalendarza. Musi być liczbą między 1 a 31, włącznie.</p>
+      </item>
+
+      <item>
+        <title><cmd>--month</cmd>=<var>miesiąc</var></title>
+	<p>Określa miesiąc wybrany w oknie kalendarza. Musi być liczbą między 1 a 12, włącznie.</p>
+      </item>
+
+      <item>
+        <title><cmd>--year</cmd>=<var>rok</var></title>
+	<p>Określa rok wybrany w oknie kalendarza.</p>
+      </item>
+
+      <item>
+        <title><cmd>--date-format</cmd>=<var>format</var></title>
+	<p>Określa format zwracany z okna kalendarza po wybraniu daty. Domyślny format zależy od języka systemu. Format musi zgadzać się z funkcją <cmd>strftime</cmd>, na przykład <var>%A, %d.%m.%y</var>.</p>
+      </item>
+
+    </terms>
+
+    <p>Ten przykładowy skrypt pokazuje, jak utworzyć okno kalendarza:</p>
+
+<code>
+#!/bin/sh
+
+
+if zenity --calendar \
+--title="Wybór daty" \
+--text="Proszę kliknąć datę, aby ją wybrać." \
+--day=10 --month=8 --year=2004
+  then echo $?
+  else echo "Nie wybrano daty"
+fi
+</code>
+
+
+    <figure>
+      <title>Przykład okna kalendarza</title>
+      <desc>Przykład okna kalendarza Zenity</desc>
+      <media type="image" mime="image/png" src="figures/zenity-calendar-screenshot.png"/>
+   </figure>
+</page>

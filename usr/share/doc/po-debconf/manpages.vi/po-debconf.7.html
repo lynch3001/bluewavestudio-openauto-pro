@@ -1,0 +1,314 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title></title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+
+<h1 id="TN">T&Ecirc;N</h1>
+
+<p>po-debconf &mdash; gi&#x1EDB;i thi&#x1EC7;u</p>
+
+<h1 id="M-T">M&Ocirc; T&#x1EA2;</h1>
+
+<p>M&#x1EE5;c &#x111;&iacute;ch c&#x1EE7;a <code>debconf</code> l&agrave; l&agrave;m cho ti&#x1EBF;n tr&igrave;nh c&#x1EA5;u h&igrave;nh g&oacute;i l&agrave; th&acirc;n thi&#x1EC7;n v&#x1EDB;i ng&#x1B0;&#x1EDD;i d&ugrave;ng. &#x110;&#x1EC3; &#x111;&#x1EA1;t &#x111;&#x1B0;&#x1EE3;c, quan tr&#x1ECD;ng l&agrave; &#x111;&#x1EA3;m b&#x1EA3;o m&#x1ED7;i ng&#x1B0;&#x1EDD;i d&ugrave;ng s&#x1EBD; th&#x1EA5;y c&acirc;u h&#x1ECF;i b&#x1EB1;ng ng&ocirc;n ng&#x1EEF; m&#x1EB9; &#x111;&#x1EBB;. Ng&#x1B0;&#x1EDD;i d&#x1ECB;ch y&ecirc;u c&#x1EA7;u m&#x1ED9;t khu&ocirc;n kh&#x1ED5; &#x111;&#x1EC3; d&#x1ECB;ch d&#x1EC5; d&agrave;ng m&agrave; kh&ocirc;ng c&#x1EA7;n theo d&otilde;i ti&#x1EBF;n tr&igrave;nh ph&aacute;t tri&#x1EC3;n g&oacute;i ph&#x1EA7;n m&#x1EC1;m. <code>po-debconf</code> &#x111;&atilde; &#x111;&#x1B0;&#x1EE3;c thi&#x1EBF;t k&#x1EBF; &#x111;&#x1EC3; ch&#x1EA1;y &#x111;&uacute;ng v&#x1EDB;i c&aacute;c c&ocirc;ng c&#x1EE5; <code>gettext</code> ti&ecirc;u chu&#x1EA9;n khi d&#x1ECB;ch t&#x1EAD;p tin m&#x1EAB;u debconf.</p>
+
+<h1 id="THM-H-TR-I18N-VO-TP-TIN-MU-DEBCONF">TH&Ecirc;M H&#x1ED4; TR&#x1EE2; I18N V&Agrave;O T&#x1EAC;P TIN M&#x1EAA;U DEBCONF</h1>
+
+<p>Mu&#x1ED1;n th&ecirc;m h&#x1ED7; tr&#x1EE3; debconf v&agrave;o g&oacute;i th&igrave; b&#x1EA1;n &#x111;&atilde; ghi m&#x1ED9;t t&#x1EAD;p tin m&#x1EAB;u ch&#x1EE9;a v&#x103;n b&#x1EA3;n ti&#x1EBF;ng Anh (ng&ocirc;n ng&#x1EEF; g&#x1ED1;c). &#x110;&#x1EC3; th&ecirc;m kh&#x1EA3; n&#x103;ng h&#x1ED7; tr&#x1EE3; ti&#x1EBF;n tr&igrave;nh qu&#x1ED1;c t&#x1EBF; ho&aacute; (i18n) v&agrave;o g&oacute;i, b&#x1EA1;n c&#x1EA7;n ph&#x1EA3;i:</p>
+
+<dl>
+
+<dt id="To-debian-po-POTFILES.in">&bull; T&#x1EA1;o <i>debian/po/POTFILES.in</i></dt>
+<dd>
+
+<p>T&#x1EAD;p tin n&agrave;y ch&#x1EE9;a danh s&aacute;ch c&aacute;c m&#x1EAB;u ch&#x1EE7;. B&igrave;nh th&#x1B0;&#x1EDD;ng n&oacute; ch&#x1EE9;a ch&#x1EC9; m&#x1ED9;t d&ograve;ng ri&ecirc;ng l&#x1EBB;:</p>
+
+<pre><code>  [type: gettext/rfc822deb] templates</code></pre>
+
+<p>&#x110;&#x1B0;&#x1EDD;ng d&#x1EAB;n t&#x1B0;&#x1A1;ng &#x111;&#x1ED1;i v&#x1EDB;i th&#x1B0; m&#x1EE5;c cha.</p>
+
+</dd>
+<dt id="Thm-mt-du-gch-di-vo-trc-mi-trng-c-th-dch-c-trong-mi-mu">&bull; Th&ecirc;m m&#x1ED9;t d&#x1EA5;u g&#x1EA1;ch d&#x1B0;&#x1EDB;i v&agrave;o tr&#x1B0;&#x1EDB;c m&#x1ECD;i tr&#x1B0;&#x1EDD;ng c&oacute; th&#x1EC3; d&#x1ECB;ch &#x111;&#x1B0;&#x1EE3;c trong m&#x1ED7;i m&#x1EAB;u</dt>
+<dd>
+
+<p>B&igrave;nh th&#x1B0;&#x1EDD;ng c&oacute; th&#x1EC3; d&#x1ECB;ch &#x111;&#x1B0;&#x1EE3;c c&aacute;c tr&#x1B0;&#x1EDD;ng ki&#x1EC3;u <code>Description</code>, <code>Choices</code> v&agrave; &#x111;&ocirc;i khi <code>Default</code>.</p>
+
+</dd>
+<dt id="Chy-debconf-updatepo">&bull; Ch&#x1EA1;y <b>debconf-updatepo</b></dt>
+<dd>
+
+<p>Ti&#x1EBF;n tr&igrave;nh n&agrave;y s&#x1EBD; t&#x1EA1;o t&#x1EAD;p tin <i>debian/po/templates.pot</i> m&agrave; ng&#x1B0;&#x1EDD;i d&#x1ECB;ch s&#x1EBD; d&#x1ECB;ch sang ng&ocirc;n ng&#x1EEF; kh&aacute;c.</p>
+
+</dd>
+<dt id="Thm-vo-debian-control-mt-quan-h-ph-thuc-xy-dng-vo-po-debconf">&bull; Th&ecirc;m v&agrave;o <i>debian/control</i> m&#x1ED9;t quan h&#x1EC7; ph&#x1EE5; thu&#x1ED9;c x&acirc;y d&#x1EF1;ng v&agrave;o <code>po-debconf</code>.</dt>
+<dd>
+
+</dd>
+</dl>
+
+<h1 id="CP-NHT-MU">C&#x1EAC;P NH&#x1EAC;T M&#x1EAA;U</h1>
+
+<p>&#x110;&#x1EC3; gi&uacute;p &#x111;&#x1EE1; ng&#x1B0;&#x1EDD;i d&#x1ECB;ch th&igrave; b&#x1EA1;n n&ecirc;n b&#x1EA3;o t&#x1ED3;n m&#x1ED9;t g&oacute;i ph&#x1EA7;n m&#x1EC1;m c&oacute; c&aacute;c t&#x1EAD;p tin PO hi&#x1EC7;n th&#x1EDD;i. (Kh&ocirc;ng th&igrave; ng&#x1B0;&#x1EDD;i d&#x1ECB;ch ho&agrave;i ph&iacute; th&igrave; gi&#x1A1;&#x300; v&igrave; d&#x1ECB;ch chu&#x1ED7;i v&ocirc; &iacute;ch.) &#x110;&#x1EC3; c&#x1EE9; c&#x1EAD;p nh&#x1EAD;t c&aacute;c t&#x1EAD;p tin PO, h&atilde;y g&#x1ECD;i c&acirc;u l&#x1EC7;nh theo &#x111;&acirc;y (kh&ocirc;ng c&oacute; &#x111;&#x1ED1;i s&#x1ED1;):</p>
+
+<pre><code>  $ debconf-updatepo</code></pre>
+
+<p>&#x110;&#x1EC3; duy tr&igrave; c&aacute;c t&#x1EAD;p tin PO hi&#x1EC7;n th&#x1EDD;i, b&#x1EA1;n n&ecirc;n ch&#x1EA1;y l&#x1EC7;nh n&agrave;y m&#x1ED7;i l&#x1EA7;n thay &#x111;&#x1ED5;i chu&#x1ED7;i ti&#x1EBF;ng Anh trong m&#x1EAB;u. C&#x169;ng n&ecirc;n ch&#x1EA1;y n&oacute; khi b&#x1EA1;n nh&#x1EAD;n b&#x1EA3;n d&#x1ECB;ch m&#x1EDB;i hay b&#x1EA3;n d&#x1ECB;ch &#x111;&atilde; c&#x1EAD;p nh&#x1EAD;t, v&igrave; ng&#x1B0;&#x1EDD;i d&#x1ECB;ch c&oacute; th&#x1EC3; &#x111;&atilde; d&#x1ECB;ch t&#x1EAD;p tin PO c&#x169;.</p>
+
+<p>N&#x1EBF;u b&#x1EA1;n thay t&ecirc;n, th&ecirc;m hay g&#x1EE1; b&#x1ECF; b&#x1EA5;t k&#x1EF3; t&#x1EAD;p tin m&#x1EAB;u, c&#x169;ng nh&#x1EDB; &#x111;&#x1EC3; ch&#x1EC9;nh s&#x1EED;a t&#x1EAD;p tin <i>debian/po/POTFILES.in</i> m&#x1ED9;t c&aacute;ch t&#x1B0;&#x1A1;ng &#x1EE9;ng. Kh&ocirc;ng th&igrave; m&#x1ED9;t s&#x1ED1; chu&#x1ED7;i ti&#x1EBF;ng Anh b&#x1ECB; thi&#x1EBF;u trong t&#x1EAD;p tin PO; c&aacute;c chu&#x1ED7;i ti&#x1EBF;ng Anh n&agrave;y s&#x1EBD; &#x111;&#x1B0;&#x1EE3;c hi&#x1EC3;n th&#x1ECB; cho ng&#x1B0;&#x1EDD;i d&ugrave;ng xem, th&#x1EAD;m ch&iacute; n&#x1EBF;u c&aacute;c t&#x1EAD;p tin PO &#x111;&atilde; &#x111;&#x1B0;&#x1EE3;c d&#x1ECB;ch ho&agrave;n to&agrave;n.</p>
+
+<p>Ch&#x1B0;&#x1A1;ng tr&igrave;nh <b>debconf-updatepo</b> l&agrave; lu&#x1EF9; &#x111;&#x1EB3;ng: n&oacute; s&#x1EED;a &#x111;&#x1ED5;i t&#x1EAD;p tin PO ch&#x1EC9; n&#x1EBF;u n&#x1ED9;i dung b&#x1ECB; c&#x1EAD;p nh&#x1EAD;t. V&igrave; v&#x1EAD;y ph&#x1B0;&#x1A1;ng ph&aacute;p t&#x1ED1;t nh&#x1EA5;t cung c&#x1EA5;p c&aacute;c t&#x1EAD;p tin PO hi&#x1EC7;n th&#x1EDD;i trong g&oacute;i m&atilde; ngu&#x1ED3;n l&agrave; g&#x1ECD;i c&acirc;u l&#x1EC7;nh n&agrave;y t&#x1EEB; &#x111;&iacute;ch <code>clean</code> c&#x1EE7;a t&#x1EAD;p tin <i>debian/rules</i>.</p>
+
+<p>Ghi ch&uacute; r&#x1EB1;ng b&#x1EA1;n c&#x1EA7;n ph&#x1EA3;i ch&#x1EA1;y <b>debconf-updatepo</b> th&#x1EAD;m ch&iacute; n&#x1EBF;u b&#x1EA1;n s&#x1EED; d&#x1EE5;ng <b>dh_installdebconf</b>. H&agrave;m th&#x1EE9; hai n&agrave;y g&#x1ECD;i <b>po2debconf</b> m&agrave; t&#x1EEB;ng g&#x1ECD;i <b>debconf-updatepo</b> n&#x1EBF;u ph&aacute;t hi&#x1EC7;n t&#x1EAD;p tin b&#x1ECB; l&#x1ED7;i th&#x1EDD;i, nh&#x1B0;ng kh&ocirc;ng c&ograve;n l&agrave; tr&#x1B0;&#x1EDD;ng h&#x1EE3;p l&#x1EA1;i v&igrave; hai l&yacute; do :</p>
+
+<ol>
+
+<li><p><b>po2debconf</b> nh&#x1EDD; nh&atilde;n gi&#x1EDD; &#x111;&#x1EC3; ph&aacute;t hi&#x1EC7;n t&#x1EAD;p tin b&#x1ECB; l&#x1ED7;i th&#x1EDD;i, v&agrave; c&oacute; th&#x1EC3; kh&ocirc;ng ch&#x1EA1;y &#x111;&uacute;ng khi d&ugrave;ng <code>pbuilder</code> ho&#x1EB7;c n&#x1EBF;u b&#x1EA3;n d&#x1ECB;ch c&#x169; &#x111;&atilde; &#x111;&#x1B0;&#x1EE3;c l&#x1B0;u v&agrave;o &#x111;&#x129;a sau khi m&#x1EAB;u b&#x1ECB; s&#x1EED;a &#x111;&#x1ED5;i.</p>
+
+</li>
+<li><p><b>dh_installdebconf</b> &#x111;&#x1B0;&#x1EE3;c g&#x1ECD;i &#x111;&atilde; l&acirc;u sau khi t&#x1EA1;o ra t&#x1EAD;p tin <code>.diff.gz</code>.</p>
+
+</li>
+</ol>
+
+<h1 id="TRN-BN-DCH-VI-BN-GC">TR&#x1ED8;N B&#x1EA2;N D&#x1ECA;CH V&#x1EDA;I B&#x1EA2;N G&#x1ED0;C</h1>
+
+<p>B&#x1EA1;n c&#x1EA7;n ph&#x1EA3;i ki&#x1EC3;m tra c&aacute;c b&#x1EA3;n d&#x1ECB;ch &#x111;&#x1B0;&#x1EE3;c h&#x1EE3;p nh&#x1EA5;t trong g&oacute;i &#x111;&atilde; x&acirc;y d&#x1EF1;ng khi n&oacute; &#x111;&#x1B0;&#x1EE3;c bi&ecirc;n d&#x1ECB;ch. B&#x1EA1;n c&oacute; th&#x1EC3; t&#x1EF1; ki&#x1EC3;m tra, ho&#x1EB7;c t&#x1EF1; &#x111;&#x1ED9;ng ki&#x1EC3;m tra b&#x1EB1;ng c&aacute;ch s&#x1EED; d&#x1EE5;ng v&#x103;n l&#x1EC7;nh <b>dh_installdebconf</b> (h&atilde;y &#x111;&#x1EA3;m b&#x1EA3;o c&oacute; m&#x1ED9;t quan h&#x1EC7; ph&#x1EE5; thu&#x1ED9;c x&acirc;y d&#x1EF1;ng &#x111;&#x1EB7;t phi&ecirc;n b&#x1EA3;n v&#x1EDB;i <code>debhelper (&gt;= 4.1.16)</code>).</p>
+
+<p>&#x110;&#x1EC3; t&#x1EF1; ki&#x1EC3;m tra, b&#x1EA1;n c&#x1EA7;n ph&#x1EA3;i tr&#x1ED9;n c&aacute;c m&#x1EAB;u v&#x1EDB;i c&aacute;c b&#x1EA3;n d&#x1ECB;ch v&agrave;o l&uacute;c bi&ecirc;n d&#x1ECB;ch (v&agrave; &#x111;&#x1EB7;t quan h&#x1EC7; ph&#x1EE5; thu&#x1ED9;c x&acirc;y d&#x1EF1;ng v&#x1EDB;i <code>po-debconf</code>) nh&#x1B0; th&#x1EBF;:</p>
+
+<pre><code>  $ po2debconf debian/templates &gt; debian/tmp/DEBIAN/templates</code></pre>
+
+<p><b>BE CAREFUL</b>: hai t&#x1EAD;p tin t&ecirc;n <i>templates</i> kh&ocirc;ng ph&#x1EA3;i tr&ugrave;ng nhau. T&#x1EAD;p tin th&#x1EE9; nh&#x1EA5;t ch&#x1EE9;a ch&#x1EC9; v&#x103;n b&#x1EA3;n g&#x1ED1;c (th&#x1B0;&#x1EDD;ng l&agrave; ti&#x1EBF;ng Anh), v&agrave; &#x111;&aacute;nh d&#x1EA5;u m&#x1ED9;t s&#x1ED1; tr&#x1B0;&#x1EDD;ng c&#x1EA7;n d&#x1ECB;ch, c&ograve;n t&#x1EAD;p tin th&#x1EE9; hai ch&#x1EE9;a t&#x1EA5;t c&#x1EA3; c&aacute;c ng&ocirc;n ng&#x1EEF;. V&igrave; v&#x1EAD;y b&#x1EA1;n KH&Ocirc;NG th&#x1EC3; gi&#x1EEF; ch&#x1EC9; nh&#x1EEF;ng m&#x1EAB;u &#x111;&atilde; tr&#x1ED9;n: c&oacute; gi&#x1EEF; th&igrave; b&#x1EA1;n kh&ocirc;ng th&#x1EC3; x&#x1EED; l&yacute; m&#x1ED7;i b&#x1EA3;n d&#x1ECB;ch &#x111;&#x1B0;&#x1EE3;c &#x111;&#x1EC7; tr&igrave;nh.</p>
+
+<h1 id="MU-CH-MI">M&#x1EAA;U CH&#x1EE6; M&#x1EDA;I</h1>
+
+<p>&#x110;&#x1ECB;nh d&#x1EA1;ng ngu&#x1ED3;n t&#x1EAD;p tin m&#x1EAB;u m&#x1EDB;i l&agrave; g&#x1EA7;n tr&ugrave;ng v&#x1EDB;i m&#x1ED9;t c&#x1EE7;a nh&#x1EEF;ng t&#x1EAD;p tin m&#x1EAB;u &#x111;&atilde; ph&aacute;t h&agrave;nh, nh&#x1B0;ng m&#x1ED7;i tr&#x1B0;&#x1EDD;ng c&oacute; th&#x1EC3; d&#x1ECB;ch &#x111;&#x1B0;&#x1EE3;c c&oacute; d&#x1EA5;u g&#x1EA1;ch d&#x1B0;&#x1EDB;i n&#x1EB1;m tr&#x1B0;&#x1EDB;c. Th&iacute; d&#x1EE5; :</p>
+
+<pre><code>  Template: debconf/frontend
+  Type: select
+  _Choices: Dialog, Readline, Gnome, Editor, Noninteractive
+  Default: Dialog
+  _Description: Interface to use for configuring packages:
+   Packages that use debconf for configuration share a common look and
+   feel.  You can select the type of user interface they use.
+   .
+   The dialog frontend is a full-screen, character based interface,
+   while the readline frontend uses a more traditional plain text
+   interface, and the gnome frontend is a modern X interface.  The
+   editor frontend lets you configure things using your favorite text
+   editor. The noninteractive frontend never asks you any questions.</code></pre>
+
+<h2 id="X-DANH-SCH-TY-CHN">X&#x1EBA; DANH S&Aacute;CH T&Ugrave;Y CH&#x1ECC;N</h2>
+
+<p>K&#x1EC3; t&#x1EEB; <code>po-debconf</code> 0.6.0, tr&#x1B0;&#x1EDD;ng &#x111;&atilde; &#x111;&#x1ECB;a ph&#x1B0;&#x1A1;ng ho&aacute; c&oacute; th&#x1EC3; ch&#x1EE9;a hai d&#x1EA5;u g&#x1EA1;ch d&#x1B0;&#x1EDB;i &#x111;i tr&#x1B0;&#x1EDB;c. Trong tr&#x1B0;&#x1EDD;ng h&#x1EE3;p n&agrave;y, gi&aacute; tr&#x1ECB; tr&#x1B0;&#x1EDD;ng n&ecirc;n l&agrave; m&#x1ED9;t danh s&aacute;ch c&aacute;c gi&aacute; tr&#x1ECB; &#x111;&#x1ECB;nh gi&#x1EDB;i b&#x1EB1;ng d&#x1EA5;u ph&#x1EA9;y, m&#x1ED7;i chu&#x1ED7;i msgid th&igrave; ch&#x1EE9;a m&#x1ED9;t gi&aacute; tr&#x1ECB;. Do &#x111;&oacute;, n&#x1EBF;u m&#x1EAB;u v&iacute; d&#x1EE5; tr&#x1B0;&#x1EDB;c ch&#x1EE9;a</p>
+
+<pre><code>  __Choices: Dialog, Readline, Gnome, Editor, Noninteractive</code></pre>
+
+<p>th&igrave; t&#x1EA1;o 5 chu&#x1ED7;i msgid kh&aacute;c nhau. Ghi ch&uacute; r&#x1EB1;ng d&#x1EA5;u c&aacute;ch n&#x1EB1;m sau d&#x1EA5;u ph&#x1EA9;y kh&ocirc;ng c&oacute; ngh&#x129;a.</p>
+
+<p>C&oacute; m&#x1ED9;t danh s&aacute;ch s&#x1EF1; ch&#x1ECD;n kh&ocirc;ng bao gi&#x1EDD; bi&#x1EBF;n &#x111;&#x1ED5;i th&igrave; <code>_Choices</code> l&agrave; &#x111;&uacute;ng. Tuy nhi&ecirc;n, chia t&aacute;ch danh s&aacute;ch nh&#x1B0; v&#x1EAD;y c&oacute; th&#x1EC3; gi&uacute;p tr&aacute;nh l&#x1ED7;i th&#x1B0;&#x1EDD;ng g&#x1EB7;p trong b&#x1EA3;n d&#x1ECB;ch (v.d. b&#x1ECF; s&oacute;t m&#x1ED9;t s&#x1EF1; ch&#x1ECD;n, s&#x1EED; d&#x1EE5;ng d&#x1EA5;u ph&#x1EA9;y kh&ocirc;ng ti&ecirc;u chu&#x1EA9;n). V&igrave; l&yacute; do n&agrave;y, r&#x1EA5;t khuy&ecirc;n b&#x1EA1;n s&#x1EED; d&#x1EE5;ng <code>__Choices</code> &#x111;&#x1EC3; thay th&#x1EBF;.</p>
+
+<p>Ti&#x1EBF;c l&agrave; n&#x1EBF;u b&#x1EA1;n chuy&#x1EC3;n &#x111;&#x1ED5;i t&#x1EEB; <code>_Choices</code> sang <code>__Choices</code> th&igrave; c&#x169;ng l&agrave;m cho m&#x1ECD;i chu&#x1ED7;i d&#x1ECB;ch l&agrave; d&#x1ECB;ch m&#x1EDD; (fuzzy). Tuy nhi&ecirc;n, c&oacute; m&#x1ED9;t ph&#x1B0;&#x1A1;ng ph&aacute;p chuy&#x1EC3;n &#x111;&#x1ED5;i nh&#x1B0; th&#x1EBF; m&agrave; kh&ocirc;ng m&#x1EA5;t tr&#x1EA1;ng th&aacute;i v&#x1EC1; chu&#x1ED7;i d&#x1ECB;ch (ph&#x1B0;&#x1A1;ng ph&aacute;p n&agrave;y y&ecirc;u c&#x1EA7;u <code>po-debconf</code> &gt;= 1.0). Mu&#x1ED1;n chuy&#x1EC3;n &#x111;&#x1ED5;i m&#x1EAB;u v&iacute; d&#x1EE5; tr&#x1B0;&#x1EDB;c sang <code>__Choices</code>: tr&#x1B0;&#x1EDB;c ti&ecirc;n c&#x1EA7;n sao ch&eacute;p t&#x1EAD;p tin <i>templates</i> v&agrave;o m&#x1ED9;t t&#x1EAD;p tin t&#x1EA1;m th&#x1EDD;i.</p>
+
+<pre><code>  $ cp debian/templates debian/foo</code></pre>
+
+<p>S&#x1EED;a <i>debian/foo</i>, gi&#x1EEF; ch&#x1EC9; nh&#x1EEF;ng tr&#x1B0;&#x1EDD;ng <code>Template</code>, <code>Type</code> v&agrave; <code>_Choices</code> m&agrave; n&#x1EB1;m trong th&iacute; d&#x1EE5; n&agrave;y.</p>
+
+<pre><code>  Template: debconf/frontend
+  Type: select
+  _Choices: Dialog, Readline, Gnome, Kde, Editor, Noninteractive</code></pre>
+
+<p>Ch&#x1EA1;y <b>debconf-gettextize</b> v&#x1EDB;i hai c&#x1EDD; <code>--merge</code> v&agrave; <code>--choices</code> &#x111;&#x1EC3; x&acirc;y d&#x1EF1;ng c&aacute;c t&#x1EAD;p tin PO nh&#x1B0; th&#x1EC3; l&agrave; <code>__Choices</code> &#x111;&atilde; &#x111;&#x1B0;&#x1EE3;c ghi, v&agrave; tr&#x1ED9;n c&aacute;c t&#x1EAD;p tin PO n&agrave;y v&#x1EDB;i c&aacute;c t&#x1EAD;p tin &#x111;&atilde; t&#x1ED3;n t&#x1EA1;i:</p>
+
+<pre><code>  $ debconf-gettextize --merge --choices debian/foo</code></pre>
+
+<p>Cu&#x1ED1;i c&ugrave;ng b&#x1EA1;n c&#x1EA7;n ph&#x1EA3;i g&#x1EE1; b&#x1ECF; <i>foo</i> v&agrave; t&#x1EF1; ch&#x1EC9;nh s&#x1EED;a <i>debian/templates</i> &#x111;&#x1EC3; thay th&#x1EBF; <code>_Choices</code> b&#x1EB1;ng <code>__Choices</code> tr&#x1B0;&#x1EDB;c khi ch&#x1EA1;y <b>debconf-updatepo</b>.</p>
+
+<h2 id="GHI-CH-DNH-CHO-NGI-DCH">GHI CH&Uacute; D&Agrave;NH CHO NG&#x1AF;&#x1EDC;I D&#x1ECA;CH</h2>
+
+<p>C&aacute;c nh&agrave; duy tr&igrave; <code>Dpkg</code> &#x111;&atilde; quy&#x1EBF;t &#x111;&#x1ECB;nh r&#x1EB1;ng theo quy &#x1B0;&#x1EDB;c m&#x1ED7;i d&ograve;ng b&#x1EAF;t &#x111;&#x1EA7;u v&#x1EDB;i d&#x1EA5;u th&#x103;ng (<code>#</code>) l&agrave; ch&uacute; th&iacute;ch trong t&#x1EAD;p tin <i>debian/control</i>: <code>po-debconf</code> c&#x169;ng theo quy &#x1B0;&#x1EDB;c n&agrave;y. K&#x1EC3; t&#x1EEB; <code>po-debconf</code> 0.8.0, c&aacute;c ch&uacute; th&iacute;ch nh&#x1B0; v&#x1EAD;y &#x111;&#x1B0;&#x1EE3;c ghi v&agrave;o t&#x1EAD;p tin PO, v&agrave; c&oacute; th&#x1EC3; ch&#x1EE9;a th&ocirc;ng tin h&#x1EEF;u &iacute;ch cho ng&#x1B0;&#x1EDD;i d&#x1ECB;ch. H&#x1A1;n n&#x1EEF;a, c&aacute;c phi&ecirc;n b&#x1EA3;n <code>po-debconf</code> tr&#x1B0;&#x1EDB;c b&#x1ECF; qua m&#x1ECD;i d&ograve;ng kh&ocirc;ng ch&#x1EE9;a d&#x1EA5;u hai ch&#x1EA5;m, v&igrave; v&#x1EAD;y n&#x1EBF;u ch&uacute; th&iacute;ch kh&ocirc;ng ch&#x1EE9;a d&#x1EA5;u hai ch&#x1EA5;m th&igrave; kh&ocirc;ng c&#x1EA7;n th&ecirc;m quan h&#x1EC7; ph&#x1EE5; thu&#x1ED9;c x&acirc;y d&#x1EF1;ng l&#x1EAD;p phi&ecirc;n b&#x1EA3;n &#x111;&#x1ED1;i v&#x1EDB;i <code>po-debconf</code>. Th&iacute; d&#x1EE5; :</p>
+
+<pre><code>  Template: debconf/button-yes
+  Type: text
+  # Translators, this text will appear on a button, so KEEP IT SHORT
+  _Description: Yes</code></pre>
+
+<p>Ch&uacute; th&iacute;ch &#x111;&#x1EB7;c bi&#x1EC7;t &#x111;&atilde; &#x111;&#x1B0;&#x1EE3;c gi&#x1EDB;i thi&#x1EC7;u trong <code>po-debconf</code> 1.0 &#x111;&#x1EC3; qu&#x1EA3;n l&yacute; chu&#x1ED7;i ch&#x1EE9;a v&agrave;i m&#x1EE5;c kh&aacute;c nhau (nh&#x1B0; trong tr&#x1B0;&#x1EDD;ng <i>Choices</i>) hay v&agrave;i &#x111;o&#x1EA1;n v&#x103;n kh&aacute;c nhau (nh&#x1B0; <i>Description</i>). Hai ch&#x1EC9; th&#x1ECB; n&agrave;y cho nh&agrave; ph&aacute;t tri&#x1EC3;n &#x111;i&#x1EC1;u khi&#x1EC3;n h&#x1EEF;u &iacute;ch h&#x1A1;n th&ocirc;ng tin &#x111;&#x1B0;&#x1EE3;c hi&#x1EC3;n th&#x1ECB; cho ng&#x1B0;&#x1EDD;i d&#x1ECB;ch. Ch&uacute; th&iacute;ch n&agrave;y theo d&#x1EA1;ng <code>#flag:<i>directive</i></code>; c&aacute;c ch&#x1EC9; th&#x1ECB; &#x111;&#x1B0;&#x1EE3;c di&#x1EC5;n t&#x1EA3; b&ecirc;n d&#x1B0;&#x1EDB;i.</p>
+
+<dl>
+
+<dt id="translate:spec-translate-:spec"><b>translate:</b><i>spec</i>, <b>translate!:</b><i>spec</i></dt>
+<dd>
+
+<p>&#x110;&aacute;nh d&#x1EA5;u ch&#x1EC9; m&#x1ED9;t s&#x1ED1; m&#x1EE5;c l&agrave; &laquo; c&oacute; th&#x1EC3; d&#x1ECB;ch &#x111;&#x1B0;&#x1EE3;c &raquo;; <i>spec</i> l&agrave; danh s&aacute;ch con s&#x1ED1; &#x111;&#x1ECB;nh gi&#x1EDB;i b&#x1EB1;ng d&#x1EA5;u ph&#x1EA9;y, n&oacute; x&aacute;c &#x111;&#x1ECB;nh nh&#x1EEF;ng chu&#x1ED7;i n&agrave;o s&#x1EBD; &#x111;&#x1B0;&#x1EE3;c in ra t&#x1EAD;p tin PO. C&#x169;ng c&oacute; th&#x1EC3; x&aacute;c &#x111;&#x1ECB;nh ph&#x1EA1;m vi b&#x1EB1;ng d&#x1EA5;u tr&#x1EEB; (v.d. <code>2-6</code>), v&agrave; d&#x1EA5;u sao (<code>*</code>) c&oacute; ngh&#x129;a &laquo; m&#x1ECD;i chu&#x1ED7;i &raquo;. Ch&#x1EB3;ng h&#x1EA1;n, &#x111;&#x1ED1;i v&#x1EDB;i</p>
+
+<pre><code>  Template: partman-basicfilesystems/fat_mountpoint
+  Type: select
+  #flag:translate:3,4
+  __Choices: /dos, /windows, Enter manually, Do not mount it
+  _Description: Mount point for this partition:</code></pre>
+
+<p>Hai m&#x1EE5;c <code>Enter manually</code> v&agrave; <code>Do not mount it</code> s&#x1EBD; xu&#x1EA5;t hi&#x1EC7;n trong t&#x1EAD;p tin PO, nh&#x1B0;ngkh&ocirc;ng ph&#x1EA3;i hai m&#x1EE5;c <code>/dos</code> v&agrave; <code>/windows</code>. C&oacute; d&#x1EA5;u ch&#x1EA5;m than n&#x1EB1;m sau t&#x1EEB; kho&aacute; <b>translate</b> th&igrave; <i>spec</i> x&aacute;c &#x111;&#x1ECB;nh nh&#x1EEF;ng chu&#x1ED7;i n&agrave;o s&#x1EBD; b&#x1ECB; h&#x1EE7;y ra t&#x1EAD;p tin PO: c&aacute;c chu&#x1ED7;i kh&aacute;c &#x111;&#x1B0;&#x1EE3;c in ra. Th&iacute; d&#x1EE5; tr&#x1B0;&#x1EDB;c t&#x1B0;&#x1A1;ng t&#x1EF1; v&#x1EDB;i</p>
+
+<pre><code>  Template: partman-basicfilesystems/fat_mountpoint
+  Type: select
+  #flag:translate!:1,2
+  __Choices: /dos, /windows, Enter manually, Do not mount it
+  _Description: Mount point for this partition:</code></pre>
+
+<p>C&oacute; th&#x1EC3; &aacute;p d&#x1EE5;ng c&ugrave;ng t&#x1EEB; kho&aacute; cho tr&#x1B0;&#x1EDD;ng <i>Description</i> &#x111;&#x1EC3; &#x111;&#x1EA3;m b&#x1EA3;o m&#x1ED9;t s&#x1ED1; chu&#x1ED7;i ri&ecirc;ng s&#x1EBD; kh&ocirc;ng &#x111;&#x1B0;&#x1EE3;c d&#x1ECB;ch.</p>
+
+<pre><code>  Template: partman-crypto/options_missing
+  Type: error
+  #flag:translate!:3
+  _Description: Required encryption options missing
+   The encryption options for ${DEVICE} are incomplete. Please
+   return to the partition menu and select all required options.
+   .
+   ${ITEMS}</code></pre>
+
+<p>Nh&#x1B0;ng m&agrave; tr&#x1B0;&#x1EDD;ng h&#x1EE3;p n&agrave;y nguy hi&#x1EC3;m, v&igrave; ng&#x1EEF; c&#x1EA3;nh c&oacute; th&#x1EC3; b&#x1ECB; h&#x1EE7;y ra t&#x1EAD;p tin PO: h&atilde;y ghi ch&uacute; &#x111;&#x1EC3; cho ng&#x1B0;&#x1EDD;i d&#x1ECB;ch th&ocirc;ng tin c&#x1EA7;n thi&#x1EBF;t.</p>
+
+</dd>
+<dt id="comment:spec-comment-:spec"><b>comment:</b><i>spec</i>, <b>comment!:</b><i>spec</i></dt>
+<dd>
+
+<p>Ghi ch&uacute; &#x111;&uacute;ng b&ecirc;n d&#x1B0;&#x1EDB;i ch&#x1EC9; th&#x1ECB; n&agrave;y &aacute;p d&#x1EE5;ng cho nh&#x1EEF;ng chu&#x1ED7;i &#x111;&#x1B0;&#x1EE3;c ghi r&otilde; b&#x1EDF;i <i>spec</i>, m&agrave; &#x111;&#x1B0;&#x1EE3;c x&aacute;c &#x111;&#x1ECB;nh b&ecirc;n tr&ecirc;n. M&#x1EB7;c &#x111;&#x1ECB;nh l&agrave; ghi ch&uacute; &#x111;&#x1B0;&#x1EE3;c ghi v&agrave;o &#x111;&#x1EB1;ng tr&#x1B0;&#x1EDB;c m&#x1ED9;t tr&#x1B0;&#x1EDD;ng c&oacute; th&#x1EC3; d&#x1ECB;ch &#x111;&#x1B0;&#x1EE3;c th&igrave; &#x111;&#x1B0;&#x1EE3;c in ra c&ugrave;ng v&#x1EDB;i t&#x1EA5;t c&#x1EA3; c&aacute;c chu&#x1ED7;i thu&#x1ED9;c v&#x1EC1; tr&#x1B0;&#x1EDD;ng &#x111;&oacute;. (Ghi ch&uacute; : d&ugrave;ng <code>po-debconf</code> &lt; 1.0, ghi ch&uacute; &#x111;&#x1B0;&#x1EE3;c ghi ch&#x1EC9; v&#x1EDB;i chu&#x1ED7;i th&#x1EE9; nh&#x1EA5;t.)</p>
+
+<pre><code>  Template: arcboot-installer/prom-variables
+  Type: note
+  # Translators, the 4th string of this description has been dropped
+  # from PO files.  It contains shell commands and should not be
+  # translated.
+  #flag:comment:3
+  # &quot;Stop for Maintenance&quot; should be left in English
+  #flag:translate!:4
+  _Description: Setting PROM variables for Arcboot
+   If this is the first Linux installation on this machine, or if the
+   hard drives have been repartitioned, some variables need to be set
+   in the PROM before the system is able to boot normally.
+   .
+   At the end of this installation stage, the system will reboot.
+   After this, enter the command monitor from the &quot;Stop for
+   Maintenance&quot; option, and enter the following commands:
+   .
+      setenv OSLoader arcboot
+      setenv OSLoadFilename Linux
+   .
+   You will only need to do this once.  Afterwards, enter the &quot;boot&quot;
+   command or reboot the system to proceed to the next stage of the
+   installation.</code></pre>
+
+<p>Th&iacute; d&#x1EE5; b&ecirc;n tr&ecirc;n c&oacute; m&#x1ED9;t ghi ch&uacute; m&agrave; kh&ocirc;ng d&ugrave;ng ch&#x1EC9; th&#x1ECB; <code>#flag:comment</code>, v&agrave;o &#x111;&oacute; m&#x1ED9;t <code>#flag:comment:*</code> ng&#x1EA7;m &#x111;&#x1B0;&#x1EE3;c th&ecirc;m. Ghi ch&uacute; n&agrave;y xu&#x1EA5;t hi&#x1EC7;n v&#x1EDB;i m&#x1ECD;i chu&#x1ED7;i, nh&#x1B0;ng l&#x1EDD;i v&#x1EC1; <i>Stop for Maintenance</i> &#x111;&#x1B0;&#x1EE3;c in ra ch&#x1EC9; &#x111;&#x1EB1;ng tr&#x1B0;&#x1EDB;c chu&#x1ED7;i th&iacute;ch h&#x1EE3;p.</p>
+
+</dd>
+<dt id="partial"><b>partial</b></dt>
+<dd>
+
+<p>T&#x1EEB; kho&aacute; n&agrave;y b&aacute;o <b>po2debconf</b> n&ecirc;n gi&#x1EEF; l&#x1EA1;i c&aacute;c chu&#x1ED7;i &#x111;&atilde; d&#x1ECB;ch, th&#x1EAD;m ch&iacute; n&#x1EBF;u ch&#x1B0;a d&#x1ECB;ch m&#x1ECD;i chu&#x1ED7;i. H&atilde;y s&#x1EED; d&#x1EE5;ng c&#x1EA9;n th&#x1EAD;n: t&#x1EEB; kho&aacute; n&agrave;y &#x111;&atilde; &#x111;&#x1B0;&#x1EE3;c gi&#x1EDB;i thi&#x1EC7;u nh&#x1EB1;m m&#x1EE5;c &#x111;&iacute;ch ch&iacute;nh x&aacute;c.</p>
+
+</dd>
+</dl>
+
+<h2 id="THNG-BO-NGI-DCH-TRC-KHI-TI-LN">TH&Ocirc;NG B&Aacute;O NG&#x1AF;&#x1EDC;I D&#x1ECA;CH TR&#x1AF;&#x1EDA;C KHI T&#x1EA2;I L&Ecirc;N</h2>
+
+<p>D&ugrave; ng&#x1B0;&#x1EDD;i d&#x1ECB;ch c&oacute; th&#x1EC3; th&#x1EA5;y b&#x1EA3;n d&#x1ECB;ch c&#x169; tr&ecirc;n c&aacute;c trang Web tr&#x1EA1;ng th&aacute;i (xem d&#x1B0;&#x1EDB;i), v&agrave; g&#x1EED;i &#x111;&#x1EAF;p v&aacute; &#x111;&#x1EC3; bao g&#x1ED3;m trong b&#x1EA3;n t&#x1EA3;i l&ecirc;n v&#x1EC1; sau, ng&#x1B0;&#x1EDD;i d&#x1ECB;ch (gi&#x1ED1;ng nh&#x1B0; nh&agrave; ph&aacute;t tri&#x1EC3;n) c&oacute; &iacute;t th&#x1EDD;i gian r&#x1EA3;nh. &#x110;&#x1EC3; ti&#x1EBF;t ki&#x1EC7;m th&#x1EDD;i gian cho c&#x1EA3; hai nh&agrave; ph&aacute;t tri&#x1EC3;n v&agrave; ng&#x1B0;&#x1EDD;i d&#x1ECB;ch, v&agrave; c&#x1EA3;i ti&#x1EBF;n ti&#x1EBF;n tr&igrave;nh li&ecirc;n l&#x1EA1;c gi&#x1EEF;a c&#x1EA3; hai, D&#x1EF1; &aacute;n Debian cung c&#x1EA5;p m&#x1ED9;t c&ocirc;ng c&#x1EE5; chuy&ecirc;n d&#x1EE5;ng, <b>podebconf-report-po</b>. D&ugrave;ng c&ocirc;ng c&#x1EE5; n&agrave;y, b&#x1EA1;n c&oacute; th&#x1EC3; y&ecirc;u c&#x1EA7;u ng&#x1B0;&#x1EDD;i d&#x1ECB;ch tr&#x1B0;&#x1EDB;c c&#x1EAD;p nh&#x1EAD;t b&#x1EA3;n d&#x1ECB;ch (v.d. 2 tu&#x1EA7;n &#x111;&#x1EB1;ng tr&#x1B0;&#x1EDB;c ng&agrave;y t&#x1EA3;i l&ecirc;n), cu&#x1ED1;i c&ugrave;ng nh&#x1EAD;n nhi&#x1EC1;u b&#x1EA3;n d&#x1ECB;ch &#x111;&#x1B0;&#x1EE3;c c&#x1EAD;p nh&#x1EAD;t h&#x1A1;n. R&#x1EA5;t khuy&ecirc;n nh&agrave; ph&aacute;t tri&#x1EC3;n s&#x1EED; d&#x1EE5;ng c&ocirc;ng c&#x1EE5; n&agrave;y.</p>
+
+<h1 id="G-RI">G&#x1EE0; R&#x1ED0;I</h1>
+
+<p><b>debconf-loadtemplate</b> kh&ocirc;ng ch&#x1EA5;p nh&#x1EAD;n t&#x1EAD;p tin m&#x1EAB;u c&oacute; m&atilde; &#x111;&aacute;nh d&#x1EA5;u qu&#x1ED1;c t&#x1EBF; ho&aacute;. Tuy nhi&ecirc;n, n&oacute; c&oacute; ph&#x1EA3;i ch&#x1EA5;p nh&#x1EAD;n m&#x1ED9;t t&#x1EAD;p tin ho&agrave; tr&#x1ED9;n, th&igrave; n&#x1EBF;u b&#x1EA1;n t&#x1EEB;ng g&#x1EE1; r&#x1ED1;i thi&#x1EBF;t l&#x1EAD;p debconf nh&#x1B0; th&#x1EBF;</p>
+
+<pre><code>  rm /tmp/{config,templates}.dat{,-old}
+  debconf-loadtemplate debian/templates
+  DEBIAN_PRIORITY=low debconf -freadline debian/config configure 28.0</code></pre>
+
+<p>b&acirc;y gi&#x1EDD; b&#x1EA1;n c&#x1EA7;n ph&#x1EA3;i s&#x1EED; d&#x1EE5;ng (v.d.):</p>
+
+<pre><code>  po2debconf debian/templates &gt; debian/tmp/DEBIAN/templates
+  rm /tmp/{config,templates}.dat{,-old}
+  debconf-loadtemplate debian/tmp/DEBIAN/templates
+  DEBIAN_PRIORITY=low debconf -freadline debian/config configure 28.0</code></pre>
+
+<h1 id="CN-THN">C&#x1EA8;N TH&#x1EAC;N</h1>
+
+<ul>
+
+<li><p><code>Debconf</code> 1.2.0 nh&#x1EAD;n ra tr&#x1B0;&#x1EDD;ng theo d&#x1EA1;ng <i>Name</i>-<i>lang</i>.<i>encoding</i>, v.d. <code>Description-de.ISO-8859-1</code> hay <code>Choices-vi.UTF-8</code>. M&#x1EB7;c &#x111;&#x1ECB;nh l&agrave; <b>po2debconf</b> ghi c&aacute;c t&#x1EAD;p tin m&#x1EAB;u theo &#x111;&#x1ECB;nh d&#x1EA1;ng m&#x1EDB;i &#x111;&oacute;. <code>debconf</code> c&#x169; s&#x1EBD; b&#x1ECF; qua c&aacute;c tr&#x1B0;&#x1EDD;ng n&agrave;y, ch&#x1EC9; hi&#x1EC3;n th&#x1ECB; v&#x103;n b&#x1EA3;n g&#x1ED1;c (th&#x1B0;&#x1EDD;ng l&agrave; ti&#x1EBF;ng Anh). Xem <a href="http://man.he.net/man1/po2debconf">po2debconf(1)</a> &#x111;&#x1EC3; bi&#x1EBF;t c&aacute;ch thay &#x111;&#x1ED5;i b&#x1EA3;ng m&atilde; v&agrave; &#x111;&#x1ECB;nh d&#x1EA1;ng k&#x1EBF;t xu&#x1EA5;t.</p>
+
+</li>
+<li><p>M&#x1ED9;t chu&#x1ED7;i ti&#x1EBF;ng Anh &#x111;&#x1B0;a ra c&oacute; th&#x1EC3; nh&#x1EAD;n b&#x1EB1;ng m&#x1ED7;i ng&ocirc;n ng&#x1EEF; ch&#x1EC9; m&#x1ED9;t b&#x1EA3;n d&#x1ECB;ch duy nh&#x1EA5;t. Kh&ocirc;ng th&#x1EC3; cung c&#x1EA5;p &#x111;&#x1B0;&#x1EE3;c hai b&#x1EA3;n d&#x1ECB;ch kh&aacute;c nhau ph&#x1EE5; thu&#x1ED9;c v&agrave;o ng&#x1EEF; c&#x1EA3;nh. &#x110;&#x1EC3; gi&#x1EA3;i quy&#x1EBF;t v&#x1EA5;n &#x111;&#x1EC1; n&agrave;y, b&#x1EA1;n c&#x1EA7;n ph&#x1EA3;i &#x111;&aacute;nh d&#x1EA5;u &#x111;&#x1EB7;c bi&#x1EC7;t c&aacute;c l&#x1EA7;n g&#x1EB7;p chu&#x1ED7;i kh&aacute;c nhau, &#x111;&#x1EC3; t&#x1EA1;o nhi&#x1EC1;u chu&#x1ED7;i ri&ecirc;ng. (D&#x1EA5;u n&agrave;y ch&#x1EC9; hi&#x1EC3;n th&#x1ECB; cho ng&#x1B0;&#x1EDD;i d&#x1ECB;ch: n&oacute; b&#x1ECB; g&#x1EE1; b&#x1ECF; ra chu&#x1ED7;i tr&#x1B0;&#x1EDB;c khi ng&#x1B0;&#x1EDD;i d&ugrave;ng xem.)</p>
+
+<p>D&#x1EA5;u nh&#x1B0; v&#x1EAD;y ph&#x1EA3;i &#x111;&#x1B0;&#x1EE3;c ph&#x1EE5; th&ecirc;m v&agrave;o chu&#x1ED7;i c&#x1EA7;n d&#x1ECB;ch: n&oacute; ph&#x1EA3;i b&#x1EAF;t &#x111;&#x1EA7;u v&#x1EDB;i <code>[ </code> (d&#x1EA5;u ngo&#x1EB7;c m&#x1EDF; c&oacute; d&#x1EA5;u c&aacute;ch theo sau) v&agrave; k&#x1EBF;t th&uacute;c v&#x1EDB;i <code>]</code> (d&#x1EA5;u ngo&#x1EB7;c &#x111;&oacute;ng), v&agrave; c&oacute; th&#x1EC3; ch&#x1EE9;a b&#x1EA5;t c&#x1EE9; k&yacute; t&#x1EF1; n&agrave;o tr&#x1EEB; d&#x1EA5;u ngo&#x1EB7;c hay k&yacute; t&#x1EF1; d&ograve;ng m&#x1EDB;i. Ch&#x1EB3;ng h&#x1EA1;n, <code>[ bi_b&ocirc;]</code> l&agrave; d&#x1EA5;u h&#x1EE3;p l&#x1EC7;, c&ograve;n <code>[ bi[b&ocirc;]bi]</code> kh&ocirc;ng ph&#x1EA3;i. C&aacute;c d&#x1EA5;u n&agrave;y b&#x1ECB; g&#x1EE1; b&#x1ECF; b&#x1EB1;ng bi&#x1EC3;u th&#x1EE9;c ch&iacute;nh quy n&agrave;y:</p>
+
+<pre><code>  $msg =~ s/\[\s[^\[\]]*\]$//s;</code></pre>
+
+</li>
+<li><p>Kho&#x1EA3;ng c&aacute;ch kh&ocirc;ng ph&#x1EA3;i &#x111;&#x1B0;&#x1EE3;c x&#x1EED; l&yacute; m&#x1ED9;t c&aacute;ch tr&ugrave;ng b&#x1EDF;i <code>po-debconf</code> v&agrave; <code>debconf-utils</code>; h&agrave;m th&#x1EE9; hai &#x111;&#x1ECB;nh d&#x1EA1;ng l&#x1EA1;i c&aacute;c &#x111;o&#x1EA1;n v&#x103;n khi c&#x1EAD;p nh&#x1EAD;t v&agrave; tr&#x1ED9;n c&aacute;c b&#x1EA3;n d&#x1ECB;ch, v&igrave; v&#x1EAD;y <code>debconf-utils</code> r&#x1EA5;t kh&eacute;o, d&#x1EA5;u c&aacute;ch kh&ocirc;ng ph&#x1EA3;i &#x111;&#x1B0;&#x1EE3;c x&#x1EED; l&yacute; l&agrave; m&#x1ED9;t ph&#x1EA7;n c&#x1EE7;a chu&#x1ED7;i khi quy&#x1EBF;t &#x111;&#x1ECB;nh chu&#x1ED7;i n&agrave;o &#x111;&#x1B0;&#x1EE3;c d&#x1ECB;ch m&#x1EDD; (fuzzy: chu&#x1ED7;i c&oacute; b&#x1EA3;n d&#x1ECB;ch c&#x1EA7;n ch&#x1EC9;nh s&#x1EED;a v&igrave; chu&#x1ED7;i g&#x1ED1;c b&#x1ECB; thay &#x111;&#x1ED5;i).</p>
+
+<p>M&#x1EB7;t kh&aacute;c, <code>po-debconf</code> nh&#x1EDD; <code>gettext</code> ph&aacute;t hi&#x1EC7;n chu&#x1ED7;i d&#x1ECB;ch m&#x1EDD;, v&agrave; n&oacute; kh&ocirc;ng x&#x1EED; l&yacute; d&#x1EA5;u c&aacute;ch nh&#x1B0; k&yacute; t&#x1EF1; &#x111;&#x1EB7;c bi&#x1EC7;t. V&igrave; v&#x1EAD;y, c&aacute;c d&#x1EA5;u c&aacute;ch th&#x1EEB;a ph&#x1EA3;i b&#x1ECB; g&#x1EE1; b&#x1ECF; ra k&#x1EBF;t th&uacute;c d&ograve;ng trong m&#x1ED7;i m&#x1EAB;u ch&#x1EE7;, &#x111;&#x1EC3; tr&aacute;nh xu&#x1EA5;t hi&#x1EC7;n trong c&aacute;c t&#x1EAD;p tin PO va POT.</p>
+
+<p>V&igrave; l&yacute; do t&#x1B0;&#x1A1;ng t&#x1EF1;, <b>debconf-gettextize</b> c&oacute; kh&#x1EA3; n&#x103;ng &#x111;&aacute;nh d&#x1EA5;u chu&#x1ED7;i l&agrave; &laquo; d&#x1ECB;ch m&#x1EDD; &raquo; do c&aacute;c k&yacute; t&#x1EF1; kho&#x1EA3;ng c&aacute;ch kh&aacute;c nhau, th&igrave; ng&#x1B0;&#x1EDD;i d&#x1ECB;ch c&#x1EA7;n ph&#x1EA3;i t&#x1EF1; ch&#x1EC9;nh s&#x1EED;a m&#x1ED7;i chu&#x1ED7;i nh&#x1B0; v&#x1EAD;y. Tr&#x1B0;&#x1EDD;ng h&#x1EE3;p n&agrave;y ch&#x1EC9; x&#x1EA3;y ra m&#x1ED9;t l&#x1EA7;n khi chuy&#x1EC3;n &#x111;&#x1ED5;i m&#x1EAB;u sang &#x111;&#x1ECB;nh d&#x1EA1;ng <code>po-debconf</code>, tr&#x1EEB; b&#x1EA1;n thay &#x111;&#x1ED5;i kho&#x1EA3;ng c&aacute;ch m&#x1ED9;t c&aacute;ch ng&#x1EAB;u nhi&ecirc;n trong t&#x1EAD;p tin ch&#x1EE7;, m&agrave; l&agrave;m phi&#x1EC1;n c&aacute;c ng&#x1B0;&#x1EDD;i d&#x1ECB;ch.</p>
+
+</li>
+<li><p>B&igrave;nh th&#x1B0;&#x1EDD;ng kh&ocirc;ng n&ecirc;n d&#x1ECB;ch tr&#x1B0;&#x1EDD;ng <i>Default:</i> khi m&#x1EAB;u c&oacute; ki&#x1EC3;u <b>Select</b> hay <b>Multiselect</b>. Trong r&#x1EA5;t &iacute;t tr&#x1B0;&#x1EDD;ng h&#x1EE3;p (v.d. khi ch&#x1ECD;n ng&ocirc;n ng&#x1EEF; m&#x1EB7;c &#x111;&#x1ECB;nh cho &#x1EE9;ng d&#x1EE5;ng), gi&aacute; tr&#x1ECB; &#x111;&atilde; &#x111;&#x1ECB;a ph&#x1B0;&#x1A1;ng ho&aacute; c&#x169;ng c&oacute; &iacute;ch.</p>
+
+<p>Kh&ocirc;ng n&ecirc;n d&#x1ECB;ch gi&aacute; tr&#x1ECB; &#x111;&atilde; &#x111;&#x1ECB;a ph&#x1B0;&#x1A1;ng ho&aacute;: n&ecirc;n ch&#x1ECD;n n&oacute; trong nh&#x1EEF;ng gi&aacute; tr&#x1ECB; ti&#x1EBF;ng Anh &#x111;&#x1B0;&#x1EE3;c li&#x1EC7;t k&ecirc; trong tr&#x1B0;&#x1EDD;ng <i>Choices</i>. Ph&#x1B0;&#x1A1;ng ph&aacute;p t&#x1ED1;t nh&#x1EA5;t &#x111;&#x1EC3; l&agrave;m nh&#x1B0; th&#x1EBF; l&agrave; ghi ch&uacute; v&agrave;o t&#x1EAD;p tin m&#x1EAB;u : ch&uacute; th&iacute;ch n&agrave;y s&#x1EBD; c&#x169;ng &#x111;&#x1B0;&#x1EE3;c sao ch&eacute;p v&agrave;o c&aacute;c t&#x1EAD;p tin PO.</p>
+
+<pre><code>  Template: geneweb/lang
+  Type: select
+  __Choices: Danish (da), Dutch (nl), English (en), Esperanto (eo)
+  #  You must NOT translate this string, but you can change its value.
+  #  The comment between brackets is used to distinguish this msgid
+  #  from the one in the Choices list; you do not have to worry about
+  #  them, and have to simply choose a msgstr among the English values
+  #  listed in the Choices field above, e.g. msgstr &quot;Dutch (nl)&quot;
+  _Default: English (en)[ default language]
+  _Description: Geneweb default language</code></pre>
+
+<p>Gi&aacute; tr&#x1ECB; m&#x1EB7;c &#x111;&#x1ECB;nh c&#x169;ng xu&#x1EA5;t hi&#x1EC7;n trong tr&#x1B0;&#x1EDD;ng <i>Choices</i>, v&agrave; m&#x1ED7;i gi&aacute; tr&#x1ECB; c&oacute; b&#x1EA3;n d&#x1ECB;ch ri&ecirc;ng: gi&aacute; tr&#x1ECB; th&#x1EE9; nh&#x1EA5;t l&agrave; gi&aacute; tr&#x1ECB; ch&#x1B0;a &#x111;&#x1B0;&#x1EE3;c d&#x1ECB;ch m&agrave; &#x111;&#x1B0;&#x1EE3;c ch&#x1ECD;n trong c&aacute;c gi&aacute; tr&#x1ECB; <i>Choices</i>, c&ograve;n gi&aacute; tr&#x1ECB; th&#x1EE9; hai l&agrave; b&#x1EA3;n d&#x1ECB;ch chu&#x1EA9;n. V&igrave; <code>gettext</code> kh&ocirc;ng th&#x1EC3; ch&#x1EE9;a hai b&#x1EA3;n d&#x1ECB;ch kh&aacute;c nhau cho c&ugrave;ng m&#x1ED9;t <i>msgid</i>, m&#x1ED7;i <i>msgids</i> ph&#x1EA3;i &#x111;&#x1B0;&#x1EE3;c kh&aacute;c bi&#x1EC7;t b&#x1EB1;ng ch&uacute; th&iacute;ch n&#x1EB1;m trong d&#x1EA5;u ngo&#x1EB7;c, nh&#x1B0; di&#x1EC5;n t&#x1EA3; trong ph&#x1EA7;n con tr&ecirc;n.</p>
+
+<p>Tr&#x1B0;&#x1EDB;c <code>po-debconf</code> 0.8.0, kh&ocirc;ng c&oacute; kh&#x1EA3; n&#x103;ng ghi ch&uacute; nh&#x1B0; v&#x1EAD;y n&ecirc;n nh&agrave; duy tr&igrave; ph&#x1EA3;i thay th&#x1EBF; tr&#x1B0;&#x1EDD;ng <i>_Default:</i> b&#x1EB1;ng <i>_DefaultChoice:</i> &#x111;&#x1EC3; ph&acirc;n bi&#x1EC7;t tr&#x1B0;&#x1EDD;ng ri&ecirc;ng trong t&#x1EAD;p tin PO:</p>
+
+<pre><code>  #. DefaultChoice
+  msgid &quot;&quot;
+  &quot;English[ default: do not translate bracketed material, put your &quot;
+  &quot;own language here but UNTRANSLATED.  If it is not in the list, &quot;
+  &quot;put English (without bracketed material)]&quot;
+  msgstr &quot;&quot;
+  &quot;Swedish&quot;</code></pre>
+
+<p>Ch&uacute; th&iacute;ch chu&#x1EA9;n trong t&#x1EAD;p tin m&#x1EAB;u &iacute;t b&#x1ECB; l&#x1ED7;i h&#x1A1;n th&igrave; khuy&#x1EBF;n kh&iacute;ch.</p>
+
+</li>
+</ul>
+
+<h1 id="TRANG-WEB-TRNG-THI">TRANG WEB TR&#x1EA0;NG TH&Aacute;I</h1>
+
+<p>Th&#x1ED1;ng k&ecirc; v&#x1EC1; b&#x1EA3;n d&#x1ECB;ch <code>po-debconf</code> s&#x1EB5;n s&agrave;ng &#x1EDF; <a href="http://www.debian.org/intl/l10n/po-debconf/">http://www.debian.org/intl/l10n/po-debconf/</a> (ho&#x1EB7;c t&#x1EEB; m&aacute;y nh&acirc;n b&#x1EA3;n); t&#x1EA5;t c&#x1EA3; &#x111;&#x1B0;&#x1EE3;c t&#x1EF1; &#x111;&#x1ED9;ng c&#x1EAD;p nh&#x1EAD;t khi g&oacute;i m&#x1EDB;i &#x111;&#x1B0;&#x1EE3;c t&#x1EA3;i l&ecirc;n. Ch&#x1EC9; g&oacute;i c&oacute; s&#x1EB5;n t&#x1EAD;p tin <i>debian/po/templates.pot</i> v&agrave; <i>debian/po/POTFILES.in</i> &#x111;&#x1B0;&#x1EE3;c x&#x1EED; l&yacute;, v&igrave; v&#x1EAD;y b&#x1EA1;n n&ecirc;n ki&#x1EC3;m tra g&oacute;i m&atilde; ngu&#x1ED3;n ch&#x1EE9;a c&aacute;c t&#x1EAD;p tin n&agrave;y.</p>
+
+<p>Ng&#x1B0;&#x1EDD;i d&#x1ECB;ch c&oacute; th&#x1EC3; l&#x1EA5;y t&#x1EAD;p tin PO v&agrave; POT t&#x1EEB; trang tr&#x1EA1;ng th&aacute;i, nh&#x1B0;ng c&#x169;ng n&ecirc;n li&ecirc;n l&#x1EA1;c v&#x1EDB;i ng&#x1B0;&#x1EDD;i d&#x1ECB;ch tr&#x1B0;&#x1EDB;c (&#x111;&#x1ECB;a ch&#x1EC9; th&#x1B0; &#x111;i&#x1EC7;n t&#x1EED; n&#x1EB1;m trong ph&#x1EA7;n &#x111;&#x1EA7;u c&#x1EE7;a t&#x1EAD;p tin PO) v&agrave;/hay nh&oacute;m d&#x1ECB;ch trong h&#x1ED9;p th&#x1B0; chung debian-l10n-<i>&lt;language&gt;</i>@lists.debian.org (n&#x1EBF;u c&oacute; : m&#x1ED9;t s&#x1ED1; nh&oacute;m d&#x1ECB;ch d&ugrave;ng h&#x1ED9;p th&#x1B0; chung b&ecirc;n ngo&agrave;i) &#x111;&#x1EC3; ki&#x1EC3;m tra kh&ocirc;ng c&oacute; ng&#x1B0;&#x1EDD;i d&#x1ECB;ch kh&aacute;c &#x111;&#x1EA3;m nh&#x1EAD;n c&ugrave;ng b&#x1EA3;n d&#x1ECB;ch, v&agrave; &#x111;&#x1ECD;c c&aacute;c b&aacute;o c&aacute;o l&#x1ED7;i hi&#x1EC7;n th&#x1EDD;i v&#x1EC1; g&oacute;i &#x111;&oacute; &#x111;&#x1EC3; ki&#x1EC3;m tra b&#x1EA3;n d&#x1ECB;ch &#x111;&atilde; &#x111;&#x1B0;&#x1EE3;c &#x111;&#x1EC7; tr&igrave;nh ch&#x1B0;a.</p>
+
+<p>Sau khi d&#x1ECB;ch t&#x1EAD;p tin th&igrave; ng&#x1B0;&#x1EDD;i d&#x1ECB;ch n&ecirc;n &#x111;&#x1EC7; tr&igrave;nh b&#x1EA3;n d&#x1ECB;ch cho nh&agrave; duy tr&igrave; b&#x1EB1;ng c&aacute;ch g&#x1EED;i m&#x1ED9;t b&aacute;o c&aacute;o l&#x1ED7;i c&oacute; m&#x1EE9;c quan tr&#x1ECD;ng <b>wishlist</b> v&agrave; th&#x1EBB; <b>patch</b>.</p>
+
+<h1 id="XEM-CNG">XEM C&#x168;NG</h1>
+
+<p><a href="http://man.he.net/man1/debconf-gettextize">debconf-gettextize(1)</a>, <a href="http://man.he.net/man1/debconf-updatepo">debconf-updatepo(1)</a>, <a href="http://man.he.net/man1/dh_installdebconf">dh_installdebconf(1)</a>, <a href="http://man.he.net/man1/podebconf-report-po">podebconf-report-po(1)</a>, <a href="http://man.he.net/man1/po2debconf">po2debconf(1)</a>, <a href="http://man.he.net/man7/debconf-devel">debconf-devel(7)</a>.</p>
+
+<h1 id="TC-GI">T&Aacute;C GI&#x1EA2;</h1>
+
+<pre><code>  Martin Quinson &lt;Martin.Quinson@ens-lyon.fr&gt;
+  Denis Barbier &lt;barbier@linuxfr.org&gt;</code></pre>
+
+
+</body>
+
+</html>
+
+

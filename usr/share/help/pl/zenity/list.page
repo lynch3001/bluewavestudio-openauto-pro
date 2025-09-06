@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="list" xml:lang="pl">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Używanie opcji <cmd>--list</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+  <title>Okno z listą</title>
+    <p>Użyj opcji <cmd>--list</cmd>, aby utworzyć okno z listą. <app>Zenity</app> zwraca wpisy w pierwszej kolumnie tekstu wybranych rzędów na standardowym wyjściu.</p>
+
+    <p>Dane dla okna muszą być podane kolumna po kolumnie, rząd po rzędzie. Dane mogą być podawane do okna przez standardowe wejście. Każdy wpis musi być rozdzielony znakiem nowego wiersza.</p>
+
+    <p>Jeśli używana jest opcja <cmd>--checklist</cmd> lub <cmd>--radiolist</cmd>, to każdy rząd musi zaczynać się od „TRUE” (prawda) lub „FALSE” (fałsz).</p>
+
+    <p>Okno z listą obsługuje te opcje:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--column</cmd>=<var>kolumna</var></title>
+	  <p>Określa nagłówki kolumn wyświetlane w oknie z listą. Należy podać opcję <cmd>--column</cmd> dla każdej kolumny wyświetlanej w oknie.</p>
+      </item>
+
+      <item>
+        <title><cmd>--checklist</cmd></title>
+	  <p>Określa, że pierwsza kolumna w oknie z listą zawiera pola wyboru.</p>
+      </item>
+
+      <item>
+        <title><cmd>--radiolist</cmd></title>
+	  <p>Określa, że pierwsza kolumna w oknie z listą zawiera pola radiowe.</p>
+      </item>
+
+      <item>
+        <title><cmd>--editable</cmd></title>
+	  <p>Umożliwia modyfikowanie wyświetlanych elementów.</p>
+      </item>
+
+      <item>
+        <title><cmd>--separator</cmd>=<var>separator</var></title>
+	  <p>Określa ciąg używany, kiedy okno z listą zwraca wybrane wpisy.</p>
+      </item>
+
+      <item>
+        <title><cmd>--print-column</cmd>=<var>kolumna</var></title>
+	  <p>Określa, którą kolumnę wyświetlać po wybraniu. Domyślna kolumna to „1”. Można użyć „ALL”, aby wyświetlić wszystkie kolumny listy.</p>
+      </item>
+
+    </terms>
+
+    <p>Ten przykładowy skrypt pokazuje, jak utworzyć okno z listą:</p>
+<code>
+#!/bin/sh
+
+zenity --list \
+  --title="Wybór błędów do wyświetlenia" \
+  --column="Numer błędu" --column="Ciężkość" --column="Opis" \
+    992383 Zwykła "GtkTreeView zawiesza się po zaznaczeniu wielu elementów" \
+    293823 Wysoka "Słownik GNOME nie obsługuje pośrednika" \
+    393823 Krytyczna "Modyfikowanie menu nie działa w GNOME 2.0"
+</code>
+
+
+    <figure>
+      <title>Przykład okna z listą</title>
+      <desc>Przykład okna <app>Zenity</app> z listą</desc>
+      <media type="image" mime="image/png" src="figures/zenity-list-screenshot.png"/>
+    </figure>
+</page>

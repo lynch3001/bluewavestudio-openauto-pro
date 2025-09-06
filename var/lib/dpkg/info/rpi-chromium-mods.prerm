@@ -1,0 +1,14 @@
+#!/bin/sh
+
+ARCH=$(dpkg --print-architecture)
+
+if [ "$ARCH" !=  "armhf" ] ; then
+	if [ "$1" = remove  ]; then
+		[ -L /etc/chromium/master_preferences ] && rm /etc/chromium/master_preferences
+		dpkg-divert --remove --package rpi-chromium-mods --rename --divert /etc/chromium/master_preferences.distrib /etc/chromium/master_preferences
+	fi
+fi
+
+
+
+exit 0

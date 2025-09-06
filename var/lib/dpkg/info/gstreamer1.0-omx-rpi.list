@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/gstreamer-1.0
+/usr/lib/arm-linux-gnueabihf/gstreamer-1.0/libgstomx-rpi.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/gstreamer1.0-omx-rpi
+/usr/share/doc/gstreamer1.0-omx-rpi/README.Debian
+/usr/share/doc/gstreamer1.0-omx-rpi/changelog.Debian.gz
+/usr/share/doc/gstreamer1.0-omx-rpi/changelog.gz
+/usr/share/doc/gstreamer1.0-omx-rpi/copyright

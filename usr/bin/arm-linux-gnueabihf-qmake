@@ -1,0 +1,22 @@
+#!/bin/sh
+
+QMAKE_MODE=
+
+if [ "x$1" = x-query ]; then
+	exec /usr/lib/qt5/bin/qmake "$@" -qtconf /usr/lib/arm-linux-gnueabihf/qt5/qt.conf
+elif [ "x$1" = x-makefile ] || [ "x$1" = x-project ]; then
+	QMAKE_MODE="$1"
+	shift
+fi
+
+exec /usr/lib/qt5/bin/qmake \
+	$QMAKE_MODE \
+	-qtconf /usr/lib/arm-linux-gnueabihf/qt5/qt.conf \
+	-early \
+	QMAKE_CC=${CC:-arm-linux-gnueabihf-gcc} \
+	QMAKE_CXX=${CXX:-arm-linux-gnueabihf-g++} \
+	QMAKE_LINK=${CXX:-arm-linux-gnueabihf-g++} \
+	QMAKE_QMAKE=/usr/bin/arm-linux-gnueabihf-qmake \
+	PKG_CONFIG=arm-linux-gnueabihf-pkg-config \
+	-before \
+	"$@"

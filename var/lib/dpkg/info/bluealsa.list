@@ -1,0 +1,7 @@
+/etc
+/etc/alsa
+/etc/alsa/conf.d
+/etc/alsa/conf.d/20-bluealsa.conf
+/etc/dbus-1
+/etc/dbus-1/system.d
+/etc/dbus-1/system.d/bluealsa.conf

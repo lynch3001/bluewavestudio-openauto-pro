@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pref-cookies" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="index#privacy"/>
+    <link type="guide" xref="pref"/>
+    <revision pkgversion="3.10" date="2013-07-02" status="candidate"/>
+    <revision pkgversion="3.12" date="2014-01-28" status="final"/>
+
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Michael Hill</name>
+      <email its:translate="no">mdhill@gnome.org</email>
+      <years/>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Como eu escolho quais sites que eu permito usar cookies?</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013,</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Configurando a preferência de cookie</title>
+
+  <!-- Include an explanation about cookies. -->
+  <include xmlns="http://www.w3.org/2001/XInclude" href="cookies.xml" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:page/mal:p)"/>
+
+  <p>Você pode especificar se deseja aceitar cookies e de quais sites.</p>
+
+  <steps>
+    <item>
+      <p>Abra <guiseq><gui style="menu">Web</gui><gui style="menuitem">Preferências</gui><gui style="tab">Privacidade</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Selecione se deseja aceitar cookies de todos os sites, aceitar cookies de apenas sites que você tenha visitado ou não aceitar qualquer cookie.</p>
+    </item>
+  </steps>
+
+  <p>Você normalmente deve usar <gui>Apenas sites que você visita</gui> porque essa opção permite que você se autentique em suas contas na maioria dos sites enquanto evita sites que você não tenha visitado ao deixar cookies.</p>
+
+  <p>Se você escolher <gui>Sempre aceitar</gui> cookies, então os sites que você não visitou serão capazes de deixar <em>cookies terceirizados</em>. Cookies terceirizados geralmente são usados por anunciantes e sites de mídia social para rastrear sua atividade pelos sites e oferecer conteúdo direcionado. Note que alguns sites, tal como Outlook.com, usa cookies terceirizados para monitorar se você está autenticado.</p>
+
+  <p>Se você <gui>Nunca aceitar</gui> cookies, você pode presenciar problemas em alguns sites como se autenticar em suas contas, salvar suas preferências ou não ser capaz de adicionar itens a seu carrinho de compras.</p>
+
+</page>

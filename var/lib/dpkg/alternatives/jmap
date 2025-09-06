@@ -1,0 +1,9 @@
+auto
+/usr/bin/jmap
+jmap.1.gz
+/usr/share/man/man1/jmap.1.gz
+
+/usr/lib/jvm/java-8-openjdk-armhf/bin/jmap
+1081
+/usr/lib/jvm/java-8-openjdk-armhf/man/man1/jmap.1.gz
+

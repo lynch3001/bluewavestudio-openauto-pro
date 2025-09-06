@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/SoapySDR
+/usr/lib/arm-linux-gnueabihf/SoapySDR/modules0.6
+/usr/lib/arm-linux-gnueabihf/SoapySDR/modules0.6/libbladeRFSupport.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/soapysdr0.6-module-bladerf
+/usr/share/doc/soapysdr0.6-module-bladerf/README.md
+/usr/share/doc/soapysdr0.6-module-bladerf/changelog.Debian.gz
+/usr/share/doc/soapysdr0.6-module-bladerf/changelog.gz
+/usr/share/doc/soapysdr0.6-module-bladerf/copyright

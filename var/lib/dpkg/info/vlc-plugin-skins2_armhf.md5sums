@@ -1,0 +1,11 @@
+3bff1bf6cca8d6f40345ee4a17c2522b  usr/bin/svlc
+ef29dafefa4abea5f9191801e2f6d2e7  usr/lib/arm-linux-gnueabihf/vlc/plugins/gui/libskins2_plugin.so
+143dd060cd683f7da6fa97b4de08f0bc  usr/share/bug/vlc-plugin-skins2/control
+db5a9ef7d588ac8bafe061d1968be5cd  usr/share/bug/vlc-plugin-skins2/presubj
+37467d5ce4d242efd1f03dc9e91b12dd  usr/share/doc/vlc-plugin-skins2/changelog.Debian.gz
+c6362b61e68a63912965a8c76532f3da  usr/share/doc/vlc-plugin-skins2/changelog.gz
+3d80bde9e43c6c323bf2f26bae755756  usr/share/doc/vlc-plugin-skins2/copyright
+a83a015f0750992d09ae7a0c3682a971  usr/share/vlc/skins2/default.vlt
+0f8768e483b120f21be0a3cf65440039  usr/share/vlc/skins2/skin.catalog
+dfd78bdfe8efd8b0e361d1fc3bb44b55  usr/share/vlc/skins2/skin.dtd
+1f8da3e81466e97ebcbff57e0f47a585  usr/share/vlc/skins2/winamp2.xml

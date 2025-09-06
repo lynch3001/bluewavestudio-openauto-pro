@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libp8-platform.so.2.1.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libp8-platform2
+/usr/share/doc/libp8-platform2/changelog.Debian.gz
+/usr/share/doc/libp8-platform2/copyright
+/usr/lib/arm-linux-gnueabihf/libp8-platform.so.2

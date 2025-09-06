@@ -1,0 +1,6 @@
+3cab72ecd6739dbb8bdb522955c6c6e3  usr/lib/arm-linux-gnueabihf/libcdda_interface.so.0.10.2
+38f7c5efa10449a91685cb6c7619d591  usr/lib/arm-linux-gnueabihf/libcdda_paranoia.so.0.10.2
+7ccb50160fee60ff9527e877027d7491  usr/share/doc/libcdparanoia0/README.gz
+572cea403db72ad4977225ab6db3aa3f  usr/share/doc/libcdparanoia0/changelog.Debian.gz
+182bbd9c73382efc53ad2854c12eb541  usr/share/doc/libcdparanoia0/copyright
+9d3c57a7a485b399ea873c7d9d3dfb9d  usr/share/lintian/overrides/libcdparanoia0

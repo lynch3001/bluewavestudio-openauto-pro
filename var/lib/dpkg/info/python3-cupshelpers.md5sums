@@ -1,0 +1,11 @@
+02fdb7d793dd22ce4cd8e91158688bb2  usr/lib/python3/dist-packages/cupshelpers-1.0.egg-info
+d930c84d4d48ca3c775d2f983edfd998  usr/lib/python3/dist-packages/cupshelpers/__init__.py
+9c299b4cf969b2cb124aaf483a168047  usr/lib/python3/dist-packages/cupshelpers/config.py
+9f9832a09ad1f825c8474e30b6730cc3  usr/lib/python3/dist-packages/cupshelpers/cupshelpers.py
+761c675d9f61f16870cea31e3b3b6f61  usr/lib/python3/dist-packages/cupshelpers/installdriver.py
+a11ef21aec70a4c347843877075644a1  usr/lib/python3/dist-packages/cupshelpers/openprinting.py
+26bc6b33d0f6203f33367cbdfa27a23c  usr/lib/python3/dist-packages/cupshelpers/ppds.py
+36a3cf190751a435b94a5ab082914e25  usr/lib/python3/dist-packages/cupshelpers/xmldriverprefs.py
+9295518f94d40925e066df0b19b13249  usr/share/doc/python3-cupshelpers/changelog.Debian.gz
+7edd8fa73c8da44ad9ce2b137934e2a3  usr/share/doc/python3-cupshelpers/changelog.gz
+e2479f9f3ce66a7d0670a7aacedd42cc  usr/share/doc/python3-cupshelpers/copyright

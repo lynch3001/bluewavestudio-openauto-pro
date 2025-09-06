@@ -1,0 +1,19 @@
+gst-omx for Debian
+-----------------
+
+For users who are interested in gst-omx please note that just install
+gstreamer1.0-omx-generic* won't give you openmax acceleration.
+To make gst-omx work usually you need a gstreamer1.0-omx-<vendor>-config and/or
+gstreamer1.0-omx-<vendor> with openmax IL provided by vendor.
+
+For developers who want to integrate openmax IL as a gstreamer plugin
+for Debian please make a new package and use update-alternatives
+to /etc/xdg/gstomx.conf and/or
+/usr/lib/@DEB_HOST_MULTIARCH@/gstreamer-1.0/libgstomx.so with the priority at
+least 50. It depends on if the openmax IL of the vendor compatible with generic
+build or not. Please refer the postinst/prerm scripts in package
+gstreamer1.0-omx-bellagio-config if generic build works. Otherwise you also
+need to package the custom build of gstomx and update-alternative the
+libgstomx.so. Please refer gstreamer1.0-omx-generic's postinst/prerm.
+
+ -- Ying-Chun Liu (PaulLiu) <paulliu@debian.org>  Fri, 17 Mar 2017 18:43:28 +0800

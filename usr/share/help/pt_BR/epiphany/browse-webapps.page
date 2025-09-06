@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="browse-webapps" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="index#adv"/>
+    <link type="seealso" xref="browse-web"/>
+    <revision pkgversion="3.10" date="2013-07-05" status="review"/>
+
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+<!--    <credit type="copyright editor">
+      <name></name>
+      <email its:translate="no"></email>
+      <years></years>
+    </credit>-->
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>O que é um <em>aplicativo web</em> e como eu o uso?</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013,</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Criando um aplicativo web</title>
+
+  <p>Você pode salvar páginas web como um <em>aplicativo web</em>. Isso vai adicionar um link para as páginas ao <link href="help:gnome-help/shell-introduction#activities">panorama de atividades</link>. Quando você abre um aplicativo web, ele é mostrado um tipo especial de janela sem a barra de endereço ou os menus.</p>
+
+  <steps>
+    <item>
+      <p>Abra a página web que você deseja salvar.</p>
+    </item>
+    <item>
+      <p>Abra o menu no canto superior direito da janela e, então, selecione <gui style="menuitem">Salvar como aplicativo web…</gui>.</p>
+    </item>
+    <item>
+      <p>Nomeie seu aplicativo web e, então, pressione <gui style="button">Criar</gui>.</p>
+    </item>
+  </steps>
+
+  <p>Você pode agora iniciar o aplicativo web do panorama de atividades. Para pesquisar por seu aplicativo, comece a digitar o nome será mostrada com os outros resultados de pesquisa.</p>
+
+</page>

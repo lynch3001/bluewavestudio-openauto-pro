@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/python-pianohat
+/usr/share/doc/python-pianohat/changelog.gz
+/usr/share/doc/python-pianohat/copyright
+/usr/lib
+/usr/lib/python2.7
+/usr/lib/python2.7/dist-packages
+/usr/lib/python2.7/dist-packages/pianohat-0.1.0.egg-info
+/usr/lib/python2.7/dist-packages/pianohat-0.1.0.egg-info/requires.txt
+/usr/lib/python2.7/dist-packages/pianohat-0.1.0.egg-info/dependency_links.txt
+/usr/lib/python2.7/dist-packages/pianohat-0.1.0.egg-info/top_level.txt
+/usr/lib/python2.7/dist-packages/pianohat-0.1.0.egg-info/PKG-INFO
+/usr/lib/python2.7/dist-packages/pianohat.py

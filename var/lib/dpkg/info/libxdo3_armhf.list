@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libxdo.so.3
+/usr/share
+/usr/share/doc
+/usr/share/doc/libxdo3
+/usr/share/doc/libxdo3/changelog.Debian.gz
+/usr/share/doc/libxdo3/changelog.gz
+/usr/share/doc/libxdo3/copyright

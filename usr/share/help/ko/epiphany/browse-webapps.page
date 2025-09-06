@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="browse-webapps" xml:lang="ko">
+
+  <info>
+    <link type="guide" xref="index#adv"/>
+    <link type="seealso" xref="browse-web"/>
+    <revision pkgversion="3.10" date="2013-07-05" status="review"/>
+
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+<!--    <credit type="copyright editor">
+      <name></name>
+      <email its:translate="no"></email>
+      <years></years>
+    </credit>-->
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc><em>웹 애플리케이션</em>이 무엇이고 어떻게 사용할 수 있나요?</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>ChangSeok Oh</mal:name>
+      <mal:email>changseok@gnome.org</mal:email>
+      <mal:years>2015, 2016, 2017, 2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gyuseok Jung</mal:name>
+      <mal:email>jgyuseok@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>웹 애플리케이션 만들기</title>
+
+  <p>웹페이지를 <em>웹 애플리케이션</em>으로 저장할 수 있습니다. 이는 해당 페이지에 대한 링크를 <link href="help:gnome-help/shell-introduction#activities">활동 미리보기</link>에 추가합니다. 당신이 웹 애플리케이션을 열 때, 주소창과 메뉴가 없는 특별한 형태의 창에서 그것이 보여집니다.</p>
+
+  <steps>
+    <item>
+      <p>저장하려는 웹페이지를 여세요.</p>
+    </item>
+    <item>
+      <p>창 오른쪽 상단의 메뉴를 열고, <gui style="menuitem">웹 애플리케이션으로 저장…</gui>을 선택하세요.</p>
+    </item>
+    <item>
+      <p>당신의 앱 애플리케이션에 이름을 짓고, <gui style="button">만들기</gui>을 누르세요.</p>
+    </item>
+  </steps>
+
+  <p>이제 활동 미리보기에서 그 웹 애플리케이션을 시작할 수 있습니다. 당신의 애플리케이션을 검색하려면, 이름을 입력하세요. 그러면 다른 검색 결과와 같이 보일 것 입니다.</p>
+
+</page>

@@ -1,0 +1,6 @@
+d1b9012524be4e817f91cfbf197837c7  usr/lib/arm-linux-gnueabihf/libpostproc.so.55.3.100
+c7a705a09c93013812b3921746c4f651  usr/lib/arm-linux-gnueabihf/neon/vfp/libpostproc.so.55.3.100
+c97abc6c325041c5779374c3c50a563a  usr/share/doc/libpostproc55/changelog.Debian.gz
+099ba7b289ce8a4e9e66051edb63b6b3  usr/share/doc/libpostproc55/changelog.gz
+61af5f05179be74293344b58d088a393  usr/share/doc/libpostproc55/copyright
+1a622db361c1630ac248c8eb667e6f0b  usr/share/lintian/overrides/libpostproc55

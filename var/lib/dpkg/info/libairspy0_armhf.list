@@ -1,0 +1,17 @@
+/.
+/lib
+/lib/udev
+/lib/udev/rules.d
+/lib/udev/rules.d/60-libairspy0.rules
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libairspy.so.1.0.9
+/usr/share
+/usr/share/doc
+/usr/share/doc/libairspy0
+/usr/share/doc/libairspy0/changelog.Debian.gz
+/usr/share/doc/libairspy0/copyright
+/usr/share/metainfo
+/usr/share/metainfo/com.airspy.host.metainfo.xml
+/usr/lib/arm-linux-gnueabihf/libairspy.so.0

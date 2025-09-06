@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/include
+/usr/include/gif_lib.h
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libgif.a
+/usr/share
+/usr/share/doc
+/usr/share/doc/libgif-dev
+/usr/share/doc/libgif-dev/AUTHORS
+/usr/share/doc/libgif-dev/NEWS.gz
+/usr/share/doc/libgif-dev/TODO
+/usr/share/doc/libgif-dev/changelog.Debian.gz
+/usr/share/doc/libgif-dev/changelog.gz
+/usr/share/doc/libgif-dev/copyright
+/usr/lib/arm-linux-gnueabihf/libgif.so

@@ -1,0 +1,12 @@
+13ae21c33599d3235b7b3acdb3f832a9  usr/lib/python2.7/dist-packages/enum/README
+b808ee5057395d15c371a0418b011880  usr/lib/python2.7/dist-packages/enum/__init__.py
+975d8b2f1639012975035aa271c4e7b2  usr/lib/python2.7/dist-packages/enum/doc/enum.pdf
+9f2a4ac2445e3899e986d9dcc7d76a6e  usr/lib/python2.7/dist-packages/enum/doc/enum.rst
+b2d64647b75dcc3fda9578d2c0d63d1b  usr/lib/python2.7/dist-packages/enum/test.py
+e415af9c014db00a425e0f3358add9f5  usr/lib/python2.7/dist-packages/enum34-1.1.6.egg-info/PKG-INFO
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python2.7/dist-packages/enum34-1.1.6.egg-info/dependency_links.txt
+2e4ebe9fb9dbbe76ad1ce9ae28cd5f00  usr/lib/python2.7/dist-packages/enum34-1.1.6.egg-info/top_level.txt
+5aa799175b7b4dc229633c2aa32c7831  usr/share/doc/python-enum34/changelog.Debian.gz
+a5d8522f691b279e1357f860419e36a9  usr/share/doc/python-enum34/copyright
+6867cf8deb822d3b421e52d8b8b8e630  usr/share/lintian/overrides/python-enum34
+fecc458da5595411cabd2c9f6dcdc854  usr/share/python/dist/python-enum34

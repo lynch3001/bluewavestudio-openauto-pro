@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/qt5
+/usr/lib/arm-linux-gnueabihf/qt5/plugins
+/usr/lib/arm-linux-gnueabihf/qt5/plugins/platformthemes
+/usr/lib/arm-linux-gnueabihf/qt5/plugins/platformthemes/libqgtk3.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/qt5-gtk-platformtheme
+/usr/share/doc/qt5-gtk-platformtheme/changelog.Debian.gz
+/usr/share/doc/qt5-gtk-platformtheme/copyright

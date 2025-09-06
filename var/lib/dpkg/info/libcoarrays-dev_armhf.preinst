@@ -1,0 +1,13 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_fortran_mod/UNDECLARED
+multiarch="arm-linux-gnueabihf"
+base="gfortran-mod-15"
+canoncomp='arm-linux-gnueabihf-gfortran-8'
+
+mkdir -p /usr/lib/$multiarch/fortran/$base
+if ! test -x  /usr/lib/$multiarch/fortran/$canoncomp ; then
+  ln -sf /usr/lib/$multiarch/fortran/$base /usr/lib/$multiarch/fortran/$canoncomp
+fi
+
+# End automatically added section

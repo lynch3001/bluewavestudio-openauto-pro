@@ -1,0 +1,4 @@
+# The desktop-command-not-in-package because that's in a depends package command.
+desktop-command-not-in-package usr/share/applications/lxde-screenlock.desktop lxlock
+# The LXDE.desktop is never should be shown in menus so does not need Keywords
+desktop-entry-lacks-keywords-entry usr/share/xsessions/LXDE.desktop

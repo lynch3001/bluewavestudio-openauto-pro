@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libossp-uuid++.so.16.0.22
+/usr/lib/arm-linux-gnueabihf/libossp-uuid.so.16.0.22
+/usr/share
+/usr/share/doc
+/usr/share/doc/libossp-uuid16
+/usr/share/doc/libossp-uuid16/changelog.Debian.armhf.gz
+/usr/share/doc/libossp-uuid16/changelog.Debian.gz
+/usr/share/doc/libossp-uuid16/changelog.gz
+/usr/share/doc/libossp-uuid16/copyright
+/usr/lib/arm-linux-gnueabihf/libossp-uuid++.so.16
+/usr/lib/arm-linux-gnueabihf/libossp-uuid.so.16

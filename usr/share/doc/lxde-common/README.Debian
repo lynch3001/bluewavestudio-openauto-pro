@@ -1,0 +1,68 @@
+lxde-common
+-----------
+
+
+Important Note
+--------------
+
+lxde-common package provides a set of default configuration for LXDE.
+
+
+Default LXDE Hotkeys with Default openbox-lxde WM
+-------------------------------------------------
+
+Desktop Switching
+
+	DesktopLeft		C-A-Left
+	DesktopRight		C-A-Right
+	DesktopUp		C-A-Up
+	DesktopDown		C-A-Down
+	SendToDesktopLeft	S-A-Left
+	SendToDesktopRight	S-A-Right
+	SendToDesktopUp		S-A-Up
+	SendToDesktopDown	S-A-Down
+	Desktop1		W-F1
+	Desktop2		W-F2
+	Desktop3		W-F3
+	Desktop4		W-F4
+	ToggleShowDesktop	W-d
+	ToggleShowDesktop	C-A-d
+
+Windows Operation
+
+	Close			A-F4
+	LowerFocus		A-Escape
+	ShowMenu		A-space
+	ToggleFullscreen	A-F11
+
+Window Switching
+
+	NextWindow		A-Tab
+	PreviousWindow		A-S-Tab
+	SwitchToPanelOrDesktop	C-A-Tab
+
+Running Applications
+
+	File Manager		W-e
+	Task Manager		A-C-Delete
+	Monitors Manager	XF86Display
+
+Keybindings from LXPanel
+
+	Popup Run Window	W-r and A-F2
+	Show LXPanel Menu	C-Escape and A-F1
+
+Take Screenshot
+	Run gnome-screenshot	Print
+
+No Display Managers Users
+-------------------------
+
+If you use startx. Choose startlxde script to start up LXDE.
+
+More Information
+----------------
+
+See http://wiki.lxde.org/en/Debian for more info.
+
+ -- Andrew Lee (李健秋) <ajqlee@debian.org>  Wed, 02 Jun 2010 00:24:55 +0800

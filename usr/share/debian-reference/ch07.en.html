@@ -1,0 +1,2922 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Chapter 7. The X Window System</title>
+    <link rel="stylesheet" type="text/css" href="debian-reference.css"/>
+    <meta name="generator" content="DocBook XSL Stylesheets V1.79.1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="home" href="index.en.html" title="Debian Reference"/>
+    <link rel="up" href="index.en.html" title="Debian Reference"/>
+    <link rel="prev" href="ch06.en.html" title="Chapter 6. Network applications"/>
+    <link rel="next" href="ch08.en.html" title="Chapter 8. I18N and L10N"/>
+  </head>
+  <body>
+    <div class="navheader">
+      <table width="100%" summary="Navigation header">
+        <tr>
+          <th colspan="3" align="center">Chapter 7. The X Window System</th>
+        </tr>
+        <tr>
+          <td align="left"><a accesskey="p" href="ch06.en.html"><img src="images/prev.png" alt="Prev"/></a> </td>
+          <th width="60%" align="center"> </th>
+          <td align="right"> <a accesskey="n" href="ch08.en.html"><img src="images/next.png" alt="Next"/></a></td>
+        </tr>
+      </table>
+      <hr/>
+    </div>
+    <div class="chapter">
+      <div class="titlepage">
+        <div>
+          <div>
+            <h1 class="title"><a id="_the_x_window_system"/>Chapter 7. The X Window System</h1>
+          </div>
+        </div>
+      </div>
+      <div class="toc">
+        <p>
+          <strong>Table of Contents</strong>
+        </p>
+        <dl class="toc">
+          <dt>
+            <span class="section">
+              <a href="ch07.en.html#_key_packages">7.1. Key packages</a>
+            </span>
+          </dt>
+          <dt>
+            <span class="section">
+              <a href="ch07.en.html#_setting_up_desktop_environment">7.2. Setting up desktop environment</a>
+            </span>
+          </dt>
+          <dd>
+            <dl>
+              <dt>
+                <span class="section">
+                  <a href="ch07.en.html#_debian_menu">7.2.1. Debian menu</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="ch07.en.html#_freedesktop_org_menu">7.2.2. Freedesktop.org menu</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="ch07.en.html#_debian_menu_from_freedesktop_org_menu">7.2.3. Debian menu from Freedesktop.org menu</a>
+                </span>
+              </dt>
+            </dl>
+          </dd>
+          <dt>
+            <span class="section">
+              <a href="ch07.en.html#_the_server_client_relationship">7.3. The server/client relationship</a>
+            </span>
+          </dt>
+          <dt>
+            <span class="section">
+              <a href="ch07.en.html#_the_x_server">7.4. The X server</a>
+            </span>
+          </dt>
+          <dd>
+            <dl>
+              <dt>
+                <span class="section">
+                  <a href="ch07.en.html#_the_re_configuration_of_the_x_server">7.4.1. The (re)configuration of the X server</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="ch07.en.html#_the_connection_methods_to_the_x_server">7.4.2. The connection methods to the X server</a>
+                </span>
+              </dt>
+            </dl>
+          </dd>
+          <dt>
+            <span class="section">
+              <a href="ch07.en.html#_starting_the_x_window_system">7.5. Starting the X Window System</a>
+            </span>
+          </dt>
+          <dd>
+            <dl>
+              <dt>
+                <span class="section">
+                  <a href="ch07.en.html#_starting_x_session_with_gdm3">7.5.1. Starting X session with gdm3</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="ch07.en.html#_customizing_the_x_session_classic_method">7.5.2. Customizing the X session (classic method)</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="ch07.en.html#_customizing_the_x_session_new_method">7.5.3. Customizing the X session (new method)</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="ch07.en.html#_connecting_a_remote_x_client_via_ssh">7.5.4. Connecting a remote X client via SSH</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="ch07.en.html#_secure_x_terminal_via_the_internet">7.5.5. Secure X terminal via the Internet</a>
+                </span>
+              </dt>
+            </dl>
+          </dd>
+          <dt>
+            <span class="section">
+              <a href="ch07.en.html#_fonts_in_the_x_window">7.6. Fonts in the X Window</a>
+            </span>
+          </dt>
+          <dd>
+            <dl>
+              <dt>
+                <span class="section">
+                  <a href="ch07.en.html#_basic_fonts">7.6.1. Basic fonts</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="ch07.en.html#_additional_fonts">7.6.2. Additional fonts</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="ch07.en.html#_cjk_fonts">7.6.3. CJK fonts</a>
+                </span>
+              </dt>
+            </dl>
+          </dd>
+          <dt>
+            <span class="section">
+              <a href="ch07.en.html#_x_applications">7.7. X applications</a>
+            </span>
+          </dt>
+          <dd>
+            <dl>
+              <dt>
+                <span class="section">
+                  <a href="ch07.en.html#_x_office_applications">7.7.1. X office applications</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="ch07.en.html#_x_utility_applications">7.7.2. X utility applications</a>
+                </span>
+              </dt>
+            </dl>
+          </dd>
+          <dt>
+            <span class="section">
+              <a href="ch07.en.html#_the_x_trivia">7.8. The X trivia</a>
+            </span>
+          </dt>
+          <dd>
+            <dl>
+              <dt>
+                <span class="section">
+                  <a href="ch07.en.html#_clipboard">7.8.1. Clipboard</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="ch07.en.html#_keymaps_and_pointer_button_mappings_in_x">7.8.2. Keymaps and pointer button mappings in X</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="ch07.en.html#_classic_x_clients">7.8.3. Classic X clients</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="ch07.en.html#_the_x_terminal_emulator_xterm">7.8.4. The X terminal emulator — xterm</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="ch07.en.html#_running_x_clients_as_root">7.8.5. Running X clients as root</a>
+                </span>
+              </dt>
+            </dl>
+          </dd>
+        </dl>
+      </div>
+      <div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+        <table border="0" summary="Warning">
+          <tr>
+            <td rowspan="2" align="center" valign="top">
+              <img alt="[Warning]" src="images/warning.png"/>
+            </td>
+            <th align="left">Warning</th>
+          </tr>
+          <tr>
+            <td align="left" valign="top">
+              <p>This chapter is getting outdated since this is based on Debian 7.0 (<code class="literal">Wheezy</code>) released in 2013.</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <p>The <a class="ulink" href="https://en.wikipedia.org/wiki/X_Window_System">X Window System</a> on the Debian system is based on the source from <a class="ulink" href="http://www.x.org/">X.Org</a>.</p>
+      <div class="section">
+        <div class="titlepage">
+          <div>
+            <div>
+              <h2 class="title"><a id="_key_packages"/>7.1. Key packages</h2>
+            </div>
+          </div>
+        </div>
+        <p>There are a few (meta)packages provided to ease installation.</p>
+        <div class="table">
+          <a id="listofkeymetapackagesforxwindow"/>
+          <p class="title">
+            <strong>Table 7.1. List of key (meta)packages for X Window</strong>
+          </p>
+          <div class="table-contents">
+            <table class="table" summary="List of key (meta)packages for X Window" border="1">
+              <colgroup>
+                <col style="text-align: left"/>
+                <col style="text-align: left"/>
+                <col style="text-align: left"/>
+                <col style="text-align: left"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <th style="text-align: left">
+    (meta)package
+    </th>
+                  <th style="text-align: left">
+    popcon
+    </th>
+                  <th style="text-align: left">
+    size
+    </th>
+                  <th style="text-align: left">
+    description
+    </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.debian.org/sid/xorg">
+                <code class="literal">xorg</code>
+              </a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=xorg">I:500</a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.qa.debian.org/x/xorg.html">52</a>
+                  </td>
+                  <td style="text-align: left">
+    X libraries, an X server, a set of fonts, and a group of basic X clients and utilities (metapackage)
+    </td>
+                </tr>
+                <tr>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.debian.org/sid/xserver-xorg">
+                <code class="literal">xserver-xorg</code>
+              </a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=xserver-xorg">V:83, I:538</a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.qa.debian.org/x/xserver-xorg.html">238</a>
+                  </td>
+                  <td style="text-align: left">
+    full suite of the X server and its configuration
+    </td>
+                </tr>
+                <tr>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.debian.org/sid/xbase-clients">
+                <code class="literal">xbase-clients</code>
+              </a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=xbase-clients">I:38</a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.qa.debian.org/x/xbase-clients.html">46</a>
+                  </td>
+                  <td style="text-align: left">
+    miscellaneous assortment of X clients (metapackage)
+    </td>
+                </tr>
+                <tr>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.debian.org/sid/x11-common">
+                <code class="literal">x11-common</code>
+              </a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=x11-common">V:424, I:792</a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.qa.debian.org/x/x11-common.html">305</a>
+                  </td>
+                  <td style="text-align: left">
+    filesystem infrastructure for the X Window System
+    </td>
+                </tr>
+                <tr>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.debian.org/sid/xorg-docs">
+                <code class="literal">xorg-docs</code>
+              </a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=xorg-docs">I:7</a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.qa.debian.org/x/xorg-docs.html">2032</a>
+                  </td>
+                  <td style="text-align: left">
+    miscellaneous documentation for the X.Org software suite
+    </td>
+                </tr>
+                <tr>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.debian.org/sid/menu">
+                <code class="literal">menu</code>
+              </a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=menu">V:73, I:246</a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.qa.debian.org/m/menu.html">1435</a>
+                  </td>
+                  <td style="text-align: left">
+    generate the Debian menu for all menu-aware applications
+    </td>
+                </tr>
+                <tr>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.debian.org/sid/menu-xdg">
+                <code class="literal">menu-xdg</code>
+              </a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=menu-xdg">V:35, I:129</a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.qa.debian.org/m/menu-xdg.html">27</a>
+                  </td>
+                  <td style="text-align: left">
+    convert the Debian menu structure to the <a class="ulink" href="http://www.freedesktop.org/">freedesktop.org</a> xdg menu structure
+    </td>
+                </tr>
+                <tr>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.debian.org/sid/xdg-utils">
+                <code class="literal">xdg-utils</code>
+              </a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=xdg-utils">V:260, I:559</a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.qa.debian.org/x/xdg-utils.html">327</a>
+                  </td>
+                  <td style="text-align: left">
+    utilities to integrate desktop environment provided by the <a class="ulink" href="http://www.freedesktop.org/">freedesktop.org</a>
+    </td>
+                </tr>
+                <tr>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.debian.org/sid/task-gnome-desktop">
+                <code class="literal">task-gnome-desktop</code>
+              </a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=task-gnome-desktop">I:202</a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.qa.debian.org/t/task-gnome-desktop.html">6</a>
+                  </td>
+                  <td style="text-align: left">
+    standard <a class="ulink" href="https://en.wikipedia.org/wiki/GNOME">GNOME</a> desktop environment (metapackage)
+    </td>
+                </tr>
+                <tr>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.debian.org/sid/task-kde-desktop">
+                <code class="literal">task-kde-desktop</code>
+              </a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=task-kde-desktop">I:69</a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.qa.debian.org/t/task-kde-desktop.html">6</a>
+                  </td>
+                  <td style="text-align: left">
+    core <a class="ulink" href="https://en.wikipedia.org/wiki/KDE">KDE</a> desktop environment  (metapackage)
+    </td>
+                </tr>
+                <tr>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.debian.org/sid/task-xfce-desktop">
+                <code class="literal">task-xfce-desktop</code>
+              </a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=task-xfce-desktop">I:111</a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.qa.debian.org/t/task-xfce-desktop.html">6</a>
+                  </td>
+                  <td style="text-align: left"><a class="ulink" href="https://en.wikipedia.org/wiki/Xfce">Xfce</a> lightweight desktop environment (metapackage)
+    </td>
+                </tr>
+                <tr>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.debian.org/sid/task-lxde-desktop">
+                <code class="literal">task-lxde-desktop</code>
+              </a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=task-lxde-desktop">I:44</a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.qa.debian.org/t/task-lxde-desktop.html">6</a>
+                  </td>
+                  <td style="text-align: left"><a class="ulink" href="https://en.wikipedia.org/wiki/LXDE">LXDE</a> lightweight desktop environment (metapackage)
+    </td>
+                </tr>
+                <tr>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.debian.org/sid/fluxbox">
+                <code class="literal">fluxbox</code>
+              </a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=fluxbox">V:2, I:11</a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.qa.debian.org/f/fluxbox.html">3860</a>
+                  </td>
+                  <td style="text-align: left"><a class="ulink" href="https://en.wikipedia.org/wiki/Fluxbox">Fluxbox</a>: package for highly configurable and low resource <a class="ulink" href="https://en.wikipedia.org/wiki/X_window_manager">X window manager</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <br class="table-break"/>
+        <p>For the basics of X, refer to <span class="citerefentry"><span class="refentrytitle">X</span>(7)</span> and <a class="ulink" href="http://www.tldp.org/HOWTO/XWindow-User-HOWTO.html">the LDP XWindow-User-HOWTO</a>.</p>
+      </div>
+      <div class="section">
+        <div class="titlepage">
+          <div>
+            <div>
+              <h2 class="title"><a id="_setting_up_desktop_environment"/>7.2. Setting up desktop environment</h2>
+            </div>
+          </div>
+        </div>
+        <p>A <a class="ulink" href="https://en.wikipedia.org/wiki/Desktop_environment">desktop environment</a> is usually a combination of a <a class="ulink" href="https://en.wikipedia.org/wiki/X_window_manager">X window manager</a>, a file manager, and a suite of compatible utility programs.</p>
+        <p>You can setup a full <a class="ulink" href="https://en.wikipedia.org/wiki/Desktop_environment">desktop environment</a> such as <a class="ulink" href="https://en.wikipedia.org/wiki/GNOME">GNOME</a>, <a class="ulink" href="https://en.wikipedia.org/wiki/KDE">KDE</a>, <a class="ulink" href="https://en.wikipedia.org/wiki/Xfce">Xfce</a>, or <a class="ulink" href="https://en.wikipedia.org/wiki/LXDE">LXDE</a>, from the <code class="literal">aptitude</code> under the task menu.</p>
+        <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+          <table border="0" summary="Tip">
+            <tr>
+              <td rowspan="2" align="center" valign="top">
+                <img alt="[Tip]" src="images/tip.png"/>
+              </td>
+              <th align="left">Tip</th>
+            </tr>
+            <tr>
+              <td align="left" valign="top">
+                <p>Task menu may be out of sync with the latest package transition state under Debian <code class="literal">unstable</code>/<code class="literal">testing</code> environment. In such situation, you need to deselect some (meta)packages listed under <span class="citerefentry"><span class="refentrytitle">aptitude</span>(8)</span> task menu to avoid package conflicts.  When deselecting (meta)packages, you must select certain packages providing their dependencies manually to avoid them deleted automatically.</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p>You may alternatively setup a simple environment manually just with a <a class="ulink" href="https://en.wikipedia.org/wiki/X_window_manager">X window manager</a> such as <a class="ulink" href="https://en.wikipedia.org/wiki/Fluxbox">Fluxbox</a>.</p>
+        <p>See <a class="ulink" href="http://www.xwinman.org">Window Managers for X</a> for the guide to the X window manager and the desktop environment.</p>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_debian_menu"/>7.2.1. Debian menu</h3>
+              </div>
+            </div>
+          </div>
+          <p><a class="ulink" href="https://www.debian.org/doc/packaging-manuals/menu.html/">Debian menu system</a> provides a general interface for both text- and X-oriented programs with <span class="citerefentry"><span class="refentrytitle">update-menus</span>(1)</span> from the <code class="literal">menu</code> package.  Each package installs its menu data in the "<code class="literal">/usr/share/menu/</code>" directory. See "<code class="literal">/usr/share/menu/README</code>".</p>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_freedesktop_org_menu"/>7.2.2. Freedesktop.org menu</h3>
+              </div>
+            </div>
+          </div>
+          <p>Each package which is compliant to Freedesktop.org's xdg menu system installs its menu data provided by "<code class="literal">*.desktop</code>" under "<code class="literal">/usr/share/applications/</code>". Modern desktop environments which are compliant to Freedesktop.org standard use these data to generate their menu using the <code class="literal">xdg-utils</code> package.  See "<code class="literal">/usr/share/doc/xdg-utils/README</code>".</p>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_debian_menu_from_freedesktop_org_menu"/>7.2.3. Debian menu from Freedesktop.org menu</h3>
+              </div>
+            </div>
+          </div>
+          <p>In order to access the traditional Debian menu from the <a class="ulink" href="http://www.freedesktop.org/wiki/Specifications/menu-spec/">Freedesktop.org menu</a> compliant window manager environment such as GNOME and KDE, you must install the <code class="literal">menu-xdg</code> package.</p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="titlepage">
+          <div>
+            <div>
+              <h2 class="title"><a id="_the_server_client_relationship"/>7.3. The server/client relationship</h2>
+            </div>
+          </div>
+        </div>
+        <p>The X Window System is activated as a combination of the server and client programs. The meaning for the words <span class="strong"><strong>server</strong></span> and <span class="strong"><strong>client</strong></span> with respect to the words <span class="strong"><strong>local</strong></span> and <span class="strong"><strong>remote</strong></span> requires attention here.</p>
+        <div class="table">
+          <a id="listofserverclientterminology"/>
+          <p class="title">
+            <strong>Table 7.2. List of server/client terminology</strong>
+          </p>
+          <div class="table-contents">
+            <table class="table" summary="List of server/client terminology" border="1">
+              <colgroup>
+                <col style="text-align: left"/>
+                <col style="text-align: left"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <th style="text-align: left">
+    type
+    </th>
+                  <th style="text-align: left">
+    description
+    </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="text-align: left">
+                <span class="strong"><strong>X server</strong></span>
+              </td>
+                  <td style="text-align: left">
+    a program run on a <span class="strong"><strong>local host</strong></span> connected to the user's display and input devices.
+    </td>
+                </tr>
+                <tr>
+                  <td style="text-align: left">
+                <span class="strong"><strong>X client</strong></span>
+              </td>
+                  <td style="text-align: left">
+    a program run on a <span class="strong"><strong>remote host</strong></span> that processes data and talks to the X server.
+    </td>
+                </tr>
+                <tr>
+                  <td style="text-align: left">
+                <span class="strong"><strong>application server</strong></span>
+              </td>
+                  <td style="text-align: left">
+    a program run on a <span class="strong"><strong>remote host</strong></span> that processes data and talks to the application clients.
+    </td>
+                </tr>
+                <tr>
+                  <td style="text-align: left">
+                <span class="strong"><strong>application client</strong></span>
+              </td>
+                  <td style="text-align: left">
+    a program run on a <span class="strong"><strong>local host</strong></span> connected to the user's display and input devices.
+    </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <br class="table-break"/>
+        <p>Modern X servers have <a class="ulink" href="https://en.wikipedia.org/wiki/MIT-SHM">the MIT Shared Memory Extension</a> and communicate with their local X clients using the local shared memory.  This bypasses the network transparent Xlib interprocess communication channel and gains performance for large images.</p>
+      </div>
+      <div class="section">
+        <div class="titlepage">
+          <div>
+            <div>
+              <h2 class="title"><a id="_the_x_server"/>7.4. The X server</h2>
+            </div>
+          </div>
+        </div>
+        <p>See <span class="citerefentry"><span class="refentrytitle">xorg</span>(1)</span> for X server information.</p>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_the_re_configuration_of_the_x_server"/>7.4.1. The (re)configuration of the X server</h3>
+              </div>
+            </div>
+          </div>
+          <p>The following (re)configures an X server.</p>
+          <pre class="screen"># dpkg-reconfigure --priority=low x11-common</pre>
+          <div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Note">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Note]" src="images/note.png"/>
+                </td>
+                <th align="left">Note</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p>Recent Linux kernels have good graphics and input device supports with <a class="ulink" href="https://en.wikipedia.org/wiki/Direct_Rendering_Manager">DRM</a>, <a class="ulink" href="https://wiki.debian.org/KernelModesetting">KMS</a>,  and <a class="ulink" href="https://en.wikipedia.org/wiki/Udev">udev</a>.  X server is rewritten to use them.  So "<code class="literal">/etc/X11/xorg.conf</code>" is usually not present on your system.  These parameters are configured by the kernel.  See "<code class="literal">fb/modedb.txt</code>" in the Linux kernel documentation.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <p>For the large high resolution CRT monitor, it is a good idea to set the refresh rate as high as your monitor can handle (85 Hz is great, 75 Hz is OK) to reduce flicker.  For the LCD monitor, slower standard refresh rate (60Hz) is usually fine due to its slow response.</p>
+          <div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Note">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Note]" src="images/note.png"/>
+                </td>
+                <th align="left">Note</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p>Be careful not to use too high refresh rate which may cause fatal hardware failure of your monitor system.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_the_connection_methods_to_the_x_server"/>7.4.2. The connection methods to the X server</h3>
+              </div>
+            </div>
+          </div>
+          <p>There are several ways of getting the "X server" (<span class="strong"><strong>display</strong></span> side) to accept connections from an "X client" (<span class="strong"><strong>application</strong></span> side).</p>
+          <div class="table">
+            <a id="listofconnectionhodstothexserver"/>
+            <p class="title">
+              <strong>Table 7.3. List of connection methods to the X server</strong>
+            </p>
+            <div class="table-contents">
+              <table class="table" summary="List of connection methods to the X server" border="1">
+                <colgroup>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th style="text-align: left">
+    package
+    </th>
+                    <th style="text-align: left">
+    popcon
+    </th>
+                    <th style="text-align: left">
+    size
+    </th>
+                    <th style="text-align: left">
+    user
+    </th>
+                    <th style="text-align: left">
+    encryption
+    </th>
+                    <th style="text-align: left">
+    method
+    </th>
+                    <th style="text-align: left">
+    pertinent use
+    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/xbase-clients">
+                  <code class="literal">xbase-clients</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=xbase-clients">I:38</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/x/xbase-clients.html">46</a>
+                    </td>
+                    <td style="text-align: left">
+    unchecked
+    </td>
+                    <td style="text-align: left">
+    no
+    </td>
+                    <td style="text-align: left"><code class="literal">xhost</code> command
+    </td>
+                    <td style="text-align: left">
+    deprecated
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/xbase-clients">
+                  <code class="literal">xbase-clients</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=xbase-clients">I:38</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/x/xbase-clients.html">46</a>
+                    </td>
+                    <td style="text-align: left">
+    checked
+    </td>
+                    <td style="text-align: left">
+    no
+    </td>
+                    <td style="text-align: left"><code class="literal">xauth</code> command
+    </td>
+                    <td style="text-align: left">
+    local connection via pipe
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/openssh-client">
+                  <code class="literal">openssh-client</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=openssh-client">V:811, I:994</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/o/openssh-client.html">3545</a>
+                    </td>
+                    <td style="text-align: left">
+    checked
+    </td>
+                    <td style="text-align: left">
+    yes
+    </td>
+                    <td style="text-align: left"><code class="literal">ssh -X</code> command
+    </td>
+                    <td style="text-align: left">
+    remote network connection
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/gdm3">
+                  <code class="literal">gdm3</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=gdm3">V:189, I:263</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/g/gdm3.html">4791</a>
+                    </td>
+                    <td style="text-align: left">
+    checked
+    </td>
+                    <td style="text-align: left">
+    no (XDMCP)
+    </td>
+                    <td style="text-align: left">
+    GNOME display manager
+    </td>
+                    <td style="text-align: left">
+    local connection via pipe
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/sddm">
+                  <code class="literal">sddm</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=sddm">V:46, I:82</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/s/sddm.html">1830</a>
+                    </td>
+                    <td style="text-align: left">
+    checked
+    </td>
+                    <td style="text-align: left">
+    no (XDMCP)
+    </td>
+                    <td style="text-align: left">
+    KDE display manager
+    </td>
+                    <td style="text-align: left">
+    local connection via pipe
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/xdm">
+                  <code class="literal">xdm</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=xdm">V:3, I:7</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/x/xdm.html">665</a>
+                    </td>
+                    <td style="text-align: left">
+    checked
+    </td>
+                    <td style="text-align: left">
+    no (XDMCP)
+    </td>
+                    <td style="text-align: left">
+    X display manager
+    </td>
+                    <td style="text-align: left">
+    local connection via pipe
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/wdm">
+                  <code class="literal">wdm</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=wdm">V:80, I:433</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/w/wdm.html">2323</a>
+                    </td>
+                    <td style="text-align: left">
+    checked
+    </td>
+                    <td style="text-align: left">
+    no (XDMCP)
+    </td>
+                    <td style="text-align: left">
+    WindowMaker display manager
+    </td>
+                    <td style="text-align: left">
+    local connection via pipe
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/ldm">
+                  <code class="literal">ldm</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=ldm">V:0, I:1</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/l/ldm.html">414</a>
+                    </td>
+                    <td style="text-align: left">
+    checked
+    </td>
+                    <td style="text-align: left">
+    yes
+    </td>
+                    <td style="text-align: left">
+    LTSP display manager
+    </td>
+                    <td style="text-align: left">
+    remote SSH network connection (thin client)
+    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <br class="table-break"/>
+          <div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Warning">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Warning]" src="images/warning.png"/>
+                </td>
+                <th align="left">Warning</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p>Do not use remote <a class="ulink" href="https://en.wikipedia.org/wiki/Transmission_Control_Protocol">TCP</a>/<a class="ulink" href="https://en.wikipedia.org/wiki/Internet_Protocol">IP</a> connection over <span class="strong"><strong>unsecured</strong></span> network for X connection unless you have very good reason such as use of encryption.  A remote TCP/IP socket connection without encryption is prone to the <span class="strong"><strong>eavesdropping attack</strong></span> and is disabled by default on the Debian system.  Use "<code class="literal">ssh -X</code>".</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Warning">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Warning]" src="images/warning.png"/>
+                </td>
+                <th align="left">Warning</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p>Do not use <a class="ulink" href="https://en.wikipedia.org/wiki/X_display_manager">XDMCP connection</a> over <span class="strong"><strong>unsecured</strong></span> network either.  It sends data via <a class="ulink" href="https://en.wikipedia.org/wiki/User_Datagram_Protocol">UDP</a>/<a class="ulink" href="https://en.wikipedia.org/wiki/Internet_Protocol">IP</a> without encryption and is prone to the <span class="strong"><strong>eavesdropping attack</strong></span>.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Tip">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Tip]" src="images/tip.png"/>
+                </td>
+                <th align="left">Tip</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p>LTSP stands for <a class="ulink" href="https://en.wikipedia.org/wiki/Linux_Terminal_Server_Project">Linux Terminal Server Project</a>.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="titlepage">
+          <div>
+            <div>
+              <h2 class="title"><a id="_starting_the_x_window_system"/>7.5. Starting the X Window System</h2>
+            </div>
+          </div>
+        </div>
+        <p>The X Window System is usually started as an <a class="ulink" href="https://en.wikipedia.org/wiki/X_session_manager">X session</a> which is the combination of an X server and connecting X clients.  For the normal desktop system, both of them are executed on a workstation.</p>
+        <p>The <a class="ulink" href="https://en.wikipedia.org/wiki/X_session_manager">X session</a> is started by one of the following.</p>
+        <div class="itemizedlist">
+          <ul class="itemizedlist">
+            <li class="listitem">
+              <p><code class="literal">startx</code> command started from the command line
+</p>
+            </li>
+            <li class="listitem">
+              <p>
+One of the <a class="ulink" href="https://en.wikipedia.org/wiki/X_display_manager">X display manager</a> daemon programs <code class="literal">*dm</code> started by <code class="literal">systemd</code> based on the dependency of "<code class="literal">graphical.target</code>".
+</p>
+            </li>
+          </ul>
+        </div>
+        <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+          <table border="0" summary="Tip">
+            <tr>
+              <td rowspan="2" align="center" valign="top">
+                <img alt="[Tip]" src="images/tip.png"/>
+              </td>
+              <th align="left">Tip</th>
+            </tr>
+            <tr>
+              <td align="left" valign="top">
+                <p>The start up script for the display manager daemons checks the content of the "<code class="literal">/etc/X11/default-display-manager</code>" file before actually executing themselves.  This ensures to have only one <a class="ulink" href="https://en.wikipedia.org/wiki/X_display_manager">X display manager</a> daemon program activated.</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+          <table border="0" summary="Tip">
+            <tr>
+              <td rowspan="2" align="center" valign="top">
+                <img alt="[Tip]" src="images/tip.png"/>
+              </td>
+              <th align="left">Tip</th>
+            </tr>
+            <tr>
+              <td align="left" valign="top">
+                <p>See <a class="xref" href="ch08.en.html#_specific_locale_only_under_x_window" title="8.4.5. Specific locale only under X Window">Section 8.4.5, “Specific locale only under X Window”</a> for initial environment variables of the X display manager.</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p>Essentially, all these programs execute the "<code class="literal">/etc/X11/Xsession</code>" script.  Then the "<code class="literal">/etc/X11/Xsession</code>" script performs <span class="citerefentry"><span class="refentrytitle">run-parts</span>(8)</span> like action to execute scripts in the "<code class="literal">/etc/X11/Xsession.d/</code>" directory. This is essentially an execution of the first program which is found in the following order by the <code class="literal">exec</code> builtin command.</p>
+        <div class="orderedlist">
+          <ol class="orderedlist">
+            <li class="listitem">
+              <p>
+The script specified as the argument of "<code class="literal">/etc/X11/Xsession</code>" by the X display manager, if it is defined.
+</p>
+            </li>
+            <li class="listitem">
+              <p>
+The "<code class="literal">~/.xsession</code>" or "<code class="literal">~/.Xsession</code>" script, if it is defined.
+</p>
+            </li>
+            <li class="listitem">
+              <p>
+The "<code class="literal">/usr/bin/x-session-manager</code>" command, if it is defined.
+</p>
+            </li>
+            <li class="listitem">
+              <p>
+The "<code class="literal">/usr/bin/x-window-manager</code>" command, if it is defined.
+</p>
+            </li>
+            <li class="listitem">
+              <p>
+The "<code class="literal">/usr/bin/x-terminal-emulator</code>" command, if it is defined.
+</p>
+            </li>
+          </ol>
+        </div>
+        <p>This process is affected by the content of "<code class="literal">/etc/X11/Xsession.options</code>".  The exact programs to which these "<code class="literal">/usr/bin/x-*</code>" commands point, are determined by the Debian alternatives system and changed by "<code class="literal">update-alternatives --config x-session-manager</code>", etc.</p>
+        <p>See <span class="citerefentry"><span class="refentrytitle">Xsession</span>(5)</span> for details.</p>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_starting_x_session_with_gdm3"/>7.5.1. Starting X session with gdm3</h3>
+              </div>
+            </div>
+          </div>
+          <p><span class="citerefentry"><span class="refentrytitle">gdm3</span>(1)</span> lets you select the session type (or desktop environment: <a class="xref" href="ch07.en.html#_setting_up_desktop_environment" title="7.2. Setting up desktop environment">Section 7.2, “Setting up desktop environment”</a>), and language (or locale: <a class="xref" href="ch08.en.html#_the_locale" title="8.4. The locale">Section 8.4, “The locale”</a>) of the X session from its menu.  It keeps the selected default value in "<code class="literal">~/.dmrc</code>" as the following.</p>
+          <pre class="screen">[Desktop]
+Session=default
+Language=ja_JP.UTF-8</pre>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_customizing_the_x_session_classic_method"/>7.5.2. Customizing the X session (classic method)</h3>
+              </div>
+            </div>
+          </div>
+          <p>On a system where "<code class="literal">/etc/X11/Xsession.options</code>" contains a line "<code class="literal">allow-user-xsession</code>" without preceding "<code class="literal">#</code>" characters, any user who defines "<code class="literal">~/.xsession</code>" or "<code class="literal">~/.Xsession</code>" is able to customize the action of "<code class="literal">/etc/X11/Xsession</code>" by completely overriding the system code. The last command in the "<code class="literal">~/.xsession</code>" file should use form of "<code class="literal">exec some-window/session-manager</code>" to start your favorite X window/session managers.</p>
+          <p>If this feature is used, the selection of the display (or login) manager (DM), session manager or window manager (WM) by the system utility is ignored.</p>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_customizing_the_x_session_new_method"/>7.5.3. Customizing the X session (new method)</h3>
+              </div>
+            </div>
+          </div>
+          <p>Here are new methods to customize the X session without completely overriding the system code as above.</p>
+          <div class="itemizedlist">
+            <ul class="itemizedlist">
+              <li class="listitem">
+                <p>
+The display manager <code class="literal">gdm3</code> can select a specific session and set it as the argument of "<code class="literal">/etc/X11/Xsession</code>".
+</p>
+                <div class="itemizedlist">
+                  <ul class="itemizedlist">
+                    <li class="listitem">
+                      <p>
+"<code class="literal">/etc/profile</code>", "<code class="literal">~/.profile</code>", "<code class="literal">/etc/xprofile</code>", and "<code class="literal">~/.xprofile</code>" files are executed as a part of <code class="literal">gdm3</code> start up process.
+</p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="listitem">
+                <p>
+The "<code class="literal">~/.xsessionrc</code>" file is executed as a part of start up process. (desktop independent)
+</p>
+                <div class="itemizedlist">
+                  <ul class="itemizedlist">
+                    <li class="listitem">
+                      <p>
+"<code class="literal">#allow-user-xsession</code>" in "<code class="literal">/etc/X11/Xsession.options</code>" does not restrict execution of the "<code class="literal">~/.xsessionrc</code>" file.
+</p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="listitem">
+                <p>
+The "<code class="literal">~/.gnomerc</code>" file is executed as a part of start up process. (GNOME desktop only)
+</p>
+              </li>
+            </ul>
+          </div>
+          <p>The selection of the display (or login) manager (DM), session manager or window manager (WM) by the system utility is respected.</p>
+          <p>These configuration files should not have "<code class="literal">exec …</code>" nor "<code class="literal">exit</code>" in them.</p>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_connecting_a_remote_x_client_via_ssh"/>7.5.4. Connecting a remote X client via SSH</h3>
+              </div>
+            </div>
+          </div>
+          <p>The use of "<code class="literal">ssh -X</code>" enables a secure connection from a local X server to a remote application server.</p>
+          <p>Set "<code class="literal">X11Forwarding</code>" entries to "<code class="literal">yes</code>" in "<code class="literal">/etc/ssh/sshd_config</code>" of the remote host, if you want to avoid "<code class="literal">-X</code>" command-line option.</p>
+          <p>Start the X server on the local host.</p>
+          <p>Open an <code class="literal">xterm</code> in the local host.</p>
+          <p>Run <span class="citerefentry"><span class="refentrytitle">ssh</span>(1)</span> to establish a connection with the remote site as the following.</p>
+          <pre class="screen">localname @ localhost $ ssh -q -X loginname@remotehost.domain
+Password:</pre>
+          <p>Run an X application command, e.g. "<code class="literal">gimp</code>", on the remote site as the following.</p>
+          <pre class="screen">loginname @ remotehost $ gimp &amp;</pre>
+          <p>This method can display the output from a remote X client as if it were locally connected through a local UNIX domain socket.</p>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_secure_x_terminal_via_the_internet"/>7.5.5. Secure X terminal via the Internet</h3>
+              </div>
+            </div>
+          </div>
+          <p>Secure X terminal via the Internet, which displays remotely run entire X desktop environment, can easily achieved by using specialized package such as <code class="literal">ldm</code>. Your local machine becomes a secure thin client to the remote application server connected via SSH.</p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="titlepage">
+          <div>
+            <div>
+              <h2 class="title"><a id="_fonts_in_the_x_window"/>7.6. Fonts in the X Window</h2>
+            </div>
+          </div>
+        </div>
+        <p><a class="ulink" href="https://en.wikipedia.org/wiki/Fontconfig">Fontconfig 2.0</a> was created to provide a distribution independent library for configuring and customizing font access in 2002.  Debian after <code class="literal">squeeze</code> uses <a class="ulink" href="https://en.wikipedia.org/wiki/Fontconfig">Fontconfig 2.0</a> for its font configuration.</p>
+        <p>Font supports on X Window System can be summarized as follows.</p>
+        <div class="itemizedlist">
+          <ul class="itemizedlist">
+            <li class="listitem">
+              <p>
+Legacy X server side font support system
+</p>
+              <div class="itemizedlist">
+                <ul class="itemizedlist">
+                  <li class="listitem">
+                    <p>
+The original core X11 font system provides backward compatibility for older version of X client applications.
+</p>
+                  </li>
+                  <li class="listitem">
+                    <p>
+The original core X11 fonts are installed on the X server.
+</p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="listitem">
+              <p>
+Modern X client side font support system
+</p>
+              <div class="itemizedlist">
+                <ul class="itemizedlist">
+                  <li class="listitem">
+                    <p>
+The modern X system supports all fonts listed below (<a class="xref" href="ch07.en.html#_basic_fonts" title="7.6.1. Basic fonts">Section 7.6.1, “Basic fonts”</a>, <a class="xref" href="ch07.en.html#_additional_fonts" title="7.6.2. Additional fonts">Section 7.6.2, “Additional fonts”</a>, and <a class="xref" href="ch07.en.html#_cjk_fonts" title="7.6.3. CJK fonts">Section 7.6.3, “CJK fonts”</a>) with advanced features such as anti-aliasing.
+</p>
+                  </li>
+                  <li class="listitem">
+                    <p><a class="ulink" href="https://en.wikipedia.org/wiki/Xft">Xft</a> 2.0 connects modern X applications such as ones from <a class="ulink" href="https://en.wikipedia.org/wiki/GNOME">GNOME</a>, <a class="ulink" href="https://en.wikipedia.org/wiki/KDE">KDE</a>, and <a class="ulink" href="https://en.wikipedia.org/wiki/LibreOffice">LibreOffice</a> with <a class="ulink" href="http://freetype.sourceforge.net/index.html">FreeType</a> 2.0 library.
+</p>
+                  </li>
+                  <li class="listitem">
+                    <p><a class="ulink" href="http://freetype.sourceforge.net/index.html">FreeType</a> 2.0 provides font rasterization library.
+</p>
+                  </li>
+                  <li class="listitem">
+                    <p><a class="ulink" href="https://en.wikipedia.org/wiki/Fontconfig">Fontconfig</a> provides resolution of the font specification for <a class="ulink" href="https://en.wikipedia.org/wiki/Xft">Xft</a> 2.0.  See <span class="citerefentry"><span class="refentrytitle">fonts.conf</span>(5)</span> for its configuration.
+</p>
+                  </li>
+                  <li class="listitem">
+                    <p>
+All modern X applications using <a class="ulink" href="https://en.wikipedia.org/wiki/Xft">Xft</a> 2.0 can talk to modern X server using the <a class="ulink" href="https://en.wikipedia.org/wiki/XRender">X Rendering Extension</a>.
+</p>
+                  </li>
+                  <li class="listitem">
+                    <p>
+The <a class="ulink" href="https://en.wikipedia.org/wiki/XRender">X Rendering Extension</a> moves font access and glyph image generation from the X server to the X client.
+</p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="table">
+          <a id="tableofpackagestindowfontsystems"/>
+          <p class="title">
+            <strong>Table 7.4. Table of packages to support X Window font systems</strong>
+          </p>
+          <div class="table-contents">
+            <table class="table" summary="Table of packages to support X Window font systems" border="1">
+              <colgroup>
+                <col style="text-align: left"/>
+                <col style="text-align: left"/>
+                <col style="text-align: left"/>
+                <col style="text-align: left"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <th style="text-align: left">
+    package
+    </th>
+                  <th style="text-align: left">
+    popcon
+    </th>
+                  <th style="text-align: left">
+    size
+    </th>
+                  <th style="text-align: left">
+    description
+    </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.debian.org/sid/xfonts-utils">
+                <code class="literal">xfonts-utils</code>
+              </a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=xfonts-utils">V:67, I:593</a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.qa.debian.org/x/xfonts-utils.html">415</a>
+                  </td>
+                  <td style="text-align: left">
+    X Window System font utility programs
+    </td>
+                </tr>
+                <tr>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.debian.org/sid/libxft2">
+                <code class="literal">libxft2</code>
+              </a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=libxft2">V:102, I:712</a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.qa.debian.org/libx/libxft2.html">122</a>
+                  </td>
+                  <td style="text-align: left">
+    Xft, a library that connects X applications with the FreeType font rasterization library
+    </td>
+                </tr>
+                <tr>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.debian.org/sid/libfreetype6">
+                <code class="literal">libfreetype6</code>
+              </a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=libfreetype6">V:476, I:995</a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.qa.debian.org/libf/libfreetype6.html">841</a>
+                  </td>
+                  <td style="text-align: left"><a class="ulink" href="http://freetype.sourceforge.net/index.html">FreeType</a> 2.0 font rasterization library
+    </td>
+                </tr>
+                <tr>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.debian.org/sid/fontconfig">
+                <code class="literal">fontconfig</code>
+              </a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=fontconfig">V:395, I:832</a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.qa.debian.org/f/fontconfig.html">575</a>
+                  </td>
+                  <td style="text-align: left"><a class="ulink" href="https://en.wikipedia.org/wiki/Fontconfig">Fontconfig</a>, a generic font configuration library — support binaries
+    </td>
+                </tr>
+                <tr>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.debian.org/sid/fontconfig-config">
+                <code class="literal">fontconfig-config</code>
+              </a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=fontconfig-config">V:406, I:902</a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.qa.debian.org/f/fontconfig-config.html">441</a>
+                  </td>
+                  <td style="text-align: left"><a class="ulink" href="https://en.wikipedia.org/wiki/Fontconfig">Fontconfig</a>, a generic font configuration library — configuration data
+    </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <br class="table-break"/>
+        <p>You can check font configuration information by the following.</p>
+        <div class="itemizedlist">
+          <ul class="itemizedlist">
+            <li class="listitem">
+              <p>
+"<code class="literal">xset q</code>" for core X11 font path
+</p>
+            </li>
+            <li class="listitem">
+              <p>
+"<code class="literal">fc-match</code>" for fontconfig font default
+</p>
+            </li>
+            <li class="listitem">
+              <p>
+"<code class="literal">fc-list</code>" for available fontconfig fonts
+</p>
+            </li>
+          </ul>
+        </div>
+        <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+          <table border="0" summary="Tip">
+            <tr>
+              <td rowspan="2" align="center" valign="top">
+                <img alt="[Tip]" src="images/tip.png"/>
+              </td>
+              <th align="left">Tip</th>
+            </tr>
+            <tr>
+              <td align="left" valign="top">
+                <p>"<a class="ulink" href="http://unifont.org/iuc27/html/ICUPresentation.html">The Penguin and Unicode</a>" is a good overview of modern X Window System. Other documentations at <a class="ulink" href="http://unifont.org/">http://unifont.org/</a> should provide good information on Unicode fonts, Unicode-enabled software, internationalization, and Unicode usability issues on <a class="ulink" href="https://en.wikipedia.org/wiki/Free_and_open_source_software">free/libre/open source (FLOSS)</a> operating systems.</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_basic_fonts"/>7.6.1. Basic fonts</h3>
+              </div>
+            </div>
+          </div>
+          <p>There are 2 major types of <a class="ulink" href="https://en.wikipedia.org/wiki/Computer_font">computer fonts</a>.</p>
+          <div class="itemizedlist">
+            <ul class="itemizedlist">
+              <li class="listitem">
+                <p>
+Bitmap fonts (good for low resolution rasterization)
+</p>
+              </li>
+              <li class="listitem">
+                <p>
+Outline/stroke fonts (good for high resolution rasterization)
+</p>
+              </li>
+            </ul>
+          </div>
+          <p>While scaling of bitmap fonts causes jugged image, scaling of outline/stroke fonts produces smooth image.</p>
+          <p>Bitmap fonts on the Debian system are usually provided by compressed <a class="ulink" href="http://fontforge.sourceforge.net/pcf-format.html">X11 pcf bitmap font files</a> having their file extension "<code class="literal">.pcf.gz</code>".</p>
+          <p>Outline fonts on the Debian system are provided by the following.</p>
+          <div class="itemizedlist">
+            <ul class="itemizedlist">
+              <li class="listitem">
+                <p><a class="ulink" href="https://en.wikipedia.org/wiki/PostScript">PostScript</a> Type 1 font files having their file extension "<code class="literal">.pfb</code>" (binary font file) and "<code class="literal">.afm</code>" (font metrics file).
+</p>
+              </li>
+              <li class="listitem">
+                <p><a class="ulink" href="https://en.wikipedia.org/wiki/TrueType">TrueType</a> (or <a class="ulink" href="https://en.wikipedia.org/wiki/OpenType">OpenType</a>) font files usually having their file extension "<code class="literal">.ttf</code>".
+</p>
+              </li>
+            </ul>
+          </div>
+          <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Tip">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Tip]" src="images/tip.png"/>
+                </td>
+                <th align="left">Tip</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p><a class="ulink" href="https://en.wikipedia.org/wiki/OpenType">OpenType</a> is intended to supersede both <a class="ulink" href="https://en.wikipedia.org/wiki/TrueType">TrueType</a> and <a class="ulink" href="https://en.wikipedia.org/wiki/PostScript">PostScript</a> Type 1.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="table">
+            <a id="tableofcorresponscripttypebfonts"/>
+            <p class="title">
+              <strong>Table 7.5. Table of corresponding <a class="ulink" href="https://en.wikipedia.org/wiki/PostScript">PostScript</a> Type 1 fonts</strong>
+            </p>
+            <div class="table-contents">
+              <table class="table" summary="Table of corresponding PostScript Type 1 fonts" border="1">
+                <colgroup>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th style="text-align: left">
+    font package
+    </th>
+                    <th style="text-align: left">
+    popcon
+    </th>
+                    <th style="text-align: left">
+    size
+    </th>
+                    <th style="text-align: left">
+    sans-serif font
+    </th>
+                    <th style="text-align: left">
+    serif font
+    </th>
+                    <th style="text-align: left">
+    monospace font
+    </th>
+                    <th style="text-align: left">
+    source of font
+    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align: left">
+    PostScript
+    </td>
+                    <td style="text-align: left">
+    N/A
+    </td>
+                    <td style="text-align: left">
+    N/A
+    </td>
+                    <td style="text-align: left">
+                  <a class="ulink" href="https://en.wikipedia.org/wiki/Helvetica">Helvetica</a>
+                </td>
+                    <td style="text-align: left">
+                  <a class="ulink" href="https://en.wikipedia.org/wiki/Times_New_Roman">Times</a>
+                </td>
+                    <td style="text-align: left">
+                  <a class="ulink" href="https://en.wikipedia.org/wiki/Courier_(typeface)">Courier</a>
+                </td>
+                    <td style="text-align: left">
+    Adobe
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/gsfonts">
+    gsfonts
+    </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=gsfonts">I:677</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/g/gsfonts.html">4439</a>
+                    </td>
+                    <td style="text-align: left">
+    Nimbus Sans L
+    </td>
+                    <td style="text-align: left">
+    Nimbus Roman No9 L
+    </td>
+                    <td style="text-align: left">
+    Nimbus Mono L
+    </td>
+                    <td style="text-align: left"><a class="ulink" href="http://www.math.utah.edu/~beebe/fonts/urw.html">URW</a> (Adobe compatible size)
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/gsfonts-x11">
+    gsfonts-x11
+    </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=gsfonts-x11">I:109</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/g/gsfonts-x11.html">95</a>
+                    </td>
+                    <td style="text-align: left">
+    Nimbus Sans L
+    </td>
+                    <td style="text-align: left">
+    Nimbus Roman No9 L
+    </td>
+                    <td style="text-align: left">
+    Nimbus Mono L
+    </td>
+                    <td style="text-align: left">
+    X font support with PostScript Type 1 fonts.
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/t1-cyrillic">
+    t1-cyrillic
+    </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=t1-cyrillic">I:22</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/t/t1-cyrillic.html">4884</a>
+                    </td>
+                    <td style="text-align: left">
+    Free Helvetian
+    </td>
+                    <td style="text-align: left">
+    Free Times
+    </td>
+                    <td style="text-align: left">
+    Free Courier
+    </td>
+                    <td style="text-align: left">
+    URW extended (Adobe compatible size)
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/lmodern">
+    lmodern
+    </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=lmodern">I:130</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/l/lmodern.html">33270</a>
+                    </td>
+                    <td style="text-align: left">
+    LMSans*
+    </td>
+                    <td style="text-align: left">
+    LMRoman*
+    </td>
+                    <td style="text-align: left">
+    LMTypewriter*
+    </td>
+                    <td style="text-align: left">
+    scalable PostScript and OpenType fonts based on Computer Modern (from TeX)
+    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <br class="table-break"/>
+          <div class="table">
+            <a id="tableofcorresponingtruetypefonts"/>
+            <p class="title">
+              <strong>Table 7.6. Table of corresponding <a class="ulink" href="https://en.wikipedia.org/wiki/TrueType">TrueType</a> fonts</strong>
+            </p>
+            <div class="table-contents">
+              <table class="table" summary="Table of corresponding TrueType fonts" border="1">
+                <colgroup>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th style="text-align: left">
+    font package
+    </th>
+                    <th style="text-align: left">
+    popcon
+    </th>
+                    <th style="text-align: left">
+    size
+    </th>
+                    <th style="text-align: left">
+    sans-serif font
+    </th>
+                    <th style="text-align: left">
+    serif font
+    </th>
+                    <th style="text-align: left">
+    monospace font
+    </th>
+                    <th style="text-align: left">
+    source of font
+    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/ttf-mscorefonts-installer">
+    ttf-mscorefonts-installer
+    </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=ttf-mscorefonts-installer">V:1, I:77</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/t/ttf-mscorefonts-installer.html">92</a>
+                    </td>
+                    <td style="text-align: left">
+                  <a class="ulink" href="https://en.wikipedia.org/wiki/Arial">Arial</a>
+                </td>
+                    <td style="text-align: left">
+                  <a class="ulink" href="https://en.wikipedia.org/wiki/Times_New_Roman">Times New Roman</a>
+                </td>
+                    <td style="text-align: left">
+                  <a class="ulink" href="https://en.wikipedia.org/wiki/Courier_(typeface)">Courier New</a>
+                </td>
+                    <td style="text-align: left">
+    Microsoft (Adobe compatible size) (This installs non-free data)
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/fonts-liberation">
+    fonts-liberation
+    </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=fonts-liberation">I:559</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/f/fonts-liberation.html">2093</a>
+                    </td>
+                    <td style="text-align: left">
+    Liberation Sans
+    </td>
+                    <td style="text-align: left">
+    Liberation Serif
+    </td>
+                    <td style="text-align: left">
+    Liberation Mono
+    </td>
+                    <td style="text-align: left"><a class="ulink" href="https://en.wikipedia.org/wiki/Liberation_fonts">Liberation Fonts project</a> (Microsoft compatible size)
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/fonts-freefont-ttf">
+    fonts-freefont-ttf
+    </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=fonts-freefont-ttf">V:44, I:345</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/f/fonts-freefont-ttf.html">10750</a>
+                    </td>
+                    <td style="text-align: left">
+    FreeSans
+    </td>
+                    <td style="text-align: left">
+    FreeSerif
+    </td>
+                    <td style="text-align: left">
+    FreeMono
+    </td>
+                    <td style="text-align: left"><a class="ulink" href="http://savannah.gnu.org/projects/freefont/">GNU freefont</a> (Microsoft compatible size)
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/fonts-dejavu">
+    fonts-dejavu
+    </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=fonts-dejavu">I:513</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/f/fonts-dejavu.html">39</a>
+                    </td>
+                    <td style="text-align: left">
+    DejaVu Sans
+    </td>
+                    <td style="text-align: left">
+    DejaVu Serif
+    </td>
+                    <td style="text-align: left">
+    DejaVu Sans Mono
+    </td>
+                    <td style="text-align: left"><a class="ulink" href="http://dejavu-fonts.org">DejaVu</a>, <a class="ulink" href="http://www.gnome.org/fonts/">Bitstream Vera</a> with Unicode coverage
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/fonts-dejavu-core">
+    fonts-dejavu-core
+    </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=fonts-dejavu-core">V:306, I:796</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/f/fonts-dejavu-core.html">2954</a>
+                    </td>
+                    <td style="text-align: left">
+    DejaVu Sans
+    </td>
+                    <td style="text-align: left">
+    DejaVu Serif
+    </td>
+                    <td style="text-align: left">
+    DejaVu Sans Mono
+    </td>
+                    <td style="text-align: left"><a class="ulink" href="http://dejavu-fonts.org">DejaVu</a>, <a class="ulink" href="http://www.gnome.org/fonts/">Bitstream Vera</a> with Unicode coverage (sans, sans-bold, serif, serif-bold, mono, mono-bold)
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/fonts-dejavu-extra">
+    fonts-dejavu-extra
+    </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=fonts-dejavu-extra">I:543</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/f/fonts-dejavu-extra.html">7217</a>
+                    </td>
+                    <td style="text-align: left">
+    N/A
+    </td>
+                    <td style="text-align: left">
+    N/A
+    </td>
+                    <td style="text-align: left">
+    N/A
+    </td>
+                    <td style="text-align: left"><a class="ulink" href="http://dejavu-fonts.org">DejaVu</a>, <a class="ulink" href="http://www.gnome.org/fonts/">Bitstream Vera</a> with Unicode coverage (oblique, italic, bold-oblique, bold-italic, condensed)
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/ttf-unifont">
+    ttf-unifont
+    </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=ttf-unifont">I:23</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/t/ttf-unifont.html">17654</a>
+                    </td>
+                    <td style="text-align: left">
+    N/A
+    </td>
+                    <td style="text-align: left">
+    N/A
+    </td>
+                    <td style="text-align: left">
+    unifont
+    </td>
+                    <td style="text-align: left"><a class="ulink" href="http://Unifoundry.com">GNU Unifont</a>, with all printable character code in Unicode 5.1 Basic Multilingual Plane (BMP)
+    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <br class="table-break"/>
+          <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Tip">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Tip]" src="images/tip.png"/>
+                </td>
+                <th align="left">Tip</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p><a class="ulink" href="http://dejavu-fonts.org">DejaVu</a> fonts are based on and superset of <a class="ulink" href="http://www.gnome.org/fonts/">Bitstream Vera</a> fonts.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_additional_fonts"/>7.6.2. Additional fonts</h3>
+              </div>
+            </div>
+          </div>
+          <p><span class="citerefentry"><span class="refentrytitle">aptitude</span>(8)</span> helps you find additional fonts easily.</p>
+          <div class="itemizedlist">
+            <ul class="itemizedlist">
+              <li class="listitem">
+                <p>
+The short package list under "Tasks" →  "Localization"
+</p>
+              </li>
+              <li class="listitem">
+                <p>
+The filtered flat package list of font data with regex on debtag: "<code class="literal">~Gmade-of::data:font</code>"
+</p>
+              </li>
+              <li class="listitem">
+                <p>
+The filtered flat package list of the BDF (bitmap) font packages with regex on package name: "<code class="literal">~nxfonts-</code>"
+</p>
+              </li>
+              <li class="listitem">
+                <p>
+The filtered flat package list of the TrueType (outline) font packages with regex on package name: "<code class="literal">~nttf-|~nfonts-</code>"
+</p>
+              </li>
+            </ul>
+          </div>
+          <p>Since <span class="strong"><strong>Free</strong></span> fonts are sometimes limited, installing or sharing some commercial TrueType fonts is an option for a Debian users.  In order to make this process easy for the user, some convenience packages have been created.</p>
+          <div class="itemizedlist">
+            <ul class="itemizedlist">
+              <li class="listitem">
+                <p>
+              <code class="literal">mathematica-fonts</code>
+            </p>
+              </li>
+              <li class="listitem">
+                <p>
+              <code class="literal">fonts-mscorefonts-installer</code>
+            </p>
+              </li>
+            </ul>
+          </div>
+          <p>You'll have a really good selection of TrueType fonts at the expense of contaminating your <span class="strong"><strong>Free</strong></span> system with non-Free fonts.</p>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_cjk_fonts"/>7.6.3. CJK fonts</h3>
+              </div>
+            </div>
+          </div>
+          <p>Here are some key points focused on fonts of <a class="ulink" href="https://en.wikipedia.org/wiki/CJK_characters">CJK characters</a>.</p>
+          <div class="table">
+            <a id="tableofkeywordsundicatefonttypes"/>
+            <p class="title">
+              <strong>Table 7.7. Table of key words used in CJK font names to indicate font types</strong>
+            </p>
+            <div class="table-contents">
+              <table class="table" summary="Table of key words used in CJK font names to indicate font types" border="1">
+                <colgroup>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th style="text-align: left">
+    font type
+    </th>
+                    <th style="text-align: left">
+    Japanese font name
+    </th>
+                    <th style="text-align: left">
+    Chinese font name
+    </th>
+                    <th style="text-align: left">
+    Korean font name
+    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align: left">
+    sans-serif
+    </td>
+                    <td style="text-align: left">
+    gothic, ゴチック
+    </td>
+                    <td style="text-align: left">
+    hei, gothic
+    </td>
+                    <td style="text-align: left">
+    dodum, gulim, gothic
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    serif
+    </td>
+                    <td style="text-align: left">
+    mincho, 明朝
+    </td>
+                    <td style="text-align: left">
+    song, ming
+    </td>
+                    <td style="text-align: left">
+    batang
+    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <br class="table-break"/>
+          <p>Font name such as "VL PGothic" with "P" is a proportional font which corresponds to the fixed width "VL Gothic" font.</p>
+          <p>For example, <a class="ulink" href="https://en.wikipedia.org/wiki/Shift_JIS">Shift_JIS</a> code table comprises 7070 characters.  They can be grouped as the following.</p>
+          <div class="itemizedlist">
+            <ul class="itemizedlist">
+              <li class="listitem">
+                <p>
+JIS X 0201 single-byte characters (191 characters, a.k.a. half-width characters)
+</p>
+              </li>
+              <li class="listitem">
+                <p>
+JIS X 0208 double-byte characters (6879 characters, a.k.a. full-width characters)
+</p>
+              </li>
+            </ul>
+          </div>
+          <p>Double-byte characters occupy double width on console terminals which uses CJK fixed width fonts.  In order to cope with such situation, <a class="ulink" href="http://www.ibiblio.org/pub/packages/ccic/software/info/HBF-1.1/">Hanzi Bitmap Font (HBF) File</a> with file extension "<code class="literal">.hbf</code>" may be deployed for fonts containing single-byte and double-byte characters.</p>
+          <p>In order to save space for <a class="ulink" href="https://en.wikipedia.org/wiki/TrueType">TrueType</a> font files, <a class="ulink" href="https://en.wikipedia.org/wiki/TrueType">TrueType</a> font collection file with file extension "<code class="literal">.ttc</code>" may be used.</p>
+          <p>In order to cover complicated code space of characters, CID keyed <a class="ulink" href="https://en.wikipedia.org/wiki/PostScript">PostScript</a> Type 1 font is used with CMap files starting themselves with "<code class="literal">%!PS-Adobe-3.0 Resource-CMap</code>".  This is rarely used for normal X display but used for PDF rendering etc. (see <a class="xref" href="ch07.en.html#_x_utility_applications" title="7.7.2. X utility applications">Section 7.7.2, “X utility applications”</a>).</p>
+          <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Tip">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Tip]" src="images/tip.png"/>
+                </td>
+                <th align="left">Tip</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p>The multiple <a class="ulink" href="https://en.wikipedia.org/wiki/Glyph">glyphs</a> are expected for some <a class="ulink" href="https://en.wikipedia.org/wiki/Unicode">Unicode</a> code points due to <a class="ulink" href="https://en.wikipedia.org/wiki/Han_unification">Han unification</a>.  One of the most annoying ones are  "U+3001 IDEOGRAPHIC COMMA" and "U+3002 IDEOGRAPHIC FULL STOP" whose character positions differ among CJK countries.  Configuring priority of Japanese centric fonts over Chinese ones using "<code class="literal">~/.fonts.conf</code>" should give peace of minds to Japanese.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="titlepage">
+          <div>
+            <div>
+              <h2 class="title"><a id="_x_applications"/>7.7. X applications</h2>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_x_office_applications"/>7.7.1. X office applications</h3>
+              </div>
+            </div>
+          </div>
+          <p>Here is a list of basic office applications (LO is LibreOffice).</p>
+          <div class="table">
+            <a id="listofbasicxofficeapplications"/>
+            <p class="title">
+              <strong>Table 7.8. List of basic X office applications</strong>
+            </p>
+            <div class="table-contents">
+              <table class="table" summary="List of basic X office applications" border="1">
+                <colgroup>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th style="text-align: left">
+    package
+    </th>
+                    <th style="text-align: left">
+    popcon
+    </th>
+                    <th style="text-align: left">
+    package size
+    </th>
+                    <th style="text-align: left">
+    type
+    </th>
+                    <th style="text-align: left">
+    description
+    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/libreoffice-writer">
+                  <code class="literal">libreoffice-writer</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=libreoffice-writer">V:318, I:478</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/libr/libreoffice-writer.html">31712</a>
+                    </td>
+                    <td style="text-align: left">
+    LO
+    </td>
+                    <td style="text-align: left">
+    word processor
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/libreoffice-calc">
+                  <code class="literal">libreoffice-calc</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=libreoffice-calc">V:315, I:473</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/libr/libreoffice-calc.html">29409</a>
+                    </td>
+                    <td style="text-align: left">
+    LO
+    </td>
+                    <td style="text-align: left">
+    spreadsheet
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/libreoffice-impress">
+                  <code class="literal">libreoffice-impress</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=libreoffice-impress">V:312, I:469</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/libr/libreoffice-impress.html">4175</a>
+                    </td>
+                    <td style="text-align: left">
+    LO
+    </td>
+                    <td style="text-align: left">
+    presentation
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/libreoffice-base">
+                  <code class="literal">libreoffice-base</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=libreoffice-base">V:297, I:445</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/libr/libreoffice-base.html">9211</a>
+                    </td>
+                    <td style="text-align: left">
+    LO
+    </td>
+                    <td style="text-align: left">
+    database management
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/libreoffice-draw">
+                  <code class="literal">libreoffice-draw</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=libreoffice-draw">V:313, I:470</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/libr/libreoffice-draw.html">9960</a>
+                    </td>
+                    <td style="text-align: left">
+    LO
+    </td>
+                    <td style="text-align: left">
+    vector graphics editor (draw)
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/libreoffice-math">
+                  <code class="literal">libreoffice-math</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=libreoffice-math">V:315, I:475</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/libr/libreoffice-math.html">1469</a>
+                    </td>
+                    <td style="text-align: left">
+    LO
+    </td>
+                    <td style="text-align: left">
+    mathematical equation/formula editor
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/abiword">
+                  <code class="literal">abiword</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=abiword">V:3, I:14</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/a/abiword.html">5074</a>
+                    </td>
+                    <td style="text-align: left">
+    GNOME
+    </td>
+                    <td style="text-align: left">
+    word processor
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/gnumeric">
+                  <code class="literal">gnumeric</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=gnumeric">V:13, I:25</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/g/gnumeric.html">9758</a>
+                    </td>
+                    <td style="text-align: left">
+    GNOME
+    </td>
+                    <td style="text-align: left">
+    spreadsheet
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/gimp">
+                  <code class="literal">gimp</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=gimp">V:85, I:489</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/g/gimp.html">19016</a>
+                    </td>
+                    <td style="text-align: left">
+    GTK
+    </td>
+                    <td style="text-align: left">
+    bitmap graphics editor (paint)
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/inkscape">
+                  <code class="literal">inkscape</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=inkscape">V:129, I:332</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/i/inkscape.html">78502</a>
+                    </td>
+                    <td style="text-align: left">
+    GNOME
+    </td>
+                    <td style="text-align: left">
+    vector graphics editor (draw)
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/dia">
+                  <code class="literal">dia</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=dia">V:18, I:37</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/d/dia.html">3824</a>
+                    </td>
+                    <td style="text-align: left">
+    GTK
+    </td>
+                    <td style="text-align: left">
+    flowchart and diagram editor
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/planner">
+                  <code class="literal">planner</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=planner">V:3, I:7</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/p/planner.html">1151</a>
+                    </td>
+                    <td style="text-align: left">
+    GNOME
+    </td>
+                    <td style="text-align: left">
+    project management
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/calligrawords">
+                  <code class="literal">calligrawords</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=calligrawords">V:1, I:8</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/c/calligrawords.html">5837</a>
+                    </td>
+                    <td style="text-align: left">
+    KDE
+    </td>
+                    <td style="text-align: left">
+    word processor
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/calligrasheets">
+                  <code class="literal">calligrasheets</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=calligrasheets">V:0, I:6</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/c/calligrasheets.html">11248</a>
+                    </td>
+                    <td style="text-align: left">
+    KDE
+    </td>
+                    <td style="text-align: left">
+    spreadsheet
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/calligrastage">
+                  <code class="literal">calligrastage</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=calligrastage">V:0, I:6</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/c/calligrastage.html">5064</a>
+                    </td>
+                    <td style="text-align: left">
+    KDE
+    </td>
+                    <td style="text-align: left">
+    presentation
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/calligraplan">
+                  <code class="literal">calligraplan</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=calligraplan">V:0, I:6</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/c/calligraplan.html">15402</a>
+                    </td>
+                    <td style="text-align: left">
+    KDE
+    </td>
+                    <td style="text-align: left">
+    project management
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/kexi">
+                  <code class="literal">kexi</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=kexi">V:0, I:6</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/k/kexi.html">7547</a>
+                    </td>
+                    <td style="text-align: left">
+    KDE
+    </td>
+                    <td style="text-align: left">
+    database management
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/karbon">
+                  <code class="literal">karbon</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=karbon">V:1, I:7</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/k/karbon.html">4318</a>
+                    </td>
+                    <td style="text-align: left">
+    KDE
+    </td>
+                    <td style="text-align: left">
+    vector graphics editor (draw)
+    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <br class="table-break"/>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_x_utility_applications"/>7.7.2. X utility applications</h3>
+              </div>
+            </div>
+          </div>
+          <p>Here is a list of basic utility applications which caught my eyes.</p>
+          <div class="table">
+            <a id="listofbasicxutilityapplications"/>
+            <p class="title">
+              <strong>Table 7.9. List of basic X utility applications</strong>
+            </p>
+            <div class="table-contents">
+              <table class="table" summary="List of basic X utility applications" border="1">
+                <colgroup>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th style="text-align: left">
+    package
+    </th>
+                    <th style="text-align: left">
+    popcon
+    </th>
+                    <th style="text-align: left">
+    package size
+    </th>
+                    <th style="text-align: left">
+    type
+    </th>
+                    <th style="text-align: left">
+    description
+    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/evince">
+                  <code class="literal">evince</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=evince">V:170, I:405</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/e/evince.html">936</a>
+                    </td>
+                    <td style="text-align: left">
+    GNOME
+    </td>
+                    <td style="text-align: left">
+    document(pdf) viewer
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/okular">
+                  <code class="literal">okular</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=okular">V:69, I:122</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/o/okular.html">13136</a>
+                    </td>
+                    <td style="text-align: left">
+    KDE
+    </td>
+                    <td style="text-align: left">
+    document(pdf) viewer
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/calibre">
+                  <code class="literal">calibre</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=calibre">V:8, I:39</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/c/calibre.html">51670</a>
+                    </td>
+                    <td style="text-align: left">
+    KDE
+    </td>
+                    <td style="text-align: left">
+    e-book converter and library management
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/fbreader">
+                  <code class="literal">fbreader</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=fbreader">V:2, I:18</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/f/fbreader.html">3030</a>
+                    </td>
+                    <td style="text-align: left">
+    GTK
+    </td>
+                    <td style="text-align: left">
+    e-book reader
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/evolution">
+                  <code class="literal">evolution</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=evolution">V:40, I:265</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/e/evolution.html">449</a>
+                    </td>
+                    <td style="text-align: left">
+    GNOME
+    </td>
+                    <td style="text-align: left">
+    Personal information Management (groupware and email)
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/kontact">
+                  <code class="literal">kontact</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=kontact">V:2, I:19</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/k/kontact.html">2071</a>
+                    </td>
+                    <td style="text-align: left">
+    KDE
+    </td>
+                    <td style="text-align: left">
+    Personal information Management (groupware and email)
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/scribus">
+                  <code class="literal">scribus</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=scribus">V:3, I:28</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/s/scribus.html">19995</a>
+                    </td>
+                    <td style="text-align: left">
+    KDE
+    </td>
+                    <td style="text-align: left">
+    desktop page layout editor
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/glabels">
+                  <code class="literal">glabels</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=glabels">V:0, I:4</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/g/glabels.html">1417</a>
+                    </td>
+                    <td style="text-align: left">
+    GNOME
+    </td>
+                    <td style="text-align: left">
+    label editor
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/gnucash">
+                  <code class="literal">gnucash</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=gnucash">V:3, I:13</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/g/gnucash.html">22199</a>
+                    </td>
+                    <td style="text-align: left">
+    GNOME
+    </td>
+                    <td style="text-align: left">
+    personal accounting
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/homebank">
+                  <code class="literal">homebank</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=homebank">V:0, I:3</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/h/homebank.html">949</a>
+                    </td>
+                    <td style="text-align: left">
+    GTK
+    </td>
+                    <td style="text-align: left">
+    personal accounting
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/kmymoney">
+                  <code class="literal">kmymoney</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=kmymoney">V:0, I:3</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/k/kmymoney.html">12975</a>
+                    </td>
+                    <td style="text-align: left">
+    KDE
+    </td>
+                    <td style="text-align: left">
+    personal accounting
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/shotwell">
+                  <code class="literal">shotwell</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=shotwell">V:20, I:224</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/s/shotwell.html">6096</a>
+                    </td>
+                    <td style="text-align: left">
+    GTK
+    </td>
+                    <td style="text-align: left">
+    digital photo organizer
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/xsane">
+                  <code class="literal">xsane</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=xsane">V:19, I:190</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/x/xsane.html">935</a>
+                    </td>
+                    <td style="text-align: left">
+    GTK
+    </td>
+                    <td style="text-align: left">
+    scanner frontend
+    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <br class="table-break"/>
+          <div class="caution" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Caution">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Caution]" src="images/caution.png"/>
+                </td>
+                <th align="left">Caution</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p>The <code class="literal">poppler-data</code> package (previously non-free, see <a class="xref" href="ch11.en.html#_ghostscript" title="11.4.1. Ghostscript">Section 11.4.1, “Ghostscript”</a>) needs to be installed for <code class="literal">evince</code> and <code class="literal">okular</code> to display CJK PDF documents using Cmap data (<a class="xref" href="ch07.en.html#_cjk_fonts" title="7.6.3. CJK fonts">Section 7.6.3, “CJK fonts”</a>).</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Note">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Note]" src="images/note.png"/>
+                </td>
+                <th align="left">Note</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p>Installing softwares such as <code class="literal">scribus</code> (KDE) on GNOME desktop environment are quite acceptable since corresponding functionality is not available under GNOME desktop environment.  But installing too many packages with duplicated functionalities clutter your menu.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="titlepage">
+          <div>
+            <div>
+              <h2 class="title"><a id="_the_x_trivia"/>7.8. The X trivia</h2>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_clipboard"/>7.8.1. Clipboard</h3>
+              </div>
+            </div>
+          </div>
+          <p>The X selection using 3 mouse buttons is the native clipboard feature of X (see <a class="xref" href="ch01.en.html#_unix_style_mouse_operations" title="1.4.4. Unix style mouse operations">Section 1.4.4, “Unix style mouse operations”</a>).</p>
+          <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Tip">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Tip]" src="images/tip.png"/>
+                </td>
+                <th align="left">Tip</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p>Shift-Insert can work as the equivalent of the middle-mouse-button click.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="table">
+            <a id="listofbasicxselectionprograms"/>
+            <p class="title">
+              <strong>Table 7.10. List of basic X selection programs</strong>
+            </p>
+            <div class="table-contents">
+              <table class="table" summary="List of basic X selection programs" border="1">
+                <colgroup>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th style="text-align: left">
+    package
+    </th>
+                    <th style="text-align: left">
+    popcon
+    </th>
+                    <th style="text-align: left">
+    package size
+    </th>
+                    <th style="text-align: left">
+    type
+    </th>
+                    <th style="text-align: left">
+    description
+    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/xsel">
+                  <code class="literal">xsel</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=xsel">V:11, I:45</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/x/xsel.html">51</a>
+                    </td>
+                    <td style="text-align: left">
+    X
+    </td>
+                    <td style="text-align: left">
+    command line interface to X selections
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/xclip">
+                  <code class="literal">xclip</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=xclip">V:9, I:40</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/x/xclip.html">64</a>
+                    </td>
+                    <td style="text-align: left">
+    X
+    </td>
+                    <td style="text-align: left">
+    command line interface to X selections
+    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <br class="table-break"/>
+          <p>The modern Desktop Environments (GNOME, KDE, …) offer different clipboard system for the cut, copy, and paste using the left mouse button and keys (CTRL-X, CRTL-C, and CTRL-V).</p>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_keymaps_and_pointer_button_mappings_in_x"/>7.8.2. Keymaps and pointer button mappings in X</h3>
+              </div>
+            </div>
+          </div>
+          <p><span class="citerefentry"><span class="refentrytitle">xmodmap</span>(1)</span> is a utility for modifying keymaps and pointer button mappings in the X Window System.
+To get the <span class="strong"><strong>keycode</strong></span>, run <span class="citerefentry"><span class="refentrytitle">xev</span>(1)</span> in the X and press keys.  To get the meaning of <span class="strong"><strong>keysym</strong></span>, look into the MACRO definition in "<code class="literal">/usr/include/X11/keysymdef.h</code>" file (<code class="literal">x11proto-core-dev</code> package).  All "<code class="literal">#define</code>" statements in this file are named as "<code class="literal">XK_</code>" prepended to <span class="strong"><strong>keysym</strong></span> names.</p>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_classic_x_clients"/>7.8.3. Classic X clients</h3>
+              </div>
+            </div>
+          </div>
+          <p>Most traditional X client programs, such as <span class="citerefentry"><span class="refentrytitle">xterm</span>(1)</span>, can be started with a set of standard command line options to specify geometry, font, and display.</p>
+          <p>They also use the X resource database to configure their appearance.  The system-wide defaults of X resources are stored in "<code class="literal">/etc/X11/Xresources/*</code>" and application defaults of them are stored in "<code class="literal">/etc/X11/app-defaults/*</code>".  Use these settings as the starting points.</p>
+          <p>The "<code class="literal">~/.Xresources</code>" file is used to store user resource specifications.  This file is automatically merged into the default X resources upon login.  To make changes to these settings and make them effective immediately, merge them into the database using the following command.</p>
+          <pre class="screen">$ xrdb -merge ~/.Xresources</pre>
+          <p>See <span class="citerefentry"><span class="refentrytitle">x</span>(7)</span> and <span class="citerefentry"><span class="refentrytitle">xrdb</span>(1)</span>.</p>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_the_x_terminal_emulator_xterm"/>7.8.4. The X terminal emulator — xterm</h3>
+              </div>
+            </div>
+          </div>
+          <p>Learn everything about <span class="citerefentry"><span class="refentrytitle">xterm</span>(1)</span> at <a class="ulink" href="http://dickey.his.com/xterm/xterm.faq.html">http://dickey.his.com/xterm/xterm.faq.html</a>.</p>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_running_x_clients_as_root"/>7.8.5. Running X clients as root</h3>
+              </div>
+            </div>
+          </div>
+          <div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Warning">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Warning]" src="images/warning.png"/>
+                </td>
+                <th align="left">Warning</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p>Never start the X display/session manager under the root account by typing in <code class="literal">root</code> to the prompt of the display manager such as <code class="literal">gdm3</code> because it is considered unsafe (insecure), even when you plan to perform administrative activities.  The entire X architecture is considered insecure if run as root.  You must always use the lowest privilege level possible, like a regular user account.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <p>Easy ways to run a particular X client, e.g. "<code class="literal">foo</code>" as root is to use <span class="citerefentry"><span class="refentrytitle">sudo</span>(8)</span> etc. as the following.</p>
+          <pre class="screen">$ sudo foo &amp;</pre>
+          <pre class="screen">$ sudo -s
+# foo &amp;</pre>
+          <pre class="screen">$ ssh -X root@localhost
+# foo &amp;</pre>
+          <div class="caution" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Caution">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Caution]" src="images/caution.png"/>
+                </td>
+                <th align="left">Caution</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p>Use of <span class="citerefentry"><span class="refentrytitle">ssh</span>(1)</span> just for this purpose as above is waste of resource.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <p>In order for the X client to connect to the X server, please note the following.</p>
+          <div class="itemizedlist">
+            <ul class="itemizedlist">
+              <li class="listitem">
+                <p>
+Values of the old user's "<code class="literal">$XAUTHORITY</code>" and "<code class="literal">$DISPLAY</code>" environment variables must be copied to the new user's ones.
+</p>
+              </li>
+              <li class="listitem">
+                <p>
+The file pointed by value of the "<code class="literal">$XAUTHORITY</code>" environment variable must be readable by the new user.
+</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navfooter">
+      <hr/>
+      <table width="100%" summary="Navigation footer">
+        <tr>
+          <td align="left"><a accesskey="p" href="ch06.en.html"><img src="images/prev.png" alt="Prev"/></a> </td>
+          <td align="center"> </td>
+          <td align="right"> <a accesskey="n" href="ch08.en.html"><img src="images/next.png" alt="Next"/></a></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top">Chapter 6. Network applications </td>
+          <td align="center">
+            <a accesskey="h" href="index.en.html">
+              <img src="images/home.png" alt="Home"/>
+            </a>
+          </td>
+          <td align="right" valign="top"> Chapter 8. I18N and L10N</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

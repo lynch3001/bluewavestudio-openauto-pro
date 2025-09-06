@@ -1,0 +1,10 @@
+QT.BluezQt.VERSION = 5.54.0
+QT.BluezQt.MAJOR_VERSION = 5
+QT.BluezQt.MINOR_VERSION = 54
+QT.BluezQt.PATCH_VERSION = 0
+QT.BluezQt.name = KF5BluezQt
+QT.BluezQt.defines = 
+QT.BluezQt.includes = /usr/include/KF5/BluezQt
+QT.BluezQt.private_includes =
+QT.BluezQt.libs = /usr/lib/arm-linux-gnueabihf
+QT.BluezQt.depends = core

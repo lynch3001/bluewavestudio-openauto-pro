@@ -1,0 +1,16 @@
+288126336ab8fc1790f14b856c466411  usr/include/fmt123.h
+259846efcd290835ae91fa917457520a  usr/include/mpg123.h
+4dc3f388cde4181169f27497569e5655  usr/include/out123.h
+4aa57e72cc2a6b9748d8792d599f5015  usr/lib/arm-linux-gnueabihf/pkgconfig/libmpg123.pc
+354f3398198a47092113ec922a9a7323  usr/lib/arm-linux-gnueabihf/pkgconfig/libout123.pc
+895c72a7af31f03d12fd1183a501d54a  usr/share/doc/libmpg123-dev/changelog.Debian.gz
+8dc04ff28949e4b1900732b22bd41338  usr/share/doc/libmpg123-dev/changelog.gz
+a779e7c25032b5c6eeee7c6f8601f5b8  usr/share/doc/libmpg123-dev/copyright
+5a3d10970f1e7281d6f96d18c8534ff1  usr/share/doc/libmpg123-dev/examples/Makefile
+3dabf22beeb6331e6275268be1d9eb37  usr/share/doc/libmpg123-dev/examples/dump_seekindex.c
+b5b3cb9a4a9324a9f0ed1935ed3de790  usr/share/doc/libmpg123-dev/examples/extract_frames.c
+1d125017ddd5b242a7a3189dd0113201  usr/share/doc/libmpg123-dev/examples/feedseek.c.gz
+78ae4c6e85fb9877e264710195e630e9  usr/share/doc/libmpg123-dev/examples/id3dump.c.gz
+427cb672368abe1af82484f73ce07086  usr/share/doc/libmpg123-dev/examples/mpg123_to_out123.c.gz
+71d67fd37862f1d1a7db0988b23bde94  usr/share/doc/libmpg123-dev/examples/mpglib.c
+a16526d4e3025c56a025439246f41a82  usr/share/doc/libmpg123-dev/examples/scan.c

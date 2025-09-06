@@ -1,0 +1,6 @@
+auto
+/usr/lib/arm-linux-gnueabihf/gstreamer-1.0/libgstomx.so
+
+/usr/lib/arm-linux-gnueabihf/gstreamer-1.0/libgstomx-rpi.so
+90
+

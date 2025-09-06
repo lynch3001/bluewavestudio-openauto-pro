@@ -1,0 +1,9 @@
+6d97b2c9c8faecff23c060fe24d51345  usr/bin/arm-linux-gnueabihf-gdc-8
+dbb23c3267b81d9491327d02c1a65c4d  usr/lib/gcc/arm-linux-gnueabihf/8/cc1d
+db8719e7214be2e554b2631046aab590  usr/lib/gcc/arm-linux-gnueabihf/8/include/d/__entrypoint.di
+0d710cd4063894bc25f1a6de00f4f121  usr/lib/gcc/arm-linux-gnueabihf/8/libgphobos.spec
+2f0f0bc1f92a04026b22ee5691717f24  usr/share/doc/gdc-8/changelog.Debian.gz
+251c08e9e495082024b553a7908eede3  usr/share/doc/gdc-8/changelog.gz
+e4cd8bb1822c3a313b83f2be5db0a718  usr/share/doc/gdc-8/copyright
+1adee51621e677b7b0f33e44062fc248  usr/share/lintian/overrides/gdc-8
+40afaaf37cc4ce58f5e6c2c4b2b91f8c  usr/share/man/man1/arm-linux-gnueabihf-gdc-8.1.gz

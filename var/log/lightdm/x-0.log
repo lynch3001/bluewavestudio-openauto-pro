@@ -1,0 +1,18 @@
+
+X.Org X Server 1.20.4
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 5.4.0-72-generic armv8l Raspbian
+Current Operating System: Linux raspberrypi 5.10.103-v7l+ #1529 SMP Tue Mar 8 12:24:00 GMT 2022 armv7l
+Kernel command line: coherent_pool=1M 8250.nr_uarts=1 snd_bcm2835.enable_compat_alsa=0 snd_bcm2835.enable_hdmi=1  smsc95xx.macaddr=DC:A6:32:B3:60:C8 vc_mem.mem_base=0x3ec00000 vc_mem.mem_size=0x40000000  dwc_otg.lpm_enable=0 console=ttyAMA0,115200 console=tty3 consoleblank=0 loglevel=0 root=PARTUUID=38df017e-02 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait quiet splash logo.nologo vt.global_cursor_default=0 plymouth.ignore-serial-consoles
+Build Date: 04 January 2022  10:05:34AM
+xorg-server 2:1.20.4-1+rpt4+deb10u4 (https://www.debian.org/support) 
+Current version of pixman: 0.36.0
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Thu Mar 17 21:13:25 2022
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+(II) modeset(0): Initializing kms color map for depth 24, 8 bpc.
+(II) Server terminated successfully (0). Closing log file.

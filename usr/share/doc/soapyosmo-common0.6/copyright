@@ -1,0 +1,208 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: soapyosmo
+Source: https://github.com/pothosware/SoapyOsmo/wiki
+Comment: This source package contains a copy of the gr-osmosdr source and most
+ of the copyright entries below are likewise originally a copy of the copyright
+ file of the Debian gr-osmosdr package.
+
+Files: .gitignore .travis.yml CMakeLists.txt Changelog.txt README.md debian/*
+ update_gr_osmosdr.sh
+Copyright: 2016 Josh Blum <josh@joshknows.com>
+ 2016 Andreas Bombe <aeb@debian.org>
+License: GPL-3+
+
+Files: compat/*
+Copyright: 2004,2007-2014 Free Software Foundation, Inc.
+License: GPL-3+
+
+Files: GrOsmoSDRInterface.hpp GrOsmoSDRRegister.in.cpp
+Copyright: 2014-2017 Free Software Foundation, Inc.
+License: GPL-3+
+
+Files: COPYING gr-osmosdr/COPYING
+Copyright: 2007 Free Software Foundation, Inc. <http://fsf.org/>
+License: FSF-COPYING
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+Files: gr-osmosdr/CMakeLists.txt gr-osmosdr/apps/* gr-osmosdr/docs/*
+ gr-osmosdr/python/* gr-osmosdr/include/osmosdr/api.h
+ gr-osmosdr/cmake/Modules/* gr-osmosdr/include/osmosdr/CMakeLists.txt
+ gr-osmosdr/lib/CMakeLists.txt gr-osmosdr/lib/gnuradio-osmosdr.rc.in
+ gr-osmosdr/lib/bladerf/CMakeLists.txt gr-osmosdr/swig/*
+ gr-osmosdr/grc/CMakeLists.txt
+Copyright: 2005,2007-2013 Free Software Foundation, Inc.
+Comment: GNU Radio gr_modtool derived
+License: GPL-3+
+
+Files: gr-osmosdr/grc/gen_osmosdr_blocks.py
+Copyright: 2012 Free Software Foundation, Inc.
+License: GPL-2+
+
+Files: gr-osmosdr/include/osmosdr/pimpl.h
+ gr-osmosdr/include/osmosdr/ranges.h gr-osmosdr/lib/ranges.cc
+ gr-osmosdr/include/osmosdr/time_spec.h gr-osmosdr/lib/time_spec.cc
+Copyright: 2010-2013 Ettus Research LLC
+License: GPL-3+
+
+Files: gr-osmosdr/lib/bladerf/bladerf_common.cc
+ gr-osmosdr/lib/bladerf/bladerf_common.h
+ gr-osmosdr/lib/bladerf/bladerf_sink_c.cc
+ gr-osmosdr/lib/bladerf/bladerf_sink_c.h
+ gr-osmosdr/lib/bladerf/bladerf_source_c.cc
+ gr-osmosdr/lib/bladerf/bladerf_source_c.h
+Copyright: 2013 Nuand LLC
+ 2013 Dimitri Stolnikov <horiz0n@gmx.net>
+License: GPL-3+
+
+Files: gr-osmosdr/lib/freesrp/*
+Copyright: 2015 Lukas Lao Beyer
+ 2013 Dimitri Stolnikov <horiz0n@gmx.net>
+License: GPL-3+
+
+Files: gr-osmosdr/lib/freesrp/readerwriterqueue/*
+Copyright: 2013-2015, Cameron Desrochers
+ 2013 Dimitri Stolnikov <horiz0n@gmx.net>
+ 2015 Jeff Preshing
+Comment: Most of the code in this directory is under the simplified BSD, but
+ atomicops.h embeds a semaphore implementation by Jeff Preshing under the zlib
+ license at the end.
+License: Simplified-BSD-and-zlib
+ All rights reserved.
+ .
+ Redistribution and use in source and binary forms, with or without modification,
+ are permitted provided that the following conditions are met:
+ .
+ - Redistributions of source code must retain the above copyright notice, this list of
+ conditions and the following disclaimer.
+ - Redistributions in binary form must reproduce the above copyright notice, this list of
+ conditions and the following disclaimer in the documentation and/or other materials
+ provided with the distribution.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY
+ EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+ MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL
+ THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+ OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR
+ TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ .
+ .
+ This software is provided 'as-is', without any express or implied
+ warranty. In no event will the authors be held liable for any damages
+ arising from the use of this software.
+ .
+ Permission is granted to anyone to use this software for any purpose,
+ including commercial applications, and to alter it and redistribute it
+ freely, subject to the following restrictions:
+ .
+ 1. The origin of this software must not be misrepresented; you must not
+    claim that you wrote the original software. If you use this software
+    in a product, an acknowledgement in the product documentation would be
+    appreciated but is not required.
+ 2. Altered source versions must be plainly marked as such, and must not be
+    misrepresented as being the original software.
+ 3. This notice may not be removed or altered from any source distribution.
+
+Files: gr-osmosdr/lib/soapy/*
+Copyright: 2015-2017 Josh Blum <josh@joshknows.com>
+ 2013 Dimitri Stolnikov <horiz0n@gmx.net>
+License: GPL-3+
+
+Files: gr-osmosdr/AUTHORS gr-osmosdr/MANIFEST.md gr-osmosdr/README
+ gr-osmosdr/gnuradio-osmosdr.pc.in gr-osmosdr/cmake/cmake_uninstall.cmake.in
+ gr-osmosdr/include/osmosdr/device.h gr-osmosdr/include/osmosdr/sink.h
+ gr-osmosdr/include/osmosdr/source.h gr-osmosdr/lib/arg_helpers.h
+ gr-osmosdr/lib/config.h.in gr-osmosdr/lib/device.cc gr-osmosdr/lib/sink_iface.h
+ gr-osmosdr/lib/sink_impl.cc gr-osmosdr/lib/sink_impl.h
+ gr-osmosdr/lib/source_iface.h gr-osmosdr/lib/source_impl.cc
+ gr-osmosdr/lib/source_impl.h gr-osmosdr/lib/airspy/* gr-osmosdr/lib/fcd/*
+ gr-osmosdr/lib/file/* gr-osmosdr/lib/hackrf/* gr-osmosdr/lib/miri/*
+ gr-osmosdr/lib/osmosdr/* gr-osmosdr/lib/rfspace/* gr-osmosdr/lib/rtl*
+ gr-osmosdr/lib/sdrplay/* gr-osmosdr/lib/uhd/*
+Copyright: 2012-2013 Dimitri Stolnikov <horiz0n@gmx.net>
+License: GPL-3+
+
+Files: gr-osmosdr/lib/rtl_tcp/rtl_tcp_source_f.h
+Copyright: 2012 Hoernchen <la@tfc-server.de>
+License: GPL-3+
+
+Files: gr-osmosdr/lib/miri/miri_source_c.cc
+Copyright: 2012 Steve Markgraf <steve@steve-m.de>
+ 2012 Dimitri Stolnikov <horiz0n@gmx.net>
+License: GPL-3+
+
+Files: gr-osmosdr/lib/redpitaya/*
+Copyright: 2015 Pavel Demin
+           2012,2015 Dimitri Stolnikov <horiz0n@gmx.net>
+License: GPL-3+
+  
+Files: gr-osmosdr/cmake/Modules/CMakeParseArgumentsCopy.cmake
+Copyright: 2010 Alexander Neundorf <neundorf@kde.org>
+Comment: copy of CMakeParseArguments.cmake from cmake 2.8.x
+License: Kitware-BSD
+ All rights reserved.
+ .
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ .
+ * Redistributions of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer.
+ .
+ * Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+ .
+ * Neither the names of Kitware, Inc., the Insight Software Consortium,
+   nor the names of their contributors may be used to endorse or promote
+   products derived from this software without specific prior written
+   permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+ HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+License: GPL-2+
+ GNU Radio Companion is free software; you can redistribute it and/or
+ modify it under the terms of the GNU General Public License
+ as published by the Free Software Foundation; either version 2
+ of the License, or (at your option) any later version.
+ .
+ GNU Radio Companion is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+ .
+ On Debian systems, the complete text of the GNU General Public
+ License (GPL) version 3 can be found in the file
+ '/usr/share/common-licenses/GPL-2'.
+
+License: GPL-3+
+ GNU Radio is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 3, or (at your option)
+ any later version.
+ .
+ GNU Radio is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ On Debian systems, the complete text of the GNU General Public
+ License (GPL) version 3 can be found in the file
+ '/usr/share/common-licenses/GPL-3'.

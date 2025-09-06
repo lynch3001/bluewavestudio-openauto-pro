@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/fortran
+/usr/lib/arm-linux-gnueabihf/fortran/gfortran-mod-15
+/usr/lib/arm-linux-gnueabihf/fortran/gfortran-mod-15/opencoarrays.mod
+/usr/share
+/usr/share/doc
+/usr/share/doc/libcoarrays-dev
+/usr/share/doc/libcoarrays-dev/AUTHORS.md.gz
+/usr/share/doc/libcoarrays-dev/CAF_ABI.md.gz
+/usr/share/doc/libcoarrays-dev/CONTRIBUTING.md.gz
+/usr/share/doc/libcoarrays-dev/GETTING_STARTED.md.gz
+/usr/share/doc/libcoarrays-dev/README.md.gz
+/usr/share/doc/libcoarrays-dev/changelog.Debian.gz
+/usr/share/doc/libcoarrays-dev/copyright

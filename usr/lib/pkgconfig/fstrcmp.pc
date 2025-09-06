@@ -1,0 +1,15 @@
+prefix=/usr
+exec_prefix=/usr
+bindir=/usr/bin
+libdir=/usr/lib
+mandir=/usr/share/man
+datarootdir=/usr/share
+includedir=/usr/include
+
+Name: fstrcmp
+Description: fuzzy string compare library
+Version: 0.7.D001
+URL: http://fstrcmp.sourceforge.net/
+Libs: -L${libdir} -lfstrcmp
+Libs.private: 
+Cflags: -I${includedir}

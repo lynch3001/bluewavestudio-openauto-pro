@@ -1,0 +1,12 @@
+54a6f13786243cd312c4475fbcd85b06  usr/bin/qpdfview
+b3843b351abeb4a0886d06e55f8c1f13  usr/lib/mime/packages/qpdfview
+0b7e68950ed1ef8e4d966d3cee8c4f17  usr/lib/qpdfview/libqpdfview_image.so
+a1ad21991f44fab57d8847938c41b006  usr/lib/qpdfview/libqpdfview_pdf.so
+195964f5f3f28c6a520f24c482dc3849  usr/share/applications/qpdfview.desktop
+ee8bb0cc3c70a3f679974bbc53fec765  usr/share/doc/qpdfview/changelog.Debian.gz
+2ab308306e492e9531521bacd7c0cc03  usr/share/doc/qpdfview/changelog.gz
+f26aaa1346bf3f0775645c9cffe94aa5  usr/share/doc/qpdfview/copyright
+e475bf1c07df3a184db4ab3a70cb5da8  usr/share/icons/hicolor/scalable/apps/qpdfview.svg
+4dfba90ab4a0bb1445d7636889172cf4  usr/share/man/man1/qpdfview.1.gz
+199190adb0e49cb7e1995209a6f42127  usr/share/metainfo/qpdfview.appdata.xml
+4217137bfd5636c2c2e48074cd305547  usr/share/qpdfview/help.html

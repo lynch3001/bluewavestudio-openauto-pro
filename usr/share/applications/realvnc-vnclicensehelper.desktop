@@ -1,0 +1,19 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=VNC License Helper
+Name[de]=VNC-Lizensierungshilfe
+Name[es]=Aplicación auxiliar de licencias de VNC
+Name[fr]=Assistant de licence VNC
+Name[pt]=Auxiliar de licenças do VNC
+GenericName=VNC License
+Comment=Install a VNC license key
+Comment[de]=Lizenzschlüssel installieren
+Comment[es]=Instalar una clave de licencia de VNC
+Comment[fr]=Installer une clé de licence VNC
+Comment[pt]=Instalar uma chave de licença do VNC
+Exec=vnclicensehelper -key %f
+Type=Application
+Icon=/usr/share/icons/hicolor/48x48/apps/vncserver48x48.png
+Categories=Application;Network;RemoteAccess;
+MimeType=application/vnclicense-key
+NoDisplay=true

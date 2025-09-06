@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/librtaudio.so.6.0.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/librtaudio6
+/usr/share/doc/librtaudio6/changelog.Debian.gz
+/usr/share/doc/librtaudio6/changelog.gz
+/usr/share/doc/librtaudio6/copyright
+/usr/share/doc/librtaudio6/readme
+/usr/lib/arm-linux-gnueabihf/librtaudio.so.6

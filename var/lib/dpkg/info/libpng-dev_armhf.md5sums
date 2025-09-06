@@ -1,0 +1,13 @@
+8321d1416f8a488ecb20073beff9815f  usr/bin/libpng16-config
+cc70fe9580179d09709f5ee3d8e6a523  usr/include/libpng16/png.h
+f66fa691efe8fe30573829a9fdb2ba71  usr/include/libpng16/pngconf.h
+bcc41563d26fbd219e84ed7c1799dcca  usr/include/libpng16/pnglibconf.h
+edbc61b910bf0a063edff8019d4e4a0a  usr/lib/arm-linux-gnueabihf/libpng16.a
+d58f148da0c5355d03baeeafbd05937b  usr/lib/arm-linux-gnueabihf/pkgconfig/libpng16.pc
+c071e4699806f908e60c65efe2ec44d8  usr/share/doc/libpng-dev/changelog.Debian.gz
+21d9c0ce41c646bae3f567c3d198a988  usr/share/doc/libpng-dev/changelog.gz
+5677eae6bd807b0745ac1b137e6f1f94  usr/share/doc/libpng-dev/copyright
+5083bdc3a9247bb8173819244ea9b87b  usr/share/doc/libpng-dev/examples/example.c.gz
+069ca053c53869f41235e0e8bf322784  usr/share/doc/libpng-dev/examples/pngtest.c.gz
+8b7f44fc793765c4a23378df600bf1a4  usr/share/doc/libpng-dev/examples/pngtest.png
+7e7fd23edb110c878c79eb0143f4298a  usr/share/man/man1/libpng16-config.1.gz

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="browse-webapps-del" xml:lang="ko">
+
+  <info>
+    <link type="guide" xref="index#adv"/>
+    <link type="seealso" xref="browse-webapps"/>
+    <revision pkgversion="3.16" date="2014-01-26" status="review"/>
+
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2015</years>
+    </credit>
+<!--    <credit type="copyright editor">
+      <name></name>
+      <email its:translate="no"></email>
+      <years></years>
+    </credit>-->
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>어떻게 <em>웹 애플리케이션</em>을 삭제하나요?</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>ChangSeok Oh</mal:name>
+      <mal:email>changseok@gnome.org</mal:email>
+      <mal:years>2015, 2016, 2017, 2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gyuseok Jung</mal:name>
+      <mal:email>jgyuseok@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>웹 애플리케이션 제거하기</title>
+
+  <p>더 이상 필요하지 않을 때 웹 애플리케이션을 삭제할 수 있습니다.</p>
+
+  <steps>
+    <item>
+      <p>주소창을 누르고 <input>about:applications</input>을 입력하세요.</p>
+    </item>
+    <item>
+      <p>제거하려는 애플리케이션 옆에 있는 <gui>삭제</gui>를 누르세요.</p>
+    </item>
+  </steps>
+
+  <p>만약 <app>소프트웨어</app>를 설치했다면, 거기서 마찬가지로 웹 애플리케이션을 삭제할 수 있습니다.</p>
+
+</page>

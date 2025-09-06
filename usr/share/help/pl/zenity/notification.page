@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="notification" xml:lang="pl">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Używanie opcji <cmd>--notification</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+  <title>Ikona powiadomienia</title>
+    <p>Użyj opcji <cmd>--notification</cmd>, aby utworzyć ikonę powiadomienia.</p>
+
+  <terms>
+    <item>
+      <title><cmd>--text</cmd>=<var>tekst</var></title>
+      <p>Określa tekst wyświetlany w obszarze powiadamiania.</p>
+    </item>
+    <item>
+      <title><cmd>--listen</cmd>=icon: '<var>tekst</var>', message: '<var>tekst</var>', tooltip: '<var>tekst</var>', visible: '<var>tekst</var>',</title>
+      <p>Nasłuchuje polecenia na standardowym wejściu. Należy podać co najmniej jedno polecenie. Polecenia są rozdzielane przecinkami. Po poleceniu musi być dwukropek i wartość.</p>
+      <note style="tip">
+        <p>Polecenie <cmd>icon</cmd> przyjmuje także wartości czterech standardowych ikon: <var>error</var> (błąd), <var>info</var> (informacja), <var>question</var> (pytanie) i <var>warning</var> (ostrzeżenie).</p>
+      </note>
+    </item>
+  </terms>
+
+  <p>Ten przykładowy skrypt pokazuje, jak utworzyć ikonę powiadomienia:</p>
+  <code>
+  #!/bin/sh
+
+  zenity --notification\
+    --window-icon="info" \
+    --text="Niezbędne są aktualizacje systemu."
+  </code>
+
+  <figure>
+    <title>Przykład ikony powiadamiania</title>
+    <desc>Przykład ikony powiadamiania <app>Zenity</app></desc>
+    <media type="image" mime="image/png" src="figures/zenity-notification-screenshot.png"/>
+  </figure>
+
+  <p>Ten przykładowy skrypt pokazuje, jak utworzyć ikonę powiadomienia z opcją <cmd>--listen</cmd>:</p>
+  <code>
+  #!/bin/sh
+  cat &lt;&lt;EOH| zenity --notification --listen
+  message: tekst komunikatu
+  EOH
+  </code>
+
+  <figure>
+    <title>Przykład ikony powiadamiania z opcją <cmd>--listen</cmd></title>
+    <desc>Przykład ikony powiadamiania <app>Zenity</app> z opcją <cmd>--listen</cmd></desc>
+    <media type="image" mime="image/png" src="figures/zenity-notification-listen-screenshot.png"/>
+  </figure>
+
+</page>

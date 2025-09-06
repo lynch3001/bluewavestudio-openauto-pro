@@ -1,0 +1,13 @@
+83f89650305e95da512566b95cc27f43  usr/lib/arm-linux-gnueabihf/glib-2.0/gio-launch-desktop
+285d75b8dd05e8671179f676f11d435b  usr/lib/arm-linux-gnueabihf/glib-2.0/gio-querymodules
+6c850611dbdbf7e8d3d0fc424ec628f5  usr/lib/arm-linux-gnueabihf/glib-2.0/glib-compile-schemas
+3ea940689629c004256a5fed04191326  usr/lib/arm-linux-gnueabihf/libgio-2.0.so.0.5800.3
+64a85e38db7a293101d36b844bb4e793  usr/lib/arm-linux-gnueabihf/libglib-2.0.so.0.5800.3
+1203dcd34bd09bb82a967c662b5ded21  usr/lib/arm-linux-gnueabihf/libgmodule-2.0.so.0.5800.3
+fdd3b61e6c7a383a0eceb551bdd9d5bf  usr/lib/arm-linux-gnueabihf/libgobject-2.0.so.0.5800.3
+a370e591d17a9b2c187e0697fc3ecada  usr/lib/arm-linux-gnueabihf/libgthread-2.0.so.0.5800.3
+7979b50d58ee4e62caf23b51e94c051f  usr/share/doc/libglib2.0-0/NEWS.gz
+3ae33dd9c2228658e7f980576cd2fafa  usr/share/doc/libglib2.0-0/README.md.gz
+9cd425075e4ef3d9ae97f083f94599a7  usr/share/doc/libglib2.0-0/changelog.Debian.gz
+a364df7750fec12e9fc3dedad535251b  usr/share/doc/libglib2.0-0/copyright
+fbe307034407c1f4cfee8d3892a87975  usr/share/lintian/overrides/libglib2.0-0

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/vnclicense-key">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <sub-class-of type="text/plain"/>
+  <comment>VNC license key</comment>
+  <comment xml:lang="de">VNC-Lizenzschlüssel</comment>
+  <comment xml:lang="es">Clave de licencia de VNC</comment>
+  <comment xml:lang="fr">Clé de licence VNC</comment>
+  <comment xml:lang="pt">Chave de licença do VNC</comment>
+  <glob pattern="*.vnclicense"/>
+</mime-type>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="info" xml:lang="sv">
+  <info>
+    <link type="guide" xref="message"/>
+    <desc>Använd flaggan <cmd>--info</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2006, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+  <title>Informationsdialog</title>
+      <p>Använd flaggan <cmd>--info</cmd> för att skapa en informationsdialog.</p>
+
+      <p>Följande exempelskript visar hur man skapar en informationsdialog:</p>
+
+<code>
+#!/bin/bash
+
+zenity --info \
+--text="Sammanslagning färdig. Uppdaterade 3 av 10 filer."
+</code>
+
+
+      <figure>
+        <title>Exempel på informationsdialog</title>
+        <desc><app>Zenity</app>-exempel på informationsdialog</desc>
+        <media type="image" mime="image/png" src="figures/zenity-information-screenshot.png"/>
+      </figure>
+</page>

@@ -1,0 +1,6 @@
+cca7810e1b67a561754923f01fd9e45c  usr/lib/arm-linux-gnueabihf/libSDL_image-1.2.so.0.8.4
+dc8db3450c8698a4e79c9242487b4209  usr/share/doc/libsdl-image1.2/README
+4e133f56ae34fb375be876114395eb6d  usr/share/doc/libsdl-image1.2/changelog.Debian.gz
+1f2deeffa475a49fced3a446c8e39e83  usr/share/doc/libsdl-image1.2/changelog.gz
+5478db69ef65b0552648ec6ffc6e0ff7  usr/share/doc/libsdl-image1.2/copyright
+cd9d7d863d7dff97f36a62e97d010804  usr/share/lintian/overrides/libsdl-image1.2

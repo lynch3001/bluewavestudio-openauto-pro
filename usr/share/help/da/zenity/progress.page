@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="progress" xml:lang="da">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Brug tilvalget <cmd>--progress</cmd>.</desc>
+  </info>
+  <title>Statusbjælkedialog</title>
+    <p>Brug tilvalget <cmd>--progress</cmd> til at oprette en dialog med en statusbjælke.</p>
+
+    <p><app>Zenity</app> læser data linjevis fra standardinput. Hvis en linje starter med #, vil teksten blive opdateret med den efterfølgende tekst på den pågældende linje. Hvis en linje kun indeholder et tal, vil procenttallet blive opdateret med dette tal.</p>
+	
+    <p>Statusbjælkedialogen understøtter følgende tilvalg:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--text</cmd>=<var>tekst</var></title>
+	  <p>Angiver teksten, der vises i statusbjælkedialogen.</p>
+      </item>
+
+      <item>
+        <title><cmd>--percentage</cmd>=<var>procentdel</var></title>
+	  <p>Angiver det procenttal, der fra starten vises i statusbjælkedialogen.</p>
+      </item>
+
+      <item>
+	<title><cmd>--auto-close</cmd></title>
+	  <p>Lukker statusbjælken, når den har nået 100%.</p>
+      </item>
+
+      <item>
+        <title><cmd>--pulsate</cmd></title>
+	  <p>Angiver at statusbjælken pulserer indtil der læses et EOF-tegn fra standardinput.</p>
+      </item>
+
+    </terms>
+
+    <p>Følgende eksempelscript viser, hvordan man opretter en statusbjælkedialog:</p>
+
+<code>
+#!/bin/sh
+(
+echo "10" ; sleep 1
+echo "# Opdaterer mail-logge" ; sleep 1
+echo "20" ; sleep 1
+echo "# Nulstiller cron-jobs" ; sleep 1
+echo "50" ; sleep 1
+echo "Denne linje vil blive ignoreret" ; sleep 1
+echo "75" ; sleep 1
+echo "# Genstarter system" ; sleep 1
+echo "100" ; sleep 1
+) |
+zenity --progress \
+  --title="Opdatér systemlogge" \
+  --text="Skanner mail-logge …" \
+  --percentage=0
+
+if [ "$?" = -1 ] ; then
+        zenity --error \
+          --text="Opdatering annulleret."
+fi
+</code>
+
+
+    <figure>
+      <title>Eksempel på statusbjælkedialog</title>
+      <desc>Eksempel på statusbjælkedialog til <app>Zenity</app></desc>
+      <media type="image" mime="image/png" src="figures/zenity-progress-screenshot.png"/>
+    </figure>
+</page>

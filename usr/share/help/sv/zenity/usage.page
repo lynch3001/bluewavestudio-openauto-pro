@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="usage" xml:lang="sv">
+<info>
+  <link type="guide" xref="index"/>
+  <desc>Du kan använda <app>Zenity</app> för att skapa enkla dialogrutor som interagerar grafiskt med användaren.</desc>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2006, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+<title>Användning</title>
+    <p>När du skriver skript kan du använda <app>Zenity</app> för att skapa enkla dialogrutor som interagerar grafiskt med användaren enligt följande:</p>
+    <list>
+      <item>
+        <p>Du kan skapa en dialogruta för att hämta in information från användaren. Till exempel kan du fråga användaren om att välja ett datum från en kalenderdialog, eller att välja en fil från en filväljardialog.</p>
+      </item>
+      <item>
+        <p>Du kan skapa en dialogruta för att tillhandahålla information till användaren. Till exempel kan du använda en förloppsdialog för att indikera aktuell status för en åtgärd, eller använda en varningsdialog för att larma användaren.</p>
+      </item>
+    </list>
+    <p>När användaren stänger dialogrutan, skriver <app>Zenity</app> ut texten som producerats av dialogrutan till standard ut.</p>
+
+    <note>
+      <p>När du skriver <app>Zenity</app>-kommandon, säkerställ att du placerar citationstecken runt varje argument.</p>
+      <p>Använd till exempel:</p>
+      <screen>zenity --calendar --title="Min helgplanerare"</screen>
+      <p>Använd inte:</p>
+      <screen>zenity --calendar --title=Min helgplanerare</screen>
+      <p>Om du inte använder citationstecken kan du få oväntade resultat.</p>
+    </note>
+
+    <section id="zenity-usage-mnemonics">
+      <title>Snabbtangenter</title>
+	<p>En snabbtangent är en tangent som låter dig genomföra en åtgärd från tangentbordet istället för att använda musen för att välja ett kommando från en meny eller dialog. Varje snabbtangent identifieras av en understruken bokstav i en meny eller dialogflagga.</p>
+	<p>Vissa <app>Zenity</app>-dialoger har stöd för användningen av snabbtangenter. För att ange tecknet som ska användas som snabbtangenten, placera ett understreck före den bokstaven i dialogens text. Följande exempel visar hur man specificerar bokstaven ”V” som en snabbtangent:</p>
+	<screen><input>"_Välj ett namn".</input></screen>
+    </section>
+
+    <section id="zenity-usage-exitcodes">
+      <title>Avslutningskoder</title>
+    <p>Zenity returnerar följande avslutningskoder:</p>
+
+    <table frame="all" rules="all">
+        <thead>
+          <tr>
+            <td>
+              <p>Avslutningskod</p></td>
+            <td>
+              <p>Beskrivning</p></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <p><var>0</var></p>
+            </td>
+            <td>
+              <p>Användaren har antingen tryckt på <gui style="button">OK</gui> eller <gui style="button">Stäng</gui>.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><var>1</var></p>
+            </td>
+            <td>
+              <p>Användaren har antingen tryckt på <gui style="button">Avbryt</gui>, eller använt fönsterfunktioner för att stänga dialogrutan.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><var>-1</var></p>
+            </td>
+            <td>
+              <p>Ett oväntat fel har inträffat.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><var>5</var></p>
+            </td>
+            <td>
+              <p>Dialogrutan har stängts därför att tidsgränsen har nåtts.</p>
+            </td>
+          </tr>
+        </tbody>
+    </table>
+
+    </section>
+
+
+  <!-- ==== General Options ====== -->
+
+  <section id="zenity-usage-general-options">
+    <title>Allmänna alternativ</title>
+
+    <p>Alla Zenity-dialoger har stöd för följande allmänna flaggor:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--title</cmd>=<var>titel</var></title>
+	<p>Anger titeln på en dialogruta.</p>
+      </item>
+
+      <item>
+        <title><cmd>--window-icon</cmd>=<var>ikonsökväg</var></title>
+	<p>Anger ikonen som visas i fönsterramen för dialogen. Det finns 4 standardikoner som finns tillgängliga genom att ange något av följande nyckelord - "info", "warning", "question" och "error".</p>
+      </item>
+
+      <item>
+        <title><cmd>--width</cmd>=<var>bredd</var></title>
+	<p>Anger bredden på dialogrutan.</p>
+      </item>
+
+      <item>
+        <title><cmd>--height</cmd>=<var>höjd</var></title>
+	<p>Anger höjden på dialogrutan.</p>
+      </item>
+
+      <item>
+        <title><cmd>--timeout</cmd>=<var>tidsgräns</var></title>
+	<p>Anger tidsgränsen i sekunder efter vilken dialogrutan stängs.</p>
+      </item>
+
+    </terms>
+
+  </section>
+
+<!-- ==== Miscellaneous Options ====== -->
+
+  <section id="zenity-help-options">
+    <title>Hjälpflaggor</title>
+
+    <p>Zenity tillhandahåller följande hjälpflaggor:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--help</cmd></title>
+	<p>Visar förkortad hjälptext.</p>
+      </item>
+
+      <item>
+        <title><cmd>--help-all</cmd></title>
+	<p>Visar fullständig hjälptext för alla dialoger.</p>
+      </item>
+ 
+      <item>
+        <title><cmd>--help-general</cmd></title>
+	<p>Visar hjälptext för allmänna dialogflaggor.</p>
+      </item>
+ 
+      <item>
+        <title><cmd>--help-calendar</cmd></title>
+	<p>Visar hjälptext för kalenderdialogflaggor.</p>
+      </item>
+ 
+      <item>
+        <title><cmd>--help-entry</cmd></title>
+	<p>Visar hjälptext för textinmatningsdialogflaggor.</p>
+      </item>
+ 
+      <item>
+        <title><cmd>--help-error</cmd></title>
+	<p>Visar hjälptext för feldialogflaggor.</p>
+      </item>
+ 
+      <item>
+        <title><cmd>--help-info</cmd></title>
+	<p>Visar hjälptext för informationsdialogflaggor.</p>
+      </item>
+ 
+      <item>
+        <title><cmd>--help-file-selection</cmd></title>
+	<p>Visar hjälptext för filväljardialogflaggor.</p>
+      </item>
+ 
+      <item>
+        <title><cmd>--help-list</cmd></title>
+	<p>Visar hjälptext för listdialogflaggor.</p>
+      </item>
+ 
+      <item>
+        <title><cmd>--help-notification</cmd></title>
+	<p>Visar hjälptext för aviseringsikonflaggor.</p>
+      </item>
+ 
+      <item>
+        <title><cmd>--help-progress</cmd></title>
+	<p>Visar hjälptext för förloppsdialogflaggor.</p>
+      </item>
+ 
+      <item>
+        <title><cmd>--help-question</cmd></title>
+	<p>Visar hjälptext för frågedialogflaggor.</p>
+      </item>
+ 
+      <item>
+        <title><cmd>--help-warning</cmd></title>
+	<p>Visar hjälptext för varningsdialogflaggor.</p>
+      </item>
+ 
+      <item>
+	<title><cmd>--help-text-info</cmd></title>
+	<p>Visar hjälp för textinformationsdialogflaggor.</p>
+      </item>
+ 
+      <item>
+        <title><cmd>--help-misc</cmd></title>
+	<p>Visar hjälp för diverse flaggor.</p>
+      </item>
+ 
+      <item>
+        <title><cmd>--help-gtk</cmd></title>
+	<p>Visar hjälp för GTK+-flaggor.</p>
+      </item>
+ 
+    </terms>
+
+  </section>
+
+<!-- ==== Miscellaneous Options ====== -->
+
+  <section id="zenity-miscellaneous-options">
+    <title>Diverse flaggor</title>
+
+    <p>Zenity tillhandahåller även följande flaggor för diverse saker:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--about</cmd></title>
+	<p>Visar dialogrutan <gui>Om Zenity</gui>, vilken innehåller versionsinformation för Zenity, upphovsrättsinformation, och utvecklarinformation.</p>
+      </item>
+
+      <item>
+        <title><cmd>--version</cmd></title>
+	<p>Visar versionsnumret för Zenity.</p>
+      </item>
+
+    </terms>
+
+  </section>
+
+<!-- ==== GTK+ Options ====== -->
+
+  <section id="zenity-gtk-options">
+    <title>GTK+-flaggor</title>
+
+    <p>Zenity har stöd för standardflaggorna för GTK+. För mer information om GTK+-flaggorna, kör kommandot <cmd>zenity --help-gtk</cmd>.</p>
+
+  </section>
+
+<!-- ==== Environment variables ==== -->
+
+  <section id="zenity-environment-variables">
+    <title>Miljövariabler</title>
+
+    <p>Normalt kommer Zenity att identifiera terminalfönstret från vilket det startades och håller sig själv ovanför det fönstret. Detta beteende kan inaktiveras genom att tömma ur miljövariabeln <var>WINDOWID</var>.</p>
+
+  </section>
+</page>

@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libgps.so.23.0.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libgps23
+/usr/share/doc/libgps23/changelog.Debian.armhf.gz
+/usr/share/doc/libgps23/changelog.Debian.gz
+/usr/share/doc/libgps23/changelog.gz
+/usr/share/doc/libgps23/copyright
+/usr/lib/arm-linux-gnueabihf/libgps.so.23

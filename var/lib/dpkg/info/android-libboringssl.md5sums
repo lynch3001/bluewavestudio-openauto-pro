@@ -1,0 +1,8 @@
+e3180cad12effa3e8f0c436fef28b24f  usr/lib/arm-linux-gnueabihf/android/libcrypto.so.0
+d07824350d1507cb4c718bb8c3e2dc92  usr/lib/arm-linux-gnueabihf/android/libssl.so.0
+3664087d636ded3e343d1a35dd582838  usr/share/doc/android-libboringssl/INCORPORATING.md.gz
+56e4a770ad12915f86ea0e957a80c1aa  usr/share/doc/android-libboringssl/NOTICE.gz
+2f4c597d00d2256bfcf1df18874be4b1  usr/share/doc/android-libboringssl/README.Debian
+ff9fae18c63bb909f6fca09f8ad4b3b3  usr/share/doc/android-libboringssl/README.md
+b04cf24100aecdf3d448d6542c69fa71  usr/share/doc/android-libboringssl/changelog.Debian.gz
+8e983b41c5123bf92122ad0ec6950cd3  usr/share/doc/android-libboringssl/copyright

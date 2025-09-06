@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/lib
+/usr/lib/python3
+/usr/lib/python3/dist-packages
+/usr/lib/python3/dist-packages/RPi
+/usr/lib/python3/dist-packages/RPi/GPIO
+/usr/lib/python3/dist-packages/RPi/GPIO/__init__.py
+/usr/lib/python3/dist-packages/RPi/_GPIO.cpython-37m-arm-linux-gnueabihf.so
+/usr/lib/python3/dist-packages/RPi/__init__.py
+/usr/lib/python3/dist-packages/RPi.GPIO-0.7.0.egg-info
+/usr/share
+/usr/share/doc
+/usr/share/doc/python3-rpi.gpio

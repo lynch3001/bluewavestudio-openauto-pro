@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libzbar.so.0.3.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libzbar0
+/usr/share/doc/libzbar0/changelog.Debian.gz
+/usr/share/doc/libzbar0/changelog.gz
+/usr/share/doc/libzbar0/copyright
+/usr/lib/arm-linux-gnueabihf/libzbar.so.0

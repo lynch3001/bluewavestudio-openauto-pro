@@ -1,0 +1,21 @@
+# empty directory by intent
+openjdk-8-jre-headless binary: package-contains-empty-directory usr/share/binfmts/
+
+# Ignore the mouse cursors
+openjdk-8-jre-headless binary: image-file-in-usr-lib
+
+# Just an empty directory
+openjdk-8-jre-headless binary: debug-suffix-not-dbg
+
+# This is correct
+openjdk-8-jre-headless binary: executable-in-usr-lib
+
+# Not a problem in these specific cases
+openjdk-8-jre-headless binary: breakout-link
+
+# /usr/lib/jvm/…/lib/…
+openjdk-8-jre-headless binary: repeated-path-segment
+
+# not documentation
+openjdk-8-jre-headless binary: package-contains-documentation-outside-usr-share-doc */Xusage.txt
+openjdk-8-jre-headless binary: package-contains-documentation-outside-usr-share-doc */jvm.hprof.txt

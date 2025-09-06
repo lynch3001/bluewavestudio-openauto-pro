@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="browse-private" xml:lang="ko">
+
+  <info>
+    <link type="guide" xref="index#adv"/>
+    <revision pkgversion="3.10" date="2013-06-30" status="candidate"/>
+    <revision pkgversion="3.12" date="2014-01-28" status="final"/>
+
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+<!--    <credit type="copyright editor">
+      <name></name>
+      <email its:translate="no"></email>
+      <years></years>
+    </credit>-->
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc><em>익명</em>모드란 무엇입니까?</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>ChangSeok Oh</mal:name>
+      <mal:email>changseok@gnome.org</mal:email>
+      <mal:years>2015, 2016, 2017, 2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gyuseok Jung</mal:name>
+      <mal:email>jgyuseok@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>개인정보 보호 브라우징</title>
+
+  <p>개인정보 보호 브라우징은 당신의 컴퓨터와 웹 사이트가 당신의 브라우징 정보에 접근하는 방법을 제한하는 모드입니다. 이는 당신이 친구에게 당신의 컴퓨터를 빌려주길 원할 때, 예를 들면, 웹메일을 통해 전자메일을 확인할 때 유용합니다. 왜냐하면 개인정보 보호 브라우징 창 내에서는 어느 웹 사이트에 대해서든 기록을 남기지도, 정보를 저장하지도 않을 것이기 때문입니다. 이는 또한 개인정보 보호 브라우징이 인터넷 뱅킹과 <link href="http://questionablecontent.net/">Questionable content</link> 같은 민감한 웹페이지에 접근하는 더 안전한 방법이라는 것을 의미합니다. 왜냐하면 <em>익명</em>모드 내일 때 웹사이트가 당신을 식별하는 것이 더욱 어려워지기 때문입니다.</p>
+
+  <steps>
+    <title/>
+    <item>
+      <p><guiseq><gui style="menu">웹</gui><gui style="menuitem">새 익명 창</gui></guiseq>을 선택하세요.</p>
+    </item>
+    <item>
+      <p>익명 모드를 사용해서 웹을 탐색하세요.</p>
+    </item>
+    <item>
+      <p>익명 창 닫기로 개인정보 보호 브라우징 세션을 끝냅니다.</p>
+    </item>
+  </steps>
+
+  <p>익명 창의 워터마크로 일반 브라우징과 개인정보 보호 브라우징을 구별할 수 있습니다:</p>
+
+  <figure>
+    <media type="image" mime="image/png" src="media/private-browsing-3-12.png">
+      <p>화면 왼편에 일반 세션 창 그리고 오른편에 개인정보 보호 세션 창을 보여주는 전체 화면 스크린샷.</p>
+    </media>
+    <p>방문 기록을 남기는 일반 세션의 왼쪽 창과 개인정보 보호 브라우징의 오른쪽 창을 보여주는 스크린샷</p>
+  </figure>
+
+</page>

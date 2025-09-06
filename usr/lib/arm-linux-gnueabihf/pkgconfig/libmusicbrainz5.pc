@@ -1,0 +1,13 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib/arm-linux-gnueabihf
+includedir=/usr/include
+
+Name: libmusicbrainz5
+Description: The Musicbrainz Client Library.
+URL: http://musicbrainz.org/doc/libmusicbrainz
+Version: 5.1.0
+Requires.private: libmusicbrainz5cc
+Libs: -L/usr/lib/arm-linux-gnueabihf -lmusicbrainz5
+Cflags: -I/usr/include
+

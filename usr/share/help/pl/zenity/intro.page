@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="intro" xml:lang="pl">
+<info>
+  <link type="guide" xref="index"/>
+  <desc><app>Zenity</app> umożliwia tworzenie różnych rodzajów prostych okien dialogowych.</desc>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+<title>Wprowadzenie</title>
+<p><app>Zenity</app> umożliwia tworzenie tych rodzajów prostych okien dialogowych:</p>
+
+<list>
+    <item><p>Kalendarz</p></item>
+    <item><p>Wybór pliku</p></item>
+    <item><p>Formularze</p></item>
+    <item><p>Lista</p></item>
+    <item><p>Ikona powiadomienia</p></item>
+    <item><p>Komunikat</p>
+        <list>
+            <item><p>Błąd</p></item>
+    	<item><p>Informacja</p></item>
+    	<item><p>Pytanie</p></item>
+    	<item><p>Ostrzeżenie</p></item>
+        </list>
+    </item>
+    <item><p>Podawanie hasła</p></item>
+    <item><p>Postęp</p></item>
+    <item><p>Wpisywanie tekstu</p></item>
+    <item><p>Informacje tekstowe</p></item>
+    <item><p>Podziałka</p></item>
+    <item><p>Wybór koloru</p></item>
+</list>
+</page>

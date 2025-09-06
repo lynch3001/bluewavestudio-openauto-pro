@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libmpcdec.so.6.1.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libmpcdec6
+/usr/share/doc/libmpcdec6/changelog.Debian.armhf.gz
+/usr/share/doc/libmpcdec6/changelog.Debian.gz
+/usr/share/doc/libmpcdec6/copyright
+/usr/lib/arm-linux-gnueabihf/libmpcdec.so.6

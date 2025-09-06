@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="introduction" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="index"/>
+    <revision pkgversion="3.10" date="2013-06-30" status="candidate"/>
+
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>En introduktion till <app>Webb</app>, en webbläsare för GNOME med inbyggd sekretess.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2015, 2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Introduktion</title>
+
+  <p><app>Webb</app> erbjuder ett enkelt och stilrent sätt att surfa på internet. Den visar sidor med samma snabbhet och noggrannhet som andra populära webbläsare.</p>
+
+  <p><app>Webb</app> är programmet tidigare känt som <app>Epiphany</app>.</p>
+
+  <media type="image" mime="image/png" src="media/epiphany-3-12.png">
+    <!--This is the alt text, as read out by screen readers and if the image is
+    missing. It also describes how to re-create the image.-->
+    <p>Helskärmsbild av Webb med wikisidan för Webb öppen i den första fliken och GNOME:s webbplats öppen i den andra fliken.</p>
+  </media>
+
+</page>

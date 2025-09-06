@@ -1,0 +1,6 @@
+ab93c1d118e2a058bb2390a971e4fcdd  usr/lib/arm-linux-gnueabihf/libavcodec.so.58.35.100
+7e48eec291fe4174f33fcc45383182b5  usr/lib/arm-linux-gnueabihf/neon/vfp/libavcodec.so.58.35.100
+c97abc6c325041c5779374c3c50a563a  usr/share/doc/libavcodec58/changelog.Debian.gz
+099ba7b289ce8a4e9e66051edb63b6b3  usr/share/doc/libavcodec58/changelog.gz
+61af5f05179be74293344b58d088a393  usr/share/doc/libavcodec58/copyright
+d9ed2899a07d73fbf211cc83c69687c3  usr/share/lintian/overrides/libavcodec58

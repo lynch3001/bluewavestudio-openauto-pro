@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/lib
+/usr/lib/python3
+/usr/lib/python3/dist-packages
+/usr/lib/python3/dist-packages/roman-2.0.0.egg-info
+/usr/lib/python3/dist-packages/roman.py
+/usr/share
+/usr/share/doc
+/usr/share/doc/python3-roman
+/usr/share/doc/python3-roman/changelog.Debian.gz
+/usr/share/doc/python3-roman/changelog.gz
+/usr/share/doc/python3-roman/copyright

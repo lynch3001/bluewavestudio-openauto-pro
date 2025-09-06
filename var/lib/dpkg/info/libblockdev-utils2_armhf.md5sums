@@ -1,0 +1,5 @@
+07d081179afd43da5c00891c74e0a18e  usr/lib/arm-linux-gnueabihf/libbd_utils.so.2.1.0
+47962d9b1bfa64b4ea6ab2d75685ddb5  usr/share/doc/libblockdev-utils2/changelog.Debian.armhf.gz
+7faa33ef56fdb4c16931d728214380e5  usr/share/doc/libblockdev-utils2/changelog.Debian.gz
+922c155bcf341a506fc85204b120a511  usr/share/doc/libblockdev-utils2/copyright
+7dcd2921a61738fff66926f7f0352a67  usr/share/lintian/overrides/libblockdev-utils2

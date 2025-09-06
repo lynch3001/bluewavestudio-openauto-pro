@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pref-downloads" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="index#pref"/>
+    <link type="guide" xref="pref"/>
+    <revision pkgversion="3.10" date="2013-07-06" status="review"/>
+    <revision pkgversion="3.12" date="2014-01-28" status="candidate"/>
+
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+<!--    <credit type="copyright editor">
+      <name></name>
+      <email its:translate="no"></email>
+      <years></years>
+    </credit>-->
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Onde estão os arquivos que eu baixei e como eu posso alterar essa configuração?</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013,</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Baixando arquivos</title>
+
+  <p>Arquivos que você baixou da internet, tal como anexos de e-mail, será salvos automaticamente em sua pasta <file>Downloads</file>. Você pode alterar isso nas <gui>Preferências</gui>.</p>
+
+  <steps>
+    <item>
+      <p>Abra <guiseq><gui style="menu">Web</gui><gui style="menuitem">Preferências</gui><gui style="tab">Geral</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Pressione o nome <gui>Pasta de download</gui> para selecionar uma pasta diferente para downloads. Se a pasta que você deseja usar não está na lista, selecione <gui>Outra…</gui> para navegar até ela.</p>
+    </item>
+    <item>
+      <p>Se você deseja que o arquivo baixado seja aberto automaticamente, marque a caixa de seleção <gui>Abrir arquivos baixados automaticamente</gui>.</p>
+    </item>
+  </steps>
+
+  <p>Se você <em>salvar</em> um arquivo em vez de baixá-lo, você ainda precisará especificar onde deseja salvá-lo.</p>
+
+</page>

@@ -1,0 +1,5 @@
+e92929e210c63c5148d8db7dd09e04b0  usr/include/guid.h
+68c92ea1941f107c04cf49a1ced57d36  usr/lib/arm-linux-gnueabihf/libcrossguid.a
+bf1ab48486fc720abf0f8ed5d7bc83c9  usr/share/doc/libcrossguid-dev/README.md.gz
+e55a41f6ae77fee45b25e942e2bfc0f2  usr/share/doc/libcrossguid-dev/changelog.Debian.gz
+47f4b99d58ae83a66fff09412bc0f38b  usr/share/doc/libcrossguid-dev/copyright

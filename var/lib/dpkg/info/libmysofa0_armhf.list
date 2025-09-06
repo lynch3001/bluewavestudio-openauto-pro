@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libmysofa.so.0.5.1
+/usr/share
+/usr/share/doc
+/usr/share/doc/libmysofa0
+/usr/share/doc/libmysofa0/changelog.Debian.gz
+/usr/share/doc/libmysofa0/copyright
+/usr/lib/arm-linux-gnueabihf/libmysofa.so.0

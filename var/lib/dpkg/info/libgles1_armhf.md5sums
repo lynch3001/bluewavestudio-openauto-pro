@@ -1,0 +1,5 @@
+eb2cc7361c89694240b83ccbc16c6913  usr/lib/arm-linux-gnueabihf/libGLESv1_CM.so.1.2.0
+2295a81abfbf493c2fefd51c81b8618e  usr/share/bug/libgles1/control
+6278c86728d7ea4eba2a11b1c7a78140  usr/share/doc/libgles1/changelog.Debian.gz
+6f91facaf87458af9488a7576492a515  usr/share/doc/libgles1/copyright
+7ae752e9bf94690ba871759fac1409aa  usr/share/lintian/overrides/libgles1

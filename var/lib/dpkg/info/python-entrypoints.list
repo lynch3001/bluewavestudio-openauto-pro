@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/lib
+/usr/lib/python2.7
+/usr/lib/python2.7/dist-packages
+/usr/lib/python2.7/dist-packages/entrypoints.egg-info
+/usr/lib/python2.7/dist-packages/entrypoints.py
+/usr/share
+/usr/share/doc
+/usr/share/doc/python-entrypoints
+/usr/share/doc/python-entrypoints/changelog.Debian.gz
+/usr/share/doc/python-entrypoints/copyright

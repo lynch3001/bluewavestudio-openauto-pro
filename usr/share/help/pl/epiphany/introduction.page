@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="introduction" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="index"/>
+    <revision pkgversion="3.10" date="2013-06-30" status="candidate"/>
+
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Wprowadzenie do <app>Przeglądarki WWW</app> z wbudowaną ochroną prywatności dla środowiska GNOME.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Wprowadzenie</title>
+
+  <p><app>Przeglądarka WWW</app> ma prosty interfejs do przeglądania Internetu. Wyświetla strony tak szybko i dokładnie jak inne popularne przeglądarki.</p>
+
+  <p><app>Przeglądarka WWW</app> wcześniej nazywała się <app>Epiphany</app>.</p>
+
+  <media type="image" mime="image/png" src="media/epiphany-3-12.png">
+    <!--This is the alt text, as read out by screen readers and if the image is
+    missing. It also describes how to re-create the image.-->
+    <p><app>Przeglądarka WWW</app> ze swoją stroną wiki otwartą w pierwszej karcie i stroną GNOME otwartą w drugiej karcie.</p>
+  </media>
+
+</page>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pref-css" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="index#pref"/>
+    <link type="guide" xref="pref"/>
+    <revision pkgversion="3.10" date="2013-07-06" status="candidate"/>
+
+    <credit type="author copyright">
+      <name>Gordon Hill</name>
+      <email its:translate="no">caseyweederman@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Zastępowanie motywu używanego do wyświetlania stron.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Niestandardowy styl CSS</title>
+
+  <p><app>Przeglądarka WWW</app> umożliwia ustawienie niestandardowego stylu CSS, aby zmienić wygląd każdej odwiedzanej strony. Dzięki temu można ustawić preferowany rozmiar czcionki lub motyw kolorów.</p>
+
+  <steps>
+    <item>
+      <p>Otwórz <guiseq><gui style="menu">WWW</gui><gui style="menuitem">Preferencje</gui><gui style="tab">Czcionki i styl</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Kliknij przycisk <gui style="button">Modyfikuj arkusz stylu</gui>.</p>
+    </item>
+    <item>
+      <p>Otworzy się domyślny edytor tekstu. Dodaj niestandardowy styl CSS i zapisz plik.</p>
+    </item>
+    <item>
+      <p>Zaznacz pole <gui>Niestandardowy arkusz stylu</gui>.</p>
+    </item>
+  </steps>
+
+  <p>Przykład niestandardowego stylu CSS:</p>
+  <code>
+body{
+    /* Wszystko do góry nogami */
+    -webkit-transform: rotate(180deg);
+}
+</code>
+
+  <p>Po włączeniu niestandardowy styl CSS zastąpi styl na każdej odwiedzanej stronie.</p>
+
+</page>

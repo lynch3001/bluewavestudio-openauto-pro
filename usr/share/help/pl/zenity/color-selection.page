@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="color-selection" xml:lang="pl">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Używanie opcji <cmd>--color-selection</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+  <title>Okno wyboru koloru</title>
+  <p>Użyj opcji <cmd>--color-selection</cmd>, aby utworzyć okno wyboru koloru.</p>
+  <p>Okno wyboru koloru obsługuje te opcje:</p>
+
+  <terms>
+
+    <item>
+      <title><cmd>--color</cmd>=<var>WARTOŚĆ</var></title>
+      <p>Ustawia początkowy kolor (np. #FF0000).</p>
+    </item>
+
+    <item>
+      <title><cmd>--show-palette</cmd></title>
+      <p>Wyświetla paletę.</p>
+    </item>
+
+  </terms>
+
+  <p>Ten przykładowy skrypt pokazuje, jak utworzyć okno wyboru koloru:</p>
+
+<code>
+#!/bin/sh
+
+COLOR=`zenity --color-selection --show-palette`
+
+case $? in
+         0)
+		echo "Wybrano $COLOR.";;
+         1)
+                echo "Nie wybrano koloru.";;
+        -1)
+                echo "Wystąpił nieoczekiwany błąd.";;
+esac
+</code>
+
+  <figure>
+    <title>Przykład okna wyboru koloru</title>
+    <desc>Przykład okna wyboru koloru <app>Zenity</app></desc>
+    <media type="image" mime="image/png" src="figures/zenity-colorselection-screenshot.png"/>
+  </figure>
+
+</page>

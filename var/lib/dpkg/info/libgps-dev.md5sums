@@ -1,0 +1,12 @@
+01cd5aa223b412ffe1288e73be538e43  usr/include/gps.h
+ba5a6d83a022689523658d7ea4be9419  usr/include/libgpsmm.h
+3d4b4ed1bd946836e3717c7705b4730a  usr/lib/arm-linux-gnueabihf/libgps.a
+c2dc0bf7b84e0e1be1e52e0c7a2a5271  usr/lib/arm-linux-gnueabihf/pkgconfig/libgps.pc
+51263ec9994fef5310b84e1ee10bfb9d  usr/share/doc/libgps-dev/changelog.Debian.armhf.gz
+fb202cfcec1d4cdad46913855232aade  usr/share/doc/libgps-dev/changelog.Debian.gz
+a3779fc6d6327c784660b7553c5d7c66  usr/share/doc/libgps-dev/changelog.gz
+3e37119e77a4f5c07421e3c6186ccec6  usr/share/doc/libgps-dev/copyright
+51fcbe844535864926856715499285b8  usr/share/man/man3/libgps.3.gz
+9091d42f86f5effcabcdae425b490bc3  usr/share/man/man3/libgpsmm.3.gz
+47c333f13ae551fd36face74643ddfaf  usr/share/man/man5/gpsd_json.5.gz
+f8c0e28e1234e77cfe96df6e329ff2d8  usr/share/man/man5/srec.5.gz

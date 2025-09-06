@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="list" xml:lang="pt-BR">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Use a opção <cmd>--list</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+  <title>Diálogo de lista</title>
+    <p>Use a opção <cmd>--list</cmd> para criar um diálogo de lista. O <app>Zenity</app> retorna para a saída padrão os itens na primeira coluna de texto das linhas selecionadas.</p>
+
+    <p>Os dados para o diálogo devem ser especificados coluna por coluna, linha por linha. Eles podem ser fornecidos através da entrada padrão. Cada item deve ser separado por um caractere de nova-linha.</p>
+
+    <p>Se você usar as opções <cmd>--checklist</cmd> ou <cmd>--radiolist</cmd>, cada linha deve começar ou com “TRUE” (verdadeiro) ou com “FALSE” (falso).</p>
+
+    <p>O diálogo de lista oferece suporte às seguintes opções:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--column</cmd>=<var>coluna</var></title>
+	  <p>Especifica o cabeçalho das colunas que são exibidas no diálogo de lista. Você deve especificar a opção <cmd>--column</cmd> para cada coluna que queira exibir no diálogo.</p>
+      </item>
+
+      <item>
+        <title><cmd>--checklist</cmd></title>
+	  <p>Especifica que a primeira coluna no diálogo de lista contém caixas de seleção.</p>
+      </item>
+
+      <item>
+        <title><cmd>--radiolist</cmd></title>
+	  <p>Especifica que a primeira coluna no diálogo de lista contém botões de opção.</p>
+      </item>
+
+      <item>
+        <title><cmd>--editable</cmd></title>
+	  <p>Permite que os itens exibidos sejam editados.</p>
+      </item>
+
+      <item>
+        <title><cmd>--separator</cmd>=<var>separador</var></title>
+	  <p>Especifica que texto é usado quando o diálogo de lista retorna os itens selecionados.</p>
+      </item>
+
+      <item>
+        <title><cmd>--print-column</cmd>=<var>coluna</var></title>
+	  <p>Especifica que coluna deveria ser emitida após seleção. A coluna padrão é “1”. “ALL” (tudo) pode ser usado para emitir todas as colunas na lista.</p>
+      </item>
+
+    </terms>
+
+    <p>O script de exemplo a seguir mostra como criar um diálogo de lista:</p>
+<code>
+#!/bin/sh
+
+zenity --list \
+  --title="Escolha os defeitos que deseja ver" \
+  --column="Número do defeito" --column="Gravidade" --column="Descrição" \
+    992383 Normal "GtkTreeView quebra com seleções múltiplas" \
+    293823 Alta "O Dicionário do GNOME não faz uso do proxy" \
+    393823 Crítica "A edição do menu não funciona no GNOME 2.0"
+</code>
+
+
+    <figure>
+      <title>Exemplo de diálogo de lista</title>
+      <desc>Exemplo de diálogo de lista do <app>Zenity</app></desc>
+      <media type="image" mime="image/png" src="figures/zenity-list-screenshot.png"/>
+    </figure>
+</page>

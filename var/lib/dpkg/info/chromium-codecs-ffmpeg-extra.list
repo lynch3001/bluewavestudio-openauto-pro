@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/lib
+/usr/lib/chromium-browser
+/usr/lib/chromium-browser/libffmpeg.so
+/usr/lib/chromium-browser/neon
+/usr/lib/chromium-browser/neon/vfp
+/usr/lib/chromium-browser/neon/vfp/libffmpeg.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/chromium-codecs-ffmpeg-extra
+/usr/share/doc/chromium-codecs-ffmpeg-extra/changelog.Debian.gz
+/usr/share/doc/chromium-codecs-ffmpeg-extra/copyright
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/chromium-codecs-ffmpeg-extra

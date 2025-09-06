@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="list" xml:lang="da">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Brug tilvalget <cmd>--list</cmd>.</desc>
+  </info>
+  <title>Listedialog</title>
+    <p>Brug tilvalget <cmd>--list</cmd> til at oprette en listedialog. <app>Zenity</app> returnerer elementerne i første kolonne af teksten i de valgte rækker til standardoutput.</p>
+
+    <p>Data for dialogen skal angives kolonne efter kolonne, række efter række. Data kan gives til dialogen gennem standardinput. Hvert element skal adskilles af et linjeskiftstegn.</p>
+
+    <p>Hvis du bruger tilvalget <cmd>--checklist</cmd> eller <cmd>--radiolist</cmd>, skal hver række starte med enten “TRUE” eller “FALSE”.</p>
+
+    <p>Listedialogen understøtter følgende tilvalg:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--column</cmd>=<var>kolonne</var></title>
+	  <p>Angiver kolonneoverskrifterne, der vises i listedialogen. Du skal angive et <cmd>--column</cmd>-tilvalg for hver kolonne, du vil have vist i dialogen.</p>
+      </item>
+
+      <item>
+        <title><cmd>--checklist</cmd></title>
+	  <p>Angiver at første kolonne i listedialogen indeholder afkrydsningsfelter.</p>
+      </item>
+
+      <item>
+        <title><cmd>--radiolist</cmd></title>
+	  <p>Angiver at første kolonne i listedialogen indeholder radioknapper.</p>
+      </item>
+
+      <item>
+        <title><cmd>--editable</cmd></title>
+	  <p>Tillader redigering af de viste elementer.</p>
+      </item>
+
+      <item>
+        <title><cmd>--separator</cmd>=<var>skilletegn</var></title>
+	  <p>Angiver den streng, der bruges når listedialogen returnerer de valgte elementer.</p>
+      </item>
+
+      <item>
+        <title><cmd>--print-column</cmd>=<var>kolonne</var></title>
+	  <p>Angiver den kolonne, der skal udskrives når der vælges. Standardkolonnen er "1". "ALL" kan bruges til at udskrive alle kolonner i listen.</p>
+      </item>
+
+    </terms>
+
+    <p>Følgende eksempelscript viser, hvordan man opretter en listedialog:</p>
+<code>
+#!/bin/sh
+
+zenity --list \
+  --title="Vælg hvilke programfejl, du vil se" \
+  --column="Fejlnummer" --column="Alvorlighed" --column="Beskrivelse" \
+    992383 Normal "GtkTreeView bryder sammen ved valg af flere elementer" \
+    293823 Høj "GNOME Dictionary virker ikke med proxy" \
+    393823 Kritisk "Menuredigering fungerer ikke i GNOME 2.0"
+</code>
+
+
+    <figure>
+      <title>Eksempel med listedialog</title>
+      <desc>Eksempel på listedialog til <app>Zenity</app></desc>
+      <media type="image" mime="image/png" src="figures/zenity-list-screenshot.png"/>
+    </figure>
+</page>

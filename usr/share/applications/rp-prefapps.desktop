@@ -1,0 +1,21 @@
+[Desktop Entry]
+Type=Application
+Name=Recommended Software
+Name[hy]=Ô±Õ¼Õ¡Õ»Õ¡ÖÕ¯Õ¾Õ¸Õ² Õ®ÖÕ¡Õ£ÖÕ¥Ö
+Name[it]=Software consigliato
+Name[nb]=Anbefalt programvare
+Name[sk]=Odporúčaný softvér
+GenericName=Recommended Software
+GenericName[hy]=Ô±Õ¼Õ¡Õ»Õ¡ÖÕ¯Õ¾Õ¸Õ² Õ®ÖÕ¡Õ£ÖÕ¥Ö
+GenericName[it]=Software consigliato
+GenericName[nb]=Anbefalt programvare
+GenericName[sk]=Odporúčaný softvér
+Comment=Install additional programs recommended for use on the Pi
+Comment[hy]=ÕÕ¥Õ²Õ¡Õ¤ÖÕ¥Õ¬ Õ°Õ¡Õ¾Õ¥Õ¬ÕµÕ¡Õ¬ Õ®ÖÕ¡Õ£ÖÕ¥Ö
+Comment[it]=Installa programmi aggiuntivi consigliati per Raspberry Pi
+Comment[nb]=Installer ekstra programmer som er anbefalt for bruk på Raspberry Pi
+Comment[sk]=Nainštalujte ďalšie odporúčané programy pre Raspberry Pi
+Icon=rpi
+Exec=env SUDO_ASKPASS=/usr/lib/rp-prefapps/pwdrpp.sh sudo -AE rp-prefapps
+StartupNotify=true
+Categories=Settings;DesktopSettings;GTK;X-LXDE-Settings;

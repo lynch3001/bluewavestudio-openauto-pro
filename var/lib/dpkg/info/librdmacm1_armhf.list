@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/librdmacm.so.1.1.22.1
+/usr/lib/arm-linux-gnueabihf/rsocket
+/usr/lib/arm-linux-gnueabihf/rsocket/librspreload.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/librdmacm1
+/usr/share/doc/librdmacm1/changelog.Debian.gz
+/usr/share/doc/librdmacm1/copyright
+/usr/share/doc/librdmacm1/librdmacm.md
+/usr/lib/arm-linux-gnueabihf/librdmacm.so.1
+/usr/lib/arm-linux-gnueabihf/rsocket/librspreload.so.1
+/usr/lib/arm-linux-gnueabihf/rsocket/librspreload.so.1.0.0

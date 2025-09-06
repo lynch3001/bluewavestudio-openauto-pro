@@ -1,0 +1,5 @@
+4084aa32384c98d72687181002a67a8f  lib/systemd/system/fake-hwclock.service
+82ce5384c97db852de5ec3a9b7af2193  sbin/fake-hwclock
+419f3a45d55731956268201fc513569d  usr/share/doc/fake-hwclock/changelog.gz
+9ec36f3cb9555a4814545b7455f5a4ad  usr/share/doc/fake-hwclock/copyright
+5e3ea451191abd488b69e177c0525187  usr/share/man/man8/fake-hwclock.8.gz

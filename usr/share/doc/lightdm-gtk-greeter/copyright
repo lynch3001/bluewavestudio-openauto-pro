@@ -1,0 +1,81 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: lightdm
+Upstream-Source: https://launchpad.net/lightdm-gtk-greeter
+
+Files: *
+Copyright: Sean Davis
+License: GPL-3
+
+Files: debian/*
+Copyright: © 2010-2018 Yves-Alexis Perez <corsac@debian.org>
+License: GPL-2
+
+Files: src/greeterconfiguration.c
+ src/greeterconfiguration.h
+ src/greeterdeprecated.c
+ src/greeterdeprecated.h
+Copyright: 2015-2017, Sean Davis <smd.seandavis@gmail.com>
+  2015-2018, Sean Davis <smd.seandavis@gmail.com>
+  2017-2018, Sean Davis <smd.seandavis@gmail.com>
+License: GPL-3+
+
+Files: src/greetermenubar.h
+Copyright: 2014, Andrew P. <pan.pav.7c5@gmail.com>
+License: GPL-3+
+
+Files: ltmain.sh
+Copyright: 1996-2015, Free Software Foundation, Inc.
+License: GPL-2+
+
+Files: src/lightdm-gtk-greeter.c
+Copyright: 2010-2011, Robert Ancell <robert.ancell@canonical.com>
+  2011, Gunnar Hjalmarsson <ubuntu@gunnar.cc>
+  2012, Julien Lavergne <gilir@ubuntu.com>
+  2012-2013, Lionel Le Folgoc <mrpouit@ubuntu.com>
+  2013-2015, Simon Steinbeiß <ochosi@shimmerproject.org>
+  2013-2018, Sean Davis <smd.seandavis@gmail.com>
+  2014, Andrew P. <pan.pav.7c5@gmail.com>
+License: GPL-3+
+
+Files: src/greeterbackground.c
+Copyright: 2014, Andrew P. <pan.pav.7c5@gmail.com>
+  2014-2018, Sean Davis <smd.seandavis@gmail.com>
+  2015, Robert Ancell <robert.ancell@canonical.com>
+  2015, Simon Steinbeiß <ochosi@shimmerproject.org>
+License: GPL-3+
+
+Files: src/greetermenubar.c
+Copyright: 2014, Andrew P. <pan.pav.7c5@gmail.com>
+  2017, Sean Davis <smd.seandavis@gmail.com>
+License: GPL-3+
+
+Files: src/greeterbackground.h
+Copyright: 2014, Andrew P. <pan.pav.7c5@gmail.com>
+  2014-2015, Sean Davis <smd.seandavis@gmail.com>
+  2015, Simon Steinbeiß <ochosi@shimmerproject.org>
+License: GPL-3+
+
+Files: autogen.sh
+Copyright: 2010-2011, Robert Ancell <robert.ancell@canonical.com>
+  2017-2018, Sean Davis <smd.seandavis@gmail.com>
+License: GPL-3+
+
+License: GPL-2
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in
+ `/usr/share/common-licenses/GPL-2'.
+
+License: GPL-3
+ On Debian systems, the complete text of the GNU General
+ Public License version 3 can be found in
+ `/usr/share/common-licenses/GPL-3'.
+
+License: GPL-2+
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in
+ `/usr/share/common-licenses/GPL-2'.
+
+License: GPL-3+
+ On Debian systems, the complete text of the GNU General
+ Public License version 3 can be found in
+ `/usr/share/common-licenses/GPL-3'.

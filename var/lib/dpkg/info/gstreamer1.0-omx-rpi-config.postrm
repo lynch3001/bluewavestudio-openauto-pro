@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installdeb/12
+dpkg-maintscript-helper rm_conffile /etc/xdg/gstomx.conf 1.10.4-1\+rpt2\~ gstreamer1.0-omx -- "$@"
+# End automatically added section

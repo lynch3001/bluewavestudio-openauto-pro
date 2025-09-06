@@ -1,0 +1,18 @@
+Network performance
+===================
+
+The SoapyRemote server and client will use large socket buffer sizes if possible
+to improve performance and prevent data loss. These are larger than the default
+limits configured in the Linux kernel so you need to raise the limits to make
+full use of them. You can do this with:
+
+    sudo sysctl -w net.core.rmem_max=104857600
+    sudo sysctl -w net.core.wmem_max=104857600
+
+Alternatively you can create a file /etc/sysctl.d/soapyremote.conf (it is
+important that it ends in .conf) with the following contents:
+
+    net.core.rmem_max=104857600
+    net.core.wmem_max=104857600
+
+This will configure the limits automatically on every boot.

@@ -1,0 +1,84 @@
+#! /bin/sh
+# postrm script for gpsd
+
+set -e
+
+case "$1" in
+    purge)
+	[ ! -f /etc/default/gpsd ] || rm /etc/default/gpsd
+
+        if [ -x "$(command -v deluser)" ]; then
+            deluser --quiet --system gpsd > /dev/null || true
+        else
+            echo >&2 "not removing gpsd system account because deluser command was not found"
+        fi
+
+        rm -rf /run/gpsd
+
+    ;;
+
+
+    abort-install|abort-upgrade)
+        if dpkg --compare-versions "$2" lt '3.10-1~' ; then
+            # move config file back
+            if [ -f /etc/default/gpsd.dpkg-pre_3.10 ]; then
+                mv /etc/default/gpsd.dpkg-pre_3.10 /etc/default/gpsd
+            fi
+        fi
+    ;;
+
+    remove|upgrade|failed-upgrade|disappear)
+    ;;
+
+    *)
+        echo "postrm called with unknown argument \`$1'" >&2
+        exit 1
+
+esac
+
+# Automatically added by dh_installinit/12.1.1
+if [ "$1" = "purge" ] ; then
+	update-rc.d gpsd remove >/dev/null
+fi
+# End automatically added section
+# Automatically added by dh_installsystemd/12.1.1
+if [ -d /run/systemd/system ]; then
+	systemctl --system daemon-reload >/dev/null || true
+fi
+# End automatically added section
+# Automatically added by dh_installsystemd/12.1.1
+if [ "$1" = "remove" ]; then
+	if [ -x "/usr/bin/deb-systemd-helper" ]; then
+		deb-systemd-helper mask 'gpsd.service' 'gpsd.socket' >/dev/null || true
+	fi
+fi
+
+if [ "$1" = "purge" ]; then
+	if [ -x "/usr/bin/deb-systemd-helper" ]; then
+		deb-systemd-helper purge 'gpsd.service' 'gpsd.socket' >/dev/null || true
+		deb-systemd-helper unmask 'gpsd.service' 'gpsd.socket' >/dev/null || true
+	fi
+fi
+# End automatically added section
+# Automatically added by dh_installsystemd/12.1.1
+if [ -d /run/systemd/system ]; then
+	systemctl --system daemon-reload >/dev/null || true
+fi
+# End automatically added section
+# Automatically added by dh_installsystemd/12.1.1
+if [ "$1" = "remove" ]; then
+	if [ -x "/usr/bin/deb-systemd-helper" ]; then
+		deb-systemd-helper mask 'gpsd.socket' >/dev/null || true
+	fi
+fi
+
+if [ "$1" = "purge" ]; then
+	if [ -x "/usr/bin/deb-systemd-helper" ]; then
+		deb-systemd-helper purge 'gpsd.socket' >/dev/null || true
+		deb-systemd-helper unmask 'gpsd.socket' >/dev/null || true
+	fi
+fi
+# End automatically added section
+
+
+exit 0

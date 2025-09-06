@@ -1,0 +1,107 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Hamlib
+Upstream-Contact: Hamlib Developers <hamlib-developer@lists.sourceforge.net>
+Source: https://sourceforge.net/projects/hamlib/
+
+Files: *
+Copyright: 2000-2009 Frank Singleton <vk3fcs@ix.netcom.com>
+           2000-2012 Stephane Fillod <fillods@users.sourceforge.net>
+           2000-2012 The Hamlib Group
+           2007-2010, Alessandro Zummo <a.zummo@towertech.it>
+           2011, Alexander Sack, Alexander Sack <pisymbol@gmail.com>
+           2014, Alexander Schultze <alexschultze@gmail.com>
+           2009, Andrew Nilsson <andrew.nilsson@gmail.com>
+           2010, Berndt Josef Wulf <wulf@ping.net.au>
+           2015, Bill Somerville G4WJS <g4wjs@classdesign.com>
+           2011, Charles Suprin <hamaa1vs@gmail.com>
+           2001, Chris Karpinsky <aa1vl@arrl.net>
+           2015, Dario Ventura IZ7CRX
+           2001-2005, Darren Hatcher <g0wcw@hatcher.org.uk>
+           2003, Dave Hines <hamlib@dph.fluff.org>
+           2015, David Fannin <kk6df@arrl.net>
+           2004-2009, Frank Brickle, AB2KT
+           2004-2009, Bob McGwier, N4HY
+           2011-2012, Frank Goenninger
+           2009, Jason Winningham
+           2016, Jeroen Vreeken
+           2013, Jonny Röker <Jonny.Roeker@t-online.de>
+           2010, Kobus Botha
+           2012, Ladislav Vaiz <ok1zia@nagano.cz>
+           2009-2010, Larry Gadallah (VE6VQ) <lgadallah@gmail.com>
+           1998-2016, Michael BlacK, W9MDB <mdblack98@yahoo.com>
+           2010-2011, Mikhail Kshevetskiy <mikhail.kshevetskiy@gmail.com>
+           2009-2013, Nate Bargmann <n0nb@n0nb.us>
+           2009-2011, Norvald H. Ryeng, LA6YKA
+           2002-2004, Ken Koster N7IPB
+           2008, Rob Frohn <kl7na@arrl.net>
+           2015, Robert Freeman
+           2010, Rolf Meeser
+           2010, Scott Martin
+           2000-2010, Fritz Melchert
+           2001-2009, Darren Hatcher <g0wcw@hatcher.org.uk>
+           2000-2009, lod
+           2005, Jacob Heder
+           2000-2004, Juergen Rinas <jrinas@users.sourceforge.net>
+           2000-2004, Michael Smith <james.m.smith@earthlink.net>
+           2003-2012, Martin Ewing <aa6e@arrl.net>
+           2007-2013, Steve Conklin AI4QR <steve@conklinhouse.com>
+           2008-2010, Terry Embry <mrtembry@users.sourceforge.net>
+           2013, The Hamlib Group
+           2003-2009, Thomas B. Ruecker
+           2003, Tomi Manninen <oh2bns@sral.fi>
+           1997-2006, Trent Jarvi <taj@www.linux.org.uk>
+           2010, Wolfgang Buesser <wolfgang.buesser@web.de>
+           2001, pab@users.sourceforge.net
+           2003-2005, Thierry Leconte
+License: LGPL-2.1+ and GPL-2+
+Comment: The libraries in this package are copyrighted by the LGPL Version 2.1
+ (or later version), utilities are copyrighted by the GPL Version 2 (or later
+ version).  See the files LICENSE and AUTHORS for additional information.
+
+Files: debian/*
+Copyright: 2001 Terry Dawson <tjd@animats.net>
+           2006 Joop Stakenborg <pa3aba@debian.org>
+           2006-2015 Matthias Klose <doko@debian.org>
+           2010-2014 Kamal Mostafa <kamal@whence.com>
+           2011 Luk Claes <luk@debian.org>
+           2015-2017 Colin Tuckley <colint@debian.org>
+           2017 Ervin Hegedus HA2OS <airween@gmail.com>
+           2018 Enrico Rossi <e.rossi@tecnobrain.com>
+License: GPL-2+
+
+License: LGPL-2.1+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 2.1 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+ .
+ On Debian systems, the full text of the GNU Lesser General Public
+ License version 2.1 can be found in the file
+ `/usr/share/common-licenses/LGPL-2.1'.
+
+License: GPL-2+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the full text of the GNU General Public
+ License version 3 can be found in the file
+ `/usr/share/common-licenses/GPL-2'.

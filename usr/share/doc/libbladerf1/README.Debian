@@ -1,0 +1,64 @@
+bladeRF USB 3.0 Superspeed Software Defined Radio hardware driver on Debian:
+=========================================================================
+
+plugdev group
+----------
+
+The Debian bladerf-host package uses the plugdev group.
+This provides two main benefits:
+ - Access control:
+    The udev rules limit access to members of the group
+ - Real Time Priority privilege:
+    The pam limits setting allows the user to boost the
+    thread scheduling priority for plugdev group members.
+
+To avail yourself of these benefits, add your username
+to the plugdev group, perhaps by running, as root something like:
+
+    adduser myusername plugdev
+
+substituting your user name for myusername.
+Settings will not take effect until the user has logged in and out.
+
+
+Multiple packages
+-----------------
+
+bladerf:
+ The bladerf package contains the bladeRF-cli and
+ bladeRF-flash commands for configuring devices
+ available to the host system.
+
+libbladerf1:
+ Small package just for the library itself.
+
+libbladerf-dev:
+ Small package just for developing applications
+ using the library itself.
+
+BLADERF Firmware / FPGA images
+--------------------------
+
+ The bladerf-images package is not part of the main Debian distribution
+ because the FPGA firmware requires non-free vendor tools to compile
+ from source.
+
+ To manage this there is a download/install script
+ in the bladerf-host package:
+
+ The bladeRF_install_firmware program is a shell script that either
+ downloads FPGA image and firmware tarballs Nuand.com or takes
+ the tarball file as a command-line argument, checks the md5sum,
+ and installs the files.
+
+Get involved
+------------
+
+Come join us, and other RF developers, on IRC in #bladeRF on FreeNode
+(irc://chat.freenode.net). Our goal is to provide a place for
+collaboration and open discussion to further RF exploration and
+experimentation. We encourage people of all skill levels to join
+us. By getting involved, your input and feedback will help influence
+the direction in which the community will head.
+
+ -- A. Maitland Bottoms <bottoms@debian.org>, Tue,  8 Jul 2014 00:22:50 -0400

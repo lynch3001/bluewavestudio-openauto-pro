@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="calendar" xml:lang="sv">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Använd flaggan <cmd>--calendar</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2006, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+  <title>Kalenderdialog</title>
+    <p>Använd flaggan <cmd>--calendar</cmd> för att skapa en kalenderdialog. Zenity returnerar det markerade datumet till standard ut. Om inget datum har angivits på kommandoraden, kommer dialogrutan att använda dagens datum.</p>
+    <p>Kalenderdialogen har stöd för följande flaggor:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--text</cmd>=<var>text</var></title>
+	<p>Anger texten som visas i kalenderdialogen.</p>
+      </item>
+     	
+      <item>
+        <title><cmd>--day</cmd>=<var>dag</var></title>
+	<p>Anger dagen som är markerad i kalenderdialogen. dag måste vara ett tal i det slutna intervallet 1 till 31.</p>
+      </item>
+
+      <item>
+        <title><cmd>--month</cmd>=<var>månad</var></title>
+	<p>Anger månaden som är markerad i kalenderdialogen. månad måste vara ett tal i det slutna intervallet 1 till 12.</p>
+      </item>
+
+      <item>
+        <title><cmd>--year</cmd>=<var>år</var></title>
+	<p>Anger året som är markerat i kalenderdialogen.</p>
+      </item>
+
+      <item>
+        <title><cmd>--date-format</cmd>=<var>format</var></title>
+	<p>Anger formatet som returneras från kalenderdialogen efter en datummarkering. Standardformatet beror på din lokalinställning. Format måste vara ett format som är acceptabelt för funktionen <cmd>strftime</cmd>, till exempel <var>%A %Y-%m-%d</var>.</p>
+      </item>
+
+    </terms>
+
+    <p>Följande exempelskript visar hur man skapar en kalenderdialog:</p>
+
+<code>
+#!/bin/sh
+
+
+if zenity --calendar \
+--title="Välj ett datum" \
+--text="Klicka på ett datum för att det välja datumet." \
+--day=10 --month=8 --year=2004
+  then echo $?
+  else echo "Inget datum har valts"
+fi
+</code>
+
+
+    <figure>
+      <title>Exempel på kalenderdialog</title>
+      <desc>Zenity-exempel på kalenderdialog</desc>
+      <media type="image" mime="image/png" src="figures/zenity-calendar-screenshot.png"/>
+   </figure>
+</page>

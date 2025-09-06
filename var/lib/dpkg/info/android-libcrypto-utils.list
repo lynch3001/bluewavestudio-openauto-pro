@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/android
+/usr/lib/arm-linux-gnueabihf/android/libcrypto_utils.so.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/android-libcrypto-utils
+/usr/share/doc/android-libcrypto-utils/changelog.Debian.gz
+/usr/share/doc/android-libcrypto-utils/copyright

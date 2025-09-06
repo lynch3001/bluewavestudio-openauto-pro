@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="file-selection" xml:lang="sv">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Använd flaggan <cmd>--file-selection</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2006, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+  <title>Filväljardialog</title>
+    <p>Använd flaggan <cmd>--file-selection</cmd> för att skapa en filväljardialog. <app>Zenity</app> returnerar de valda filerna eller katalogerna till standard ut. Standardläget för filväljardialogen är öppna.</p>
+    <p>Filväljardialogen har stöd för följande flaggor:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--filename</cmd>=<var>filnamn</var></title>
+	<p>Anger filen eller katalogen som är markerad i filväljardialogen när dialogen först visas.</p>
+      </item>
+
+      <item>
+	<title><cmd>--multiple</cmd></title>
+	<p>Tillåter markering av flera filnamn i filväljardialogen.</p>
+      </item>
+
+      <item>
+	<title><cmd>--directory</cmd></title>
+	<p>Tillåter endast markering av kataloger i filväljardialogen.</p>
+      </item>
+
+      <item>
+	<title><cmd>--save</cmd></title>
+	<p>Ställ in filväljardialogen till sparningsläge.</p>
+      </item>
+
+      <item>
+	<title><cmd>--separator</cmd>=<var>avgränsare</var></title>
+	<p>Anger strängen som används för att avgränsa den returnerade listan över filnamn.</p>
+      </item>
+
+    </terms>
+
+    <p>Följande exempelskript visar hur man skapar en filväljardialog:</p>
+
+<code>
+#!/bin/sh
+
+FILE=`zenity --file-selection --title="Välj en fil"`
+
+case $? in
+         0)
+                echo "\"$FILE\" vald.";;
+         1)
+                echo "Ingen fil vald.";;
+         -1)
+                echo "Ett oväntat fel har inträffat.";;
+esac
+</code>
+
+    <figure>
+      <title>Exempel på filväljardialog</title>
+      <desc><app>Zenity</app>-exempel på filväljardialog</desc>
+      <media type="image" mime="image/png" src="figures/zenity-fileselection-screenshot.png"/>
+    </figure>
+</page>

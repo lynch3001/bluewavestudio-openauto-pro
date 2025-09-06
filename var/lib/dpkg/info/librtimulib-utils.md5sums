@@ -1,0 +1,8 @@
+11907fbca9aadeceec4ca9e70e752193  usr/bin/RTIMULibCal
+ba91f5d1be718927ade5f1c179461917  usr/bin/RTIMULibDrive11
+e4ab2382bc7af35eb4295c707df70a71  usr/share/doc/librtimulib-utils/changelog.Debian.gz
+d961adcc9d784573687b69bafabd173a  usr/share/doc/librtimulib-utils/copyright
+d84de94d005b30f07928167cd87e94bb  usr/share/librtimulib-utils/RTEllipsoidFit/RTEllipsoidFit.m
+892d4a48a36d6264e51cabe9437b97f0  usr/share/librtimulib-utils/RTEllipsoidFit/ellipsoid_fit.m
+879d762197edaae1b44e9495fc3343e5  usr/share/librtimulib-utils/RTEllipsoidFit/mag_cal.m
+12d8d12ef7f37e898204f4486f64cb9f  usr/share/librtimulib-utils/RTEllipsoidFit/mag_fit_display.m

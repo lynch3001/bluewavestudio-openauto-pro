@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libmicrohttpd.so.12.49.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libmicrohttpd12
+/usr/share/doc/libmicrohttpd12/changelog.Debian.gz
+/usr/share/doc/libmicrohttpd12/changelog.gz
+/usr/share/doc/libmicrohttpd12/copyright
+/usr/lib/arm-linux-gnueabihf/libmicrohttpd.so.12

@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libliveMedia.so.64.0.4
+/usr/share
+/usr/share/doc
+/usr/share/doc/liblivemedia64
+/usr/share/doc/liblivemedia64/NEWS.Debian.gz
+/usr/share/doc/liblivemedia64/changelog.Debian.gz
+/usr/share/doc/liblivemedia64/copyright
+/usr/lib/arm-linux-gnueabihf/libliveMedia.so.64

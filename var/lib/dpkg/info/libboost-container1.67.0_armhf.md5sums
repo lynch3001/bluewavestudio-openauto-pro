@@ -1,0 +1,4 @@
+ec7720efef7edc526f8d057b42bc88f7  usr/lib/arm-linux-gnueabihf/libboost_container.so.1.67.0
+fd9fd87aca681e8911194b0265a932bd  usr/share/doc/libboost-container1.67.0/changelog.Debian.gz
+190563c1ac07e6b6ab3c1b872d584bfe  usr/share/doc/libboost-container1.67.0/copyright
+08f8c6850319c5bad74899824071010a  usr/share/lintian/overrides/libboost-container1.67.0

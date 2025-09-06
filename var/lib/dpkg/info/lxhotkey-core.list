@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/bin
+/usr/bin/lxhotkey
+/usr/share
+/usr/share/doc
+/usr/share/doc/lxhotkey-core
+/usr/share/doc/lxhotkey-core/changelog.Debian.armhf.gz
+/usr/share/doc/lxhotkey-core/changelog.Debian.gz
+/usr/share/doc/lxhotkey-core/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/lxhotkey.1.gz

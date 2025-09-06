@@ -1,0 +1,12 @@
+/.
+/lib
+/lib/arm-linux-gnueabihf
+/lib/arm-linux-gnueabihf/libparted-fs-resize.so.0.0.1
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libparted-fs-resize0
+/usr/share/doc/libparted-fs-resize0/changelog.Debian.gz
+/usr/share/doc/libparted-fs-resize0/changelog.gz
+/usr/share/doc/libparted-fs-resize0/copyright
+/lib/arm-linux-gnueabihf/libparted-fs-resize.so.0

@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libusbmuxd.so.4.1.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libusbmuxd4
+/usr/share/doc/libusbmuxd4/changelog.Debian.gz
+/usr/share/doc/libusbmuxd4/copyright
+/usr/lib/arm-linux-gnueabihf/libusbmuxd.so.4

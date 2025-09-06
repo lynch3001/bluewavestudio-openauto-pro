@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pref-do-not-track" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="index#privacy"/>
+    <link type="guide" xref="pref"/>
+    <revision pkgversion="3.12" date="2014-02-24" status="candidate"/>
+
+    <credit type="author copyright">
+      <name>Baptiste Mille-Mathias</name>
+      <email its:translate="no">baptistem@gnome.org</email>
+      <years>2014</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Como eu falo para os sites que eu não quero que eles monitorem minhas atividades online?</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013,</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Definindo a preferência de rastreamento web</title>
+
+  <p>Alguns sites podem monitorar sua atividade quando você os visita. Por exemplo, eles podem querer saber quais páginas você visualizou ou pelas quais pesquisou. Essas informações podem ser usadas para melhorar sua experiência de navegação web, mas também podem ser vendidas e compartilhadas com outras empresas que podem usá-las de uma forma maliciosa. Você pode perguntar aos sites que você visita para não monitorar sua atividade habilitando o <gui>Não rastrear</gui>.</p>
+
+  <steps>
+    <item>
+      <p>Abra <guiseq><gui style="menu">Web</gui><gui style="menuitem">Preferências</gui><gui style="tab">Privacidade</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Marque a caixa de seleção <gui style="checkbox">Avisar aos sites que eu não quero ser rastreado</gui>.</p>
+    </item>
+  </steps>
+
+  <note style="important">
+    <p>Sites não têm que honrar essa preferência.</p>
+  </note>
+
+</page>

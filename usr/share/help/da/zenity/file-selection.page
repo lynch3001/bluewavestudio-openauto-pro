@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="file-selection" xml:lang="da">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Brug tilvalget <cmd>--file-selection</cmd>.</desc>
+  </info>
+  <title>Filvælgerdialog</title>
+    <p>Brug tilvalget <cmd>--file-selection</cmd> til at oprette en filvælgerdialog. <app>Zenity</app> returnerer de valgte filer eller mapper til standardoutput. Standardtilstanden for filvælgeren er åbn.</p>
+    <p>Filvælgerdialoger understøtter følgende tilvalg:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--filename</cmd>=<var>filnavn</var></title>
+	<p>Angiver den fil eller mappe, som er valgt i filvælgeren, når dialogen vises første gang.</p>
+      </item>
+
+      <item>
+	<title><cmd>--multiple</cmd></title>
+	<p>Tillader valg af flere filnavne i filvælgeren.</p>
+      </item>
+
+      <item>
+	<title><cmd>--directory</cmd></title>
+	<p>Tillader kun valg af mapper i filvælgeren.</p>
+      </item>
+
+      <item>
+	<title><cmd>--save</cmd></title>
+	<p>Sæt filvælgerdialogen til gemmetilstand.</p>
+      </item>
+
+      <item>
+	<title><cmd>--separator</cmd>=<var>skilletegn</var></title>
+	<p>Angiver strengen, der bruges til at dele listen af returnerede filnavne.</p>
+      </item>
+
+    </terms>
+
+    <p>Følgende eksempelscript viser, hvordan man opretter en filvælgerdialog:</p>
+
+<code>
+#!/bin/sh
+
+FIL=`zenity --file-selection --title="Vælg en fil"`
+
+case $? in
+         0)
+                echo "\"$FIL\" valgt.";;
+         1)
+                echo "Ingen fil valgt.";;
+        -1)
+                echo "Der opstod en uventet fejl.";;
+esac
+</code>
+
+    <figure>
+      <title>Eksempel med filvælgerdialog</title>
+      <desc>Eksempel på filvælgerdialog til <app>Zenity</app></desc>
+      <media type="image" mime="image/png" src="figures/zenity-fileselection-screenshot.png"/>
+    </figure>
+</page>

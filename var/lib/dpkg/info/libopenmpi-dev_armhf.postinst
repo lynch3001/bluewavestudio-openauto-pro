@@ -1,0 +1,18 @@
+#!/bin/sh
+
+set -e
+
+if [ "$1" = "configure" ]; then
+
+update-alternatives \
+	--install /usr/include/arm-linux-gnueabihf/mpi mpi-arm-linux-gnueabihf /usr/lib/arm-linux-gnueabihf/openmpi/include 50 \
+	--slave /usr/lib/arm-linux-gnueabihf/libmpi.so libmpi.so-arm-linux-gnueabihf /usr/lib/arm-linux-gnueabihf/openmpi/lib/libmpi.so \
+	--slave /usr/lib/arm-linux-gnueabihf/libmpi++.so libmpi++.so-arm-linux-gnueabihf /usr/lib/arm-linux-gnueabihf/openmpi/lib/libmpi_cxx.so \
+	--slave /usr/lib/arm-linux-gnueabihf/pkgconfig/mpi.pc mpi.pc-arm-linux-gnueabihf /usr/lib/arm-linux-gnueabihf/pkgconfig/ompi.pc \
+	--slave /usr/lib/arm-linux-gnueabihf/pkgconfig/mpi-fort.pc mpi-fort.pc-arm-linux-gnueabihf /usr/lib/arm-linux-gnueabihf/pkgconfig/ompi-fort.pc \
+	--slave /usr/lib/arm-linux-gnueabihf/pkgconfig/mpi-c.pc mpi-c.pc-arm-linux-gnueabihf /usr/lib/arm-linux-gnueabihf/pkgconfig/ompi-c.pc \
+	--slave /usr/lib/arm-linux-gnueabihf/pkgconfig/mpi-cxx.pc mpi-cxx.pc-arm-linux-gnueabihf /usr/lib/arm-linux-gnueabihf/pkgconfig/ompi-cxx.pc
+
+fi
+
+

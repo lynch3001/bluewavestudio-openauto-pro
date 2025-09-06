@@ -1,0 +1,5 @@
+# The directory /usr/lib/x86_64-linux-gnu/pcmanfm/ is required to install
+# modules and to avoid LibFM Warning about not accessible directory
+package-contains-empty-directory usr/lib/x86_64-linux-gnu/pcmanfm/
+# The actual apport file is in libfm package which is a dependency
+package-contains-broken-symlink usr/share/apport/package-hooks/source_pcmanfm.py source_libfm.py

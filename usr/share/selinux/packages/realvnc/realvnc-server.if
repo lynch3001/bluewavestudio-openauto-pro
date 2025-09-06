@@ -1,0 +1,11 @@
+## Interface allowing 2 types to communicate with each other over the dbus.
+interface(`realvnc_dbus_chat', `
+  gen_require(`
+    type $1;
+    type $2;
+    class dbus send_msg;
+  ')
+  
+  allow $1 $2:dbus send_msg;
+  allow $2 $1:dbus send_msg;
+')

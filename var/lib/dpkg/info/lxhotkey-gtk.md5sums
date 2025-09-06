@@ -1,0 +1,6 @@
+bf87101ed3f174b5d1a0c18902ee80d3  usr/lib/arm-linux-gnueabihf/lxhotkey/gtk.so
+91596e65609ec93f5c18cc2ae2193d81  usr/share/applications/lxhotkey-gtk.desktop
+52e6f9ded2064ca0f248ac1d129e0c65  usr/share/doc/lxhotkey-gtk/changelog.Debian.armhf.gz
+59a647308313816de7818d79d4333aff  usr/share/doc/lxhotkey-gtk/changelog.Debian.gz
+9a239d02beb1fbe34655228be21f85ca  usr/share/doc/lxhotkey-gtk/copyright
+b2b07f95c8d6f734ee204bf9e6bca152  usr/share/lintian/overrides/lxhotkey-gtk

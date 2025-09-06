@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="calendar" xml:lang="pt-BR">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Use a opção <cmd>--calendar</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+  <title>Diálogo de calendário</title>
+    <p>Use a opção <cmd>--calendar</cmd> para criar um diálogo de calendário. O Zenity returna a data selecionada para a saída padrão. Se nenhuma data for especificada na linha de comando, o diálogo usa a data atual como valor inicial.</p>
+    <p>O diálogo de calendário oferece suporte às seguintes opções:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--text</cmd>=<var>texto</var></title>
+	<p>Especifica o texto que é exibido no diálogo de calendário.</p>
+      </item>
+     	
+      <item>
+        <title><cmd>--day</cmd>=<var>dia</var></title>
+	<p>Especifica o dia que começa selecionado no diálogo de calendário. Dia deve ser um número entre 1 e 31 inclusive.</p>
+      </item>
+
+      <item>
+        <title><cmd>--month</cmd>=<var>mês</var></title>
+	<p>Especifica o mês que começa selecionado no diálogo de calendário. Mês deve ser um número entre 1 e 12 inclusive.</p>
+      </item>
+
+      <item>
+        <title><cmd>--year</cmd>=<var>ano</var></title>
+	<p>Especifica o ano que começa selecionado no diálogo de calendário.</p>
+      </item>
+
+      <item>
+        <title><cmd>--date-format</cmd>=<var>formato</var></title>
+	<p>Especifica o formato que é utilizado no retorno do diálogo de calendário depois da seleção da data. O formato padrão depende de sua localidade. Formato deve ser um formato que seja aceitável pela função <cmd>strftime</cmd>, por exemplo <var>%A %d/%m/%y</var>.</p>
+      </item>
+
+    </terms>
+
+    <p>O script de exemplo a seguir mostra como criar um diálogo de calendário:</p>
+
+<code>
+#!/bin/sh
+
+
+if zenity --calendar \
+--title="Selecione uma data" \
+--text="Clique em uma data para selecioná-la." \
+--day=10 --month=8 --year=2004
+  then echo $?
+  else echo "Nenhuma data foi selecionada"
+fi
+</code>
+
+
+    <figure>
+      <title>Exemplo de diálogo de calendário</title>
+      <desc>Exemplo de diálogo de calendário do Zenity</desc>
+      <media type="image" mime="image/png" src="figures/zenity-calendar-screenshot.png"/>
+   </figure>
+</page>

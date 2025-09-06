@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/include
+/usr/include/xcb
+/usr/include/xcb/xfixes.h
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libxcb-xfixes.a
+/usr/lib/arm-linux-gnueabihf/pkgconfig
+/usr/lib/arm-linux-gnueabihf/pkgconfig/xcb-xfixes.pc
+/usr/share
+/usr/share/doc
+/usr/share/doc/libxcb-xfixes0-dev
+/usr/share/doc/libxcb-xfixes0-dev/changelog.Debian.gz
+/usr/share/doc/libxcb-xfixes0-dev/changelog.gz
+/usr/share/doc/libxcb-xfixes0-dev/copyright
+/usr/lib/arm-linux-gnueabihf/libxcb-xfixes.so

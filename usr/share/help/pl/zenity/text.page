@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="text" xml:lang="pl">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Używanie opcji <cmd>--text-info</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+  <title>Okno z informacją tekstową</title>
+    <p>Użyj opcji <cmd>--text-info</cmd>, aby utworzyć okno z informacją tekstową.</p>
+	
+    <p>Okno z informacją tekstową obsługuje te opcje:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--filename</cmd>=<var>nazwa-pliku</var></title>
+	<p>Określa plik wczytywany w oknie informacji tekstowej.</p>
+      </item>
+
+      <item>
+        <title><cmd>--editable</cmd></title>
+        <p>Umożliwia modyfikowanie wyświetlanego tekstu. Zmodyfikowany tekst jest zwracany do standardowego wyjścia po zamknięciu okna.</p>
+      </item>
+
+      <item>
+        <title><cmd>--font</cmd>=<var>CZCIONKA</var></title>
+	<p>Określa czcionkę tekstu.</p>
+      </item>
+
+      <item>
+        <title><cmd>--checkbox</cmd>=<var>TEKST</var></title>
+	<p>Włącza pole wyboru, takie jak „Przeczytałam i zgadzam się”.</p>
+      </item>
+
+      <item>
+        <title><cmd>--html</cmd></title>
+        <p>Włącza obsługę języka HTML.</p>
+      </item>
+
+      <item>
+        <title><cmd>--url</cmd>=<var>URL</var></title>
+	<p>Ustawia adres URL zamiast pliku. Działa tylko z opcją --html.</p>
+      </item>
+
+    </terms>
+
+    <p>Ten przykładowy skrypt pokazuje, jak utworzyć okno z informacją tekstową:</p>
+
+<code>
+#!/bin/sh
+
+# Plik „COPYING” musi być w tym samym katalogu co ten skrypt.
+FILE=`dirname $0`/COPYING
+
+zenity --text-info \
+       --title="Licencja" \
+       --filename=$FILE \
+       --checkbox="Przeczytałam i zgadzam się."
+
+case $? in
+    0)
+        echo "Rozpocznij instalację."
+	# next step
+	;;
+    1)
+        echo "Zatrzymaj instalację."
+	;;
+    -1)
+        echo "Wystąpił nieoczekiwany błąd."
+	;;
+esac
+</code>
+
+    <figure>
+      <title>Przykład okna z informacją tekstową</title>
+      <desc>Przykład okna <app>Zenity</app> z informacją tekstową</desc>
+      <media type="image" mime="image/png" src="figures/zenity-text-screenshot.png"/>
+    </figure>
+</page>

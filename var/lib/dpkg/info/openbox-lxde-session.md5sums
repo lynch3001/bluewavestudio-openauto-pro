@@ -1,0 +1,13 @@
+e802f844adcbca27bdb65a5e2a3fd93a  usr/bin/lxde-logout
+c3869fe62f3ce9da41ae6b492d2de8ba  usr/bin/openbox-lxde
+0467b6a0ba905a5edb5d1f4d73346344  usr/bin/startlxde
+cfd07631547f7c23207ec646e9d00ffb  usr/share/applications/lxde-logout.desktop
+cad2791b4b1a76975cc777563743c989  usr/share/applications/lxde-screenlock.desktop
+6d293444fd40673c3c2b926ba8736aea  usr/share/doc/openbox-lxde-session/changelog.Debian.gz
+0f20ae7aa1db1c2472eea2b9e5d9883a  usr/share/doc/openbox-lxde-session/changelog.gz
+4867180f29038fabf15182741b51d0fc  usr/share/doc/openbox-lxde-session/copyright
+4ba4adc912a0cd7759b028f45b120314  usr/share/lintian/overrides/openbox-lxde-session
+3ab7e868f7c303f20657e27ab58f5487  usr/share/man/man1/lxde-logout.1.gz
+a71aacf0109e156bce4684b9422fa3df  usr/share/man/man1/openbox-lxde.1.gz
+31e97b9c668497bb9f4726933a931bcb  usr/share/man/man1/startlxde.1.gz
+09a3ec1d32cb1abee8831f127beb5760  usr/share/xsessions/LXDE.desktop

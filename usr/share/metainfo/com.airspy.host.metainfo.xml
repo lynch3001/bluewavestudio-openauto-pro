@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+  <id>com.airspy.host</id>
+  <metadata_license>BSD</metadata_license>
+  <name>airspy</name>
+  <summary>Control of Airspy HF+ radio receiver</summary>
+  <description>
+    <p>
+      Tiny and efficient software defined radio receiver - utilities
+      Airspy is a Radio receiver that can receive
+      between 24 MHz and 1750 MHz. Airspy has a 10 MHz bandwidth.
+      12bit ADC @ 20 MSPS (80dB SFDR, 64dB SNR, 10.4 ENOB)
+      It is a High Speed USB device powered by the USB bus.
+    </p>
+  </description>
+  <provides>
+    <modalias>usb:v1D50p60A1d*</modalias>
+  </provides>
+</component>

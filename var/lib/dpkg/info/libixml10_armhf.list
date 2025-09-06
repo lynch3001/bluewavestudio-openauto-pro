@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libixml.so.10.0.1
+/usr/share
+/usr/share/doc
+/usr/share/doc/libixml10
+/usr/share/doc/libixml10/changelog.Debian.gz
+/usr/share/doc/libixml10/changelog.gz
+/usr/share/doc/libixml10/copyright
+/usr/lib/arm-linux-gnueabihf/libixml.so.10

@@ -1,0 +1,9 @@
+
+
+[test]
+pytest
+coverage
+mock
+
+[doc]
+sphinx

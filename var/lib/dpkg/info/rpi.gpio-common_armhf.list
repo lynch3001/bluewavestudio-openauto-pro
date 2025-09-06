@@ -1,0 +1,13 @@
+/.
+/lib
+/lib/udev
+/lib/udev/rules.d
+/lib/udev/rules.d/60-rpi.gpio-common.rules
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/rpi.gpio-common
+/usr/share/doc/rpi.gpio-common/README.Debian
+/usr/share/doc/rpi.gpio-common/changelog.Debian.gz
+/usr/share/doc/rpi.gpio-common/changelog.gz
+/usr/share/doc/rpi.gpio-common/copyright

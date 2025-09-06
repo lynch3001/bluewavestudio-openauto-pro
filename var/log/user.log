@@ -1,0 +1,15 @@
+Mar 17 20:56:49 raspberrypi colord[843]: failed to get session [pid 908]: No data available
+Mar 17 21:13:19 raspberrypi mtp-probe: checking bus 1, device 3: "/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.1"
+Mar 17 21:13:19 raspberrypi mtp-probe: bus: 1, device: 3 was not an MTP device
+Mar 17 21:13:19 raspberrypi mtp-probe: checking bus 1, device 4: "/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.2"
+Mar 17 21:13:19 raspberrypi mtp-probe: bus: 1, device: 4 was not an MTP device
+Mar 17 21:13:19 raspberrypi udisksd[405]: udisks daemon version 2.8.1 starting
+Mar 17 21:13:22 raspberrypi udisksd[405]: failed to load module crypto: libbd_crypto.so.2: cannot open shared object file: No such file or directory
+Mar 17 21:13:22 raspberrypi udisksd[405]: failed to load module mdraid: libbd_mdraid.so.2: cannot open shared object file: No such file or directory
+Mar 17 21:13:22 raspberrypi udisksd[405]: Failed to load the 'mdraid' libblockdev plugin
+Mar 17 21:13:22 raspberrypi udisksd[405]: Failed to load the 'crypto' libblockdev plugin
+Mar 17 21:13:23 raspberrypi lightdm[533]: Error getting user list from org.freedesktop.Accounts: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Accounts was not provided by any .service files
+Mar 17 21:13:25 raspberrypi udisksd[405]: Acquired the name org.freedesktop.UDisks2 on the system message bus
+Mar 17 21:13:28 raspberrypi lightdm[590]: Error getting user list from org.freedesktop.Accounts: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Accounts was not provided by any .service files
+Mar 17 21:13:37 raspberrypi colord[940]: failed to get edid data: EDID length is too small
+Mar 17 21:13:37 raspberrypi colord[940]: failed to get session [pid 397]: No data available

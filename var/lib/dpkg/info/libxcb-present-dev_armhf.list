@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/include
+/usr/include/xcb
+/usr/include/xcb/present.h
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libxcb-present.a
+/usr/lib/arm-linux-gnueabihf/pkgconfig
+/usr/lib/arm-linux-gnueabihf/pkgconfig/xcb-present.pc
+/usr/share
+/usr/share/doc
+/usr/share/doc/libxcb-present-dev
+/usr/share/doc/libxcb-present-dev/changelog.Debian.gz
+/usr/share/doc/libxcb-present-dev/changelog.gz
+/usr/share/doc/libxcb-present-dev/copyright
+/usr/lib/arm-linux-gnueabihf/libxcb-present.so

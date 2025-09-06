@@ -1,0 +1,13 @@
+7305bf492c5c9bb21dde626a06172053  usr/bin/cpio-filter
+3b79c8669e5e750a425b6afc2b66fc51  usr/share/doc/libarchive-cpio-perl/changelog.Debian.gz
+b8f760b84874fc159b58e747f3025e73  usr/share/doc/libarchive-cpio-perl/changelog.gz
+f31301d5ba29b87a254e2e8a6f60ed8f  usr/share/doc/libarchive-cpio-perl/copyright
+a687c2ace40de00c08666cffb1ccb25a  usr/share/man/man1/cpio-filter.1p.gz
+0a56dbe3208b7292976a8f3633ef7bd5  usr/share/man/man3/Archive::Cpio.3pm.gz
+dd1def2960ba41688132f059904d964b  usr/share/perl5/Archive/Cpio.pm
+4f90e427cd9aa549edb24665d7dd22e8  usr/share/perl5/Archive/Cpio/Common.pm
+e1b1afef2f056887d6ec0d480223ff29  usr/share/perl5/Archive/Cpio/File.pm
+b13038c7f514b42244d931a913f41abd  usr/share/perl5/Archive/Cpio/FileHandle_with_pushback.pm
+fcf7792c2c334ac4d6b8d5b6cef150df  usr/share/perl5/Archive/Cpio/NewAscii.pm
+2ae3acef967824fcccef510bbb690be1  usr/share/perl5/Archive/Cpio/ODC.pm
+6c247fdde926dfd43c9c591bb8eff38b  usr/share/perl5/Archive/Cpio/OldBinary.pm

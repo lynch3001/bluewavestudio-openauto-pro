@@ -1,0 +1,17 @@
+/.
+/etc
+/etc/xdg
+/etc/xdg/autostart
+/etc/xdg/autostart/lxpolkit.desktop
+/usr
+/usr/bin
+/usr/bin/lxpolkit
+/usr/share
+/usr/share/doc
+/usr/share/doc/lxpolkit
+/usr/share/doc/lxpolkit/changelog.Debian.gz
+/usr/share/doc/lxpolkit/changelog.gz
+/usr/share/doc/lxpolkit/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/lxpolkit.1.gz

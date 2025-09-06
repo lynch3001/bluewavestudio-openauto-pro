@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="browse-private" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="index#adv"/>
+    <revision pkgversion="3.10" date="2013-06-30" status="candidate"/>
+    <revision pkgversion="3.12" date="2014-01-28" status="final"/>
+
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+<!--    <credit type="copyright editor">
+      <name></name>
+      <email its:translate="no"></email>
+      <years></years>
+    </credit>-->
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Czym jest tryb <em>incognito</em>?</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Tryb prywatny</title>
+
+  <p>Tryb prywatny ogranicza komputerowi i stronom dostęp do informacji o przeglądaniu. Jest przydatny przy pożyczaniu komputera znajomym, ponieważ w trybie prywatnym logowania nie są pamiętane, a wpisane informacje nie są zapisywane. Oznacza to też, że tryb prywatny jest bezpieczniejszy podczas korzystania z banków i przeglądania kontrowersyjnych treści, ponieważ tryb <em>incognito</em> utrudnia stronom identyfikację użytkowników.</p>
+
+  <steps>
+    <title/>
+    <item>
+      <p>Wybierz <guiseq><gui style="menu">WWW</gui><gui style="menuitem">Nowe okno incognito</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Przeglądanie Internetu w trybie incognito.</p>
+    </item>
+    <item>
+      <p>Zakończ tryb prywatny zamykając okno incognito.</p>
+    </item>
+  </steps>
+
+  <p>Można odróżnić tryb prywatny od zwykłego przez znak wodny w oknie incognito:</p>
+
+  <figure>
+    <media type="image" mime="image/png" src="media/private-browsing-3-12.png">
+      <p>Zwykłe okno po lewej stronie i okno w trybie prywatnym po prawej stronie.</p>
+    </media>
+    <p>Zwykłe okno z historią przeglądania po lewej stronie i okno w trybie prywatnym po prawej stronie</p>
+  </figure>
+
+</page>

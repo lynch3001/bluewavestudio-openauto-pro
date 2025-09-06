@@ -1,0 +1,15 @@
+abd1fc9a5e499a2b7259c2f4595fbd7a  usr/include/coverart/CoverArt.h
+63b9f5c8c7f35793afd21a1af6998886  usr/include/coverart/HTTPFetch.h
+44f8fd3eb09f3ff10361b03c36951150  usr/include/coverart/Image.h
+53d33abd860fa08aa1b6c2d0e61d9a97  usr/include/coverart/ImageList.h
+1dd0a5be160a97d0c99786954512a53f  usr/include/coverart/ReleaseInfo.h
+81a2b58e03fb1f2c353422a428773146  usr/include/coverart/Thumbnails.h
+250eed6b3c413bb16ce8161ace942b7a  usr/include/coverart/Type.h
+88732d4b150e5f1e7dcc490d6420bc81  usr/include/coverart/TypeList.h
+df82e3b5956cb8979b6545e4830fee0d  usr/include/coverart/caa_c.h
+6970d3549e56268204fa642ab23eeb70  usr/include/coverart/defines.h
+588a74992f9bd93094d238e3a0d45a5a  usr/lib/arm-linux-gnueabihf/pkgconfig/libcoverart.pc
+e795b4bd9d953e134c4a950f729e6658  usr/lib/arm-linux-gnueabihf/pkgconfig/libcoverartcc.pc
+7936f4c6b7f437315c4a6975c3b32593  usr/share/doc/libcoverart-dev/changelog.Debian.gz
+7031141406864aed8892ffdc341e9906  usr/share/doc/libcoverart-dev/changelog.gz
+f8cdafe8a0c040a03da3d99d5e61a17b  usr/share/doc/libcoverart-dev/copyright

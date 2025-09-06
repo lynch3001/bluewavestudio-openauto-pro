@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/lib
+/usr/lib/python2.7
+/usr/lib/python2.7/dist-packages
+/usr/lib/python2.7/dist-packages/cookies-2.2.1.egg-info
+/usr/lib/python2.7/dist-packages/cookies-2.2.1.egg-info/PKG-INFO
+/usr/lib/python2.7/dist-packages/cookies-2.2.1.egg-info/dependency_links.txt
+/usr/lib/python2.7/dist-packages/cookies-2.2.1.egg-info/top_level.txt
+/usr/lib/python2.7/dist-packages/cookies.py
+/usr/lib/python2.7/dist-packages/test_cookies.py
+/usr/share
+/usr/share/doc
+/usr/share/doc/python-cookies
+/usr/share/doc/python-cookies/changelog.Debian.gz
+/usr/share/doc/python-cookies/copyright

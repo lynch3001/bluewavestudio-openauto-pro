@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/gtk-2.0
+/usr/lib/arm-linux-gnueabihf/gtk-2.0/2.10.0
+/usr/lib/arm-linux-gnueabihf/gtk-2.0/2.10.0/engines
+/usr/lib/arm-linux-gnueabihf/gtk-2.0/2.10.0/engines/libpixflat.la
+/usr/lib/arm-linux-gnueabihf/gtk-2.0/2.10.0/engines/libpixflat.so
+/usr/lib/arm-linux-gnueabihf/pkgconfig
+/usr/lib/arm-linux-gnueabihf/pkgconfig/gtk-engines-pixflat.pc
+/usr/share
+/usr/share/doc
+/usr/share/doc/gtk2-engines-pixflat
+/usr/share/doc/gtk2-engines-pixflat/changelog.gz
+/usr/share/doc/gtk2-engines-pixflat/copyright

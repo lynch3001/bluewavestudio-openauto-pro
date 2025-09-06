@@ -1,0 +1,5 @@
+ba1c70ecefc5006d024ca467afce368d  usr/lib/arm-linux-gnueabihf/libbd_part.so.2.0.0
+47962d9b1bfa64b4ea6ab2d75685ddb5  usr/share/doc/libblockdev-part2/changelog.Debian.armhf.gz
+7faa33ef56fdb4c16931d728214380e5  usr/share/doc/libblockdev-part2/changelog.Debian.gz
+922c155bcf341a506fc85204b120a511  usr/share/doc/libblockdev-part2/copyright
+5b5a7dd7540302a7677d5215bf06c252  usr/share/lintian/overrides/libblockdev-part2

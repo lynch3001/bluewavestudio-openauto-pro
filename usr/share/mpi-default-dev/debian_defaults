@@ -1,0 +1,10 @@
+# Default MPI implementation on this architecture:
+ARCH_DEFAULT_MPI_IMPL=openmpi
+# Architectures where OpenMPI is available:
+OPENMPI_AVAILABLE_ARCHITECTURES=alpha amd64 arm64 armel armhf hppa hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 m68k mips mips64el mipsel powerpc powerpcspe ppc64 ppc64el riscv64 s390x sh4 sparc64 x32
+# Architectures where MPICH is available:
+MPICH_AVAILABLE_ARCHITECTURES=alpha amd64 arm64 armel armhf hppa hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 m68k mips mips64el mipsel powerpc powerpcspe ppc64 ppc64el riscv64 s390x sh4 sparc64 x32
+# Architectures defaulting to OpenMPI:
+OPENMPI_ARCHITECTURES=alpha amd64 arm64 armel armhf hppa hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mips64el mipsel powerpc powerpcspe ppc64 ppc64el riscv64 s390x sparc64 x32
+# Architectures defaulting to MPICH:
+MPICH_ARCHITECTURES=m68k sh4

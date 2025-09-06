@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libisc-pkcs11.so.1100.0.0
+/usr/lib/arm-linux-gnueabihf/libisc.so.1100.0.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libisc1100
+/usr/share/doc/libisc1100/changelog.Debian.gz
+/usr/share/doc/libisc1100/changelog.gz
+/usr/share/doc/libisc1100/copyright
+/usr/lib/arm-linux-gnueabihf/libisc-pkcs11.so.1100
+/usr/lib/arm-linux-gnueabihf/libisc.so.1100

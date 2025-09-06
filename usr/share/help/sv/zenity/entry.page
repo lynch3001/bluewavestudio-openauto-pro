@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="entry" xml:lang="sv">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Använd flaggan <cmd>--entry</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2006, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+  <title>Textinmatningsdialog</title>
+    <p>Använd flaggan <cmd>-entry</cmd> för att skapa en textinmatningsdialog. <app>Zenity</app> returnerar innehållet av textinmatningen till standard ut.</p>	
+    <p>Textinmatningsdialogen har stöd för följande flaggor:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--text</cmd>=<var>text</var></title>
+	<p>Anger texten som visas i textinmatningsdialogen.</p>
+      </item>
+
+      <item>
+        <title><cmd>--entry-text</cmd>=<var>text</var></title>
+	<p>Anger texten som visas i inmatningsfältet för textinmatningsdialogen.</p>
+      </item>
+
+      <item>
+        <title><cmd>--hide-text</cmd></title>
+	<p>Döljer texten i inmatningsfältet för textinmatningsdialogen.</p>
+      </item>
+
+    </terms>
+
+    <p>Följande exempelskript visar hur man skapar en textinmatningsdialog:</p>
+
+<code>
+#!/bin/sh
+
+if zenity --entry \
+--title="Lägg till ny profil" \
+--text="Ange namn för ny profil:" \
+--entry-text "NewProfile"
+  then echo $?
+  else echo "Inget namn angavs"
+fi
+</code>
+
+
+    <figure>
+      <title>Exempel på textinmatningsdialog</title>
+      <desc><app>Zenity</app>-exempel på textinmatningsdialog</desc>
+      <media type="image" mime="image/png" src="figures/zenity-entry-screenshot.png"/>
+    </figure>
+</page>

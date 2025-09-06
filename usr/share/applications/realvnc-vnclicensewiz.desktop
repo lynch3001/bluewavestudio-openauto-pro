@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=VNC Server - Licensing
+Name[de]=VNC Server – Lizenzierung 
+Name[es]=Activación de licencias VNC Server
+Name[fr]=Gestion des licences VNC Server
+Name[pt]=VNC Server - Licenciamento
+GenericName=VNC Server
+Type=Application
+Icon=/usr/share/icons/hicolor/48x48/apps/vncserver48x48.png
+NoDisplay=true

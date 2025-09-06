@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libva-glx.so.2.400.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libva-glx2
+/usr/share/doc/libva-glx2/changelog.Debian.gz
+/usr/share/doc/libva-glx2/changelog.gz
+/usr/share/doc/libva-glx2/copyright
+/usr/lib/arm-linux-gnueabihf/libva-glx.so.2

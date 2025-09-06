@@ -1,0 +1,17 @@
+Document: debian-reference-en
+Title: Debian Reference (en)
+Author: Osamu Aoki
+Abstract: This Debian Reference covers many aspects of system
+ administration through shell-command examples. (English)
+Section: Debian
+
+Format: text
+Files: /usr/share/doc/debian-reference-en/docs/debian-reference.en.txt.gz
+
+Format: PDF
+Files: /usr/share/doc/debian-reference-en/docs/debian-reference.en.pdf
+
+Format: HTML
+Index: /usr/share/doc/debian-reference-en/docs/index.en.html
+Files: /usr/share/doc/debian-reference-en/docs/*.en.html
+

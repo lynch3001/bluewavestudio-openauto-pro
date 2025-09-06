@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libpython3.7m.so.1.0
+/usr/lib/python3.7
+/usr/lib/python3.7/config-3.7m-arm-linux-gnueabihf
+/usr/share
+/usr/share/doc
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libpython3.7
+/usr/lib/arm-linux-gnueabihf/libpython3.7m.so.1
+/usr/lib/python3.7/config-3.7m-arm-linux-gnueabihf/libpython3.7.so
+/usr/lib/python3.7/config-3.7m-arm-linux-gnueabihf/libpython3.7m.so
+/usr/share/doc/libpython3.7

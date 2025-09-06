@@ -1,0 +1,21 @@
+[Desktop Entry]
+Type=Application
+Name=Bookshelf
+Name[en_GB]=Bookshelf
+Name[hy]=Գրադարակ
+Name[it]=Biblioteca
+Name[sk]=Knižná polička
+GenericName=Bookshelf
+GenericName[en_GB]=Bookshelf
+GenericName[hy]=Գրադարակ
+GenericName[it]=Biblioteca
+GenericName[sk]=Knižná polička
+Comment=Download and read Raspberry Pi Press publications
+Comment[en_GB]=Download and read Raspberry Pi Press publications
+Comment[hy]=Ներբեռնել և ընթերցել Raspberry Pi մամլո հրապարակումները
+Comment[it]=Scarica e leggi le pubblicazioni di Raspberry Pi Press
+Comment[sk]=Stiahnite a prečítajte si knihy a časopisy od Raspberry Pi Press
+Icon=bookshelf
+Exec=rp-bookshelf
+StartupNotify=true
+Categories=Help;

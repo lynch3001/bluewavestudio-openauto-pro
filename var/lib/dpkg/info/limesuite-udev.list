@@ -1,0 +1,12 @@
+/.
+/lib
+/lib/udev
+/lib/udev/rules.d
+/lib/udev/rules.d/64-limesuite.rules
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/limesuite-udev
+/usr/share/doc/limesuite-udev/changelog.Debian.gz
+/usr/share/doc/limesuite-udev/changelog.gz
+/usr/share/doc/limesuite-udev/copyright

@@ -1,0 +1,2 @@
+# This warning is a false positive, no errors are found by blhc
+hardening-no-fortify-functions usr/lib/menu-cache/menu-cached

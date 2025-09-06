@@ -1,0 +1,11 @@
+ca08e980f8f8fa4e71988a36343db47b  usr/include/rtl-sdr.h
+ca536538fc94d283b9782352aa6a318a  usr/include/rtl-sdr_export.h
+93d1f8419f93f1cb74ebc8dcc6e786f4  usr/lib/arm-linux-gnueabihf/cmake/rtlsdr/rtlsdrConfig.cmake
+0894d62cd178758706fc314c87cde003  usr/lib/arm-linux-gnueabihf/cmake/rtlsdr/rtlsdrConfigVersion.cmake
+efde6bcda450eee838295b0cf6caf601  usr/lib/arm-linux-gnueabihf/cmake/rtlsdr/rtlsdrTargets-relwithdebinfo.cmake
+e43fa19b6e9209ceb313c3d713c4fdfd  usr/lib/arm-linux-gnueabihf/cmake/rtlsdr/rtlsdrTargets.cmake
+d9934201b21c8626b783d6a8601e4465  usr/lib/arm-linux-gnueabihf/librtlsdr.a
+9979b7ae9c90a57bc31c5a875e35613d  usr/lib/arm-linux-gnueabihf/pkgconfig/librtlsdr.pc
+17728f66b55065edc8d54ba78309c6ce  usr/share/doc/librtlsdr-dev/README.Debian
+a514a98e717006e97c697cee63a85b19  usr/share/doc/librtlsdr-dev/changelog.Debian.gz
+25cbc1227195b0fc5f7cbfe48ab60f51  usr/share/doc/librtlsdr-dev/copyright

@@ -1,0 +1,2 @@
+# neon itself is not multiarch, but uses multiarch MIT Kerberos libraries
+libneon27-gnutls-dev: pkg-config-multi-arch-wrong-dir usr/lib/pkgconfig/neon.pc full text contains architecture specific dir x86_64-linux-gnu

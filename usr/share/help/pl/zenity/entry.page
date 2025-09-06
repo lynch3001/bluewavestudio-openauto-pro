@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="entry" xml:lang="pl">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Używanie opcji <cmd>--entry</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+  <title>Okno wpisywania tekstu</title>
+    <p>Użyj opcji <cmd>--entry</cmd>, aby utworzyć okno wpisywania tekstu. <app>Zenity</app> zwraca wpisany tekst na standardowym wyjściu.</p>	
+    <p>Okno wpisywania tekstu obsługuje te opcje:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--text</cmd>=<var>tekst</var></title>
+	<p>Określa tekst wyświetlany w oknie wpisywania tekstu.</p>
+      </item>
+
+      <item>
+        <title><cmd>--entry-text</cmd>=<var>tekst</var></title>
+	<p>Określa tekst wyświetlany w polu wpisywania okna wpisywania tekstu.</p>
+      </item>
+
+      <item>
+        <title><cmd>--hide-text</cmd></title>
+	<p>Ukrywa tekst w polu wpisywania okna wpisywania tekstu.</p>
+      </item>
+
+    </terms>
+
+    <p>Ten przykładowy skrypt pokazuje, jak utworzyć okno wpisywania tekstu:</p>
+
+<code>
+#!/bin/sh
+
+if zenity --entry \
+--title="Dodanie nowego profilu" \
+--text="Nazwa nowego profilu:" \
+--entry-text "NowyProfil"
+  then echo $?
+  else echo "Nie podano nazwy"
+fi
+</code>
+
+
+    <figure>
+      <title>Przykład okna wpisywania tekstu</title>
+      <desc>Przykład okna wpisywania tekstu <app>Zenity</app></desc>
+      <media type="image" mime="image/png" src="figures/zenity-entry-screenshot.png"/>
+    </figure>
+</page>

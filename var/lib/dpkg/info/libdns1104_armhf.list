@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libdns-pkcs11.so.1104.0.2
+/usr/lib/arm-linux-gnueabihf/libdns.so.1104.0.2
+/usr/share
+/usr/share/doc
+/usr/share/doc/libdns1104
+/usr/share/doc/libdns1104/changelog.Debian.gz
+/usr/share/doc/libdns1104/changelog.gz
+/usr/share/doc/libdns1104/copyright
+/usr/lib/arm-linux-gnueabihf/libdns-pkcs11.so.1104
+/usr/lib/arm-linux-gnueabihf/libdns.so.1104

@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libavdevice.so.58.5.100
+/usr/lib/arm-linux-gnueabihf/neon
+/usr/lib/arm-linux-gnueabihf/neon/vfp
+/usr/lib/arm-linux-gnueabihf/neon/vfp/libavdevice.so.58.5.100
+/usr/share
+/usr/share/doc
+/usr/share/doc/libavdevice58
+/usr/share/doc/libavdevice58/changelog.Debian.gz
+/usr/share/doc/libavdevice58/changelog.gz
+/usr/share/doc/libavdevice58/copyright
+/usr/lib/arm-linux-gnueabihf/libavdevice.so.58
+/usr/lib/arm-linux-gnueabihf/neon/vfp/libavdevice.so.58

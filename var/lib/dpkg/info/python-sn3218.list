@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/python-sn3218
+/usr/share/doc/python-sn3218/changelog.gz
+/usr/share/doc/python-sn3218/copyright
+/usr/lib
+/usr/lib/python2.7
+/usr/lib/python2.7/dist-packages
+/usr/lib/python2.7/dist-packages/sn3218.py
+/usr/lib/python2.7/dist-packages/sn3218-1.2.7.egg-info
+/usr/lib/python2.7/dist-packages/sn3218-1.2.7.egg-info/top_level.txt
+/usr/lib/python2.7/dist-packages/sn3218-1.2.7.egg-info/PKG-INFO
+/usr/lib/python2.7/dist-packages/sn3218-1.2.7.egg-info/dependency_links.txt

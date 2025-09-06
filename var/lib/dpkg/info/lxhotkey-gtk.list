@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/lxhotkey
+/usr/lib/arm-linux-gnueabihf/lxhotkey/gtk.so
+/usr/share
+/usr/share/applications
+/usr/share/applications/lxhotkey-gtk.desktop
+/usr/share/doc
+/usr/share/doc/lxhotkey-gtk
+/usr/share/doc/lxhotkey-gtk/changelog.Debian.armhf.gz
+/usr/share/doc/lxhotkey-gtk/changelog.Debian.gz
+/usr/share/doc/lxhotkey-gtk/copyright
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/lxhotkey-gtk

@@ -1,0 +1,13 @@
+1cfbfae7871a59e66bf7c63057f63ad3  usr/lib/python3/dist-packages/Send2Trash-1.5.0.egg-info/PKG-INFO
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/Send2Trash-1.5.0.egg-info/dependency_links.txt
+228cbd8f4ebbe3d6b52a961e534a190b  usr/lib/python3/dist-packages/Send2Trash-1.5.0.egg-info/top_level.txt
+89dad5b1ccdfdb8618de762508974f05  usr/lib/python3/dist-packages/send2trash/__init__.py
+3f489fd0342ad5c0899a36fcc6c9b54c  usr/lib/python3/dist-packages/send2trash/compat.py
+7536547506ccc24df4419233b9ce0623  usr/lib/python3/dist-packages/send2trash/exceptions.py
+45396eb14c8acfa15d0e23e48072ce50  usr/lib/python3/dist-packages/send2trash/plat_gio.py
+333fb8b9acae007971188b26a521d471  usr/lib/python3/dist-packages/send2trash/plat_osx.py
+c3778385fdcff52336829108ef599565  usr/lib/python3/dist-packages/send2trash/plat_other.py
+1b79783d0f4b5fcba4b7c09e2f90a391  usr/lib/python3/dist-packages/send2trash/plat_win.py
+2ce6343a5a81542d74e91cf026105ba0  usr/share/doc/python3-send2trash/changelog.Debian.gz
+b1716ce9717b61aad4af2e1dee4324f7  usr/share/doc/python3-send2trash/changelog.gz
+1e0727c85f1d00192872c6050f643ae7  usr/share/doc/python3-send2trash/copyright

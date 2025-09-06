@@ -1,0 +1,11 @@
+
+
+[test]
+pytest
+coverage<4.0dev
+mock
+
+[doc]
+sphinx
+Jinja2<2.7
+MarkupSafe<0.16

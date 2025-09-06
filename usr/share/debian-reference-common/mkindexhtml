@@ -1,0 +1,102 @@
+#! /bin/sh -e
+
+TITLE="Debian Reference (version 2)"
+PACKAGE="debian-reference" # Yes this has been changed
+DOC_ROOT=${DOC_ROOT:-/usr/share/debian-reference}
+README="/usr/share/doc/debian-reference-common/README"
+
+# Echo Language name
+echolang () {
+  case "$1" in
+    "en") echo "<dt><b>English</b></dt>";;
+    "fr") echo "<dt><b>French</b></dt>";;
+    "it") echo "<dt><b>Italian</b></dt>";;
+    "es") echo "<dt><b>Spanish</b></dt>";;
+    "de") echo "<dt><b>German</b></dt>";;
+    "pl") echo "<dt><b>Polish</b></dt>";;
+    "pt") echo "<dt><b>Portuguese (Portugal)</b></dt>";;
+    "pt-br") echo "<dt><b>Portuguese (Brazil)</b></dt>";;
+    "zh-tw") echo "<dt><b>Chinese (Traditional)</b></dt>";;
+    "zh-cn") echo "<dt><b>Chinese (Simplified)</b></dt>";;
+    "ja") echo "<dt><b>Japanese</b></dt>";;
+     *) echo "<dt>$1</dt>";;
+  esac
+}
+
+# Echo index page
+echoindex () {
+echo "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\">" 
+echo "<html>" 
+echo "<head>" 
+echo "<meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\">"
+echo "<title>${TITLE}</title>" 
+echo "</head>" 
+echo "<body>" 
+echo "<hr>" 
+echo "<h1>${TITLE}</h1>" 
+if [ -n "${LANGS}" ]; then
+  echo "<hr>" 
+  echo "<p>" 
+  echo "<dl>" 
+  for lang in ${LANGS}; do
+    echolang "$lang"
+    echo "<dd>"
+    echo "<a href=\"index.$lang.html\">HTML (multi files)</a>"
+    if [ -f $PACKAGE.$lang.html ]; then
+      echo ", <a href=\"$PACKAGE.$lang.html\">HTML (single file)</a>"
+    fi
+    if [ -f $PACKAGE.$lang.txt.gz ]; then
+      echo ", <a href=\"$PACKAGE.$lang.txt.gz\">UTF-8 plain text (gzipped)</a>"
+    elif [ -f $PACKAGE.$lang.txt ]; then
+      echo ", <a href=\"$PACKAGE.$lang.txt\">UTF-8 plain text</a>"
+    fi
+    if [ -f $PACKAGE.$lang.epub ]; then
+      echo ", <a href=\"$PACKAGE.$lang.epub\">epub</a>"
+    fi
+#    echo ", <a href=\"$PACKAGE.$lang.ps.gz\">PS</a>"
+    echo ", <a href=\"$PACKAGE.$lang.pdf\">PDF</a>"
+    echo "</dd>"
+  done
+  echo "</dl>"
+  echo "</p>"
+fi
+echo "<hr>" 
+echo "<p>All files are encoded in <b>UTF-8</b>.</p>"
+#echo "<p>HTML (single) file format is provided as substitute for PS/PDF format for full text search.</p>"
+#echo "<p>All contents are now in version 2 series based on XML source.</p>"
+#echo "<p>The old translated contents in German, Spanish, Polish, Portuguese (Brazil), Chinese (Traditional), and Chinese (Simplified) are available as squeeze packages.  </p>"
+echo "<p>If your favorite language is not found in this list, please install the corresponding <tt>debian-reference-*</tt> package.</p>"
+echo "<p>Some browsers may not be setup to read compressed plain text. Use appropriate file viewer system to read them directly from <a href=\"$DOC_ROOT\">$DOC_ROOT</a>. See <a href=\"$README\">README<a> for more help and information.</p>"
+echo "</body>" 
+echo "</html>"
+}
+
+# Always remove index page and move to the $DOC_ROOT directory
+if [ -d $DOC_ROOT ]; then
+  cd $DOC_ROOT
+  # index.html can be symlink or file
+  rm -f index.html
+else
+  # You may have removed the $DOC_ROOT directory
+  exit 0
+fi
+# Always sort language with English as top.
+LANGS="$(ls -1 --color=never index.*.html 2> /dev/null | \
+	sed 's/index\.//g;s/\.html//g;s/en/00/' | \
+	sort | sed 's/00/en/')"
+
+HTML_INSTALLED=$(echo "${LANGS}" | wc -w)
+
+# Create single index page for menu:
+if [ $HTML_INSTALLED = 0 ]; then
+  # remove index file only
+  # keep images/ and debian-reference.css
+  rm -f index.html
+##elif [ $HTML_INSTALLED = 1 ]; then
+##  # one file only, link it
+##  ln -sf index.*.html index.html
+else
+  echoindex > index.html
+fi
+
+exit 0

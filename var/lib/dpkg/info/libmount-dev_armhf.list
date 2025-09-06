@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/include
+/usr/include/libmount
+/usr/include/libmount/libmount.h
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libmount.a
+/usr/lib/arm-linux-gnueabihf/pkgconfig
+/usr/lib/arm-linux-gnueabihf/pkgconfig/mount.pc
+/usr/share
+/usr/share/doc
+/usr/share/doc/libmount-dev
+/usr/share/doc/libmount-dev/changelog.Debian.gz
+/usr/share/doc/libmount-dev/changelog.gz
+/usr/share/doc/libmount-dev/copyright
+/usr/lib/arm-linux-gnueabihf/libmount.so

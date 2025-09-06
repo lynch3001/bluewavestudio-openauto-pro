@@ -1,0 +1,78 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: libosmosdr
+Upstream-Contact: http://sdr.osmocom.org/trac/
+Source:
+ git clone git://git.osmocom.org/osmo-sdr.git
+ cd software
+ mv libosmosdr libosmosdr-0.1.7.cd37e9
+ tar zcvf libosmosdr_libosmosdr-0.1.7.cd37e9.orig.tar.gz libosmosdr-0.1.7.cd37e9
+Comment:
+ Debian packages by A. Maitland Bottoms,
+ .
+ Upstream Authors:
+ Dimitri Stolnikov <horiz0n@gmx.net>
+ Steve Markgraf <steve@steve-m.de>
+ Hoernchen <la@tfc-server.de>
+Copyright: 2012,2013 OSMOCOM Project
+License: GPL-3+
+
+Files: COPYING
+Copyright: 1989, 1991 Free Software Foundation, Inc.,
+License: FSF-COPYING
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+Files: *
+Copyright: 2012 Steve Markgraf <steve@steve-m.de>
+           2012 Dimitri Stolnikov <horiz0n@gmx.net>
+License: GPL-2+
+
+Files: git-version-gen
+Copyright: 2007-2010 Free Software Foundation, Inc.
+License: GPL-3+
+
+Files: include/osmosdr_export.h
+Copyright: 2012 by Hoernchen <la@tfc-server.de>
+License: GPL-2+
+
+Files: debian/*
+Copyright: 2013 A. Maitland Bottoms <bottoms@debian.org>
+License: GPL-2+
+
+Files: CMakeLists.txt include/CMakeLists.txt osmosdr.rules src/CMakeLists.txt
+Copyright: Copyright 2012 OSMOCOM Project
+License: GPL-3+
+
+License: GPL-3+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 3 of the License, or
+ (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 3 can be found in "/usr/share/common-licenses/GPL-3".
+
+License: GPL-2+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".

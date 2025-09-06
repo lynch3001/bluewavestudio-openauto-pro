@@ -1,0 +1,8 @@
+7a751432c40f617ca0c5b0c36ce23e03  usr/lib/arm-linux-gnueabihf/krb5/plugins/preauth/spake.so
+509c1992c3980d5e928f5208abba76a5  usr/lib/arm-linux-gnueabihf/libkrb5.so.3.3
+7e936a5ba409ae87002f91d80bfd6de4  usr/share/doc/libkrb5-3/NEWS.Debian.gz
+c6e59577f80eff240add64ddc8814dd8  usr/share/doc/libkrb5-3/README.Debian
+b29a048074f71dbc38b07e62c6100451  usr/share/doc/libkrb5-3/README.gz
+5581a0bc02cd8f6e684ef457f4c56686  usr/share/doc/libkrb5-3/changelog.Debian.gz
+55245d0f2c5677eb816754f87456a1e7  usr/share/doc/libkrb5-3/copyright
+b249491ce885ff8013facc9cac4f3714  usr/share/lintian/overrides/libkrb5-3

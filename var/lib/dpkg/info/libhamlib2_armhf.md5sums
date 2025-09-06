@@ -1,0 +1,12 @@
+42907ff191ba4b4d634a1e10c893e67a  lib/udev/rules.d/60-libhamlib2.rules
+acd81e68fed511dcaf11fa1f0a7f6509  usr/lib/arm-linux-gnueabihf/libhamlib.so.2.1.3
+a8334c4c1535210683f539adf14c30d3  usr/share/doc/libhamlib2/AUTHORS.gz
+a95702a277a4e10a3d54099ba3b2539b  usr/share/doc/libhamlib2/NEWS.gz
+1c5ab835a8693327f49fee1774d502fd  usr/share/doc/libhamlib2/PLAN
+0904cc465de041141db53ceadcd2523b  usr/share/doc/libhamlib2/README.Debian
+ac38c0c7bee485a505c20943b794c571  usr/share/doc/libhamlib2/README.gz
+4aabfa217aff2fb5117571059b9f0d25  usr/share/doc/libhamlib2/THANKS
+a23f5ab41ed3e90607f3f46c5cda6403  usr/share/doc/libhamlib2/TODO
+24dbffa4029207d6dcd493ff345f8165  usr/share/doc/libhamlib2/changelog.Debian.gz
+2d90d9ccbda082be46f37a10f062419b  usr/share/doc/libhamlib2/changelog.gz
+4bdc338fca4ff93039fdde2f9f71ae98  usr/share/doc/libhamlib2/copyright

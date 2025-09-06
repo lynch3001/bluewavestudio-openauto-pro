@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/rpd-plym-splash
+/usr/share/doc/rpd-plym-splash/changelog.gz
+/usr/share/doc/rpd-plym-splash/copyright
+/usr/share/plymouth
+/usr/share/plymouth/themes
+/usr/share/plymouth/themes/pix
+/usr/share/plymouth/themes/pix/pix.plymouth
+/usr/share/plymouth/themes/pix/pix.script
+/usr/share/plymouth/themes/pix/splash.png

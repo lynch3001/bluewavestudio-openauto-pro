@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="forms" xml:lang="pt-BR">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Use a opção <cmd>--forms</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+  <title>Diálogo de formulários</title>
+    <p>Use a opção <cmd>--forms</cmd> para criar um diálogo de formulários.</p>
+	
+    <p>O diálogo de formulários de progresso oferece suporte às seguintes opções:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--add-entry</cmd>=<var>NomeCampo</var></title>
+	<p>Adiciona uma nova entrada no diálogo de formulários.</p>
+      </item>
+
+      <item>
+        <title>--add-password<cmd/>=<var>NomeCampo</var></title>
+	<p>Adiciona uma nova entrada de senha no diálogo de formulários. (texto oculto)</p>
+      </item>
+
+      <item>
+        <title><cmd>--add-calendar</cmd>=<var>NomeCampo</var></title>
+	<p>Adiciona um novo calendário no diálogo de formulários.</p>
+      </item>
+
+      <item>
+        <title><cmd>--text</cmd>=<var>TEXTO</var></title>
+	<p>Define o texto do diálogo.</p>
+      </item>
+
+      <item>
+        <title><cmd>--separator</cmd>=<var>SEPARADOR</var></title>
+	<p>Define o caractere separador de saída. (Padrão: | )</p>
+      </item>
+
+      <item>
+        <title><cmd>--forms-date-format</cmd>=<var>MODELO</var></title>
+	<p>Define o formato para a data retornada. O formato padrão depende de sua localidade. O formato deve ser um aceitável pela função <cmd>strftime</cmd>, por exemplo <var>%A %d/%m/%y</var>.</p>
+      </item>
+
+    </terms>
+
+    <p>O script de exemplo a seguir mostra como criar um diálogo indicador de progresso:</p>
+
+<code>
+#!/bin/sh
+
+zenity --forms --title="Adicionar amigo" \
+	--text="Digite informações sobre seu amigo." \
+	--separator="," \
+	--add-entry="Primeiro nome" \
+	--add-entry="Sobrenome" \
+	--add-entry="Email" \
+	--add-calendar="Data de nascimento" &gt;&gt; addr.csv
+
+case $? in
+    0)
+        echo "Amigo adicionado.";;
+    1)
+        echo "Nenhum amigo adicionado."
+	;;
+    -1)
+        echo "Ocorreu um erro inesperado."
+	;;
+esac
+</code>
+
+    <figure>
+      <title>Exemplo de diálogo de formulários</title>
+      <desc>Exemplo de diálogo de formulários do <app>Zenity</app></desc>
+      <media type="image" mime="image/png" src="figures/zenity-forms-screenshot.png"/>
+    </figure>
+</page>

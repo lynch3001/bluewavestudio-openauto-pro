@@ -1,0 +1,10 @@
+20fb36506a44be4b3dc4fc362d972297  usr/bin/rngtest
+45a04001c285afee8bbf465a1dc4ae7f  usr/sbin/rngd
+a6890c12196d9843a7be467aff7bbe8e  usr/share/doc/rng-tools/README.gz
+dce601f5eaa3efee65ac218bef4440eb  usr/share/doc/rng-tools/TODO.Debian
+d84c3df38b7c85c63bf9600d6479ab3c  usr/share/doc/rng-tools/changelog.Debian.gz
+b9d5dc8cc0710e94be95b2d8411b8157  usr/share/doc/rng-tools/changelog.gz
+7caba0091edc27151f6eb342f9072644  usr/share/doc/rng-tools/copyright
+8fec72fe498a28369b01bb97085d492b  usr/share/lintian/overrides/rng-tools
+4bd33c43a3f493f4cf0282b6e732a9ff  usr/share/man/man1/rngtest.1.gz
+5e176ad5bec06c464a02c058cee4ab02  usr/share/man/man8/rngd.8.gz

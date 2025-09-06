@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="scale" xml:lang="sv">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Använd flaggan <cmd>--scale</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2006, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+  <title>Skaldialog</title>
+  <p>Använd flaggan <cmd>--scale</cmd> för att skapa en skaldialog.</p>
+  <p>Skaldialogen har stöd för följande flaggor:</p>
+
+  <terms>
+
+    <item>
+      <title><cmd>--text</cmd>=<var>TEXT</var></title>
+      <p>Ställ in dialogtexten. (Standardvärde: Justera skalningsvärdet)</p>
+    </item>
+
+    <item>
+      <title><cmd>--value</cmd>=<var>VÄRDE</var></title>
+      <p>Ställ in begynnelsevärde. (Standardvärde: 0) Du måste ange ett värde mellan minimivärdet och maximivärdet.</p>
+    </item>
+
+    <item>
+      <title><cmd>--min-value</cmd>=<var>VÄRDE</var></title>
+      <p>Ställ in minimivärde. (Standardvärde: 0)</p>
+    </item>
+
+    <item>
+      <title><cmd>--max-value</cmd>=<var>VÄRDE</var></title>
+      <p>Ställ in maximivärde. (Standardvärde: 100)</p>
+    </item>
+
+    <item>
+      <title><cmd>--step</cmd>=<var>VÄRDE</var></title>
+      <p>Ställ in stegstorlek. (Standardvärde: 1)</p>
+    </item>
+
+    <item>
+      <title><cmd>--print-partial</cmd></title>
+      <p>Skriv ut värde till standard ut, närhelst ett värde ändras.</p>
+    </item>
+
+    <item>
+      <title><cmd>--hide-value</cmd></title>
+      <p>Dölj värde i dialog.</p>
+    </item>
+
+  </terms>
+
+  <p>Följande exempelskript visar hur man skapar en skaldialog:</p>
+
+<code>
+#!/bin/sh
+
+VALUE=`zenity --scale --text="Välj fönstertransparens." --value=50`
+
+case $? in
+         0)
+		echo "Du valde $VALUE%.";;
+         1)
+                echo "Inget värde valt.";;
+        -1)
+                echo "Ett oväntat fel har inträffat.";;
+esac
+</code>
+
+  <figure>
+    <title>Exempel på skaldialog</title>
+    <desc><app>Zenity</app>-exempel på skaldialog</desc>
+    <media type="image" mime="image/png" src="figures/zenity-scale-screenshot.png"/>
+  </figure>
+
+</page>

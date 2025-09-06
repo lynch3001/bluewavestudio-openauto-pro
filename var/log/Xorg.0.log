@@ -1,0 +1,296 @@
+[    13.501] 
+X.Org X Server 1.20.4
+X Protocol Version 11, Revision 0
+[    13.501] Build Operating System: Linux 5.4.0-72-generic armv8l Raspbian
+[    13.501] Current Operating System: Linux raspberrypi 5.10.103-v7l+ #1529 SMP Tue Mar 8 12:24:00 GMT 2022 armv7l
+[    13.501] Kernel command line: coherent_pool=1M 8250.nr_uarts=1 snd_bcm2835.enable_compat_alsa=0 snd_bcm2835.enable_hdmi=1  smsc95xx.macaddr=DC:A6:32:B3:60:C8 vc_mem.mem_base=0x3ec00000 vc_mem.mem_size=0x40000000  dwc_otg.lpm_enable=0 console=ttyAMA0,115200 console=tty3 consoleblank=0 loglevel=0 root=PARTUUID=38df017e-02 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait quiet splash logo.nologo vt.global_cursor_default=0 plymouth.ignore-serial-consoles
+[    13.501] Build Date: 04 January 2022  10:05:34AM
+[    13.502] xorg-server 2:1.20.4-1+rpt4+deb10u4 (https://www.debian.org/support) 
+[    13.502] Current version of pixman: 0.36.0
+[    13.502] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[    13.502] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[    13.502] (==) Log file: "/var/log/Xorg.0.log", Time: Thu Mar 17 21:13:25 2022
+[    13.505] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[    13.508] (==) No Layout section.  Using the first Screen section.
+[    13.508] (==) No screen section available. Using defaults.
+[    13.508] (**) |-->Screen "Default Screen Section" (0)
+[    13.508] (**) |   |-->Monitor "<default monitor>"
+[    13.513] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[    13.513] (==) Automatically adding devices
+[    13.513] (==) Automatically enabling devices
+[    13.513] (==) Automatically adding GPU devices
+[    13.514] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[    13.514] (WW) The directory "/usr/share/fonts/X11/misc" does not exist.
+[    13.514] 	Entry deleted from font path.
+[    13.515] (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+[    13.515] 	Entry deleted from font path.
+[    13.515] (WW) The directory "/usr/share/fonts/X11/100dpi/" does not exist.
+[    13.515] 	Entry deleted from font path.
+[    13.515] (WW) The directory "/usr/share/fonts/X11/75dpi/" does not exist.
+[    13.515] 	Entry deleted from font path.
+[    13.515] (WW) The directory "/usr/share/fonts/X11/Type1" does not exist.
+[    13.515] 	Entry deleted from font path.
+[    13.515] (WW) The directory "/usr/share/fonts/X11/100dpi" does not exist.
+[    13.515] 	Entry deleted from font path.
+[    13.515] (WW) The directory "/usr/share/fonts/X11/75dpi" does not exist.
+[    13.515] 	Entry deleted from font path.
+[    13.515] (==) FontPath set to:
+	built-ins
+[    13.515] (==) ModulePath set to "/usr/lib/xorg/modules"
+[    13.515] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[    13.515] (II) Loader magic: 0x1fdf80
+[    13.515] (II) Module ABI versions:
+[    13.515] 	X.Org ANSI C Emulation: 0.4
+[    13.515] 	X.Org Video Driver: 24.0
+[    13.515] 	X.Org XInput driver : 24.1
+[    13.516] 	X.Org Server Extension : 10.0
+[    13.519] (++) using VT number 7
+
+[    13.519] (II) systemd-logind: logind integration requires -keeptty and -keeptty was not provided, disabling logind integration
+[    13.522] (II) xfree86: Adding drm device (/dev/dri/card0)
+[    13.537] (II) xfree86: Adding drm device (/dev/dri/card1)
+[    13.539] (II) no primary bus or device found
+[    13.539] 	falling back to /sys/devices/platform/gpu/drm/card0
+[    13.539] (II) LoadModule: "glx"
+[    13.561] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[    13.590] (II) Module glx: vendor="X.Org Foundation"
+[    13.590] 	compiled for 1.20.4, module version = 1.0.0
+[    13.590] 	ABI class: X.Org Server Extension, version 10.0
+[    13.590] (==) Matched modesetting as autoconfigured driver 0
+[    13.591] (==) Matched fbdev as autoconfigured driver 1
+[    13.591] (==) Assigned the driver to the xf86ConfigLayout
+[    13.591] (II) LoadModule: "modesetting"
+[    13.591] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[    13.595] (II) Module modesetting: vendor="X.Org Foundation"
+[    13.595] 	compiled for 1.20.4, module version = 1.20.4
+[    13.595] 	Module class: X.Org Video Driver
+[    13.595] 	ABI class: X.Org Video Driver, version 24.0
+[    13.595] (II) LoadModule: "fbdev"
+[    13.595] (II) Loading /usr/lib/xorg/modules/drivers/fbdev_drv.so
+[    13.597] (II) Module fbdev: vendor="X.Org Foundation"
+[    13.597] 	compiled for 1.20.3, module version = 0.5.0
+[    13.597] 	Module class: X.Org Video Driver
+[    13.597] 	ABI class: X.Org Video Driver, version 24.0
+[    13.597] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[    13.597] (II) FBDEV: driver for framebuffer: fbdev
+[    13.625] (II) modeset(0): using drv /dev/dri/card0
+[    13.625] (WW) Falling back to old probe method for fbdev
+[    13.625] (II) Loading sub module "fbdevhw"
+[    13.625] (II) LoadModule: "fbdevhw"
+[    13.626] (II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+[    13.629] (II) Module fbdevhw: vendor="X.Org Foundation"
+[    13.629] 	compiled for 1.20.4, module version = 0.0.2
+[    13.629] 	ABI class: X.Org Video Driver, version 24.0
+[    13.629] (II) modeset(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[    13.629] (==) modeset(0): Depth 24, (==) framebuffer bpp 32
+[    13.629] (==) modeset(0): RGB weight 888
+[    13.629] (==) modeset(0): Default visual is TrueColor
+[    13.629] (II) Loading sub module "glamoregl"
+[    13.629] (II) LoadModule: "glamoregl"
+[    13.629] (II) Loading /usr/lib/xorg/modules/libglamoregl.so
+[    13.662] (II) Module glamoregl: vendor="X.Org Foundation"
+[    13.662] 	compiled for 1.20.4, module version = 1.0.1
+[    13.662] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    15.085] (II) modeset(0): glamor X acceleration enabled on V3D 4.2
+[    15.085] (II) modeset(0): glamor initialized
+[    15.087] (II) modeset(0): Output DSI-1 has no monitor section
+[    15.087] (II) modeset(0): EDID for output DSI-1
+[    15.088] (II) modeset(0): Printing probed modes for output DSI-1
+[    15.088] (II) modeset(0): Modeline "FIXED_MODE"x60.0   27.78  800 861 863 907  480 487 489 510 +hsync +vsync (30.6 kHz eP)
+[    15.088] (II) modeset(0): Output DSI-1 connected
+[    15.088] (II) modeset(0): Using exact sizes for initial modes
+[    15.088] (II) modeset(0): Output DSI-1 using initial mode FIXED_MODE +0+0
+[    15.088] (==) modeset(0): Using gamma correction (1.0, 1.0, 1.0)
+[    15.088] (==) modeset(0): DPI set to (96, 96)
+[    15.088] (II) Loading sub module "fb"
+[    15.088] (II) LoadModule: "fb"
+[    15.089] (II) Loading /usr/lib/xorg/modules/libfb.so
+[    15.093] (II) Module fb: vendor="X.Org Foundation"
+[    15.094] 	compiled for 1.20.4, module version = 1.0.0
+[    15.094] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    15.094] (II) UnloadModule: "fbdev"
+[    15.094] (II) Unloading fbdev
+[    15.094] (II) UnloadSubModule: "fbdevhw"
+[    15.094] (II) Unloading fbdevhw
+[    15.282] (==) modeset(0): Backing store enabled
+[    15.282] (==) modeset(0): Silken mouse enabled
+[    15.371] (II) modeset(0): Initializing kms color map for depth 24, 8 bpc.
+[    15.372] (==) modeset(0): DPMS enabled
+[    15.373] (II) modeset(0): [DRI2] Setup complete
+[    15.373] (II) modeset(0): [DRI2]   DRI driver: vc4
+[    15.373] (II) modeset(0): [DRI2]   VDPAU driver: vc4
+[    15.373] (II) Initializing extension Generic Event Extension
+[    15.374] (II) Initializing extension SHAPE
+[    15.374] (II) Initializing extension MIT-SHM
+[    15.375] (II) Initializing extension XInputExtension
+[    15.378] (II) Initializing extension XTEST
+[    15.379] (II) Initializing extension BIG-REQUESTS
+[    15.379] (II) Initializing extension SYNC
+[    15.380] (II) Initializing extension XKEYBOARD
+[    15.380] (II) Initializing extension XC-MISC
+[    15.381] (II) Initializing extension SECURITY
+[    15.381] (II) Initializing extension XFIXES
+[    15.382] (II) Initializing extension RENDER
+[    15.382] (II) Initializing extension RANDR
+[    15.383] (II) Initializing extension COMPOSITE
+[    15.384] (II) Initializing extension DAMAGE
+[    15.384] (II) Initializing extension MIT-SCREEN-SAVER
+[    15.385] (II) Initializing extension DOUBLE-BUFFER
+[    15.385] (II) Initializing extension RECORD
+[    15.386] (II) Initializing extension DPMS
+[    15.386] (II) Initializing extension Present
+[    15.386] (II) Initializing extension DRI3
+[    15.387] (II) Initializing extension X-Resource
+[    15.387] (II) Initializing extension XVideo
+[    15.388] (II) Initializing extension XVideo-MotionCompensation
+[    15.388] (II) Initializing extension SELinux
+[    15.388] (II) SELinux: Disabled on system
+[    15.388] (II) Initializing extension GLX
+[    15.749] (II) AIGLX: Loaded and initialized vc4
+[    15.749] (II) GLX: Initialized DRI2 GL provider for screen 0
+[    15.749] (II) Initializing extension XFree86-VidModeExtension
+[    15.750] (II) Initializing extension XFree86-DGA
+[    15.751] (II) Initializing extension XFree86-DRI
+[    15.751] (II) Initializing extension DRI2
+[    15.759] (II) modeset(0): Damage tracking initialized
+[    15.759] (II) modeset(0): Setting screen physical size to 211 x 127
+[    15.926] (II) config/udev: Adding input device 2.4G Composite Devic (/dev/input/event0)
+[    15.926] (**) 2.4G Composite Devic: Applying InputClass "libinput keyboard catchall"
+[    15.926] (II) LoadModule: "libinput"
+[    15.927] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[    15.953] (II) Module libinput: vendor="X.Org Foundation"
+[    15.953] 	compiled for 1.20.3, module version = 0.28.2
+[    15.953] 	Module class: X.Org XInput Driver
+[    15.953] 	ABI class: X.Org XInput driver, version 24.1
+[    15.953] (II) Using input driver 'libinput' for '2.4G Composite Devic'
+[    15.953] (**) 2.4G Composite Devic: always reports core events
+[    15.953] (**) Option "Device" "/dev/input/event0"
+[    15.954] (**) Option "_source" "server/udev"
+[    15.984] (II) event0  - 2.4G Composite Devic: is tagged by udev as: Keyboard
+[    15.984] (II) event0  - 2.4G Composite Devic: device is a keyboard
+[    15.985] (II) event0  - 2.4G Composite Devic: device removed
+[    16.041] (**) Option "config_info" "udev:/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.1/1-1.1:1.0/0003:1411:1819.0001/input/input0/event0"
+[    16.041] (II) XINPUT: Adding extended input device "2.4G Composite Devic" (type: KEYBOARD, id 6)
+[    16.041] (**) Option "xkb_model" "pc105"
+[    16.041] (**) Option "xkb_layout" "gb"
+[    16.124] (II) event0  - 2.4G Composite Devic: is tagged by udev as: Keyboard
+[    16.124] (II) event0  - 2.4G Composite Devic: device is a keyboard
+[    16.131] (II) config/udev: Adding input device 2.4G Composite Devic Mouse (/dev/input/event1)
+[    16.131] (**) 2.4G Composite Devic Mouse: Applying InputClass "libinput pointer catchall"
+[    16.131] (II) Using input driver 'libinput' for '2.4G Composite Devic Mouse'
+[    16.131] (**) 2.4G Composite Devic Mouse: always reports core events
+[    16.131] (**) Option "Device" "/dev/input/event1"
+[    16.132] (**) Option "_source" "server/udev"
+[    16.143] (II) event1  - 2.4G Composite Devic Mouse: is tagged by udev as: Mouse
+[    16.144] (II) event1  - 2.4G Composite Devic Mouse: device is a pointer
+[    16.144] (II) event1  - 2.4G Composite Devic Mouse: device removed
+[    16.192] (**) Option "config_info" "udev:/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.1/1-1.1:1.1/0003:1411:1819.0002/input/input1/event1"
+[    16.192] (II) XINPUT: Adding extended input device "2.4G Composite Devic Mouse" (type: MOUSE, id 7)
+[    16.192] (**) Option "AccelerationScheme" "none"
+[    16.193] (**) 2.4G Composite Devic Mouse: (accel) selected scheme none/0
+[    16.193] (**) 2.4G Composite Devic Mouse: (accel) acceleration factor: 2.000
+[    16.193] (**) 2.4G Composite Devic Mouse: (accel) acceleration threshold: 4
+[    16.204] (II) event1  - 2.4G Composite Devic Mouse: is tagged by udev as: Mouse
+[    16.205] (II) event1  - 2.4G Composite Devic Mouse: device is a pointer
+[    16.210] (II) config/udev: Adding input device 2.4G Composite Devic Mouse (/dev/input/mouse0)
+[    16.210] (II) No input driver specified, ignoring this device.
+[    16.210] (II) This device may have been added with another device file.
+[    16.215] (II) config/udev: Adding input device 2.4G Composite Devic Consumer Control (/dev/input/event2)
+[    16.215] (**) 2.4G Composite Devic Consumer Control: Applying InputClass "libinput keyboard catchall"
+[    16.216] (II) Using input driver 'libinput' for '2.4G Composite Devic Consumer Control'
+[    16.216] (**) 2.4G Composite Devic Consumer Control: always reports core events
+[    16.216] (**) Option "Device" "/dev/input/event2"
+[    16.216] (**) Option "_source" "server/udev"
+[    16.227] (II) event2  - 2.4G Composite Devic Consumer Control: is tagged by udev as: Keyboard
+[    16.227] (II) event2  - 2.4G Composite Devic Consumer Control: device is a keyboard
+[    16.227] (II) event2  - 2.4G Composite Devic Consumer Control: device removed
+[    16.290] (II) libinput: 2.4G Composite Devic Consumer Control: needs a virtual subdevice
+[    16.290] (**) Option "config_info" "udev:/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.1/1-1.1:1.1/0003:1411:1819.0002/input/input2/event2"
+[    16.290] (II) XINPUT: Adding extended input device "2.4G Composite Devic Consumer Control" (type: MOUSE, id 8)
+[    16.291] (**) Option "AccelerationScheme" "none"
+[    16.291] (**) 2.4G Composite Devic Consumer Control: (accel) selected scheme none/0
+[    16.291] (**) 2.4G Composite Devic Consumer Control: (accel) acceleration factor: 2.000
+[    16.291] (**) 2.4G Composite Devic Consumer Control: (accel) acceleration threshold: 4
+[    16.302] (II) event2  - 2.4G Composite Devic Consumer Control: is tagged by udev as: Keyboard
+[    16.302] (II) event2  - 2.4G Composite Devic Consumer Control: device is a keyboard
+[    16.308] (II) config/udev: Adding input device 2.4G Composite Devic System Control (/dev/input/event3)
+[    16.308] (**) 2.4G Composite Devic System Control: Applying InputClass "libinput keyboard catchall"
+[    16.308] (II) Using input driver 'libinput' for '2.4G Composite Devic System Control'
+[    16.308] (**) 2.4G Composite Devic System Control: always reports core events
+[    16.308] (**) Option "Device" "/dev/input/event3"
+[    16.308] (**) Option "_source" "server/udev"
+[    16.319] (II) event3  - 2.4G Composite Devic System Control: is tagged by udev as: Keyboard
+[    16.319] (II) event3  - 2.4G Composite Devic System Control: device is a keyboard
+[    16.319] (II) event3  - 2.4G Composite Devic System Control: device removed
+[    16.351] (**) Option "config_info" "udev:/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.1/1-1.1:1.1/0003:1411:1819.0002/input/input3/event3"
+[    16.351] (II) XINPUT: Adding extended input device "2.4G Composite Devic System Control" (type: KEYBOARD, id 9)
+[    16.351] (**) Option "xkb_model" "pc105"
+[    16.351] (**) Option "xkb_layout" "gb"
+[    16.362] (II) event3  - 2.4G Composite Devic System Control: is tagged by udev as: Keyboard
+[    16.363] (II) event3  - 2.4G Composite Devic System Control: device is a keyboard
+[    16.368] (II) config/udev: Adding input device GeneralPlus USB Audio Device (/dev/input/event4)
+[    16.368] (**) GeneralPlus USB Audio Device: Applying InputClass "libinput keyboard catchall"
+[    16.368] (II) Using input driver 'libinput' for 'GeneralPlus USB Audio Device'
+[    16.368] (**) GeneralPlus USB Audio Device: always reports core events
+[    16.369] (**) Option "Device" "/dev/input/event4"
+[    16.369] (**) Option "_source" "server/udev"
+[    16.379] (II) event4  - GeneralPlus USB Audio Device: is tagged by udev as: Keyboard
+[    16.379] (II) event4  - GeneralPlus USB Audio Device: device is a keyboard
+[    16.379] (II) event4  - GeneralPlus USB Audio Device: device removed
+[    16.411] (**) Option "config_info" "udev:/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.2/1-1.2:1.3/0003:1B3F:2008.0003/input/input4/event4"
+[    16.411] (II) XINPUT: Adding extended input device "GeneralPlus USB Audio Device" (type: KEYBOARD, id 10)
+[    16.411] (**) Option "xkb_model" "pc105"
+[    16.411] (**) Option "xkb_layout" "gb"
+[    16.422] (II) event4  - GeneralPlus USB Audio Device: is tagged by udev as: Keyboard
+[    16.422] (II) event4  - GeneralPlus USB Audio Device: device is a keyboard
+[    16.425] (II) config/udev: Adding input device raspberrypi-ts (/dev/input/event5)
+[    16.426] (**) raspberrypi-ts: Applying InputClass "libinput touchscreen catchall"
+[    16.426] (II) Using input driver 'libinput' for 'raspberrypi-ts'
+[    16.426] (**) raspberrypi-ts: always reports core events
+[    16.426] (**) Option "Device" "/dev/input/event5"
+[    16.426] (**) Option "_source" "server/udev"
+[    16.431] (II) event5  - raspberrypi-ts: is tagged by udev as: Touchscreen
+[    16.433] (II) event5  - raspberrypi-ts: device is a touch device
+[    16.434] (II) event5  - raspberrypi-ts: device removed
+[    16.481] (**) Option "config_info" "udev:/sys/devices/platform/soc/soc:firmware/soc:firmware:touchscreen/input/input5/event5"
+[    16.481] (II) XINPUT: Adding extended input device "raspberrypi-ts" (type: TOUCHSCREEN, id 11)
+[    16.481] (**) Option "AccelerationScheme" "none"
+[    16.481] (**) raspberrypi-ts: (accel) selected scheme none/0
+[    16.482] (**) raspberrypi-ts: (accel) acceleration factor: 2.000
+[    16.482] (**) raspberrypi-ts: (accel) acceleration threshold: 4
+[    16.487] (II) event5  - raspberrypi-ts: is tagged by udev as: Touchscreen
+[    16.489] (II) event5  - raspberrypi-ts: device is a touch device
+[    16.492] (II) config/udev: Adding input device raspberrypi-ts (/dev/input/mouse1)
+[    16.492] (II) No input driver specified, ignoring this device.
+[    16.492] (II) This device may have been added with another device file.
+[    16.527] (**) 2.4G Composite Devic Consumer Control: Applying InputClass "libinput keyboard catchall"
+[    16.527] (II) Using input driver 'libinput' for '2.4G Composite Devic Consumer Control'
+[    16.527] (**) 2.4G Composite Devic Consumer Control: always reports core events
+[    16.527] (**) Option "Device" "/dev/input/event2"
+[    16.527] (**) Option "_source" "_driver/libinput"
+[    16.528] (II) libinput: 2.4G Composite Devic Consumer Control: is a virtual subdevice
+[    16.528] (**) Option "config_info" "udev:/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.1/1-1.1:1.1/0003:1411:1819.0002/input/input2/event2"
+[    16.528] (II) XINPUT: Adding extended input device "2.4G Composite Devic Consumer Control" (type: KEYBOARD, id 12)
+[    16.528] (**) Option "xkb_model" "pc105"
+[    16.528] (**) Option "xkb_layout" "gb"
+[    23.928] (II) modeset(0): Disabling kernel dirty updates, not required.
+[    93.962] (II) event0  - 2.4G Composite Devic: device removed
+[    94.000] (II) event1  - 2.4G Composite Devic Mouse: device removed
+[    94.040] (II) event3  - 2.4G Composite Devic System Control: device removed
+[    94.060] (II) event4  - GeneralPlus USB Audio Device: device removed
+[    94.110] (II) event5  - raspberrypi-ts: device removed
+[    94.240] (II) event2  - 2.4G Composite Devic Consumer Control: device removed
+[    94.284] (II) UnloadModule: "libinput"
+[    94.284] (II) UnloadModule: "libinput"
+[    94.284] (II) UnloadModule: "libinput"
+[    94.284] (II) UnloadModule: "libinput"
+[    94.284] (II) UnloadModule: "libinput"
+[    94.284] (II) UnloadModule: "libinput"
+[    94.285] (II) UnloadModule: "libinput"
+[    94.803] (II) Server terminated successfully (0). Closing log file.

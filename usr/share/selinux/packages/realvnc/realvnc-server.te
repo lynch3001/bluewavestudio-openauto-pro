@@ -1,0 +1,18 @@
+# Policy Module for RedHat-based systems.
+# Compile with
+#   make -f /usr/share/selinux/devel/Makefile
+#   (may need to install selinux-policy-devel package)
+policy_module(realvnc-server 1.0.0)
+
+require {
+  type init_t;
+  type unconfined_t;
+}
+
+type realvnc_exec_t;
+files_type(realvnc_exec_t)
+
+init_daemon_domain(unconfined_t, realvnc_exec_t)
+
+## required for running a virtual server in user mode.
+optional_policy(`realvnc_dbus_chat(avahi_t, xserver_t)')

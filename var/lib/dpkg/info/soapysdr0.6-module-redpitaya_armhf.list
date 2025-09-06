@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/SoapySDR
+/usr/lib/arm-linux-gnueabihf/SoapySDR/modules0.6
+/usr/lib/arm-linux-gnueabihf/SoapySDR/modules0.6/libRedPitaya.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/soapysdr0.6-module-redpitaya
+/usr/share/doc/soapysdr0.6-module-redpitaya/README.md
+/usr/share/doc/soapysdr0.6-module-redpitaya/changelog.Debian.gz
+/usr/share/doc/soapysdr0.6-module-redpitaya/copyright

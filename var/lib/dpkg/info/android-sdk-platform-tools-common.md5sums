@@ -1,0 +1,6 @@
+66a8465a84674e8f9911f033d38779e3  lib/udev/rules.d/51-android.rules
+cdf12dc8c705139afc8e7a3d62f16327  usr/lib/android-sdk/platform-tools/package.xml
+d30fa4f08d4523d4f6af30fdf29c6bef  usr/lib/android-sdk/platform-tools/source.properties
+2e7bd5195ec4c40a635920b15aae5bb0  usr/share/doc/android-sdk-platform-tools-common/changelog.gz
+4306371bb3ae283e8cdc7a5cc8ba5ffd  usr/share/doc/android-sdk-platform-tools-common/copyright
+557442a8e541770bfb624ba41ca51e8a  usr/share/metainfo/android-sdk.metainfo.xml

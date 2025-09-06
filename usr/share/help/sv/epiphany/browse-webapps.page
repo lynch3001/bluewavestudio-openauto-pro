@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="browse-webapps" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="index#adv"/>
+    <link type="seealso" xref="browse-web"/>
+    <revision pkgversion="3.10" date="2013-07-05" status="review"/>
+
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+<!--    <credit type="copyright editor">
+      <name></name>
+      <email its:translate="no"></email>
+      <years></years>
+    </credit>-->
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Vad är en <em>webbapplikation</em> och hur kan jag använda den?</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2015, 2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Skapa en webbapplikation</title>
+
+  <p>Du kan spara webbsidor som en <em>webbapplikation</em>. Detta kommer lägga till en länk till sidan till <link href="help:gnome-help/shell-introduction#activities">översiktsvyn Aktiviteter</link>. Då du öppnar en webbapplikation visas den i en speciell sorts fönster utan adressfältet eller menyerna.</p>
+
+  <steps>
+    <item>
+      <p>Öppna webbsidan som du vill spara.</p>
+    </item>
+    <item>
+      <p>Öppna menyn i övre högra delen av fönstret och välj sedan <gui style="menuitem">Spara som webbapplikation…</gui>.</p>
+    </item>
+    <item>
+      <p>Namnge din webbapplikation och tryck sedan <gui style="button">Skapa</gui>.</p>
+    </item>
+  </steps>
+
+  <p>Du kan nu köra webbapplikationen från översiktsvyn Aktiviteter. För att söka efter din applikation, börja skriva namnet så kommer den visas med de andra sökresultaten.</p>
+
+</page>

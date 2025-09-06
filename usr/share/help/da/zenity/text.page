@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="text" xml:lang="da">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Brug tilvalget <cmd>--text-info</cmd>.</desc>
+  </info>
+  <title>Tekstinformationsdialog</title>
+    <p>Brug tilvalget <cmd>--text-info</cmd> til at oprette en dialog med tekstinformationstekst.</p>
+	
+    <p>Tekstinformationsdialogen understøtter følgende tilvalg:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--filename</cmd>=<var>filnavn</var></title>
+	<p>Angiver en fil, der indlæses i tekstinformationsdialogen.</p>
+      </item>
+
+      <item>
+        <title><cmd>--editable</cmd></title>
+        <p>Tillader redigering af den viste tekst. Den redigerede tekst returneres til standardoutput, når dialogen lukkes.</p>
+      </item>
+
+      <item>
+        <title><cmd>--font</cmd>=<var>SKRIFTTYPE</var></title>
+	<p>Angiver skrifttypen for teksten.</p>
+      </item>
+
+      <item>
+        <title><cmd>--checkbox</cmd>=<var>TEKST</var></title>
+	<p>Aktivér et afkrydsningsfelt til brug, såsom “Jeg har læst og accepterer vilkårene”.</p>
+      </item>
+
+      <item>
+        <title><cmd>--html</cmd></title>
+        <p>Aktivér understøttelse af html.</p>
+      </item>
+
+      <item>
+        <title><cmd>--url</cmd>=<var>URL</var></title>
+	<p>Angiver en URL i stedet for en fil. Fungerer kun hvis du bruger tilvalget --html.</p>
+      </item>
+
+    </terms>
+
+    <p>Følgende eksempelscript viser, hvordan man opretter en tekstinformationsdialog:</p>
+
+<code>
+#!/bin/sh
+
+# Du skal placere filen “COPYING” i samme mappe som dette script.
+FILE=`dirname $0`/COPYING
+
+zenity --text-info \
+       --title="Licens" \
+       --filename=$FILE \
+       --checkbox="Jeg har læst og accepterer vilkårene."
+
+case $? in
+    0)
+        echo "Start installationen!"
+	# next step
+	;;
+    1)
+        echo "Stop installationen!"
+	;;
+    -1)
+        echo "Der opstod en uventet fejl."
+	;;
+esac
+</code>
+
+    <figure>
+      <title>Eksempel på tekstinformationsdialog</title>
+      <desc>Eksempel på tekstinformationsdialog til <app>Zenity</app></desc>
+      <media type="image" mime="image/png" src="figures/zenity-text-screenshot.png"/>
+    </figure>
+</page>

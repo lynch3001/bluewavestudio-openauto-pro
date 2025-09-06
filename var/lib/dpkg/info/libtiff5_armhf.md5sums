@@ -1,0 +1,5 @@
+942ac6878600d3d0f72b98bb1f68eb09  usr/lib/arm-linux-gnueabihf/libtiff.so.5.5.0
+ea9b86ab0c9542cd9ae89011279ae0f7  usr/share/doc/libtiff5/changelog.Debian.gz
+c4e596b3852c6d7a1b029b6df36d3e26  usr/share/doc/libtiff5/changelog.gz
+e859b2ae89c96e179995d377da3571de  usr/share/doc/libtiff5/copyright
+bef9327009992eff52f279c04d2fbfd0  usr/share/lintian/overrides/libtiff5

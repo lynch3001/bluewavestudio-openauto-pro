@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="browse-web" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="index#start" group="#first"/>
+    <link type="seealso" xref="browse-private"/>
+    <link type="seealso" xref="browse-local"/>
+    <revision pkgversion="3.9" date="2013-06-30" status="incomplete"/>
+    <revision pkgversion="3.15" date="2014-12-02" status="review"/>
+
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2013, 2014</years>
+    </credit>
+<!--    <credit type="copyright editor">
+      <name></name>
+      <email its:translate="no"></email>
+      <years></years>
+    </credit>-->
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Veja páginas web na Internet.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013,</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Navegando na web</title>
+
+  <p>Navegadores web podem ser usados para ver páginas na Internet quando você tem uma conexão com a Internet. Para começar a navegar a web:</p>
+
+  <steps>
+    <item>
+      <p>Quando você inicia o <app xref="introduction">Web</app>, seu cursor deve estar no campo de entrada de texto no topo da janela. Digite a URL da página web que você deseja visitar ou seu termo de pesquisa.</p>
+    </item>
+    <item>
+      <p>Pressione <key>Enter</key> para ir para a página web ou a pesquisa.</p>
+    </item>
+  </steps>
+
+  <p xml:id="tabs"><em>Abas</em> são usadas para ver mais de uma página web em uma janela. Quando você incia o <app>Web</app>, você não verá nenhuma aba. Para <em>abrir uma nova aba</em>, pressione o botão de menu no canto superior direito da tela e, então, <guiseq><gui style="menuitem">Nova aba</gui></guiseq>. Uma vez que a nova aba esteja aberta, você pode usá-la como você normalmente faria com uma janela.</p>
+
+  <p xml:id="tabs-alt">Você também pode usar o atalho de teclado <keyseq><key>Ctrl</key><key>T</key></keyseq> para abrir uma nova aba ou o botão de nova aba no canto superior esquerdo da janela.</p>
+
+  <p xml:id="tabs-link">Para <em>abrir um link em uma nova aba</em>, clique com botão direito no link e, então, selecione <gui style="menuitem">Abrir link em uma nova aba</gui> ou use o botão do meio para clicar no link.</p>
+
+</page>

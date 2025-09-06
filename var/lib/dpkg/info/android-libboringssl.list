@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/android
+/usr/lib/arm-linux-gnueabihf/android/libcrypto.so.0
+/usr/lib/arm-linux-gnueabihf/android/libssl.so.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/android-libboringssl
+/usr/share/doc/android-libboringssl/INCORPORATING.md.gz
+/usr/share/doc/android-libboringssl/NOTICE.gz
+/usr/share/doc/android-libboringssl/README.Debian
+/usr/share/doc/android-libboringssl/README.md
+/usr/share/doc/android-libboringssl/changelog.Debian.gz
+/usr/share/doc/android-libboringssl/copyright

@@ -1,0 +1,5 @@
+726116933a379f085d4e7f464b728af9  usr/lib/arm-linux-gnueabihf/qt5/qml/QtQuick/Layouts/libqquicklayoutsplugin.so
+592f849510f8243914b34ba60f8b05ba  usr/lib/arm-linux-gnueabihf/qt5/qml/QtQuick/Layouts/plugins.qmltypes
+b95302e6fb7d93890f8cc17a92ae5e71  usr/lib/arm-linux-gnueabihf/qt5/qml/QtQuick/Layouts/qmldir
+7c881ab818d59da06a8217c2e3f46957  usr/share/doc/qml-module-qtquick-layouts/changelog.Debian.gz
+2753e3a1b37ddc70bc4056f361f5f604  usr/share/doc/qml-module-qtquick-layouts/copyright

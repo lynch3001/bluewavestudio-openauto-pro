@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/SoapySDR
+/usr/lib/arm-linux-gnueabihf/SoapySDR/modules0.6
+/usr/lib/arm-linux-gnueabihf/SoapySDR/modules0.6/libremoteSupport.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/soapysdr0.6-module-remote
+/usr/share/doc/soapysdr0.6-module-remote/README.Debian
+/usr/share/doc/soapysdr0.6-module-remote/README.md
+/usr/share/doc/soapysdr0.6-module-remote/changelog.Debian.gz
+/usr/share/doc/soapysdr0.6-module-remote/changelog.gz
+/usr/share/doc/soapysdr0.6-module-remote/copyright

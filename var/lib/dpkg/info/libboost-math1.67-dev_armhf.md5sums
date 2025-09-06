@@ -1,0 +1,6 @@
+43e741bd954fc62a22f1bcb4daa67ec4  usr/lib/arm-linux-gnueabihf/libboost_math_c99.a
+aae06e2db4d3346f4632fc7804e4320e  usr/lib/arm-linux-gnueabihf/libboost_math_c99f.a
+610aae65edb864cf3651f076c08c02ef  usr/lib/arm-linux-gnueabihf/libboost_math_tr1.a
+cc07c11a4497c85accd18e3f2dca318b  usr/lib/arm-linux-gnueabihf/libboost_math_tr1f.a
+fd9fd87aca681e8911194b0265a932bd  usr/share/doc/libboost-math1.67-dev/changelog.Debian.gz
+190563c1ac07e6b6ab3c1b872d584bfe  usr/share/doc/libboost-math1.67-dev/copyright

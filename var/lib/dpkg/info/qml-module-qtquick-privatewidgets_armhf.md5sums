@@ -1,0 +1,5 @@
+505be29a5def01641fad6c529e949d88  usr/lib/arm-linux-gnueabihf/qt5/qml/QtQuick/PrivateWidgets/libwidgetsplugin.so
+1e21779b4cafcab56c1b0968d1c388c3  usr/lib/arm-linux-gnueabihf/qt5/qml/QtQuick/PrivateWidgets/plugins.qmltypes
+6a4293ad87d7a6691e579271b9faa6a2  usr/lib/arm-linux-gnueabihf/qt5/qml/QtQuick/PrivateWidgets/qmldir
+cb12a073f5aeb92b4069899833b4fda7  usr/share/doc/qml-module-qtquick-privatewidgets/changelog.Debian.gz
+46dfe0bed5761e5a2e55ebfa12bb7bf7  usr/share/doc/qml-module-qtquick-privatewidgets/copyright

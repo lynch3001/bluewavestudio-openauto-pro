@@ -1,0 +1,8 @@
+# Nuand bladeRF
+SUBSYSTEM=="usb", ATTR{idVendor}=="2cf0", ATTR{idProduct}=="5246", ENV{ID_SOFTWARE_RADIO}="1", MODE="660", GROUP="plugdev"
+
+# Nuand bladeRF, legacy VID/PID
+SUBSYSTEM=="usb", ATTR{idVendor}=="1d50", ATTR{idProduct}=="6066", ENV{ID_SOFTWARE_RADIO}="1", MODE="660", GROUP="plugdev"
+
+# Cypress Bootloader
+SUBSYSTEM=="usb", ATTR{idVendor}=="04b4", ATTR{idProduct}=="00f3", ENV{ID_SOFTWARE_RADIO}="1", MODE="660", GROUP="plugdev"

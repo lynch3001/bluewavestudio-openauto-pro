@@ -1,0 +1,162 @@
+﻿2019-07-13 16:00:48.496 T:2978512912  NOTICE: -----------------------------------------------------------------------
+2019-07-13 16:00:48.496 T:2978512912  NOTICE: Starting Kodi (18.2 Git:20190712-nogitfound). Platform: Linux ARM 32-bit
+2019-07-13 16:00:48.496 T:2978512912  NOTICE: Using Release Kodi x32 build
+2019-07-13 16:00:48.496 T:2978512912  NOTICE: Kodi compiled 2019-07-12 by GCC 8.3.0 for Linux ARM 32-bit version 4.18.20 (266772)
+2019-07-13 16:00:48.496 T:2978512912  NOTICE: Running on Raspbian GNU/Linux 10 (buster), kernel: Linux ARM 32-bit version 4.19.57-v7l+
+2019-07-13 16:00:48.504 T:2978512912  NOTICE: FFmpeg version/source: 4.0.3-Kodi
+2019-07-13 16:00:48.504 T:2978512912  NOTICE: Host CPU: ARMv7 Processor rev 3 (v7l), 4 cores available
+2019-07-13 16:00:48.504 T:2978512912  NOTICE: ARM Features: Neon enabled
+2019-07-13 16:00:48.504 T:2978512912  NOTICE: special://xbmc/ is mapped to: /usr/local/kodi/share/kodi
+2019-07-13 16:00:48.504 T:2978512912  NOTICE: special://xbmcbin/ is mapped to: /usr/local/kodi/lib/kodi
+2019-07-13 16:00:48.504 T:2978512912  NOTICE: special://xbmcbinaddons/ is mapped to: /usr/local/kodi/lib/kodi/addons
+2019-07-13 16:00:48.504 T:2978512912  NOTICE: special://masterprofile/ is mapped to: /home/pi/.kodi/userdata
+2019-07-13 16:00:48.504 T:2978512912  NOTICE: special://envhome/ is mapped to: /home/pi
+2019-07-13 16:00:48.504 T:2978512912  NOTICE: special://home/ is mapped to: /home/pi/.kodi
+2019-07-13 16:00:48.504 T:2978512912  NOTICE: special://temp/ is mapped to: /home/pi/.kodi/temp
+2019-07-13 16:00:48.504 T:2978512912  NOTICE: special://logpath/ is mapped to: /home/pi/.kodi/temp
+2019-07-13 16:00:48.504 T:2978512912  NOTICE: The executable running is: /usr/local/kodi/lib/kodi/kodi-x11
+2019-07-13 16:00:48.504 T:2978512912  NOTICE: Local hostname: raspberrypi
+2019-07-13 16:00:48.504 T:2978512912  NOTICE: Log File is located: /home/pi/.kodi/temp/kodi.log
+2019-07-13 16:00:48.504 T:2978512912  NOTICE: -----------------------------------------------------------------------
+2019-07-13 16:00:48.519 T:2978512912    INFO: loading settings
+2019-07-13 16:00:48.522 T:2978512912  NOTICE: special://profile/ is mapped to: special://masterprofile/
+2019-07-13 16:00:48.537 T:2978512912   DEBUG: CSkinSettings: no <skinsettings> tag found
+2019-07-13 16:00:48.543 T:2978512912  NOTICE: No settings file to load (special://xbmc/system/advancedsettings.xml)
+2019-07-13 16:00:48.544 T:2978512912  NOTICE: No settings file to load (special://masterprofile/advancedsettings.xml)
+2019-07-13 16:00:48.544 T:2978512912  NOTICE: Default Video Player: VideoPlayer
+2019-07-13 16:00:48.544 T:2978512912  NOTICE: Default Audio Player: paplayer
+2019-07-13 16:00:48.544 T:2978512912  NOTICE: Disabled debug logging due to GUI setting. Level 0.
+2019-07-13 16:00:48.544 T:2978512912  NOTICE: Log level changed to "LOG_LEVEL_NORMAL"
+2019-07-13 16:00:48.559 T:2978512912  NOTICE: PulseAudio: Server found running - will try to use Pulse
+2019-07-13 16:00:48.583 T:2978512912  NOTICE: Running database version Addons27
+2019-07-13 16:00:48.711 T:2978512912  NOTICE: ADDON: audioencoder.kodi.builtin.aac v1.0.0 installed
+2019-07-13 16:00:48.711 T:2978512912  NOTICE: ADDON: audioencoder.kodi.builtin.wma v1.0.0 installed
+2019-07-13 16:00:48.711 T:2978512912  NOTICE: ADDON: game.controller.default v1.0.8 installed
+2019-07-13 16:00:48.711 T:2978512912  NOTICE: ADDON: game.controller.snes v1.0.8 installed
+2019-07-13 16:00:48.711 T:2978512912  NOTICE: ADDON: kodi.binary.global.audioengine v1.0.1 installed
+2019-07-13 16:00:48.711 T:2978512912  NOTICE: ADDON: kodi.binary.global.filesystem v1.0.2 installed
+2019-07-13 16:00:48.711 T:2978512912  NOTICE: ADDON: kodi.binary.global.general v1.0.3 installed
+2019-07-13 16:00:48.711 T:2978512912  NOTICE: ADDON: kodi.binary.global.gui v5.12.0 installed
+2019-07-13 16:00:48.711 T:2978512912  NOTICE: ADDON: kodi.binary.global.main v1.0.14 installed
+2019-07-13 16:00:48.712 T:2978512912  NOTICE: ADDON: kodi.binary.global.network v1.0.0 installed
+2019-07-13 16:00:48.712 T:2978512912  NOTICE: ADDON: kodi.binary.instance.audiodecoder v2.0.0 installed
+2019-07-13 16:00:48.712 T:2978512912  NOTICE: ADDON: kodi.binary.instance.audioencoder v2.0.0 installed
+2019-07-13 16:00:48.712 T:2978512912  NOTICE: ADDON: kodi.binary.instance.game v1.1.0 installed
+2019-07-13 16:00:48.712 T:2978512912  NOTICE: ADDON: kodi.binary.instance.imagedecoder v2.0.0 installed
+2019-07-13 16:00:48.712 T:2978512912  NOTICE: ADDON: kodi.binary.instance.inputstream v2.0.8 installed
+2019-07-13 16:00:48.712 T:2978512912  NOTICE: ADDON: kodi.binary.instance.peripheral v1.3.7 installed
+2019-07-13 16:00:48.712 T:2978512912  NOTICE: ADDON: kodi.binary.instance.pvr v5.10.3 installed
+2019-07-13 16:00:48.712 T:2978512912  NOTICE: ADDON: kodi.binary.instance.screensaver v2.0.0 installed
+2019-07-13 16:00:48.712 T:2978512912  NOTICE: ADDON: kodi.binary.instance.vfs v2.0.0 installed
+2019-07-13 16:00:48.712 T:2978512912  NOTICE: ADDON: kodi.binary.instance.videocodec v1.0.1 installed
+2019-07-13 16:00:48.712 T:2978512912  NOTICE: ADDON: kodi.binary.instance.visualization v2.0.1 installed
+2019-07-13 16:00:48.712 T:2978512912  NOTICE: ADDON: kodi.resource v1.0.0 installed
+2019-07-13 16:00:48.712 T:2978512912  NOTICE: ADDON: metadata.album.universal v3.1.2 installed
+2019-07-13 16:00:48.712 T:2978512912  NOTICE: ADDON: metadata.artists.universal v4.3.2 installed
+2019-07-13 16:00:48.712 T:2978512912  NOTICE: ADDON: metadata.common.allmusic.com v3.2.0 installed
+2019-07-13 16:00:48.712 T:2978512912  NOTICE: ADDON: metadata.common.fanart.tv v3.6.1 installed
+2019-07-13 16:00:48.712 T:2978512912  NOTICE: ADDON: metadata.common.imdb.com v3.1.4 installed
+2019-07-13 16:00:48.712 T:2978512912  NOTICE: ADDON: metadata.common.musicbrainz.org v2.2.1 installed
+2019-07-13 16:00:48.712 T:2978512912  NOTICE: ADDON: metadata.common.theaudiodb.com v2.0.2 installed
+2019-07-13 16:00:48.712 T:2978512912  NOTICE: ADDON: metadata.common.themoviedb.org v3.1.9 installed
+2019-07-13 16:00:48.713 T:2978512912  NOTICE: ADDON: metadata.local v1.0.0 installed
+2019-07-13 16:00:48.713 T:2978512912  NOTICE: ADDON: metadata.themoviedb.org v5.1.7 installed
+2019-07-13 16:00:48.713 T:2978512912  NOTICE: ADDON: metadata.tvshows.themoviedb.org v3.1.1 installed
+2019-07-13 16:00:48.713 T:2978512912  NOTICE: ADDON: repository.xbmc.org v3.1.5 installed
+2019-07-13 16:00:48.713 T:2978512912  NOTICE: ADDON: resource.images.weathericons.default v1.1.8 installed
+2019-07-13 16:00:48.713 T:2978512912  NOTICE: ADDON: resource.language.en_gb v2.0.1 installed
+2019-07-13 16:00:48.713 T:2978512912  NOTICE: ADDON: resource.uisounds.kodi v1.0.0 installed
+2019-07-13 16:00:48.713 T:2978512912  NOTICE: ADDON: screensaver.xbmc.builtin.black v1.0.32 installed
+2019-07-13 16:00:48.713 T:2978512912  NOTICE: ADDON: screensaver.xbmc.builtin.dim v1.0.54 installed
+2019-07-13 16:00:48.713 T:2978512912  NOTICE: ADDON: script.module.pil v1.1.7 installed
+2019-07-13 16:00:48.713 T:2978512912  NOTICE: ADDON: script.module.pycryptodome v3.4.3 installed
+2019-07-13 16:00:48.713 T:2978512912  NOTICE: ADDON: service.xbmc.versioncheck v0.4.6 installed
+2019-07-13 16:00:48.713 T:2978512912  NOTICE: ADDON: skin.estouchy v2.0.23 installed
+2019-07-13 16:00:48.713 T:2978512912  NOTICE: ADDON: skin.estuary v2.0.22 installed
+2019-07-13 16:00:48.713 T:2978512912  NOTICE: ADDON: webinterface.default v18.x-2.4.6 installed
+2019-07-13 16:00:48.713 T:2978512912  NOTICE: ADDON: xbmc.addon v18.2.0 installed
+2019-07-13 16:00:48.713 T:2978512912  NOTICE: ADDON: xbmc.core v0.1.0 installed
+2019-07-13 16:00:48.713 T:2978512912  NOTICE: ADDON: xbmc.gui v5.14.0 installed
+2019-07-13 16:00:48.713 T:2978512912  NOTICE: ADDON: xbmc.json v10.3.0 installed
+2019-07-13 16:00:48.713 T:2978512912  NOTICE: ADDON: xbmc.metadata v2.1.0 installed
+2019-07-13 16:00:48.713 T:2978512912  NOTICE: ADDON: xbmc.python v2.26.0 installed
+2019-07-13 16:00:48.713 T:2978512912  NOTICE: ADDON: xbmc.webinterface v1.0.0 installed
+2019-07-13 16:00:48.740 T:2978512912   ERROR: DBus error: org.freedesktop.DBus.Error.ServiceUnknown - The name org.freedesktop.UPower was not provided by any .service files
+2019-07-13 16:00:48.765 T:2901406048 WARNING: Pulseaudio module module-allow-passthrough not loaded - opening PT devices might fail
+2019-07-13 16:00:48.766 T:2901406048  NOTICE: Found 1 Lists of Devices
+2019-07-13 16:00:48.766 T:2901406048  NOTICE: Enumerated PULSE devices:
+2019-07-13 16:00:48.766 T:2901406048  NOTICE:     Device 1
+2019-07-13 16:00:48.766 T:2901406048  NOTICE:         m_deviceName      : Default
+2019-07-13 16:00:48.766 T:2901406048  NOTICE:         m_displayName     : Default
+2019-07-13 16:00:48.766 T:2901406048  NOTICE:         m_displayNameExtra: Default Output Device (PULSEAUDIO)
+2019-07-13 16:00:48.766 T:2901406048  NOTICE:         m_deviceType      : AE_DEVTYPE_PCM
+2019-07-13 16:00:48.766 T:2901406048  NOTICE:         m_channels        : FL, FR
+2019-07-13 16:00:48.766 T:2901406048  NOTICE:         m_sampleRates     : 5512,8000,11025,16000,22050,32000,44100,48000,64000,88200,96000,176400,192000,384000
+2019-07-13 16:00:48.766 T:2901406048  NOTICE:         m_dataFormats     : AE_FMT_U8,AE_FMT_S16NE,AE_FMT_S24NE3,AE_FMT_S24NE4,AE_FMT_S32NE,AE_FMT_FLOAT
+2019-07-13 16:00:48.766 T:2901406048  NOTICE:         m_streamTypes     : No passthrough capabilities
+2019-07-13 16:00:48.766 T:2901406048  NOTICE:     Device 2
+2019-07-13 16:00:48.767 T:2901406048  NOTICE:         m_deviceName      : alsa_output.usb-GeneralPlus_USB_Audio_Device-00.analog-stereo
+2019-07-13 16:00:48.767 T:2901406048  NOTICE:         m_displayName     : USB Audio Device Analog Stereo
+2019-07-13 16:00:48.767 T:2901406048  NOTICE:         m_displayNameExtra: Speakers (PULSEAUDIO)
+2019-07-13 16:00:48.767 T:2901406048  NOTICE:         m_deviceType      : AE_DEVTYPE_PCM
+2019-07-13 16:00:48.767 T:2901406048  NOTICE:         m_channels        : FL, FR
+2019-07-13 16:00:48.767 T:2901406048  NOTICE:         m_sampleRates     : 5512,8000,11025,16000,22050,32000,44100,48000,64000,88200,96000,176400,192000,384000
+2019-07-13 16:00:48.767 T:2901406048  NOTICE:         m_dataFormats     : AE_FMT_U8,AE_FMT_S16NE,AE_FMT_S24NE3,AE_FMT_S24NE4,AE_FMT_S32NE,AE_FMT_FLOAT
+2019-07-13 16:00:48.767 T:2901406048  NOTICE:         m_streamTypes     : No passthrough capabilities
+2019-07-13 16:00:48.771 T:2968514912  NOTICE: PulseAudio: Opened device Default in pcm mode with Buffersize 200 ms
+2019-07-13 16:00:48.875 T:2978512912  NOTICE: Checking resolution 15
+2019-07-13 16:00:49.800 T:2978512912  NOTICE: Using visual 0x21
+2019-07-13 16:00:49.803 T:2978512912 WARNING: Failed to get an OpenGL context supporting core profile 3.2,                               using legacy mode with reduced feature set
+2019-07-13 16:00:50.059 T:2978512912  NOTICE: Using visual 0x21
+2019-07-13 16:00:50.073 T:2978512912  NOTICE: GL_VENDOR = Broadcom
+2019-07-13 16:00:50.073 T:2978512912  NOTICE: GL_RENDERER = V3D 4.2
+2019-07-13 16:00:50.073 T:2978512912  NOTICE: GL_VERSION = 2.1 Mesa 19.1.0-devel
+2019-07-13 16:00:50.073 T:2978512912  NOTICE: GL_SHADING_LANGUAGE_VERSION = 1.20
+2019-07-13 16:00:50.073 T:2978512912  NOTICE: GL_EXTENSIONS = GL_ARB_multisample GL_EXT_abgr GL_EXT_bgra GL_EXT_blend_color GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_copy_texture GL_EXT_subtexture GL_EXT_texture_object GL_EXT_vertex_array GL_EXT_compiled_vertex_array GL_EXT_texture GL_EXT_texture3D GL_IBM_rasterpos_clip GL_ARB_point_parameters GL_EXT_draw_range_elements GL_EXT_packed_pixels GL_EXT_point_parameters GL_EXT_rescale_normal GL_EXT_separate_specular_color GL_EXT_texture_edge_clamp GL_SGIS_generate_mipmap GL_SGIS_texture_border_clamp GL_SGIS_texture_edge_clamp GL_SGIS_texture_lod GL_ARB_framebuffer_sRGB GL_ARB_multitexture GL_EXT_framebuffer_sRGB GL_IBM_multimode_draw_arrays GL_IBM_texture_mirrored_repeat GL_ARB_texture_cube_map GL_ARB_texture_env_add GL_ARB_transpose_matrix GL_EXT_blend_func_separate GL_EXT_fog_coord GL_EXT_multi_draw_arrays GL_EXT_secondary_color GL_EXT_texture_env_add GL_EXT_texture_lod_bias GL_INGR_blend_func_separate GL_NV_blend_square GL_NV_light_max_exponent GL_NV_texgen_reflection GL_NV_texture_env_combine4 GL_SUN_multi_draw_arrays GL_ARB_texture_border_clamp GL_ARB_texture_compression GL_EXT_framebuffer_object GL_EXT_texture_env_combine GL_EXT_texture_env_dot3 GL_MESA_window_pos GL_NV_packed_depth_stencil GL_NV_texture_rectangle GL_ARB_depth_texture GL_ARB_occlusion_query GL_ARB_shadow GL_ARB_texture_env_combine GL_ARB_texture_env_crossbar GL_ARB_texture_env_dot3 GL_ARB_texture_mirrored_repeat GL_ARB_window_pos GL_ATI_fragment_shader GL_EXT_stencil_two_side GL_EXT_texture_cube_map GL_NV_fog_distance GL_APPLE_packed_pixels GL_ARB_draw_buffers GL_ARB_fragment_program GL_ARB_fragment_shader GL_ARB_shader_objects GL_ARB_vertex_program GL_ARB_vertex_shader GL_ATI_draw_buffers GL_ATI_texture_env_combine3 GL_ATI_texture_float GL_EXT_shadow_funcs GL_EXT_stencil_wrap GL_MESA_pack_invert GL_NV_primitive_restart GL_ARB_fragment_program_shadow GL_ARB_half_float_pixel GL_ARB_occlusion_query2 GL_ARB_point_sprite GL_ARB_shading_language_100 GL_ARB_sync GL_ARB_texture_non_power_of_two GL_ARB_vertex_buffer_object GL_ATI_blend_equation_separate GL_EXT_blend_equation_separate GL_OES_read_format GL_ARB_color_buffer_float GL_ARB_pixel_buffer_object GL_ARB_texture_float GL_ARB_texture_rectangle GL_EXT_packed_float GL_EXT_pixel_buffer_object GL_EXT_texture_rectangle GL_EXT_texture_sRGB GL_EXT_texture_shared_exponent GL_ARB_framebuffer_object GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXT_packed_depth_stencil GL_ARB_vertex_array_object GL_ATI_separate_stencil GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_gpu_program_parameters GL_EXT_gpu_shader4 GL_EXT_texture_array GL_EXT_texture_integer GL_EXT_texture_sRGB_decode GL_OES_EGL_image GL_EXT_texture_buffer_object GL_AMD_texture_texture4 GL_ARB_copy_buffer GL_ARB_depth_buffer_float GL_ARB_draw_instanced GL_ARB_half_float_vertex GL_ARB_instanced_arrays GL_ARB_map_buffer_range GL_ARB_texture_rg GL_ARB_texture_swizzle GL_EXT_texture_swizzle GL_AMD_conservative_depth GL_ARB_ES2_compatibility GL_ARB_debug_output GL_ARB_draw_elements_base_vertex GL_ARB_explicit_attrib_location GL_ARB_fragment_coord_conventions GL_ARB_provoking_vertex GL_ARB_sampler_objects GL_ARB_shader_texture_lod GL_ARB_texture_gather GL_ARB_texture_multisample GL_ARB_texture_query_lod GL_ARB_texture_rgb10_a2ui GL_ARB_uniform_buffer_object GL_ARB_vertex_type_2_10_10_10_rev GL_EXT_provoking_vertex GL_EXT_texture_snorm GL_MESA_texture_signed_rgba GL_ARB_draw_indirect GL_ARB_get_program_binary GL_ARB_robustness GL_ARB_separate_shader_objects GL_ARB_shader_bit_encoding GL_ARB_transform_feedback2 GL_AMD_multi_draw_indirect GL_ARB_base_instance GL_ARB_compressed_texture_pixel_storage GL_ARB_conservative_depth GL_ARB_internalformat_query GL_ARB_map_buffer_alignment GL_ARB_shader_atomic_counters GL_ARB_shader_image_load_store GL_ARB_shading_language_420pack GL_ARB_shading_language_packing GL_ARB_texture_storage GL_ARB_transform_feedback_instanced GL_EXT_framebuffer_multisample_blit_scaled GL_EXT_transform_feedback GL_AMD_shader_trinary_minmax GL_ARB_ES3_compatibility GL_ARB_arrays_of_arrays GL_ARB_clear_buffer_object GL_ARB_explicit_uniform_location GL_ARB_framebuffer_no_attachments GL_ARB_invalidate_subdata GL_ARB_multi_draw_indirect GL_ARB_program_interface_query GL_ARB_shader_image_size GL_ARB_shader_storage_buffer_object GL_ARB_stencil_texturing GL_ARB_texture_query_levels GL_ARB_texture_storage_multisample GL_ARB_vertex_attrib_binding GL_KHR_debug GL_KHR_texture_compression_astc_ldr GL_ARB_buffer_storage GL_ARB_internalformat_query2 GL_ARB_multi_bind GL_ARB_texture_stencil8 GL_EXT_shader_integer_mix GL_ARB_get_texture_sub_image GL_KHR_context_flush_control GL_ARB_parallel_shader_compile GL_ARB_shader_atomic_counter_ops GL_KHR_no_error GL_KHR_texture_compression_astc_sliced_3d GL_MESA_shader_integer_functions GL_KHR_parallel_shader_compile
+2019-07-13 16:00:50.111 T:2978512912   ERROR: CYUVShaderGLSL::CYUVShaderGLSL - failed to open file gl_shader_frag_texture_lim.glsl
+2019-07-13 16:00:50.113 T:2978512912  NOTICE: GL: No pixel shader, fixed pipeline in use
+2019-07-13 16:00:50.169 T:2978512912   ERROR: CYUVShaderGLSL::CYUVShaderGLSL - failed to open file gl_shader_frag_texture_lim.glsl
+2019-07-13 16:00:50.170 T:2978512912  NOTICE: GL: No pixel shader, fixed pipeline in use
+2019-07-13 16:00:50.711 T:2915783008  NOTICE: Running database version Addons27
+2019-07-13 16:00:50.713 T:2915783008  NOTICE: Running database version ViewModes6
+2019-07-13 16:00:50.716 T:2915783008  NOTICE: Running database version Textures13
+2019-07-13 16:00:50.724 T:2915783008  NOTICE: Running database version MyMusic72
+2019-07-13 16:00:50.739 T:2915783008  NOTICE: Running database version MyVideos116
+2019-07-13 16:00:50.741 T:2915783008  NOTICE: Running database version TV32
+2019-07-13 16:00:50.744 T:2915783008  NOTICE: Running database version Epg12
+2019-07-13 16:00:50.747 T:2978512912  NOTICE: start dvd mediatype detection
+2019-07-13 16:00:50.795 T:2978512912  NOTICE:   load skin from: /usr/local/kodi/share/kodi/addons/skin.estuary (version: 2.0.22)
+2019-07-13 16:00:51.195 T:2978512912 WARNING: JSONRPC: Could not parse type "Setting.Details.SettingList"
+2019-07-13 16:00:51.278 T:2978512912  NOTICE: Register - new keyboard device registered on application->keyboard: Keyboard (0000:0000)
+2019-07-13 16:00:51.278 T:2978512912  NOTICE: Register - new mouse device registered on application->mouse: Mouse (0000:0000)
+2019-07-13 16:00:51.280 T:2978512912  NOTICE: Loading player core factory settings from special://xbmc/system/playercorefactory.xml.
+2019-07-13 16:00:51.281 T:2978512912  NOTICE: Loaded playercorefactory configuration
+2019-07-13 16:00:51.282 T:2978512912  NOTICE: Loading player core factory settings from special://masterprofile/playercorefactory.xml.
+2019-07-13 16:00:51.282 T:2978512912  NOTICE: special://masterprofile/playercorefactory.xml does not exist. Skipping.
+2019-07-13 16:00:51.289 T:2978512912  NOTICE: initialize done
+2019-07-13 16:00:51.289 T:2978512912  NOTICE: Running the application...
+2019-07-13 16:00:51.293 T:2978512912  NOTICE: starting zeroconf publishing
+2019-07-13 16:00:51.293 T:2499776864  NOTICE: ES: Starting UDP Event server on port 9777
+2019-07-13 16:00:51.293 T:2499776864  NOTICE: UDP: Listening on port 9777 (ipv6 : false)
+2019-07-13 16:00:51.726 T:2978512912   ERROR: CYUVShaderGLSL::CYUVShaderGLSL - failed to open file gl_shader_frag_texture_lim.glsl
+2019-07-13 16:00:51.727 T:2978512912  NOTICE: GL: No pixel shader, fixed pipeline in use
+2019-07-13 16:00:51.802 T:2978512912   ERROR: CYUVShaderGLSL::CYUVShaderGLSL - failed to open file gl_shader_frag_texture_lim.glsl
+2019-07-13 16:00:51.803 T:2978512912  NOTICE: GL: No pixel shader, fixed pipeline in use
+2019-07-13 16:00:51.875 T:2978512912   ERROR: CYUVShaderGLSL::CYUVShaderGLSL - failed to open file gl_shader_frag_texture_lim.glsl
+2019-07-13 16:00:51.876 T:2978512912  NOTICE: GL: No pixel shader, fixed pipeline in use
+2019-07-13 16:00:51.932 T:2978512912   ERROR: CYUVShaderGLSL::CYUVShaderGLSL - failed to open file gl_shader_frag_texture_lim.glsl
+2019-07-13 16:00:51.933 T:2978512912  NOTICE: GL: No pixel shader, fixed pipeline in use
+2019-07-13 16:01:01.102 T:2978512912  NOTICE: Stopping player
+2019-07-13 16:01:01.102 T:2978512912  NOTICE: Storing total System Uptime
+2019-07-13 16:01:01.102 T:2978512912  NOTICE: Saving settings
+2019-07-13 16:01:01.105 T:2978512912  NOTICE: Saving skin settings
+2019-07-13 16:01:01.106 T:2978512912  NOTICE: Stopping all
+2019-07-13 16:01:01.107 T:2978512912  NOTICE: ES: Stopping event server
+2019-07-13 16:01:01.107 T:2978512912  NOTICE: stopping zeroconf publishing
+2019-07-13 16:01:01.303 T:2499776864  NOTICE: ES: UDP Event server stopped
+2019-07-13 16:01:01.306 T:2978512912  NOTICE: stop dvd detect media
+2019-07-13 16:01:01.662 T:2978512912  NOTICE: Application stopped
+2019-07-13 16:01:01.862 T:2978512912  NOTICE: XBApplicationEx: destroying...
+2019-07-13 16:01:01.944 T:2978512912  NOTICE: unload skin
+2019-07-13 16:01:01.970 T:2978512912  NOTICE: unload sections
+2019-07-13 16:01:02.891 T:2978512912  NOTICE: XBApplicationEx: application stopped!

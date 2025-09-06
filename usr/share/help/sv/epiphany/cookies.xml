@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="cookies" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="index#privacy"/>
+    <link type="guide" xref="data"/>
+    <revision pkgversion="3.10" date="2013-07-02" status="candidate"/>
+
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2015, 2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Vad är kakor?</title>
+
+  <p>En <em>kaka</em> i webbläsaren är en liten mängd data som skickats från en webbplats och lagrats på din dator medan du surfar på den webbplatsen. Då du återvänder till samma webbplats i framtiden kan data lagrat i kakan återhämtas av webbplatsen för att meddela webbplatsen om din tidigare aktivitet. Kakor är en vanlig metod för webbservrar att avgöra om du är inloggad på ett konto på en viss webbplats eller inte.</p>
+
+</page>

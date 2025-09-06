@@ -1,0 +1,6 @@
+af5d3acb98882ba67900ca68a410d754  usr/include/xcb/sync.h
+fb2b61f4acc94fd82a304661e27ac778  usr/lib/arm-linux-gnueabihf/libxcb-sync.a
+d33a10359f3120375002e31f047946db  usr/lib/arm-linux-gnueabihf/pkgconfig/xcb-sync.pc
+7c16d514083ac8d54e07d73ce5e61315  usr/share/doc/libxcb-sync-dev/changelog.Debian.gz
+d8a55aea71ff2cda5d61f165647ba157  usr/share/doc/libxcb-sync-dev/changelog.gz
+618ee90893b45d0d0c19d41a3a3d2e7d  usr/share/doc/libxcb-sync-dev/copyright

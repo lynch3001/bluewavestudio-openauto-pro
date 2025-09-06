@@ -1,0 +1,6 @@
+c333af3703d6ba28763dd2161aadc4ff  usr/include/pigpiod_if.h
+102f5f8e80c9a226b5d3846bdc843822  usr/include/pigpiod_if2.h
+1b1d976f14263d26b0b0426229bd87e3  usr/share/doc/libpigpiod-if-dev/changelog.Debian.gz
+b63977edcd31d62a5f7409dd88a656ce  usr/share/doc/libpigpiod-if-dev/copyright
+417cbf9b3690e163b37cb50898b4bc41  usr/share/man/man3/pigpiod_if.3.gz
+a874c01e61c81fa4e5b4ca249218714f  usr/share/man/man3/pigpiod_if2.3.gz

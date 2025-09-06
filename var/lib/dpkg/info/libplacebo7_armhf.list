@@ -1,0 +1,10 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libplacebo.so.7
+/usr/share
+/usr/share/doc
+/usr/share/doc/libplacebo7
+/usr/share/doc/libplacebo7/changelog.Debian.gz
+/usr/share/doc/libplacebo7/copyright

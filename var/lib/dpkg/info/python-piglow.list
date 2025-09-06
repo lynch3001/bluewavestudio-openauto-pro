@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/python-piglow
+/usr/share/doc/python-piglow/changelog.gz
+/usr/share/doc/python-piglow/copyright
+/usr/lib
+/usr/lib/python2.7
+/usr/lib/python2.7/dist-packages
+/usr/lib/python2.7/dist-packages/piglow.py
+/usr/lib/python2.7/dist-packages/piglow-1.2.5.egg-info
+/usr/lib/python2.7/dist-packages/piglow-1.2.5.egg-info/requires.txt
+/usr/lib/python2.7/dist-packages/piglow-1.2.5.egg-info/dependency_links.txt
+/usr/lib/python2.7/dist-packages/piglow-1.2.5.egg-info/top_level.txt
+/usr/lib/python2.7/dist-packages/piglow-1.2.5.egg-info/PKG-INFO

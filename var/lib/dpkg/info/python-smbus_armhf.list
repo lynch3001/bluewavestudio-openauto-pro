@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/lib
+/usr/lib/python2.7
+/usr/lib/python2.7/dist-packages
+/usr/lib/python2.7/dist-packages/smbus.arm-linux-gnueabihf.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/python-smbus
+/usr/share/doc/python-smbus/changelog.Debian.gz
+/usr/share/doc/python-smbus/changelog.gz
+/usr/share/doc/python-smbus/copyright

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="prob-restore-closed-page" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="index#prob"/>
+    <revision pkgversion="3.12" date="2014-02-24" status="review"/>
+
+    <credit type="author copyright">
+      <name>Baptiste Mille-Mathias</name>
+      <email its:translate="no">baptistem@gnome.org</email>
+      <years>2014</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Jag vill åter öppna upp en webbsida som jag stängde av misstag.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2015, 2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Hur kan jag återställa en flik?</title>
+
+  <p>Du kan återställa sidorna så länge minst en instans av <app>Webb</app> fortfarande är öppen.</p>
+
+  <steps>
+    <item>
+      <p>Öppna <guiseq><gui style="menu">Webb</gui><gui style="menuitem">Öppna stängd flik igen</gui></guiseq>, din senast stängda flik kommer öppnas på nytt.</p>
+    </item>
+  </steps>
+
+  <p>Upprepa steget så många gånger som du behöver tills fliken du vill ha är återställd. Flikar kommer återställas i omvänd ordning mot hur du stängde dem. Då du har återställt alla de stängda flikarna kan du inte längre återställa några fler flikar.</p>
+
+  <note style="important">
+    <p>Det är inte möjligt att återställa en flik i läget för <link xref="browse-private">privat surfning</link>.</p>
+  </note>
+
+</page>

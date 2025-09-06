@@ -1,0 +1,94 @@
+Jan 29 18:45:24 raspberrypi sshd[1294]: Accepted password for pi from 192.168.137.1 port 59681 ssh2
+Jan 29 18:45:24 raspberrypi sshd[1294]: pam_unix(sshd:session): session opened for user pi by (uid=0)
+Jan 29 18:45:24 raspberrypi systemd-logind[420]: New session 4 of user pi.
+Jan 29 18:45:24 raspberrypi sshd[1296]: Accepted password for pi from 192.168.137.1 port 59682 ssh2
+Jan 29 18:45:24 raspberrypi sshd[1296]: pam_unix(sshd:session): session opened for user pi by (uid=0)
+Jan 29 18:45:24 raspberrypi systemd-logind[420]: New session 5 of user pi.
+Jan 29 18:46:20 raspberrypi sshd[1391]: Accepted password for pi from 192.168.137.1 port 59701 ssh2
+Jan 29 18:46:20 raspberrypi sshd[1391]: pam_unix(sshd:session): session opened for user pi by (uid=0)
+Jan 29 18:46:20 raspberrypi systemd-logind[420]: New session 6 of user pi.
+Jan 29 18:46:21 raspberrypi sshd[1391]: pam_unix(sshd:session): session closed for user pi
+Jan 29 18:46:21 raspberrypi systemd-logind[420]: Session 6 logged out. Waiting for processes to exit.
+Jan 29 18:46:21 raspberrypi systemd-logind[420]: Removed session 6.
+Jan 29 18:47:25 raspberrypi sudo:       pi : TTY=pts/0 ; PWD=/home/pi/openauto_update_package ; USER=root ; COMMAND=/bin/cp autoapp controller_service ads11x5reader openauto_splash /usr/local/bin/
+Jan 29 18:47:25 raspberrypi sudo: pam_unix(sudo:session): session opened for user root by pi(uid=0)
+Jan 29 18:47:25 raspberrypi sudo: pam_unix(sudo:session): session closed for user root
+Jan 29 18:48:02 raspberrypi sudo:       pi : TTY=pts/0 ; PWD=/home/pi/openauto_update_package ; USER=root ; COMMAND=/bin/cp libaasdk.so libaasdk_proto.so /usr/local/lib/
+Jan 29 18:48:02 raspberrypi sudo: pam_unix(sudo:session): session opened for user root by pi(uid=0)
+Jan 29 18:48:02 raspberrypi sudo: pam_unix(sudo:session): session closed for user root
+Jan 29 18:48:12 raspberrypi sudo:       pi : TTY=pts/0 ; PWD=/home/pi/openauto_update_package ; USER=root ; COMMAND=/usr/bin/apt install blueman
+Jan 29 18:48:12 raspberrypi sudo: pam_unix(sudo:session): session opened for user root by pi(uid=0)
+Jan 29 18:49:00 raspberrypi sudo: pam_unix(sudo:session): session closed for user root
+Jan 29 18:49:17 raspberrypi sudo:       pi : TTY=pts/0 ; PWD=/home/pi/openauto_update_package ; USER=root ; COMMAND=/usr/bin/apt update
+Jan 29 18:49:17 raspberrypi sudo: pam_unix(sudo:session): session opened for user root by pi(uid=0)
+Jan 29 18:49:52 raspberrypi sudo: pam_unix(sudo:session): session closed for user root
+Jan 29 18:49:52 raspberrypi sudo:       pi : TTY=pts/0 ; PWD=/home/pi/openauto_update_package ; USER=root ; COMMAND=/usr/bin/apt upgrade -y
+Jan 29 18:49:52 raspberrypi sudo: pam_unix(sudo:session): session opened for user root by pi(uid=0)
+Jan 29 19:13:56 raspberrypi sudo: pam_unix(sudo:session): session closed for user root
+Jan 29 19:17:01 raspberrypi CRON[7870]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jan 29 19:17:01 raspberrypi CRON[7870]: pam_unix(cron:session): session closed for user root
+Jan 29 19:17:30 raspberrypi sshd[7911]: Accepted password for pi from 192.168.137.1 port 60596 ssh2
+Jan 29 19:17:30 raspberrypi sshd[7911]: pam_unix(sshd:session): session opened for user pi by (uid=0)
+Jan 29 19:17:30 raspberrypi systemd-logind[420]: New session 8 of user pi.
+Jan 29 19:17:31 raspberrypi sshd[7911]: pam_unix(sshd:session): session closed for user pi
+Jan 29 19:17:31 raspberrypi systemd-logind[420]: Session 8 logged out. Waiting for processes to exit.
+Jan 29 19:17:31 raspberrypi systemd-logind[420]: Removed session 8.
+Jan 29 19:17:40 raspberrypi sudo:       pi : TTY=pts/0 ; PWD=/home/pi/openauto_update_package ; USER=root ; COMMAND=/bin/mv /etc/xdg/autostart/blueman.desktop /etc/xdg/autostart/blueman.desktop.disabled
+Jan 29 19:17:40 raspberrypi sudo: pam_unix(sudo:session): session opened for user root by pi(uid=0)
+Jan 29 19:17:40 raspberrypi sudo: pam_unix(sudo:session): session closed for user root
+Jan 29 19:22:24 raspberrypi systemd-logind[420]: System is rebooting.
+Jan 29 19:22:31 raspberrypi systemd-logind[399]: New seat seat0.
+Jan 29 19:22:34 raspberrypi sshd[550]: Server listening on 0.0.0.0 port 22.
+Jan 29 19:22:34 raspberrypi sshd[550]: Server listening on :: port 22.
+Jan 29 19:22:37 raspberrypi lightdm: pam_unix(lightdm-autologin:session): session opened for user pi by (uid=0)
+Jan 29 19:22:37 raspberrypi systemd-logind[399]: New session 1 of user pi.
+Jan 29 19:22:37 raspberrypi systemd: pam_unix(systemd-user:session): session opened for user pi by (uid=0)
+Jan 29 19:22:44 raspberrypi login[545]: pam_unix(login:session): session opened for user pi by LOGIN(uid=0)
+Jan 29 19:22:44 raspberrypi systemd-logind[399]: New session 3 of user pi.
+Jan 29 19:22:44 raspberrypi polkitd(authority=local): Registered Authentication Agent for unix-session:1 (system bus name :1.21 [lxpolkit], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_GB.UTF-8)
+Jan 29 19:22:45 raspberrypi sudo:       pi : TTY=unknown ; PWD=/home/pi ; USER=root ; COMMAND=/usr/bin/piwiz
+Jan 29 19:22:45 raspberrypi sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Jan 29 19:22:45 raspberrypi sudo:     root : TTY=unknown ; PWD=/home/pi ; USER=pi ; ENV=XDG_RUNTIME_DIR=/run/user/1000 ; COMMAND=/usr/bin/pactl list short sinks
+Jan 29 19:22:45 raspberrypi sudo: pam_unix(sudo:session): session opened for user pi by (uid=0)
+Jan 29 19:22:48 raspberrypi sudo: pam_unix(sudo:session): session closed for user pi
+Jan 29 19:22:48 raspberrypi sudo:     root : TTY=unknown ; PWD=/home/pi ; USER=pi ; ENV=XDG_RUNTIME_DIR=/run/user/1000 ; COMMAND=/usr/bin/pactl set-default-sink alsa_output.platform-bcm2835_audio.analog-stereo
+Jan 29 19:22:48 raspberrypi sudo: pam_unix(sudo:session): session opened for user pi by (uid=0)
+Jan 29 19:22:48 raspberrypi sudo: pam_unix(sudo:session): session closed for user pi
+Jan 29 19:23:00 raspberrypi sshd[996]: Accepted password for pi from 192.168.137.1 port 60723 ssh2
+Jan 29 19:23:00 raspberrypi sshd[996]: pam_unix(sshd:session): session opened for user pi by (uid=0)
+Jan 29 19:23:00 raspberrypi systemd-logind[399]: New session 4 of user pi.
+Jan 29 19:23:01 raspberrypi sshd[1000]: Accepted password for pi from 192.168.137.1 port 60724 ssh2
+Jan 29 19:23:01 raspberrypi sshd[1000]: pam_unix(sshd:session): session opened for user pi by (uid=0)
+Jan 29 19:23:01 raspberrypi systemd-logind[399]: New session 5 of user pi.
+Jan 29 19:23:48 raspberrypi sshd[1076]: Accepted password for pi from 192.168.137.1 port 60734 ssh2
+Jan 29 19:23:48 raspberrypi sshd[1076]: pam_unix(sshd:session): session opened for user pi by (uid=0)
+Jan 29 19:23:48 raspberrypi systemd-logind[399]: New session 6 of user pi.
+Jan 29 19:23:51 raspberrypi sshd[1076]: pam_unix(sshd:session): session closed for user pi
+Jan 29 19:23:51 raspberrypi systemd-logind[399]: Session 6 logged out. Waiting for processes to exit.
+Jan 29 19:23:51 raspberrypi systemd-logind[399]: Removed session 6.
+Jan 29 19:25:15 raspberrypi systemd-logind[399]: System is powering down.
+Jan 29 19:25:16 raspberrypi sshd[1000]: pam_unix(sshd:session): session closed for user pi
+Jan 29 19:25:16 raspberrypi sudo: pam_unix(sudo:session): session closed for user root
+Jan 29 19:25:16 raspberrypi lightdm: pam_unix(lightdm-autologin:session): session closed for user pi
+Jan 29 19:25:22 raspberrypi systemd-logind[412]: New seat seat0.
+Jan 29 19:25:22 raspberrypi systemd-logind[412]: Watching system buttons on /dev/input/event0 (2.4G Composite Devic)
+Jan 29 19:25:22 raspberrypi systemd-logind[412]: Watching system buttons on /dev/input/event2 (2.4G Composite Devic Consumer Control)
+Jan 29 19:25:22 raspberrypi systemd-logind[412]: Watching system buttons on /dev/input/event3 (2.4G Composite Devic System Control)
+Jan 29 19:25:24 raspberrypi sshd[556]: Server listening on 0.0.0.0 port 22.
+Jan 29 19:25:24 raspberrypi sshd[556]: Server listening on :: port 22.
+Jan 29 19:25:37 raspberrypi systemd-logind[404]: New seat seat0.
+Jan 29 19:25:37 raspberrypi systemd-logind[404]: Watching system buttons on /dev/input/event0 (2.4G Composite Devic)
+Jan 29 19:25:37 raspberrypi systemd-logind[404]: Watching system buttons on /dev/input/event2 (2.4G Composite Devic Consumer Control)
+Jan 29 19:25:37 raspberrypi systemd-logind[404]: Watching system buttons on /dev/input/event3 (2.4G Composite Devic System Control)
+Jan 29 19:25:49 raspberrypi sshd[563]: Server listening on 0.0.0.0 port 22.
+Jan 29 19:25:49 raspberrypi sshd[563]: Server listening on :: port 22.
+Jan 29 19:25:59 raspberrypi login[551]: pam_unix(login:session): session opened for user pi by LOGIN(uid=0)
+Jan 29 19:25:59 raspberrypi systemd-logind[404]: New session 1 of user pi.
+Jan 29 19:26:00 raspberrypi systemd: pam_unix(systemd-user:session): session opened for user pi by (uid=0)
+Jan 29 19:26:02 raspberrypi lightdm: pam_unix(lightdm-autologin:session): session opened for user pi by (uid=0)
+Jan 29 19:26:02 raspberrypi systemd-logind[404]: New session 3 of user pi.
+Jan 29 19:26:06 raspberrypi polkitd(authority=local): Registered Authentication Agent for unix-session:3 (system bus name :1.22 [lxpolkit], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_GB.UTF-8)
+Jan 29 19:26:06 raspberrypi sudo:       pi : TTY=unknown ; PWD=/home/pi ; USER=root ; COMMAND=/usr/bin/piwiz
+Jan 29 19:26:06 raspberrypi sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Jan 29 19:26:07 raspberrypi sudo:     root : TTY=unknown ; PWD=/home/pi ; USER=pi ; ENV=XDG_RUNTIME_DIR=/run/user/1000 ; COMMAND=/usr/bin/pactl list short sinks
+Jan 29 19:26:07 raspberrypi sudo: pam_unix(sudo:session): session opened for user pi by (uid=0)

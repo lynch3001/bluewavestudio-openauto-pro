@@ -1,0 +1,5 @@
+171b3f68131ea66ff31d80a054bb9459  usr/lib/arm-linux-gnueabihf/libboost_iostreams.so.1.58.0
+f0f20da13f0c05e3f61971730599f792  usr/share/doc/libboost-iostreams1.58.0/changelog.Debian.armhf.gz
+2b603a293b8b156427001b2f4869886c  usr/share/doc/libboost-iostreams1.58.0/changelog.Debian.gz
+2f516f3e3c0736b25cc324033945e8ad  usr/share/doc/libboost-iostreams1.58.0/copyright
+9b1c21938c937a0bb6e334bbe4f41234  usr/share/lintian/overrides/libboost-iostreams1.58.0

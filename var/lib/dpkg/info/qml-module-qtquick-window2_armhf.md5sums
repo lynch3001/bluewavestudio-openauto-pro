@@ -1,0 +1,5 @@
+0b47cc5394fafb5a2c180318932ddf57  usr/lib/arm-linux-gnueabihf/qt5/qml/QtQuick/Window.2/libwindowplugin.so
+0516052bc715de0f041594a756277dcf  usr/lib/arm-linux-gnueabihf/qt5/qml/QtQuick/Window.2/plugins.qmltypes
+4a45db3b32fa45dc51ea18e87f26fe37  usr/lib/arm-linux-gnueabihf/qt5/qml/QtQuick/Window.2/qmldir
+7c881ab818d59da06a8217c2e3f46957  usr/share/doc/qml-module-qtquick-window2/changelog.Debian.gz
+2753e3a1b37ddc70bc4056f361f5f604  usr/share/doc/qml-module-qtquick-window2/copyright

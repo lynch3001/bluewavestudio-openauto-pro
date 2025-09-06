@@ -1,0 +1,33 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installinit/13.2~bpo10+1
+if [ -x "/etc/init.d/sshswitch" ] && [ "$1" = remove ]; then
+	invoke-rc.d sshswitch stop || exit 1
+fi
+# End automatically added section
+# Automatically added by dh_installdeb/13.2~bpo10+1
+dpkg-maintscript-helper rm_conffile /etc/profile.d/sshpasswd.sh 20161220 -- "$@"
+dpkg-maintscript-helper rm_conffile /etc/profile.d/wifi-country.sh 20190429 -- "$@"
+dpkg-maintscript-helper rm_conffile /etc/modprobe.d/blacklist-rtl8192cu.conf 20190730 -- "$@"
+dpkg-maintscript-helper rm_conffile /etc/apt/preferences.d/3rd_parties.pref 20210310 -- "$@"
+# End automatically added section
+# Automatically added by dh_systemd_start/13.2~bpo10+1
+if [ -d /run/systemd/system ] && [ "$1" = remove ]; then
+	deb-systemd-invoke stop 'apply_noobs_os_config.service' 'regenerate_ssh_host_keys.service' 'rpi-display-backlight.service' 'sshswitch.service' >/dev/null || true
+fi
+# End automatically added section
+# Automatically added by dh_systemd_start/13.2~bpo10+1
+if [ -d /run/systemd/system ] && [ "$1" = remove ]; then
+	deb-systemd-invoke stop 'apply_noobs_os_config.service' 'regenerate_ssh_host_keys.service' 'rpi-display-backlight.service' 'sshswitch.service' >/dev/null || true
+fi
+# End automatically added section
+# Automatically added by dh_systemd_start/13.2~bpo10+1
+if [ -d /run/systemd/system ] && [ "$1" = remove ]; then
+	deb-systemd-invoke stop 'apply_noobs_os_config.service' 'regenerate_ssh_host_keys.service' 'rpi-display-backlight.service' 'sshswitch.service' >/dev/null || true
+fi
+# End automatically added section
+# Automatically added by dh_systemd_start/13.2~bpo10+1
+if [ -d /run/systemd/system ] && [ "$1" = remove ]; then
+	deb-systemd-invoke stop 'apply_noobs_os_config.service' 'regenerate_ssh_host_keys.service' 'rpi-display-backlight.service' 'sshswitch.service' >/dev/null || true
+fi
+# End automatically added section

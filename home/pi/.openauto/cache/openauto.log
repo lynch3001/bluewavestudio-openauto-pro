@@ -1,0 +1,111 @@
+[2022-03-17 21:13:34.542152] [0xb0b7f040] [info]    [OpenAuto] [Autoapp] version: 16.0
+[2022-03-17 21:13:37.810903] [0xb0b7f040] [warning] [OpenAuto] [Cache] failed to read configuration file: .openauto/cache/openauto_cache.ini, error: .openauto/cache/openauto_cache.ini: cannot open file
+[2022-03-17 21:13:37.825715] [0xb0b7f040] [warning] [OpenAuto] [RecentAddressesList] failed to read configuration file: .openauto/cache/openauto_wifi_recent.ini, error: .openauto/cache/openauto_wifi_recent.ini: cannot open file. Empty list will be used.
+[2022-03-17 21:13:37.825827] [0xb0b7f040] [warning] [OpenAuto] [FMPresetsList] failed to read configuration file: .openauto/cache/openauto_fm_presets.ini, error: .openauto/cache/openauto_fm_presets.ini: cannot open file. Empty list will be used.
+[2022-03-17 21:13:37.892297] [0xb0b7f040] [info]    [OpenAuto] [VolumeManager] looking for default mixer.
+[2022-03-17 21:13:37.892412] [0xb0b7f040] [info]    [OpenAuto] [VolumeManager] automatic mixer selection, id: 0x25ffc10
+[2022-03-17 21:13:37.910822] [0xb0b7f040] [info]    [OpenAuto] [AudioFocusManager] generated stream id: 1, name: NotificationsPlayer
+[2022-03-17 21:13:38.982303] [0xb0b7f040] [info]    [OpenAuto] [AudioFocusManager] generated stream id: 2, name: StorageMusicManager
+[2022-03-17 21:13:38.983063] [0xb0b7f040] [info]    [OpenAuto] [AudioFocusManager] generated stream id: 3, name: RtlSdrFmManager
+[2022-03-17 21:13:40.008556] [0xb0b7f040] [info]    [OpenAuto] [AudioFocusManager] generated stream id: 4, name: A2DPManager
+[2022-03-17 21:13:40.022800] [0xb0b7f040] [info]    [OpenAuto] [AudioFocusManager] generated stream id: 5, name: VoiceCallManager
+[2022-03-17 21:13:40.068346] [0xb0b7f040] [info]    [OpenAuto] [NotificationsController] registering channel, id: 1, name: VolumeController
+[2022-03-17 21:13:40.068467] [0xb0b7f040] [info]    [OpenAuto] [StatusIconsController] registering icon, id: 1, name: VolumeController, icon path: /images/ico_volume_muted.svg
+[2022-03-17 21:13:40.068921] [0xb0b7f040] [info]    [OpenAuto] [NotificationsController] registering channel, id: 2, name: AndroidAutoController
+[2022-03-17 21:13:40.068992] [0xb0b7f040] [info]    [OpenAuto] [StatusIconsController] registering icon, id: 2, name: AndroidAutoController, icon path: /images/ico_androidauto.svg
+[2022-03-17 21:13:40.069133] [0xb0b7f040] [info]    [OpenAuto] [StatusIconsController] registering icon, id: 3, name: AutoboxController, icon path: /images/ico_autobox.svg
+[2022-03-17 21:13:40.069196] [0xb0b7f040] [info]    [OpenAuto] [StatusIconsController] registering icon, id: 4, name: AutoboxController, icon path: /images/ico_autobox_running_no_color.svg
+[2022-03-17 21:13:40.075448] [0xb0b7f040] [info]    [OpenAuto] [StatusIconsController] registering icon, id: 5, name: ObdController, icon path: /images/ico_obd.svg
+[2022-03-17 21:13:40.078412] [0xb0b7f040] [info]    [OpenAuto] [NotificationsController] registering channel, id: 3, name: BrightnessController
+[2022-03-17 21:13:40.080490] [0xb0b7f040] [info]    [OpenAuto] [StatusIconsController] registering icon, id: 6, name: VoiceCallController, icon path: /images/ico_activecall_ongoing_status_no_color.svg
+[2022-03-17 21:13:40.080634] [0xb0b7f040] [info]    [OpenAuto] [NotificationsController] registering channel, id: 4, name: VoiceCallController
+[2022-03-17 21:13:40.080684] [0xb0b7f040] [info]    [OpenAuto] [StatusIconsController] registering icon, id: 7, name: VoiceCallController, icon path: /images/ico_bluetooth_connected.svg
+[2022-03-17 21:13:40.080780] [0xb0b7f040] [info]    [OpenAuto] [NotificationsController] registering channel, id: 5, name: A2DPController
+[2022-03-17 21:13:40.080917] [0xb0b7f040] [info]    [OpenAuto] [NotificationsController] registering channel, id: 6, name: StorageMusicController
+[2022-03-17 21:13:40.081387] [0xb0b7f040] [info]    [OpenAuto] [NotificationsController] registering channel, id: 7, name: RtlSdrFmController
+[2022-03-17 21:13:40.081540] [0xb0b7f040] [info]    [OpenAuto] [NotificationsController] registering channel, id: 8, name: PhoneNotificationsController
+[2022-03-17 21:13:40.081589] [0xb0b7f040] [info]    [OpenAuto] [StatusIconsController] registering icon, id: 8, name: PhoneNotificationsController, icon path: /images/ico_notification.svg
+[2022-03-17 21:13:40.081680] [0xb0b7f040] [info]    [OpenAuto] [StatusIconsController] registering icon, id: 9, name: PhoneNotificationsController, icon path: /images/ico_notification_unread.svg
+[2022-03-17 21:13:40.152871] [0xb0b7f040] [error]   [OpenAuto] [LanguageController] invalid language selected
+[2022-03-17 21:13:40.156690] [0xb0b7f040] [info]    [OpenAuto] [StatusIconsController] registering icon, id: 10, name: WifiController, icon path: /images/ico_wireless_hotspot.svg
+[2022-03-17 21:13:40.156817] [0xb0b7f040] [info]    [OpenAuto] [StatusIconsController] registering icon, id: 11, name: GestureSensorController, icon path: /images/ico_gesture.svg
+[2022-03-17 21:13:40.219658] [0xa50fb140] [info]    [OpenAuto] [AndroidAutoManager] initialized display region width: 800, height: 455, x: 0, y: 25
+[2022-03-17 21:13:40.219839] [0xa40f9140] [info]    [OpenAuto] [AutoboxManager] initialized display region width: 800, height: 455, x: 0, y: 25
+[2022-03-17 21:13:40.219978] [0xa40f9140] [info]    [OpenAuto] [AutoboxManager] initialized screen geometry width: 800, height: 455, x: 0, y: 25
+[2022-03-17 21:13:40.220042] [0xa50fb140] [info]    [OpenAuto] [AndroidAutoManager] initialized screen geometry width: 800, height: 455, x: 0, y: 25
+[2022-03-17 21:13:40.224266] [0xb0b7f040] [info]    [OpenAuto] [PulseSinkInputVolumeControl] connected
+[2022-03-17 21:13:40.228427] [0xb0b7f040] [error]   [OpenAuto] [StorageMusicManager] selecting directory error: filesystem error: recursive directory iterator cannot open directory: No such file or directory
+[2022-03-17 21:13:40.228571] [0xb0b7f040] [info]    [OpenAuto] [BluetoothSubsystem] start
+[2022-03-17 21:13:40.229227] [0xb0b7f040] [info]    [OpenAuto] [DayNightController] openauto manual mode changed, mode: 1
+[2022-03-17 21:13:40.229319] [0xb0b7f040] [debug]   [OpenAuto] [GestureSensorManager] start.
+[2022-03-17 21:13:40.229363] [0xb0b7f040] [debug]   [OpenAuto] [GestureSensorManager] sensor is not configured.
+[2022-03-17 21:13:40.229406] [0xb0b7f040] [debug]   [OpenAuto] [RearCameraController] start.
+[2022-03-17 21:13:40.229653] [0xb0b7f040] [debug]   [OpenAuto] [ObdManager] start.
+[2022-03-17 21:13:40.229719] [0xb0b7f040] [info]    [OpenAuto] [ObdManager] device is not configured.
+[2022-03-17 21:13:40.229765] [0xb0b7f040] [debug]   [OpenAuto] [TemperatureSensorManager] start.
+[2022-03-17 21:13:40.229813] [0xb0b7f040] [info]    [OpenAuto] [TemperatureSensorManager] empty sensor descriptor.
+[2022-03-17 21:13:40.229986] [0xa38f8140] [info]    [OpenAuto] [ApiEntity] start, clients limit: 3, port: 44405
+[2022-03-17 21:13:44.884891] [0xb0b7f040] [info]    [OpenAuto] [Autoapp] initializing interprocess routines.
+[2022-03-17 21:13:44.885213] [0xb0b7f040] [info]    [OpenAuto] [Autoapp] initialized interprocess routines.
+[2022-03-17 21:13:44.917575] [0xb0b7f040] [info]    [OpenAuto] [BaseEqualizerManager] server address call finished, result: 0
+[2022-03-17 21:13:44.918426] [0xb0b7f040] [info]    [OpenAuto] [BaseEqualizerManager] connecting to server: unix:path=/run/user/1000/pulse/dbus-socket
+[2022-03-17 21:13:44.918893] [0xb0b7f040] [info]    [OpenAuto] [BaseEqualizerManager] connection result: true
+[2022-03-17 21:13:44.919903] [0xb0b7f040] [info]    [OpenAuto] [HandsFreeModemsList] telephony availability changed: true
+[2022-03-17 21:13:44.919976] [0xb0b7f040] [info]    [OpenAuto] [HandsFreeModemsList] looking up modems, availability: true
+[2022-03-17 21:13:44.920204] [0xb0b7f040] [info]    [OpenAuto] [BluetoothSubsystem] bluetooth service start finished, value: 2, error: 0
+[2022-03-17 21:13:44.920260] [0xb0b7f040] [info]    [OpenAuto] [BluetoothSubsystem] starting bluetooth
+[2022-03-17 21:13:44.922083] [0xa28f6140] [info]    [OpenAuto] [AutoboxManager] initialized display region width: 800, height: 452, x: 0, y: 28
+[2022-03-17 21:13:44.922200] [0xa28f6140] [info]    [OpenAuto] [AutoboxManager] initialized screen geometry width: 800, height: 452, x: 0, y: 28
+[2022-03-17 21:13:44.922317] [0xa30f7140] [info]    [OpenAuto] [AndroidAutoManager] initialized display region width: 800, height: 452, x: 0, y: 28
+[2022-03-17 21:13:44.922377] [0xa30f7140] [info]    [OpenAuto] [AndroidAutoManager] initialized screen geometry width: 800, height: 452, x: 0, y: 28
+[2022-03-17 21:13:45.324156] [0xb0b7f040] [info]    [OpenAuto] [LadspaEqualizerManager] get sink by name call finished, result: 0
+[2022-03-17 21:13:45.324241] [0xb0b7f040] [info]    [OpenAuto] [LadspaEqualizerManager] sink path: /org/pulseaudio/core1/sink1, connection: 0x2607548
+[2022-03-17 21:13:45.337728] [0xb0b7f040] [info]    [OpenAuto] [BluetoothSubsystem] bluetooth manager start finished, value: 0
+[2022-03-17 21:13:45.405328] [0xb0b7f040] [info]    [OpenAuto] [BluetoothSubsystem] obex service start finished, value: 1, error: 0
+[2022-03-17 21:13:45.405426] [0xb0b7f040] [info]    [OpenAuto] [BluetoothSubsystem] starting obex
+[2022-03-17 21:13:45.420714] [0xb0b7f040] [info]    [OpenAuto] [Phonebook] obex manager operational changed, value: true
+[2022-03-17 21:13:45.420792] [0xb0b7f040] [info]    [OpenAuto] [BluetoothSubsystem] obex manager start finished, value: 0
+[2022-03-17 21:13:45.420838] [0xb0b7f040] [info]    [OpenAuto] [BluetoothSubsystem] registering profile: /io/bluewavestudio/openautopro/prap
+[2022-03-17 21:13:45.423033] [0xb0b7f040] [info]    [OpenAuto] [BluetoothSubsystem] registering profile: /io/bluewavestudio/openautopro/aawp
+[2022-03-17 21:13:45.425140] [0xb0b7f040] [info]    [OpenAuto] [Agent] start
+[2022-03-17 21:13:45.425238] [0xb0b7f040] [info]    [OpenAuto] [Agent] setting up current adapter, address: 00:1A:7D:DA:71:37
+[2022-03-17 21:13:45.425293] [0xb0b7f040] [info]    [OpenAuto] [Agent] registering
+[2022-03-17 21:13:45.427032] [0xb0b7f040] [info]    [OpenAuto] [HandsFreeModemConnector] looking for any connected modem.
+[2022-03-17 21:13:45.427182] [0xb0b7f040] [info]    [OpenAuto] [DeviceConnectionManager] trying connect to recent device, call handle: 0, recent address: 
+[2022-03-17 21:13:45.427209] [0xb0b7f040] [info]    [OpenAuto] [DeviceConnectionManager] recent device handle: 0
+[2022-03-17 21:13:45.427622] [0xb0b7f040] [info]    [OpenAuto] [BluetoothSubsystem] profile: /io/bluewavestudio/openautopro/prap, registration result: 0
+[2022-03-17 21:13:45.428016] [0xb0b7f040] [info]    [OpenAuto] [BluetoothSubsystem] profile: /io/bluewavestudio/openautopro/aawp, registration result: 0
+[2022-03-17 21:13:45.433823] [0xb0b7f040] [info]    [OpenAuto] [Agent] registration result: 0
+[2022-03-17 21:13:45.436186] [0xb0b7f040] [info]    [OpenAuto] [Agent] default request result: 0
+[2022-03-17 21:14:30.987872] [0xb0b7f040] [debug]   [OpenAuto] [GestureSensorManager] stop.
+[2022-03-17 21:14:30.988015] [0xa50fb140] [info]    [OpenAuto] [ApiEntity] stop
+[2022-03-17 21:14:30.992633] [0xa38f8140] [info]    [OpenAuto] [RtlSdrFmManager] stop
+[2022-03-17 21:14:30.992769] [0xa38f8140] [error]   [OpenAuto] [RtlSdrFmManager] stop reception failed, not activated
+[2022-03-17 21:14:30.992938] [0xa50fb140] [error]   [OpenAuto] [ApiEntity] accepting new connection failed, error: Operation cancelled
+[2022-03-17 21:14:30.993834] [0xb0b7f040] [debug]   [OpenAuto] [ObdManager] stop.
+[2022-03-17 21:14:30.993965] [0xb0b7f040] [debug]   [OpenAuto] [TemperatureSensorManager] stop.
+[2022-03-17 21:14:30.994024] [0xb0b7f040] [info]    [OpenAuto] [HandsFreeModemConnector] stop.
+[2022-03-17 21:14:30.994141] [0xb0b7f040] [info]    [OpenAuto] [DeviceConnectionManager] stop
+[2022-03-17 21:14:30.994248] [0xb0b7f040] [info]    [OpenAuto] [Agent] stop
+[2022-03-17 21:14:30.994371] [0xb0b7f040] [info]    [OpenAuto] [BluetoothSubsystem] unregistering profile: /io/bluewavestudio/openautopro/prap
+[2022-03-17 21:14:30.995520] [0xb0b7f040] [info]    [OpenAuto] [BluetoothSubsystem] unregistering profile: /io/bluewavestudio/openautopro/aawp
+[2022-03-17 21:14:30.997114] [0xa82ff140] [debug]   [OpenAuto] [autoapp] terminating USB thread.
+[2022-03-17 21:14:30.997555] [0xa7afe140] [debug]   [OpenAuto] [autoapp] terminating USB thread.
+[2022-03-17 21:14:30.997780] [0xa68fe140] [debug]   [OpenAuto] [autoapp] terminating USB thread.
+[2022-03-17 21:14:30.998018] [0xa70ff140] [debug]   [OpenAuto] [autoapp] terminating USB thread.
+[2022-03-17 21:14:30.999031] [0xa30f7140] [debug]   [OpenAuto] [autoapp] terminating IO thread.
+[2022-03-17 21:14:30.999135] [0xa58fc140] [debug]   [OpenAuto] [autoapp] terminating IO thread.
+[2022-03-17 21:14:30.999227] [0xa38f8140] [debug]   [OpenAuto] [autoapp] terminating IO thread.
+[2022-03-17 21:14:30.999278] [0xa28f6140] [debug]   [OpenAuto] [autoapp] terminating IO thread.
+[2022-03-17 21:14:30.999357] [0xa60fd140] [debug]   [OpenAuto] [autoapp] terminating IO thread.
+[2022-03-17 21:14:30.999461] [0xa48fa140] [debug]   [OpenAuto] [autoapp] terminating IO thread.
+[2022-03-17 21:14:30.999675] [0xa50fb140] [debug]   [OpenAuto] [autoapp] terminating IO thread.
+[2022-03-17 21:14:30.999744] [0xa40f9140] [debug]   [OpenAuto] [autoapp] terminating IO thread.
+[2022-03-17 21:14:31.054767] [0xb0b7f040] [debug]   [OpenAuto] [RearCameraController] destroy.
+[2022-03-17 21:14:31.054895] [0xb0b7f040] [debug]   [OpenAuto] [RearCameraController] stop.
+[2022-03-17 21:14:31.055299] [0x91abe140] [debug]   [OpenAuto] [RearCameraController] Stopping worker.
+[2022-03-17 21:14:31.116473] [0xb0b7f040] [info]    [OpenAuto] [AudioFocusManager] requested, stream: 4, type: 4
+[2022-03-17 21:14:31.116539] [0xb0b7f040] [info]    [OpenAuto] [AudioFocusManager] request result, stream: 4, focus type: 4, result: true
+[2022-03-17 21:14:31.122691] [0xb0b7f040] [info]    [OpenAuto] [AudioFocusManager] requested, stream: 2, type: 4
+[2022-03-17 21:14:31.122757] [0xb0b7f040] [info]    [OpenAuto] [AudioFocusManager] request result, stream: 2, focus type: 4, result: true
+[2022-03-17 21:14:31.125630] [0xb0b7f040] [debug]   [OpenAuto] [PulseSinkInputVolumeControl] destroyed

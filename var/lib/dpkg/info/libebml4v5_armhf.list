@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libebml.so.4.0.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libebml4v5
+/usr/share/doc/libebml4v5/changelog.Debian.gz
+/usr/share/doc/libebml4v5/changelog.gz
+/usr/share/doc/libebml4v5/copyright
+/usr/lib/arm-linux-gnueabihf/libebml.so.4

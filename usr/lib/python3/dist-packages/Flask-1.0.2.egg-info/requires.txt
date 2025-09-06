@@ -1,0 +1,16 @@
+
+[dev]
+coverage
+pallets-sphinx-themes
+pytest>=3
+sphinx
+sphinxcontrib-log-cabinet
+tox
+
+[docs]
+pallets-sphinx-themes
+sphinx
+sphinxcontrib-log-cabinet
+
+[dotenv]
+python-dotenv

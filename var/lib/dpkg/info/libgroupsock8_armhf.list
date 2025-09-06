@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libgroupsock.so.8.2.2
+/usr/share
+/usr/share/doc
+/usr/share/doc/libgroupsock8
+/usr/share/doc/libgroupsock8/NEWS.Debian.gz
+/usr/share/doc/libgroupsock8/changelog.Debian.gz
+/usr/share/doc/libgroupsock8/copyright
+/usr/lib/arm-linux-gnueabihf/libgroupsock.so.8

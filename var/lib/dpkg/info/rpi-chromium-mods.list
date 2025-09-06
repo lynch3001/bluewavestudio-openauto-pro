@@ -1,0 +1,14 @@
+/.
+/etc
+/etc/chromium-browser
+/etc/chromium-browser/customizations
+/etc/chromium-browser/customizations/00-rpi-vars
+/usr
+/usr/lib
+/usr/lib/chromium-browser
+/usr/lib/chromium-browser/master_preferences
+/usr/share
+/usr/share/doc
+/usr/share/doc/rpi-chromium-mods
+/usr/share/doc/rpi-chromium-mods/changelog.gz
+/usr/share/doc/rpi-chromium-mods/copyright

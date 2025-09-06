@@ -1,0 +1,2155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Chapter 3. The system initialization</title>
+    <link rel="stylesheet" type="text/css" href="debian-reference.css"/>
+    <meta name="generator" content="DocBook XSL Stylesheets V1.79.1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="home" href="index.en.html" title="Debian Reference"/>
+    <link rel="up" href="index.en.html" title="Debian Reference"/>
+    <link rel="prev" href="ch02.en.html" title="Chapter 2. Debian package management"/>
+    <link rel="next" href="ch04.en.html" title="Chapter 4. Authentication"/>
+  </head>
+  <body>
+    <div class="navheader">
+      <table width="100%" summary="Navigation header">
+        <tr>
+          <th colspan="3" align="center">Chapter 3. The system initialization</th>
+        </tr>
+        <tr>
+          <td align="left"><a accesskey="p" href="ch02.en.html"><img src="images/prev.png" alt="Prev"/></a> </td>
+          <th width="60%" align="center"> </th>
+          <td align="right"> <a accesskey="n" href="ch04.en.html"><img src="images/next.png" alt="Next"/></a></td>
+        </tr>
+      </table>
+      <hr/>
+    </div>
+    <div class="chapter">
+      <div class="titlepage">
+        <div>
+          <div>
+            <h1 class="title"><a id="_the_system_initialization"/>Chapter 3. The system initialization</h1>
+          </div>
+        </div>
+      </div>
+      <div class="toc">
+        <p>
+          <strong>Table of Contents</strong>
+        </p>
+        <dl class="toc">
+          <dt>
+            <span class="section">
+              <a href="ch03.en.html#_an_overview_of_the_boot_strap_process">3.1. An overview of the boot strap process</a>
+            </span>
+          </dt>
+          <dd>
+            <dl>
+              <dt>
+                <span class="section">
+                  <a href="ch03.en.html#_stage_1_the_bios">3.1.1. Stage 1: the BIOS</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="ch03.en.html#_stage_2_the_boot_loader">3.1.2. Stage 2: the boot loader</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="ch03.en.html#_stage_3_the_mini_debian_system">3.1.3. Stage 3: the mini-Debian system</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="ch03.en.html#_stage_4_the_normal_debian_system">3.1.4. Stage 4: the normal Debian system</a>
+                </span>
+              </dt>
+            </dl>
+          </dd>
+          <dt>
+            <span class="section">
+              <a href="ch03.en.html#_systemd_init">3.2. Systemd init</a>
+            </span>
+          </dt>
+          <dd>
+            <dl>
+              <dt>
+                <span class="section">
+                  <a href="ch03.en.html#_the_hostname">3.2.1. The hostname</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="ch03.en.html#_the_filesystem">3.2.2. The filesystem</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="ch03.en.html#_network_interface_initialization">3.2.3. Network interface initialization</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="ch03.en.html#_the_kernel_message">3.2.4. The kernel message</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="ch03.en.html#_the_system_message">3.2.5. The system message</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="ch03.en.html#_system_management_under_systemd">3.2.6. System management under systemd</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="ch03.en.html#_customizing_systemd">3.2.7. Customizing systemd</a>
+                </span>
+              </dt>
+            </dl>
+          </dd>
+          <dt>
+            <span class="section">
+              <a href="ch03.en.html#_the_udev_system">3.3. The udev system</a>
+            </span>
+          </dt>
+          <dd>
+            <dl>
+              <dt>
+                <span class="section">
+                  <a href="ch03.en.html#_the_kernel_module_initialization">3.3.1. The kernel module initialization</a>
+                </span>
+              </dt>
+            </dl>
+          </dd>
+        </dl>
+      </div>
+      <p>It is wise for you as the system administrator to know roughly how the Debian system is started and configured.  Although the exact details are in the source files of the packages installed and their documentations, it is a bit overwhelming for most of us.</p>
+      <p>I did my best to provide a quick overview of the key points of the Debian system and their configuration for your reference, based on the current and previous knowledge of mine and others. Since the Debian system is a moving target, the situation over the system may have been changed.  Before making any changes to the system, you should refer to the latest documentation for each package.</p>
+      <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+        <table border="0" summary="Tip">
+          <tr>
+            <td rowspan="2" align="center" valign="top">
+              <img alt="[Tip]" src="images/tip.png"/>
+            </td>
+            <th align="left">Tip</th>
+          </tr>
+          <tr>
+            <td align="left" valign="top">
+              <p><span class="citerefentry"><span class="refentrytitle">bootup</span>(7)</span> describes the system bootup process based on <code class="literal">systemd</code> . (Recent Debian)</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+        <table border="0" summary="Tip">
+          <tr>
+            <td rowspan="2" align="center" valign="top">
+              <img alt="[Tip]" src="images/tip.png"/>
+            </td>
+            <th align="left">Tip</th>
+          </tr>
+          <tr>
+            <td align="left" valign="top">
+              <p><span class="citerefentry"><span class="refentrytitle">boot</span>(7)</span> describes the system bootup process based on UNIX System V Release 4. (Older Debian)</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="section">
+        <div class="titlepage">
+          <div>
+            <div>
+              <h2 class="title"><a id="_an_overview_of_the_boot_strap_process"/>3.1. An overview of the boot strap process</h2>
+            </div>
+          </div>
+        </div>
+        <p>The computer system undergoes several phases of <a class="ulink" href="https://en.wikipedia.org/wiki/Booting">boot strap processes</a> from the power-on event until it offers the fully functional operating system (OS) to the user.</p>
+        <p>For simplicity, I limit discussion to the typical PC platform with the default installation.</p>
+        <p>The typical boot strap process is like a four-stage rocket.  Each stage rocket hands over the system control to the next stage one.</p>
+        <div class="itemizedlist">
+          <ul class="itemizedlist">
+            <li class="listitem">
+              <p>
+            <a class="xref" href="ch03.en.html#_stage_1_the_bios" title="3.1.1. Stage 1: the BIOS">Section 3.1.1, “Stage 1: the BIOS”</a>
+          </p>
+            </li>
+            <li class="listitem">
+              <p>
+            <a class="xref" href="ch03.en.html#_stage_2_the_boot_loader" title="3.1.2. Stage 2: the boot loader">Section 3.1.2, “Stage 2: the boot loader”</a>
+          </p>
+            </li>
+            <li class="listitem">
+              <p>
+            <a class="xref" href="ch03.en.html#_stage_3_the_mini_debian_system" title="3.1.3. Stage 3: the mini-Debian system">Section 3.1.3, “Stage 3: the mini-Debian system”</a>
+          </p>
+            </li>
+            <li class="listitem">
+              <p>
+            <a class="xref" href="ch03.en.html#_stage_4_the_normal_debian_system" title="3.1.4. Stage 4: the normal Debian system">Section 3.1.4, “Stage 4: the normal Debian system”</a>
+          </p>
+            </li>
+          </ul>
+        </div>
+        <p>Of course, these can be configured differently.  For example, if you compiled your own kernel, you may be skipping the step with the mini-Debian system.  So please do not assume this is the case for your system until you check it yourself.</p>
+        <div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+          <table border="0" summary="Note">
+            <tr>
+              <td rowspan="2" align="center" valign="top">
+                <img alt="[Note]" src="images/note.png"/>
+              </td>
+              <th align="left">Note</th>
+            </tr>
+            <tr>
+              <td align="left" valign="top">
+                <p>For non-legacy PC platform such as the SUN or the Macintosh system, the BIOS on ROM and the partition on the disk may be quite different (<a class="xref" href="ch09.en.html#_disk_partition_configuration" title="9.5.2. Disk partition configuration">Section 9.5.2, “Disk partition configuration”</a>).  Please seek the platform specific documentations elsewhere for such a case.</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_stage_1_the_bios"/>3.1.1. Stage 1: the BIOS</h3>
+              </div>
+            </div>
+          </div>
+          <p>The <a class="ulink" href="https://en.wikipedia.org/wiki/BIOS">BIOS</a> is the 1st stage of the boot process which is started by the power-on event. The <a class="ulink" href="https://en.wikipedia.org/wiki/BIOS">BIOS</a> residing on the <a class="ulink" href="https://en.wikipedia.org/wiki/Read-only_memory">read only memory (ROM)</a> is executed from the particular memory address to which the program counter of CPU is initialized by the power-on event.</p>
+          <p>This BIOS performs the basic initialization of the hardware (<a class="ulink" href="https://en.wikipedia.org/wiki/Power-on_self-test">POST: power on self test</a>) and hands the system control to the next step which you provide.  The BIOS is usually provided with the hardware.</p>
+          <p>The BIOS startup screen usually indicates what key(s) to press to enter the BIOS setup screen to configure the BIOS behavior. Popular keys used are F1, F2, F10, Esc, Ins, and Del. If your BIOS startup screen is hidden by a nice graphics screen, you may press some keys such as Esc to disable this.  These keys are highly dependent on the hardware.</p>
+          <p>The hardware location and the priority of the code started by the BIOS can be selected from the BIOS setup screen.  Typically, the first few sectors of the first found selected device (hard disk, floppy disk, CD-ROM, …) are loaded to the memory and this initial code is executed.  This initial code can be any one of the following.</p>
+          <div class="itemizedlist">
+            <ul class="itemizedlist">
+              <li class="listitem">
+                <p>
+The boot loader code
+</p>
+              </li>
+              <li class="listitem">
+                <p>
+The kernel code of the stepping stone OS such as <a class="ulink" href="http://www.freedos.org/">FreeDOS</a>
+</p>
+              </li>
+              <li class="listitem">
+                <p>
+The kernel code of the target OS if it fits in this small space
+</p>
+              </li>
+            </ul>
+          </div>
+          <p>Typically, the system is booted from the specified partition of the primary hard disk partition. First 2 sectors of the hard disk on legacy PC contain the <a class="ulink" href="https://en.wikipedia.org/wiki/Master_boot_record">master boot record (MBR)</a>.  The disk partition information including the boot selection is recorded at the end of this MBR. The first boot loader code executed from the BIOS occupies the rest of this MBR.</p>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_stage_2_the_boot_loader"/>3.1.2. Stage 2: the boot loader</h3>
+              </div>
+            </div>
+          </div>
+          <p>The <a class="ulink" href="https://en.wikipedia.org/wiki/Boot_loader">boot loader</a> is the 2nd stage of the boot process which is started by the BIOS.  It loads the system kernel image and the <a class="ulink" href="https://en.wikipedia.org/wiki/Initrd">initrd</a> image to the memory and hands control over to them.  This initrd image is the root filesystem image and its support depends on the bootloader used.</p>
+          <p>The Debian system normally uses the Linux kernel as the default system kernel. The initrd image for the current 2.6/3.x Linux kernel is technically the <a class="ulink" href="https://wiki.debian.org/initramfs">initramfs</a> (initial RAM filesystem) image. The basic initrd image is a compressed cpio archive of files in the root filesystem.  The kernel can update microcode very early during boot before loading this basic initrd image.  This is facilitated by the combined initrd image which is microcode binary blob in uncompressed cpio format followed by the basic initrd image.</p>
+          <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Tip">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Tip]" src="images/tip.png"/>
+                </td>
+                <th align="left">Tip</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p>You can inspect the content of the initrd image file using <span class="citerefentry"><span class="refentrytitle">lsinitramfs</span>(8)</span> and <span class="citerefentry"><span class="refentrytitle">unmkinitramfs</span>(8)</span> from the <code class="literal">initramfs-tools-core</code> package.  See more on  <a class="ulink" href="https://wiki.debian.org/initramfs">https://wiki.debian.org/initramfs</a>.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <p>The default install of the Debian system places first-stage GRUB boot loader code into the <a class="ulink" href="https://en.wikipedia.org/wiki/Master_boot_record">MBR</a> for the PC platform. There are many boot loaders and configuration options available.</p>
+          <div class="table">
+            <a id="listofbootloaders"/>
+            <p class="title">
+              <strong>Table 3.1. List of boot loaders</strong>
+            </p>
+            <div class="table-contents">
+              <table class="table" summary="List of boot loaders" border="1">
+                <colgroup>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th style="text-align: left">
+    package
+    </th>
+                    <th style="text-align: left">
+    popcon
+    </th>
+                    <th style="text-align: left">
+    size
+    </th>
+                    <th style="text-align: left">
+    initrd
+    </th>
+                    <th style="text-align: left">
+    bootloader
+    </th>
+                    <th style="text-align: left">
+    description
+    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/grub-legacy">
+    grub-legacy
+    </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=grub-legacy">V:0, I:2</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/g/grub-legacy.html">729</a>
+                    </td>
+                    <td style="text-align: left">
+    Supported
+    </td>
+                    <td style="text-align: left">
+                  <a class="ulink" href="https://en.wikipedia.org/wiki/GNU_GRUB">GRUB Legacy</a>
+                </td>
+                    <td style="text-align: left">
+    This is smart enough to understand disk partitions and filesystems such as vfat, ext3, ….
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/grub-pc">
+    grub-pc
+    </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=grub-pc">V:27, I:825</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/g/grub-pc.html">532</a>
+                    </td>
+                    <td style="text-align: left">
+    Supported
+    </td>
+                    <td style="text-align: left">
+                  <a class="ulink" href="https://en.wikipedia.org/wiki/GNU_GRUB">GRUB 2</a>
+                </td>
+                    <td style="text-align: left">
+    This is smart enough to understand disk partitions and filesystems such as vfat, ext4, …. (default)
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/grub-rescue-pc">
+    grub-rescue-pc
+    </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=grub-rescue-pc">V:0, I:1</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/g/grub-rescue-pc.html">6286</a>
+                    </td>
+                    <td style="text-align: left">
+    Supported
+    </td>
+                    <td style="text-align: left">
+                  <a class="ulink" href="https://en.wikipedia.org/wiki/GNU_GRUB">GRUB 2</a>
+                </td>
+                    <td style="text-align: left">
+    This is GRUB 2 bootable rescue images (CD and floppy) (PC/BIOS version)
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/lilo">
+    lilo
+    </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=lilo">V:0, I:3</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/l/lilo.html">693</a>
+                    </td>
+                    <td style="text-align: left">
+    Supported
+    </td>
+                    <td style="text-align: left">
+                  <a class="ulink" href="https://en.wikipedia.org/wiki/LILO_(boot_loader)">Lilo</a>
+                </td>
+                    <td style="text-align: left">
+    This relies on the sector locations of data on the hard disk. (Old)
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/syslinux">
+    syslinux
+    </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=syslinux">V:4, I:54</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/s/syslinux.html">344</a>
+                    </td>
+                    <td style="text-align: left">
+    Supported
+    </td>
+                    <td style="text-align: left">
+                  <a class="ulink" href="https://en.wikipedia.org/wiki/SYSLINUX">Isolinux</a>
+                </td>
+                    <td style="text-align: left">
+    This understands the ISO9660 filesystem.  This is used by the boot CD.
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/syslinux">
+    syslinux
+    </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=syslinux">V:4, I:54</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/s/syslinux.html">344</a>
+                    </td>
+                    <td style="text-align: left">
+    Supported
+    </td>
+                    <td style="text-align: left">
+                  <a class="ulink" href="https://en.wikipedia.org/wiki/SYSLINUX">Syslinux</a>
+                </td>
+                    <td style="text-align: left">
+    This understands the <a class="ulink" href="https://en.wikipedia.org/wiki/File_Allocation_Table">MSDOS filesystem (FAT)</a>.  This is used by the boot floppy.
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/loadlin">
+    loadlin
+    </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=loadlin">V:0, I:1</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/l/loadlin.html">83</a>
+                    </td>
+                    <td style="text-align: left">
+    Supported
+    </td>
+                    <td style="text-align: left">
+                  <a class="ulink" href="https://en.wikipedia.org/wiki/Loadlin">Loadlin</a>
+                </td>
+                    <td style="text-align: left">
+    New system is started from the FreeDOS/MSDOS system.
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/mbr">
+    mbr
+    </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=mbr">V:0, I:9</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/m/mbr.html">49</a>
+                    </td>
+                    <td style="text-align: left">
+    Not supported
+    </td>
+                    <td style="text-align: left">
+                  <a class="ulink" href="http://www.chiark.greenend.org.uk/~neilt/">MBR by Neil Turton</a>
+                </td>
+                    <td style="text-align: left">
+    This is free software which substitutes MSDOS <a class="ulink" href="https://en.wikipedia.org/wiki/Master_boot_record">MBR</a>.  This only understands disk partitions.
+    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <br class="table-break"/>
+          <div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Warning">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Warning]" src="images/warning.png"/>
+                </td>
+                <th align="left">Warning</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p>Do not play with boot loaders without having bootable rescue media (USB memory stick, CD or floppy) created from images in the <code class="literal">grub-rescue-pc</code> package.  It makes you boot your system even without functioning bootloader on the hard disk.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <p>For GRUB Legacy, the menu configuration file is located at "<code class="literal">/boot/grub/menu.lst</code>".  For example, it has entries as the following.</p>
+          <pre class="screen">title           Debian GNU/Linux
+root            (hd0,2)
+kernel          /vmlinuz root=/dev/hda3 ro
+initrd          /initrd.img</pre>
+          <p>For GRUB 2, the menu configuration file is located at "<code class="literal">/boot/grub/grub.cfg</code>". It is automatically generated by "<code class="literal">/usr/sbin/update-grub</code>" using templates from "<code class="literal">/etc/grub.d/*</code>" and settings from "<code class="literal">/etc/default/grub</code>".  For example, it has entries as the following.</p>
+          <pre class="screen">menuentry "Debian GNU/Linux" {
+        set root=(hd0,3)
+        linux /vmlinuz root=/dev/hda3
+        initrd /initrd.img
+}</pre>
+          <p>For these examples, these GRUB parameters mean the following.</p>
+          <div class="table">
+            <a id="themeaningofgrubparameters"/>
+            <p class="title">
+              <strong>Table 3.2. The meaning of GRUB parameters</strong>
+            </p>
+            <div class="table-contents">
+              <table class="table" summary="The meaning of GRUB parameters" border="1">
+                <colgroup>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th style="text-align: left">
+    GRUB parameter
+    </th>
+                    <th style="text-align: left">
+    meaning
+    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">root</code>
+                </td>
+                    <td style="text-align: left">
+    use 3rd partition on the primary disk by setting it as "<code class="literal">(hd0,2)</code>" in GRUB legacy or as "<code class="literal">(hd0,3)</code>" in GRUB 2
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">kernel</code>
+                </td>
+                    <td style="text-align: left">
+    use kernel located at "<code class="literal">/vmlinuz</code>" with kernel parameter: "<code class="literal">root=/dev/hda3 ro</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">initrd</code>
+                </td>
+                    <td style="text-align: left">
+    use <a class="ulink" href="https://en.wikipedia.org/wiki/Initrd">initrd/initramfs</a> image located at "<code class="literal">/initrd.img</code>"
+    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <br class="table-break"/>
+          <div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Note">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Note]" src="images/note.png"/>
+                </td>
+                <th align="left">Note</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p>The value of the partition number used by GRUB legacy program is one less than normal one used by Linux kernel and utility tools.  GRUB 2 program fixes this problem.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Tip">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Tip]" src="images/tip.png"/>
+                </td>
+                <th align="left">Tip</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p><a class="ulink" href="https://en.wikipedia.org/wiki/Universally_Unique_Identifier">UUID</a> (see <a class="xref" href="ch09.en.html#_accessing_partition_using_uuid" title="9.5.3. Accessing partition using UUID">Section 9.5.3, “Accessing partition using UUID”</a>) may be used to identify a block special device instead of its file name such as "<code class="literal">/dev/hda3</code>", e.g."<code class="literal">root=UUID=81b289d5-4341-4003-9602-e254a17ac232 ro</code>".</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Tip">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Tip]" src="images/tip.png"/>
+                </td>
+                <th align="left">Tip</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p>If <a class="ulink" href="https://en.wikipedia.org/wiki/GNU_GRUB">GRUB</a> is used, the kernel boot parameter is set in <code class="literal">/boot/grub/grub.cfg</code>.  On Debian system, you should not edit <code class="literal">/boot/grub/grub.cfg</code> directly.  You should edit the <code class="literal">GRUB_CMDLINE_LINUX_DEFAULT</code> value in <code class="literal">/etc/default/grub</code> and run <span class="citerefentry"><span class="refentrytitle">update-grub</span>(8)</span> to update <code class="literal">/boot/grub/grub.cfg</code>.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Tip">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Tip]" src="images/tip.png"/>
+                </td>
+                <th align="left">Tip</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p>You can start a boot loader from another boot loader using techniques called <a class="ulink" href="https://en.wikipedia.org/wiki/Chain_loading">chain loading</a>.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <p>See "<code class="literal">info grub</code>" and <span class="citerefentry"><span class="refentrytitle">grub-install</span>(8)</span>.</p>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_stage_3_the_mini_debian_system"/>3.1.3. Stage 3: the mini-Debian system</h3>
+              </div>
+            </div>
+          </div>
+          <p>The mini-Debian system is the 3rd stage of the boot process which is started by the boot loader.  It runs the system kernel with its root filesystem on the memory. This is an optional preparatory stage of the boot process.</p>
+          <div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Note">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Note]" src="images/note.png"/>
+                </td>
+                <th align="left">Note</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p>The term "the mini-Debian system" is coined by the author to describe this 3rd stage boot process for this document.  This system is commonly referred as the <a class="ulink" href="https://en.wikipedia.org/wiki/Initrd">initrd</a> or initramfs system. Similar system on the memory is used by <a class="ulink" href="https://www.debian.org/devel/debian-installer/">the Debian Installer</a>.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <p>The "<code class="literal">/init</code>" program is executed as the first program in this root filesystem on the memory. It is a program which initializes the kernel in user space and hands control over to the next stage. This mini-Debian system offers flexibility to the boot process such as adding kernel modules before the main boot process or mounting the root filesystem as an encrypted one.</p>
+          <div class="itemizedlist">
+            <ul class="itemizedlist">
+              <li class="listitem">
+                <p>
+The "<code class="literal">/init</code>" program is a shell script program if initramfs was created by <code class="literal">initramfs-tools</code>.
+</p>
+                <div class="itemizedlist">
+                  <ul class="itemizedlist">
+                    <li class="listitem">
+                      <p>
+You can interrupt this part of the boot process to gain root shell by providing "<code class="literal">break=init</code>" etc. to the kernel boot parameter. See the "<code class="literal">/init</code>" script for more break conditions.  This shell environment is sophisticated enough to make a good inspection of your machine's hardware.
+</p>
+                    </li>
+                    <li class="listitem">
+                      <p>
+Commands available in this mini-Debian system are stripped down ones and mainly provided by a GNU tool called <span class="citerefentry"><span class="refentrytitle">busybox</span>(1)</span>.
+</p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="listitem">
+                <p>
+The "<code class="literal">/init</code>" program is a binary <code class="literal">systemd</code> program if initramfs was created by <code class="literal">dracut</code>.
+</p>
+                <div class="itemizedlist">
+                  <ul class="itemizedlist">
+                    <li class="listitem">
+                      <p>
+Commands available in this mini-Debian system are stripped down <span class="citerefentry"><span class="refentrytitle">systemd</span>(1)</span> environment.
+</p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="caution" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Caution">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Caution]" src="images/caution.png"/>
+                </td>
+                <th align="left">Caution</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p>You need to use "<code class="literal">-n</code>" option for <code class="literal">mount</code> command when you are on the readonly root filesystem.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_stage_4_the_normal_debian_system"/>3.1.4. Stage 4: the normal Debian system</h3>
+              </div>
+            </div>
+          </div>
+          <p>The normal Debian system is the 4th stage of the boot process which is started by the mini-Debian system.  The system kernel for the mini-Debian system continues to run in this environment. The root filesystem is switched from the one on the memory to the one on the real hard disk filesystem.</p>
+          <p>The <a class="ulink" href="https://en.wikipedia.org/wiki/Init">init</a> program is executed as the first program with PID=1 to perform the main boot process of starting many programs.  The default file path for the init program is "<code class="literal">/sbin/init</code>" but it can be changed by the kernel boot parameter as "<code class="literal">init=/path/to/init_program</code>".</p>
+          <p>The default init program has been changing:</p>
+          <div class="itemizedlist">
+            <ul class="itemizedlist">
+              <li class="listitem">
+                <p>
+Debian before <code class="literal">squeeze</code> uses the simple <a class="ulink" href="https://en.wikipedia.org/wiki/UNIX_System_V">SysV</a>-style init.
+</p>
+              </li>
+              <li class="listitem">
+                <p>
+Debian <code class="literal">wheezy</code> improves the SysV-style init by ordering the boot sequence with LSB header and starting boot scripts in parallel.
+</p>
+              </li>
+              <li class="listitem">
+                <p>
+Debian <code class="literal">jessie</code> switches its default init to the <a class="ulink" href="https://en.wikipedia.org/wiki/Systemd">systemd</a> for the event-driven and parallel initialization.
+</p>
+              </li>
+            </ul>
+          </div>
+          <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Tip">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Tip]" src="images/tip.png"/>
+                </td>
+                <th align="left">Tip</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p>The actual init command on your system can be verified by the "<code class="literal">ps --pid 1 -f</code>" command.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Tip">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Tip]" src="images/tip.png"/>
+                </td>
+                <th align="left">Tip</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p>"<code class="literal">/sbin/init</code>" is symlinked to "<code class="literal">/lib/systemd/systemd</code>" after Debian <code class="literal">jessie</code>.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="table">
+            <a id="listofbootutilitrthedebiansystem"/>
+            <p class="title">
+              <strong>Table 3.3. List of boot utilities for the Debian system</strong>
+            </p>
+            <div class="table-contents">
+              <table class="table" summary="List of boot utilities for the Debian system" border="1">
+                <colgroup>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th style="text-align: left">
+    package
+    </th>
+                    <th style="text-align: left">
+    popcon
+    </th>
+                    <th style="text-align: left">
+    size
+    </th>
+                    <th style="text-align: left">
+    description
+    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/systemd">
+                  <code class="literal">systemd</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=systemd">V:750, I:858</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/s/systemd.html">13484</a>
+                    </td>
+                    <td style="text-align: left">
+    event-based <span class="citerefentry"><span class="refentrytitle">init</span>(8)</span> daemon for concurrency (alternative to <code class="literal">sysvinit</code>)
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/systemd-sysv">
+                  <code class="literal">systemd-sysv</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=systemd-sysv">V:733, I:852</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/s/systemd-sysv.html">122</a>
+                    </td>
+                    <td style="text-align: left">
+    the manual pages and links needed for <code class="literal">systemd</code> to replace <code class="literal">sysvinit</code>
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/systemd-cron">
+                  <code class="literal">systemd-cron</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=systemd-cron">V:0, I:1</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/s/systemd-cron.html">139</a>
+                    </td>
+                    <td style="text-align: left"><code class="literal">systemd</code> units to provide <code class="literal">cron</code> daemon and <code class="literal">anacron</code> functionality
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/init-system-helpers">
+                  <code class="literal">init-system-helpers</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=init-system-helpers">V:745, I:876</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/i/init-system-helpers.html">133</a>
+                    </td>
+                    <td style="text-align: left">
+    helper tools for switching between <code class="literal">sysvinit</code> and <code class="literal">systemd</code>
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/initscripts">
+                  <code class="literal">initscripts</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=initscripts">V:188, I:509</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/i/initscripts.html">213</a>
+                    </td>
+                    <td style="text-align: left">
+    scripts for initializing and shutting down the system
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/sysvinit-core">
+                  <code class="literal">sysvinit-core</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=sysvinit-core">V:10, I:13</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/s/sysvinit-core.html">263</a>
+                    </td>
+                    <td style="text-align: left">
+    System-V-like <span class="citerefentry"><span class="refentrytitle">init</span>(8)</span> utilities
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/sysv-rc">
+                  <code class="literal">sysv-rc</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=sysv-rc">V:334, I:520</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/s/sysv-rc.html">121</a>
+                    </td>
+                    <td style="text-align: left">
+    System-V-like runlevel change mechanism
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/sysvinit-utils">
+                  <code class="literal">sysvinit-utils</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=sysvinit-utils">V:729, I:999</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/s/sysvinit-utils.html">131</a>
+                    </td>
+                    <td style="text-align: left">
+    System-V-like utilities (<span class="citerefentry"><span class="refentrytitle">startpar</span>(8)</span>, <span class="citerefentry"><span class="refentrytitle">bootlogd</span>(8)</span>, …)
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/lsb-base">
+                  <code class="literal">lsb-base</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=lsb-base">V:886, I:999</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/l/lsb-base.html">49</a>
+                    </td>
+                    <td style="text-align: left"><a class="ulink" href="https://en.wikipedia.org/wiki/Linux_Standard_Base">Linux Standard Base</a> 3.2 init script functionality
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/insserv">
+                  <code class="literal">insserv</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=insserv">V:403, I:510</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/i/insserv.html">148</a>
+                    </td>
+                    <td style="text-align: left">
+    tool to organize boot sequence using LSB init.d script dependencies
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/uswsusp">
+                  <code class="literal">uswsusp</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=uswsusp">V:5, I:10</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/u/uswsusp.html">714</a>
+                    </td>
+                    <td style="text-align: left">
+    tools to use userspace software suspend provided by Linux
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/kexec-tools">
+                  <code class="literal">kexec-tools</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=kexec-tools">V:1, I:7</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/k/kexec-tools.html">271</a>
+                    </td>
+                    <td style="text-align: left">
+    kexec tool for <span class="citerefentry"><span class="refentrytitle">kexec</span>(8)</span> reboots (warm reboot)
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/systemd-bootchart">
+                  <code class="literal">systemd-bootchart</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=systemd-bootchart">V:0, I:0</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/s/systemd-bootchart.html">123</a>
+                    </td>
+                    <td style="text-align: left">
+    boot process performance analyser
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/bootchart2">
+                  <code class="literal">bootchart2</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=bootchart2">V:0, I:1</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/b/bootchart2.html">94</a>
+                    </td>
+                    <td style="text-align: left">
+    boot process performance analyser
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/pybootchartgui">
+                  <code class="literal">pybootchartgui</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=pybootchartgui">V:0, I:1</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/p/pybootchartgui.html">177</a>
+                    </td>
+                    <td style="text-align: left">
+    boot process performance analyser (visualisation)
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/mingetty">
+                  <code class="literal">mingetty</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=mingetty">V:0, I:3</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/m/mingetty.html">35</a>
+                    </td>
+                    <td style="text-align: left">
+    console-only <span class="citerefentry"><span class="refentrytitle">getty</span>(8)</span>
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/mgetty">
+                  <code class="literal">mgetty</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=mgetty">V:0, I:1</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/m/mgetty.html">319</a>
+                    </td>
+                    <td style="text-align: left">
+    smart modem <span class="citerefentry"><span class="refentrytitle">getty</span>(8)</span> replacement
+    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <br class="table-break"/>
+          <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Tip">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Tip]" src="images/tip.png"/>
+                </td>
+                <th align="left">Tip</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p>See <a class="ulink" href="https://wiki.debian.org/BootProcessSpeedup">Debian wiki: BootProcessSpeedup</a> for the latest tips to speed up the boot process.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="titlepage">
+          <div>
+            <div>
+              <h2 class="title"><a id="_systemd_init"/>3.2. Systemd init</h2>
+            </div>
+          </div>
+        </div>
+        <p>This section describes how system is started by the <span class="citerefentry"><span class="refentrytitle">systemd</span>(1)</span> program with <code class="literal">PID=1</code> (i.e., init process).</p>
+        <p>The <code class="literal">systemd</code> init process spawns processes in parallel based on the unit configuration files (see <span class="citerefentry"><span class="refentrytitle">systemd.unit</span>(5)</span>) which are written in declarative style instead of SysV-like procedural style.  These are loaded from a set of paths (see <span class="citerefentry"><span class="refentrytitle">systemd-system.conf</span>(5)</span>) as follows:</p>
+        <div class="itemizedlist">
+          <ul class="itemizedlist">
+            <li class="listitem">
+              <p>
+"<code class="literal">/lib/systemd/system</code>": OS default configuration files
+</p>
+            </li>
+            <li class="listitem">
+              <p>
+"<code class="literal">/etc/systemd/system</code>": system administrator configuration files which override the OS default configuration files
+</p>
+            </li>
+            <li class="listitem">
+              <p>
+"<code class="literal">/run/systemd/system</code>": run-time generated configuration files which override the installed configuration files
+</p>
+            </li>
+          </ul>
+        </div>
+        <p>Their inter-dependencies are specified by the directives "<code class="literal">Wants=</code>", "<code class="literal">Requires=</code>", "<code class="literal">Before=</code>", "<code class="literal">After=</code>", … (see "MAPPING OF UNIT PROPERTIES TO THEIR INVERSES" in <span class="citerefentry"><span class="refentrytitle">systemd.unit</span>(5)</span>).  The resource controls are also defined (see <span class="citerefentry"><span class="refentrytitle">systemd.resource-control</span>(5)</span>).</p>
+        <p>The suffix of the unit configuration file encodes their types as:</p>
+        <div class="itemizedlist">
+          <ul class="itemizedlist">
+            <li class="listitem">
+              <p><span class="strong"><strong>*.service</strong></span> describes the process controlled and supervised by <code class="literal">systemd</code>. See <span class="citerefentry"><span class="refentrytitle">systemd.service</span>(5)</span>.
+</p>
+            </li>
+            <li class="listitem">
+              <p><span class="strong"><strong>*.device</strong></span> describes the device exposed in the <span class="citerefentry"><span class="refentrytitle">sysfs</span>(5)</span> as <span class="citerefentry"><span class="refentrytitle">udev</span>(7)</span> device tree. See <span class="citerefentry"><span class="refentrytitle">systemd.device</span>(5)</span>.
+</p>
+            </li>
+            <li class="listitem">
+              <p><span class="strong"><strong>*.mount</strong></span> describes the file system mount point controlled and supervised by <code class="literal">systemd</code>. See <span class="citerefentry"><span class="refentrytitle">systemd.mount</span>(5)</span>.
+</p>
+            </li>
+            <li class="listitem">
+              <p><span class="strong"><strong>*.automount</strong></span> describes the file system auto mount point controlled and supervised by <code class="literal">systemd</code>. See <span class="citerefentry"><span class="refentrytitle">systemd.automount</span>(5)</span>.
+</p>
+            </li>
+            <li class="listitem">
+              <p><span class="strong"><strong>*.swap</strong></span> describes the swap device or file controlled and supervised by <code class="literal">systemd</code>. See <span class="citerefentry"><span class="refentrytitle">systemd.swap</span>(5)</span>.
+</p>
+            </li>
+            <li class="listitem">
+              <p><span class="strong"><strong>*.path</strong></span> describes the path monitored by <code class="literal">systemd</code> for path-based activation. See <span class="citerefentry"><span class="refentrytitle">systemd.path</span>(5)</span>.
+</p>
+            </li>
+            <li class="listitem">
+              <p><span class="strong"><strong>*.socket</strong></span> describes the socket controlled and supervised by <code class="literal">systemd</code> for socket-based activation. See <span class="citerefentry"><span class="refentrytitle">systemd.socket</span>(5)</span>.
+</p>
+            </li>
+            <li class="listitem">
+              <p><span class="strong"><strong>*.timer</strong></span> describes the timer controlled and supervised by <code class="literal">systemd</code> for timer-based activation. See <span class="citerefentry"><span class="refentrytitle">systemd.timer</span>(5)</span>.
+</p>
+            </li>
+            <li class="listitem">
+              <p><span class="strong"><strong>*.slice</strong></span> manages resources with the <span class="citerefentry"><span class="refentrytitle">cgroups</span>(7)</span>. See <span class="citerefentry"><span class="refentrytitle">systemd.slice</span>(5)</span>.
+</p>
+            </li>
+            <li class="listitem">
+              <p><span class="strong"><strong>*.scope</strong></span> is created programmatically using the bus interfaces of <code class="literal">systemd</code> to manages a set of system processes. See <span class="citerefentry"><span class="refentrytitle">systemd.scope</span>(5)</span>.
+</p>
+            </li>
+            <li class="listitem">
+              <p><span class="strong"><strong>*.target</strong></span> groups other unit configuration files to create the synchronization point during start-up. See <span class="citerefentry"><span class="refentrytitle">systemd.target</span>(5)</span>.
+</p>
+            </li>
+          </ul>
+        </div>
+        <p>Upon system start up (i.e., init), the <code class="literal">systemd</code> process tries to start the "<code class="literal">/lib/systemd/system/default.target</code> (normally symlinked to "<code class="literal">graphical.target</code>").  First, some special target units (see <span class="citerefentry"><span class="refentrytitle">systemd.special</span>(7)</span>) such as "<code class="literal">local-fs.target</code>", "<code class="literal">swap.target</code>" and "<code class="literal">cryptsetup.target</code>" are pulled in to mount the filesystems.  Then, other target units are also pulled in by the target unit dependencies. For details, read <span class="citerefentry"><span class="refentrytitle">bootup</span>(7)</span>.</p>
+        <p><code class="literal">systemd</code> offers backward compatibility features.  SysV-style boot scripts in "<code class="literal">/etc/init.d/rc[0123456S].d/[KS]&lt;name&gt;</code>" are still parsed and <span class="citerefentry"><span class="refentrytitle">telinit</span>(8)</span> is translated into systemd unit activation requests.</p>
+        <div class="caution" style="margin-left: 0.5in; margin-right: 0.5in;">
+          <table border="0" summary="Caution">
+            <tr>
+              <td rowspan="2" align="center" valign="top">
+                <img alt="[Caution]" src="images/caution.png"/>
+              </td>
+              <th align="left">Caution</th>
+            </tr>
+            <tr>
+              <td align="left" valign="top">
+                <p>Emulated runlevel 2 to 4 are all symlinked to the same "<code class="literal">multi-user.target</code>".</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_the_hostname"/>3.2.1. The hostname</h3>
+              </div>
+            </div>
+          </div>
+          <p>The kernel maintains the system <span class="strong"><strong>hostname</strong></span>.  The system unit started by <code class="literal">systemd-hostnamed.service</code> sets the system hostname at boot time to the name stored in "<code class="literal">/etc/hostname</code>".  This file should contain <span class="strong"><strong>only</strong></span> the system hostname, not a fully qualified domain name.</p>
+          <p>To print out the current hostname run <span class="citerefentry"><span class="refentrytitle">hostname</span>(1)</span> without an argument.</p>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_the_filesystem"/>3.2.2. The filesystem</h3>
+              </div>
+            </div>
+          </div>
+          <p>The mount options of normal disk and network filesystems are set in "<code class="literal">/etc/fstab</code>".  See <span class="citerefentry"><span class="refentrytitle">fstab</span>(5)</span> and <a class="xref" href="ch09.en.html#_optimization_of_filesystem_by_mount_options" title="9.5.7. Optimization of filesystem by mount options">Section 9.5.7, “Optimization of filesystem by mount options”</a>.</p>
+          <p>The configuration of the encrypted filesystem is set in "<code class="literal">/etc/crypttab</code>".  See <span class="citerefentry"><span class="refentrytitle">crypttab</span>(5)</span></p>
+          <p>The configuration of software RAID with <span class="citerefentry"><span class="refentrytitle">mdadm</span>(8)</span> is set in "<code class="literal">/etc/mdadm/mdadm.conf</code>".  See <span class="citerefentry"><span class="refentrytitle">mdadm.conf</span>(5)</span>.</p>
+          <div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Warning">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Warning]" src="images/warning.png"/>
+                </td>
+                <th align="left">Warning</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p>After mounting all the filesystems, temporary files in "<code class="literal">/tmp</code>", "<code class="literal">/var/lock</code>", and "<code class="literal">/var/run</code>" are cleaned for each boot up.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_network_interface_initialization"/>3.2.3. Network interface initialization</h3>
+              </div>
+            </div>
+          </div>
+          <p>Network interfaces are typically initialized in "<code class="literal">networking.service</code>" for the <code class="literal">lo</code> interface and "<code class="literal">NetworkManager.service</code>" for other interfaces on modern Debian desktop system under <code class="literal">systemd</code>.</p>
+          <p>See <a class="xref" href="ch05.en.html" title="Chapter 5. Network setup">Chapter 5, <em>Network setup</em></a> for how to configure them.</p>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_the_kernel_message"/>3.2.4. The kernel message</h3>
+              </div>
+            </div>
+          </div>
+          <p>The kernel error message displayed to the console can be configured by setting its threshold level.</p>
+          <pre class="screen"># dmesg -n3</pre>
+          <div class="table">
+            <a id="listofkernelerrorlevels"/>
+            <p class="title">
+              <strong>Table 3.4. List of kernel error levels</strong>
+            </p>
+            <div class="table-contents">
+              <table class="table" summary="List of kernel error levels" border="1">
+                <colgroup>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th style="text-align: left">
+    error level value
+    </th>
+                    <th style="text-align: left">
+    error level name
+    </th>
+                    <th style="text-align: left">
+    meaning
+    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align: left">
+    0
+    </td>
+                    <td style="text-align: left">
+    KERN_EMERG
+    </td>
+                    <td style="text-align: left">
+    system is unusable
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    1
+    </td>
+                    <td style="text-align: left">
+    KERN_ALERT
+    </td>
+                    <td style="text-align: left">
+    action must be taken immediately
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    2
+    </td>
+                    <td style="text-align: left">
+    KERN_CRIT
+    </td>
+                    <td style="text-align: left">
+    critical conditions
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    3
+    </td>
+                    <td style="text-align: left">
+    KERN_ERR
+    </td>
+                    <td style="text-align: left">
+    error conditions
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    4
+    </td>
+                    <td style="text-align: left">
+    KERN_WARNING
+    </td>
+                    <td style="text-align: left">
+    warning conditions
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    5
+    </td>
+                    <td style="text-align: left">
+    KERN_NOTICE
+    </td>
+                    <td style="text-align: left">
+    normal but significant condition
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    6
+    </td>
+                    <td style="text-align: left">
+    KERN_INFO
+    </td>
+                    <td style="text-align: left">
+    informational
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    7
+    </td>
+                    <td style="text-align: left">
+    KERN_DEBUG
+    </td>
+                    <td style="text-align: left">
+    debug-level messages
+    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <br class="table-break"/>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_the_system_message"/>3.2.5. The system message</h3>
+              </div>
+            </div>
+          </div>
+          <p>Under <code class="literal">systemd</code>, both kernel and system messages are logged by the journal service <code class="literal">systemd-journald.service</code> (a.k.a <code class="literal">journald</code>) either into a persistent binary data below "<code class="literal">/var/log/journal</code>" or into a volatile binary data below "<code class="literal">/run/log/journal/</code>". These binary log data are accessed by the <span class="citerefentry"><span class="refentrytitle">journalctl</span>(1)</span> command.</p>
+          <p>Under <code class="literal">systemd</code>, the system logging utility <span class="citerefentry"><span class="refentrytitle">rsyslogd</span>(8)</span> changes its behavior to read the volatile binary log data (instead of pre-systemd default "<code class="literal">/dev/log</code>") and to create traditional permanent ASCII system log data.</p>
+          <p>The system message can be customized by "<code class="literal">/etc/default/rsyslog</code>" and "<code class="literal">/etc/rsyslog.conf</code>" for both the log file and on-screen display. See <span class="citerefentry"><span class="refentrytitle">rsyslogd</span>(8)</span> and <span class="citerefentry"><span class="refentrytitle">rsyslog.conf</span>(5)</span>.  See also <a class="xref" href="ch09.en.html#_log_analyzer" title="9.2.2. Log analyzer">Section 9.2.2, “Log analyzer”</a>.</p>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_system_management_under_systemd"/>3.2.6. System management under systemd</h3>
+              </div>
+            </div>
+          </div>
+          <p>The <code class="literal">systemd</code> offers not only init system but also generic system management functionalities such as journal logging, login management, time management, network management. etc..</p>
+          <p>The <span class="citerefentry"><span class="refentrytitle">systemd</span>(1)</span> is managed by several commands:</p>
+          <div class="itemizedlist">
+            <ul class="itemizedlist">
+              <li class="listitem">
+                <p>
+the <span class="citerefentry"><span class="refentrytitle">systemctl</span>(1)</span> command controls the <code class="literal">systemd</code> system and service manager (CLI),
+</p>
+              </li>
+              <li class="listitem">
+                <p>
+the <span class="citerefentry"><span class="refentrytitle">systemsdm</span>(1)</span> command controls the <code class="literal">systemd</code> system and service manager (GUI),
+</p>
+              </li>
+              <li class="listitem">
+                <p>
+the <span class="citerefentry"><span class="refentrytitle">journalctl</span>(1)</span> command queries the <code class="literal">systemd</code> journal,
+</p>
+              </li>
+              <li class="listitem">
+                <p>
+the <span class="citerefentry"><span class="refentrytitle">loginctl</span>(1)</span> command controls the <code class="literal">systemd</code> login manager, and
+</p>
+              </li>
+              <li class="listitem">
+                <p>
+the <span class="citerefentry"><span class="refentrytitle">systemd-analyze</span>(1)</span> analyzes system boot-up performance.
+</p>
+              </li>
+            </ul>
+          </div>
+          <p>Here are a list of typical <code class="literal">systemd</code> management command snippets.  For the exact meanings, please read the pertinent manpages.</p>
+          <div class="table">
+            <a id="listoftypicalsystcommandsnippets"/>
+            <p class="title">
+              <strong>Table 3.5. List of typical <code class="literal">systemd</code> management command snippets</strong>
+            </p>
+            <div class="table-contents">
+              <table class="table" summary="List of typical systemd management command snippets" border="1">
+                <colgroup>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th style="text-align: left">
+    Operation
+    </th>
+                    <th style="text-align: left">
+    Type
+    </th>
+                    <th style="text-align: left">
+    Command snippets
+    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align: left">
+    GUI for service manager
+    </td>
+                    <td style="text-align: left">
+    GUI
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemadm</code>" (<code class="literal">systemd-ui</code> package)
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    List all target unit configuration
+    </td>
+                    <td style="text-align: left">
+    Unit
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemctl list-units --type=target</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    List all service unit configuration
+    </td>
+                    <td style="text-align: left">
+    Unit
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemctl list-units --type=service</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    List all unit configuration types
+    </td>
+                    <td style="text-align: left">
+    Unit
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemctl list-units --type=help</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    List all socket units in memory
+    </td>
+                    <td style="text-align: left">
+    Unit
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemctl list-sockets</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    List all timer units in memory
+    </td>
+                    <td style="text-align: left">
+    Unit
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemctl list-timers</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    Start "<code class="literal">$unit</code>"
+    </td>
+                    <td style="text-align: left">
+    Unit
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemctl start $unit</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    Stop "<code class="literal">$unit</code>"
+    </td>
+                    <td style="text-align: left">
+    Unit
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemctl stop $unit</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    Reload service-specific configuration
+    </td>
+                    <td style="text-align: left">
+    Unit
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemctl reload $unit</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    Stop and start all "<code class="literal">$unit</code>"
+    </td>
+                    <td style="text-align: left">
+    Unit
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemctl restart $unit</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    Start "<code class="literal">$unit</code>" and stop all others
+    </td>
+                    <td style="text-align: left">
+    Unit
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemctl isolate $unit</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    Switch to "<code class="literal">graphical</code>" (GUI system)
+    </td>
+                    <td style="text-align: left">
+    Unit
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemctl isolate graphical</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    Switch to "<code class="literal">multi-user</code>" (CLI system)
+    </td>
+                    <td style="text-align: left">
+    Unit
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemctl isolate multi-user</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    Switch to "<code class="literal">rescue</code>" (single user CLI system)
+    </td>
+                    <td style="text-align: left">
+    Unit
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemctl isolate rescue</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    Send kill signal to "<code class="literal">$unit</code>"
+    </td>
+                    <td style="text-align: left">
+    Unit
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemctl kill $unit</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    Check if "<code class="literal">$unit</code>" service is active
+    </td>
+                    <td style="text-align: left">
+    Unit
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemctl is-active $unit</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    Check if "<code class="literal">$unit</code>" service is failed
+    </td>
+                    <td style="text-align: left">
+    Unit
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemctl is-failed $unit</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    Check status of "<code class="literal">$unit|$PID|device</code>"
+    </td>
+                    <td style="text-align: left">
+    Unit
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemctl status $unit|$PID|$device</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    Show properties of "<code class="literal">$unit|$job</code>"
+    </td>
+                    <td style="text-align: left">
+    Unit
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemctl show $unit|$job</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    Reset failed "<code class="literal">$unit</code>"
+    </td>
+                    <td style="text-align: left">
+    Unit
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemctl reset-failed $unit"</code>
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    List dependency of all unit services
+    </td>
+                    <td style="text-align: left">
+    Unit
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemctl list-dependencies --all</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    List unit files installed on the system
+    </td>
+                    <td style="text-align: left">
+    Unit file
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemctl list-unit-files</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    Enable "<code class="literal">$unit</code>" (add symlink)
+    </td>
+                    <td style="text-align: left">
+    Unit file
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemctl enable $unit</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    Disable "<code class="literal">$unit</code>" (remove symlink)
+    </td>
+                    <td style="text-align: left">
+    Unit file
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemctl disable $unit</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    Unmask "<code class="literal">$unit</code>" (remove symlink to "<code class="literal">/dev/null</code>")
+    </td>
+                    <td style="text-align: left">
+    Unit file
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemctl unmask $unit</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    Mask "<code class="literal">$unit</code>" (add symlink to "<code class="literal">/dev/null</code>")
+    </td>
+                    <td style="text-align: left">
+    Unit file
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemctl mask $unit</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    Get default-target setting
+    </td>
+                    <td style="text-align: left">
+    Unit file
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemctl get-default</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    Set default-target to "<code class="literal">graphical</code>" (GUI system)
+    </td>
+                    <td style="text-align: left">
+    Unit file
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemctl set-default graphical</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    Set default-target to "<code class="literal">multi-user</code>" (CLI system)
+    </td>
+                    <td style="text-align: left">
+    Unit file
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemctl set-default multi-user</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    Show job environment
+    </td>
+                    <td style="text-align: left">
+    Environment
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemctl show-environment</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    Set job environment "<code class="literal">variable</code>" to "<code class="literal">value</code>"
+    </td>
+                    <td style="text-align: left">
+    Environment
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemctl set-environment variable=value</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    Unset job environment "<code class="literal">variable</code>"
+    </td>
+                    <td style="text-align: left">
+    Environment
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemctl unset-environment variable</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    Reload all unit files and daemons
+    </td>
+                    <td style="text-align: left">
+    Lifecycle
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemctl daemon-reload</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    Shut down the system
+    </td>
+                    <td style="text-align: left">
+    System
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemctl poweroff</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    Shut down and reboot the system
+    </td>
+                    <td style="text-align: left">
+    System
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemctl reboot</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    Suspend the system
+    </td>
+                    <td style="text-align: left">
+    System
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemctl suspend</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    Hibernate the system
+    </td>
+                    <td style="text-align: left">
+    System
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemctl hibernate</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    View job log of "<code class="literal">$unit</code>"
+    </td>
+                    <td style="text-align: left">
+    Journal
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">journalctl -u $unit</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    View job log of "<code class="literal">$unit</code>" ("<code class="literal">tail -f</code>" style)
+    </td>
+                    <td style="text-align: left">
+    Journal
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">journalctl -u $unit -f</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    Show time spent for each initialization steps
+    </td>
+                    <td style="text-align: left">
+    Analyze
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemd-analyze time</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    List of all units by the time to initialize
+    </td>
+                    <td style="text-align: left">
+    Analyze
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemd-analyze blame</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    Load and detect errors in "<code class="literal">$unit</code>" file
+    </td>
+                    <td style="text-align: left">
+    Analyze
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemd-analyze verify $unit</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    Track boot process by the <span class="citerefentry"><span class="refentrytitle">cgroups</span>(7)</span>
+    </td>
+                    <td style="text-align: left">
+    Cgroup
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">systemd-cgls</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    Track boot process by the <span class="citerefentry"><span class="refentrytitle">cgroups</span>(7)</span>
+    </td>
+                    <td style="text-align: left">
+    Cgroup
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">ps xawf -eo pid,user,cgroup,args</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    Track boot process by the <span class="citerefentry"><span class="refentrytitle">cgroups</span>(7)</span>
+    </td>
+                    <td style="text-align: left">
+    Cgroup
+    </td>
+                    <td style="text-align: left">
+    Read <a class="ulink" href="https://en.wikipedia.org/wiki/Sysfs">sysfs</a> under "<code class="literal">/sys/fs/cgroup/systemd/</code>"
+    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <br class="table-break"/>
+          <p>Here, "<code class="literal">$unit</code>" in the above examples may be a single unit name (suffix such as <code class="literal">.service</code> and <code class="literal">.target</code> are optional) or, in many cases, multiple unit specifications (shell-style globs "<code class="literal">*</code>", "<code class="literal">?</code>", "<code class="literal">[]</code>" using <span class="citerefentry"><span class="refentrytitle">fnmatch</span>(3)</span> which will be matched against the primary names of all units currently in memory).</p>
+          <p>System state changing commands in the above examples are typically preceded by the "<code class="literal">sudo</code>" to attain the required administrative privilege.</p>
+          <p>The output of the "<code class="literal">systemctl status $unit|$PID|$device</code>" uses color of the dot ("●") to summarize the unit state at a glance.</p>
+          <div class="itemizedlist">
+            <ul class="itemizedlist">
+              <li class="listitem">
+                <p>
+White "●" indicates an "inactive" or "deactivating" state.
+</p>
+              </li>
+              <li class="listitem">
+                <p>
+Red "●" indicates a "failed" or "error" state.
+</p>
+              </li>
+              <li class="listitem">
+                <p>
+Green "●" indicates an "active", "reloading" or "activating" state.
+</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_customizing_systemd"/>3.2.7. Customizing systemd</h3>
+              </div>
+            </div>
+          </div>
+          <p>With default installation, many network services (see <a class="xref" href="ch06.en.html" title="Chapter 6. Network applications">Chapter 6, <em>Network applications</em></a>) are started as daemon processes after <code class="literal">network.target</code> at boot time by <code class="literal">systemd</code>.  The "<code class="literal">sshd</code>" is no exception.  Let's change this to on-demand start of "<code class="literal">sshd</code>" as a customization example.</p>
+          <p>First, disable system installed service unit.</p>
+          <pre class="screen"> $ sudo systemctl stop sshd.service
+ $ sudo systemctl mask sshd.service</pre>
+          <p>The on-demand socket activation system of the classic Unix services was through the <code class="literal">indetd</code> superserver.  Under <code class="literal">systemd</code>, the equivalent can be enabled by adding <span class="strong"><strong>*.socket</strong></span> and <span class="strong"><strong>*.service</strong></span> unit configuration files.</p>
+          <p><code class="literal">sshd.socket</code> for specifying a socket to listen on</p>
+          <pre class="screen">[Unit]
+Description=SSH Socket for Per-Connection Servers
+
+[Socket]
+ListenStream=22
+Accept=yes
+
+[Install]
+WantedBy=sockets.target</pre>
+          <p><code class="literal">sshd@.service</code> as the matching service file of <code class="literal">sshd.socket</code></p>
+          <pre class="screen">[Unit]
+Description=SSH Per-Connection Server
+
+[Service]
+ExecStart=-/usr/sbin/sshd -i
+StandardInput=socket</pre>
+          <p>Then reload.</p>
+          <pre class="screen"> $ sudo systemctl daemon-reload</pre>
+        </div>
+      </div>
+      <div class="section">
+        <div class="titlepage">
+          <div>
+            <div>
+              <h2 class="title"><a id="_the_udev_system"/>3.3. The udev system</h2>
+            </div>
+          </div>
+        </div>
+        <p>For Linux kernel 2.6 and newer, <a class="ulink" href="https://en.wikipedia.org/wiki/Udev">the udev system</a> provides mechanism for the automatic hardware discovery and initialization (see <span class="citerefentry"><span class="refentrytitle">udev</span>(7)</span>). Upon discovery of each device by the kernel, the udev system starts a user process which uses information from the <a class="ulink" href="https://en.wikipedia.org/wiki/Sysfs">sysfs</a> filesystem (see <a class="xref" href="ch01.en.html#_procfs_and_sysfs" title="1.2.12. procfs and sysfs">Section 1.2.12, “procfs and sysfs”</a>), loads required kernel modules supporting it using the <span class="citerefentry"><span class="refentrytitle">modprobe</span>(8)</span> program (see <a class="xref" href="ch03.en.html#_the_kernel_module_initialization" title="3.3.1. The kernel module initialization">Section 3.3.1, “The kernel module initialization”</a>), and creates corresponding device nodes.</p>
+        <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+          <table border="0" summary="Tip">
+            <tr>
+              <td rowspan="2" align="center" valign="top">
+                <img alt="[Tip]" src="images/tip.png"/>
+              </td>
+              <th align="left">Tip</th>
+            </tr>
+            <tr>
+              <td align="left" valign="top">
+                <p>If "<code class="literal">/lib/modules/&lt;kernel-version&gt;/modules.dep</code>" was not generated properly by <span class="citerefentry"><span class="refentrytitle">depmod</span>(8)</span> for some reason, modules may not be loaded as expected by the udev system. Execute "<code class="literal">depmod -a</code>" to fix it.</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p>The name of device nodes can be configured by udev rule files in "<code class="literal">/etc/udev/rules.d/</code>".  Current default rules tend to create dynamically generated names resulting non-static device names except for cd and network devices.  By adding your custom rules similar to what cd and network devices do, you can generate static device names for other devices such as USB memory sticks, too.  See "<a class="ulink" href="http://www.reactivated.net/writing_udev_rules.html">Writing udev rules</a>" or "<code class="literal">/usr/share/doc/udev/writing_udev_rules/index.html</code>".</p>
+        <p>Since the udev system is somewhat a moving target, I leave details to other documentations and describe the minimum information here.</p>
+        <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+          <table border="0" summary="Tip">
+            <tr>
+              <td rowspan="2" align="center" valign="top">
+                <img alt="[Tip]" src="images/tip.png"/>
+              </td>
+              <th align="left">Tip</th>
+            </tr>
+            <tr>
+              <td align="left" valign="top">
+                <p>For mounting rules in "<code class="literal">/etc/fstab</code>", device nodes do not need to be static ones. You can use <a class="ulink" href="https://en.wikipedia.org/wiki/Universally_Unique_Identifier">UUID</a> to mount devices instead of device names such as "<code class="literal">/dev/sda</code>".  See <a class="xref" href="ch09.en.html#_accessing_partition_using_uuid" title="9.5.3. Accessing partition using UUID">Section 9.5.3, “Accessing partition using UUID”</a>.</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_the_kernel_module_initialization"/>3.3.1. The kernel module initialization</h3>
+              </div>
+            </div>
+          </div>
+          <p>The <span class="citerefentry"><span class="refentrytitle">modprobe</span>(8)</span> program enables us to configure running Linux kernel from user process by adding and removing kernel modules.  The udev system (see <a class="xref" href="ch03.en.html#_the_udev_system" title="3.3. The udev system">Section 3.3, “The udev system”</a>) automates its invocation to help the kernel module initialization.</p>
+          <p>There are non-hardware modules and special hardware driver modules as the following which need to be pre-loaded by listing them in the "<code class="literal">/etc/modules</code>" file (see <span class="citerefentry"><span class="refentrytitle">modules</span>(5)</span>).</p>
+          <div class="itemizedlist">
+            <ul class="itemizedlist">
+              <li class="listitem">
+                <p><a class="ulink" href="https://en.wikipedia.org/wiki/TUN/TAP">TUN/TAP</a> modules providing virtual Point-to-Point network device (TUN) and virtual Ethernet network device (TAP),
+</p>
+              </li>
+              <li class="listitem">
+                <p><a class="ulink" href="https://en.wikipedia.org/wiki/Netfilter">netfilter</a> modules providing netfilter firewall capabilities (<span class="citerefentry"><span class="refentrytitle">iptables</span>(8)</span>, <a class="xref" href="ch05.en.html#_netfilter_infrastructure" title="5.10. Netfilter infrastructure">Section 5.10, “Netfilter infrastructure”</a>), and
+</p>
+              </li>
+              <li class="listitem">
+                <p><a class="ulink" href="https://en.wikipedia.org/wiki/Watchdog_timer">watchdog timer</a> driver modules.
+</p>
+              </li>
+            </ul>
+          </div>
+          <p>The configuration files for the <span class="citerefentry"><span class="refentrytitle">modprobe</span>(8)</span> program are located under the "<code class="literal">/etc/modprobes.d/</code>" directory as explained in <span class="citerefentry"><span class="refentrytitle">modprobe.conf</span>(5)</span>.   (If you want to avoid some kernel modules to be auto-loaded, consider to blacklist them in the "<code class="literal">/etc/modprobes.d/blacklist</code>" file.)</p>
+          <p>The "<code class="literal">/lib/modules/&lt;version&gt;/modules.dep</code>" file generated by the <span class="citerefentry"><span class="refentrytitle">depmod</span>(8)</span> program describes module dependencies used by the <span class="citerefentry"><span class="refentrytitle">modprobe</span>(8)</span> program.</p>
+          <div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Note">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Note]" src="images/note.png"/>
+                </td>
+                <th align="left">Note</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p>If you experience module loading issues with boot time module loading or with <span class="citerefentry"><span class="refentrytitle">modprobe</span>(8)</span>, "<code class="literal">depmod -a</code>" may resolve these issues by reconstructing "<code class="literal">modules.dep</code>".</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <p>The <span class="citerefentry"><span class="refentrytitle">modinfo</span>(8)</span> program shows information about a Linux kernel module.</p>
+          <p>The <span class="citerefentry"><span class="refentrytitle">lsmod</span>(8)</span> program nicely formats the contents of the "<code class="literal">/proc/modules</code>", showing what kernel modules are currently loaded.</p>
+          <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Tip">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Tip]" src="images/tip.png"/>
+                </td>
+                <th align="left">Tip</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p>You can identify exact hardware on your system.  See <a class="xref" href="ch09.en.html#_hardware_identification" title="9.4.3. Hardware identification">Section 9.4.3, “Hardware identification”</a>.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Tip">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Tip]" src="images/tip.png"/>
+                </td>
+                <th align="left">Tip</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p>You may configure hardware at boot time to activate expected hardware features. See <a class="xref" href="ch09.en.html#_hardware_configuration" title="9.4.4. Hardware configuration">Section 9.4.4, “Hardware configuration”</a>.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Tip">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Tip]" src="images/tip.png"/>
+                </td>
+                <th align="left">Tip</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p>You can probably add support for your special device by recompiling the kernel.  See <a class="xref" href="ch09.en.html#_the_kernel" title="9.9. The kernel">Section 9.9, “The kernel”</a>.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navfooter">
+      <hr/>
+      <table width="100%" summary="Navigation footer">
+        <tr>
+          <td align="left"><a accesskey="p" href="ch02.en.html"><img src="images/prev.png" alt="Prev"/></a> </td>
+          <td align="center"> </td>
+          <td align="right"> <a accesskey="n" href="ch04.en.html"><img src="images/next.png" alt="Next"/></a></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top">Chapter 2. Debian package management </td>
+          <td align="center">
+            <a accesskey="h" href="index.en.html">
+              <img src="images/home.png" alt="Home"/>
+            </a>
+          </td>
+          <td align="right" valign="top"> Chapter 4. Authentication</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

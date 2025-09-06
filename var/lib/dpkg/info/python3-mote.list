@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/python3-mote
+/usr/share/doc/python3-mote/changelog.gz
+/usr/share/doc/python3-mote/copyright
+/usr/lib
+/usr/lib/python3
+/usr/lib/python3/dist-packages
+/usr/lib/python3/dist-packages/mote
+/usr/lib/python3/dist-packages/mote/__init__.py
+/usr/lib/python3/dist-packages/mote-0.0.4.egg-info
+/usr/lib/python3/dist-packages/mote-0.0.4.egg-info/requires.txt
+/usr/lib/python3/dist-packages/mote-0.0.4.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/mote-0.0.4.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/mote-0.0.4.egg-info/PKG-INFO

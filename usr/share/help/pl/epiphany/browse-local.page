@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="browse-local" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="index#adv"/>
+    <revision pkgversion="3.10" date="2013-06-30" status="incomplete"/>
+
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+<!--    <credit type="copyright editor">
+      <name></name>
+      <email its:translate="no"></email>
+      <years></years>
+    </credit>-->
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Jak wyświetlać pliki z komputera w <app>Przeglądarce WWW</app>?</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Wyświetlanie lokalnych plików</title>
+
+  <!-- For example, for viewing html files on your machine and stuff like
+  that. -->
+  <p>Niektóre typy plików na komputerze mogą być wyświetlane w <app>Przeglądarce WWW</app>. Jest to przydatne, jeśli zapisano stronę do przeczytania później lub tworzona jest nowa strona.</p>
+
+  <steps>
+    <item>
+      <p>Wybierz menu w górnym prawym rogu okna, a następnie <guiseq><gui style="menuitem">Otwórz…</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Zaznacz i otwórz plik do wyświetlenia.</p>
+    </item>
+  </steps>
+
+</page>

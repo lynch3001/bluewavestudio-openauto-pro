@@ -1,0 +1,8 @@
+BladeRF fx3 firmware and fpga configuration files
+are expected to be in this directory by default.
+
+Install the bladerf-firmware-fx3 package and
+at least one of bladerf-fpga-hostedx40 or bladerf-fpga-hostedx115
+packages, as appropriate for your hardware.
+
+Or, run `bladeRF-install-firmware` from the bladerf package.

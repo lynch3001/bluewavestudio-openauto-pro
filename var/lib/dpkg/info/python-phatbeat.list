@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/python-phatbeat
+/usr/share/doc/python-phatbeat/changelog.gz
+/usr/share/doc/python-phatbeat/copyright
+/usr/lib
+/usr/lib/python2.7
+/usr/lib/python2.7/dist-packages
+/usr/lib/python2.7/dist-packages/phatbeat-0.1.1.egg-info
+/usr/lib/python2.7/dist-packages/phatbeat-0.1.1.egg-info/requires.txt
+/usr/lib/python2.7/dist-packages/phatbeat-0.1.1.egg-info/dependency_links.txt
+/usr/lib/python2.7/dist-packages/phatbeat-0.1.1.egg-info/top_level.txt
+/usr/lib/python2.7/dist-packages/phatbeat-0.1.1.egg-info/PKG-INFO
+/usr/lib/python2.7/dist-packages/phatbeat
+/usr/lib/python2.7/dist-packages/phatbeat/__init__.py

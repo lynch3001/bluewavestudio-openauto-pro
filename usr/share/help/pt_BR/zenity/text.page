@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="text" xml:lang="pt-BR">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Use a opção <cmd>--text-info</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+  <title>Diálogo de informação textual</title>
+    <p>Use a opção <cmd>--text-info</cmd> para criar um diálogo de informação textual.</p>
+	
+    <p>O diálogo de informação textual oferece suporte às seguintes opções:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--filename</cmd>=<var>arquivo</var></title>
+	<p>Especifica um arquivo que será carregado no diálogo de informação textual.</p>
+      </item>
+
+      <item>
+        <title><cmd>--editable</cmd></title>
+        <p>Permite que o texto exibido seja editado. O texto editado é retornado para a saída padrão quando o diálogo é fechado.</p>
+      </item>
+
+      <item>
+        <title><cmd>--font</cmd>=<var>FONTE</var></title>
+	<p>Especifica a fonte do texto.</p>
+      </item>
+
+      <item>
+        <title><cmd>--checkbox</cmd>=<var>TEXTO</var></title>
+	<p>Habilita a caixa de seleção para uso como um “Eu lei e aceito os termos.”</p>
+      </item>
+
+      <item>
+        <title><cmd>--html</cmd></title>
+        <p>Habilita suporte a html.</p>
+      </item>
+
+      <item>
+        <title><cmd>--url</cmd>=<var>URL</var></title>
+	<p>Define uma url em vez de um arquivo. Funciona apenas se você usar a opção --html.</p>
+      </item>
+
+    </terms>
+
+    <p>O script de exemplo a seguir mostra como criar um diálogo de informação textual:</p>
+
+<code>
+#!/bin/sh
+
+# Você deve colocar o arquivo "COPYING" na mesma pasta deste script.
+ARQUIVO=`dirname $0`/COPYING
+
+zenity --text-info \
+       --title="Licença" \
+       --filename=$ARQUIVO \
+       --checkbox="Eu li e aceito os termos."
+
+case $? in
+    0)
+        echo "Iniciar a instalação!"
+	# próximo passo
+	;;
+    1)
+        echo "Parar a instalação!"
+	;;
+    -1)
+        echo "Ocorreu um erro inesperado."
+	;;
+esac
+</code>
+
+    <figure>
+      <title>Exemplo de diálogo de informação textual</title>
+      <desc>Exemplo de diálogo de informação textual do <app>Zenity</app></desc>
+      <media type="image" mime="image/png" src="figures/zenity-text-screenshot.png"/>
+    </figure>
+</page>

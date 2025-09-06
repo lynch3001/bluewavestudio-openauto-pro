@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="browse-local" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="index#adv"/>
+    <revision pkgversion="3.10" date="2013-06-30" status="incomplete"/>
+
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+<!--    <credit type="copyright editor">
+      <name></name>
+      <email its:translate="no"></email>
+      <years></years>
+    </credit>-->
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Como eu faço para ver os arquivos que estão em meu computador por um navegador web?</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013,</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Visualizando arquivos locais</title>
+
+  <!-- For example, for viewing html files on your machine and stuff like
+  that. -->
+  <p>Você pode ver alguns tipos de arquivos que estão em seu computador no navegador web. Isso pode ser útil se você tiver salvo um site para leitura posterior ou deseja pré-visualizar uma página web que você está criando.</p>
+
+  <steps>
+    <item>
+      <p>Selecione o menu no canto superior direito da janela e, então, <guiseq><gui style="menuitem">Abrir…</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Selecione e abra o arquivo que você deseja ver.</p>
+    </item>
+  </steps>
+
+</page>

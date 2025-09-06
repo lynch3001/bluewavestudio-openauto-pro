@@ -1,0 +1,10 @@
+#! /bin/sh
+set -e
+
+
+
+case "$1" in
+    remove)
+        rm -f /usr/lib/arm-linux-gnueabihf/vlc/plugins/plugins.dat
+        ;;
+esac

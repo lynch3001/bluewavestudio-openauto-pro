@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="calendar" xml:lang="da">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Brug tilvalget <cmd>--calendar</cmd>.</desc>
+  </info>
+  <title>Kalenderdialog</title>
+    <p>Brug <cmd>--calendar</cmd>-tilvalget til at oprette en kalenderdialog. Zenity returnerer den valgte dato til standardoutput. Hvis ingen dato angives på kommandolinjen, bruger dialogen den aktuelle dato.</p>
+    <p>Kalenderdialogen understøtter følgende tilvalg:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--text</cmd>=<var>tekst</var></title>
+	<p>Angiver teksten, der vises i kalenderdialogen.</p>
+      </item>
+     	
+      <item>
+        <title><cmd>--day</cmd>=<var>dag</var></title>
+	<p>Angiver den dag, der markeres i kalenderdialogen. dag skal være et tal mellem 1 og 31 inklusive.</p>
+      </item>
+
+      <item>
+        <title><cmd>--month</cmd>=<var>måned</var></title>
+	<p>Angiver måneden, der markeres i kalenderdialogen. måned skal være et tal mellem 1 og 12 inklusive.</p>
+      </item>
+
+      <item>
+        <title><cmd>--year</cmd>=<var>år</var></title>
+	<p>Angiver året, der markeres i kalenderdialogen.</p>
+      </item>
+
+      <item>
+        <title><cmd>--date-format</cmd>=<var>format</var></title>
+	<p>Angiver formatet, der returneres fra kalenderdialogen efter datoen er blevet valgt. Standardformatet afhænger af regionaldata. format skal være et format, som accepteres af <cmd>strftime</cmd>-funktionen, såsom <var>%A %d/%m/%y</var>.</p>
+      </item>
+
+    </terms>
+
+    <p>Følgende eksempelscript viser, hvordan man opretter en kalenderdialog:</p>
+
+<code>
+#!/bin/sh
+
+
+if zenity --calendar \
+--title="Vælg en dato" \
+--text="Klik på den dato, du vil vælge." \
+--day=10 --month=8 --year=2004
+  then echo $?
+  else echo "Ingen dato valgt"
+fi
+</code>
+
+
+    <figure>
+      <title>Eksempel på kalenderdialog</title>
+      <desc>Eksempel på kalenderdialog til Zenity</desc>
+      <media type="image" mime="image/png" src="figures/zenity-calendar-screenshot.png"/>
+   </figure>
+</page>

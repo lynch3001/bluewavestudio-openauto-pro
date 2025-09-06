@@ -1,0 +1,19 @@
+#!/bin/sh
+set -e
+
+# Automatically added by dh_python3:
+if which py3compile >/dev/null 2>&1; then
+	py3compile -p onboard 
+fi
+if which pypy3compile >/dev/null 2>&1; then
+	pypy3compile -p onboard  || true
+fi
+
+# End automatically added section
+# Automatically added by dh_icons/11.5.3
+if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-deconfigure" ] || [ "$1" = "abort-remove" ] ; then
+	if which update-icon-caches >/dev/null 2>&1 ; then
+		update-icon-caches /usr/share/icons/HighContrast /usr/share/icons/ubuntu-mono-dark /usr/share/icons/ubuntu-mono-light
+	fi
+fi
+# End automatically added section

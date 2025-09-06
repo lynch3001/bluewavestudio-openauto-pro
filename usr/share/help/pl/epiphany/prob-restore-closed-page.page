@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="prob-restore-closed-page" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="index#prob"/>
+    <revision pkgversion="3.12" date="2014-02-24" status="review"/>
+
+    <credit type="author copyright">
+      <name>Baptiste Mille-Mathias</name>
+      <email its:translate="no">baptistem@gnome.org</email>
+      <years>2014</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Przywracanie strony zamkniętej przez przypadek.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Jak przywrócić kartę?</title>
+
+  <p>Można przywrócić zamknięte strony dopóki co najmniej jedno okno <app>Przeglądarki WWW</app> jest otwarte.</p>
+
+  <steps>
+    <item>
+      <p>Wybierz <guiseq><gui style="menu">WWW</gui><gui style="menuitem">Przywróć zamkniętą kartę</gui></guiseq>, a ostatnio zamknięta strona zostanie przywrócona.</p>
+    </item>
+  </steps>
+
+  <p>Powtórz ten krok tyle razy, ile potrzeba do przywrócenia właściwej strony. Karty będą przywracane w odwrotnej kolejności, niż je zamknięto.</p>
+
+  <note style="important">
+    <p>Nie można przywrócić zamkniętej karty w trybie <link xref="browse-private">prywatnym</link>.</p>
+  </note>
+
+</page>

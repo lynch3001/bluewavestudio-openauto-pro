@@ -1,0 +1,8 @@
+a59a5854713114c00e8ba630ddecce93  usr/include/faad.h
+1ef2411071e00a26b3199d9201de63fc  usr/include/neaacdec.h
+a6135cba5afe7f98af7ad36fe5b074b7  usr/lib/arm-linux-gnueabihf/libfaad.a
+ce595e4a3f7746f166dabc6d674c834c  usr/lib/arm-linux-gnueabihf/libfaad_drm.a
+6af55bca93e289b77ca625fe63671091  usr/share/doc/libfaad-dev/changelog.Debian.gz
+9e455b2f5f3317f523f3e658042de6e1  usr/share/doc/libfaad-dev/changelog.gz
+c5d83c99ca23672724eeaa9e19439f41  usr/share/doc/libfaad-dev/copyright
+64f0a76b4aec8ac6161ba4b2e7f9fee8  usr/share/man/man3/libfaad.3.gz

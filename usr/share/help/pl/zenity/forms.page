@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="forms" xml:lang="pl">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Używanie opcji <cmd>--forms</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+  <title>Okno formularza</title>
+    <p>Użyj opcji <cmd>--forms</cmd>, aby utworzyć okno formularza.</p>
+	
+    <p>Okno formularza obsługuje te opcje:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--add-entry</cmd>=<var>NazwaPola</var></title>
+	<p>Dodaje nowy wpis w oknie formularza.</p>
+      </item>
+
+      <item>
+        <title>--add-password<cmd/>=<var>NazwaPola</var></title>
+	<p>Dodaje nowy wpis hasła w oknie formularza (ukrywa tekst).</p>
+      </item>
+
+      <item>
+        <title><cmd>--add-calendar</cmd>=<var>NazwaPola</var></title>
+	<p>Dodaje nowy kalendarz w oknie formularza.</p>
+      </item>
+
+      <item>
+        <title><cmd>--text</cmd>=<var>TEKST</var></title>
+	<p>Ustawia tekst okna.</p>
+      </item>
+
+      <item>
+        <title><cmd>--separator</cmd>=<var>SEPARATOR</var></title>
+	<p>Ustawia znak separatora wyjścia (domyślnie „|”).</p>
+      </item>
+
+      <item>
+        <title><cmd>--forms-date-format</cmd>=<var>WZÓR</var></title>
+	<p>Określa format zwracanej daty. Domyślny format zależy od języka systemu. Format musi zgadzać się z funkcją <cmd>strftime</cmd>, na przykład <var>%A, %d.%m.%y</var>.</p>
+      </item>
+
+    </terms>
+
+    <p>Ten przykładowy skrypt pokazuje, jak utworzyć okno formularza:</p>
+
+<code>
+#!/bin/sh
+
+zenity --forms --title="Dodanie znajomego" \
+	--text="Proszę podać informacje o znajomym." \
+	--separator="," \
+	--add-entry="Imię" \
+	--add-entry="Nazwisko" \
+	--add-entry="Adres e-mail" \
+	--add-calendar="Urodziny" &gt;&gt; adres.csv
+
+case $? in
+    0)
+        echo "Dodano znajomego.";;
+    1)
+        echo "Nie dodano znajomego."
+	;;
+    -1)
+        echo "Wystąpił nieoczekiwany błąd."
+	;;
+esac
+</code>
+
+    <figure>
+      <title>Przykład okna formularza</title>
+      <desc>Przykład okna formularza <app>Zenity</app></desc>
+      <media type="image" mime="image/png" src="figures/zenity-forms-screenshot.png"/>
+    </figure>
+</page>

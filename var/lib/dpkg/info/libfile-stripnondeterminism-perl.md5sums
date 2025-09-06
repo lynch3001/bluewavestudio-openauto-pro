@@ -1,0 +1,13 @@
+bce1399b1ebb15b5b206c6c02a307ca5  usr/share/doc/libfile-stripnondeterminism-perl/changelog.Debian.gz
+13a5421e1d29f3f10e273c5e15ff22ed  usr/share/doc/libfile-stripnondeterminism-perl/copyright
+dadc545fdf721dcf451dbb46411816bb  usr/share/perl5/File/StripNondeterminism.pm
+7667ec373af89ba116a6b11b5fecaa9d  usr/share/perl5/File/StripNondeterminism/Common.pm
+c509a3331f51107aebeae3a365d02374  usr/share/perl5/File/StripNondeterminism/handlers/bflt.pm
+f5536b6dea616914f0eed22b506ecb4e  usr/share/perl5/File/StripNondeterminism/handlers/cpio.pm
+ed69121e87f08c6bb8c33e9e30c4fb24  usr/share/perl5/File/StripNondeterminism/handlers/gettext.pm
+08edd382376a033c13da324e2f6280c5  usr/share/perl5/File/StripNondeterminism/handlers/gzip.pm
+49220c1ffb681bdcc5ac6d431b829b82  usr/share/perl5/File/StripNondeterminism/handlers/jar.pm
+a853c2fea9028bbdc8dc20d50b6a8052  usr/share/perl5/File/StripNondeterminism/handlers/javadoc.pm
+1cd6683e7dae5449aeb9427f88ad9bf9  usr/share/perl5/File/StripNondeterminism/handlers/png.pm
+03d97b2f45faeac3e50c632da8ce2054  usr/share/perl5/File/StripNondeterminism/handlers/uimage.pm
+298f9c4283db055de7a7fa70bf26a00b  usr/share/perl5/File/StripNondeterminism/handlers/zip.pm

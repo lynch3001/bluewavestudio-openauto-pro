@@ -1,0 +1,3144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Chapter 12. Programming</title>
+    <link rel="stylesheet" type="text/css" href="debian-reference.css"/>
+    <meta name="generator" content="DocBook XSL Stylesheets V1.79.1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="home" href="index.en.html" title="Debian Reference"/>
+    <link rel="up" href="index.en.html" title="Debian Reference"/>
+    <link rel="prev" href="ch11.en.html" title="Chapter 11. Data conversion"/>
+    <link rel="next" href="apa.en.html" title="Appendix A. Appendix"/>
+  </head>
+  <body>
+    <div class="navheader">
+      <table width="100%" summary="Navigation header">
+        <tr>
+          <th colspan="3" align="center">Chapter 12. Programming</th>
+        </tr>
+        <tr>
+          <td align="left"><a accesskey="p" href="ch11.en.html"><img src="images/prev.png" alt="Prev"/></a> </td>
+          <th width="60%" align="center"> </th>
+          <td align="right"> <a accesskey="n" href="apa.en.html"><img src="images/next.png" alt="Next"/></a></td>
+        </tr>
+      </table>
+      <hr/>
+    </div>
+    <div class="chapter">
+      <div class="titlepage">
+        <div>
+          <div>
+            <h1 class="title"><a id="_programming"/>Chapter 12. Programming</h1>
+          </div>
+        </div>
+      </div>
+      <div class="toc">
+        <p>
+          <strong>Table of Contents</strong>
+        </p>
+        <dl class="toc">
+          <dt>
+            <span class="section">
+              <a href="ch12.en.html#_the_shell_script">12.1. The shell script</a>
+            </span>
+          </dt>
+          <dd>
+            <dl>
+              <dt>
+                <span class="section">
+                  <a href="ch12.en.html#_posix_shell_compatibility">12.1.1. POSIX shell compatibility</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="ch12.en.html#_shell_parameters">12.1.2. Shell parameters</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="ch12.en.html#_shell_conditionals">12.1.3. Shell conditionals</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="ch12.en.html#_shell_loops">12.1.4. Shell loops</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="ch12.en.html#_the_shell_command_line_processing_sequence">12.1.5. The shell command-line processing sequence</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="ch12.en.html#_utility_programs_for_shell_script">12.1.6. Utility programs for shell script</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="ch12.en.html#_shell_script_dialog">12.1.7. Shell script dialog</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="ch12.en.html#_shell_script_example_with_zenity">12.1.8. Shell script example with zenity</a>
+                </span>
+              </dt>
+            </dl>
+          </dd>
+          <dt>
+            <span class="section">
+              <a href="ch12.en.html#_make">12.2. Make</a>
+            </span>
+          </dt>
+          <dt>
+            <span class="section">
+              <a href="ch12.en.html#_c">12.3. C</a>
+            </span>
+          </dt>
+          <dd>
+            <dl>
+              <dt>
+                <span class="section">
+                  <a href="ch12.en.html#_simple_c_program_gcc">12.3.1. Simple C program (gcc)</a>
+                </span>
+              </dt>
+            </dl>
+          </dd>
+          <dt>
+            <span class="section">
+              <a href="ch12.en.html#_debug">12.4. Debug</a>
+            </span>
+          </dt>
+          <dd>
+            <dl>
+              <dt>
+                <span class="section">
+                  <a href="ch12.en.html#_basic_gdb_execution">12.4.1. Basic gdb execution</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="ch12.en.html#_debugging_the_debian_package">12.4.2. Debugging the Debian package</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="ch12.en.html#_obtaining_backtrace">12.4.3. Obtaining backtrace</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="ch12.en.html#_advanced_gdb_commands">12.4.4. Advanced gdb commands</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="ch12.en.html#_debugging_x_errors">12.4.5. Debugging X Errors</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="ch12.en.html#_check_dependency_on_libraries">12.4.6. Check dependency on libraries</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="ch12.en.html#_memory_leak_detection_tools">12.4.7. Memory leak detection tools</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="ch12.en.html#_static_code_analysis_tools">12.4.8. Static code analysis tools</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="ch12.en.html#_disassemble_binary">12.4.9. Disassemble binary</a>
+                </span>
+              </dt>
+            </dl>
+          </dd>
+          <dt>
+            <span class="section">
+              <a href="ch12.en.html#_flex_a_better_lex">12.5. Flex — a better Lex</a>
+            </span>
+          </dt>
+          <dt>
+            <span class="section">
+              <a href="ch12.en.html#_bison_a_better_yacc">12.6. Bison — a better Yacc</a>
+            </span>
+          </dt>
+          <dt>
+            <span class="section">
+              <a href="ch12.en.html#_autoconf">12.7. Autoconf</a>
+            </span>
+          </dt>
+          <dd>
+            <dl>
+              <dt>
+                <span class="section">
+                  <a href="ch12.en.html#_compile_and_install_a_program">12.7.1. Compile and install a program</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="ch12.en.html#_uninstall_program">12.7.2. Uninstall program</a>
+                </span>
+              </dt>
+            </dl>
+          </dd>
+          <dt>
+            <span class="section">
+              <a href="ch12.en.html#_perl_short_script_madness">12.8. Perl short script madness</a>
+            </span>
+          </dt>
+          <dt>
+            <span class="section">
+              <a href="ch12.en.html#_web">12.9. Web</a>
+            </span>
+          </dt>
+          <dt>
+            <span class="section">
+              <a href="ch12.en.html#_the_source_code_translation">12.10. The source code translation</a>
+            </span>
+          </dt>
+          <dt>
+            <span class="section">
+              <a href="ch12.en.html#_making_debian_package">12.11. Making Debian package</a>
+            </span>
+          </dt>
+        </dl>
+      </div>
+      <p>I provide some pointers for people to learn programming on the Debian system enough to trace the packaged source code.  Here are notable packages and corresponding documentation packages for programming.</p>
+      <div class="table">
+        <a id="listofpackagestohelpprogramming"/>
+        <p class="title">
+          <strong>Table 12.1. List of packages to help programming</strong>
+        </p>
+        <div class="table-contents">
+          <table class="table" summary="List of packages to help programming" border="1">
+            <colgroup>
+              <col style="text-align: left"/>
+              <col style="text-align: left"/>
+              <col style="text-align: left"/>
+              <col style="text-align: left"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <th style="text-align: left">
+    package
+    </th>
+                <th style="text-align: left">
+    popcon
+    </th>
+                <th style="text-align: left">
+    size
+    </th>
+                <th style="text-align: left">
+    documentation
+    </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.debian.org/sid/autoconf">
+              <code class="literal">autoconf</code>
+            </a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=autoconf">V:38, I:269</a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.qa.debian.org/a/autoconf.html">1868</a>
+                </td>
+                <td style="text-align: left">
+    "<code class="literal">info autoconf</code>" provided by <code class="literal">autoconf-doc</code>
+    </td>
+              </tr>
+              <tr>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.debian.org/sid/automake">
+              <code class="literal">automake</code>
+            </a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=automake">V:37, I:265</a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.qa.debian.org/a/automake.html">1784</a>
+                </td>
+                <td style="text-align: left">
+    "<code class="literal">info automake</code>" provided by <code class="literal">automake1.10-doc</code>
+    </td>
+              </tr>
+              <tr>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.debian.org/sid/bash">
+              <code class="literal">bash</code>
+            </a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=bash">V:826, I:999</a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.qa.debian.org/b/bash.html">6462</a>
+                </td>
+                <td style="text-align: left">
+    "<code class="literal">info bash</code>" provided by <code class="literal">bash-doc</code>
+    </td>
+              </tr>
+              <tr>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.debian.org/sid/bison">
+              <code class="literal">bison</code>
+            </a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=bison">V:11, I:109</a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.qa.debian.org/b/bison.html">2253</a>
+                </td>
+                <td style="text-align: left">
+    "<code class="literal">info bison</code>" provided by <code class="literal">bison-doc</code>
+    </td>
+              </tr>
+              <tr>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.debian.org/sid/cpp">
+              <code class="literal">cpp</code>
+            </a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=cpp">V:389, I:790</a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.qa.debian.org/c/cpp.html">42</a>
+                </td>
+                <td style="text-align: left">
+    "<code class="literal">info cpp</code>" provided by <code class="literal">cpp-doc</code>
+    </td>
+              </tr>
+              <tr>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.debian.org/sid/ddd">
+              <code class="literal">ddd</code>
+            </a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=ddd">V:0, I:12</a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.qa.debian.org/d/ddd.html">3929</a>
+                </td>
+                <td style="text-align: left">
+    "<code class="literal">info ddd</code>" provided by <code class="literal">ddd-doc</code>
+    </td>
+              </tr>
+              <tr>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.debian.org/sid/exuberant-ctags">
+              <code class="literal">exuberant-ctags</code>
+            </a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=exuberant-ctags">V:7, I:42</a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.qa.debian.org/e/exuberant-ctags.html">333</a>
+                </td>
+                <td style="text-align: left"><span class="citerefentry"><span class="refentrytitle">exuberant-ctags</span>(1)</span>
+    </td>
+              </tr>
+              <tr>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.debian.org/sid/flex">
+              <code class="literal">flex</code>
+            </a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=flex">V:10, I:98</a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.qa.debian.org/f/flex.html">1225</a>
+                </td>
+                <td style="text-align: left">
+    "<code class="literal">info flex</code>" provided by <code class="literal">flex-doc</code>
+    </td>
+              </tr>
+              <tr>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.debian.org/sid/gawk">
+              <code class="literal">gawk</code>
+            </a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=gawk">V:443, I:535</a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.qa.debian.org/g/gawk.html">2412</a>
+                </td>
+                <td style="text-align: left">
+    "<code class="literal">info gawk</code>" provided by <code class="literal">gawk-doc</code>
+    </td>
+              </tr>
+              <tr>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.debian.org/sid/gcc">
+              <code class="literal">gcc</code>
+            </a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=gcc">V:173, I:598</a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.qa.debian.org/g/gcc.html">45</a>
+                </td>
+                <td style="text-align: left">
+    "<code class="literal">info gcc</code>" provided by <code class="literal">gcc-doc</code>
+    </td>
+              </tr>
+              <tr>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.debian.org/sid/gdb">
+              <code class="literal">gdb</code>
+            </a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=gdb">V:17, I:124</a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.qa.debian.org/g/gdb.html">8989</a>
+                </td>
+                <td style="text-align: left">
+    "<code class="literal">info gdb</code>" provided by <code class="literal">gdb-doc</code>
+    </td>
+              </tr>
+              <tr>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.debian.org/sid/gettext">
+              <code class="literal">gettext</code>
+            </a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=gettext">V:52, I:345</a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.qa.debian.org/g/gettext.html">6594</a>
+                </td>
+                <td style="text-align: left">
+    "<code class="literal">info gettext</code>" provided by <code class="literal">gettext-doc</code>
+    </td>
+              </tr>
+              <tr>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.debian.org/sid/gfortran">
+              <code class="literal">gfortran</code>
+            </a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=gfortran">V:8, I:79</a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.qa.debian.org/g/gfortran.html">16</a>
+                </td>
+                <td style="text-align: left">
+    "<code class="literal">info gfortran</code>" provided by <code class="literal">gfortran-doc</code> (Fortran 95)
+    </td>
+              </tr>
+              <tr>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.debian.org/sid/fpc">
+              <code class="literal">fpc</code>
+            </a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=fpc">I:4</a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.qa.debian.org/f/fpc.html">120</a>
+                </td>
+                <td style="text-align: left"><span class="citerefentry"><span class="refentrytitle">fpc</span>(1)</span> and html by <code class="literal">fp-docs</code> (Pascal)
+    </td>
+              </tr>
+              <tr>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.debian.org/sid/glade">
+              <code class="literal">glade</code>
+            </a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=glade">V:1, I:9</a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.qa.debian.org/g/glade.html">2306</a>
+                </td>
+                <td style="text-align: left">
+    help provided via menu (UI Builder)
+    </td>
+              </tr>
+              <tr>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.debian.org/sid/libc6">
+              <code class="literal">libc6</code>
+            </a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=libc6">V:937, I:999</a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.qa.debian.org/libc/libc6.html">12333</a>
+                </td>
+                <td style="text-align: left">
+    "<code class="literal">info libc</code>" provided by <code class="literal">glibc-doc</code> and <code class="literal">glibc-doc-reference</code>
+    </td>
+              </tr>
+              <tr>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.debian.org/sid/make">
+              <code class="literal">make</code>
+            </a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=make">V:169, I:604</a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.qa.debian.org/m/make.html">1296</a>
+                </td>
+                <td style="text-align: left">
+    "<code class="literal">info make</code>" provided by <code class="literal">make-doc</code>
+    </td>
+              </tr>
+              <tr>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.debian.org/sid/xutils-dev">
+              <code class="literal">xutils-dev</code>
+            </a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=xutils-dev">V:1, I:14</a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.qa.debian.org/x/xutils-dev.html">1466</a>
+                </td>
+                <td style="text-align: left"><span class="citerefentry"><span class="refentrytitle">imake</span>(1)</span>, <span class="citerefentry"><span class="refentrytitle">xmkmf</span>(1)</span>, etc.
+    </td>
+              </tr>
+              <tr>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.debian.org/sid/mawk">
+              <code class="literal">mawk</code>
+            </a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=mawk">V:342, I:998</a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.qa.debian.org/m/mawk.html">183</a>
+                </td>
+                <td style="text-align: left"><span class="citerefentry"><span class="refentrytitle">mawk</span>(1)</span>
+    </td>
+              </tr>
+              <tr>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.debian.org/sid/perl">
+              <code class="literal">perl</code>
+            </a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=perl">V:618, I:994</a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.qa.debian.org/p/perl.html">575</a>
+                </td>
+                <td style="text-align: left"><span class="citerefentry"><span class="refentrytitle">perl</span>(1)</span> and html pages provided by <code class="literal">perl-doc</code> and <code class="literal">perl-doc-html</code>
+    </td>
+              </tr>
+              <tr>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.debian.org/sid/python">
+              <code class="literal">python</code>
+            </a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=python">V:578, I:986</a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.qa.debian.org/p/python.html">68</a>
+                </td>
+                <td style="text-align: left"><span class="citerefentry"><span class="refentrytitle">python</span>(1)</span> and html pages provided by <code class="literal">python-doc</code></td>
+              </tr>
+              <tr>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.debian.org/sid/tcl">
+              <code class="literal">tcl</code>
+            </a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=tcl">V:30, I:442</a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.qa.debian.org/t/tcl.html">22</a>
+                </td>
+                <td style="text-align: left"><span class="citerefentry"><span class="refentrytitle">tcl</span>(3)</span> and detail manual pages provided by <code class="literal">tcl-doc</code></td>
+              </tr>
+              <tr>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.debian.org/sid/tk">
+              <code class="literal">tk</code>
+            </a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=tk">V:31, I:433</a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.qa.debian.org/t/tk.html">22</a>
+                </td>
+                <td style="text-align: left"><span class="citerefentry"><span class="refentrytitle">tk</span>(3)</span> and detail manual pages provided by <code class="literal">tk-doc</code></td>
+              </tr>
+              <tr>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.debian.org/sid/ruby">
+              <code class="literal">ruby</code>
+            </a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=ruby">V:173, I:341</a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.qa.debian.org/r/ruby.html">37</a>
+                </td>
+                <td style="text-align: left"><span class="citerefentry"><span class="refentrytitle">ruby</span>(1)</span> and interactive reference provided by <code class="literal">ri</code></td>
+              </tr>
+              <tr>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.debian.org/sid/vim">
+              <code class="literal">vim</code>
+            </a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=vim">V:119, I:395</a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.qa.debian.org/v/vim.html">2799</a>
+                </td>
+                <td style="text-align: left">
+    help(F1) menu provided by <code class="literal">vim-doc</code>
+    </td>
+              </tr>
+              <tr>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.debian.org/sid/susv2">
+              <code class="literal">susv2</code>
+            </a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=susv2">I:0</a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.qa.debian.org/s/susv2.html">16</a>
+                </td>
+                <td style="text-align: left">
+    fetch "<a class="ulink" href="http://www.unix.org/version2/">The Single UNIX Specifications v2</a>"
+    </td>
+              </tr>
+              <tr>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.debian.org/sid/susv3">
+              <code class="literal">susv3</code>
+            </a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=susv3">I:0</a>
+                </td>
+                <td style="text-align: left">
+                  <a class="ulink" href="http://packages.qa.debian.org/s/susv3.html">16</a>
+                </td>
+                <td style="text-align: left">
+    fetch "<a class="ulink" href="http://www.unix.org/version3/">The Single UNIX Specifications v3</a>"
+    </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <br class="table-break"/>
+      <p>Online references are available by typing "<code class="literal">man name</code>" after installing <code class="literal">manpages</code> and <code class="literal">manpages-dev</code> packages. Online references for the GNU tools are available by typing "<code class="literal">info program_name</code>" after installing the pertinent documentation packages.  You may need to include the <code class="literal">contrib</code> and <code class="literal">non-free</code> archives in addition to the <code class="literal">main</code> archive since some GFDL documentations are not considered to be DFSG compliant.</p>
+      <div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+        <table border="0" summary="Warning">
+          <tr>
+            <td rowspan="2" align="center" valign="top">
+              <img alt="[Warning]" src="images/warning.png"/>
+            </td>
+            <th align="left">Warning</th>
+          </tr>
+          <tr>
+            <td align="left" valign="top">
+              <p>Do not use "<code class="literal">test</code>" as the name of an executable test file.  "<code class="literal">test</code>" is a shell builtin.</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="caution" style="margin-left: 0.5in; margin-right: 0.5in;">
+        <table border="0" summary="Caution">
+          <tr>
+            <td rowspan="2" align="center" valign="top">
+              <img alt="[Caution]" src="images/caution.png"/>
+            </td>
+            <th align="left">Caution</th>
+          </tr>
+          <tr>
+            <td align="left" valign="top">
+              <p>You should install software programs directly compiled from source into "<code class="literal">/usr/local</code>" or "<code class="literal">/opt</code>" to avoid collision with system programs.</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+        <table border="0" summary="Tip">
+          <tr>
+            <td rowspan="2" align="center" valign="top">
+              <img alt="[Tip]" src="images/tip.png"/>
+            </td>
+            <th align="left">Tip</th>
+          </tr>
+          <tr>
+            <td align="left" valign="top">
+              <p><a class="ulink" href="http://www.99-bottles-of-beer.net/">Code examples of creating "Song 99 Bottles of Beer"</a> should give you good ideas of practically all the programming languages.</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="section">
+        <div class="titlepage">
+          <div>
+            <div>
+              <h2 class="title"><a id="_the_shell_script"/>12.1. The shell script</h2>
+            </div>
+          </div>
+        </div>
+        <p>The <a class="ulink" href="https://en.wikipedia.org/wiki/Shell_script">shell script</a> is a text file with the execution bit set and contains the commands in the following format.</p>
+        <pre class="screen">#!/bin/sh
+ ... command lines</pre>
+        <p>The first line specifies the shell interpreter which read and execute this file contents.</p>
+        <p>Reading shell scripts is the <span class="strong"><strong>best</strong></span> way to understand how a Unix-like system works.  Here, I give some pointers and reminders for shell programming. See "Shell Mistakes" (<a class="ulink" href="http://www.greenend.org.uk/rjk/2001/04/shell.html">http://www.greenend.org.uk/rjk/2001/04/shell.html</a>) to learn from mistakes.</p>
+        <p>Unlike shell interactive mode (see <a class="xref" href="ch01.en.html#_the_simple_shell_command" title="1.5. The simple shell command">Section 1.5, “The simple shell command”</a> and <a class="xref" href="ch01.en.html#_unix_like_text_processing" title="1.6. Unix-like text processing">Section 1.6, “Unix-like text processing”</a>), shell scripts frequently use parameters, conditionals, and loops.</p>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_posix_shell_compatibility"/>12.1.1. POSIX shell compatibility</h3>
+              </div>
+            </div>
+          </div>
+          <p>Many system scripts may be interpreted by any one of <a class="ulink" href="https://en.wikipedia.org/wiki/POSIX">POSIX</a> shells (see <a class="xref" href="ch01.en.html#list-of-shell-programs" title="Table 1.13. List of shell programs">Table 1.13, “List of shell programs”</a>).  The default shell for the system is "<code class="literal">/bin/sh</code>" which is a symlink pointing to the actual program.</p>
+          <div class="itemizedlist">
+            <ul class="itemizedlist">
+              <li class="listitem">
+                <p><span class="citerefentry"><span class="refentrytitle">bash</span>(1)</span> for <code class="literal">lenny</code> or older
+</p>
+              </li>
+              <li class="listitem">
+                <p><span class="citerefentry"><span class="refentrytitle">dash</span>(1)</span> for <code class="literal">squeeze</code> or newer
+</p>
+              </li>
+            </ul>
+          </div>
+          <p>Avoid writing a shell script with <span class="strong"><strong>bashisms</strong></span> or <span class="strong"><strong>zshisms</strong></span> to make it portable among all POSIX shells.  You can check it using <span class="citerefentry"><span class="refentrytitle">checkbashisms</span>(1)</span>.</p>
+          <div class="table">
+            <a id="listoftypicalbashisms"/>
+            <p class="title">
+              <strong>Table 12.2. List of typical bashisms</strong>
+            </p>
+            <div class="table-contents">
+              <table class="table" summary="List of typical bashisms" border="1">
+                <colgroup>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th style="text-align: left">
+    Good: POSIX
+    </th>
+                    <th style="text-align: left">
+    Avoid: bashism
+    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">if [ "$foo" = "$bar" ] ; then …</code>
+                </td>
+                    <td style="text-align: left">
+                  <code class="literal">if [ "$foo" == "$bar" ] ; then …</code>
+                </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">diff -u file.c.orig file.c</code>
+                </td>
+                    <td style="text-align: left">
+                  <code class="literal">diff -u file.c{.orig,}</code>
+                </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">mkdir /foobar /foobaz</code>
+                </td>
+                    <td style="text-align: left">
+                  <code class="literal">mkdir /foo{bar,baz}</code>
+                </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">funcname() { … }</code>
+                </td>
+                    <td style="text-align: left">
+                  <code class="literal">function funcname() { … }</code>
+                </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+    octal format: "<code class="literal">\377</code>"
+    </td>
+                    <td style="text-align: left">
+    hexadecimal format: "<code class="literal">\xff</code>"
+    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <br class="table-break"/>
+          <p>The "<code class="literal">echo</code>" command must be used with following cares since its implementation differs among shell builtin and external commands.</p>
+          <div class="itemizedlist">
+            <ul class="itemizedlist">
+              <li class="listitem">
+                <p>
+Avoid using any command options except "<code class="literal">-n</code>".
+</p>
+              </li>
+              <li class="listitem">
+                <p>
+Avoid using escape sequences in the string since their handling varies.
+</p>
+              </li>
+            </ul>
+          </div>
+          <div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Note">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Note]" src="images/note.png"/>
+                </td>
+                <th align="left">Note</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p>Although "<code class="literal">-n</code>" option is <span class="strong"><strong>not</strong></span> really POSIX syntax, it is generally accepted.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Tip">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Tip]" src="images/tip.png"/>
+                </td>
+                <th align="left">Tip</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p>Use the "<code class="literal">printf</code>" command instead of the "<code class="literal">echo</code>" command if you need to embed escape sequences in the output string.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_shell_parameters"/>12.1.2. Shell parameters</h3>
+              </div>
+            </div>
+          </div>
+          <p>Special shell parameters are frequently used in the shell script.</p>
+          <div class="table">
+            <a id="listofshellparameters"/>
+            <p class="title">
+              <strong>Table 12.3. List of shell parameters</strong>
+            </p>
+            <div class="table-contents">
+              <table class="table" summary="List of shell parameters" border="1">
+                <colgroup>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th style="text-align: left">
+    shell parameter
+    </th>
+                    <th style="text-align: left">
+    value
+    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">$0</code>
+                </td>
+                    <td style="text-align: left">
+    name of the shell or shell script
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">$1</code>
+                </td>
+                    <td style="text-align: left">
+    first (1st) shell argument
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">$9</code>
+                </td>
+                    <td style="text-align: left">
+    ninth (9th) shell argument
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">$#</code>
+                </td>
+                    <td style="text-align: left">
+    number of positional parameters
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">"$*"</code>
+                </td>
+                    <td style="text-align: left">
+                  <code class="literal">"$1 $2 $3 $4 … "</code>
+                </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">"$@"</code>
+                </td>
+                    <td style="text-align: left">
+                  <code class="literal">"$1" "$2" "$3" "$4" …</code>
+                </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">$?</code>
+                </td>
+                    <td style="text-align: left">
+    exit status of the most recent command
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">$$</code>
+                </td>
+                    <td style="text-align: left">
+    PID of this shell script
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">$!</code>
+                </td>
+                    <td style="text-align: left">
+    PID of most recently started background job
+    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <br class="table-break"/>
+          <p>Basic <span class="strong"><strong>parameter expansions</strong></span> to remember are as follows.</p>
+          <div class="table">
+            <a id="listofshellparameterexpansions"/>
+            <p class="title">
+              <strong>Table 12.4. List of shell parameter expansions</strong>
+            </p>
+            <div class="table-contents">
+              <table class="table" summary="List of shell parameter expansions" border="1">
+                <colgroup>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th style="text-align: left">
+    parameter expression form
+    </th>
+                    <th style="text-align: left">
+    value if <code class="literal">var</code> is set
+    </th>
+                    <th style="text-align: left">
+    value if <code class="literal">var</code> is not set
+    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">${var:-string}</code>
+                </td>
+                    <td style="text-align: left">
+    "<code class="literal">$var</code>"
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">string</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">${var:+string}</code>
+                </td>
+                    <td style="text-align: left">
+    "<code class="literal">string</code>"
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">null</code>"
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">${var:=string}</code>
+                </td>
+                    <td style="text-align: left">
+    "<code class="literal">$var</code>"
+    </td>
+                    <td style="text-align: left">
+    "<code class="literal">string</code>" (and run "<code class="literal">var=string</code>")
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">${var:?string}</code>
+                </td>
+                    <td style="text-align: left">
+    "<code class="literal">$var</code>"
+    </td>
+                    <td style="text-align: left">
+    echo "<code class="literal">string</code>" to <span class="strong"><strong>stderr</strong></span> (and exit with error)
+    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <br class="table-break"/>
+          <p>Here, the colon "<code class="literal">:</code>" in all of these operators is actually optional.</p>
+          <div class="itemizedlist">
+            <ul class="itemizedlist">
+              <li class="listitem">
+                <p><span class="strong"><strong>with</strong></span> "<code class="literal">:</code>" = operator test for <span class="strong"><strong>exist</strong></span> and <span class="strong"><strong>not null</strong></span>
+</p>
+              </li>
+              <li class="listitem">
+                <p><span class="strong"><strong>without</strong></span> "<code class="literal">:</code>" = operator test for <span class="strong"><strong>exist</strong></span> only
+</p>
+              </li>
+            </ul>
+          </div>
+          <div class="table">
+            <a id="listofkeyshellpatersubstitutions"/>
+            <p class="title">
+              <strong>Table 12.5. List of key shell parameter substitutions</strong>
+            </p>
+            <div class="table-contents">
+              <table class="table" summary="List of key shell parameter substitutions" border="1">
+                <colgroup>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th style="text-align: left">
+    parameter substitution form
+    </th>
+                    <th style="text-align: left">
+    result
+    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">${var%suffix}</code>
+                </td>
+                    <td style="text-align: left">
+    remove smallest suffix pattern
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">${var%%suffix}</code>
+                </td>
+                    <td style="text-align: left">
+    remove largest suffix pattern
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">${var#prefix}</code>
+                </td>
+                    <td style="text-align: left">
+    remove smallest prefix pattern
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">${var##prefix}</code>
+                </td>
+                    <td style="text-align: left">
+    remove largest prefix pattern
+    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <br class="table-break"/>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_shell_conditionals"/>12.1.3. Shell conditionals</h3>
+              </div>
+            </div>
+          </div>
+          <p>Each command returns an <span class="strong"><strong>exit status</strong></span> which can be used for conditional expressions.</p>
+          <div class="itemizedlist">
+            <ul class="itemizedlist">
+              <li class="listitem">
+                <p>
+Success: 0 ("True")
+</p>
+              </li>
+              <li class="listitem">
+                <p>
+Error: non 0 ("False")
+</p>
+              </li>
+            </ul>
+          </div>
+          <div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Note">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Note]" src="images/note.png"/>
+                </td>
+                <th align="left">Note</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p>"0" in the shell conditional context means "True", while "0" in the C conditional context means "False".</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Note">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Note]" src="images/note.png"/>
+                </td>
+                <th align="left">Note</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p>"<code class="literal">[</code>" is the equivalent of the <code class="literal">test</code> command, which evaluates its arguments up to "<code class="literal">]</code>" as a conditional expression.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <p>Basic <span class="strong"><strong>conditional idioms</strong></span> to remember are the following.</p>
+          <div class="itemizedlist">
+            <ul class="itemizedlist">
+              <li class="listitem">
+                <p>
+"<code class="literal">&lt;command&gt; &amp;&amp; &lt;if_success_run_this_command_too&gt; || true</code>"
+</p>
+              </li>
+              <li class="listitem">
+                <p>
+"<code class="literal">&lt;command&gt; || &lt;if_not_success_run_this_command_too&gt; || true</code>"
+</p>
+              </li>
+              <li class="listitem">
+                <p>
+A multi-line script snippet as the following
+</p>
+              </li>
+            </ul>
+          </div>
+          <pre class="screen">if [ &lt;conditional_expression&gt; ]; then
+ &lt;if_success_run_this_command&gt;
+else
+ &lt;if_not_success_run_this_command&gt;
+fi</pre>
+          <p>Here trailing "<code class="literal">|| true</code>" was needed to ensure this shell script does not exit at this line accidentally when shell is invoked with "<code class="literal">-e</code>" flag.</p>
+          <div class="table">
+            <a id="listoffilecompartionalexpression"/>
+            <p class="title">
+              <strong>Table 12.6. List of file comparison operators in the conditional expression</strong>
+            </p>
+            <div class="table-contents">
+              <table class="table" summary="List of file comparison operators in the conditional expression" border="1">
+                <colgroup>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th style="text-align: left">
+    equation
+    </th>
+                    <th style="text-align: left">
+    condition to return logical true
+    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">-e &lt;file&gt;</code>
+                </td>
+                    <td style="text-align: left">
+    &lt;file&gt; exists
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">-d &lt;file&gt;</code>
+                </td>
+                    <td style="text-align: left">
+    &lt;file&gt; exists and is a directory
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">-f &lt;file&gt;</code>
+                </td>
+                    <td style="text-align: left">
+    &lt;file&gt; exists and is a regular file
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">-w &lt;file&gt;</code>
+                </td>
+                    <td style="text-align: left">
+    &lt;file&gt; exists and is writable
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">-x &lt;file&gt;</code>
+                </td>
+                    <td style="text-align: left">
+    &lt;file&gt; exists and is executable
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">&lt;file1&gt; -nt &lt;file2&gt;</code>
+                </td>
+                    <td style="text-align: left">
+    &lt;file1&gt; is newer than &lt;file2&gt; (modification)
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">&lt;file1&gt; -ot &lt;file2&gt;</code>
+                </td>
+                    <td style="text-align: left">
+    &lt;file1&gt; is older than &lt;file2&gt; (modification)
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">&lt;file1&gt; -ef &lt;file2&gt;</code>
+                </td>
+                    <td style="text-align: left">
+    &lt;file1&gt; and &lt;file2&gt; are on the same device and the same inode number
+    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <br class="table-break"/>
+          <div class="table">
+            <a id="listofstringcomptionalexpression"/>
+            <p class="title">
+              <strong>Table 12.7. List of string comparison operators in the conditional expression</strong>
+            </p>
+            <div class="table-contents">
+              <table class="table" summary="List of string comparison operators in the conditional expression" border="1">
+                <colgroup>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th style="text-align: left">
+    equation
+    </th>
+                    <th style="text-align: left">
+    condition to return logical true
+    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">-z &lt;str&gt;</code>
+                </td>
+                    <td style="text-align: left">
+    the length of &lt;str&gt; is zero
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">-n &lt;str&gt;</code>
+                </td>
+                    <td style="text-align: left">
+    the length of &lt;str&gt; is non-zero
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">&lt;str1&gt; = &lt;str2&gt;</code>
+                </td>
+                    <td style="text-align: left">
+    &lt;str1&gt; and &lt;str2&gt; are equal
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">&lt;str1&gt; != &lt;str2&gt;</code>
+                </td>
+                    <td style="text-align: left">
+    &lt;str1&gt; and &lt;str2&gt; are not equal
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">&lt;str1&gt; &lt; &lt;str2&gt;</code>
+                </td>
+                    <td style="text-align: left">
+    &lt;str1&gt; sorts before &lt;str2&gt; (locale dependent)
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">&lt;str1&gt; &gt; &lt;str2&gt;</code>
+                </td>
+                    <td style="text-align: left">
+    &lt;str1&gt; sorts after &lt;str2&gt; (locale dependent)
+    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <br class="table-break"/>
+          <p><span class="strong"><strong>Arithmetic</strong></span> integer comparison operators in the conditional expression are "<code class="literal">-eq</code>", "<code class="literal">-ne</code>", "<code class="literal">-lt</code>", "<code class="literal">-le</code>", "<code class="literal">-gt</code>", and "<code class="literal">-ge</code>".</p>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_shell_loops"/>12.1.4. Shell loops</h3>
+              </div>
+            </div>
+          </div>
+          <p>There are several loop idioms to use in POSIX shell.</p>
+          <div class="itemizedlist">
+            <ul class="itemizedlist">
+              <li class="listitem">
+                <p>
+"<code class="literal">for x in foo1 foo2 … ; do command ; done</code>" loops by assigning items from the list "<code class="literal">foo1 foo2 …</code>" to variable "<code class="literal">x</code>" and executing "<code class="literal">command</code>".
+</p>
+              </li>
+              <li class="listitem">
+                <p>
+"<code class="literal">while condition ; do command ; done</code>" repeats "<code class="literal">command</code>" while "<code class="literal">condition</code>" is true.
+</p>
+              </li>
+              <li class="listitem">
+                <p>
+"<code class="literal">until condition ; do command ; done</code>" repeats "<code class="literal">command</code>" while "<code class="literal">condition</code>" is not true.
+</p>
+              </li>
+              <li class="listitem">
+                <p>
+"<code class="literal">break</code>" enables to exit from the loop.
+</p>
+              </li>
+              <li class="listitem">
+                <p>
+"<code class="literal">continue</code>" enables to resume the next iteration of the loop.
+</p>
+              </li>
+            </ul>
+          </div>
+          <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Tip">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Tip]" src="images/tip.png"/>
+                </td>
+                <th align="left">Tip</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p>The <a class="ulink" href="https://en.wikipedia.org/wiki/C_(programming_language)">C</a>-language like numeric iteration can be realized by using <span class="citerefentry"><span class="refentrytitle">seq</span>(1)</span> as the "<code class="literal">foo1 foo2 …</code>" generator.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Tip">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Tip]" src="images/tip.png"/>
+                </td>
+                <th align="left">Tip</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p>See <a class="xref" href="ch09.en.html#_repeating_a_command_looping_over_files" title="9.3.9. Repeating a command looping over files">Section 9.3.9, “Repeating a command looping over files”</a>.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_the_shell_command_line_processing_sequence"/>12.1.5. The shell command-line processing sequence</h3>
+              </div>
+            </div>
+          </div>
+          <p>The shell processes a script roughly as the following sequence.</p>
+          <div class="itemizedlist">
+            <ul class="itemizedlist">
+              <li class="listitem">
+                <p>
+The shell reads a line.
+</p>
+              </li>
+              <li class="listitem">
+                <p>
+The shell groups a part of the line as <span class="strong"><strong>one token</strong></span> if it is within <code class="literal">"…"</code> or <code class="literal">'…'</code>.
+</p>
+              </li>
+              <li class="listitem">
+                <p>
+The shell splits other part of a line into <span class="strong"><strong>tokens</strong></span> by the following.
+</p>
+                <div class="itemizedlist">
+                  <ul class="itemizedlist">
+                    <li class="listitem">
+                      <p>
+Whitespaces: <code class="literal">&lt;space&gt; &lt;tab&gt; &lt;newline&gt;</code>
+</p>
+                    </li>
+                    <li class="listitem">
+                      <p>
+Metacharacters: <code class="literal">&lt; &gt; | ; &amp; ( )</code>
+</p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="listitem">
+                <p>
+The shell checks the <span class="strong"><strong>reserved word</strong></span> for each token to adjust its behavior if not within <code class="literal">"…"</code>  or <code class="literal">'…'</code>.
+</p>
+                <div class="itemizedlist">
+                  <ul class="itemizedlist">
+                    <li class="listitem">
+                      <p><span class="strong"><strong>reserved word</strong></span>: <code class="literal">if then elif else fi for in while unless do done case esac</code></p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="listitem">
+                <p>
+The shell expands <span class="strong"><strong>alias</strong></span> if not within <code class="literal">"…"</code>  or <code class="literal">'…'</code>.
+</p>
+              </li>
+              <li class="listitem">
+                <p>
+The shell expands <span class="strong"><strong>tilde</strong></span> if not within <code class="literal">"…"</code>  or <code class="literal">'…'</code>.
+</p>
+                <div class="itemizedlist">
+                  <ul class="itemizedlist">
+                    <li class="listitem">
+                      <p>
+"<code class="literal">~</code>" → current user's home directory
+</p>
+                    </li>
+                    <li class="listitem">
+                      <p>
+"<code class="literal">~&lt;user&gt;</code>" → <code class="literal">&lt;user&gt;</code>'s home directory
+</p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="listitem">
+                <p>
+The shell expands <span class="strong"><strong>parameter</strong></span> to its value if not within <code class="literal">'…'</code>.
+</p>
+                <div class="itemizedlist">
+                  <ul class="itemizedlist">
+                    <li class="listitem">
+                      <p><span class="strong"><strong>parameter</strong></span>: "<code class="literal">$PARAMETER</code>" or "<code class="literal">${PARAMETER}</code>"
+</p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="listitem">
+                <p>
+The shell expands <span class="strong"><strong>command substitution</strong></span> if not within <code class="literal">'…'</code>.
+</p>
+                <div class="itemizedlist">
+                  <ul class="itemizedlist">
+                    <li class="listitem">
+                      <p>
+"<code class="literal">$( command )</code>" → the output of "<code class="literal">command</code>"
+</p>
+                    </li>
+                    <li class="listitem">
+                      <p>
+"<code class="literal">` command `</code>" → the output of "<code class="literal">command</code>"
+</p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="listitem">
+                <p>
+The shell expands <span class="strong"><strong>pathname glob</strong></span> to matching file names if not within <code class="literal">"…"</code>  or <code class="literal">'…'</code>.
+</p>
+                <div class="itemizedlist">
+                  <ul class="itemizedlist">
+                    <li class="listitem">
+                      <p><code class="literal">*</code> → any characters
+</p>
+                    </li>
+                    <li class="listitem">
+                      <p><code class="literal">?</code> → one character
+</p>
+                    </li>
+                    <li class="listitem">
+                      <p><code class="literal">[…]</code> → any one of the characters in "<code class="literal">…</code>"
+</p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="listitem">
+                <p>
+The shell looks up <span class="strong"><strong>command</strong></span> from the following and execute it.
+</p>
+                <div class="itemizedlist">
+                  <ul class="itemizedlist">
+                    <li class="listitem">
+                      <p><span class="strong"><strong>function</strong></span> definition
+</p>
+                    </li>
+                    <li class="listitem">
+                      <p><span class="strong"><strong>builtin</strong></span> command
+</p>
+                    </li>
+                    <li class="listitem">
+                      <p><span class="strong"><strong>executable file</strong></span> in "<code class="literal">$PATH</code>"
+</p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="listitem">
+                <p>
+The shell goes to the next line and repeats this process again from the top of this sequence.
+</p>
+              </li>
+            </ul>
+          </div>
+          <p>Single quotes within double quotes have no effect.</p>
+          <p>Executing "<code class="literal">set -x</code>" in the shell or invoking the shell with "<code class="literal">-x</code>" option make the shell to print all of commands executed.  This is quite handy for debugging.</p>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_utility_programs_for_shell_script"/>12.1.6. Utility programs for shell script</h3>
+              </div>
+            </div>
+          </div>
+          <p>In order to make your shell program as portable as possible across Debian systems, it is a good idea to limit utility programs to ones provided by <span class="strong"><strong>essential</strong></span> packages.</p>
+          <div class="itemizedlist">
+            <ul class="itemizedlist">
+              <li class="listitem">
+                <p>
+"<code class="literal">aptitude search ~E</code>" lists <span class="strong"><strong>essential</strong></span> packages.
+</p>
+              </li>
+              <li class="listitem">
+                <p>
+"<code class="literal">dpkg -L &lt;package_name&gt; |grep '/man/man.*/'</code>" lists manpages for commands offered by <code class="literal">&lt;package_name&gt;</code> package.
+</p>
+              </li>
+            </ul>
+          </div>
+          <div class="table">
+            <a id="listofpackagescosforshellscripts"/>
+            <p class="title">
+              <strong>Table 12.8. List of packages containing small utility programs for shell scripts</strong>
+            </p>
+            <div class="table-contents">
+              <table class="table" summary="List of packages containing small utility programs for shell scripts" border="1">
+                <colgroup>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th style="text-align: left">
+    package
+    </th>
+                    <th style="text-align: left">
+    popcon
+    </th>
+                    <th style="text-align: left">
+    size
+    </th>
+                    <th style="text-align: left">
+    description
+    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/coreutils">
+                  <code class="literal">coreutils</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=coreutils">V:888, I:999</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/c/coreutils.html">15719</a>
+                    </td>
+                    <td style="text-align: left">
+    GNU core utilities
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/debianutils">
+                  <code class="literal">debianutils</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=debianutils">V:941, I:999</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/d/debianutils.html">226</a>
+                    </td>
+                    <td style="text-align: left">
+    miscellaneous utilities specific to Debian
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/bsdmainutils">
+                  <code class="literal">bsdmainutils</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=bsdmainutils">V:861, I:999</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/b/bsdmainutils.html">587</a>
+                    </td>
+                    <td style="text-align: left">
+    collection of more utilities from FreeBSD
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/bsdutils">
+                  <code class="literal">bsdutils</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=bsdutils">V:866, I:999</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/b/bsdutils.html">293</a>
+                    </td>
+                    <td style="text-align: left">
+    basic utilities from 4.4BSD-Lite
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/moreutils">
+                  <code class="literal">moreutils</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=moreutils">V:5, I:24</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/m/moreutils.html">237</a>
+                    </td>
+                    <td style="text-align: left">
+    additional Unix utilities
+    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <br class="table-break"/>
+          <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Tip">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Tip]" src="images/tip.png"/>
+                </td>
+                <th align="left">Tip</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p>Although <code class="literal">moreutils</code> may not exist ouside of Debian, it offers interesting small programs.  Most notable one is <span class="citerefentry"><span class="refentrytitle">sponge</span>(8)</span> which is quite useful when you wish to overwrite original file.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_shell_script_dialog"/>12.1.7. Shell script dialog</h3>
+              </div>
+            </div>
+          </div>
+          <p>The user interface of a simple shell program can be improved from dull interaction by <code class="literal">echo</code> and <code class="literal">read</code> commands to more interactive one by using one of the so-called dialog program etc.</p>
+          <div class="table">
+            <a id="listofuserinterfaceprograms"/>
+            <p class="title">
+              <strong>Table 12.9. List of user interface programs</strong>
+            </p>
+            <div class="table-contents">
+              <table class="table" summary="List of user interface programs" border="1">
+                <colgroup>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th style="text-align: left">
+    package
+    </th>
+                    <th style="text-align: left">
+    popcon
+    </th>
+                    <th style="text-align: left">
+    size
+    </th>
+                    <th style="text-align: left">
+    description
+    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/x11-utils">
+                  <code class="literal">x11-utils</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=x11-utils">V:375, I:635</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/x/x11-utils.html">631</a>
+                    </td>
+                    <td style="text-align: left"><span class="citerefentry"><span class="refentrytitle">xmessage</span>(1)</span>: display a message or query in a window (X)
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/whiptail">
+                  <code class="literal">whiptail</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=whiptail">V:434, I:996</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/w/whiptail.html">70</a>
+                    </td>
+                    <td style="text-align: left">
+    displays user-friendly dialog boxes from shell scripts (newt)
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/dialog">
+                  <code class="literal">dialog</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=dialog">V:17, I:125</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/d/dialog.html">1168</a>
+                    </td>
+                    <td style="text-align: left">
+    displays user-friendly dialog boxes from shell scripts (ncurses)
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/zenity">
+                  <code class="literal">zenity</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=zenity">V:229, I:395</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/z/zenity.html">369</a>
+                    </td>
+                    <td style="text-align: left">
+    display graphical dialog boxes from shell scripts (gtk2.0)
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/ssft">
+                  <code class="literal">ssft</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=ssft">V:0, I:0</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/s/ssft.html">75</a>
+                    </td>
+                    <td style="text-align: left">
+    Shell Scripts Frontend Tool (wrapper for zenity, kdialog, and dialog with gettext)
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/gettext">
+                  <code class="literal">gettext</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=gettext">V:52, I:345</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/g/gettext.html">6594</a>
+                    </td>
+                    <td style="text-align: left">
+    "<code class="literal">/usr/bin/gettext.sh</code>": translate message
+    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <br class="table-break"/>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_shell_script_example_with_zenity"/>12.1.8. Shell script example with zenity</h3>
+              </div>
+            </div>
+          </div>
+          <p>Here is a simple script which creates ISO image with RS02 data supplemented by <span class="citerefentry"><span class="refentrytitle">dvdisaster</span>(1)</span>.</p>
+          <pre class="screen">#!/bin/sh -e
+# gmkrs02 : Copyright (C) 2007 Osamu Aoki &lt;osamu@debian.org&gt;, Public Domain
+#set -x
+error_exit()
+{
+  echo "$1" &gt;&amp;2
+  exit 1
+}
+# Initialize variables
+DATA_ISO="$HOME/Desktop/iso-$$.img"
+LABEL=$(date +%Y%m%d-%H%M%S-%Z)
+if [ $# != 0 ] &amp;&amp; [ -d "$1" ]; then
+  DATA_SRC="$1"
+else
+  # Select directory for creating ISO image from folder on desktop
+  DATA_SRC=$(zenity --file-selection --directory  \
+    --title="Select the directory tree root to create ISO image") \
+    || error_exit "Exit on directory selection"
+fi
+# Check size of archive
+xterm -T "Check size $DATA_SRC" -e du -s $DATA_SRC/*
+SIZE=$(($(du -s $DATA_SRC | awk '{print $1}')/1024))
+if [ $SIZE -le 520 ] ; then
+  zenity --info --title="Dvdisaster RS02" --width 640  --height 400 \
+    --text="The data size is good for CD backup:\\n $SIZE MB"
+elif [ $SIZE -le 3500 ]; then
+  zenity --info --title="Dvdisaster RS02" --width 640  --height 400 \
+    --text="The data size is good for DVD backup :\\n $SIZE MB"
+else
+  zenity --info --title="Dvdisaster RS02" --width 640  --height 400 \
+    --text="The data size is too big to backup : $SIZE MB"
+  error_exit "The data size is too big to backup :\\n $SIZE MB"
+fi
+# only xterm is sure to have working -e option
+# Create raw ISO image
+rm -f "$DATA_ISO" || true
+xterm -T "genisoimage $DATA_ISO" \
+  -e genisoimage -r -J -V "$LABEL" -o "$DATA_ISO" "$DATA_SRC"
+# Create RS02 supplemental redundancy
+xterm -T "dvdisaster $DATA_ISO" -e  dvdisaster -i "$DATA_ISO" -mRS02 -c
+zenity --info --title="Dvdisaster RS02" --width 640  --height 400 \
+  --text="ISO/RS02 data ($SIZE MB) \\n created at: $DATA_ISO"
+# EOF</pre>
+          <p>You may wish to create launcher on the desktop with command set something like "<code class="literal">/usr/local/bin/gmkrs02 %d</code>".</p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="titlepage">
+          <div>
+            <div>
+              <h2 class="title"><a id="_make"/>12.2. Make</h2>
+            </div>
+          </div>
+        </div>
+        <p><a class="ulink" href="https://en.wikipedia.org/wiki/Make_(software)">Make</a> is a utility to maintain groups of programs. Upon execution of <span class="citerefentry"><span class="refentrytitle">make</span>(1)</span>, <code class="literal">make</code> read the rule file, "<code class="literal">Makefile</code>", and updates a target if it depends on prerequisite files that have been modified since the target was last modified, or if the target does not exist.  The execution of these updates may occur concurrently.</p>
+        <p>The rule file syntax is the following.</p>
+        <pre class="screen">target: [ prerequisites ... ]
+ [TAB]  command1
+ [TAB]  -command2 # ignore errors
+ [TAB]  @command3 # suppress echoing</pre>
+        <p>Here "<code class="literal">[TAB]</code>" is a TAB code.  Each line is interpreted by the shell after make variable substitution.  Use "<code class="literal">\</code>" at the end of a line to continue the script.  Use "<code class="literal">$$</code>" to enter "<code class="literal">$</code>" for environment values for a shell script.</p>
+        <p>Implicit rules for the target and prerequisites can be written, for example, by the following.</p>
+        <pre class="screen">%.o: %.c header.h</pre>
+        <p>Here, the target contains the character "<code class="literal">%</code>" (exactly one of them). The "<code class="literal">%</code>" can match any nonempty substring in the actual target filenames. The prerequisites likewise use "<code class="literal">%</code>" to show how their names relate to the actual target name.</p>
+        <div class="table">
+          <a id="listofmakeautomaticvariables"/>
+          <p class="title">
+            <strong>Table 12.10. List of make automatic variables</strong>
+          </p>
+          <div class="table-contents">
+            <table class="table" summary="List of make automatic variables" border="1">
+              <colgroup>
+                <col style="text-align: left"/>
+                <col style="text-align: left"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <th style="text-align: left">
+    automatic variable
+    </th>
+                  <th style="text-align: left">
+    value
+    </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="text-align: left">
+                <code class="literal">$@</code>
+              </td>
+                  <td style="text-align: left">
+    target
+    </td>
+                </tr>
+                <tr>
+                  <td style="text-align: left">
+                <code class="literal">$&lt;</code>
+              </td>
+                  <td style="text-align: left">
+    first prerequisite
+    </td>
+                </tr>
+                <tr>
+                  <td style="text-align: left">
+                <code class="literal">$?</code>
+              </td>
+                  <td style="text-align: left">
+    all newer prerequisites
+    </td>
+                </tr>
+                <tr>
+                  <td style="text-align: left">
+                <code class="literal">$^</code>
+              </td>
+                  <td style="text-align: left">
+    all prerequisites
+    </td>
+                </tr>
+                <tr>
+                  <td style="text-align: left">
+                <code class="literal">$*</code>
+              </td>
+                  <td style="text-align: left">
+    "<code class="literal">%</code>" matched stem in the target pattern
+    </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <br class="table-break"/>
+        <div class="table">
+          <a id="listofmakevariableexpansions"/>
+          <p class="title">
+            <strong>Table 12.11. List of make variable expansions</strong>
+          </p>
+          <div class="table-contents">
+            <table class="table" summary="List of make variable expansions" border="1">
+              <colgroup>
+                <col style="text-align: left"/>
+                <col style="text-align: left"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <th style="text-align: left">
+    variable expansion
+    </th>
+                  <th style="text-align: left">
+    description
+    </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="text-align: left">
+                <code class="literal">foo1 := bar</code>
+              </td>
+                  <td style="text-align: left">
+    one-time expansion
+    </td>
+                </tr>
+                <tr>
+                  <td style="text-align: left">
+                <code class="literal">foo2  = bar</code>
+              </td>
+                  <td style="text-align: left">
+    recursive expansion
+    </td>
+                </tr>
+                <tr>
+                  <td style="text-align: left">
+                <code class="literal">foo3 += bar</code>
+              </td>
+                  <td style="text-align: left">
+    append
+    </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <br class="table-break"/>
+        <p>Run "<code class="literal">make -p -f/dev/null</code>" to see automatic internal rules.</p>
+      </div>
+      <div class="section">
+        <div class="titlepage">
+          <div>
+            <div>
+              <h2 class="title"><a id="_c"/>12.3. C</h2>
+            </div>
+          </div>
+        </div>
+        <p>You can set up proper environment to compile programs written in the <a class="ulink" href="https://en.wikipedia.org/wiki/C_(programming_language)">C programming language</a> by the following.</p>
+        <pre class="screen"># apt-get install glibc-doc manpages-dev libc6-dev gcc build-essential</pre>
+        <p>The <code class="literal">libc6-dev</code> package, i.e., GNU C Library, provides <a class="ulink" href="https://en.wikipedia.org/wiki/C_standard_library">C standard library</a> which is collection of header files and library routines used by the C programming language.</p>
+        <p>See references for C as the following.</p>
+        <div class="itemizedlist">
+          <ul class="itemizedlist">
+            <li class="listitem">
+              <p>
+"<code class="literal">info libc</code>" (C library function reference)
+</p>
+            </li>
+            <li class="listitem">
+              <p><span class="citerefentry"><span class="refentrytitle">gcc</span>(1)</span> and "<code class="literal">info gcc</code>"
+</p>
+            </li>
+            <li class="listitem">
+              <p><span class="citerefentry"><span class="refentrytitle">each_C_library_function_name</span>(3)</span>
+</p>
+            </li>
+            <li class="listitem">
+              <p>
+Kernighan &amp; Ritchie, "The C Programming Language", 2nd edition (Prentice Hall)
+</p>
+            </li>
+          </ul>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_simple_c_program_gcc"/>12.3.1. Simple C program (gcc)</h3>
+              </div>
+            </div>
+          </div>
+          <p>A simple example "<code class="literal">example.c</code>" can compiled with a library "<code class="literal">libm</code>" into an executable "<code class="literal">run_example</code>" by the following.</p>
+          <pre class="screen">$ cat &gt; example.c &lt;&lt; EOF
+#include &lt;stdio.h&gt;
+#include &lt;math.h&gt;
+#include &lt;string.h&gt;
+
+int main(int argc, char **argv, char **envp){
+        double x;
+        char y[11];
+        x=sqrt(argc+7.5);
+        strncpy(y, argv[0], 10); /* prevent buffer overflow */
+        y[10] = '\0'; /* fill to make sure string ends with '\0' */
+        printf("%5i, %5.3f, %10s, %10s\n", argc, x, y, argv[1]);
+        return 0;
+}
+EOF
+$ gcc -Wall -g -o run_example example.c -lm
+$ ./run_example
+        1, 2.915, ./run_exam,     (null)
+$ ./run_example 1234567890qwerty
+        2, 3.082, ./run_exam, 1234567890qwerty</pre>
+          <p>Here, "<code class="literal">-lm</code>" is needed to link library "<code class="literal">/usr/lib/libm.so</code>" from the <code class="literal">libc6</code> package for <span class="citerefentry"><span class="refentrytitle">sqrt</span>(3)</span>.  The actual library is in "<code class="literal">/lib/</code>" with filename "<code class="literal">libm.so.6</code>", which is a symlink to "<code class="literal">libm-2.7.so</code>".</p>
+          <p>Look at the last parameter in the output text.  There are more than 10 characters even though "<code class="literal">%10s</code>" is specified.</p>
+          <p>The use of pointer memory operation functions without boundary checks, such as <span class="citerefentry"><span class="refentrytitle">sprintf</span>(3)</span> and <span class="citerefentry"><span class="refentrytitle">strcpy</span>(3)</span>, is deprecated to prevent buffer overflow exploits that leverage the above overrun effects.  Instead, use <span class="citerefentry"><span class="refentrytitle">snprintf</span>(3)</span> and <span class="citerefentry"><span class="refentrytitle">strncpy</span>(3)</span>.</p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="titlepage">
+          <div>
+            <div>
+              <h2 class="title"><a id="_debug"/>12.4. Debug</h2>
+            </div>
+          </div>
+        </div>
+        <p>Debug is important part of programing activities.  Knowing how to debug programs makes you a good Debian user who can produce meaningful bug reports.</p>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_basic_gdb_execution"/>12.4.1. Basic gdb execution</h3>
+              </div>
+            </div>
+          </div>
+          <p>Primary <a class="ulink" href="https://en.wikipedia.org/wiki/Debugger">debugger</a> on Debian is <span class="citerefentry"><span class="refentrytitle">gdb</span>(1)</span> which enables you to inspect a program while it executes.</p>
+          <p>Let's install <code class="literal">gdb</code> and related programs by the following.</p>
+          <pre class="screen"># apt-get install gdb gdb-doc build-essential devscripts</pre>
+          <p>Good tutorial of <code class="literal">gdb</code> is provided by "<code class="literal">info gdb</code>" or found  <a class="ulink" href="http://www.unknownroad.com/rtfm/gdbtut/gdbtoc.html">elsewhere on the web</a>.
+Here is a simple example of using <span class="citerefentry"><span class="refentrytitle">gdb</span>(1)</span> on a "<code class="literal">program</code>" compiled with the "<code class="literal">-g</code>" option to produce debugging information.</p>
+          <pre class="screen">$ gdb program
+(gdb) b 1                # set break point at line 1
+(gdb) run args           # run program with args
+(gdb) next               # next line
+...
+(gdb) step               # step forward
+...
+(gdb) p parm             # print parm
+...
+(gdb) p parm=12          # set value to 12
+...
+(gdb) quit</pre>
+          <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Tip">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Tip]" src="images/tip.png"/>
+                </td>
+                <th align="left">Tip</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p>Many <span class="citerefentry"><span class="refentrytitle">gdb</span>(1)</span> commands can be abbreviated.  Tab expansion works as in the shell.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_debugging_the_debian_package"/>12.4.2. Debugging the Debian package</h3>
+              </div>
+            </div>
+          </div>
+          <p>Since all installed binaries should be stripped on the Debian system by default, most debugging symbols are removed in the normal package.  In order to debug Debian packages with <span class="citerefentry"><span class="refentrytitle">gdb</span>(1)</span>, either corresponding <code class="literal">*-dbg</code> packages or <code class="literal">*-dbgsym</code> packages need to be installed (e.g. <code class="literal">libc6-dbg</code> in the case of <code class="literal">libc6</code>, <code class="literal">coreutils-dbgsym</code> in the case of <code class="literal">coreutils</code>).</p>
+          <p>Old-style packages would provide its corresponding <code class="literal">*-dbg</code> package. It is placed directly inside Debian main archive alongside of the original package itself. For newer packages, they may generate <code class="literal">*-dbgsym</code> packages automatically when built and those debug packages are placed separately in <a class="ulink" href="http://debug.mirrors.debian.org/debian-debug">debian-debug</a> archive. Please refer to <a class="ulink" href="https://wiki.debian.org/DebugPackage">articles on Debian Wiki</a> for more information.</p>
+          <p>If a package to be debugged does not provide either its <code class="literal">*-dbg</code> package or its <code class="literal">*-dbgsym</code> package, you need to install it after rebuilding it by the following.</p>
+          <pre class="screen">$ mkdir /path/new ; cd /path/new
+$ sudo apt-get update
+$ sudo apt-get dist-upgrade
+$ sudo apt-get install fakeroot devscripts build-essential
+$ apt-get source package_name
+$ cd package_name*
+$ sudo apt-get build-dep ./</pre>
+          <p>Fix bugs if needed.</p>
+          <p>Bump package version to one which does not collide with official Debian versions, e.g. one appended with "<code class="literal">+debug1</code>" when recompiling existing package version, or one appended with "<code class="literal">~pre1</code>" when compiling unreleased package version by the following.</p>
+          <pre class="screen">$ dch -i</pre>
+          <p>Compile and install packages with debug symbols by the following.</p>
+          <pre class="screen">$ export DEB_BUILD_OPTIONS="nostrip noopt"
+$ debuild
+$ cd ..
+$ sudo debi package_name*.changes</pre>
+          <p>You need to check build scripts of the package and ensure to use "<code class="literal">CFLAGS=-g -Wall</code>" for compiling binaries.</p>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_obtaining_backtrace"/>12.4.3. Obtaining backtrace</h3>
+              </div>
+            </div>
+          </div>
+          <p>When you encounter program crash, reporting bug report with cut-and-pasted backtrace information is a good idea.</p>
+          <p>The backtrace can be obtained by the following steps.</p>
+          <div class="itemizedlist">
+            <ul class="itemizedlist">
+              <li class="listitem">
+                <p>
+Run the program under <span class="citerefentry"><span class="refentrytitle">gdb</span>(1)</span>.
+</p>
+              </li>
+              <li class="listitem">
+                <p>
+Reproduce crash.
+</p>
+                <div class="itemizedlist">
+                  <ul class="itemizedlist">
+                    <li class="listitem">
+                      <p>
+It causes you to be dropped back to the <code class="literal">gdb</code> prompt.
+</p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="listitem">
+                <p>
+Type "<code class="literal">bt</code>" at the <code class="literal">gdb</code> prompt.
+</p>
+              </li>
+            </ul>
+          </div>
+          <p>In case of program freeze, you can crash the program by pressing <code class="literal">Ctrl-C</code> in the terminal running <code class="literal">gdb</code> to obtain <code class="literal">gdb</code> prompt.</p>
+          <div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Tip">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Tip]" src="images/tip.png"/>
+                </td>
+                <th align="left">Tip</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p>Often, you see a backtrace where one or more of the top lines are in "<code class="literal">malloc()</code>" or "<code class="literal">g_malloc()</code>". When this happens, chances are your backtrace isn't very useful. The easiest way to find some useful information is to set the environment variable "<code class="literal">$MALLOC_CHECK_</code>" to a value of 2 (<span class="citerefentry"><span class="refentrytitle">malloc</span>(3)</span>). You can do this while running <code class="literal">gdb</code> by doing the following.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <pre class="screen"> $ MALLOC_CHECK_=2 gdb hello</pre>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_advanced_gdb_commands"/>12.4.4. Advanced gdb commands</h3>
+              </div>
+            </div>
+          </div>
+          <div class="table">
+            <a id="listofadvancedgdbcommands"/>
+            <p class="title">
+              <strong>Table 12.12. List of advanced gdb commands</strong>
+            </p>
+            <div class="table-contents">
+              <table class="table" summary="List of advanced gdb commands" border="1">
+                <colgroup>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th style="text-align: left">
+    command
+    </th>
+                    <th style="text-align: left">
+    description for command objectives
+    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">(gdb) thread apply all bt</code>
+                </td>
+                    <td style="text-align: left">
+    get a backtrace for all threads for multi-threaded program
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">(gdb) bt full</code>
+                </td>
+                    <td style="text-align: left">
+    get parameters came on the stack of function calls
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">(gdb) thread apply all bt full</code>
+                </td>
+                    <td style="text-align: left">
+    get a backtrace and parameters as the combination of the preceding options
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">(gdb) thread apply all bt full 10</code>
+                </td>
+                    <td style="text-align: left">
+    get a backtrace and parameters for top 10 calls to cut off irrelevant output
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                  <code class="literal">(gdb) set logging on</code>
+                </td>
+                    <td style="text-align: left">
+    write log of <code class="literal">gdb</code> output to a file (the default is "<code class="literal">gdb.txt</code>")
+    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <br class="table-break"/>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_debugging_x_errors"/>12.4.5. Debugging X Errors</h3>
+              </div>
+            </div>
+          </div>
+          <p>If a GNOME program <code class="literal">preview1</code> has received an X error, you should see a message as follows.</p>
+          <pre class="screen">The program 'preview1' received an X Window System error.</pre>
+          <p>If this is the case, you can try running the program with "<code class="literal">--sync</code>", and break on the "<code class="literal">gdk_x_error</code>" function in order to obtain a backtrace.</p>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_check_dependency_on_libraries"/>12.4.6. Check dependency on libraries</h3>
+              </div>
+            </div>
+          </div>
+          <p>Use <span class="citerefentry"><span class="refentrytitle">ldd</span>(1)</span> to find out a program's dependency on libraries by the followings.</p>
+          <pre class="screen">$ ldd /bin/ls
+        librt.so.1 =&gt; /lib/librt.so.1 (0x4001e000)
+        libc.so.6 =&gt; /lib/libc.so.6 (0x40030000)
+        libpthread.so.0 =&gt; /lib/libpthread.so.0 (0x40153000)
+        /lib/ld-linux.so.2 =&gt; /lib/ld-linux.so.2 (0x40000000)</pre>
+          <p>For <span class="citerefentry"><span class="refentrytitle">ls</span>(1)</span> to work in a `chroot`ed environment, the above libraries must be available in your `chroot`ed environment.</p>
+          <p>See <a class="xref" href="ch09.en.html#_tracing_program_activities" title="9.3.6. Tracing program activities">Section 9.3.6, “Tracing program activities”</a>.</p>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_memory_leak_detection_tools"/>12.4.7. Memory leak detection tools</h3>
+              </div>
+            </div>
+          </div>
+          <p>There are several memory leak detection tools available in Debian.</p>
+          <div class="table">
+            <a id="listofmemoryleakdetectiontools"/>
+            <p class="title">
+              <strong>Table 12.13. List of memory leak detection tools</strong>
+            </p>
+            <div class="table-contents">
+              <table class="table" summary="List of memory leak detection tools" border="1">
+                <colgroup>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th style="text-align: left">
+    package
+    </th>
+                    <th style="text-align: left">
+    popcon
+    </th>
+                    <th style="text-align: left">
+    size
+    </th>
+                    <th style="text-align: left">
+    description
+    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/libc6-dev">
+                  <code class="literal">libc6-dev</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=libc6-dev">V:276, I:613</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/libc/libc6-dev.html">18939</a>
+                    </td>
+                    <td style="text-align: left"><span class="citerefentry"><span class="refentrytitle">mtrace</span>(1)</span>: malloc debugging functionality in glibc
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/valgrind">
+                  <code class="literal">valgrind</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=valgrind">V:7, I:52</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/v/valgrind.html">80468</a>
+                    </td>
+                    <td style="text-align: left">
+    memory debugger and profiler
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/electric-fence">
+                  <code class="literal">electric-fence</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=electric-fence">V:0, I:5</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/e/electric-fence.html">70</a>
+                    </td>
+                    <td style="text-align: left"><span class="citerefentry"><span class="refentrytitle">malloc</span>(3)</span> debugger
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/leaktracer">
+                  <code class="literal">leaktracer</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=leaktracer">V:0, I:3</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/l/leaktracer.html">56</a>
+                    </td>
+                    <td style="text-align: left">
+    memory-leak tracer for C++ programs
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/libdmalloc5">
+                  <code class="literal">libdmalloc5</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=libdmalloc5">V:0, I:3</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/libd/libdmalloc5.html">393</a>
+                    </td>
+                    <td style="text-align: left">
+    debug memory allocation library
+    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <br class="table-break"/>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_static_code_analysis_tools"/>12.4.8. Static code analysis tools</h3>
+              </div>
+            </div>
+          </div>
+          <p>There are <a class="ulink" href="https://en.wikipedia.org/wiki/Lint_programming_tool">lint</a> like tools for <a class="ulink" href="https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis">static code analysis</a>.</p>
+          <div class="table">
+            <a id="listoftoolsforstaticcodeanalysis"/>
+            <p class="title">
+              <strong>Table 12.14. List of tools for static code analysis</strong>
+            </p>
+            <div class="table-contents">
+              <table class="table" summary="List of tools for static code analysis" border="1">
+                <colgroup>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                  <col style="text-align: left"/>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th style="text-align: left">
+    package
+    </th>
+                    <th style="text-align: left">
+    popcon
+    </th>
+                    <th style="text-align: left">
+    size
+    </th>
+                    <th style="text-align: left">
+    description
+    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/splint">
+                  <code class="literal">splint</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=splint">V:0, I:4</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/s/splint.html">2239</a>
+                    </td>
+                    <td style="text-align: left">
+    tool for statically checking C programs for bugs
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/flawfinder">
+                  <code class="literal">flawfinder</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=flawfinder">V:0, I:0</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/f/flawfinder.html">175</a>
+                    </td>
+                    <td style="text-align: left">
+    tool to examine C/C++ source code and looks for security weaknesses
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/perl">
+                  <code class="literal">perl</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=perl">V:618, I:994</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/p/perl.html">575</a>
+                    </td>
+                    <td style="text-align: left">
+    interpreter with internal static code checker: <span class="citerefentry"><span class="refentrytitle">B::Lint</span>(3perl)</span>
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/pylint">
+                  <code class="literal">pylint</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=pylint">V:6, I:18</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/p/pylint.html">2668</a>
+                    </td>
+                    <td style="text-align: left">
+    Python code static checker
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/weblint-perl">
+                  <code class="literal">weblint-perl</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=weblint-perl">V:0, I:1</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/w/weblint-perl.html">32</a>
+                    </td>
+                    <td style="text-align: left">
+    syntax and minimal style checker for HTML
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/linklint">
+                  <code class="literal">linklint</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=linklint">V:0, I:0</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/l/linklint.html">343</a>
+                    </td>
+                    <td style="text-align: left">
+    fast link checker and web site maintenance tool
+    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.debian.org/sid/libxml2-utils">
+                  <code class="literal">libxml2-utils</code>
+                </a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=libxml2-utils">V:22, I:289</a>
+                    </td>
+                    <td style="text-align: left">
+                      <a class="ulink" href="http://packages.qa.debian.org/libx/libxml2-utils.html">173</a>
+                    </td>
+                    <td style="text-align: left">
+    utilities with <span class="citerefentry"><span class="refentrytitle">xmllint</span>(1)</span> to validate XML files
+    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <br class="table-break"/>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_disassemble_binary"/>12.4.9. Disassemble binary</h3>
+              </div>
+            </div>
+          </div>
+          <p>You can disassemble binary code with <span class="citerefentry"><span class="refentrytitle">objdump</span>(1)</span> by the following.</p>
+          <pre class="screen">$  objdump -m i386 -b binary -D /usr/lib/grub/x86_64-pc/stage1</pre>
+          <div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Note">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Note]" src="images/note.png"/>
+                </td>
+                <th align="left">Note</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p><span class="citerefentry"><span class="refentrytitle">gdb</span>(1)</span> may be used to disassemble code interactively.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="titlepage">
+          <div>
+            <div>
+              <h2 class="title"><a id="_flex_a_better_lex"/>12.5. Flex — a better Lex</h2>
+            </div>
+          </div>
+        </div>
+        <p><a class="ulink" href="https://en.wikipedia.org/wiki/Flex_lexical_analyser">Flex</a> is a <a class="ulink" href="https://en.wikipedia.org/wiki/Lex_programming_tool">Lex</a>-compatible fast <a class="ulink" href="https://en.wikipedia.org/wiki/Lexical_analysis">lexical analyzer</a> generator.</p>
+        <p>Tutorial for <span class="citerefentry"><span class="refentrytitle">flex</span>(1)</span> can be found in "<code class="literal">info flex</code>".</p>
+        <p>You need to provide your own "<code class="literal">main()</code>" and "<code class="literal">yywrap()</code>".  Otherwise, your flex program should look like this to compile without a library.  This is because that "<code class="literal">yywrap</code>" is a macro and "<code class="literal">%option main</code>" turns on "<code class="literal">%option noyywrap</code>" implicitly.</p>
+        <pre class="screen">%option main
+%%
+.|\n    ECHO ;
+%%</pre>
+        <p>Alternatively, you may compile with the "<code class="literal">-lfl</code>" linker option at the end of your <span class="citerefentry"><span class="refentrytitle">cc</span>(1)</span> command line (like AT&amp;T-Lex with "<code class="literal">-ll</code>").  No "<code class="literal">%option</code>" is needed in this case.</p>
+      </div>
+      <div class="section">
+        <div class="titlepage">
+          <div>
+            <div>
+              <h2 class="title"><a id="_bison_a_better_yacc"/>12.6. Bison — a better Yacc</h2>
+            </div>
+          </div>
+        </div>
+        <p>Several packages provide a <a class="ulink" href="https://en.wikipedia.org/wiki/Yacc">Yacc</a>-compatible lookahead <a class="ulink" href="https://en.wikipedia.org/wiki/LR_parser">LR parser</a> or <a class="ulink" href="https://en.wikipedia.org/wiki/LALR_parser">LALR parser</a> generator in Debian.</p>
+        <div class="table">
+          <a id="listofyacccompatparsergenerators"/>
+          <p class="title">
+            <strong>Table 12.15. List of Yacc-compatible LALR parser generators</strong>
+          </p>
+          <div class="table-contents">
+            <table class="table" summary="List of Yacc-compatible LALR parser generators" border="1">
+              <colgroup>
+                <col style="text-align: left"/>
+                <col style="text-align: left"/>
+                <col style="text-align: left"/>
+                <col style="text-align: left"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <th style="text-align: left">
+    package
+    </th>
+                  <th style="text-align: left">
+    popcon
+    </th>
+                  <th style="text-align: left">
+    size
+    </th>
+                  <th style="text-align: left">
+    description
+    </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.debian.org/sid/bison">
+                <code class="literal">bison</code>
+              </a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=bison">V:11, I:109</a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.qa.debian.org/b/bison.html">2253</a>
+                  </td>
+                  <td style="text-align: left">
+                <a class="ulink" href="https://en.wikipedia.org/wiki/GNU_bison">GNU LALR parser generator</a>
+              </td>
+                </tr>
+                <tr>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.debian.org/sid/byacc">
+                <code class="literal">byacc</code>
+              </a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=byacc">V:0, I:6</a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.qa.debian.org/b/byacc.html">160</a>
+                  </td>
+                  <td style="text-align: left">
+    Berkeley LALR parser generator
+    </td>
+                </tr>
+                <tr>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.debian.org/sid/btyacc">
+                <code class="literal">btyacc</code>
+              </a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=btyacc">V:0, I:0</a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.qa.debian.org/b/btyacc.html">207</a>
+                  </td>
+                  <td style="text-align: left">
+    backtracking parser generator based on <code class="literal">byacc</code>
+    </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <br class="table-break"/>
+        <p>Tutorial for <span class="citerefentry"><span class="refentrytitle">bison</span>(1)</span> can be found in "<code class="literal">info bison</code>".</p>
+        <p>You need to provide your own "<code class="literal">main()</code>" and "<code class="literal">yyerror()</code>".  "<code class="literal">main()</code>" calls "<code class="literal">yyparse()</code>" which calls "<code class="literal">yylex()</code>", usually created with Flex.</p>
+        <pre class="screen">%%
+
+%%</pre>
+      </div>
+      <div class="section">
+        <div class="titlepage">
+          <div>
+            <div>
+              <h2 class="title"><a id="_autoconf"/>12.7. Autoconf</h2>
+            </div>
+          </div>
+        </div>
+        <p><a class="ulink" href="https://en.wikipedia.org/wiki/Autoconf">Autoconf</a> is a tool for producing shell scripts that automatically configure software source code packages to adapt to many kinds of Unix-like systems using the entire GNU build system.</p>
+        <p><span class="citerefentry"><span class="refentrytitle">autoconf</span>(1)</span> produces the configuration script "<code class="literal">configure</code>". "<code class="literal">configure</code>" automatically creates a customized "<code class="literal">Makefile</code>" using the "<code class="literal">Makefile.in</code>" template.</p>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_compile_and_install_a_program"/>12.7.1. Compile and install a program</h3>
+              </div>
+            </div>
+          </div>
+          <div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+            <table border="0" summary="Warning">
+              <tr>
+                <td rowspan="2" align="center" valign="top">
+                  <img alt="[Warning]" src="images/warning.png"/>
+                </td>
+                <th align="left">Warning</th>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <p>Do not overwrite system files with your compiled programs when installing them.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <p>Debian does not touch files in "<code class="literal">/usr/local/</code>" or "<code class="literal">/opt</code>".  So if you compile a program from source, install it into "<code class="literal">/usr/local/</code>" so it does not interfere with Debian.</p>
+          <pre class="screen">$ cd src
+$ ./configure --prefix=/usr/local
+$ make
+$ make install # this puts the files in the system</pre>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="_uninstall_program"/>12.7.2. Uninstall program</h3>
+              </div>
+            </div>
+          </div>
+          <p>If you have the original source and if it uses <span class="citerefentry"><span class="refentrytitle">autoconf</span>(1)</span>/<span class="citerefentry"><span class="refentrytitle">automake</span>(1)</span> and if you can remember how you configured it, execute as follows to uninstall the program.</p>
+          <pre class="screen">$ ./configure "all-of-the-options-you-gave-it"
+# make uninstall</pre>
+          <p>Alternatively, if you are absolutely sure that the install process puts files only under "<code class="literal">/usr/local/</code>" and there is nothing important there, you can erase all its contents by the following.</p>
+          <pre class="screen"># find /usr/local -type f -print0 | xargs -0 rm -f</pre>
+          <p>If you are not sure where files are installed, you should consider using <span class="citerefentry"><span class="refentrytitle">checkinstall</span>(8)</span>  from the <code class="literal">checkinstall</code> package, which provides a clean path for the uninstall.  It now supports to create a Debian package with "<code class="literal">-D</code>" option.</p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="titlepage">
+          <div>
+            <div>
+              <h2 class="title"><a id="_perl_short_script_madness"/>12.8. Perl short script madness</h2>
+            </div>
+          </div>
+        </div>
+        <p>Although any <a class="ulink" href="https://en.wikipedia.org/wiki/AWK">AWK</a> scripts can be automatically rewritten in <a class="ulink" href="https://en.wikipedia.org/wiki/Perl">Perl</a> using <span class="citerefentry"><span class="refentrytitle">a2p</span>(1)</span>, one-liner AWK scripts are best converted to one-liner Perl scripts manually.</p>
+        <p>Let's think following AWK script snippet.</p>
+        <pre class="screen">awk '($2=="1957") { print $3 }' |</pre>
+        <p>This is equivalent to any one of the following lines.</p>
+        <pre class="screen">perl -ne '@f=split; if ($f[1] eq "1957") { print "$f[2]\n"}' |</pre>
+        <pre class="screen">perl -ne 'if ((@f=split)[1] eq "1957") { print "$f[2]\n"}' |</pre>
+        <pre class="screen">perl -ne '@f=split; print $f[2] if ( $f[1]==1957 )' |</pre>
+        <pre class="screen">perl -lane 'print $F[2] if $F[1] eq "1957"' |</pre>
+        <pre class="screen">perl -lane 'print$F[2]if$F[1]eq+1957' |</pre>
+        <p>The last one is a riddle.  It took advantage of following Perl features.</p>
+        <div class="itemizedlist">
+          <ul class="itemizedlist">
+            <li class="listitem">
+              <p>
+The whitespace is optional.
+</p>
+            </li>
+            <li class="listitem">
+              <p>
+The automatic conversion exists from number to the string.
+</p>
+            </li>
+          </ul>
+        </div>
+        <p>See <span class="citerefentry"><span class="refentrytitle">perlrun</span>(1)</span> for the command-line options.  For more crazy Perl scripts, <a class="ulink" href="http://perlgolf.sourceforge.net">Perl Golf</a> may be interesting.</p>
+      </div>
+      <div class="section">
+        <div class="titlepage">
+          <div>
+            <div>
+              <h2 class="title"><a id="_web"/>12.9. Web</h2>
+            </div>
+          </div>
+        </div>
+        <p>Basic interactive dynamic web pages can be made as follows.</p>
+        <div class="itemizedlist">
+          <ul class="itemizedlist">
+            <li class="listitem">
+              <p>
+Queries are presented to the browser user using <a class="ulink" href="https://en.wikipedia.org/wiki/HTML">HTML</a> forms.
+</p>
+            </li>
+            <li class="listitem">
+              <p>
+Filling and clicking on the form entries sends one of the following <a class="ulink" href="https://en.wikipedia.org/wiki/Uniform_Resource_Locator">URL</a> string with encoded parameters from the browser to the web server.
+</p>
+              <div class="itemizedlist">
+                <ul class="itemizedlist">
+                  <li class="listitem">
+                    <p>
+"<code class="literal">http://www.foo.dom/cgi-bin/program.pl?VAR1=VAL1&amp;VAR2=VAL2&amp;VAR3=VAL3</code>"
+</p>
+                  </li>
+                  <li class="listitem">
+                    <p>
+"<code class="literal">http://www.foo.dom/cgi-bin/program.py?VAR1=VAL1&amp;VAR2=VAL2&amp;VAR3=VAL3</code>"
+</p>
+                  </li>
+                  <li class="listitem">
+                    <p>
+"<code class="literal">http://www.foo.dom/program.php?VAR1=VAL1&amp;VAR2=VAL2&amp;VAR3=VAL3</code>"
+</p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="listitem">
+              <p>
+"<code class="literal">%nn</code>" in URL is replaced with a character with hexadecimal <code class="literal">nn</code> value.
+</p>
+            </li>
+            <li class="listitem">
+              <p>
+The environment variable is set as: "<code class="literal">QUERY_STRING="VAR1=VAL1 VAR2=VAL2 VAR3=VAL3"</code>".
+</p>
+            </li>
+            <li class="listitem">
+              <p><a class="ulink" href="https://en.wikipedia.org/wiki/Common_Gateway_Interface">CGI</a> program (any one of "<code class="literal">program.*</code>") on the web server executes itself with the environment variable "<code class="literal">$QUERY_STRING</code>".
+</p>
+            </li>
+            <li class="listitem">
+              <p><code class="literal">stdout</code> of CGI program is sent to the web browser and is presented as an interactive dynamic web page.
+</p>
+            </li>
+          </ul>
+        </div>
+        <p>For security reasons it is better not to hand craft new hacks for parsing CGI parameters.  There are established modules for them in Perl and Python.  <a class="ulink" href="https://en.wikipedia.org/wiki/PHP">PHP</a> comes with these functionalities.  When client data storage is needed, <a class="ulink" href="https://en.wikipedia.org/wiki/HTTP_cookie">HTTP cookies</a> are used.  When client side data processing is needed, <a class="ulink" href="https://en.wikipedia.org/wiki/JavaScript">Javascript</a> is frequently used.</p>
+        <p>For more, see the <a class="ulink" href="https://en.wikipedia.org/wiki/Common_Gateway_Interface">Common Gateway Interface</a>, <a class="ulink" href="https://en.wikipedia.org/wiki/Apache_Software_Foundation">The Apache Software Foundation</a>, and <a class="ulink" href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a>.</p>
+        <p>Searching "CGI tutorial" on Google by typing encoded URL <a class="ulink" href="http://www.google.com/search?hl=en&amp;ie=UTF-8&amp;q=CGI+tutorial">http://www.google.com/search?hl=en&amp;ie=UTF-8&amp;q=CGI+tutorial</a> directly to the browser address is a good way to see the CGI script in action on the Google server.</p>
+      </div>
+      <div class="section">
+        <div class="titlepage">
+          <div>
+            <div>
+              <h2 class="title"><a id="_the_source_code_translation"/>12.10. The source code translation</h2>
+            </div>
+          </div>
+        </div>
+        <p>There are programs to convert source codes.</p>
+        <div class="table">
+          <a id="listofsourcecodetranslationtools"/>
+          <p class="title">
+            <strong>Table 12.16. List of source code translation tools</strong>
+          </p>
+          <div class="table-contents">
+            <table class="table" summary="List of source code translation tools" border="1">
+              <colgroup>
+                <col style="text-align: left"/>
+                <col style="text-align: left"/>
+                <col style="text-align: left"/>
+                <col style="text-align: left"/>
+                <col style="text-align: left"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <th style="text-align: left">
+    package
+    </th>
+                  <th style="text-align: left">
+    popcon
+    </th>
+                  <th style="text-align: left">
+    size
+    </th>
+                  <th style="text-align: left">
+    keyword
+    </th>
+                  <th style="text-align: left">
+    description
+    </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.debian.org/sid/perl">
+                <code class="literal">perl</code>
+              </a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=perl">V:618, I:994</a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.qa.debian.org/p/perl.html">575</a>
+                  </td>
+                  <td style="text-align: left">
+    AWK→PERL
+    </td>
+                  <td style="text-align: left">
+    convert source codes from AWK to PERL: <span class="citerefentry"><span class="refentrytitle">a2p</span>(1)</span>
+    </td>
+                </tr>
+                <tr>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.debian.org/sid/f2c">
+                <code class="literal">f2c</code>
+              </a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=f2c">V:0, I:8</a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.qa.debian.org/f/f2c.html">430</a>
+                  </td>
+                  <td style="text-align: left">
+    FORTRAN→C
+    </td>
+                  <td style="text-align: left">
+    convert source codes from FORTRAN 77 to C/C++: <span class="citerefentry"><span class="refentrytitle">f2c</span>(1)</span>
+    </td>
+                </tr>
+                <tr>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.debian.org/sid/intel2gas">
+                <code class="literal">intel2gas</code>
+              </a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://qa.debian.org/popcon-graph.php?packages=intel2gas">V:0, I:0</a>
+                  </td>
+                  <td style="text-align: left">
+                    <a class="ulink" href="http://packages.qa.debian.org/i/intel2gas.html">174</a>
+                  </td>
+                  <td style="text-align: left">
+    intel→gas
+    </td>
+                  <td style="text-align: left">
+    converter from NASM (Intel format) to the GNU Assembler (GAS)
+    </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <br class="table-break"/>
+      </div>
+      <div class="section">
+        <div class="titlepage">
+          <div>
+            <div>
+              <h2 class="title"><a id="_making_debian_package"/>12.11. Making Debian package</h2>
+            </div>
+          </div>
+        </div>
+        <p>If you want to make a Debian package, read followings.</p>
+        <div class="itemizedlist">
+          <ul class="itemizedlist">
+            <li class="listitem">
+              <p><a class="xref" href="ch02.en.html" title="Chapter 2. Debian package management">Chapter 2, <em>Debian package management</em></a> to understand the basic package system
+</p>
+            </li>
+            <li class="listitem">
+              <p><a class="xref" href="ch02.en.html#_porting_a_package_to_the_stable_system" title="2.7.13. Porting a package to the stable system">Section 2.7.13, “Porting a package to the stable system”</a> to understand basic porting process
+</p>
+            </li>
+            <li class="listitem">
+              <p><a class="xref" href="ch09.en.html#_chroot_system" title="9.10.4. Chroot system">Section 9.10.4, “Chroot system”</a> to understand basic chroot techniques
+</p>
+            </li>
+            <li class="listitem">
+              <p><span class="citerefentry"><span class="refentrytitle">debuild</span>(1)</span>, <span class="citerefentry"><span class="refentrytitle">pbuilder</span>(1)</span> and <span class="citerefentry"><span class="refentrytitle">pdebuild</span>(1)</span>
+</p>
+            </li>
+            <li class="listitem">
+              <p><a class="xref" href="ch12.en.html#_debugging_the_debian_package" title="12.4.2. Debugging the Debian package">Section 12.4.2, “Debugging the Debian package”</a> for recompiling for debugging
+</p>
+            </li>
+            <li class="listitem">
+              <p><a class="ulink" href="https://www.debian.org/doc/manuals/maint-guide/">Debian New Maintainers' Guide</a> as tutorial (the <code class="literal">maint-guide</code> package)
+</p>
+            </li>
+            <li class="listitem">
+              <p><a class="ulink" href="https://www.debian.org/doc/manuals/developers-reference/">Debian Developer's Reference</a> (the <code class="literal">developers-reference</code> package)
+</p>
+            </li>
+            <li class="listitem">
+              <p><a class="ulink" href="https://www.debian.org/doc/debian-policy/">Debian Policy Manual</a> (the <code class="literal">debian-policy</code> package)
+</p>
+            </li>
+            <li class="listitem">
+              <p><a class="ulink" href="https://www.debian.org/doc/manuals/debmake-doc/">Guide for Debian Maintainers</a> (the <code class="literal">debmake-doc</code> package)
+</p>
+            </li>
+          </ul>
+        </div>
+        <p>There are packages such as <code class="literal">debmake</code>, <code class="literal">dh-make</code>, <code class="literal">dh-make-perl</code>, etc., which help packaging.</p>
+      </div>
+    </div>
+    <div class="navfooter">
+      <hr/>
+      <table width="100%" summary="Navigation footer">
+        <tr>
+          <td align="left"><a accesskey="p" href="ch11.en.html"><img src="images/prev.png" alt="Prev"/></a> </td>
+          <td align="center"> </td>
+          <td align="right"> <a accesskey="n" href="apa.en.html"><img src="images/next.png" alt="Next"/></a></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top">Chapter 11. Data conversion </td>
+          <td align="center">
+            <a accesskey="h" href="index.en.html">
+              <img src="images/home.png" alt="Home"/>
+            </a>
+          </td>
+          <td align="right" valign="top"> Appendix A. Appendix</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

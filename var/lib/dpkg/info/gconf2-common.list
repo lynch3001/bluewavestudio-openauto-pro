@@ -1,0 +1,6 @@
+/etc
+/etc/gconf
+/etc/gconf/2
+/etc/gconf/2/evoldap.conf
+/etc/gconf/gconf.xml.defaults
+/etc/gconf/gconf.xml.mandatory

@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/SoapySDR
+/usr/lib/arm-linux-gnueabihf/SoapySDR/modules0.6
+/usr/lib/arm-linux-gnueabihf/SoapySDR/modules0.6/librtlsdrSupport.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/soapysdr0.6-module-rtlsdr
+/usr/share/doc/soapysdr0.6-module-rtlsdr/README.md
+/usr/share/doc/soapysdr0.6-module-rtlsdr/changelog.Debian.gz
+/usr/share/doc/soapysdr0.6-module-rtlsdr/changelog.gz
+/usr/share/doc/soapysdr0.6-module-rtlsdr/copyright

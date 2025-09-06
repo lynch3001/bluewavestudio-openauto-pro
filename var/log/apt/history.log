@@ -1,0 +1,6 @@
+
+Start-Date: 2022-03-17  21:01:07
+Commandline: apt upgrade -y
+Requested-By: pi (1000)
+Upgrade: libraspberrypi-bin:armhf (1:1.20211201~buster-1, 1:1.20220308~buster-1), libraspberrypi-dev:armhf (1:1.20211201~buster-1, 1:1.20220308~buster-1), rpi-eeprom-images:armhf (13.5-1~buster, 13.12-1~buster), libraspberrypi-doc:armhf (1:1.20211201~buster-1, 1:1.20220308~buster-1), libsasl2-modules-db:armhf (2.1.27+dfsg-1+deb10u1, 2.1.27+dfsg-1+deb10u2), linux-libc-dev:armhf (1:1.20211201~buster-1, 1:1.20220308~buster-1), openssl:armhf (1.1.1d-0+deb10u7, 1.1.1d-0+deb10u8+rpt1), libexpat1-dev:armhf (2.2.6-2+deb10u1, 2.2.6-2+deb10u4), rpi-eeprom:armhf (13.5-1~buster, 13.12-1~buster), libsasl2-2:armhf (2.1.27+dfsg-1+deb10u1, 2.1.27+dfsg-1+deb10u2), libexpat1:armhf (2.2.6-2+deb10u1, 2.2.6-2+deb10u4), raspberrypi-kernel:armhf (1:1.20211201~buster-1, 1:1.20220308~buster-1), raspberrypi-bootloader:armhf (1:1.20211201~buster-1, 1:1.20220308~buster-1), libwebkit2gtk-4.0-37:armhf (2.34.3-1~deb10u1+rpi1, 2.34.6-1~deb10u1+rpi1), libssl-dev:armhf (1.1.1d-0+deb10u7, 1.1.1d-0+deb10u8+rpt1), libraspberrypi0:armhf (1:1.20211201~buster-1, 1:1.20220308~buster-1), libssl1.1:armhf (1.1.1d-0+deb10u7, 1.1.1d-0+deb10u8+rpt1), libjavascriptcoregtk-4.0-18:armhf (2.34.3-1~deb10u1+rpi1, 2.34.6-1~deb10u1+rpi1)
+End-Date: 2022-03-17  21:12:15

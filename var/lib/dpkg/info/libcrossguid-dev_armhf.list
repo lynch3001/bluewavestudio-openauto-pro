@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/include
+/usr/include/guid.h
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libcrossguid.a
+/usr/share
+/usr/share/doc
+/usr/share/doc/libcrossguid-dev
+/usr/share/doc/libcrossguid-dev/README.md.gz
+/usr/share/doc/libcrossguid-dev/changelog.Debian.gz
+/usr/share/doc/libcrossguid-dev/copyright
+/usr/lib/arm-linux-gnueabihf/libcrossguid.so

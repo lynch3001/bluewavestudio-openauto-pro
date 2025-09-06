@@ -1,0 +1,11 @@
+dfe71d9e39d87c8fee459bc39fef6ac2  usr/bin/agnostics
+ae00c9b6f67ca0e9849e193b3a83cef1  usr/share/agnostics/sd_bench.fio
+77f20d5c6f65baa573eb8e1bef1eb1a0  usr/share/agnostics/sdtest.sh
+8c4543045f69b6ad0a0ee9ea5de48d12  usr/share/agnostics/ui/agnostics.ui
+172d85e9e356e24365adde9b479ff74a  usr/share/applications/agnostics.desktop
+2030ee59a1708ac5df1b3e19f4ffeb3f  usr/share/doc/agnostics/changelog.gz
+be3796059bad87cc3f00fba51cb918cd  usr/share/doc/agnostics/copyright
+a2d3957e4fa808162cd04a1b6f92e66e  usr/share/locale/en_GB/LC_MESSAGES/agnostics.mo
+aef3e6127ab55d53129e7696fee35c5f  usr/share/locale/hy/LC_MESSAGES/agnostics.mo
+bd5fdcda862f60d433d25d25bff0c683  usr/share/locale/it/LC_MESSAGES/agnostics.mo
+d800e38f0a1bb03b862083c057b4e9e8  usr/share/locale/sk/LC_MESSAGES/agnostics.mo

@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libgnutls-dane.so.0.4.1
+/usr/share
+/usr/share/doc
+/usr/share/doc/libgnutls-dane0
+/usr/share/doc/libgnutls-dane0/changelog.Debian.gz
+/usr/share/doc/libgnutls-dane0/changelog.gz
+/usr/share/doc/libgnutls-dane0/copyright
+/usr/lib/arm-linux-gnueabihf/libgnutls-dane.so.0

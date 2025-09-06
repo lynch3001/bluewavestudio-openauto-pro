@@ -1,0 +1,7 @@
+5926c6284b6619d555d7c5b2ac1740c0  lib/systemd/system/configure-printer@.service
+929195aecec3a96e81f276c5c1c86f19  lib/udev/rules.d/70-printers.rules
+069d2ed07aebeaa399853df1c97af515  lib/udev/udev-add-printer
+3985baa0f21510071e3b1654461a8f1d  lib/udev/udev-configure-printer
+9295518f94d40925e066df0b19b13249  usr/share/doc/system-config-printer-udev/changelog.Debian.gz
+7edd8fa73c8da44ad9ce2b137934e2a3  usr/share/doc/system-config-printer-udev/changelog.gz
+e2479f9f3ce66a7d0670a7aacedd42cc  usr/share/doc/system-config-printer-udev/copyright

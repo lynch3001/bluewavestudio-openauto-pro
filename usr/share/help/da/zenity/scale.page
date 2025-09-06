@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="scale" xml:lang="da">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Brug tilvalget <cmd>--scale</cmd>.</desc>
+  </info>
+  <title>Skaladialog</title>
+  <p>Brug tilvalget <cmd>--error</cmd> til at oprette en skaladialog.</p>
+  <p>Skaladialogen understøtter følgende tilvalg:</p>
+
+  <terms>
+
+    <item>
+      <title><cmd>--text</cmd>=<var>TEKST</var></title>
+      <p>Angiv dialogteksten. (Standard: Justér skalaværdien)</p>
+    </item>
+
+    <item>
+      <title><cmd>--value</cmd>=<var>VÆRDI</var></title>
+      <p>Angiver startværdi. (Standard: 0) Du skal angive en værdi mellem minimum- og maksimumværdierne.</p>
+    </item>
+
+    <item>
+      <title><cmd>--min-value</cmd>=<var>VÆRDI</var></title>
+      <p>Angiv mindsteværdien. (Standard: 0)</p>
+    </item>
+
+    <item>
+      <title><cmd>--max-value</cmd>=<var>VÆRDI</var></title>
+      <p>Angiv maksimumværdien. (Standard: 100)</p>
+    </item>
+
+    <item>
+      <title><cmd>--step</cmd>=<var>VÆRDI</var></title>
+      <p>Angiv trinstørrelse. (Standard: 1)</p>
+    </item>
+
+    <item>
+      <title><cmd>--print-partial</cmd></title>
+      <p>Udskriv værdi til standardoutput, hver gang en værdi ændres.</p>
+    </item>
+
+    <item>
+      <title><cmd>--hide-value</cmd></title>
+      <p>Skjul værdien på dialogen.</p>
+    </item>
+
+  </terms>
+
+  <p>Følgende eksempelscript viser, hvordan man opretter en skaladialog:</p>
+
+<code>
+#!/bin/sh
+
+TAL=`zenity --scale --text="Vælg gennemsigtighed af vindue." --value=50`
+
+case $? in
+         0)
+		echo "Du har valgt $TAL %.";;
+         1)
+                echo "Ingen værdi valgt.";;
+        -1)
+                echo "Der opstod en uventet fejl.";;
+esac
+</code>
+
+  <figure>
+    <title>Eksempel på skaladialog</title>
+    <desc>Eksempel på skaladialog til <app>Zenity</app></desc>
+    <media type="image" mime="image/png" src="figures/zenity-scale-screenshot.png"/>
+  </figure>
+
+</page>

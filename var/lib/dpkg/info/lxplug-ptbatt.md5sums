@@ -1,0 +1,9 @@
+5a68a97dccfaf8e78e62a347754df8ae  usr/lib/arm-linux-gnueabihf/lxpanel/plugins/ptbatt.so
+aeac237705e81e635ef1d190d4a109db  usr/share/doc/lxplug-ptbatt/changelog.gz
+294ac6ffba71152fa65d3bf5ccee2ad9  usr/share/doc/lxplug-ptbatt/copyright
+517818f70132aea674bb6ba1f338af4c  usr/share/locale/en_GB/LC_MESSAGES/lxplug_ptbatt.mo
+9adde340bbd70de95822b08255db7df6  usr/share/locale/it/LC_MESSAGES/lxplug_ptbatt.mo
+f129feddc69cf32ddc931eb0fa4f64ee  usr/share/locale/new/LC_MESSAGES/lxplug_ptbatt.mo
+6c2760fa8bb3fd031255a6d05a5a821d  usr/share/locale/sk/LC_MESSAGES/lxplug_ptbatt.mo
+3bb4d264134d59182e0381464379bdc1  usr/share/lxpanel/images/flash.png
+9a46faacc89106a009139b7faeec4f0a  usr/share/lxpanel/images/plug.png

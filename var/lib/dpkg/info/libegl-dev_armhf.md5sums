@@ -1,0 +1,7 @@
+a3c7979093748434232da0d4ed9740eb  usr/include/EGL/egl.h
+882c54e9fabae858e02462d3334e9a61  usr/include/EGL/eglext.h
+a2fc1fc429f53eb1e7a33b04905fc5dc  usr/include/EGL/eglplatform.h
+a8207bfab05093d5c1e551d363c66829  usr/lib/arm-linux-gnueabihf/pkgconfig/egl.pc
+2295a81abfbf493c2fefd51c81b8618e  usr/share/bug/libegl-dev/control
+6278c86728d7ea4eba2a11b1c7a78140  usr/share/doc/libegl-dev/changelog.Debian.gz
+6f91facaf87458af9488a7576492a515  usr/share/doc/libegl-dev/copyright

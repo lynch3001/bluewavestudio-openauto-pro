@@ -1,0 +1,7 @@
+183e51d8cf0a6294cc814215532693aa  usr/bin/omxplayer
+9887b7a185c656f50afcafb3059639a8  usr/bin/omxplayer.bin
+239f63e8b3ee054a27e7beb2ed8d1d62  usr/share/doc/omxplayer/README.gz
+124583277b93defb361d822995a7c315  usr/share/doc/omxplayer/changelog.Debian.gz
+d4a899a3e016e294fbac9e9195ecb24b  usr/share/doc/omxplayer/copyright
+a9b1edc5d42acd573827e070d6860de3  usr/share/lintian/overrides/omxplayer
+1be7b3f177a03bcc8c05501ee2cb87c5  usr/share/man/man1/omxplayer.1.gz

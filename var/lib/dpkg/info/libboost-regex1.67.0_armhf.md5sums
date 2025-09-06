@@ -1,0 +1,4 @@
+7da30058d0abb0d714ccba916db954f1  usr/lib/arm-linux-gnueabihf/libboost_regex.so.1.67.0
+fd9fd87aca681e8911194b0265a932bd  usr/share/doc/libboost-regex1.67.0/changelog.Debian.gz
+190563c1ac07e6b6ab3c1b872d584bfe  usr/share/doc/libboost-regex1.67.0/copyright
+6aedf0b0dbfc06b83b3d323e909a63bd  usr/share/lintian/overrides/libboost-regex1.67.0

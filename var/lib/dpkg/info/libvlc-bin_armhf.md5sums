@@ -1,0 +1,7 @@
+8de4ddab480756c60ebf990c327fcbd9  usr/lib/arm-linux-gnueabihf/vlc/vlc-cache-gen
+143dd060cd683f7da6fa97b4de08f0bc  usr/share/bug/libvlc-bin/control
+db5a9ef7d588ac8bafe061d1968be5cd  usr/share/bug/libvlc-bin/presubj
+37467d5ce4d242efd1f03dc9e91b12dd  usr/share/doc/libvlc-bin/changelog.Debian.gz
+c6362b61e68a63912965a8c76532f3da  usr/share/doc/libvlc-bin/changelog.gz
+3d80bde9e43c6c323bf2f26bae755756  usr/share/doc/libvlc-bin/copyright
+f8bf75d4a6671e95aea609e8bff2937f  usr/share/lintian/overrides/libvlc-bin

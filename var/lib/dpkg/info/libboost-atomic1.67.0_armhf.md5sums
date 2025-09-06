@@ -1,0 +1,4 @@
+2529e34b2e29289cbff59b36d75ab397  usr/lib/arm-linux-gnueabihf/libboost_atomic.so.1.67.0
+fd9fd87aca681e8911194b0265a932bd  usr/share/doc/libboost-atomic1.67.0/changelog.Debian.gz
+190563c1ac07e6b6ab3c1b872d584bfe  usr/share/doc/libboost-atomic1.67.0/copyright
+9d5e17a4c9c07badf6a374cbf453f6f6  usr/share/lintian/overrides/libboost-atomic1.67.0

@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/bin
+/usr/share
+/usr/share/doc
+/usr/share/doc/swig
+/usr/share/doc/swig/README.Debian
+/usr/share/doc/swig/README.gz
+/usr/share/doc/swig/changelog.Debian.gz
+/usr/share/doc/swig/changelog.gz
+/usr/share/doc/swig/copyright
+/usr/bin/ccache-swig
+/usr/bin/swig

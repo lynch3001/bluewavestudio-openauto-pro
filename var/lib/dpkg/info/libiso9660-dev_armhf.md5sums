@@ -1,0 +1,8 @@
+a884a1b7d62c08380b27118c670c0ffa  usr/include/cdio/iso9660.h
+d8fe57ced0f947ab7084a8877424f7d8  usr/include/cdio/rock.h
+77bf558ed17df65641ed72c7df04b481  usr/include/cdio/xa.h
+128bb97ef717348321d86b834a514131  usr/lib/arm-linux-gnueabihf/libiso9660.a
+718aa64fe3c86cbe20b9241fff764d4b  usr/lib/arm-linux-gnueabihf/pkgconfig/libiso9660.pc
+7f6ecb784eb1ca601ccd57bceb4c41a6  usr/share/doc/libiso9660-dev/changelog.Debian.gz
+a6d5d0dafdba19b116267345e577df8f  usr/share/doc/libiso9660-dev/changelog.gz
+8ea053b27fd8e38c66d1ac49099a2fc4  usr/share/doc/libiso9660-dev/copyright

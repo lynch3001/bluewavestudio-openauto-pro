@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/include
+/usr/include/pigpio.h
+/usr/lib
+/usr/share
+/usr/share/doc
+/usr/share/doc/libpigpio-dev
+/usr/share/doc/libpigpio-dev/changelog.Debian.gz
+/usr/share/doc/libpigpio-dev/copyright
+/usr/share/man
+/usr/share/man/man3
+/usr/share/man/man3/pigpio.3.gz
+/usr/lib/libpigpio.so

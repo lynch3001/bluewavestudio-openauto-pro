@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="scale" xml:lang="pl">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Używanie opcji <cmd>--scale</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+  <title>Okno z podziałką</title>
+  <p>Użyj opcji <cmd>--scale</cmd>, aby utworzyć okno z podziałką.</p>
+  <p>Okno z podziałką obsługuje te opcje:</p>
+
+  <terms>
+
+    <item>
+      <title><cmd>--text</cmd>=<var>TEKST</var></title>
+      <p>Ustawia tekst okna (domyślnie „Dopasowanie wartości podziałki”).</p>
+    </item>
+
+    <item>
+      <title><cmd>--value</cmd>=<var>WARTOŚĆ</var></title>
+      <p>Ustawia początkową wartość (domyślnie 0). Należy podać wartość między minimalną a maksymalną.</p>
+    </item>
+
+    <item>
+      <title><cmd>--min-value</cmd>=<var>WARTOŚĆ</var></title>
+      <p>Ustawia minimalną wartość (domyślnie 0).</p>
+    </item>
+
+    <item>
+      <title><cmd>--max-value</cmd>=<var>WARTOŚĆ</var></title>
+      <p>Ustawia maksymalną wartość (domyślnie 100).</p>
+    </item>
+
+    <item>
+      <title><cmd>--step</cmd>=<var>WARTOŚĆ</var></title>
+      <p>Ustawia rozmiar kroku (domyślnie 1).</p>
+    </item>
+
+    <item>
+      <title><cmd>--print-partial</cmd></title>
+      <p>Wyświetla wartość na standardowym wyjściu po jej zmianie.</p>
+    </item>
+
+    <item>
+      <title><cmd>--hide-value</cmd></title>
+      <p>Ukrywa wartość w oknie.</p>
+    </item>
+
+  </terms>
+
+  <p>Ten przykładowy skrypt pokazuje, jak utworzyć okno z podziałką:</p>
+
+<code>
+#!/bin/sh
+
+VALUE=`zenity --scale --text="Wybór przezroczystości okna." --value=50`
+
+case $? in
+         0)
+		echo "Wybrano $VALUE%.";;
+         1)
+                echo "Nie wybrano wartości.";;
+        -1)
+                echo "Wystąpił nieoczekiwany błąd.";;
+esac
+</code>
+
+  <figure>
+    <title>Przykład okna z podziałką</title>
+    <desc>Przykład okna <app>Zenity</app> z podziałką</desc>
+    <media type="image" mime="image/png" src="figures/zenity-scale-screenshot.png"/>
+  </figure>
+
+</page>

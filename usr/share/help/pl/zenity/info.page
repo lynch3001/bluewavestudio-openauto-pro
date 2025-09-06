@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="info" xml:lang="pl">
+  <info>
+    <link type="guide" xref="message"/>
+    <desc>Używanie opcji <cmd>--info</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+  <title>Okno z informacją</title>
+      <p>Użyj opcji <cmd>--info</cmd>, aby utworzyć okno z informacją.</p>
+
+      <p>Ten przykładowy skrypt pokazuje, jak utworzyć okno z informacją:</p>
+
+<code>
+#!/bin/bash
+
+zenity --info \
+--text="Ukończono łączenie. Zaktualizowano 3 z 10 plików."
+</code>
+
+
+      <figure>
+        <title>Przykład okna z informacją</title>
+        <desc>Przykład okna <app>Zenity</app> z informacją</desc>
+        <media type="image" mime="image/png" src="figures/zenity-information-screenshot.png"/>
+      </figure>
+</page>

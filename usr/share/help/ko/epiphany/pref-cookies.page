@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pref-cookies" xml:lang="ko">
+
+  <info>
+    <link type="guide" xref="index#privacy"/>
+    <link type="guide" xref="pref"/>
+    <revision pkgversion="3.10" date="2013-07-02" status="candidate"/>
+    <revision pkgversion="3.12" date="2014-01-28" status="final"/>
+
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Michael Hill</name>
+      <email its:translate="no">mdhill@gnome.org</email>
+      <years/>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>어떤 웹사이트가 쿠키를 설정하도록 허락할 지 어떻게 고릅니까?</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>ChangSeok Oh</mal:name>
+      <mal:email>changseok@gnome.org</mal:email>
+      <mal:years>2015, 2016, 2017, 2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gyuseok Jung</mal:name>
+      <mal:email>jgyuseok@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>쿠키 기본 설정하기</title>
+
+  <!-- Include an explanation about cookies. -->
+  <include xmlns="http://www.w3.org/2001/XInclude" href="cookies.xml" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:page/mal:p)"/>
+
+  <p>쿠키를 허용할 지 그리고 어떤 웹사이트의 쿠키를 허용할 지 특정할 수 있습니다.</p>
+
+  <steps>
+    <item>
+      <p><guiseq><gui style="menu">웹</gui><gui style="menuitem">기본 설정</gui><gui style="tab">개인정보</gui></guiseq>를 엽니다.</p>
+    </item>
+    <item>
+      <p>모든 웹사이트의 쿠키를 허용할 지, 오직 방문했던 웹사이트의 쿠키만 허용할 지, 그렇지않으면 어떤 쿠키도 허용하지 않을 지 선택하세요.</p>
+    </item>
+  </steps>
+
+  <p>보통 <gui>방문한 사이트에서만</gui>을 사용해야 합니다. 왜냐하면 이 옵션이 대부분의 웹사이트에서 당신의 계정으로 로그인하는 것을 허용하는 반면 방문한 적이 없는 웹사이트가 쿠키를 남기는 것은 방지하기 때문입니다.</p>
+
+  <p>만약 쿠키를 <gui>항상 허용</gui>을 고른다면, 방문한 적이 없는 웹사이트도 <em>제삼자 쿠키</em>를 남길 수 있게 됩니다. 제삼자 쿠키는 광고업자와 소셜 미디어 웹사이트가 당신의 웹 사이트 전반의 활동을 추적해서 맞춤형 내용을 제공하려고 종종 사용합니다. Outlook.com 같은 몇몇 웹사이트는 당신이 로그인 여부를 파악하려고 제삼자 쿠키를 사용합니다.</p>
+
+  <p>만약 쿠키를 <gui>허용하지 않는다</gui>면, 몇몇 웹사이트에서 계정에 로그인한다거나, 기본 설정을 저장하거나 혹은 장바구니에 물건을 담을 수 없음과 같은 문제를 경험할 수도 있습니다.</p>
+
+</page>

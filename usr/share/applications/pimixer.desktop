@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Audio Device Settings
+Comment=Settings for internal and external audio devices
+Icon=multimedia-volume-control
+Exec=pimixer
+Type=Application
+StartupNotify=true
+Terminal=false
+Categories=Settings

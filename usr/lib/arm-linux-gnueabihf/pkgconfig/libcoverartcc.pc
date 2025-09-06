@@ -1,0 +1,13 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib/arm-linux-gnueabihf
+includedir=/usr/include
+
+Name: libcoverartcc
+Description: The Cover Art Archive Client Library.
+URL: http://musicbrainz.org/doc/libcoverart
+Version: 1.0.0
+Requires.private: neon >= 0.25, jansson
+Libs: -L/usr/lib/arm-linux-gnueabihf -lcoverartcc
+Cflags: -I/usr/include
+

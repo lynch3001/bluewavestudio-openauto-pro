@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pref-cookies" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="index#privacy"/>
+    <link type="guide" xref="pref"/>
+    <revision pkgversion="3.10" date="2013-07-02" status="candidate"/>
+    <revision pkgversion="3.12" date="2014-01-28" status="final"/>
+
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Michael Hill</name>
+      <email its:translate="no">mdhill@gnome.org</email>
+      <years/>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Hur väljer jag vilka webbplatser jag tillåter att lämna kakor?</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2015, 2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ställ in inställningar för kakor</title>
+
+  <!-- Include an explanation about cookies. -->
+  <include xmlns="http://www.w3.org/2001/XInclude" href="cookies.xml" xpointer="xmlns(mal=http://projectmallard.org/1.0/)xpointer(/mal:page/mal:p)"/>
+
+  <p>Du kan ange huruvida du vill acceptera kakor och från vilka webbplatser.</p>
+
+  <steps>
+    <item>
+      <p>Öppna <guiseq><gui style="menu">Webb</gui><gui style="menuitem">Inställningar</gui><gui style="tab">Sekretess</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Välj huruvida du vill acceptera kakor från alla webbplatser, acceptera kakor endast från webbplatser som du har besökt eller inte acceptera några kakor.</p>
+    </item>
+  </steps>
+
+  <p>Du bör vanligen använda <gui>Endast från webbplatser du besöker</gui> eftersom detta alternativ låter dig logga in på dina konton på de flesta webbplatser medan det hindrar webbplatser som du inte har besökt från att lämna kakor.</p>
+
+  <p>Om du väljer att <gui>Alltid acceptera</gui> kakor kommer webbplatser som du inte har besökt kunna lämna <em>tredjepartskakor</em>. Tredjepartskakor används ofta av annonsörer och sociala nätverk för att spåra din aktivitet över flera webbplatser och erbjuda riktat innehåll. Notera att vissa webbplatser, som Outlook.com, använder tredjepartskakor för att se om du är inloggad.</p>
+
+  <p>Om du väljer <gui>Acceptera aldrig</gui> för kakor kan du för vissa webbplatser stöta på problem som med att logga in på dina konton, spara dina inställningar eller att du inte kan lägga till varor i din varukorg.</p>
+
+</page>

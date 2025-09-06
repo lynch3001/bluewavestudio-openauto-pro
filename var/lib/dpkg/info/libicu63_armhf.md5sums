@@ -1,0 +1,9 @@
+af1d3246697199379d6254495fcd0031  usr/lib/arm-linux-gnueabihf/libicudata.so.63.1
+74a0fa5cb3c3646ab7bfd6974aea0842  usr/lib/arm-linux-gnueabihf/libicui18n.so.63.1
+c8e6052756a925b7a1638fba2d1a9ed4  usr/lib/arm-linux-gnueabihf/libicuio.so.63.1
+d16d113f68f73aaee1d957429ca0b0cd  usr/lib/arm-linux-gnueabihf/libicutest.so.63.1
+c4ac3db1b45db1e6f7f1a1fdfa57a0a3  usr/lib/arm-linux-gnueabihf/libicutu.so.63.1
+30ec3f24ce02615ac912ca289695e127  usr/lib/arm-linux-gnueabihf/libicuuc.so.63.1
+8788266e5c4ec68f21195e7dc04e03c5  usr/share/doc/libicu63/changelog.Debian.gz
+8f29b59a821c1456d7e44d6d49f7e6f1  usr/share/doc/libicu63/copyright
+8eefc36e9e9d33f09d0ef512b57022c9  usr/share/lintian/overrides/libicu63

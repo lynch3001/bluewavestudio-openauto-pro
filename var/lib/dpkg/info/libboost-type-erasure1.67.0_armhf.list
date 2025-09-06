@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libboost_type_erasure.so.1.67.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libboost-type-erasure1.67.0
+/usr/share/doc/libboost-type-erasure1.67.0/changelog.Debian.gz
+/usr/share/doc/libboost-type-erasure1.67.0/copyright
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libboost-type-erasure1.67.0

@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libBasicUsageEnvironment.so.1.0.1
+/usr/share
+/usr/share/doc
+/usr/share/doc/libbasicusageenvironment1
+/usr/share/doc/libbasicusageenvironment1/NEWS.Debian.gz
+/usr/share/doc/libbasicusageenvironment1/changelog.Debian.gz
+/usr/share/doc/libbasicusageenvironment1/copyright
+/usr/lib/arm-linux-gnueabihf/libBasicUsageEnvironment.so.1

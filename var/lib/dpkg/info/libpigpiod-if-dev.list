@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/include
+/usr/include/pigpiod_if.h
+/usr/include/pigpiod_if2.h
+/usr/lib
+/usr/share
+/usr/share/doc
+/usr/share/doc/libpigpiod-if-dev
+/usr/share/doc/libpigpiod-if-dev/changelog.Debian.gz
+/usr/share/doc/libpigpiod-if-dev/copyright
+/usr/share/man
+/usr/share/man/man3
+/usr/share/man/man3/pigpiod_if.3.gz
+/usr/share/man/man3/pigpiod_if2.3.gz
+/usr/lib/libpigpiod_if.so
+/usr/lib/libpigpiod_if2.so

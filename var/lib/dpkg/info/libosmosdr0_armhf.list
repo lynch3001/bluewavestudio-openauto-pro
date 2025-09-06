@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libosmosdr.so.0.0.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libosmosdr0
+/usr/share/doc/libosmosdr0/copyright
+/usr/share/doc/libosmosdr0/changelog.Debian.gz
+/lib
+/lib/udev
+/lib/udev/rules.d
+/lib/udev/rules.d/60-libosmosdr0.rules
+/usr/lib/arm-linux-gnueabihf/libosmosdr.so.0

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pref-downloads" xml:lang="ko">
+
+  <info>
+    <link type="guide" xref="index#pref"/>
+    <link type="guide" xref="pref"/>
+    <revision pkgversion="3.10" date="2013-07-06" status="review"/>
+    <revision pkgversion="3.12" date="2014-01-28" status="candidate"/>
+
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+<!--    <credit type="copyright editor">
+      <name></name>
+      <email its:translate="no"></email>
+      <years></years>
+    </credit>-->
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>내 파일을 어디로 다운로드하며 어떻게 이 설정을 바꿀 수 있나요?</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>ChangSeok Oh</mal:name>
+      <mal:email>changseok@gnome.org</mal:email>
+      <mal:years>2015, 2016, 2017, 2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gyuseok Jung</mal:name>
+      <mal:email>jgyuseok@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>파일 다운로드 중</title>
+
+  <p>전자메일 첨부처럼 인터넷에서 다운로드 받은 파일을 자동으로 <file>다운로드</file> 폴더에 저장합니다. 이 설정은 <gui>기본 설정</gui>에서 바꿀 수 있습니다.</p>
+
+  <steps>
+    <item>
+      <p><guiseq><gui style="menu">웹</gui><gui style="menuitem">기본 설정</gui><gui style="tab">일반</gui></guiseq>을 엽니다.</p>
+    </item>
+    <item>
+      <p>다운로드 받을 다른 폴더를 선택하려면 <gui>다운로드 폴더</gui>를 누르세요. 만약 사용하려는 폴더가 목록에 없다면, 그것을 탐색하기 위한 <gui>그 외</gui>를 선택하세요.</p>
+    </item>
+    <item>
+      <p>다운로드 받은 파일을 자동으로 열기를 원한다면, <gui>다운로드한 파일 자동으로 열기</gui> 확인란을 선택하세요.</p>
+    </item>
+  </steps>
+
+  <p>만약 파일을 다운로드하는 대신 <em>저장</em>한다면, 그것을 어디에 저장할 지 여전히 지정해야 합니다.</p>
+
+</page>

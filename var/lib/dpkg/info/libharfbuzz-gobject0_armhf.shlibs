@@ -1,0 +1,2 @@
+libharfbuzz-gobject 0 libharfbuzz-gobject0 (>= 2.3.1)
+udeb: libharfbuzz-gobject 0 libharfbuzz0-udeb (>= 2.3.1)

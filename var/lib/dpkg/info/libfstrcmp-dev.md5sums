@@ -1,0 +1,15 @@
+aacc9d4535bc1bd057493e0ecea8b3d8  usr/include/fstrcmp.h
+ab386d01f792384311a461e7c14f1703  usr/lib/libfstrcmp.a
+953cbda0a69edab20b2296e623df0bf7  usr/lib/pkgconfig/fstrcmp.pc
+b435f268b6a38dec7930acd8a3434e91  usr/share/doc/libfstrcmp-dev/changelog.Debian.gz
+ad89adc809e510cb12e624e1d5907959  usr/share/doc/libfstrcmp-dev/copyright
+273c8b87fb17740d25d188709a794d62  usr/share/man/man3/fmemcmp.3.gz
+2eeabef542f84fe87252d68a126a6cf2  usr/share/man/man3/fmemcmpi.3.gz
+ee3773d7bcb49b923241c96ccf6ba24d  usr/share/man/man3/fstrcasecmp.3.gz
+2c84a9d2697720307e2d7982dc446473  usr/share/man/man3/fstrcasecmpi.3.gz
+148940f8af804d18eb6d5028cfd03cfa  usr/share/man/man3/fstrcmp.3.gz
+cbf81c7f336fd9d6b542f30487d40028  usr/share/man/man3/fstrcmpi.3.gz
+09e0f4c481bd3d9e94bc014342ecbc82  usr/share/man/man3/fstrcoll.3.gz
+7298ae09794acc8a1efe8bd23b8b8303  usr/share/man/man3/fstrcolli.3.gz
+dba9d44139a6e90854812e772195b613  usr/share/man/man3/fwcscmp.3.gz
+94ac752f8669e9430b0764724dfb7370  usr/share/man/man3/fwcscmpi.3.gz

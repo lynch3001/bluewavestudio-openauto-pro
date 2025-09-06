@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/include
+/usr/include/plist
+/usr/include/plist/plist.h
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/pkgconfig
+/usr/lib/arm-linux-gnueabihf/pkgconfig/libplist.pc
+/usr/share
+/usr/share/doc
+/usr/share/doc/libplist-dev
+/usr/share/doc/libplist-dev/changelog.Debian.gz
+/usr/share/doc/libplist-dev/copyright
+/usr/lib/arm-linux-gnueabihf/libplist.so

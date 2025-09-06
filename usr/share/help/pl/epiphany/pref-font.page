@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pref-font" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="index#pref"/>
+    <link type="guide" xref="pref"/>
+    <revision pkgversion="3.10" date="2013-07-06" status="candidate"/>
+    <revision pkgversion="3.12" date="2014-01-28" status="final"/>
+
+    <credit type="author copyright">
+      <name>Gordon Hill</name>
+      <email its:translate="no">caseyweederman@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Niestandardowa czcionka do wyświetlana stron.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Zmiana czcionki</title>
+
+  <p>Domyślnie do wyświetlania stron, które nie określiły inaczej używana jest czcionka systemowa. Funkcja ułatwień dostępu <gui href="help:gnome-help/a11y-font-size">Duży tekst</gui> jest uwzględniania. Można to zmienić i używać innych czcionek.</p>
+
+  <steps>
+    <item>
+      <p>Otwórz <guiseq><gui style="menu">WWW</gui><gui style="menuitem">Preferencje</gui><gui style="tab">Czcionki i styl</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Odznacz pole <gui>Czcionki systemowe</gui>.</p>
+    </item>
+    <item>
+      <p>Kliknij czcionkę, aby otworzyć okno wyboru czcionki, gdzie można wybrać inny typ i rozmiar czcionki.</p>
+    </item>
+    <item>
+      <p>Kliknij przycisk <gui style="button">Wybierz</gui>, aby zapisać wybór.</p>
+    </item>
+  </steps>
+
+  <p>Można także powiększać rozmiar czcionki za pomocą klawiszy <keyseq><key>Ctrl</key><key>+</key></keyseq> i zmniejszać go za pomocą <keyseq><key>Ctrl</key><key>-</key></keyseq>.</p>
+
+</page>

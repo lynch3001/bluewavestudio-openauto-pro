@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/bin
+/usr/bin/lxsession-logout
+/usr/share
+/usr/share/doc
+/usr/share/doc/lxsession-logout
+/usr/share/doc/lxsession-logout/changelog.Debian.gz
+/usr/share/doc/lxsession-logout/changelog.gz
+/usr/share/doc/lxsession-logout/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/lxsession-logout.1.gz

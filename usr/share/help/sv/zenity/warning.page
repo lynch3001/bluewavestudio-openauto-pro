@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="warning" xml:lang="sv">
+  <info>
+    <link type="guide" xref="message"/>
+    <desc>Använd flaggan <cmd>--warning</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2006, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+  <title>Varningsdialog</title>
+      <p>Använd flaggan <cmd>--warning</cmd> för att skapa en varningsdialog.</p>
+
+      <p>Följande exempelskript visar hur man skapar en varningsdialog:</p>
+
+<code>
+#!/bin/bash
+
+zenity --warning \
+--text="Koppla från strömkabeln för att undvika elektriska stötar."
+</code>
+
+      <figure>
+        <title>Exempel på varningsdialog</title>
+	<desc><app>Zenity</app>-exempel på varningsdialog</desc>
+        <media type="image" mime="image/png" src="figures/zenity-warning-screenshot.png"/>
+      </figure>
+</page>

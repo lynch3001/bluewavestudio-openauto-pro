@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="warning" xml:lang="pl">
+  <info>
+    <link type="guide" xref="message"/>
+    <desc>Używanie opcji <cmd>--warning</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+  <title>Okno z ostrzeżeniem</title>
+      <p>Użyj opcji <cmd>--warning</cmd>, aby utworzyć okno z ostrzeżeniem.</p>
+
+      <p>Ten przykładowy skrypt pokazuje, jak utworzyć okno z ostrzeżeniem:</p>
+
+<code>
+#!/bin/bash
+
+zenity --warning \
+--text="Odłącz kabel zasilania, aby uniknąć porażenia prądem."
+</code>
+
+      <figure>
+        <title>Przykład okna z ostrzeżeniem</title>
+	<desc>Przykład okna <app>Zenity</app> z ostrzeżeniem</desc>
+        <media type="image" mime="image/png" src="figures/zenity-warning-screenshot.png"/>
+      </figure>
+</page>

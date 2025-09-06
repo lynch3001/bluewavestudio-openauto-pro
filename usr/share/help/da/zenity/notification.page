@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="notification" xml:lang="da">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Brug tilvalget <cmd>--notification</cmd>.</desc>
+  </info>
+  <title>Påmindelsesikon</title>
+    <p>Brug tilvalget <cmd>--notification</cmd> til at oprette et påmindelsesikon.</p>
+
+  <terms>
+    <item>
+      <title><cmd>--text</cmd>=<var>tekst</var></title>
+      <p>Angiver teksten, der vises i påmindelsesområdet.</p>
+    </item>
+    <item>
+      <title><cmd>--listen</cmd>=icon: '<var>tekst</var>', message: '<var>tekst</var>', tooltip: '<var>tekst</var>', visible: '<var>tekst</var>',</title>
+      <p>Lytter efter kommandoer på standardinput. Mindst én kommando skal gives. Kommandoer adskilles med komma. En kommando skal følges af kolon og en værdi.</p>
+      <note style="tip">
+        <p>Kommandoen <cmd>icon</cmd> accepterer også fire standardikonværdier, såsom <var>error</var>, <var>info</var>, <var>question</var> og <var>warning</var>.</p>
+      </note>
+    </item>
+  </terms>
+
+  <p>Følgende eksempelscript viser, hvordan man opretter et påmindelsesikon:</p>
+  <code>
+  #!/bin/sh
+
+  zenity --notification\
+    --window-icon="info" \
+    --text="Der er nødvendige systemopdateringer!"
+  </code>
+
+  <figure>
+    <title>Eksempel på påmindelsesikon</title>
+    <desc>Eksempel på påmindelsesikon til <app>Zenity</app></desc>
+    <media type="image" mime="image/png" src="figures/zenity-notification-screenshot.png"/>
+  </figure>
+
+  <p>Følgende eksempelscript viser, hvordan man opretter et påmindelsesikon med <cmd>--listen</cmd>:</p>
+  <code>
+  #!/bin/sh
+  cat &lt;&lt;EOH| zenity --notification --listen
+  message: dette er beskedteksten
+  EOH
+  </code>
+
+  <figure>
+    <title>Eksempel på påmindelsesikon med <cmd>--listen</cmd></title>
+    <desc><app>Zenity</app>-påmindelse med <cmd>--listen</cmd>-eksempel</desc>
+    <media type="image" mime="image/png" src="figures/zenity-notification-listen-screenshot.png"/>
+  </figure>
+
+</page>

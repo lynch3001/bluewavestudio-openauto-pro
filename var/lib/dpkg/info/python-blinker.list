@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/lib
+/usr/lib/python2.7
+/usr/lib/python2.7/dist-packages
+/usr/lib/python2.7/dist-packages/blinker
+/usr/lib/python2.7/dist-packages/blinker/__init__.py
+/usr/lib/python2.7/dist-packages/blinker/_saferef.py
+/usr/lib/python2.7/dist-packages/blinker/_utilities.py
+/usr/lib/python2.7/dist-packages/blinker/base.py
+/usr/lib/python2.7/dist-packages/blinker-1.4.egg-info
+/usr/share
+/usr/share/doc
+/usr/share/doc/python-blinker
+/usr/share/doc/python-blinker/changelog.Debian.gz
+/usr/share/doc/python-blinker/changelog.gz
+/usr/share/doc/python-blinker/copyright

@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/python-skywriter
+/usr/share/doc/python-skywriter/changelog.gz
+/usr/share/doc/python-skywriter/copyright
+/usr/lib
+/usr/lib/python2.7
+/usr/lib/python2.7/dist-packages
+/usr/lib/python2.7/dist-packages/skywriter.py
+/usr/lib/python2.7/dist-packages/skywriter-0.0.7.egg-info
+/usr/lib/python2.7/dist-packages/skywriter-0.0.7.egg-info/requires.txt
+/usr/lib/python2.7/dist-packages/skywriter-0.0.7.egg-info/top_level.txt
+/usr/lib/python2.7/dist-packages/skywriter-0.0.7.egg-info/PKG-INFO
+/usr/lib/python2.7/dist-packages/skywriter-0.0.7.egg-info/dependency_links.txt

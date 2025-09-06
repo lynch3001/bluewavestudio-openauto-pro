@@ -1,0 +1,5 @@
+5469b11cc4801f6117db603b4e8034b8  usr/lib/arm-linux-gnueabihf/libgfapi.so.0.0.0
+7173f698e58c8f77b64ec647b69d041a  usr/share/doc/libgfapi0/changelog.Debian.gz
+dc3255d157227f34909c70895d628a6c  usr/share/doc/libgfapi0/changelog.gz
+522e22dc4f15515586658d48827e1a19  usr/share/doc/libgfapi0/copyright
+6dfc7e5d757bfde1b7934bf900c25030  usr/share/lintian/overrides/libgfapi0

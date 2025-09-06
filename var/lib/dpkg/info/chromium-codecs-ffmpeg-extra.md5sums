@@ -1,0 +1,5 @@
+bc89301c1651ab5397b179df5e886be2  usr/lib/chromium-browser/libffmpeg.so
+2347fbd5a16e7672f783b3d13d0ca4fc  usr/lib/chromium-browser/neon/vfp/libffmpeg.so
+ac364033b63d463e8eaa6d0e4fb24f07  usr/share/doc/chromium-codecs-ffmpeg-extra/changelog.Debian.gz
+983091d3a4c4e207f2146a911a7f7387  usr/share/doc/chromium-codecs-ffmpeg-extra/copyright
+ef99bb1290d2d94865140e7012b04bd6  usr/share/lintian/overrides/chromium-codecs-ffmpeg-extra

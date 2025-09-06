@@ -1,0 +1,10 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/SoapySDR
+/usr/lib/arm-linux-gnueabihf/SoapySDR/modules0.6
+/usr/lib/arm-linux-gnueabihf/SoapySDR/modules0.6/libosmosdrSupport.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/soapysdr0.6-module-osmosdr

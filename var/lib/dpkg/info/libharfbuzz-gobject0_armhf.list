@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libharfbuzz-gobject.so.0.20301.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libharfbuzz-gobject0
+/usr/share/doc/libharfbuzz-gobject0/changelog.Debian.gz
+/usr/share/doc/libharfbuzz-gobject0/changelog.gz
+/usr/share/doc/libharfbuzz-gobject0/copyright
+/usr/lib/arm-linux-gnueabihf/libharfbuzz-gobject.so.0

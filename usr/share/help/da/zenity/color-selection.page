@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="color-selection" xml:lang="da">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Brug tilvalget <cmd>--color-selection</cmd>.</desc>
+  </info>
+  <title>Farvevælgerdialog</title>
+  <p>Brug tilvalget <cmd>--color-selection</cmd> til at oprette en farvevælgerdialog.</p>
+  <p>Farvevælgerdialogen understøtter følgende tilvalg:</p>
+
+  <terms>
+
+    <item>
+      <title><cmd>--color</cmd>=<var>VÆRDI</var></title>
+      <p>Angiv startfarven. (F.eks.: #FF0000)</p>
+    </item>
+
+    <item>
+      <title><cmd>--show-palette</cmd></title>
+      <p>Vis paletten.</p>
+    </item>
+
+  </terms>
+
+  <p>Følgende eksempelscript viser, hvordan man opretter en farvevælgerdialog:</p>
+
+<code>
+#!/bin/sh
+
+FARVE=`zenity --color-selection --show-palette`
+
+case $? in
+         0)
+		echo "Du har valgt $FARVE.";;
+         1)
+                echo "Ingen farve valgt.";;
+        -1)
+                echo "Der opstod en uventet fejl.";;
+esac
+</code>
+
+  <figure>
+    <title>Eksempel med farvevælgerdialog</title>
+    <desc>Eksempel på farvevælgerdialog til <app>Zenity</app></desc>
+    <media type="image" mime="image/png" src="figures/zenity-colorselection-screenshot.png"/>
+  </figure>
+
+</page>

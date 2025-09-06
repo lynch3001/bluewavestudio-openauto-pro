@@ -1,0 +1,6 @@
+2457b59327230b21fa548c9a0db6e7cb  usr/lib/arm-linux-gnueabihf/libsrtp2.so.1
+f5687683859fed469ec93e2a181f319d  usr/share/doc/libsrtp2-1/buildinfo_armhf.gz
+544a1bdbb9766bd0000f8fe80fbcf124  usr/share/doc/libsrtp2-1/changelog.Debian.gz
+59256c3bc522d442b5274a0db9c3c523  usr/share/doc/libsrtp2-1/changelog.gz
+a4099f98e24340240123bb6c0709261d  usr/share/doc/libsrtp2-1/copyright
+fa5486b188e73ef18e0731c1763f9ba4  usr/share/lintian/overrides/libsrtp2-1

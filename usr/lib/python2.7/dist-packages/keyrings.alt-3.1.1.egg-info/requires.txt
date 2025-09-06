@@ -1,0 +1,20 @@
+
+[docs]
+jaraco.packaging>=3.2
+rst.linker>=1.9
+sphinx
+
+[testing]
+backports.unittest_mock
+fs<2,>=0.5
+keyring[test]>=10.3.1
+pytest!=3.7.3,>=3.5
+pytest-checkdocs
+pytest-flake8
+
+[testing:python_version == "2.7"]
+gdata
+python-keyczar
+
+[testing:sys_platform != "win32" or python_version == "2.7"]
+pycrypto

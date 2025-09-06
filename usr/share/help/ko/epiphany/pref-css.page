@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pref-css" xml:lang="ko">
+
+  <info>
+    <link type="guide" xref="index#pref"/>
+    <link type="guide" xref="pref"/>
+    <revision pkgversion="3.10" date="2013-07-06" status="candidate"/>
+
+    <credit type="author copyright">
+      <name>Gordon Hill</name>
+      <email its:translate="no">caseyweederman@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>웹 페이지를 표시하는데 사용할 테마를 재정의 해보세요.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>ChangSeok Oh</mal:name>
+      <mal:email>changseok@gnome.org</mal:email>
+      <mal:years>2015, 2016, 2017, 2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gyuseok Jung</mal:name>
+      <mal:email>jgyuseok@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>사용자 맞춤 CSS</title>
+
+  <p><app>웹</app>은 당신이 방문하는 모든 웹 페이지의 모양과 느낌을 바꾸기 위한 사용자 맞춤 CSS를 사용토록 합니다. 선호하는 글꼴 크기 혹은 배색을 설정하는데 이를 사용할 지도 모르겠습니다.</p>
+
+  <steps>
+    <item>
+      <p><guiseq><gui style="menu">웹</gui><gui style="menuitem">기본 설정</gui><gui style="tab">글꼴과 모양</gui></guiseq>을 엽니다.</p>
+    </item>
+    <item>
+      <p><gui style="button">스타일시트 편집…</gui>을 누르세요.</p>
+    </item>
+    <item>
+      <p>당신의 기본 텍스트 편집기를 엽니다. 사용자 맞춤 CSS를 추가하고 파일을 저장하세요.</p>
+    </item>
+    <item>
+      <p><gui>사용자 맞춤 스타일 시트 사용</gui> 확인란을 선택하세요.</p>
+    </item>
+  </steps>
+
+  <p>사용자 맞춤 CSS의 예:</p>
+  <code>
+body{
+    /*Make everything upside-down*/
+    -webkit-transform: rotate(180deg);
+}
+</code>
+
+  <p>당신의 사용자 맞춤 CSS는 그것을 켠 이후 방문한 페이지의 스타일 시트를 덮어쓸 것 입니다.</p>
+
+</page>

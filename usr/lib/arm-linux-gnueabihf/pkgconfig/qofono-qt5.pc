@@ -1,0 +1,13 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include/qofono-qt5
+
+
+Name: Qofono-qt5
+Description: Qofono-qt5 Library
+Version: 0.90
+Libs: -lqofono-qt5 
+Libs.private: -lQt5DBus -lQt5XmlPatterns -lQt5Network -lQt5Core -lpthread   
+Cflags: -I${includedir}
+

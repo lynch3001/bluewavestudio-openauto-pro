@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/SoapySDR
+/usr/lib/arm-linux-gnueabihf/SoapySDR/modules0.6
+/usr/lib/arm-linux-gnueabihf/SoapySDR/modules0.6/libuhdSupport.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/soapysdr0.6-module-uhd
+/usr/share/doc/soapysdr0.6-module-uhd/README.md
+/usr/share/doc/soapysdr0.6-module-uhd/changelog.Debian.armhf.gz
+/usr/share/doc/soapysdr0.6-module-uhd/changelog.Debian.gz
+/usr/share/doc/soapysdr0.6-module-uhd/changelog.gz
+/usr/share/doc/soapysdr0.6-module-uhd/copyright

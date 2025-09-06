@@ -1,0 +1,81 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: libmikmod
+Source: http://mikmod.sf.net
+
+Files: *
+Copyright: 1998-2016 Miodrag Vallat and others
+           2003-2015 Raphael Assenat and others
+License: LGPL-2.0+
+
+Files: CMakeLists.txt
+       cmake/mik_macros.cmake
+Copyright: 2012 Shlomi Fish
+License: MIT
+
+Files: drivers/dos/dosdma.*
+       drivers/dos/dosirq.*
+Copyright: 1999 Andrew Zabolotny, <bit@eltech.ru>
+License: LGPL-2.0+
+
+Files: include/mikmod_ctype.h
+Copyright: 1998 Red Hat Software, Inc.
+License: LGPL-2.0+
+
+Files: playercode/mdulaw.c
+Copyright: 1989 Jef Poskanzer
+License: permissive
+ Permission to use, copy, modify, and distribute this software and its
+ documentation for any purpose and without fee is hereby granted,
+ provided that the above copyright notice appear in all copies and
+ that both that copyright notice and this permission notice appear in
+ supporting documentation.  This software is provided "as is" without
+ express or implied warranty.
+
+Files: debian/*
+Copyright: 1999 Joseph Carter
+           2001-2004 Ingo Saitz
+	   2011-2013 Gergely Nagy
+	   2015-2017 Stephen Kitt
+License: LGPL-2.0+
+
+
+License: LGPL-2.0+
+ This library is free software; you can redistribute it and/or modify
+ it under the terms of the GNU Library General Public License as
+ published by the Free Software Foundation; either version 2 of the
+ License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Library General Public License for more details.
+ .
+ You should have received a copy of the GNU Library General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301,
+ USA.
+ .
+ On Debian systems, the complete text of the GNU Library General
+ Public License version 2 can be found in
+ /usr/share/common-licenses/LGPL-2.
+
+License: MIT
+ Permission is hereby granted, free of charge, to any person obtaining
+ a copy of this software and associated documentation files (the
+ "Software"), to deal in the Software without restriction, including
+ without limitation the rights to use, copy, modify, merge, publish,
+ distribute, sublicense, and/or sell copies of the Software, and to
+ permit persons to whom the Software is furnished to do so, subject to
+ the following conditions:
+ .
+ The above copyright notice and this permission notice shall be
+ included in all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+ BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.

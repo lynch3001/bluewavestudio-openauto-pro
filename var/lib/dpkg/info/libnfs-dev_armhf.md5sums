@@ -1,0 +1,15 @@
+d92e38fa79a66d53849e58a153aaaa95  usr/include/nfsc/libnfs-raw-mount.h
+48eef4644113b0d5cd776ac2bc1d2f5e  usr/include/nfsc/libnfs-raw-nfs.h
+30ad53750737456642d011d6a1981210  usr/include/nfsc/libnfs-raw-nfs4.h
+ece4c6439bd2b98edbb4ae8d4999b8ef  usr/include/nfsc/libnfs-raw-nlm.h
+2787772dbb178bb3ddab4e797309a46a  usr/include/nfsc/libnfs-raw-nsm.h
+8014bdf36ac23c32a9dbb823dd59c042  usr/include/nfsc/libnfs-raw-portmap.h
+f57031812036123e7f995faa659b24f1  usr/include/nfsc/libnfs-raw-rquota.h
+475429fcca7fe0410d9da685f73175a8  usr/include/nfsc/libnfs-raw.h
+2d2a5d0a5803b359ec8ac3dbe19219fa  usr/include/nfsc/libnfs-zdr.h
+0c1dd953b3781f86b289e9f89e0cfde4  usr/include/nfsc/libnfs.h
+9a4e93924bc31071898d80cec05eeec8  usr/lib/arm-linux-gnueabihf/libnfs.a
+7568fc9661b478b62e1433772fcd6fbc  usr/lib/arm-linux-gnueabihf/pkgconfig/libnfs.pc
+f6450d64cd2fdb90528ee7bbce56084e  usr/share/doc/libnfs-dev/changelog.Debian.gz
+f2a3bb69f0161e7b15c0849ab2c118a7  usr/share/doc/libnfs-dev/changelog.gz
+b8da4b5a22622e255081883d1c4fe793  usr/share/doc/libnfs-dev/copyright

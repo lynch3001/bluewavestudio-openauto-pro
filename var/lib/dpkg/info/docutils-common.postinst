@@ -1,0 +1,12 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installxmlcatalogs/UNDECLARED
+if [ "$1" = "configure" ]; then
+	update-xmlcatalog --sort --add --type public --id "+//IDN docutils.sourceforge.net/" --package docutils-common --local /usr/share/xml/docutils/catalog.xml
+	update-xmlcatalog --sort --add --type system --id "http://docutils.sourceforge.net/" --package docutils-common --local /usr/share/xml/docutils/catalog.xml
+
+	update-xmlcatalog --sort --add --type public --id "+//IDN docutils.sourceforge.net/" --package docutils-common --root
+	update-xmlcatalog --sort --add --type system --id "http://docutils.sourceforge.net/" --package docutils-common --root
+
+fi
+# End automatically added section

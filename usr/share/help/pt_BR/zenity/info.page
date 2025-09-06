@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="info" xml:lang="pt-BR">
+  <info>
+    <link type="guide" xref="message"/>
+    <desc>Use a opção <cmd>--info</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+  <title>Diálogo de informação</title>
+      <p>Use a opção <cmd>--info</cmd> para criar um diálogo de informação.</p>
+
+      <p>O script de exemplo a seguir mostra como criar um diálogo de informação:</p>
+
+<code>
+#!/bin/bash
+
+zenity --info \
+--text="Mesclagem completa. Foram atualizados 3 de 10 arquivos."
+</code>
+
+
+      <figure>
+        <title>Exemplo de diálogo de informação</title>
+        <desc>Exemplo de diálogo de informação do <app>Zenity</app></desc>
+        <media type="image" mime="image/png" src="figures/zenity-information-screenshot.png"/>
+      </figure>
+</page>

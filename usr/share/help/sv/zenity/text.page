@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="text" xml:lang="sv">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Använd flaggan <cmd>--text-info</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2006, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+  <title>Textinformationsdialog</title>
+    <p>Använd flaggan <cmd>--text-info</cmd> för att skapa en textinformationsdialog.</p>
+	
+    <p>Textinformationsdialogen har stöd för följande flaggor:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--filename</cmd>=<var>filnamn</var></title>
+	<p>Anger en fil som läses in i textinformationsdialogen.</p>
+      </item>
+
+      <item>
+        <title><cmd>--editable</cmd></title>
+        <p>Tillåter att den visade texten redigeras. Den redigerade texten returneras till standard ut när dialogrutan stängs.</p>
+      </item>
+
+      <item>
+        <title><cmd>--font</cmd>=<var>TYPSNITT</var></title>
+	<p>Anger texttypsnittet.</p>
+      </item>
+
+      <item>
+        <title><cmd>--checkbox</cmd>=<var>TEXT</var></title>
+	<p>Aktivera en kryssruta för användning i stil med ”Jag har läst och accepterar villkoren.”</p>
+      </item>
+
+      <item>
+        <title><cmd>--html</cmd></title>
+        <p>Aktivera html-stöd.</p>
+      </item>
+
+      <item>
+        <title><cmd>--url</cmd>=<var>URL</var></title>
+	<p>Ställer in en url istället för en fil. Fungerar endast om du använder flaggan --html.</p>
+      </item>
+
+    </terms>
+
+    <p>Följande exempelskript visar hur man skapar en textinformationsdialog:</p>
+
+<code>
+#!/bin/sh
+
+# Du måste placera filen "COPYING" i samma mapp som detta skript.
+FILE=`dirname $0`/COPYING
+
+zenity --text-info \
+       --title="Licens" \
+       --filename=$FILE \
+       --checkbox="Jag har läst och accepterar villkoren."
+
+case $? in
+    0)
+        echo "Påbörja installation!"
+	# nästa steg
+	;;
+    1)
+        echo "Avsluta installation!"
+	;;
+    -1)
+        echo "Ett oväntat fel har inträffat."
+	;;
+esac
+</code>
+
+    <figure>
+      <title>Exempel på textinformationsdialog</title>
+      <desc><app>Zenity</app>-exempel på textinformationsdialog</desc>
+      <media type="image" mime="image/png" src="figures/zenity-text-screenshot.png"/>
+    </figure>
+</page>

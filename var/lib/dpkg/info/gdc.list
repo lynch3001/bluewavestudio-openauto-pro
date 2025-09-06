@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/bin
+/usr/share
+/usr/share/doc
+/usr/share/doc/gdc
+/usr/share/doc/gdc/README.Debian
+/usr/share/doc/gdc/changelog.Debian.gz
+/usr/share/doc/gdc/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/bin/arm-linux-gnueabihf-gdc
+/usr/bin/gdc
+/usr/share/man/man1/arm-linux-gnueabihf-gdc.1.gz
+/usr/share/man/man1/gdc.1.gz

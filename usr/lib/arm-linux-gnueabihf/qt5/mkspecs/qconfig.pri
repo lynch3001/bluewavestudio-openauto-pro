@@ -1,0 +1,14 @@
+QT_ARCH = arm
+QT_BUILDABI = arm-little_endian-ilp32-eabi-hardfloat
+QT.global.enabled_features = shared c++11 c++14 c++1z future concurrent pkg-config
+QT.global.disabled_features = cross_compile framework rpath appstore-compliant debug_and_release simulator_and_device build_all force_asserts separate_debug_info static
+QT_CONFIG += shared release c++11 c++14 c++1z concurrent dbus reduce_exports release_tools stl
+CONFIG += shared release
+QT_VERSION = 5.11.3
+QT_MAJOR_VERSION = 5
+QT_MINOR_VERSION = 11
+QT_PATCH_VERSION = 3
+QT_GCC_MAJOR_VERSION = 8
+QT_GCC_MINOR_VERSION = 3
+QT_GCC_PATCH_VERSION = 0
+QT_EDITION = OpenSource

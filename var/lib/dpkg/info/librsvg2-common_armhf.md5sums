@@ -1,0 +1,5 @@
+e0db1819911b9865da24a81b4f86e758  usr/lib/arm-linux-gnueabihf/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-svg.so
+3a502f873807c66c40ea3b8972df5184  usr/share/doc/librsvg2-common/changelog.Debian.gz
+339f1a0d948c77ad9f253bd33dda5872  usr/share/doc/librsvg2-common/copyright
+d25bcaf9c068d393724af896005b3e74  usr/share/lintian/overrides/librsvg2-common
+f74cadd80378bc32dd1c59e57f9bcbe8  usr/share/thumbnailers/librsvg.thumbnailer

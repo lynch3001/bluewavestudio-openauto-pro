@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="list" xml:lang="sv">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Använd flaggan <cmd>--list</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2006, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+  <title>Listdialog</title>
+    <p>Använd flaggan <cmd>--list</cmd> för att skapa en listdialog. <app>Zenity</app> returnerar posterna i den första textkolumnen av markerade rader till standard ut.</p>
+
+    <p>Data för dialogen måste anges kolumn för kolumn, rad för rad. Data kan tillhandahållas till dialogen genom standard in. Varje post måste separeras med ett nyradstecken.</p>
+
+    <p>Om du använder flaggorna <cmd>--checklist</cmd> eller <cmd>--radiolist</cmd>, måste varje rad börja med antingen 'TRUE' eller 'FALSE'.</p>
+
+    <p>Listdialogen har stöd för följande flaggor:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--column</cmd>=<var>kolumn</var></title>
+	  <p>Anger kolumnhuvuden som visas i listdialogen. Du måste ange flaggan <cmd>--column</cmd> för varje kolumn som du vill visa i dialogen.</p>
+      </item>
+
+      <item>
+        <title><cmd>--checklist</cmd></title>
+	  <p>Anger att den första kolumnen i listdialogen innehåller kryssrutor.</p>
+      </item>
+
+      <item>
+        <title><cmd>--radiolist</cmd></title>
+	  <p>Anger att första kolumnen i listdialogen innehåller radioknappar.</p>
+      </item>
+
+      <item>
+        <title><cmd>--editable</cmd></title>
+	  <p>Tillåter att de visade posterna kan redigeras.</p>
+      </item>
+
+      <item>
+        <title><cmd>--separator</cmd>=<var>avgränsare</var></title>
+	  <p>Anger vilken sträng som används när listdialogen returnerar de markerade posterna.</p>
+      </item>
+
+      <item>
+        <title><cmd>--print-column</cmd>=<var>kolumn</var></title>
+	  <p>Anger vilken kolumn som ska skrivas ut vid markering. Standardkolumnen är "1". "ALL" kan användas för att skriva ut alla kolumner i listan.</p>
+      </item>
+
+    </terms>
+
+    <p>Följande exempelskript visar hur man skapar en listdialog:</p>
+<code>
+#!/bin/sh
+
+zenity --list \
+  --title="Välj de fel som du önskar att se" \
+  --column="Felnummer" --column="Allvarlighetsgrad" --column="Beskrivning" \
+    992383 Normal "GtkTreeView kraschar vid flera markeringar" \
+    293823 Hög "GNOME-ordboken kan inte hantera proxyservrar" \
+    393823 Kritisk "Menyredigering fungerar inte i GNOME 2.0"
+</code>
+
+
+    <figure>
+      <title>Exempel på listdialog</title>
+      <desc><app>Zenity</app>-exempel på listdialog</desc>
+      <media type="image" mime="image/png" src="figures/zenity-list-screenshot.png"/>
+    </figure>
+</page>

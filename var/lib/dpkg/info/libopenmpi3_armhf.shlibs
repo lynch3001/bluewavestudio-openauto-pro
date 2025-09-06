@@ -1,0 +1,14 @@
+libmca_common_monitoring 50 libopenmpi3
+libmca_common_ompio 41 libopenmpi3
+libmca_common_sm 40 libopenmpi3
+libmca_common_verbs 40 libopenmpi3
+libmpi 40 libopenmpi3
+libmpi_cxx 40 libopenmpi3
+libmpi_java 40 libopenmpi3
+libmpi_mpifh 40 libopenmpi3
+libmpi_usempi_ignore_tkr 40 libopenmpi3
+libmpi_usempif08 40 libopenmpi3
+libompitrace 40 libopenmpi3
+libopen-pal 40 libopenmpi3
+libopen-rte 40 libopenmpi3
+liboshmem 40 libopenmpi3

@@ -1,0 +1,4 @@
+Accessing GPIO
+--------------
+
+In order to access GPIO, you need to be in the dialout group.

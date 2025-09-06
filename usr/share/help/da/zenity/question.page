@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="question" xml:lang="da">
+  <info>
+    <link type="guide" xref="message"/>
+    <desc>Brug tilvalget <cmd>--question</cmd>.</desc>
+  </info>
+  <title>Spørgsmålsdialog</title>
+      <p>Brug tilvalget <cmd>--question</cmd> til at oprette en spørgsmålsdialog.</p>
+
+      <p>Følgende eksempelscript viser, hvordan en spørgsmålsdialog oprettes:</p>
+
+<code>
+#!/bin/bash
+
+zenity --question \
+--text="Er du sikker på, at du vil fortsætte?"
+</code>
+
+
+      <figure>
+        <title>Eksempel på spørgsmålsdialog</title>
+	<desc>Eksempel på spørgsmålsdialog til <app>Zenity</app></desc>
+        <media type="image" mime="image/png" src="figures/zenity-question-screenshot.png"/>
+      </figure>
+</page>

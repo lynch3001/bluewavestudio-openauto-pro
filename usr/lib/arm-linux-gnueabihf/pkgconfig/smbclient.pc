@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}/lib/arm-linux-gnueabihf
+includedir=${prefix}/include/samba-4.0
+
+Name: smbclient
+Description: A SMB library interface
+Version: 0.4.0
+Libs:  -L${libdir} -lsmbclient
+Cflags: -I${includedir}
+URL: http://www.samba.org/

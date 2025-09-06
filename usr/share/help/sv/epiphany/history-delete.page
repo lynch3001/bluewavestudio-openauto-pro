@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="history-delete" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="index#privacy"/>
+    <revision pkgversion="3.10" date="2013-06-30" status="candidate"/>
+
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+<!--    <credit type="copyright editor">
+      <name></name>
+      <email its:translate="no"></email>
+      <years></years>
+    </credit>-->
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Hur tar jag bort en eller flera webbsidor från min surfhistorik?</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2015, 2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Töm surfhistorik</title>
+
+  <p>Du kan ibland vilja ta bort din surfhistorik, till exempel för att ta bort poster som du inte vill se i dina sökresultat. Du kan välja att ta bort ett resultat, alla resultat från en enskild webbplats eller all din historik.</p>
+
+  <steps>
+    <item>
+      <p>Öppna <guiseq><gui style="menu">Webb</gui><gui style="menuitem">Historik</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Välj webbsidorna som du vill ta bort från din historik.</p>
+    </item>
+    <item>
+      <p>Välj <guiseq><gui style="menu">Redigera</gui><gui style="menuitem">Ta bort</gui></guiseq> för att permanent ta bort de markerade posterna.</p>
+    </item>
+  </steps>
+
+  <p>Du kan också ta bort all din historik genom att välja <guiseq><gui style="menu">Redigera</gui><gui style="menuitem">Töm historik</gui></guiseq>.</p>
+
+</page>

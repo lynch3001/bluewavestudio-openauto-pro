@@ -1,0 +1,8 @@
+dce4f7a9d3845c7e1d6ac312c6bcf678  usr/lib/arm-linux-gnueabihf/libfftw3.so.3.5.8
+189268bfbd200f54b1c42d59c0886511  usr/lib/arm-linux-gnueabihf/libfftw3_omp.so.3.5.8
+119adebbb6106722f0629bebb6681ba0  usr/lib/arm-linux-gnueabihf/libfftw3_threads.so.3.5.8
+319e3e93673c15a95adb78ac0c6c13a1  usr/share/doc/libfftw3-double3/NEWS.gz
+ed602a991a4207e4c6f2eb6fbee601f3  usr/share/doc/libfftw3-double3/README
+1deb4b676a4e312580a197b23f9802ee  usr/share/doc/libfftw3-double3/README.Debian
+3223a3ddd9cfe141c4b5ee2b7a190729  usr/share/doc/libfftw3-double3/changelog.Debian.gz
+38fdee10dcbbe61ccf4c0e2551a01e3e  usr/share/doc/libfftw3-double3/copyright

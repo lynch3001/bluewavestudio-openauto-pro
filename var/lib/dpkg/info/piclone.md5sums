@@ -1,0 +1,10 @@
+9ba7a2919efa65938c8ad375b8c0b227  usr/bin/piclone
+7fe9bfc716336ffa5a14a2fff87d731f  usr/lib/piclone/pwdpic.sh
+507678b8d0d8a907152fb7feb2259091  usr/share/applications/piclone.desktop
+14dd7008c8fbc5a58722885970c4407e  usr/share/doc/piclone/changelog.gz
+7f32f354891bc0587a9865c601d674d6  usr/share/doc/piclone/copyright
+7e31dd87a73b036b01be6f5e6947e7e8  usr/share/locale/de/LC_MESSAGES/piclone.mo
+21ba31afee5f468558686d28da44de39  usr/share/locale/en_GB/LC_MESSAGES/piclone.mo
+d8527873da21645b2d5fe322d867c79f  usr/share/locale/nb/LC_MESSAGES/piclone.mo
+f3163ac52b45db61673fe03a6e2f3d0a  usr/share/locale/sk/LC_MESSAGES/piclone.mo
+c06633ea2f80e3c3087f88d0d6be816e  usr/share/piclone/piclone.ui

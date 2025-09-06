@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="usage" xml:lang="pl">
+<info>
+  <link type="guide" xref="index"/>
+  <desc>Można używać <app>Zenity</app> do tworzenia prostych okien dialogowych obsługiwanych przez użytkownika.</desc>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+<title>Użycie</title>
+    <p>Podczas pisania skryptów można używać programu <app>Zenity</app> do tworzenia prostych okien dialogowych obsługiwanych przez użytkownika:</p>
+    <list>
+      <item>
+        <p>Można utworzyć okno, aby uzyskać informacje od użytkownika. Na przykład, można poprosić użytkownika o wybranie daty z kalendarza, albo o wybranie pliku.</p>
+      </item>
+      <item>
+        <p>Można utworzyć okno, aby przekazać użytkownikowi informacje. Na przykład, można użyć okno z postępem, aby informować o obecnym stanie działania, albo użyć okna z ostrzeżeniem, aby powiadomić użytkownika o niebezpieczeństwie.</p>
+      </item>
+    </list>
+    <p>Po zamknięciu okna przez użytkownika <app>Zenity</app> wyświetla tekst utworzony przez okno w standardowym wyjściu.</p>
+
+    <note>
+      <p>Podczas pisania poleceń <app>Zenity</app> należy się upewnić, że każdy parametr jest w cudzysłowach.</p>
+      <p>Prawidłowe polecenie:</p>
+      <screen>zenity --calendar --title="Plan wakacji"</screen>
+      <p>Nieprawidłowe polecenie:</p>
+      <screen>zenity --calendar --title=Plan wakacji</screen>
+      <p>Pominięcie cudzysłowów spowoduje nieoczekiwane wyniki.</p>
+    </note>
+
+    <section id="zenity-usage-mnemonics">
+      <title>Klawisze dostępu</title>
+	<p>Klawisz dostępu umożliwia wykonanie działania za pomocą klawiatury, zamiast używać myszy do wyboru polecenia z menu lub okna dialogowego. Klawisze dostępu można rozpoznać po podkreślonej literze w menu lub opcji okna.</p>
+	<p>Część okien <app>Zenity</app> obsługuje klawisze dostępu. Aby określić znak używany jako klawisz dostępu, umieść znak podkreślenia przed tym znakiem w tekście okna. Ten przykład pokazuje, jak określić literę „W” jako klawisz dostępu:</p>
+	<screen><input>"_Wybierz nazwę"</input></screen>
+    </section>
+
+    <section id="zenity-usage-exitcodes">
+      <title>Kody wyjściowe</title>
+    <p>Zenity zwraca te kody wyjściowe:</p>
+
+    <table frame="all" rules="all">
+        <thead>
+          <tr>
+            <td>
+              <p>Kod wyjściowy</p></td>
+            <td>
+              <p>Opis</p></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <p><var>0</var></p>
+            </td>
+            <td>
+              <p>Użytkownik kliknął przycisk <gui style="button">OK</gui> lub <gui style="button">Zamknij</gui>.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><var>1</var></p>
+            </td>
+            <td>
+              <p>Użytkownik kliknął przycisk <gui style="button">Anuluj</gui> lub „×” okna.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><var>-1</var></p>
+            </td>
+            <td>
+              <p>Wystąpił nieoczekiwany błąd.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><var>5</var></p>
+            </td>
+            <td>
+              <p>Okno zostało zamknięte, ponieważ przekroczono czas oczekiwania.</p>
+            </td>
+          </tr>
+        </tbody>
+    </table>
+
+    </section>
+
+
+  <!-- ==== General Options ====== -->
+
+  <section id="zenity-usage-general-options">
+    <title>Ogólne opcje</title>
+
+    <p>Wszystkie okna Zenity obsługują te ogólne opcje:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--title</cmd>=<var>tytuł</var></title>
+	<p>Określa tytuł okna.</p>
+      </item>
+
+      <item>
+        <title><cmd>--window-icon</cmd>=<var>ścieżka-do-ikony</var></title>
+	<p>Określa ikonę wyświetlaną w ramce okna. Dostępne są także cztery standardowe ikony, które można określić słowami kluczowymi „info” (informacja), „warning” (ostrzeżenie), „question” (pytanie) i „error” (błąd).</p>
+      </item>
+
+      <item>
+        <title><cmd>--width</cmd>=<var>szerokość</var></title>
+	<p>Określa szerokość okna.</p>
+      </item>
+
+      <item>
+        <title><cmd>--height</cmd>=<var>wysokość</var></title>
+	<p>Określa wysokość okna.</p>
+      </item>
+
+      <item>
+        <title><cmd>--timeout</cmd>=<var>czas-oczekiwania</var></title>
+	<p>Określa czas oczekiwania w sekundach, po jakich okno zostanie zamknięte.</p>
+      </item>
+
+    </terms>
+
+  </section>
+
+<!-- ==== Miscellaneous Options ====== -->
+
+  <section id="zenity-help-options">
+    <title>Opcje pomocy</title>
+
+    <p>Zenity dostarcza te opcje pomocy:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--help</cmd></title>
+	<p>Wyświetla skrócony tekst pomocy.</p>
+      </item>
+
+      <item>
+        <title><cmd>--help-all</cmd></title>
+	<p>Wyświetla pełny tekst pomocy dla wszystkich okien.</p>
+      </item>
+ 
+      <item>
+        <title><cmd>--help-general</cmd></title>
+	<p>Wyświetla tekst pomocy dla ogólnych opcji okna.</p>
+      </item>
+ 
+      <item>
+        <title><cmd>--help-calendar</cmd></title>
+	<p>Wyświetla tekst pomocy dla opcji okna kalendarza.</p>
+      </item>
+ 
+      <item>
+        <title><cmd>--help-entry</cmd></title>
+	<p>Wyświetla tekst pomocy dla opcji okna wpisywania tekstu.</p>
+      </item>
+ 
+      <item>
+        <title><cmd>--help-error</cmd></title>
+	<p>Wyświetla tekst pomocy dla opcji okna z błędem.</p>
+      </item>
+ 
+      <item>
+        <title><cmd>--help-info</cmd></title>
+	<p>Wyświetla tekst pomocy dla opcji okna z informacją.</p>
+      </item>
+ 
+      <item>
+        <title><cmd>--help-file-selection</cmd></title>
+	<p>Wyświetla tekst pomocy dla opcji okna wyboru pliku.</p>
+      </item>
+ 
+      <item>
+        <title><cmd>--help-list</cmd></title>
+	<p>Wyświetla tekst pomocy dla opcji okna z listą.</p>
+      </item>
+ 
+      <item>
+        <title><cmd>--help-notification</cmd></title>
+	<p>Wyświetla tekst pomocy dla opcji ikony powiadamiania.</p>
+      </item>
+ 
+      <item>
+        <title><cmd>--help-progress</cmd></title>
+	<p>Wyświetla tekst pomocy dla opcji okna z postępem.</p>
+      </item>
+ 
+      <item>
+        <title><cmd>--help-question</cmd></title>
+	<p>Wyświetla tekst pomocy dla opcji okna z pytaniem.</p>
+      </item>
+ 
+      <item>
+        <title><cmd>--help-warning</cmd></title>
+	<p>Wyświetla tekst pomocy dla opcji okna z ostrzeżeniem.</p>
+      </item>
+ 
+      <item>
+	<title><cmd>--help-text-info</cmd></title>
+	<p>Wyświetla pomoc dla opcji okna z informacją tekstową.</p>
+      </item>
+ 
+      <item>
+        <title><cmd>--help-misc</cmd></title>
+	<p>Wyświetla pomoc dla różnych opcji.</p>
+      </item>
+ 
+      <item>
+        <title><cmd>--help-gtk</cmd></title>
+	<p>Wyświetla pomoc dla opcji biblioteki GTK+.</p>
+      </item>
+ 
+    </terms>
+
+  </section>
+
+<!-- ==== Miscellaneous Options ====== -->
+
+  <section id="zenity-miscellaneous-options">
+    <title>Różne opcje</title>
+
+    <p>Zenity dostarcza także te różne opcje:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--about</cmd></title>
+	<p>Wyświetla okno <gui>O programie Zenity</gui>, zawierające wersję oraz informacje o prawach autorskich i programistach.</p>
+      </item>
+
+      <item>
+        <title><cmd>--version</cmd></title>
+	<p>Wyświetla wersję Zenity.</p>
+      </item>
+
+    </terms>
+
+  </section>
+
+<!-- ==== GTK+ Options ====== -->
+
+  <section id="zenity-gtk-options">
+    <title>Opcje biblioteki GTK+</title>
+
+    <p>Zenity obsługuje standardowe opcje biblioteki GTK+. Wykonanie polecenia <cmd>zenity --help-gtk</cmd> wyświetli więcej informacji.</p>
+
+  </section>
+
+<!-- ==== Environment variables ==== -->
+
+  <section id="zenity-environment-variables">
+    <title>Zmienne środowiskowe</title>
+
+    <p>Zwykle program Zenity wykrywa okno terminala, z którego został uruchomiony i wyświetla swoje okna nad tym oknem. Można to wyłączyć usuwając ustawienie zmiennej środowiskowej <var>WINDOWID</var>.</p>
+
+  </section>
+</page>

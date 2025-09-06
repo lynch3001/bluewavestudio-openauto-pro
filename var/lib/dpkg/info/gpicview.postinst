@@ -1,0 +1,12 @@
+#!/bin/sh
+
+set -e
+
+if [ "$1" = "configure" ]; then
+    update-alternatives --install /usr/bin/display \
+                        display /usr/bin/gpicview 50 \
+                        --slave /usr/share/man/man1/display.1.gz \
+                        display.1.gz /usr/share/man/man1/gpicview.1.gz
+fi
+
+

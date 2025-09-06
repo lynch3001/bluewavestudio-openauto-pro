@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="browse-webapps" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="index#adv"/>
+    <link type="seealso" xref="browse-web"/>
+    <revision pkgversion="3.10" date="2013-07-05" status="review"/>
+
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+<!--    <credit type="copyright editor">
+      <name></name>
+      <email its:translate="no"></email>
+      <years></years>
+    </credit>-->
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Czym jest <em>program WWW</em> i jak go używać?</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Tworzenie programu WWW</title>
+
+  <p>Można zapisywać strony jako <em>programy WWW</em>. Doda to odnośnik do strony do <link href="help:gnome-help/shell-introduction#activities">ekranu podglądu</link>. Programy WWW są otwierane w specjalnych oknach bez paska adresu i menu.</p>
+
+  <steps>
+    <item>
+      <p>Otwórz stronę do zapisania.</p>
+    </item>
+    <item>
+      <p>Otwórz menu w górnym prawym rogu okna, a następnie wybierz <gui style="menuitem">Zapisz jako program WWW…</gui>.</p>
+    </item>
+    <item>
+      <p>Nazwij swój program WWW, a następnie kliknij przycisk <gui style="button">Utwórz</gui>.</p>
+    </item>
+  </steps>
+
+  <p>Można teraz uruchomić program WWW z ekranu podglądu. Aby go wyszukać, zacznij pisać jego nazwę, a pojawi się on wśród wyników wyszukiwania.</p>
+
+</page>

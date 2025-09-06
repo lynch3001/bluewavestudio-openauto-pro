@@ -1,0 +1,2 @@
+gfortran-8 binary: hardening-no-pie
+gfortran-8 binary: binary-without-manpage

@@ -1,0 +1,34 @@
+[Desktop Entry]
+Type=Application
+Name=Appearance Settings
+Name[en_GB]=Appearance Settings
+Name[hy]=Տեսքի կարգավորումներ
+Name[is]=Stillingar útlits
+Name[it]=Impostazioni dell'aspetto
+Name[ja]=外観の設定
+Name[nb]=Innstillinger for utseende
+Name[sk]=Nastavenia vzhľadu
+Name[zh_TW]=外觀設定
+GenericName=Appearance Settings
+GenericName[en_GB]=Appearance Settings
+GenericName[hy]=Տեսքի կարգավորումներ
+GenericName[is]=Stillingar útlits
+GenericName[it]=Impostazioni dell'aspetto
+GenericName[ja]=外観の設定
+GenericName[nb]=Innstillinger for utseende
+GenericName[sk]=Nastavenia vzhľadu
+GenericName[zh_TW]=外觀設定
+Comment=Configure the appearance of the desktop and windows
+Comment[en_GB]=Configure the appearance of the desktop and windows
+Comment[hy]=Կարգաբերել աշխատասեղանի և պատուհանների տեսքը
+Comment[is]=Stilltu útlit á skjáborði og gluggum
+Comment[it]=Configura l'aspetto della scrivania e delle finestre
+Comment[ja]=デスクトップやウィンドウの外観を設定します
+Comment[nb]=Konfigurer utseendet til skrivebordet og vinduer
+Comment[sk]=Nastavte vzhľad plochy a okien
+Comment[zh_TW]=設定桌面與視窗的外觀
+Icon=preferences-desktop-theme
+Exec=env SUDO_ASKPASS=/usr/lib/pipanel/pwdpip.sh pipanel
+NotShowIn=GNOME;XFCE;
+StartupNotify=true
+Categories=Settings;DesktopSettings;GTK;X-LXDE-Settings;

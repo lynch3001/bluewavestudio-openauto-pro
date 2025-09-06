@@ -1,0 +1,10 @@
+667ecea5b5101a45d3c0377ef969b4ec  usr/bin/gui-pkinst
+c40368dfd04da37541fd1b239b9adb35  usr/lib/gui-pkinst/pwdgpi.sh
+04a63b194bf6e21a00522fc2d89175ca  usr/share/doc/gui-pkinst/changelog.gz
+8f2f0bd37caabdeb0e789d7a5b4fac30  usr/share/doc/gui-pkinst/copyright
+8fd687e554823121ec8dd6f67920b1cc  usr/share/gui-pkinst/gui-pkinst.ui
+0eae03ecc43ce6c329016bedbb773156  usr/share/gui-pkinst/inst.wav
+f7efc66aeae7a27c030bafb9f0021277  usr/share/gui-pkinst/instcomp.wav
+e0d6b3e5215f2d8704cccb2edd20cefb  usr/share/gui-pkinst/instcompr.wav
+9519ff557680de5559cdeb7cd14ea98d  usr/share/gui-pkinst/instfail.wav
+15fdafa4038858520fe75bc6fb2f1ff4  usr/share/locale/en_GB/LC_MESSAGES/gui-pkinst.mo

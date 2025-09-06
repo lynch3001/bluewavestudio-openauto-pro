@@ -1,0 +1,11 @@
+01de07c45cc07746871d72aaa8e28612  usr/include/avahi-client/client.h
+9e22520ea308b3f5395d6078c25e081c  usr/include/avahi-client/lookup.h
+c25a3bdbe0bf332aa8e31d6cdc440e0f  usr/include/avahi-client/publish.h
+dbc25d08bdc70d03a63e1211dee59f6c  usr/lib/arm-linux-gnueabihf/libavahi-client.a
+9065ff0baf3a9d64d2735d3f0643bbf2  usr/lib/arm-linux-gnueabihf/pkgconfig/avahi-client.pc
+717481a7cf5e8e574a7fe21d1f83c31f  usr/share/doc/libavahi-client-dev/NEWS.gz
+359847954ee1f4e9970c4afd10ce796b  usr/share/doc/libavahi-client-dev/README
+e91d150dd2b57256887315421aabd63b  usr/share/doc/libavahi-client-dev/changelog.Debian.gz
+026515c317e1591092392844df5f1ee0  usr/share/doc/libavahi-client-dev/copyright
+c520aacdfec26943252b2bea54a30291  usr/share/doc/libavahi-client-dev/examples/client-browse-services.c.gz
+3d4861eb8cff6c3606125230acbb44e9  usr/share/doc/libavahi-client-dev/examples/client-publish-service.c.gz

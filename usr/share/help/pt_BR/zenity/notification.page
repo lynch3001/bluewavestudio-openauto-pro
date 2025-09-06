@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="notification" xml:lang="pt-BR">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Use a opção <cmd>--notification</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+  <title>Ícone de notificação</title>
+    <p>Use a opção <cmd>--notification</cmd> para criar um ícone de notificação.</p>
+
+  <terms>
+    <item>
+      <title><cmd>--text</cmd>=<var>texto</var></title>
+      <p>Especifica o texto que é exibido na área de notificação.</p>
+    </item>
+    <item>
+      <title><cmd>--listen</cmd>=icon: '<var>texto</var>', message: '<var>texto</var>', tooltip: '<var>texto</var>', visible: '<var>texto</var>',</title>
+      <p>Ouve comandos na entrada padrão. Pelo menos um comando deve ser especificado. Comandos são separados por vírgula. Um comando deve ser seguido por dois pontos e um valor.</p>
+      <note style="tip">
+        <p>O comando <cmd>icon</cmd> também aceita quatro valores pré-definidos tais como <var>error</var>, <var>info</var>, <var>question</var> e <var>warning</var>.</p>
+      </note>
+    </item>
+  </terms>
+
+  <p>O script de exemplo a seguir mostra como criar um ícone de notificação:</p>
+  <code>
+  #!/bin/sh
+
+  zenity --notification\
+    --window-icon="info" \
+    --text="Existem atualizações de sistema importantes!"
+  </code>
+
+  <figure>
+    <title>Exemplo de ícone de notificação</title>
+    <desc>exemplo de ícone de notificação do <app>Zenity</app></desc>
+    <media type="image" mime="image/png" src="figures/zenity-notification-screenshot.png"/>
+  </figure>
+
+  <p>O script de exemplo a seguir mostra como criar um ícone de notificação junto com <cmd>--listen</cmd>:</p>
+  <code>
+  #!/bin/sh
+  cat &lt;&lt;EOH| zenity --notification --listen
+  message: este é o texto da mensagem
+  EOH
+  </code>
+
+  <figure>
+    <title>Exemplo de ícone de notificação com <cmd>--listen</cmd></title>
+    <desc>Exemplo de notificação com <cmd>--listen</cmd> do <app>Zenity</app></desc>
+    <media type="image" mime="image/png" src="figures/zenity-notification-listen-screenshot.png"/>
+  </figure>
+
+</page>

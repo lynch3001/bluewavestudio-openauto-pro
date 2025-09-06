@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pref-downloads" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="index#pref"/>
+    <link type="guide" xref="pref"/>
+    <revision pkgversion="3.10" date="2013-07-06" status="review"/>
+    <revision pkgversion="3.12" date="2014-01-28" status="candidate"/>
+
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+<!--    <credit type="copyright editor">
+      <name></name>
+      <email its:translate="no"></email>
+      <years></years>
+    </credit>-->
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Var hamnar mina hämtade filer och hur kan jag ändra denna inställning?</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2015, 2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Hämta filer</title>
+
+  <p>Filer som du hämtat från internet, som exempelvis e-postbilagor, kommer automatiskt sparas i din <file>Hämtningar</file>-mapp. Du kan ändra detta i <gui>Inställningar</gui>.</p>
+
+  <steps>
+    <item>
+      <p>Öppna <guiseq><gui style="menu">Webb</gui><gui style="menuitem">Inställningar</gui><gui style="tab">Allmänt</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Tryck på namnet för <gui>Hämtningsmapp</gui> för att välja en annan mapp för hämtningar. Om mappen som du vill använda inte är i listan väljer du <gui>Andra…</gui> för att bläddra efter den.</p>
+    </item>
+    <item>
+      <p>Kryssa i kryssrutan <gui>Öppna automatiskt hämtade filer</gui> om du vill att den hämtade filen ska öppnas automatiskt.</p>
+    </item>
+  </steps>
+
+  <p>Om du <em>sparar</em> en fil istället för att hämta den kommer du fortfarande behöva ange var du vill spara den.</p>
+
+</page>

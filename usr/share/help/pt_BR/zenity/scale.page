@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="scale" xml:lang="pt-BR">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Use a opção <cmd>--scale</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+  <title>Diálogo de escala</title>
+  <p>Use a opção <cmd>--scale</cmd> para criar um diálogo de erro.</p>
+  <p>O diálogo de escala oferece suporte às seguintes opções:</p>
+
+  <terms>
+
+    <item>
+      <title><cmd>--text</cmd>=<var>TEXTO</var></title>
+      <p>Define o texto do diálogo. (Padrão: Ajusta o valor da escola)</p>
+    </item>
+
+    <item>
+      <title><cmd>--value</cmd>=<var>VALOR</var></title>
+      <p>Define o valor inicial. (Padrão: 0) Você deve especificar um valor entre o valor mínimo e o valor máximo.</p>
+    </item>
+
+    <item>
+      <title><cmd>--min-value</cmd>=<var>VALOR</var></title>
+      <p>Define um valor mínimo. (Padrão: 0)</p>
+    </item>
+
+    <item>
+      <title><cmd>--max-value</cmd>=<var>VALOR</var></title>
+      <p>Define um valor máximo. (Padrão: 100)</p>
+    </item>
+
+    <item>
+      <title><cmd>--step</cmd>=<var>VALOR</var></title>
+      <p>Define o tamanho do passo. (Padrão: 1)</p>
+    </item>
+
+    <item>
+      <title><cmd>--print-partial</cmd></title>
+      <p>Imprime o valor para a saída padrão, sempre que um valor é alterado.</p>
+    </item>
+
+    <item>
+      <title><cmd>--hide-value</cmd></title>
+      <p>Oculta o valor no diálogo.</p>
+    </item>
+
+  </terms>
+
+  <p>O script de exemplo a seguir mostra como criar um diálogo de escala:</p>
+
+<code>
+#!/bin/sh
+
+VALOR=`zenity --scale --text="Selecione a transparência da janela." --value=50`
+
+case $? in
+         0)
+		echo "Você selecionou $VALOR%.";;
+         1)
+                echo "Nenhum valor foi selecionado.";;
+        -1)
+                echo "Ocorreu um erro inesperado.";;
+esac
+</code>
+
+  <figure>
+    <title>Exemplo de diálogo de escala</title>
+    <desc>Exemplo de diálogo de escala do <app>Zenity</app></desc>
+    <media type="image" mime="image/png" src="figures/zenity-scale-screenshot.png"/>
+  </figure>
+
+</page>

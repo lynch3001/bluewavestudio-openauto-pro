@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="error" xml:lang="sv">
+  <info>
+    <link type="guide" xref="message"/>
+    <desc>Använd flaggan <cmd>--error</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2006, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+  <title>Feldialog</title>
+      <p>Använd flaggan <cmd>--error</cmd> för att skapa en feldialog.</p>
+
+      <p>Följande exempelskript visar hur man skapar en feldialog:</p>
+
+<code>
+#!/bin/bash
+
+zenity --error \
+--text="Kunde inte hitta /var/log/syslog."
+</code>
+
+
+      <figure>
+        <title>Exempel på feldialog</title>
+        <desc><app>Zenity</app>-exempel på feldialog</desc>
+        <media type="image" mime="image/png" src="figures/zenity-error-screenshot.png"/>
+      </figure>
+</page>

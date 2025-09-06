@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/SoapySDR
+/usr/lib/arm-linux-gnueabihf/SoapySDR/modules0.6
+/usr/lib/arm-linux-gnueabihf/SoapySDR/modules0.6/libairspySupport.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/soapysdr0.6-module-airspy
+/usr/share/doc/soapysdr0.6-module-airspy/README.md
+/usr/share/doc/soapysdr0.6-module-airspy/changelog.Debian.gz
+/usr/share/doc/soapysdr0.6-module-airspy/changelog.gz
+/usr/share/doc/soapysdr0.6-module-airspy/copyright

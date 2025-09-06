@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libftdi1.so.2.4.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libftdi1-2
+/usr/share/doc/libftdi1-2/changelog.Debian.armhf.gz
+/usr/share/doc/libftdi1-2/changelog.Debian.gz
+/usr/share/doc/libftdi1-2/changelog.gz
+/usr/share/doc/libftdi1-2/copyright
+/usr/lib/arm-linux-gnueabihf/libftdi1.so.2

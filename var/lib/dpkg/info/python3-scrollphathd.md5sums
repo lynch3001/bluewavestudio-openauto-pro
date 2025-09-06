@@ -1,0 +1,17 @@
+beb249f9a2b7460f7096a1c91150afb7  usr/lib/python3/dist-packages/scrollphathd-1.2.1.egg-info/PKG-INFO
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/scrollphathd-1.2.1.egg-info/dependency_links.txt
+93d7964ec38e9a2894a602b6c93f8cb7  usr/lib/python3/dist-packages/scrollphathd-1.2.1.egg-info/requires.txt
+6e5ca491cdd990ef47ed688e3c55f450  usr/lib/python3/dist-packages/scrollphathd-1.2.1.egg-info/top_level.txt
+51f658cb684c971b038d55f98b4eebe3  usr/lib/python3/dist-packages/scrollphathd/__init__.py
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/scrollphathd/api/__init__.py
+12339d1faecbd9dcffac13ba89ee0df2  usr/lib/python3/dist-packages/scrollphathd/api/action.py
+95d6bd1594a48a246aac1f8a64cc3047  usr/lib/python3/dist-packages/scrollphathd/api/http.py
+dfa6361bdd3287ee8e21b39add03a596  usr/lib/python3/dist-packages/scrollphathd/api/stoppablethread.py
+d41d8cd98f00b204e9800998ecf8427e  usr/lib/python3/dist-packages/scrollphathd/fonts/__init__.py
+1434e176967310b1a6851490d380092c  usr/lib/python3/dist-packages/scrollphathd/fonts/font3x5.py
+5f5e35cff2d0fbc227d9518c34d96c05  usr/lib/python3/dist-packages/scrollphathd/fonts/font5x5.py
+b106eacf9f08b91f86c48ffd4841520c  usr/lib/python3/dist-packages/scrollphathd/fonts/font5x7.py
+dca11daea46dfd256d6b7b70f0c59b97  usr/lib/python3/dist-packages/scrollphathd/fonts/font5x7smoothed.py
+7c46c1fcf6222c71804b029849a0cadd  usr/lib/python3/dist-packages/scrollphathd/is31fl3731.py
+f2ccf078cc58320306c123d843c59094  usr/share/doc/python3-scrollphathd/changelog.gz
+24275a58aee67c5b227f310686a16b9a  usr/share/doc/python3-scrollphathd/copyright

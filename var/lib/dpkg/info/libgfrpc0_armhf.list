@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libgfrpc.so.0.0.1
+/usr/share
+/usr/share/doc
+/usr/share/doc/libgfrpc0
+/usr/share/doc/libgfrpc0/changelog.Debian.gz
+/usr/share/doc/libgfrpc0/changelog.gz
+/usr/share/doc/libgfrpc0/copyright
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libgfrpc0
+/usr/lib/arm-linux-gnueabihf/libgfrpc.so.0

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pref-do-not-track" xml:lang="ko">
+
+  <info>
+    <link type="guide" xref="index#privacy"/>
+    <link type="guide" xref="pref"/>
+    <revision pkgversion="3.12" date="2014-02-24" status="candidate"/>
+
+    <credit type="author copyright">
+      <name>Baptiste Mille-Mathias</name>
+      <email its:translate="no">baptistem@gnome.org</email>
+      <years>2014</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>나의 온라인 활동 내역을 관찰하는 것을 원하지 않는다고 어떻게 웹사이트에 알리나요?</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>ChangSeok Oh</mal:name>
+      <mal:email>changseok@gnome.org</mal:email>
+      <mal:years>2015, 2016, 2017, 2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gyuseok Jung</mal:name>
+      <mal:email>jgyuseok@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>웹 추적 기본 설정하기</title>
+
+  <p>어떤 웹사이트는 당신이 그곳을 방문했을 때 활동 내역을 감시할 수 있습니다. 예를 들어, 당신이 어떤 페이지를 보는지 혹은 무엇을 검색했는 지를 알고 싶어할지도 모릅니다. 이 정보를 당신의 웹 브라우징 경험을 개선하는데 사용할 수도 있지만, 그것을 악의적인 방식으로 사용하려는 다른 기업에 팔거나 공유할 수도 있습니다. <gui>추적 중지</gui>를 사용해서 당신의 활동 내역을 감시하지 않도록 방문하는 웹사이트에 요청할 수 있습니다.</p>
+
+  <steps>
+    <item>
+      <p><guiseq><gui style="menu">웹</gui><gui style="menuitem">기본 설정</gui><gui style="tab">개인정보</gui></guiseq>를 엽니다.</p>
+    </item>
+    <item>
+      <p><gui style="checkbox">웹사이트에 추적당하길 원하지 않는다고 알리기</gui> 확인란을 선택하세요.</p>
+    </item>
+  </steps>
+
+  <note style="important">
+    <p>웹사이트가 이 기본 설정을 지켜야하는 것은 아닙니다.</p>
+  </note>
+
+</page>

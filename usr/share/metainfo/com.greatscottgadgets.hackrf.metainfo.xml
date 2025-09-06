@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+  <id>com.greatscottgadgets.hackrf</id>
+  <metadata_license>GPL-2+</metadata_license>
+  <name>hackrf</name>
+  <summary>hackrf radio interface</summary>
+  <description>
+    <p>
+      HackRF is an open source Software Defined Radio that can receive
+      and transmit between 30 MHz and 6 GHz. HackRF has a 20 MHz bandwidth.
+      It is a High Speed USB device powered by the USB bus.
+    </p>
+  </description>
+  <provides>
+    <modalias>usb:v1D50p604Bd*</modalias>
+    <modalias>usb:v1D50p6089d*</modalias>
+    <modalias>usb:v1D50pCC15d*</modalias>
+    <modalias>usb:v1FC9p000Cd*</modalias>
+  </provides>
+</component>

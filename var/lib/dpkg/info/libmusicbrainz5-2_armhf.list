@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libmusicbrainz5.so.2.0.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libmusicbrainz5-2
+/usr/share/doc/libmusicbrainz5-2/changelog.Debian.gz
+/usr/share/doc/libmusicbrainz5-2/copyright
+/usr/lib/arm-linux-gnueabihf/libmusicbrainz5.so.2

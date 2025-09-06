@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/include
+/usr/include/i2c
+/usr/include/i2c/smbus.h
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libi2c.a
+/usr/share
+/usr/share/doc
+/usr/share/doc/libi2c-dev
+/usr/share/doc/libi2c-dev/changelog.Debian.gz
+/usr/share/doc/libi2c-dev/changelog.gz
+/usr/share/doc/libi2c-dev/copyright
+/usr/share/doc/libi2c-dev/dev-interface.gz
+/usr/lib/arm-linux-gnueabihf/libi2c.so

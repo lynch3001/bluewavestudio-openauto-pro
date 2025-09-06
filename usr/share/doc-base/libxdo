@@ -1,0 +1,9 @@
+Document: libxdo
+Title: libxdo Manual
+Author: Jordan Sissel
+Abstract: Examples and API documentation for libxdo
+Section: Programming/X11
+
+Format: HTML
+Index: /usr/share/doc/libxdo-dev/html/index.html
+Files: /usr/share/doc/libxdo-dev/html/*

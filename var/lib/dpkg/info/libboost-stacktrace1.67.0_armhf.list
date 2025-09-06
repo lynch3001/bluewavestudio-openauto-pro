@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libboost_stacktrace_addr2line.so.1.67.0
+/usr/lib/arm-linux-gnueabihf/libboost_stacktrace_backtrace.so.1.67.0
+/usr/lib/arm-linux-gnueabihf/libboost_stacktrace_basic.so.1.67.0
+/usr/lib/arm-linux-gnueabihf/libboost_stacktrace_noop.so.1.67.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libboost-stacktrace1.67.0
+/usr/share/doc/libboost-stacktrace1.67.0/changelog.Debian.gz
+/usr/share/doc/libboost-stacktrace1.67.0/copyright
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libboost-stacktrace1.67.0

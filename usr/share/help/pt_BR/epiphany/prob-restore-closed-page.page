@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="prob-restore-closed-page" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="index#prob"/>
+    <revision pkgversion="3.12" date="2014-02-24" status="review"/>
+
+    <credit type="author copyright">
+      <name>Baptiste Mille-Mathias</name>
+      <email its:translate="no">baptistem@gnome.org</email>
+      <years>2014</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Eu desejo reabrir uma página web que eu fechei por acidente.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013,</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Como eu restauro uma aba?</title>
+
+  <p>Você pode restaurar as páginas que fechou desde que pelo menos um <app>Web</app> ainda esteja aberto.</p>
+
+  <steps>
+    <item>
+      <p>Abra <guiseq><gui style="menu">Web</gui><gui style="menuitem">Reabrir aba fechada</gui></guiseq> e a última aba fechada será reaberta.</p>
+    </item>
+  </steps>
+
+  <p>Repita o passo acima quantas vezes você precisar até que a aba que você deseja seja restaurada. Abas serão restauradas em ordem inversa a que foram fechadas. Assim que você tiver restaurado as abas fechadas, você não será capaz de restaurar nenhuma outra aba.</p>
+
+  <note style="important">
+    <p>Não é possível restaurar uma aba fechada no modo <link xref="browse-private">navegação privada</link>.</p>
+  </note>
+
+</page>

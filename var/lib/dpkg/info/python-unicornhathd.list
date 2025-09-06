@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/python-unicornhathd
+/usr/share/doc/python-unicornhathd/changelog.gz
+/usr/share/doc/python-unicornhathd/copyright
+/usr/lib
+/usr/lib/python2.7
+/usr/lib/python2.7/dist-packages
+/usr/lib/python2.7/dist-packages/unicornhathd
+/usr/lib/python2.7/dist-packages/unicornhathd/__init__.py
+/usr/lib/python2.7/dist-packages/unicornhathd-0.0.4.egg-info
+/usr/lib/python2.7/dist-packages/unicornhathd-0.0.4.egg-info/requires.txt
+/usr/lib/python2.7/dist-packages/unicornhathd-0.0.4.egg-info/dependency_links.txt
+/usr/lib/python2.7/dist-packages/unicornhathd-0.0.4.egg-info/top_level.txt
+/usr/lib/python2.7/dist-packages/unicornhathd-0.0.4.egg-info/PKG-INFO

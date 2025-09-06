@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pref-css" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="index#pref"/>
+    <link type="guide" xref="pref"/>
+    <revision pkgversion="3.10" date="2013-07-06" status="candidate"/>
+
+    <credit type="author copyright">
+      <name>Gordon Hill</name>
+      <email its:translate="no">caseyweederman@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Åsidosätt temat som används för att visa webbsidor.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2015, 2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Anpassad CSS</title>
+
+  <p><app>Webb</app> låter dig ställa in en anpassad CSS för att ändra utseende och känsla för varje webbsida som du besöker. Du kan vilja göra detta för att ställa in en föredragen typsnittsstorlek eller färgschema.</p>
+
+  <steps>
+    <item>
+      <p>Öppna <guiseq><gui style="menu">Webb</gui><gui style="menuitem">Inställningar</gui><gui style="tab">Typsnitt &amp; stil</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Tryck <gui style="button">Redigera stilmall</gui>.</p>
+    </item>
+    <item>
+      <p>Din standardtextredigerare kommer öppnas. Lägg till din anpassade CSS och spara filen.</p>
+    </item>
+    <item>
+      <p>Kryssa i kryssrutan <gui>Använd anpassad stilmall</gui>.</p>
+    </item>
+  </steps>
+
+  <p>Ett exempel på anpassad CSS:</p>
+  <code>
+body{
+    /*Visa allting upp och ner*/
+    -webkit-transform: rotate(180deg);
+}
+</code>
+
+  <p>Din anpassade CSS kommer åsidosätta stilmallen på sidor som du besöker efter att du aktiverat den.</p>
+
+</page>

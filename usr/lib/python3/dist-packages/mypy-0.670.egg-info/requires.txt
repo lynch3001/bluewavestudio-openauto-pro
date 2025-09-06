@@ -1,0 +1,8 @@
+
+[:python_version < "3.5"]
+typing>=3.5.3
+
+[dmypy]
+
+[dmypy:sys_platform != "win32"]
+psutil<5.5.0,>=5.4.0

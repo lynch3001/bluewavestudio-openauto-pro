@@ -1,0 +1,5 @@
+c90c0fc0f438f474e77a1351db0fbdef  usr/lib/arm-linux-gnueabihf/libQt5PrintSupport.so.5.11.3
+cfdda1330c65dbf63a10cd8c3e0303a0  usr/lib/arm-linux-gnueabihf/qt5/plugins/printsupport/libcupsprintersupport.so
+f8c27bab674cffd962ffd716bb1d25e5  usr/share/doc/libqt5printsupport5/changelog.Debian.gz
+c47cea380622a8c155fd8b0e35baa887  usr/share/doc/libqt5printsupport5/copyright
+98d94a5c74b112f53bbfda6fe737bc46  usr/share/lintian/overrides/libqt5printsupport5

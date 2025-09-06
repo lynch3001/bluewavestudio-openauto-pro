@@ -1,0 +1,10 @@
+0ee867d06e6400c2fabc6ed21404a607  usr/lib/android-sdk/platform-tools/adb
+61cb485919da21819806eb9f350fef89  usr/share/bash-completion/completions/adb
+0036bcbfa9646dbc00a9abdbe73a5623  usr/share/doc/adb/NOTICE.gz
+6da258d11bd632f9b38a1571e3f9bf1f  usr/share/doc/adb/OVERVIEW.TXT.gz
+756db5e210183043edcdd47f25e7cf38  usr/share/doc/adb/SERVICES.TXT.gz
+3ec144dc40c5f6fb9c1b82d34f0b940c  usr/share/doc/adb/SYNC.TXT
+f77000fb859ff241cb1ebf57de63d901  usr/share/doc/adb/changelog.Debian.gz
+1c5c2c0641a303034b3c704187b278a8  usr/share/doc/adb/copyright
+c2afda2aeab0173e972a508fa5e55249  usr/share/lintian/overrides/adb
+e356e1117e8ea3a536e9e58809731fc8  usr/share/man/man1/adb.1.gz

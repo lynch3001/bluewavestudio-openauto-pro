@@ -1,0 +1,4 @@
+2ca8eff183b9cd780b683c4f9786bfdb  usr/lib/arm-linux-gnueabihf/libboost_wave.so.1.67.0
+fd9fd87aca681e8911194b0265a932bd  usr/share/doc/libboost-wave1.67.0/changelog.Debian.gz
+190563c1ac07e6b6ab3c1b872d584bfe  usr/share/doc/libboost-wave1.67.0/copyright
+12dfdee2ab7fda099fa80a684e0a59e3  usr/share/lintian/overrides/libboost-wave1.67.0

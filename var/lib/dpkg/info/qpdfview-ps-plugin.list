@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/lib
+/usr/lib/qpdfview
+/usr/lib/qpdfview/libqpdfview_ps.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/qpdfview-ps-plugin
+/usr/share/doc/qpdfview-ps-plugin/changelog.Debian.gz
+/usr/share/doc/qpdfview-ps-plugin/changelog.gz
+/usr/share/doc/qpdfview-ps-plugin/copyright

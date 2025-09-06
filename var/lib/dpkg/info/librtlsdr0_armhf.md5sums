@@ -1,0 +1,5 @@
+9ec4545be35cf09c69b89a25b1ce69a7  lib/udev/rules.d/60-librtlsdr0.rules
+6f0b231fbc7db3720c94c87f80416e5a  usr/lib/arm-linux-gnueabihf/librtlsdr.so.0.6.0
+a514a98e717006e97c697cee63a85b19  usr/share/doc/librtlsdr0/changelog.Debian.gz
+25cbc1227195b0fc5f7cbfe48ab60f51  usr/share/doc/librtlsdr0/copyright
+e701f9e4ada56b11283ab3486bdf8591  usr/share/metainfo/librtlsdr0.metainfo.xml

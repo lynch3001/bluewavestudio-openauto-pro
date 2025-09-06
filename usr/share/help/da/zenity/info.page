@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="info" xml:lang="da">
+  <info>
+    <link type="guide" xref="message"/>
+    <desc>Brug tilvalget <cmd>--info</cmd>.</desc>
+  </info>
+  <title>Infodialog</title>
+      <p>Brug tilvalget <cmd>--info</cmd> til at oprette en informationsdialog.</p>
+
+      <p>Følgende eksempelscript viser hvordan man opretter en informationsdialog:</p>
+
+<code>
+#!/bin/bash
+
+zenity --info \
+--text="Fletning fuldført. Opdaterede 3 ud af 10 filer."
+</code>
+
+
+      <figure>
+        <title>Eksempel på informationsdialog</title>
+        <desc>Eksempel på informationsdialog til <app>Zenity</app></desc>
+        <media type="image" mime="image/png" src="figures/zenity-information-screenshot.png"/>
+      </figure>
+</page>

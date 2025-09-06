@@ -1,0 +1,311 @@
+libQt5Nfc.so.5 libqt5nfc5 #MINVER#
+| libqt5nfc5 #MINVER#
+ Qt_5.0@Qt_5.0 5.6.0
+ Qt_5.10@Qt_5.10 5.10.1
+ Qt_5.11@Qt_5.11 5.11.1
+ Qt_5.1@Qt_5.1 5.6.0
+ Qt_5.2@Qt_5.2 5.6.0
+ Qt_5.3@Qt_5.3 5.6.0
+ Qt_5.4@Qt_5.4 5.6.0
+ Qt_5.5@Qt_5.5 5.6.0
+ Qt_5.6@Qt_5.6 5.6.0
+ Qt_5.7@Qt_5.7 5.7.0
+ Qt_5.8@Qt_5.8 5.9.0~rc2
+ Qt_5.9@Qt_5.9 5.9.0~rc2
+ Qt_5@Qt_5 5.6.0
+ Qt_5_PRIVATE_API@Qt_5_PRIVATE_API 5.6.0 1
+ _Z12qNfcChecksumPKcj@Qt_5 5.6.0
+ _Z29qRegisterNdefRecordTypeHelperPK11QMetaObjectN11QNdefRecord14TypeNameFormatERK10QByteArray@Qt_5 5.6.0
+ _Z38qNewDeclarativeNdefRecordForNdefRecordRK11QNdefRecord@Qt_5 5.6.0
+ _Z5qHashRK11QNdefRecord@Qt_5 5.6.0
+ _ZN11QLlcpServer11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpServer11qt_metacastEPKc@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpServer13newConnectionEv@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpServer16staticMetaObjectE@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpServer21nextPendingConnectionEv@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpServer5closeEv@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpServer6listenERK7QString@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpServerC1EP7QObject@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpServerC2EP7QObject@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpServerD0Ev@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpServerD1Ev@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpServerD2Ev@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpSocket11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpSocket11qt_metacastEPKc@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpSocket12disconnectedEv@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpSocket12readDatagramEPcxPP16QNearFieldTargetPh@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpSocket12stateChangedENS_11SocketStateE@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpSocket13writeDatagramEPKcx@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpSocket13writeDatagramEPKcxP16QNearFieldTargeth@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpSocket13writeDatagramERK10QByteArray@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpSocket13writeDatagramERK10QByteArrayP16QNearFieldTargeth@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpSocket16connectToServiceEP16QNearFieldTargetRK7QString@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpSocket16staticMetaObjectE@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpSocket16waitForConnectedEi@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpSocket16waitForReadyReadEi@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpSocket19waitForBytesWrittenEi@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpSocket19waitForDisconnectedEi@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpSocket21disconnectFromServiceEv@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpSocket4bindEh@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpSocket5closeEv@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpSocket5errorENS_11SocketErrorE@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpSocket8readDataEPcx@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpSocket9connectedEv@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpSocket9writeDataEPKcx@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpSocketC1EP18QLlcpSocketPrivateP7QObject@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpSocketC1EP7QObject@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpSocketC2EP18QLlcpSocketPrivateP7QObject@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpSocketC2EP7QObject@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpSocketD0Ev@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpSocketD1Ev@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QLlcpSocketD2Ev@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN11QNdefFilter12appendRecordEN11QNdefRecord14TypeNameFormatERK10QByteArrayjj@Qt_5 5.6.0
+ _ZN11QNdefFilter12appendRecordERKNS_6RecordE@Qt_5 5.6.0
+ _ZN11QNdefFilter13setOrderMatchEb@Qt_5 5.6.0
+ _ZN11QNdefFilter5clearEv@Qt_5 5.6.0
+ _ZN11QNdefFilterC1ERKS_@Qt_5 5.6.0
+ _ZN11QNdefFilterC1Ev@Qt_5 5.6.0
+ _ZN11QNdefFilterC2ERKS_@Qt_5 5.6.0
+ _ZN11QNdefFilterC2Ev@Qt_5 5.6.0
+ _ZN11QNdefFilterD1Ev@Qt_5 5.6.0
+ _ZN11QNdefFilterD2Ev@Qt_5 5.6.0
+ _ZN11QNdefFilteraSERKS_@Qt_5 5.6.0
+ _ZN11QNdefRecord10setPayloadERK10QByteArray@Qt_5 5.6.0
+ _ZN11QNdefRecord17setTypeNameFormatENS_14TypeNameFormatE@Qt_5 5.6.0
+ _ZN11QNdefRecord5setIdERK10QByteArray@Qt_5 5.6.0
+ _ZN11QNdefRecord7setTypeERK10QByteArray@Qt_5 5.6.0
+ _ZN11QNdefRecordC1ENS_14TypeNameFormatERK10QByteArray@Qt_5 5.6.0
+ _ZN11QNdefRecordC1ERKS_@Qt_5 5.6.0
+ _ZN11QNdefRecordC1ERKS_NS_14TypeNameFormatE@Qt_5 5.6.0
+ _ZN11QNdefRecordC1ERKS_NS_14TypeNameFormatERK10QByteArray@Qt_5 5.6.0
+ _ZN11QNdefRecordC1Ev@Qt_5 5.6.0
+ _ZN11QNdefRecordC2ENS_14TypeNameFormatERK10QByteArray@Qt_5 5.6.0
+ _ZN11QNdefRecordC2ERKS_@Qt_5 5.6.0
+ _ZN11QNdefRecordC2ERKS_NS_14TypeNameFormatE@Qt_5 5.6.0
+ _ZN11QNdefRecordC2ERKS_NS_14TypeNameFormatERK10QByteArray@Qt_5 5.6.0
+ _ZN11QNdefRecordC2Ev@Qt_5 5.6.0
+ _ZN11QNdefRecordD1Ev@Qt_5 5.6.0
+ _ZN11QNdefRecordD2Ev@Qt_5 5.6.0
+ _ZN11QNdefRecordaSERKS_@Qt_5 5.6.0
+ _ZN12QNdefMessage13fromByteArrayERK10QByteArray@Qt_5 5.6.0
+ _ZN14QQmlNdefRecord11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5 5.6.0
+ _ZN14QQmlNdefRecord11qt_metacastEPKc@Qt_5 5.6.0
+ _ZN14QQmlNdefRecord11typeChangedEv@Qt_5 5.6.0
+ _ZN14QQmlNdefRecord13recordChangedEv@Qt_5 5.6.0
+ _ZN14QQmlNdefRecord16staticMetaObjectE@Qt_5 5.6.0
+ _ZN14QQmlNdefRecord17setTypeNameFormatENS_14TypeNameFormatE@Qt_5 5.6.0
+ _ZN14QQmlNdefRecord21typeNameFormatChangedEv@Qt_5 5.6.0
+ _ZN14QQmlNdefRecord7setTypeERK7QString@Qt_5 5.6.0
+ _ZN14QQmlNdefRecord9setRecordERK11QNdefRecord@Qt_5 5.6.0
+ _ZN14QQmlNdefRecordC1EP7QObject@Qt_5 5.6.0
+ _ZN14QQmlNdefRecordC1ERK11QNdefRecordP7QObject@Qt_5 5.6.0
+ _ZN14QQmlNdefRecordC2EP7QObject@Qt_5 5.6.0
+ _ZN14QQmlNdefRecordC2ERK11QNdefRecordP7QObject@Qt_5 5.6.0
+ _ZN14QQmlNdefRecordD0Ev@Qt_5 5.6.0
+ _ZN14QQmlNdefRecordD1Ev@Qt_5 5.6.0
+ _ZN14QQmlNdefRecordD2Ev@Qt_5 5.6.0
+ _ZN16QNearFieldTarget10disconnectEv@Qt_5 5.9.0~rc2
+ _ZN16QNearFieldTarget11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5 5.6.0
+ _ZN16QNearFieldTarget11qt_metacastEPKc@Qt_5 5.6.0
+ _ZN16QNearFieldTarget11sendCommandERK10QByteArray@Qt_5 5.6.0
+ _ZN16QNearFieldTarget12disconnectedEv@Qt_5 5.6.0
+ _ZN16QNearFieldTarget12sendCommandsERK5QListI10QByteArrayE@Qt_5 5.6.0
+ _ZN16QNearFieldTarget14handleResponseERKNS_9RequestIdERK10QByteArray@Qt_5 5.6.0
+ _ZN16QNearFieldTarget14hasNdefMessageEv@Qt_5 5.6.0
+ _ZN16QNearFieldTarget15ndefMessageReadERK12QNdefMessage@Qt_5 5.6.0
+ _ZN16QNearFieldTarget15requestResponseERKNS_9RequestIdE@Qt_5 5.6.0
+ _ZN16QNearFieldTarget16readNdefMessagesEv@Qt_5 5.6.0
+ _ZN16QNearFieldTarget16requestCompletedERKNS_9RequestIdE@Qt_5 5.6.0
+ _ZN16QNearFieldTarget16staticMetaObjectE@Qt_5 5.6.0
+ _ZN16QNearFieldTarget17setKeepConnectionEb@Qt_5 5.9.0~rc2
+ _ZN16QNearFieldTarget17writeNdefMessagesERK5QListI12QNdefMessageE@Qt_5 5.6.0
+ _ZN16QNearFieldTarget19ndefMessagesWrittenEv@Qt_5 5.6.0
+ _ZN16QNearFieldTarget21setResponseForRequestERKNS_9RequestIdERK8QVariantb@Qt_5 5.6.0
+ _ZN16QNearFieldTarget23waitForRequestCompletedERKNS_9RequestIdEi@Qt_5 5.6.0
+ _ZN16QNearFieldTarget5errorENS_5ErrorERKNS_9RequestIdE@Qt_5 5.6.0
+ _ZN16QNearFieldTarget9RequestIdC1EPNS_16RequestIdPrivateE@Qt_5 5.6.0
+ _ZN16QNearFieldTarget9RequestIdC1ERKS0_@Qt_5 5.6.0
+ _ZN16QNearFieldTarget9RequestIdC1Ev@Qt_5 5.6.0
+ _ZN16QNearFieldTarget9RequestIdC2EPNS_16RequestIdPrivateE@Qt_5 5.6.0
+ _ZN16QNearFieldTarget9RequestIdC2ERKS0_@Qt_5 5.6.0
+ _ZN16QNearFieldTarget9RequestIdC2Ev@Qt_5 5.6.0
+ _ZN16QNearFieldTarget9RequestIdD1Ev@Qt_5 5.6.0
+ _ZN16QNearFieldTarget9RequestIdD2Ev@Qt_5 5.6.0
+ _ZN16QNearFieldTarget9RequestIdaSERKS0_@Qt_5 5.6.0
+ _ZN16QNearFieldTargetC1EP7QObject@Qt_5 5.6.0
+ _ZN16QNearFieldTargetC2EP7QObject@Qt_5 5.6.0
+ _ZN16QNearFieldTargetD0Ev@Qt_5 5.6.0
+ _ZN16QNearFieldTargetD1Ev@Qt_5 5.6.0
+ _ZN16QNearFieldTargetD2Ev@Qt_5 5.6.0
+ _ZN17QNdefNfcUriRecord6setUriERK4QUrl@Qt_5 5.6.0
+ _ZN17QNearFieldManager10targetLostEP16QNearFieldTarget@Qt_5 5.6.0
+ _ZN17QNearFieldManager11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5 5.6.0
+ _ZN17QNearFieldManager11qt_metacastEPKc@Qt_5 5.6.0
+ _ZN17QNearFieldManager14targetDetectedEP16QNearFieldTarget@Qt_5 5.6.0
+ _ZN17QNearFieldManager16staticMetaObjectE@Qt_5 5.6.0
+ _ZN17QNearFieldManager19stopTargetDetectionEv@Qt_5 5.6.0
+ _ZN17QNearFieldManager20setTargetAccessModesE6QFlagsINS_16TargetAccessModeEE@Qt_5 5.6.0
+ _ZN17QNearFieldManager20startTargetDetectionEv@Qt_5 5.6.0
+ _ZN17QNearFieldManager26registerNdefMessageHandlerEN11QNdefRecord14TypeNameFormatERK10QByteArrayP7QObjectPKc@Qt_5 5.6.0
+ _ZN17QNearFieldManager26registerNdefMessageHandlerEP7QObjectPKc@Qt_5 5.6.0
+ _ZN17QNearFieldManager26registerNdefMessageHandlerERK11QNdefFilterP7QObjectPKc@Qt_5 5.6.0
+ _ZN17QNearFieldManager28unregisterNdefMessageHandlerEi@Qt_5 5.6.0
+ _ZN17QNearFieldManagerC1EP24QNearFieldManagerPrivateP7QObject@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN17QNearFieldManagerC1EP7QObject@Qt_5 5.6.0
+ _ZN17QNearFieldManagerC2EP24QNearFieldManagerPrivateP7QObject@Qt_5_PRIVATE_API 5.6.0 1
+ _ZN17QNearFieldManagerC2EP7QObject@Qt_5 5.6.0
+ _ZN17QNearFieldManagerD0Ev@Qt_5 5.6.0
+ _ZN17QNearFieldManagerD1Ev@Qt_5 5.6.0
+ _ZN17QNearFieldManagerD2Ev@Qt_5 5.6.0
+ _ZN18QNdefNfcIconRecord7setDataERK10QByteArray@Qt_5 5.6.0
+ _ZN18QNdefNfcTextRecord11setEncodingENS_8EncodingE@Qt_5 5.6.0
+ _ZN18QNdefNfcTextRecord7setTextE7QString@Qt_5 5.6.0
+ _ZN18QNdefNfcTextRecord9setLocaleERK7QString@Qt_5 5.6.0
+ _ZN21QNearFieldShareTarget11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5 5.6.0
+ _ZN21QNearFieldShareTarget11qt_metacastEPKc@Qt_5 5.6.0
+ _ZN21QNearFieldShareTarget13shareFinishedEv@Qt_5 5.6.0
+ _ZN21QNearFieldShareTarget16staticMetaObjectE@Qt_5 5.6.0
+ _ZN21QNearFieldShareTarget5errorEN22QNearFieldShareManager10ShareErrorE@Qt_5 5.6.0
+ _ZN21QNearFieldShareTarget5shareERK12QNdefMessage@Qt_5 5.6.0
+ _ZN21QNearFieldShareTarget5shareERK5QListI9QFileInfoE@Qt_5 5.6.0
+ _ZN21QNearFieldShareTarget6cancelEv@Qt_5 5.6.0
+ _ZN21QNearFieldShareTargetC1E6QFlagsIN22QNearFieldShareManager9ShareModeEEP7QObject@Qt_5 5.6.0
+ _ZN21QNearFieldShareTargetC2E6QFlagsIN22QNearFieldShareManager9ShareModeEEP7QObject@Qt_5 5.6.0
+ _ZN21QNearFieldShareTargetD0Ev@Qt_5 5.6.0
+ _ZN21QNearFieldShareTargetD1Ev@Qt_5 5.6.0
+ _ZN21QNearFieldShareTargetD2Ev@Qt_5 5.6.0
+ _ZN22QNearFieldShareManager11qt_metacallEN11QMetaObject4CallEiPPv@Qt_5 5.6.0
+ _ZN22QNearFieldShareManager11qt_metacastEPKc@Qt_5 5.6.0
+ _ZN22QNearFieldShareManager13setShareModesE6QFlagsINS_9ShareModeEE@Qt_5 5.6.0
+ _ZN22QNearFieldShareManager14targetDetectedEP21QNearFieldShareTarget@Qt_5 5.6.0
+ _ZN22QNearFieldShareManager16staticMetaObjectE@Qt_5 5.6.0
+ _ZN22QNearFieldShareManager17shareModesChangedE6QFlagsINS_9ShareModeEE@Qt_5 5.6.0
+ _ZN22QNearFieldShareManager19supportedShareModesEv@Qt_5 5.6.0
+ _ZN22QNearFieldShareManager5errorENS_10ShareErrorE@Qt_5 5.6.0
+ _ZN22QNearFieldShareManagerC1EP7QObject@Qt_5 5.6.0
+ _ZN22QNearFieldShareManagerC2EP7QObject@Qt_5 5.6.0
+ _ZN22QNearFieldShareManagerD0Ev@Qt_5 5.6.0
+ _ZN22QNearFieldShareManagerD1Ev@Qt_5 5.6.0
+ _ZN22QNearFieldShareManagerD2Ev@Qt_5 5.6.0
+ _ZN25QNdefNfcSmartPosterRecord10removeIconERK10QByteArray@Qt_5 5.6.0
+ _ZN25QNdefNfcSmartPosterRecord10removeIconERK18QNdefNfcIconRecord@Qt_5 5.6.0
+ _ZN25QNdefNfcSmartPosterRecord10setPayloadERK10QByteArray@Qt_5 5.6.0
+ _ZN25QNdefNfcSmartPosterRecord11removeTitleERK18QNdefNfcTextRecord@Qt_5 5.6.0
+ _ZN25QNdefNfcSmartPosterRecord11removeTitleERK7QString@Qt_5 5.6.0
+ _ZN25QNdefNfcSmartPosterRecord11setTypeInfoERK10QByteArray@Qt_5 5.6.0
+ _ZN25QNdefNfcSmartPosterRecord15addIconInternalERK18QNdefNfcIconRecord@Qt_5 5.6.0
+ _ZN25QNdefNfcSmartPosterRecord16addTitleInternalERK18QNdefNfcTextRecord@Qt_5 5.6.0
+ _ZN25QNdefNfcSmartPosterRecord16convertToPayloadEv@Qt_5 5.6.0
+ _ZN25QNdefNfcSmartPosterRecord6setUriERK17QNdefNfcUriRecord@Qt_5 5.6.0
+ _ZN25QNdefNfcSmartPosterRecord6setUriERK4QUrl@Qt_5 5.6.0
+ _ZN25QNdefNfcSmartPosterRecord7addIconERK10QByteArrayS2_@Qt_5 5.6.0
+ _ZN25QNdefNfcSmartPosterRecord7addIconERK18QNdefNfcIconRecord@Qt_5 5.6.0
+ _ZN25QNdefNfcSmartPosterRecord7cleanupEv@Qt_5 5.6.0
+ _ZN25QNdefNfcSmartPosterRecord7setSizeEj@Qt_5 5.6.0
+ _ZN25QNdefNfcSmartPosterRecord8addTitleERK18QNdefNfcTextRecord@Qt_5 5.6.0
+ _ZN25QNdefNfcSmartPosterRecord8addTitleERK7QStringS2_N18QNdefNfcTextRecord8EncodingE@Qt_5 5.6.0
+ _ZN25QNdefNfcSmartPosterRecord8setIconsERK5QListI18QNdefNfcIconRecordE@Qt_5 5.6.0
+ _ZN25QNdefNfcSmartPosterRecord9setActionENS_6ActionE@Qt_5 5.6.0
+ _ZN25QNdefNfcSmartPosterRecord9setTitlesERK5QListI18QNdefNfcTextRecordE@Qt_5 5.6.0
+ _ZN25QNdefNfcSmartPosterRecordC1ERK11QNdefRecord@Qt_5 5.6.0
+ _ZN25QNdefNfcSmartPosterRecordC1ERKS_@Qt_5 5.6.0
+ _ZN25QNdefNfcSmartPosterRecordC1Ev@Qt_5 5.6.0
+ _ZN25QNdefNfcSmartPosterRecordC2ERK11QNdefRecord@Qt_5 5.6.0
+ _ZN25QNdefNfcSmartPosterRecordC2ERKS_@Qt_5 5.6.0
+ _ZN25QNdefNfcSmartPosterRecordC2Ev@Qt_5 5.6.0
+ _ZN25QNdefNfcSmartPosterRecordD1Ev@Qt_5 5.6.0
+ _ZN25QNdefNfcSmartPosterRecordD2Ev@Qt_5 5.6.0
+ _ZN25QNdefNfcSmartPosterRecordaSERKS_@Qt_5 5.6.0
+ _ZNK11QLlcpServer10metaObjectEv@Qt_5_PRIVATE_API 5.6.0 1
+ _ZNK11QLlcpServer10serverPortEv@Qt_5_PRIVATE_API 5.6.0 1
+ _ZNK11QLlcpServer10serviceUriEv@Qt_5_PRIVATE_API 5.6.0 1
+ _ZNK11QLlcpServer11isListeningEv@Qt_5_PRIVATE_API 5.6.0 1
+ _ZNK11QLlcpServer11serverErrorEv@Qt_5_PRIVATE_API 5.6.0 1
+ _ZNK11QLlcpServer21hasPendingConnectionsEv@Qt_5_PRIVATE_API 5.6.0 1
+ _ZNK11QLlcpSocket10metaObjectEv@Qt_5_PRIVATE_API 5.6.0 1
+ _ZNK11QLlcpSocket11canReadLineEv@Qt_5_PRIVATE_API 5.6.0 1
+ _ZNK11QLlcpSocket12isSequentialEv@Qt_5_PRIVATE_API 5.6.0 1
+ _ZNK11QLlcpSocket14bytesAvailableEv@Qt_5_PRIVATE_API 5.6.0 1
+ _ZNK11QLlcpSocket19hasPendingDatagramsEv@Qt_5_PRIVATE_API 5.6.0 1
+ _ZNK11QLlcpSocket19pendingDatagramSizeEv@Qt_5_PRIVATE_API 5.6.0 1
+ _ZNK11QLlcpSocket5errorEv@Qt_5_PRIVATE_API 5.6.0 1
+ _ZNK11QLlcpSocket5stateEv@Qt_5_PRIVATE_API 5.6.0 1
+ _ZNK11QNdefFilter10orderMatchEv@Qt_5 5.6.0
+ _ZNK11QNdefFilter11recordCountEv@Qt_5 5.6.0
+ _ZNK11QNdefFilter8recordAtEi@Qt_5 5.6.0
+ _ZNK11QNdefRecord14typeNameFormatEv@Qt_5 5.6.0
+ _ZNK11QNdefRecord2idEv@Qt_5 5.6.0
+ _ZNK11QNdefRecord4typeEv@Qt_5 5.6.0
+ _ZNK11QNdefRecord7isEmptyEv@Qt_5 5.6.0
+ _ZNK11QNdefRecord7payloadEv@Qt_5 5.6.0
+ _ZNK11QNdefRecordeqERKS_@Qt_5 5.6.0
+ _ZNK12QNdefMessage11toByteArrayEv@Qt_5 5.6.0
+ _ZNK12QNdefMessageeqERKS_@Qt_5 5.6.0
+ _ZNK14QQmlNdefRecord10metaObjectEv@Qt_5 5.6.0
+ _ZNK14QQmlNdefRecord14typeNameFormatEv@Qt_5 5.6.0
+ _ZNK14QQmlNdefRecord4typeEv@Qt_5 5.6.0
+ _ZNK14QQmlNdefRecord6recordEv@Qt_5 5.6.0
+ _ZNK16QNearFieldTarget10metaObjectEv@Qt_5 5.6.0
+ _ZNK16QNearFieldTarget14keepConnectionEv@Qt_5 5.9.0~rc2
+ _ZNK16QNearFieldTarget16maxCommandLengthEv@Qt_5 5.9.0~rc2
+ _ZNK16QNearFieldTarget19isProcessingCommandEv@Qt_5 5.6.0
+ _ZNK16QNearFieldTarget3urlEv@Qt_5 5.6.0
+ _ZNK16QNearFieldTarget9RequestId7isValidEv@Qt_5 5.6.0
+ _ZNK16QNearFieldTarget9RequestId8refCountEv@Qt_5 5.6.0
+ _ZNK16QNearFieldTarget9RequestIdeqERKS0_@Qt_5 5.6.0
+ _ZNK16QNearFieldTarget9RequestIdltERKS0_@Qt_5 5.6.0
+ _ZNK16QNearFieldTarget9RequestIdneERKS0_@Qt_5 5.6.0
+ _ZNK17QNdefNfcUriRecord3uriEv@Qt_5 5.6.0
+ _ZNK17QNearFieldManager10metaObjectEv@Qt_5 5.6.0
+ _ZNK17QNearFieldManager11isAvailableEv@Qt_5 5.6.0
+ _ZNK17QNearFieldManager17targetAccessModesEv@Qt_5 5.6.0
+ _ZNK18QNdefNfcIconRecord4dataEv@Qt_5 5.6.0
+ _ZNK18QNdefNfcTextRecord4textEv@Qt_5 5.6.0
+ _ZNK18QNdefNfcTextRecord6localeEv@Qt_5 5.6.0
+ _ZNK18QNdefNfcTextRecord8encodingEv@Qt_5 5.6.0
+ _ZNK21QNearFieldShareTarget10metaObjectEv@Qt_5 5.6.0
+ _ZNK21QNearFieldShareTarget10shareErrorEv@Qt_5 5.6.0
+ _ZNK21QNearFieldShareTarget10shareModesEv@Qt_5 5.6.0
+ _ZNK21QNearFieldShareTarget17isShareInProgressEv@Qt_5 5.6.0
+ _ZNK22QNearFieldShareManager10metaObjectEv@Qt_5 5.6.0
+ _ZNK22QNearFieldShareManager10shareErrorEv@Qt_5 5.6.0
+ _ZNK22QNearFieldShareManager10shareModesEv@Qt_5 5.6.0
+ _ZNK25QNdefNfcSmartPosterRecord10iconRecordEi@Qt_5 5.6.0
+ _ZNK25QNdefNfcSmartPosterRecord10titleCountEv@Qt_5 5.6.0
+ _ZNK25QNdefNfcSmartPosterRecord11hasTypeInfoEv@Qt_5 5.6.0
+ _ZNK25QNdefNfcSmartPosterRecord11iconRecordsEv@Qt_5 5.6.0
+ _ZNK25QNdefNfcSmartPosterRecord11titleRecordEi@Qt_5 5.6.0
+ _ZNK25QNdefNfcSmartPosterRecord12titleRecordsEv@Qt_5 5.6.0
+ _ZNK25QNdefNfcSmartPosterRecord3uriEv@Qt_5 5.6.0
+ _ZNK25QNdefNfcSmartPosterRecord4iconERK10QByteArray@Qt_5 5.6.0
+ _ZNK25QNdefNfcSmartPosterRecord4sizeEv@Qt_5 5.6.0
+ _ZNK25QNdefNfcSmartPosterRecord5titleERK7QString@Qt_5 5.6.0
+ _ZNK25QNdefNfcSmartPosterRecord6actionEv@Qt_5 5.6.0
+ _ZNK25QNdefNfcSmartPosterRecord7hasIconERK10QByteArray@Qt_5 5.6.0
+ _ZNK25QNdefNfcSmartPosterRecord7hasSizeEv@Qt_5 5.6.0
+ _ZNK25QNdefNfcSmartPosterRecord8hasTitleERK7QString@Qt_5 5.6.0
+ _ZNK25QNdefNfcSmartPosterRecord8typeInfoEv@Qt_5 5.6.0
+ _ZNK25QNdefNfcSmartPosterRecord9hasActionEv@Qt_5 5.6.0
+ _ZNK25QNdefNfcSmartPosterRecord9iconCountEv@Qt_5 5.6.0
+ _ZNK25QNdefNfcSmartPosterRecord9uriRecordEv@Qt_5 5.6.0
+ _ZTI11QLlcpServer@Qt_5_PRIVATE_API 5.6.0 1
+ _ZTI11QLlcpSocket@Qt_5_PRIVATE_API 5.6.0 1
+ _ZTI14QQmlNdefRecord@Qt_5 5.6.0
+ _ZTI16QNearFieldTarget@Qt_5 5.6.0
+ _ZTI17QNearFieldManager@Qt_5 5.6.0
+ _ZTI21QNearFieldShareTarget@Qt_5 5.6.0
+ _ZTI22QNearFieldShareManager@Qt_5 5.6.0
+ _ZTS11QLlcpServer@Qt_5_PRIVATE_API 5.6.0 1
+ _ZTS11QLlcpSocket@Qt_5_PRIVATE_API 5.6.0 1
+ _ZTS14QQmlNdefRecord@Qt_5 5.6.0
+ _ZTS16QNearFieldTarget@Qt_5 5.6.0
+ _ZTS17QNearFieldManager@Qt_5 5.6.0
+ _ZTS21QNearFieldShareTarget@Qt_5 5.6.0
+ _ZTS22QNearFieldShareManager@Qt_5 5.6.0
+ _ZTV11QLlcpServer@Qt_5_PRIVATE_API 5.6.0 1
+ _ZTV11QLlcpSocket@Qt_5_PRIVATE_API 5.6.0 1
+ _ZTV14QQmlNdefRecord@Qt_5 5.6.0
+ _ZTV16QNearFieldTarget@Qt_5 5.6.0
+ _ZTV17QNearFieldManager@Qt_5 5.6.0
+ _ZTV21QNearFieldShareTarget@Qt_5 5.6.0
+ _ZTV22QNearFieldShareManager@Qt_5 5.6.0

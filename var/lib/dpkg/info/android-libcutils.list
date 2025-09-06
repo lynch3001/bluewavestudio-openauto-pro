@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/android
+/usr/lib/arm-linux-gnueabihf/android/libcutils.so.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/android-libcutils
+/usr/share/doc/android-libcutils/NOTICE.gz
+/usr/share/doc/android-libcutils/changelog.Debian.gz
+/usr/share/doc/android-libcutils/copyright

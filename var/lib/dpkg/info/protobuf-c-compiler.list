@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/bin
+/usr/bin/protoc-gen-c
+/usr/share
+/usr/share/doc
+/usr/share/doc/protobuf-c-compiler
+/usr/share/doc/protobuf-c-compiler/changelog.Debian.armhf.gz
+/usr/share/doc/protobuf-c-compiler/changelog.Debian.gz
+/usr/share/doc/protobuf-c-compiler/changelog.gz
+/usr/share/doc/protobuf-c-compiler/copyright
+/usr/bin/protoc-c

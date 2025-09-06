@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="video/h264">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>h.264 video</comment>
+  <glob pattern="*.h264"/>
+</mime-type>

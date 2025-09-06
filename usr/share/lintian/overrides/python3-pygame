@@ -1,0 +1,10 @@
+# This is where distutils installs everything...
+python3-pygame: image-file-in-usr-lib
+
+# false positive, only a collection of constants
+python3-pygame: shared-lib-without-dependency-information usr/lib/python3/dist-packages/pygame/constants.cpython-36m-x86_64-linux-gnu.so
+python3-pygame: shared-lib-without-dependency-information usr/lib/python3/dist-packages/pygame/constants.cpython-37m-x86_64-linux-gnu.so
+
+# apparently on purpose
+python3-pygame: library-not-linked-against-libc usr/lib/python3/dist-packages/pygame/surflock.cpython-36m-x86_64-linux-gnu.so
+python3-pygame: library-not-linked-against-libc usr/lib/python3/dist-packages/pygame/surflock.cpython-37m-x86_64-linux-gnu.so

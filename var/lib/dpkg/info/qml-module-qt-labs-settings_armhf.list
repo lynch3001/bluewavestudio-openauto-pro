@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/qt5
+/usr/lib/arm-linux-gnueabihf/qt5/qml
+/usr/lib/arm-linux-gnueabihf/qt5/qml/Qt
+/usr/lib/arm-linux-gnueabihf/qt5/qml/Qt/labs
+/usr/lib/arm-linux-gnueabihf/qt5/qml/Qt/labs/settings
+/usr/lib/arm-linux-gnueabihf/qt5/qml/Qt/labs/settings/libqmlsettingsplugin.so
+/usr/lib/arm-linux-gnueabihf/qt5/qml/Qt/labs/settings/plugins.qmltypes
+/usr/lib/arm-linux-gnueabihf/qt5/qml/Qt/labs/settings/qmldir
+/usr/share
+/usr/share/doc
+/usr/share/doc/qml-module-qt-labs-settings
+/usr/share/doc/qml-module-qt-labs-settings/changelog.Debian.gz
+/usr/share/doc/qml-module-qt-labs-settings/copyright

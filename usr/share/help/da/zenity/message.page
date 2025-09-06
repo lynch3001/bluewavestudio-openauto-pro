@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="message" xml:lang="da">
+  <info>
+    <link type="guide" xref="index#dialogs" group="message"/>
+    <desc><link xref="error">Fejl</link>, <link xref="info">Info</link>, <link xref="question">Spørgsmål</link>, <link xref="warning">Advarsel</link></desc>
+  </info>
+  <title>Meddelelsesdialog</title>
+  <p>For hver type, kan du bruge tilvalget <cmd>--text</cmd> til at angive den tekst, der vises i dialogen.</p>
+  <links type="topic" style="2column"/>
+</page>

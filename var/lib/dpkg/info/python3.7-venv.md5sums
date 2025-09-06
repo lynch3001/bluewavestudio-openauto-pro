@@ -1,0 +1,6 @@
+35e8025354965a78c4a4a42dc5808da8  usr/bin/pyvenv-3.7
+615ce8c64270c4b8ca769176c7a60c9c  usr/lib/python3.7/ensurepip/__init__.py
+11d1e26338335392d8a629f28ef1c9ff  usr/lib/python3.7/ensurepip/__main__.py
+118c49f8898fdc689e18f886008e0281  usr/lib/python3.7/ensurepip/_uninstall.py
+71cfaa28479924c4c7372cdc7b6afbe6  usr/share/lintian/overrides/python3.7-venv
+6d427f2e52f60a541a1197f38c7ec7d0  usr/share/man/man1/pyvenv-3.7.1.gz

@@ -1,0 +1,14 @@
+# these are in the -jre-headless package, -jre depends on it
+openjdk-8-jre binary: desktop-command-not-in-package
+
+# this is correct
+openjdk-8-jre binary: executable-in-usr-lib
+
+# not a problem in these specific cases
+openjdk-8-jre binary: breakout-link
+
+# created by dh_makeshlibs, don’t worry
+openjdk-8-jre binary: package-has-unnecessary-activation-of-ldconfig-trigger
+
+# /usr/lib/jvm/…/lib/…
+openjdk-8-jre binary: repeated-path-segment

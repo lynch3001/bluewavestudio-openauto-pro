@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/bin
+/usr/bin/omxplayer
+/usr/bin/omxplayer.bin
+/usr/share
+/usr/share/doc
+/usr/share/doc/omxplayer
+/usr/share/doc/omxplayer/README.gz
+/usr/share/doc/omxplayer/changelog.Debian.gz
+/usr/share/doc/omxplayer/copyright
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/omxplayer
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/omxplayer.1.gz

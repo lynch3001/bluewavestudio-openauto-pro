@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/SoapySDR
+/usr/lib/arm-linux-gnueabihf/SoapySDR/modules0.6
+/usr/lib/arm-linux-gnueabihf/SoapySDR/modules0.6/libLMS7Support.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/soapysdr0.6-module-lms7
+/usr/share/doc/soapysdr0.6-module-lms7/changelog.Debian.armhf.gz
+/usr/share/doc/soapysdr0.6-module-lms7/changelog.Debian.gz
+/usr/share/doc/soapysdr0.6-module-lms7/changelog.gz
+/usr/share/doc/soapysdr0.6-module-lms7/copyright

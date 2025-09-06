@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libIlmImf-2_2.so.23.0.0
+/usr/lib/arm-linux-gnueabihf/libIlmImfUtil-2_2.so.23.0.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libopenexr23
+/usr/share/doc/libopenexr23/changelog.Debian.gz
+/usr/share/doc/libopenexr23/changelog.gz
+/usr/share/doc/libopenexr23/copyright
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libopenexr23
+/usr/lib/arm-linux-gnueabihf/libIlmImf-2_2.so.23
+/usr/lib/arm-linux-gnueabihf/libIlmImfUtil-2_2.so.23

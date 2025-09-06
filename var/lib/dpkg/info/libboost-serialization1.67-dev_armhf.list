@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libboost_serialization.a
+/usr/lib/arm-linux-gnueabihf/libboost_wserialization.a
+/usr/share
+/usr/share/doc
+/usr/share/doc/libboost-serialization1.67-dev
+/usr/share/doc/libboost-serialization1.67-dev/changelog.Debian.gz
+/usr/share/doc/libboost-serialization1.67-dev/copyright
+/usr/lib/arm-linux-gnueabihf/libboost_serialization.so
+/usr/lib/arm-linux-gnueabihf/libboost_wserialization.so

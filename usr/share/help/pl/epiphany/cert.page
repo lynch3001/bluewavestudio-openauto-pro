@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="cert" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="index#privacy"/>
+    <revision pkgversion="3.15" date="2015-01-28" status="draft"/>
+
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2015</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Zarządzanie certyfikatami w <app>Przeglądarce WWW</app>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Certyfikaty</title>
+
+  <p><app>Przeglądarka WWW</app> obecnie nie ma wbudowanej obsługi zarządzania certyfikatami.</p>
+
+  <note style="advanced">
+    <p>Można dodawać certyfikaty za pomocą wiersza poleceń, jeśli pakiet p11-kit jest zainstalowany. Aby to zrobić, pobierz certyfikat i wykonaj to polecenie:</p>
+    <screen><output>$ </output><input>sudo trust anchor <var>/home/użytkownik/Pobrane/certyfikat.crt</var></input></screen>
+    <p>Działa to tylko w nowych systemach.</p>
+  </note>
+
+</page>

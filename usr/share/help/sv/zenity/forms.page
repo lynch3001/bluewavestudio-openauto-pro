@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="forms" xml:lang="sv">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Använd flaggan <cmd>--forms</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2006, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+  <title>Formulärdialog</title>
+    <p>Använd flaggan <cmd>--forms</cmd> för att skapa en formulärdialog.</p>
+	
+    <p>Formulärdialogen har stöd för följande flaggor:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--add-entry</cmd>=<var>Fältnamn</var></title>
+	<p>Lägg till en ny inmatningsruta i formulärdialogen.</p>
+      </item>
+
+      <item>
+        <title>--add-password<cmd/>=<var>Fältnamn</var></title>
+	<p>Lägg till en ny lösenordsinmatningsruta i formulärdialogen. (Göm text)</p>
+      </item>
+
+      <item>
+        <title><cmd>--add-calendar</cmd>=<var>Fältnamn</var></title>
+	<p>Lägg till en ny kalender i formulärdialogen.</p>
+      </item>
+
+      <item>
+        <title><cmd>--text</cmd>=<var>TEXT</var></title>
+	<p>Ställer in dialogtexten.</p>
+      </item>
+
+      <item>
+        <title><cmd>--separator</cmd>=<var>AVGRÄNSARE</var></title>
+	<p>Ställ in tecken för utmatningsavgränsning. (Standardvärde: | )</p>
+      </item>
+
+      <item>
+        <title><cmd>--forms-date-format</cmd>=<var>MÖNSTER</var></title>
+	<p>Ställ in formatet för det returnerade datumet. Standardformatet beror på din lokalinställning. format måste vara ett format som är acceptabelt för funktionen <cmd>strftime</cmd>, till exempel <var>%A %Y-%m-%d</var>.</p>
+      </item>
+
+    </terms>
+
+    <p>Följande exempelskript visar hur man skapar en formulärdialog:</p>
+
+<code>
+#!/bin/sh
+
+zenity --forms --title="Lägg till vän" \
+	--text="Mata in information om din vän." \
+	--separator="," \
+	--add-entry="Tilltalsnamn" \
+	--add-entry="Efternamn" \
+	--add-entry="E-post" \
+	--add-calendar="Födelsedag" &gt;&gt; adr.csv
+
+case $? in
+    0)
+        echo "Vän tillagd.";;
+    1)
+        echo "Ingen vän tillagd."
+	;;
+    -1)
+        echo "Ett oväntat fel har inträffat."
+	;;
+esac
+</code>
+
+    <figure>
+      <title>Exempel på formulärdialog</title>
+      <desc><app>Zenity</app>-exempel på informationsdialog</desc>
+      <media type="image" mime="image/png" src="figures/zenity-forms-screenshot.png"/>
+    </figure>
+</page>

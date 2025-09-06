@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="history-delete" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="index#privacy"/>
+    <revision pkgversion="3.10" date="2013-06-30" status="candidate"/>
+
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+<!--    <credit type="copyright editor">
+      <name></name>
+      <email its:translate="no"></email>
+      <years></years>
+    </credit>-->
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Como eu excluo uma ou mais páginas web do meu histórico de navegação?</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013,</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Limpando o histórico de navegação</title>
+
+  <p>Em alguns casos você pode desejar excluir seu histórico de navegação para, por exemplo, remover itens que você não deseja ver em seus resultados de pesquisa. Você pode escolher excluir um resultado, todos resultados de um único site ou todos de seu histórico.</p>
+
+  <steps>
+    <item>
+      <p>Abra <guiseq><gui style="menu">Web</gui><gui style="menuitem">Histórico</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Selecione as páginas web que você deseja excluir de seu histórico.</p>
+    </item>
+    <item>
+      <p>Selecione <guiseq><gui style="menu">Editar</gui><gui style="menuitem">Excluir</gui></guiseq> para excluir permanentemente os itens selecionados.</p>
+    </item>
+  </steps>
+
+  <p>Você também pode excluir todo seu histórico selecionando <guiseq><gui style="menu">Editar</gui><gui style="menuitem">Limpar tudo</gui></guiseq>.</p>
+
+</page>

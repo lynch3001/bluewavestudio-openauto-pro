@@ -1,0 +1,13 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}/lib/arm-linux-gnueabihf
+includedir=${prefix}/include
+libexecdir=${prefix}/lib
+
+encaextconvdir=${libexecdir}/enca/extconv
+
+Name: Enca
+Description: Extermely Naive Charset Analyser library
+Version: 1.19
+Libs: -L${libdir} -lenca -lm
+Cflags: -I${includedir}

@@ -1,0 +1,8 @@
+# This is where distutils installs everything...
+python-pygame: image-file-in-usr-lib
+
+# false positive, jsut a collection of constants
+python-pygame: shared-lib-without-dependency-information usr/lib/python2.7/dist-packages/pygame/constants.x86_64-linux-gnu.so
+
+# apparently on purpose
+python-pygame: library-not-linked-against-libc usr/lib/python2.7/dist-packages/pygame/surflock.x86_64-linux-gnu.so

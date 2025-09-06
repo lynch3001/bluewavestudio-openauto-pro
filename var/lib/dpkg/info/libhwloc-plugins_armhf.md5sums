@@ -1,0 +1,5 @@
+cbe0a8bbdcafa30f00cf82637b6c1801  usr/lib/arm-linux-gnueabihf/hwloc/hwloc_opencl.so
+f0500331d2beff8455ad500e6da4130a  usr/lib/arm-linux-gnueabihf/hwloc/hwloc_pci.so
+0a1ca25cf7662179e133bf9f313e58f8  usr/lib/arm-linux-gnueabihf/hwloc/hwloc_xml_libxml.so
+e02a4dab2325691a1ff723b1858b63e4  usr/share/doc/libhwloc-plugins/changelog.Debian.gz
+bbb35002f4e30b594e012447caf4d64f  usr/share/doc/libhwloc-plugins/copyright

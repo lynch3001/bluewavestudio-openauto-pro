@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="progress" xml:lang="pl">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Używanie opcji <cmd>--progress</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+  <title>Okno z postępem</title>
+    <p>Użyj opcji <cmd>--progress</cmd>, aby utworzyć okno z postępem.</p>
+
+    <p><app>Zenity</app> odczytuje dane ze standardowego wejścia wiersz po wierszu. Jeśli wiersza zaczyna się znakiem #, to tekst jest aktualizowany tekstem z tego wiersza. Jeśli wiersz zawiera tylko liczbę, to procent jest aktualizowany tą liczbą.</p>
+	
+    <p>Okno z postępem obsługuje te opcje:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--text</cmd>=<var>tekst</var></title>
+	  <p>Określa tekst wyświetlany w oknie z postępem.</p>
+      </item>
+
+      <item>
+        <title><cmd>--percentage</cmd>=<var>procent</var></title>
+	  <p>Określa początkowy procent ustawiony w oknie z postępem.</p>
+      </item>
+
+      <item>
+	<title><cmd>--auto-close</cmd></title>
+	  <p>Zamyka okno z postępem po osiągnięciu 100%.</p>
+      </item>
+
+      <item>
+        <title><cmd>--pulsate</cmd></title>
+	  <p>Określa, że pasek postępu pulsuje do czasu odczytania znaku EOF ze standardowego wejścia.</p>
+      </item>
+
+    </terms>
+
+    <p>Ten przykładowy skrypt pokazuje, jak utworzyć okno z postępem:</p>
+
+<code>
+#!/bin/sh
+(
+echo "10" ; sleep 1
+echo "# Aktualizowanie dzienników poczty" ; sleep 1
+echo "20" ; sleep 1
+echo "# Przywracanie zadań cron" ; sleep 1
+echo "50" ; sleep 1
+echo "Ten wiersz zostanie zignorowany" ; sleep 1
+echo "75" ; sleep 1
+echo "# Ponowne uruchamianie systemu" ; sleep 1
+echo "100" ; sleep 1
+) |
+zenity --progress \
+  --title="Aktualizacja dzienników systemu" \
+  --text="Wyszukiwanie dzienników poczty…" \
+  --percentage=0
+
+if [ "$?" = -1 ] ; then
+        zenity --error \
+          --text="Anulowano aktualizację."
+fi
+</code>
+
+
+    <figure>
+      <title>Przykład okna z postępem</title>
+      <desc>Przykład okna <app>Zenity</app> z postępem</desc>
+      <media type="image" mime="image/png" src="figures/zenity-progress-screenshot.png"/>
+    </figure>
+</page>

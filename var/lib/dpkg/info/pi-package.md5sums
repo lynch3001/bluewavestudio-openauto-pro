@@ -1,0 +1,14 @@
+7a59fcbe3799fb78bb02db65de07acc9  usr/bin/pi-gpk-install-local-file
+672361f316b80708d818d70a9df43976  usr/bin/pi-gpk-update-viewer
+231af9261fae5e26a8a23a6f0d759e8b  usr/bin/pi-packages
+12caeb232cb6433c36c8a30a13d1726c  usr/share/appdata/gpk-application.appdata.xml
+ad9d0b60df78cc920cbf0bb9a2834352  usr/share/appdata/gpk-update-viewer.appdata.xml
+469269ab09952519a1a1631109b068f9  usr/share/applications/pi-gpk-install-local-file.desktop
+3ef8c2cf4d2f67aebc29214ad8b87ded  usr/share/applications/pi-gpk-update-viewer.desktop
+6aac4b2f2cc8e72de9116e81ba432b3a  usr/share/applications/pi-packages.desktop
+20cd1377ca6421add079ce798afc9a21  usr/share/doc/pi-package/AUTHORS
+0b411cd9b723694b2ad59375a8e7646f  usr/share/doc/pi-package/NEWS.gz
+a1d18f1a43110009055d9b3aefae330f  usr/share/doc/pi-package/README
+57b69120fc5a6e8707101d23d38a7526  usr/share/doc/pi-package/TODO
+62f17cd325e9a9b1eef906fdc85173fc  usr/share/doc/pi-package/changelog.gz
+9027eb5fade1048047928e0dea401e79  usr/share/doc/pi-package/copyright

@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/python-motephat
+/usr/share/doc/python-motephat/changelog.gz
+/usr/share/doc/python-motephat/copyright
+/usr/lib
+/usr/lib/python2.7
+/usr/lib/python2.7/dist-packages
+/usr/lib/python2.7/dist-packages/motephat-0.0.3.egg-info
+/usr/lib/python2.7/dist-packages/motephat-0.0.3.egg-info/requires.txt
+/usr/lib/python2.7/dist-packages/motephat-0.0.3.egg-info/dependency_links.txt
+/usr/lib/python2.7/dist-packages/motephat-0.0.3.egg-info/top_level.txt
+/usr/lib/python2.7/dist-packages/motephat-0.0.3.egg-info/PKG-INFO
+/usr/lib/python2.7/dist-packages/motephat
+/usr/lib/python2.7/dist-packages/motephat/__init__.py

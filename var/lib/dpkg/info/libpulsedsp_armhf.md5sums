@@ -1,0 +1,7 @@
+ba45c277517e4a5bb462fe0cd69dfd83  usr/lib/arm-linux-gnueabihf/pulseaudio/libpulsedsp.so
+29f1d7d2a4355bd959a8b54c68cfe102  usr/share/doc/libpulsedsp/NEWS.Debian.gz
+30545ab6e24dac0759a8d7b581ce1375  usr/share/doc/libpulsedsp/NEWS.gz
+8b06b7c1e8bb60d6ce9d5e5a88335997  usr/share/doc/libpulsedsp/README
+47d231c97b2de55e40c381ab8e674377  usr/share/doc/libpulsedsp/changelog.Debian.gz
+f6d91103239c2b9421ec7985187a01be  usr/share/doc/libpulsedsp/copyright
+d41d8cd98f00b204e9800998ecf8427e  usr/share/lintian/overrides/libpulsedsp

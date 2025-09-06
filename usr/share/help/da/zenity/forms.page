@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="forms" xml:lang="da">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Brug tilvalget <cmd>--forms</cmd>.</desc>
+  </info>
+  <title>Formulardialog</title>
+    <p>Brug tilvalget <cmd>--forms</cmd> til at oprette en formulardialog.</p>
+	
+    <p>Formulardialogen understøtter følgende tilvalg:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--add-entry</cmd>=<var>FeltNavn</var></title>
+	<p>Tilføj et nyt tekstindtastningsfelt i dialogen formularer.</p>
+      </item>
+
+      <item>
+        <title>--add-password<cmd/>=<var>FeltNavn</var></title>
+	<p>Tilføj et nyt adgangskodefelt i dialogen formularer. (Skjul tekst)</p>
+      </item>
+
+      <item>
+        <title><cmd>--add-calendar</cmd>=<var>FeltNavn</var></title>
+	<p>Tilføj en ny kalender i dialogen formularer.</p>
+      </item>
+
+      <item>
+        <title><cmd>--text</cmd>=<var>TEKST</var></title>
+	<p>Angiv dialogteksten.</p>
+      </item>
+
+      <item>
+        <title><cmd>--separator</cmd>=<var>SKILLETEGN</var></title>
+	<p>Angiv standardskilletegn for output. (Standard: | )</p>
+      </item>
+
+      <item>
+        <title><cmd>--forms-date-format</cmd>=<var>MØNSTER</var></title>
+	<p>Angiv formatet for den returnerede dato. Standardformatet afhænger af regionaldata. Format skal være et format, som accepteres af <cmd>strftime</cmd>-funktionen, såsom <var>%A %d/%m/%y</var>.</p>
+      </item>
+
+    </terms>
+
+    <p>Følgende eksempelscript viser, hvordan man opretter en formulardialog:</p>
+
+<code>
+#!/bin/sh
+
+zenity --forms --title="Tilføj ven" \
+	--text="Indtast information om din ven." \
+	--separator="," \
+	--add-entry="Fornavn" \
+	--add-entry="Efternavn" \
+	--add-entry="E-mail" \
+	--add-calendar="Fødselsdag" &gt;&gt; adr.csv
+
+case $? in
+    0)
+        echo "Ven tilføjet.";;
+    1)
+        echo "Ingen ven tilføjet."
+	;;
+    -1)
+        echo "Der opstod en uventet fejl."
+	;;
+esac
+</code>
+
+    <figure>
+      <title>Eksempel på formulardialog</title>
+      <desc>Eksempel på formulardialog til <app>Zenity</app></desc>
+      <media type="image" mime="image/png" src="figures/zenity-forms-screenshot.png"/>
+    </figure>
+</page>

@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/python3-drumhat
+/usr/share/doc/python3-drumhat/changelog.gz
+/usr/share/doc/python3-drumhat/copyright
+/usr/lib
+/usr/lib/python3
+/usr/lib/python3/dist-packages
+/usr/lib/python3/dist-packages/drumhat.py
+/usr/lib/python3/dist-packages/drumhat-0.1.0.egg-info
+/usr/lib/python3/dist-packages/drumhat-0.1.0.egg-info/requires.txt
+/usr/lib/python3/dist-packages/drumhat-0.1.0.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/drumhat-0.1.0.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/drumhat-0.1.0.egg-info/PKG-INFO

@@ -1,0 +1,803 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: astroid
+Source: https://github.com/PyCQA/astroid
+
+Files: *
+Copyright: 2003-2015 Logilab <pylint-dev@lists.logilab.org>
+License: LGPL-2.1+
+
+Files: debian/*
+Copyright: 2014-2018 Sandro Tosi <morph@debian.org>
+License: LGPL-2.1+
+
+Files: astroid/brain/brain_uuid.py
+Copyright: Copyright (c) 2017 Claudiu Popa <pcmanticore@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/tests/unittest_brain.py
+Copyright: Copyright 2013 Google Inc. All Rights Reserved.
+License: LGPL-2.1+
+
+Files: astroid/tests/unittest_brain_numpy.py
+Copyright: Copyright (c) 2017 Guillaume Peillex <guillaume.peillex@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/tests/testdata/python{2,3}/data/SSL1/Connection1.py
+Copyright: Copyright (c) 1999-2004 Ng Pheng Siong. All rights reserved.
+
+License: LGPL-2.1+
+ astroid is free software: you can redistribute it and/or modify it
+ under the terms of the GNU Lesser General Public License as published by the
+ Free Software Foundation, either version 2.1 of the License, or (at your
+ option) any later version.
+ .
+ astroid is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+ FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License
+ for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public License along
+ with astroid. If not, see <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public
+ License version 2.1 can be found in "/usr/share/common-licenses/LGPL-2.1".
+
+# What follows has been auto-generated with (running from an unpacked source tarball):
+# for file in `find astroid/ -type f | sort` setup.py ; do c=`grep Copyright -w $file | sed 's/#//'`; if [ -n "$c" ] ; then echo -e "Files: $file\nCopyright:\n$c\nLicense: LGPL-2.1+\n"; fi ; done
+
+Files: astroid/arguments.py
+Copyright:
+ Copyright (c) 2015-2016, 2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2015-2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2018 Bryce Guinta <bryce.paul.guinta@gmail.com>
+ Copyright (c) 2018 Nick Drozd <nicholasdrozd@gmail.com>
+ Copyright (c) 2018 Anthony Sottile <asottile@umich.edu>
+License: LGPL-2.1+
+
+Files: astroid/as_string.py
+Copyright:
+ Copyright (c) 2009-2011, 2013-2014 LOGILAB S.A. (Paris, FRANCE) <contact@logilab.fr>
+ Copyright (c) 2010 Daniel Harding <dharding@gmail.com>
+ Copyright (c) 2013-2016, 2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2013-2014 Google, Inc.
+ Copyright (c) 2015-2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2016 Jared Garst <jgarst@users.noreply.github.com>
+ Copyright (c) 2016 Jakub Wilk <jwilk@jwilk.net>
+ Copyright (c) 2017 Łukasz Rogalski <rogalski.91@gmail.com>
+ Copyright (c) 2017 rr- <rr-@sakuya.pl>
+ Copyright (c) 2018 brendanator <brendan.maginnis@gmail.com>
+ Copyright (c) 2018 Nick Drozd <nicholasdrozd@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/bases.py
+Copyright:
+ Copyright (c) 2009-2011, 2013-2014 LOGILAB S.A. (Paris, FRANCE) <contact@logilab.fr>
+ Copyright (c) 2012 FELD Boris <lothiraldan@gmail.com>
+ Copyright (c) 2014-2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2014 Google, Inc.
+ Copyright (c) 2014 Eevee (Alex Munroe) <amunroe@yelp.com>
+ Copyright (c) 2015-2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2015 Florian Bruhin <me@the-compiler.org>
+ Copyright (c) 2016-2017 Derek Gustafson <degustaf@gmail.com>
+ Copyright (c) 2017 Calen Pennington <calen.pennington@gmail.com>
+ Copyright (c) 2018 Bryce Guinta <bryce.paul.guinta@gmail.com>
+ Copyright (c) 2018 Nick Drozd <nicholasdrozd@gmail.com>
+ Copyright (c) 2018 Daniel Colascione <dancol@dancol.org>
+License: LGPL-2.1+
+
+Files: astroid/brain/brain_builtin_inference.py
+Copyright:
+ Copyright (c) 2014-2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2014-2015 LOGILAB S.A. (Paris, FRANCE) <contact@logilab.fr>
+ Copyright (c) 2015-2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2015 Rene Zhang <rz99@cornell.edu>
+ Copyright (c) 2018 Bryce Guinta <bryce.paul.guinta@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/brain/brain_collections.py
+Copyright:
+ Copyright (c) 2016, 2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2016-2017 Łukasz Rogalski <rogalski.91@gmail.com>
+ Copyright (c) 2017 Derek Gustafson <degustaf@gmail.com>
+ Copyright (c) 2018 Ioana Tagirta <ioana.tagirta@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/brain/brain_dateutil.py
+Copyright:
+ Copyright (c) 2015-2016 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2015 raylu <lurayl@gmail.com>
+ Copyright (c) 2016 Ceridwen <ceridwenv@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/brain/brain_fstrings.py
+Copyright:
+ Copyright (c) 2017 Claudiu Popa <pcmanticore@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/brain/brain_functools.py
+Copyright:
+ Copyright (c) 2016, 2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2018 Bryce Guinta <bryce.paul.guinta@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/brain/brain_gi.py
+Copyright:
+ Copyright (c) 2013-2014 LOGILAB S.A. (Paris, FRANCE) <contact@logilab.fr>
+ Copyright (c) 2014 Google, Inc.
+ Copyright (c) 2014 Cole Robinson <crobinso@redhat.com>
+ Copyright (c) 2015-2016 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2015-2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2015 David Shea <dshea@redhat.com>
+ Copyright (c) 2016 Jakub Wilk <jwilk@jwilk.net>
+ Copyright (c) 2016 Giuseppe Scrivano <gscrivan@redhat.com>
+License: LGPL-2.1+
+
+Files: astroid/brain/brain_hashlib.py
+Copyright:
+ Copyright (c) 2016, 2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2018 Ioana Tagirta <ioana.tagirta@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/brain/brain_io.py
+Copyright:
+ Copyright (c) 2016 Claudiu Popa <pcmanticore@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/brain/brain_mechanize.py
+Copyright:
+ Copyright (c) 2012-2013 LOGILAB S.A. (Paris, FRANCE) <contact@logilab.fr>
+ Copyright (c) 2014 Google, Inc.
+ Copyright (c) 2015-2016 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2016 Ceridwen <ceridwenv@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/brain/brain_multiprocessing.py
+Copyright:
+ Copyright (c) 2016 Claudiu Popa <pcmanticore@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/brain/brain_namedtuple_enum.py
+Copyright:
+ Copyright (c) 2012-2015 LOGILAB S.A. (Paris, FRANCE) <contact@logilab.fr>
+ Copyright (c) 2013-2014 Google, Inc.
+ Copyright (c) 2014-2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2014 Eevee (Alex Munroe) <amunroe@yelp.com>
+ Copyright (c) 2015-2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2015 Dmitry Pribysh <dmand@yandex.ru>
+ Copyright (c) 2015 David Shea <dshea@redhat.com>
+ Copyright (c) 2015 Philip Lorenz <philip@bithub.de>
+ Copyright (c) 2016 Jakub Wilk <jwilk@jwilk.net>
+ Copyright (c) 2016 Mateusz Bysiek <mb@mbdev.pl>
+ Copyright (c) 2017 Hugo <hugovk@users.noreply.github.com>
+ Copyright (c) 2017 Łukasz Rogalski <rogalski.91@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/brain/brain_nose.py
+Copyright:
+ Copyright (c) 2015-2016 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2016 Ceridwen <ceridwenv@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/brain/brain_numpy.py
+Copyright:
+ Copyright (c) 2015-2016, 2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2017-2018 hippo91 <guillaume.peillex@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/brain/brain_pkg_resources.py
+Copyright:
+ Copyright (c) 2016, 2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2016 Ceridwen <ceridwenv@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/brain/brain_pytest.py
+Copyright:
+ Copyright (c) 2014-2016 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2014 Jeff Quast <contact@jeffquast.com>
+ Copyright (c) 2014 Google, Inc.
+ Copyright (c) 2016 Florian Bruhin <me@the-compiler.org>
+ Copyright (c) 2016 Ceridwen <ceridwenv@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/brain/brain_qt.py
+Copyright:
+ Copyright (c) 2015-2016 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2017 Roy Wright <roy@wright.org>
+ Copyright (c) 2018 Ashley Whetter <ashley@awhetter.co.uk>
+License: LGPL-2.1+
+
+Files: astroid/brain/brain_six.py
+Copyright:
+ Copyright (c) 2014-2016, 2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2015-2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2018 Bryce Guinta <bryce.paul.guinta@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/brain/brain_ssl.py
+Copyright:
+ Copyright (c) 2016 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2016 Ceridwen <ceridwenv@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/brain/brain_subprocess.py
+Copyright:
+ Copyright (c) 2016-2017 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2017 Hugo <hugovk@users.noreply.github.com>
+ Copyright (c) 2018 Bryce Guinta <bryce.paul.guinta@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/brain/brain_threading.py
+Copyright:
+ Copyright (c) 2016 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2017 Łukasz Rogalski <rogalski.91@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/brain/brain_typing.py
+Copyright:
+ Copyright (c) 2017-2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2017 Łukasz Rogalski <rogalski.91@gmail.com>
+ Copyright (c) 2017 David Euresti <github@euresti.com>
+ Copyright (c) 2018 Bryce Guinta <bryce.paul.guinta@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/brain/brain_uuid.py
+Copyright:
+ Copyright (c) 2017 Claudiu Popa <pcmanticore@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/builder.py
+Copyright:
+ Copyright (c) 2006-2011, 2013-2014 LOGILAB S.A. (Paris, FRANCE) <contact@logilab.fr>
+ Copyright (c) 2013 Phil Schaf <flying-sheep@web.de>
+ Copyright (c) 2014-2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2014-2015 Google, Inc.
+ Copyright (c) 2014 Alexander Presnyakov <flagist0@gmail.com>
+ Copyright (c) 2015-2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2016 Derek Gustafson <degustaf@gmail.com>
+ Copyright (c) 2017 Łukasz Rogalski <rogalski.91@gmail.com>
+ Copyright (c) 2018 Anthony Sottile <asottile@umich.edu>
+License: LGPL-2.1+
+
+Files: astroid/context.py
+Copyright:
+ Copyright (c) 2015-2016, 2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2015-2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2018 Bryce Guinta <bryce.paul.guinta@gmail.com>
+ Copyright (c) 2018 Nick Drozd <nicholasdrozd@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/decorators.py
+Copyright:
+ Copyright (c) 2015-2016, 2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2015-2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2015 Florian Bruhin <me@the-compiler.org>
+ Copyright (c) 2016 Derek Gustafson <degustaf@gmail.com>
+ Copyright (c) 2018 Nick Drozd <nicholasdrozd@gmail.com>
+ Copyright (c) 2018 Ashley Whetter <ashley@awhetter.co.uk>
+ Copyright (c) 2018 HoverHell <hoverhell@gmail.com>
+ Copyright (c) 2018 Bryce Guinta <bryce.paul.guinta@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/exceptions.py
+Copyright:
+ Copyright (c) 2007, 2009-2010, 2013 LOGILAB S.A. (Paris, FRANCE) <contact@logilab.fr>
+ Copyright (c) 2014 Google, Inc.
+ Copyright (c) 2015-2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2015-2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2016 Derek Gustafson <degustaf@gmail.com>
+ Copyright (c) 2018 Bryce Guinta <bryce.paul.guinta@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/helpers.py
+Copyright:
+ Copyright (c) 2015-2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2015-2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2018 Bryce Guinta <bryce.paul.guinta@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/inference.py
+Copyright:
+ Copyright (c) 2006-2011, 2013-2014 LOGILAB S.A. (Paris, FRANCE) <contact@logilab.fr>
+ Copyright (c) 2012 FELD Boris <lothiraldan@gmail.com>
+ Copyright (c) 2013-2014 Google, Inc.
+ Copyright (c) 2014-2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2014 Eevee (Alex Munroe) <amunroe@yelp.com>
+ Copyright (c) 2015-2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2015 Dmitry Pribysh <dmand@yandex.ru>
+ Copyright (c) 2016 Jakub Wilk <jwilk@jwilk.net>
+ Copyright (c) 2017 Michał Masłowski <m.maslowski@clearcode.cc>
+ Copyright (c) 2017 Calen Pennington <cale@edx.org>
+ Copyright (c) 2017 Łukasz Rogalski <rogalski.91@gmail.com>
+ Copyright (c) 2018 Bryce Guinta <bryce.paul.guinta@gmail.com>
+ Copyright (c) 2018 Nick Drozd <nicholasdrozd@gmail.com>
+ Copyright (c) 2018 Ashley Whetter <ashley@awhetter.co.uk>
+ Copyright (c) 2018 HoverHell <hoverhell@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/__init__.py
+Copyright:
+ Copyright (c) 2006-2013, 2015 LOGILAB S.A. (Paris, FRANCE) <contact@logilab.fr>
+ Copyright (c) 2014 Google, Inc.
+ Copyright (c) 2014 Eevee (Alex Munroe) <amunroe@yelp.com>
+ Copyright (c) 2015-2016, 2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2015-2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2016 Derek Gustafson <degustaf@gmail.com>
+ Copyright (c) 2016 Moises Lopez <moylop260@vauxoo.com>
+ Copyright (c) 2018 Bryce Guinta <bryce.paul.guinta@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/interpreter/dunder_lookup.py
+Copyright:
+ Copyright (c) 2016-2018 Claudiu Popa <pcmanticore@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/interpreter/_import/spec.py
+Copyright:
+ Copyright (c) 2016-2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2016 Derek Gustafson <degustaf@gmail.com>
+ Copyright (c) 2017 Chris Philip <chrisp533@gmail.com>
+ Copyright (c) 2017 Hugo <hugovk@users.noreply.github.com>
+ Copyright (c) 2017 ioanatia <ioanatia@users.noreply.github.com>
+ Copyright (c) 2017 Calen Pennington <cale@edx.org>
+ Copyright (c) 2018 Nick Drozd <nicholasdrozd@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/interpreter/_import/util.py
+Copyright:
+ Copyright (c) 2016, 2018 Claudiu Popa <pcmanticore@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/interpreter/objectmodel.py
+Copyright:
+ Copyright (c) 2016-2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2016 Derek Gustafson <degustaf@gmail.com>
+ Copyright (c) 2017-2018 Bryce Guinta <bryce.paul.guinta@gmail.com>
+ Copyright (c) 2017 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2017 Calen Pennington <cale@edx.org>
+ Copyright (c) 2018 Nick Drozd <nicholasdrozd@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/manager.py
+Copyright:
+ Copyright (c) 2006-2011, 2013-2014 LOGILAB S.A. (Paris, FRANCE) <contact@logilab.fr>
+ Copyright (c) 2014-2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2014 BioGeek <jeroen.vangoey@gmail.com>
+ Copyright (c) 2014 Google, Inc.
+ Copyright (c) 2014 Eevee (Alex Munroe) <amunroe@yelp.com>
+ Copyright (c) 2015-2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2016 Derek Gustafson <degustaf@gmail.com>
+ Copyright (c) 2017 Iva Miholic <ivamiho@gmail.com>
+ Copyright (c) 2018 Bryce Guinta <bryce.paul.guinta@gmail.com>
+ Copyright (c) 2018 Nick Drozd <nicholasdrozd@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/mixins.py
+Copyright:
+ Copyright (c) 2010-2011, 2013-2014 LOGILAB S.A. (Paris, FRANCE) <contact@logilab.fr>
+ Copyright (c) 2014-2016, 2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2014 Google, Inc.
+ Copyright (c) 2014 Eevee (Alex Munroe) <amunroe@yelp.com>
+ Copyright (c) 2015-2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2015 Florian Bruhin <me@the-compiler.org>
+ Copyright (c) 2016 Jakub Wilk <jwilk@jwilk.net>
+ Copyright (c) 2018 Nick Drozd <nicholasdrozd@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/modutils.py
+Copyright:
+ Copyright (c) 2014-2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2014 Google, Inc.
+ Copyright (c) 2014 Denis Laxalde <denis.laxalde@logilab.fr>
+ Copyright (c) 2014 LOGILAB S.A. (Paris, FRANCE) <contact@logilab.fr>
+ Copyright (c) 2014 Eevee (Alex Munroe) <amunroe@yelp.com>
+ Copyright (c) 2015 Florian Bruhin <me@the-compiler.org>
+ Copyright (c) 2015 Radosław Ganczarek <radoslaw@ganczarek.in>
+ Copyright (c) 2016 Derek Gustafson <degustaf@gmail.com>
+ Copyright (c) 2016 Jakub Wilk <jwilk@jwilk.net>
+ Copyright (c) 2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2018 Mario Corchero <mcorcherojim@bloomberg.net>
+ Copyright (c) 2018 Mario Corchero <mariocj89@gmail.com>
+ Copyright (c) 2018 Anthony Sottile <asottile@umich.edu>
+License: LGPL-2.1+
+
+Files: astroid/node_classes.py
+Copyright:
+ Copyright (c) 2009-2011, 2013-2014 LOGILAB S.A. (Paris, FRANCE) <contact@logilab.fr>
+ Copyright (c) 2010 Daniel Harding <dharding@gmail.com>
+ Copyright (c) 2012 FELD Boris <lothiraldan@gmail.com>
+ Copyright (c) 2013-2014 Google, Inc.
+ Copyright (c) 2014-2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2014 Eevee (Alex Munroe) <amunroe@yelp.com>
+ Copyright (c) 2015-2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2015 Florian Bruhin <me@the-compiler.org>
+ Copyright (c) 2016-2017 Derek Gustafson <degustaf@gmail.com>
+ Copyright (c) 2016 Jared Garst <jgarst@users.noreply.github.com>
+ Copyright (c) 2016 Jakub Wilk <jwilk@jwilk.net>
+ Copyright (c) 2016 Dave Baum <dbaum@google.com>
+ Copyright (c) 2017-2018 Ashley Whetter <ashley@awhetter.co.uk>
+ Copyright (c) 2017 Łukasz Rogalski <rogalski.91@gmail.com>
+ Copyright (c) 2017 rr- <rr-@sakuya.pl>
+ Copyright (c) 2018 Bryce Guinta <bryce.paul.guinta@gmail.com>
+ Copyright (c) 2018 brendanator <brendan.maginnis@gmail.com>
+ Copyright (c) 2018 Nick Drozd <nicholasdrozd@gmail.com>
+ Copyright (c) 2018 HoverHell <hoverhell@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/nodes.py
+Copyright:
+ Copyright (c) 2006-2011, 2013 LOGILAB S.A. (Paris, FRANCE) <contact@logilab.fr>
+ Copyright (c) 2010 Daniel Harding <dharding@gmail.com>
+ Copyright (c) 2014-2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2014 Google, Inc.
+ Copyright (c) 2015-2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2016 Jared Garst <jgarst@users.noreply.github.com>
+ Copyright (c) 2017 Ashley Whetter <ashley@awhetter.co.uk>
+ Copyright (c) 2017 rr- <rr-@sakuya.pl>
+ Copyright (c) 2018 Bryce Guinta <bryce.paul.guinta@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/objects.py
+Copyright:
+ Copyright (c) 2015-2016, 2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2015-2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2015 Florian Bruhin <me@the-compiler.org>
+ Copyright (c) 2016 Derek Gustafson <degustaf@gmail.com>
+ Copyright (c) 2018 Bryce Guinta <bryce.paul.guinta@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/__pkginfo__.py
+Copyright:
+ Copyright (c) 2006-2014 LOGILAB S.A. (Paris, FRANCE) <contact@logilab.fr>
+ Copyright (c) 2014-2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2014 Google, Inc.
+ Copyright (c) 2015-2017 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2015 Florian Bruhin <me@the-compiler.org>
+ Copyright (c) 2015 Radosław Ganczarek <radoslaw@ganczarek.in>
+ Copyright (c) 2016 Moises Lopez <moylop260@vauxoo.com>
+ Copyright (c) 2017 Hugo <hugovk@users.noreply.github.com>
+ Copyright (c) 2017 Łukasz Rogalski <rogalski.91@gmail.com>
+ Copyright (c) 2017 Calen Pennington <cale@edx.org>
+ Copyright (c) 2018 Ashley Whetter <ashley@awhetter.co.uk>
+ Copyright (c) 2018 Bryce Guinta <bryce.paul.guinta@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/protocols.py
+Copyright:
+ Copyright (c) 2009-2011, 2013-2014 LOGILAB S.A. (Paris, FRANCE) <contact@logilab.fr>
+ Copyright (c) 2014-2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2014 Google, Inc.
+ Copyright (c) 2014 Eevee (Alex Munroe) <amunroe@yelp.com>
+ Copyright (c) 2015-2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2015 Dmitry Pribysh <dmand@yandex.ru>
+ Copyright (c) 2016 Derek Gustafson <degustaf@gmail.com>
+ Copyright (c) 2017-2018 Ashley Whetter <ashley@awhetter.co.uk>
+ Copyright (c) 2017 Łukasz Rogalski <rogalski.91@gmail.com>
+ Copyright (c) 2017 rr- <rr-@sakuya.pl>
+ Copyright (c) 2018 Bryce Guinta <bryce.paul.guinta@gmail.com>
+ Copyright (c) 2018 Nick Drozd <nicholasdrozd@gmail.com>
+ Copyright (c) 2018 HoverHell <hoverhell@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/raw_building.py
+Copyright:
+ Copyright (c) 2006-2014 LOGILAB S.A. (Paris, FRANCE) <contact@logilab.fr>
+ Copyright (c) 2012 FELD Boris <lothiraldan@gmail.com>
+ Copyright (c) 2014-2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2014 Google, Inc.
+ Copyright (c) 2015-2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2015 Florian Bruhin <me@the-compiler.org>
+ Copyright (c) 2015 Ovidiu Sabou <ovidiu@sabou.org>
+ Copyright (c) 2016 Derek Gustafson <degustaf@gmail.com>
+ Copyright (c) 2016 Jakub Wilk <jwilk@jwilk.net>
+ Copyright (c) 2018 Nick Drozd <nicholasdrozd@gmail.com>
+ Copyright (c) 2018 Bryce Guinta <bryce.paul.guinta@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/rebuilder.py
+Copyright:
+ Copyright (c) 2009-2014 LOGILAB S.A. (Paris, FRANCE) <contact@logilab.fr>
+ Copyright (c) 2013-2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2013-2014 Google, Inc.
+ Copyright (c) 2014 Alexander Presnyakov <flagist0@gmail.com>
+ Copyright (c) 2014 Eevee (Alex Munroe) <amunroe@yelp.com>
+ Copyright (c) 2015-2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2016-2017 Derek Gustafson <degustaf@gmail.com>
+ Copyright (c) 2016 Jared Garst <jgarst@users.noreply.github.com>
+ Copyright (c) 2017 Hugo <hugovk@users.noreply.github.com>
+ Copyright (c) 2017 Łukasz Rogalski <rogalski.91@gmail.com>
+ Copyright (c) 2017 rr- <rr-@sakuya.pl>
+ Copyright (c) 2018 Nick Drozd <nicholasdrozd@gmail.com>
+ Copyright (c) 2018 Bryce Guinta <bryce.paul.guinta@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/scoped_nodes.py
+Copyright:
+ Copyright (c) 2006-2014 LOGILAB S.A. (Paris, FRANCE) <contact@logilab.fr>
+ Copyright (c) 2010 Daniel Harding <dharding@gmail.com>
+ Copyright (c) 2011, 2013-2015 Google, Inc.
+ Copyright (c) 2013-2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2013 Phil Schaf <flying-sheep@web.de>
+ Copyright (c) 2014 Eevee (Alex Munroe) <amunroe@yelp.com>
+ Copyright (c) 2015-2016 Florian Bruhin <me@the-compiler.org>
+ Copyright (c) 2015-2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2015 Rene Zhang <rz99@cornell.edu>
+ Copyright (c) 2015 Philip Lorenz <philip@bithub.de>
+ Copyright (c) 2016-2017 Derek Gustafson <degustaf@gmail.com>
+ Copyright (c) 2017-2018 Bryce Guinta <bryce.paul.guinta@gmail.com>
+ Copyright (c) 2017-2018 Ashley Whetter <ashley@awhetter.co.uk>
+ Copyright (c) 2017 Łukasz Rogalski <rogalski.91@gmail.com>
+ Copyright (c) 2017 David Euresti <david@dropbox.com>
+ Copyright (c) 2018 Nick Drozd <nicholasdrozd@gmail.com>
+ Copyright (c) 2018 Anthony Sottile <asottile@umich.edu>
+ Copyright (c) 2018 HoverHell <hoverhell@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/tests/resources.py
+Copyright:
+ Copyright (c) 2014 Google, Inc.
+ Copyright (c) 2015-2016 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2018 Nick Drozd <nicholasdrozd@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/tests/testdata/python2/data/SSL1/Connection1.py
+Copyright:
+ Copyright (c) 1999-2004 Ng Pheng Siong. All rights reserved.
+License: LGPL-2.1+
+
+Files: astroid/tests/testdata/python3/data/SSL1/Connection1.py
+Copyright:
+ Copyright (c) 1999-2004 Ng Pheng Siong. All rights reserved.
+License: LGPL-2.1+
+
+Files: astroid/tests/unittest_brain_numpy.py
+Copyright:
+ Copyright (c) 2017-2018 hippo91 <guillaume.peillex@gmail.com>
+ Copyright (c) 2017 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2018 Bryce Guinta <bryce.paul.guinta@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/tests/unittest_brain.py
+Copyright:
+ Copyright (c) 2013-2014 Google, Inc.
+ Copyright (c) 2014-2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2015-2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2015 LOGILAB S.A. (Paris, FRANCE) <contact@logilab.fr>
+ Copyright (c) 2015 raylu <lurayl@gmail.com>
+ Copyright (c) 2015 Philip Lorenz <philip@bithub.de>
+ Copyright (c) 2016 Florian Bruhin <me@the-compiler.org>
+ Copyright (c) 2017 Łukasz Rogalski <rogalski.91@gmail.com>
+ Copyright (c) 2017-2018 Bryce Guinta <bryce.paul.guinta@gmail.com>
+ Copyright (c) 2017 hippo91 <guillaume.peillex@gmail.com>
+ Copyright (c) 2017 David Euresti <github@euresti.com>
+ Copyright (c) 2017 Derek Gustafson <degustaf@gmail.com>
+ Copyright (c) 2018 Nick Drozd <nicholasdrozd@gmail.com>
+ Copyright (c) 2018 Anthony Sottile <asottile@umich.edu>
+ Copyright (c) 2018 Ioana Tagirta <ioana.tagirta@gmail.com>
+ Copyright (c) 2018 Ahmed Azzaoui <ahmed.azzaoui@engie.com>
+License: LGPL-2.1+
+
+Files: astroid/tests/unittest_builder.py
+Copyright:
+ Copyright (c) 2006-2014 LOGILAB S.A. (Paris, FRANCE) <contact@logilab.fr>
+ Copyright (c) 2014-2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2014-2015 Google, Inc.
+ Copyright (c) 2015-2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2015 Florian Bruhin <me@the-compiler.org>
+ Copyright (c) 2016 Jakub Wilk <jwilk@jwilk.net>
+ Copyright (c) 2017 Bryce Guinta <bryce.paul.guinta@gmail.com>
+ Copyright (c) 2017 Łukasz Rogalski <rogalski.91@gmail.com>
+ Copyright (c) 2018 brendanator <brendan.maginnis@gmail.com>
+ Copyright (c) 2018 Anthony Sottile <asottile@umich.edu>
+License: LGPL-2.1+
+
+Files: astroid/tests/unittest_helpers.py
+Copyright:
+ Copyright (c) 2015-2016, 2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2015-2016 Ceridwen <ceridwenv@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/tests/unittest_inference.py
+Copyright:
+ Copyright (c) 2006-2015 LOGILAB S.A. (Paris, FRANCE) <contact@logilab.fr>
+ Copyright (c) 2007 Marien Zwart <marienz@gentoo.org>
+ Copyright (c) 2013-2014 Google, Inc.
+ Copyright (c) 2014-2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2014 Eevee (Alex Munroe) <amunroe@yelp.com>
+ Copyright (c) 2015-2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2015 Dmitry Pribysh <dmand@yandex.ru>
+ Copyright (c) 2015 Rene Zhang <rz99@cornell.edu>
+ Copyright (c) 2016 Jakub Wilk <jwilk@jwilk.net>
+ Copyright (c) 2017 Hugo <hugovk@users.noreply.github.com>
+ Copyright (c) 2017 Łukasz Rogalski <rogalski.91@gmail.com>
+ Copyright (c) 2017 Calen Pennington <cale@edx.org>
+ Copyright (c) 2017 Calen Pennington <calen.pennington@gmail.com>
+ Copyright (c) 2017 David Euresti <david@dropbox.com>
+ Copyright (c) 2017 Derek Gustafson <degustaf@gmail.com>
+ Copyright (c) 2018 Bryce Guinta <bryce.paul.guinta@gmail.com>
+ Copyright (c) 2018 Anthony Sottile <asottile@umich.edu>
+License: LGPL-2.1+
+
+Files: astroid/tests/unittest_lookup.py
+Copyright:
+ Copyright (c) 2007-2013 LOGILAB S.A. (Paris, FRANCE) <contact@logilab.fr>
+ Copyright (c) 2010 Daniel Harding <dharding@gmail.com>
+ Copyright (c) 2014-2016, 2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2014 Google, Inc.
+ Copyright (c) 2015-2016 Ceridwen <ceridwenv@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/tests/unittest_manager.py
+Copyright:
+ Copyright (c) 2006, 2009-2014 LOGILAB S.A. (Paris, FRANCE) <contact@logilab.fr>
+ Copyright (c) 2013 AndroWiiid <androwiiid@gmail.com>
+ Copyright (c) 2014-2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2014 Google, Inc.
+ Copyright (c) 2015-2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2017 Chris Philip <chrisp533@gmail.com>
+ Copyright (c) 2017 Hugo <hugovk@users.noreply.github.com>
+ Copyright (c) 2017 ioanatia <ioanatia@users.noreply.github.com>
+ Copyright (c) 2018 Bryce Guinta <bryce.paul.guinta@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/tests/unittest_modutils.py
+Copyright:
+ Copyright (c) 2014-2016 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2014 Google, Inc.
+ Copyright (c) 2014 LOGILAB S.A. (Paris, FRANCE) <contact@logilab.fr>
+ Copyright (c) 2015 Florian Bruhin <me@the-compiler.org>
+ Copyright (c) 2015 Radosław Ganczarek <radoslaw@ganczarek.in>
+ Copyright (c) 2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2018 Mario Corchero <mcorcherojim@bloomberg.net>
+ Copyright (c) 2018 Mario Corchero <mariocj89@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/tests/unittest_nodes.py
+Copyright:
+ Copyright (c) 2006-2007, 2009-2014 LOGILAB S.A. (Paris, FRANCE) <contact@logilab.fr>
+ Copyright (c) 2012 FELD Boris <lothiraldan@gmail.com>
+ Copyright (c) 2013-2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2014 Google, Inc.
+ Copyright (c) 2014 Eevee (Alex Munroe) <amunroe@yelp.com>
+ Copyright (c) 2015-2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2015 Florian Bruhin <me@the-compiler.org>
+ Copyright (c) 2016 Jakub Wilk <jwilk@jwilk.net>
+ Copyright (c) 2017 rr- <rr-@sakuya.pl>
+ Copyright (c) 2017 Derek Gustafson <degustaf@gmail.com>
+ Copyright (c) 2018 brendanator <brendan.maginnis@gmail.com>
+ Copyright (c) 2018 Bryce Guinta <bryce.paul.guinta@gmail.com>
+ Copyright (c) 2018 Anthony Sottile <asottile@umich.edu>
+License: LGPL-2.1+
+
+Files: astroid/tests/unittest_object_model.py
+Copyright:
+ Copyright (c) 2016-2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2016 Derek Gustafson <degustaf@gmail.com>
+ Copyright (c) 2017 Łukasz Rogalski <rogalski.91@gmail.com>
+ Copyright (c) 2018 Bryce Guinta <bryce.paul.guinta@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/tests/unittest_objects.py
+Copyright:
+ Copyright (c) 2015-2016 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2015-2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2018 Bryce Guinta <bryce.paul.guinta@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/tests/unittest_protocols.py
+Copyright:
+ Copyright (c) 2015-2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2015-2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2016 Jakub Wilk <jwilk@jwilk.net>
+ Copyright (c) 2017 Łukasz Rogalski <rogalski.91@gmail.com>
+ Copyright (c) 2018 Nick Drozd <nicholasdrozd@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/tests/unittest_python3.py
+Copyright:
+ Copyright (c) 2010, 2013-2014 LOGILAB S.A. (Paris, FRANCE) <contact@logilab.fr>
+ Copyright (c) 2012 FELD Boris <lothiraldan@gmail.com>
+ Copyright (c) 2013-2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2014 Google, Inc.
+ Copyright (c) 2015-2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2016 Jared Garst <jgarst@users.noreply.github.com>
+ Copyright (c) 2017 Hugo <hugovk@users.noreply.github.com>
+ Copyright (c) 2017 Łukasz Rogalski <rogalski.91@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/tests/unittest_raw_building.py
+Copyright:
+ Copyright (c) 2013 AndroWiiid <androwiiid@gmail.com>
+ Copyright (c) 2014-2016, 2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2014 Google, Inc.
+ Copyright (c) 2015-2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2018 Anthony Sottile <asottile@umich.edu>
+ Copyright (c) 2018 Bryce Guinta <bryce.paul.guinta@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/tests/unittest_regrtest.py
+Copyright:
+ Copyright (c) 2006-2008, 2010-2014 LOGILAB S.A. (Paris, FRANCE) <contact@logilab.fr>
+ Copyright (c) 2007 Marien Zwart <marienz@gentoo.org>
+ Copyright (c) 2013-2014 Google, Inc.
+ Copyright (c) 2014-2016, 2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2014 Eevee (Alex Munroe) <amunroe@yelp.com>
+ Copyright (c) 2015-2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2016 Jakub Wilk <jwilk@jwilk.net>
+ Copyright (c) 2018 Nick Drozd <nicholasdrozd@gmail.com>
+ Copyright (c) 2018 Anthony Sottile <asottile@umich.edu>
+License: LGPL-2.1+
+
+Files: astroid/tests/unittest_scoped_nodes.py
+Copyright:
+ Copyright (c) 2006-2014 LOGILAB S.A. (Paris, FRANCE) <contact@logilab.fr>
+ Copyright (c) 2011, 2013-2015 Google, Inc.
+ Copyright (c) 2013-2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2013 Phil Schaf <flying-sheep@web.de>
+ Copyright (c) 2014 Eevee (Alex Munroe) <amunroe@yelp.com>
+ Copyright (c) 2015-2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2015 Rene Zhang <rz99@cornell.edu>
+ Copyright (c) 2015 Florian Bruhin <me@the-compiler.org>
+ Copyright (c) 2015 Philip Lorenz <philip@bithub.de>
+ Copyright (c) 2016 Jakub Wilk <jwilk@jwilk.net>
+ Copyright (c) 2017-2018 Bryce Guinta <bryce.paul.guinta@gmail.com>
+ Copyright (c) 2017 Łukasz Rogalski <rogalski.91@gmail.com>
+ Copyright (c) 2017 Derek Gustafson <degustaf@gmail.com>
+ Copyright (c) 2018 brendanator <brendan.maginnis@gmail.com>
+ Copyright (c) 2018 Anthony Sottile <asottile@umich.edu>
+License: LGPL-2.1+
+
+Files: astroid/tests/unittest_transforms.py
+Copyright:
+ Copyright (c) 2015-2017 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2015-2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2016 Jakub Wilk <jwilk@jwilk.net>
+ Copyright (c) 2018 Bryce Guinta <bryce.paul.guinta@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/tests/unittest_utils.py
+Copyright:
+ Copyright (c) 2008-2010, 2013 LOGILAB S.A. (Paris, FRANCE) <contact@logilab.fr>
+ Copyright (c) 2014 Google, Inc.
+ Copyright (c) 2015-2016 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2016 Dave Baum <dbaum@google.com>
+License: LGPL-2.1+
+
+Files: astroid/test_utils.py
+Copyright:
+ Copyright (c) 2013-2014 Google, Inc.
+ Copyright (c) 2014 LOGILAB S.A. (Paris, FRANCE) <contact@logilab.fr>
+ Copyright (c) 2015-2016, 2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2015-2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2016 Jakub Wilk <jwilk@jwilk.net>
+ Copyright (c) 2018 Anthony Sottile <asottile@umich.edu>
+License: LGPL-2.1+
+
+Files: astroid/transforms.py
+Copyright:
+ Copyright (c) 2015-2016, 2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2018 Nick Drozd <nicholasdrozd@gmail.com>
+License: LGPL-2.1+
+
+Files: astroid/util.py
+Copyright:
+ Copyright (c) 2015-2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2015-2016 Ceridwen <ceridwenv@gmail.com>
+ Copyright (c) 2018 Bryce Guinta <bryce.paul.guinta@gmail.com>
+ Copyright (c) 2018 Nick Drozd <nicholasdrozd@gmail.com>
+License: LGPL-2.1+
+
+Files: setup.py
+Copyright:
+ Copyright (c) 2006, 2009-2010, 2012-2013 LOGILAB S.A. (Paris, FRANCE) <contact@logilab.fr>
+ Copyright (c) 2010-2011 Julien Jehannet <julien.jehannet@logilab.fr>
+ Copyright (c) 2014-2016, 2018 Claudiu Popa <pcmanticore@gmail.com>
+ Copyright (c) 2014 Google, Inc.
+ Copyright (c) 2017 Hugo <hugovk@users.noreply.github.com>
+ Copyright (c) 2018 Ashley Whetter <ashley@awhetter.co.uk>
+License: LGPL-2.1+
+

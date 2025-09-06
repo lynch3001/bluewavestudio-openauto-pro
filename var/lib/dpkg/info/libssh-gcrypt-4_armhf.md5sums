@@ -1,0 +1,5 @@
+f0f676111923adcc09a7ce0c03c44ae8  usr/lib/arm-linux-gnueabihf/libssh-gcrypt.so.4.7.4
+648309b60a247d6aaf172babbef6d549  usr/share/doc/libssh-gcrypt-4/changelog.Debian.gz
+5e7f31584de21e780f6770ad2e89a659  usr/share/doc/libssh-gcrypt-4/changelog.gz
+476838ed5a06891c3b526f82175e1188  usr/share/doc/libssh-gcrypt-4/copyright
+f055351b51e116238b307e3e6c715f37  usr/share/lintian/overrides/libssh-gcrypt-4

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="question" xml:lang="pl">
+  <info>
+    <link type="guide" xref="message"/>
+    <desc>Używanie opcji <cmd>--question</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+  <title>Okno z pytaniem</title>
+      <p>Użyj opcji <cmd>--question</cmd>, aby utworzyć okno z pytaniem.</p>
+
+      <p>Ten przykładowy skrypt pokazuje, jak utworzyć okno z pytaniem:</p>
+
+<code>
+#!/bin/bash
+
+zenity --question \
+--text="Na pewno kontynuować?"
+</code>
+
+
+      <figure>
+        <title>Przykład okna z pytaniem</title>
+	<desc>Przykład okna <app>Zenity</app> z pytaniem</desc>
+        <media type="image" mime="image/png" src="figures/zenity-question-screenshot.png"/>
+      </figure>
+</page>

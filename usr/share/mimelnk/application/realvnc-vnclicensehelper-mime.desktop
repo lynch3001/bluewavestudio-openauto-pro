@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=MimeType
+MimeType=application/vnclicense-key
+Icon=/usr/share/icons/hicolor/48x48/apps/vncserver48x48.png
+Patterns=*.vnclicense;
+DefaultApp=vnclicensehelper
+Comment=VNC License Helper
+Comment[de]=VNC-Lizensierungshilfe
+Comment[es]=Aplicación auxiliar de licencias de VNC
+Comment[fr]=Assistant de licence VNC
+Comment[pt]=Auxiliar de licenças do VNC

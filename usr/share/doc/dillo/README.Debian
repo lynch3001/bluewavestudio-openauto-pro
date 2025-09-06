@@ -1,0 +1,16 @@
+Dillo for Debian
+================
+
+To fully make use of dillo, you will want to copy the provided dillorc
+file located in /etc/dillo/dillorc into ~/.dillo/ and edit it to you
+likes.
+
+If you're annoyed by dillo's debug output, change the commented
+
+  #show_msg=YES
+
+to
+
+  show_msg=NO
+
+ -- Axel Beckert <abe@debian.org>, Fri, 13 May 2016 14:40:09 +0200

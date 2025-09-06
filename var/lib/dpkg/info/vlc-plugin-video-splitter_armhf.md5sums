@@ -1,0 +1,8 @@
+8546a1fddb0b4a3baf7afdd4606a2358  usr/lib/arm-linux-gnueabihf/vlc/plugins/video_splitter/libclone_plugin.so
+eebe5df30d2c7885552530a1818b5c3c  usr/lib/arm-linux-gnueabihf/vlc/plugins/video_splitter/libpanoramix_plugin.so
+d5631da0ab94010d74e267130021173a  usr/lib/arm-linux-gnueabihf/vlc/plugins/video_splitter/libwall_plugin.so
+143dd060cd683f7da6fa97b4de08f0bc  usr/share/bug/vlc-plugin-video-splitter/control
+db5a9ef7d588ac8bafe061d1968be5cd  usr/share/bug/vlc-plugin-video-splitter/presubj
+37467d5ce4d242efd1f03dc9e91b12dd  usr/share/doc/vlc-plugin-video-splitter/changelog.Debian.gz
+c6362b61e68a63912965a8c76532f3da  usr/share/doc/vlc-plugin-video-splitter/changelog.gz
+3d80bde9e43c6c323bf2f26bae755756  usr/share/doc/vlc-plugin-video-splitter/copyright

@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/SoapySDR
+/usr/lib/arm-linux-gnueabihf/SoapySDR/modules0.6
+/usr/lib/arm-linux-gnueabihf/SoapySDR/modules0.6/libaudioSupport.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/soapysdr0.6-module-audio
+/usr/share/doc/soapysdr0.6-module-audio/README.md
+/usr/share/doc/soapysdr0.6-module-audio/changelog.Debian.armhf.gz
+/usr/share/doc/soapysdr0.6-module-audio/changelog.Debian.gz
+/usr/share/doc/soapysdr0.6-module-audio/copyright

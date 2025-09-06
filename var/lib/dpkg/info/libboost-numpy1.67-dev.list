@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libboost_numpy27.a
+/usr/lib/arm-linux-gnueabihf/libboost_numpy37.a
+/usr/share
+/usr/share/doc
+/usr/share/doc/libboost-numpy1.67-dev
+/usr/share/doc/libboost-numpy1.67-dev/changelog.Debian.gz
+/usr/share/doc/libboost-numpy1.67-dev/copyright
+/usr/lib/arm-linux-gnueabihf/libboost_numpy.a
+/usr/lib/arm-linux-gnueabihf/libboost_numpy.so
+/usr/lib/arm-linux-gnueabihf/libboost_numpy27.so
+/usr/lib/arm-linux-gnueabihf/libboost_numpy3.a
+/usr/lib/arm-linux-gnueabihf/libboost_numpy3.so
+/usr/lib/arm-linux-gnueabihf/libboost_numpy37.so

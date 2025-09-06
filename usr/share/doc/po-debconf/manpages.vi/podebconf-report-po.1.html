@@ -1,0 +1,437 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title></title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+
+<h1 id="TN">T&Ecirc;N</h1>
+
+<p>podebconf-report-po &mdash; g&#x1EED;i cho m&#x1ED7;i ng&#x1B0;&#x1EDD;i d&#x1ECB;ch tr&#x1B0;&#x1EDB;c t&#x1EAD;p tin PO debconf b&#x1ECB; l&#x1ED7;i th&#x1EDD;i</p>
+
+<h1 id="TM-TT">T&Oacute;M T&#x1EAE;T</h1>
+
+<p><b>podebconf-report-po</b> [<b><i>t&ugrave;y_ch&#x1ECD;n</i></b>]</p>
+
+<h1 id="M-T">M&Ocirc; T&#x1EA2;</h1>
+
+<p>Ch&#x1B0;&#x1A1;ng tr&igrave;nh n&agrave;y &#x111;&#x1ECD;c m&#x1ED9;t th&#x1B0; m&#x1EE5;c ch&#x1EE9;a c&aacute;c t&#x1EAD;p tin PO &#x111;&#x1EC3; quy&#x1EBF;t &#x111;&#x1ECB;nh nh&#x1EEF;ng t&#x1EAD;p tin n&agrave;o ch&#x1EE9;a b&#x1EA3;n d&#x1ECB;ch c&ograve;n d&#x1ECB;ch m&#x1EDF; ho&#x1EB7;c b&#x1EA3;n d&#x1ECB;ch tr&#x1ED1;ng, kh&#x1EDF;i ch&#x1EA1;y m&#x1ED9;t tr&igrave;nh so&#x1EA1;n th&#x1EA3;o &#x111;&#x1EC3; cho ph&eacute;p s&#x1EED;a &#x111;&#x1ED5;i th&acirc;n v&agrave; d&ograve;ng &#x111;&#x1EA7;u c&#x1EE7;a th&#x1B0;, nh&#x1EAF;c b&#x1EA1;n x&aacute;c nh&#x1EAD;n vi&#x1EC7;c g&#x1EED;i th&#x1B0;, v&agrave; g&#x1EED;i th&#x1B0; cho ng&#x1B0;&#x1EDD;i d&#x1ECB;ch cu&#x1ED1;i c&ugrave;ng, y&ecirc;u c&#x1EA7;u c&#x1EAD;p nh&#x1EAD;t b&#x1EA3;n d&#x1ECB;ch. Th&#x1B0; n&agrave;y &#x111;&iacute;nh k&egrave;m t&#x1EAD;p tin PO c&#x1EA7;n c&#x1EAD;p nh&#x1EAD;t. <b>podebconf-report-po</b> c&oacute; th&#x1EC3; &#x111;&#x1B0;&#x1EE3;c g&#x1ECD;i ho&#x1EB7;c trong th&#x1B0; m&#x1EE5;c c&#x1EA5;p &#x111;&#x1EA7;u, ho&#x1EB7;c trong th&#x1B0; m&#x1EE5;c con <i>debian</i> or <i>debian/po</i> (ho&#x1EB7;c, &#x111;&#x1ED1;i v&#x1EDB;i b&#x1EA3;n d&#x1ECB;ch kh&aacute;c c&#x1EA5;u h&igrave;nh debconf, t&#x1EEB; th&#x1B0; m&#x1EE5;c <b>po</b> ch&iacute;nh n&oacute; ho&#x1EB7;c th&#x1B0; m&#x1EE5;c c&#x1EA5;p tr&ecirc;n).</p>
+
+<p><b>podebconf-report-po</b> c&#x169;ng c&oacute; th&#x1EC3; &#x111;&#x1B0;&#x1EE3;c d&ugrave;ng &#x111;&#x1EC3; g&#x1EED;i m&#x1ED9;t th&#x1B0; y&ecirc;u c&#x1EA7;u b&#x1EA3;n d&#x1ECB;ch m&#x1EDB;i cho m&#x1ED9;t h&#x1ED9;p th&#x1B0; chung (v.d. h&#x1ED9;p th&#x1B0; chung qu&#x1ED1;c t&#x1EBF; ho&aacute; c&#x1EE7;a d&#x1EF1; &aacute;n ph&#x1EA7;n m&#x1EC1;m). Trong tr&#x1B0;&#x1EDD;ng h&#x1EE3;p &#x111;&oacute;, th&#x1B0; &#x111;&iacute;nh k&egrave;m t&#x1EAD;p tin POT (m&#x1EAB;u).</p>
+
+<p>C&oacute; c&aacute;c m&#x1EAB;u kh&aacute;c nhau &#x111;&#x1EC3; y&ecirc;u c&#x1EA7;u c&#x1EAD;p nh&#x1EAD;t b&#x1EA3;n d&#x1ECB;ch, y&ecirc;u c&#x1EA7;u g&#x1EED;i t&#x1EAD;p tin PO &#x111;&atilde; c&#x1EAD;p nh&#x1EAD;t d&#x1B0;&#x1EDB;i d&#x1EA1;ng l&agrave; m&#x1ED9;t b&aacute;o c&aacute;o l&#x1ED7;i (<b>--submit</b>) ho&#x1EB7;c &#x111;&#x1EC3; y&ecirc;u c&#x1EA7;u b&#x1EA3;n d&#x1ECB;ch m&#x1EDB;i (<b>--call</b>). Ng&#x1B0;&#x1EDD;i d&ugrave;ng c&#x169;ng c&oacute; th&#x1EC3; t&#x1EA1;o m&#x1EAB;u ri&ecirc;ng. Xem ph&#x1EA7;n <b>TEMPLATES</b> &#x111;&#x1EC3; t&igrave;m th&ecirc;m th&ocirc;ng tin v&#x1EC1; m&#x1EAB;u.</p>
+
+<h1 id="TY-CHN">T&Ugrave;Y CH&#x1ECC;N</h1>
+
+<p>C&#x169;ng c&oacute; th&#x1EC3; &#x111;&#x1EB7;t nhi&#x1EC1;u t&ugrave;y ch&#x1ECD;n kh&aacute;c nhau trong t&#x1EAD;p tin c&#x1EA5;u h&igrave;nh. Xem ph&#x1EA7;n<b>CONFIGURATION FILE</b>.</p>
+
+<dl>
+
+<dt id="addlanguageteam-NGN_NG:DANH_SCH"><b>--addlanguageteam=<i>NG&Ocirc;N_NG&#x1EEE;</i>:<i>DANH_S&Aacute;CH</i></b></dt>
+<dd>
+
+<p>Ghi r&otilde; h&#x1ED9;p th&#x1B0; chung cho m&#x1ED9;t ng&ocirc;n ng&#x1EEF; n&agrave;o &#x111;&oacute;. H&#x1ED9;p th&#x1B0; chung n&agrave;y s&#x1EBD; &#x111;&#x1B0;&#x1EE3;c th&ecirc;m v&agrave;o d&ograve;ng &#x111;&#x1EA7;u CC (Ch&eacute;p Cho) c&#x1EE7;a th&#x1B0; &#x111;&iacute;nh k&egrave;m t&#x1EAD;p tin PO b&#x1EB1;ng ng&ocirc;n ng&#x1EEF; n&agrave;y khi d&ugrave;ng <b>--languageteam</b>, th&ecirc;m v&agrave;o nh&oacute;m ng&ocirc;n ng&#x1EEF; &#x111;&#x1B0;&#x1EE3;c ghi r&otilde; trong ph&#x1EA7;n &#x111;&#x1EA7;u c&#x1EE7;a t&#x1EAD;p tin PO (n&#x1EBF;u hai h&#x1ED9;p th&#x1B0; chung n&agrave;y kh&aacute;c nhau).</p>
+
+<p>Ch&#x1EE9;c n&#x103;ng n&agrave;y h&#x1EEF;u &iacute;ch &#x111;&#x1EC3; b&aacute;o nh&oacute;m ng&ocirc;n ng&#x1EEF; c&oacute; &#x111;&#x1EE7; th&ocirc;ng tin, v&agrave; cho ph&eacute;p &#x111;&aacute;p &#x1EE9;ng nhanh h&#x1A1;n khi m&#x1ED9;t ng&#x1B0;&#x1EDD;i d&#x1ECB;ch &#x111;&#x1B0;&#x1EE3;c bi&#x1EBF;t l&agrave; kh&ocirc;ng s&#x1EB5;n s&agrave;ng.</p>
+
+<p>C&oacute; th&#x1EC3; ghi r&otilde; t&ugrave;y ch&#x1ECD;n n&agrave;y nhi&#x1EC1;u l&#x1EA7;n. M&atilde; ng&ocirc;n ng&#x1EEF; v&agrave; h&#x1ED9;p th&#x1B0; chung c&#x1EE7;a ng&ocirc;n ng&#x1EEF; &#x111;&#x1ECB;nh gi&#x1EDB;i b&#x1EB1;ng d&#x1EA5;u hai ch&#x1EA5;m.</p>
+
+<p>C&oacute; th&#x1EC3; ghi r&otilde; t&ugrave;y ch&#x1ECD;n n&agrave;y trong t&#x1EAD;p tin c&#x1EA5;u h&igrave;nh, &#x111;&#x1EC3; x&aacute;c &#x111;&#x1ECB;nh &#x1EE9;ng x&#x1EED; m&#x1EB7;c &#x111;&#x1ECB;nh c&#x1EE7;a &lt;podebconf-report-po&gt;. Xem ph&#x1EA7;n <b>CONFIGURATION FILE</b> b&ecirc;n d&#x1B0;&#x1EDB;i.</p>
+
+</dd>
+<dt id="bts-S"><b>--bts=<i>S&#x1ED0;</i></b></dt>
+<dd>
+
+<p>Sau khi g&#x1EED;i b&aacute;o c&aacute;o l&#x1ED7;i (ho&#x1EB7;c b&#x1EB1;ng tay ho&#x1EB7;c b&#x1EB1;ng c&#x1EDD; <b>--submit</b> flag) &#x111;&#x1EC3; theo d&otilde;i c&aacute;c b&#x1EA3;n d&#x1ECB;ch, c&oacute; th&#x1EC3; ch&#x1EA1;y l&#x1EA1;i <b>podebconf-report-po</b>, c&ograve;n l&#x1EA7;n n&agrave;y &#x111;&#x1EB7;t c&#x1EDD; <b>--bts=<i>NUMBER</i></b>. Y&ecirc;u c&#x1EA7;u c&aacute;c ng&#x1B0;&#x1EDD;i d&#x1ECB;ch theo d&ograve;ng &#x111;&#x1EA7;u <b>Reply-To:</b> (Tr&#x1EA3; l&#x1EDD;i cho) m&agrave; &#x111;&#x1B0;&#x1EE3;c &#x111;&#x1EB7;t th&agrave;nh b&aacute;o c&aacute;o l&#x1ED7;i n&agrave;y, &#x111;&#x1EC3; thu th&#x1EAD;p t&#x1EA5;t c&#x1EA3; c&aacute;c b&#x1EA3;n d&#x1ECB;ch v&agrave;o c&ugrave;ng m&#x1ED9;t v&#x1ECB; tr&iacute;.</p>
+
+</dd>
+<dt id="call-HP_TH_CHUNG"><b>--call[=<i>H&#x1ED8;P_TH&#x1AF;_CHUNG</i>]</b></dt>
+<dd>
+
+<p>Y&ecirc;u c&#x1EA7;u c&aacute;c b&#x1EA3;n d&#x1ECB;ch m&#x1EDB;i. Kh&ocirc;ng &#x111;&#x1EB7;t &#x111;&#x1ED1;i s&#x1ED1; <i>MAILING_LIST</i> th&igrave; th&#x1B0; y&ecirc;u c&#x1EA7;u b&#x1EA3;n d&#x1ECB;ch &#x111;&#x1B0;&#x1EE3;c g&#x1EED;i cho h&#x1ED9;p th&#x1B0; chung qu&#x1ED1;c t&#x1EBF; ho&aacute; Debian (<i>debian-i18n@lists.debian.org</i>): n&#x1A1;i t&#x1ED1;t &#x111;&#x1EC3; y&ecirc;u c&#x1EA7;u b&#x1EA3;n d&#x1ECB;ch.</p>
+
+<p>Th&#x1B0; y&ecirc;u c&#x1EA7;u b&#x1EA3;n d&#x1ECB;ch th&igrave; h&#x1EEF;u &iacute;ch &#x111;&#x1EC3; nh&#x1EAD;n b&#x1EA3;n d&#x1ECB;ch b&#x1EB1;ng ng&ocirc;n ng&#x1EEF; m&#x1EDB;i.</p>
+
+<p>M&#x1EB7;c &#x111;&#x1ECB;nh l&agrave; c&aacute;c th&#x1B0; y&ecirc;u c&#x1EA7;u b&#x1EA3;n d&#x1ECB;ch m&#x1EDB;i c&#x169;ng &#x111;&#x1B0;&#x1EE3;c g&#x1EED;i c&ugrave;ng v&#x1EDB;i c&aacute;c th&#x1B0; y&ecirc;u c&#x1EA7;u &#x111;&#x1ECB;nh k&#x1EF3; ng&#x1B0;&#x1EDD;i d&#x1ECB;ch c&#x1EAD;p nh&#x1EAD;t b&#x1EA3;n d&#x1ECB;ch &#x111;&atilde; c&oacute;. B&#x1EA1;n c&#x169;ng c&oacute; th&#x1EC3; t&#x1EAF;t &#x1EE9;ng x&#x1EED; m&#x1EB7;c &#x111;&#x1ECB;nh n&agrave;y d&ugrave;ng t&ugrave;y ch&#x1ECD;n <b>--withouttranslators</b>.</p>
+
+</dd>
+<dt id="conf-TP_TIN"><b>--conf=<i>T&#x1EAC;P_TIN</i></b></dt>
+<dd>
+
+<p>Ghi r&otilde; t&#x1EAD;p tin c&#x1EA5;u h&igrave;nh. M&#x1EB7;c &#x111;&#x1ECB;nh l&agrave; <b>podebconf-report-po</b> &#x111;&#x1ECD;c <i>$HOME/.podebconf-report-po.conf</i>.</p>
+
+</dd>
+<dt id="noconf"><b>--noconf</b></dt>
+<dd>
+
+<p>&#x110;&#x1EEB;ng &#x111;&#x1ECD;c t&#x1EAD;p tin c&#x1EA5;u h&igrave;nh.</p>
+
+</dd>
+<dt id="deadline-QU_HN"><b>--deadline=<i>QU&Aacute;_H&#x1EA0;N</i></b></dt>
+<dd>
+
+<p>Ghi r&otilde; ng&agrave;y t&#x1EDB;i h&#x1EA1;n nh&#x1EAD;n b&#x1EA3;n d&#x1ECB;ch &#x111;&atilde; c&#x1EAD;p nh&#x1EAD;t (m&#x1EB7;c &#x111;&#x1ECB;nh l&agrave; kh&ocirc;ng qu&aacute; h&#x1EA1;n).</p>
+
+<p>(Gi&aacute; tr&#x1ECB; n&agrave;y n&ecirc;n l&agrave; m&#x1ED9;t ng&agrave;y th&aacute;ng k&#x1EBF;t th&uacute;c chu&#x1ED7;i n&agrave;y:) Th&#x1EDD;i h&#x1EA1;n cu&#x1ED1;i c&ugrave;ng cho b&#x1EA3;n d&#x1ECB;ch &#x111;&#x1B0;&#x1EE3;c c&#x1EAD;p nh&#x1EAD;t l&agrave;: <i>DEADLINE</i>.</p>
+
+<p>N&#x1EBF;u chu&#x1ED7;i &#x111;&#x1B0;a ra b&#x1EAF;t &#x111;&#x1EA7;u v&#x1EDB;i m&#x1ED9;t d&#x1EA5;u c&#x1ED9;ng &laquo; + &raquo; th&igrave; n&oacute; &#x111;&#x1B0;&#x1EE3;c &#x111;&#x1ECD;c b&#x1EB1;ng: LC_ALL=C date -R -d <i>DEADLINE</i></p>
+
+<p>Kh&ocirc;ng ghi r&otilde; th&#x1EDD;i h&#x1EA1;n cu&#x1ED1;i c&ugrave;ng (c&#x169;ng kh&ocirc;ng &#x111;&#x1EB7;t t&ugrave;y ch&#x1ECD;n <b>--nodeadline</b>) th&igrave; ng&#x1B0;&#x1EDD;i d&ugrave;ng s&#x1EBD; &#x111;&#x1B0;&#x1EE3;c nh&#x1EAF;c &#x111;&#x1EB7;t m&#x1ED9;t th&#x1EDD;i h&#x1EA1;n cu&#x1ED1;i c&ugrave;ng (&#x111;&#x1EC1; ngh&#x1ECB; m&#x1ED9;t th&#x1EDD;i h&#x1EA1;n cu&#x1ED1;i c&ugrave;ng m&#x1EB7;c &#x111;&#x1ECB;nh +10 ng&agrave;y).</p>
+
+<p>C&oacute; th&#x1EC3; ghi r&otilde; t&ugrave;y ch&#x1ECD;n n&agrave;y trong t&#x1EAD;p tin c&#x1EA5;u h&igrave;nh, &#x111;&#x1EC3; x&aacute;c &#x111;&#x1ECB;nh &#x1EE9;ng x&#x1EED; m&#x1EB7;c &#x111;&#x1ECB;nh c&#x1EE7;a &lt;podebconf-report-po&gt;. Xem ph&#x1EA7;n <b>CONFIGURATION FILE</b> b&ecirc;n d&#x1B0;&#x1EDB;i.</p>
+
+</dd>
+<dt id="nodeadline"><b>--nodeadline</b></dt>
+<dd>
+
+<p>T&#x1EAF;t ch&#x1EE9;c n&#x103;ng ng&#x1EE5; &yacute; th&#x1EDD;i h&#x1EA1;n cu&#x1ED1;i c&ugrave;ng cho ng&#x1B0;&#x1EDD;i d&#x1ECB;ch, v&agrave; tr&aacute;nh th&#x1EA5;y d&#x1EA5;u nh&#x1EAF;c nh&#x1EAD;p th&#x1EDD;i h&#x1EA1;n cu&#x1ED1;i c&ugrave;ng.</p>
+
+<p>C&oacute; th&#x1EC3; ghi r&otilde; t&ugrave;y ch&#x1ECD;n n&agrave;y trong t&#x1EAD;p tin c&#x1EA5;u h&igrave;nh, &#x111;&#x1EC3; x&aacute;c &#x111;&#x1ECB;nh &#x1EE9;ng x&#x1EED; m&#x1EB7;c &#x111;&#x1ECB;nh c&#x1EE7;a &lt;podebconf-report-po&gt;. Xem ph&#x1EA7;n <b>CONFIGURATION FILE</b> b&ecirc;n d&#x1B0;&#x1EDB;i.</p>
+
+</dd>
+<dt id="default"><b>--default</b></dt>
+<dd>
+
+<p>&#x110;&#x1EEB;ng m&#x1EDF; tr&igrave;nh so&#x1EA1;n th&#x1EA3;o : d&ugrave;ng m&#x1EAB;u nh&#x1B0; th&#x1EBF;.</p>
+
+<p>C&oacute; th&#x1EC3; ghi r&otilde; t&ugrave;y ch&#x1ECD;n n&agrave;y trong t&#x1EAD;p tin c&#x1EA5;u h&igrave;nh, &#x111;&#x1EC3; x&aacute;c &#x111;&#x1ECB;nh &#x1EE9;ng x&#x1EED; m&#x1EB7;c &#x111;&#x1ECB;nh c&#x1EE7;a &lt;podebconf-report-po&gt;. Xem ph&#x1EA7;n <b>CONFIGURATION FILE</b> b&ecirc;n d&#x1B0;&#x1EDB;i.</p>
+
+</dd>
+<dt id="nodefault"><b>--nodefault</b></dt>
+<dd>
+
+<p>M&#x1EDF; tr&igrave;nh so&#x1EA1;n th&#x1EA3;o tr&#x1B0;&#x1EDB;c khi g&#x1EED;i th&#x1B0;.</p>
+
+</dd>
+<dt id="f---force"><b>-f</b>, <b>--force</b></dt>
+<dd>
+
+<p>G&#x1EED;i c&aacute;c th&#x1B0; c&#x1EAD;p nh&#x1EAD;t, kh&ocirc;ng c&#x1EA7;n x&aacute;c nh&#x1EAD;n.</p>
+
+<p>C&oacute; th&#x1EC3; ghi r&otilde; t&ugrave;y ch&#x1ECD;n n&agrave;y trong t&#x1EAD;p tin c&#x1EA5;u h&igrave;nh, &#x111;&#x1EC3; x&aacute;c &#x111;&#x1ECB;nh &#x1EE9;ng x&#x1EED; m&#x1EB7;c &#x111;&#x1ECB;nh c&#x1EE7;a &lt;podebconf-report-po&gt;. Xem ph&#x1EA7;n <b>CONFIGURATION FILE</b> b&ecirc;n d&#x1B0;&#x1EDB;i.</p>
+
+</dd>
+<dt id="noforce"><b>--noforce</b></dt>
+<dd>
+
+<p>Nh&#x1EAF;c x&aacute;c nh&#x1EAD;n tr&#x1B0;&#x1EDB;c khi g&#x1EED;i c&aacute;c th&#x1B0; c&#x1EAD;p nh&#x1EAD;t.</p>
+
+</dd>
+<dt id="from-T"><b>--from=<i>T&#x1EEA;</i></b></dt>
+<dd>
+
+<p>Ghi r&otilde; h&#x1ECD; t&ecirc;n v&agrave; &#x111;&#x1ECB;a ch&#x1EC9; th&#x1B0; c&#x1EE7;a ng&#x1B0;&#x1EDD;i g&#x1EED;i (m&#x1EB7;c &#x111;&#x1ECB;nh &#x111;&#x1B0;&#x1EE3;c l&#x1EA5;y t&#x1EEB; bi&#x1EBF;n m&ocirc;i tr&#x1B0;&#x1EDD;ng <b>DEBEMAIL</b> v&agrave; <b>DEBFULLNAME</b>, ho&#x1EB7;c t&#x1EEB; bi&#x1EBF;n m&ocirc;i tr&#x1B0;&#x1EDD;ng <b>EMAIL</b>: ch&#x1B0;a &#x111;&#x1EB7;t bi&#x1EBF;n th&igrave; &#x111;&#x1EB7;t th&agrave;nh nh&agrave; duy tr&igrave; g&oacute;i).</p>
+
+<p>C&oacute; th&#x1EC3; ghi r&otilde; t&ugrave;y ch&#x1ECD;n n&agrave;y trong t&#x1EAD;p tin c&#x1EA5;u h&igrave;nh, &#x111;&#x1EC3; x&aacute;c &#x111;&#x1ECB;nh &#x1EE9;ng x&#x1EED; m&#x1EB7;c &#x111;&#x1ECB;nh c&#x1EE7;a &lt;podebconf-report-po&gt;. Xem ph&#x1EA7;n <b>CONFIGURATION FILE</b> b&ecirc;n d&#x1B0;&#x1EDB;i.</p>
+
+</dd>
+<dt id="gzip"><b>--gzip</b></dt>
+<dd>
+
+<p>N&eacute;n b&#x1EB1;ng <code>gzip</code> t&#x1EAD;p tin PO &#x111;&iacute;nh k&egrave;m.</p>
+
+<p>C&oacute; th&#x1EC3; ghi r&otilde; t&ugrave;y ch&#x1ECD;n n&agrave;y trong t&#x1EAD;p tin c&#x1EA5;u h&igrave;nh, &#x111;&#x1EC3; x&aacute;c &#x111;&#x1ECB;nh &#x1EE9;ng x&#x1EED; m&#x1EB7;c &#x111;&#x1ECB;nh c&#x1EE7;a &lt;podebconf-report-po&gt;. Xem ph&#x1EA7;n <b>CONFIGURATION FILE</b> b&ecirc;n d&#x1B0;&#x1EDB;i.</p>
+
+</dd>
+<dt id="nogzip"><b>--nogzip</b></dt>
+<dd>
+
+<p>&#x110;&#x1EEB;ng n&eacute;n t&#x1EAD;p tin PO.</p>
+
+</dd>
+<dt id="h---help"><b>-h</b>, <b>--help</b></dt>
+<dd>
+
+<p>In ra th&ocirc;ng tin v&#x1EC1; c&aacute;ch s&#x1EED; d&#x1EE5;ng, r&#x1ED3;i tho&aacute;t.</p>
+
+</dd>
+<dt id="langs-NGN_NG"><b>--langs=<i>NG&Ocirc;N_NG&#x1EEE;</i></b></dt>
+<dd>
+
+<p>Ghi r&otilde; danh s&aacute;ch c&aacute;c ng&ocirc;n ng&#x1EEF;, &#x111;&#x1EC3; gi&#x1EDB;i h&#x1EA1;n g&#x1EED;i th&#x1B0; th&ocirc;ng b&aacute;o ch&#x1EC9; cho nh&#x1EEF;ng ng&ocirc;n ng&#x1EEF; &#x111;&oacute;. Danh s&aacute;ch c&aacute;c ng&ocirc;n ng&#x1EEF; &#x111;&#x1ECB;nh gi&#x1EDB;i b&#x1EB1;ng d&#x1EA5;u ph&#x1EA9;y. M&#x1ED7;i t&#x1EAD;p tin PO ph&#x1EA3;i c&oacute; t&ecirc;n l&agrave; m&atilde; ng&ocirc;n ng&#x1EEF; hai k&yacute; t&#x1EF1; v&agrave; ph&#x1EA7;n m&#x1EDF; r&#x1ED9;ng .po, v.d. &#x111;&#x1ED1;i v&#x1EDB;i ti&#x1EBF;ng Vi&#x1EC7;t, &laquo; vi.po &raquo;.</p>
+
+</dd>
+<dt id="languageteam"><b>--languageteam</b></dt>
+<dd>
+
+<p>C&#x169;ng CC (Ch&eacute;p Cho) th&#x1B0; cho Nh&oacute;m Ng&ocirc;n Ng&#x1EEF; (v.d. Nh&oacute;m Vi&#x1EC7;t ho&aacute; Ph&#x1EA7;n m&#x1EC1;m T&#x1EF1; do hay Debian-French).</p>
+
+<p>N&oacute; &#x111;&#x1B0;&#x1EE3;c hi&#x1EC7;u l&#x1EF1;c theo m&#x1EB7;c &#x111;&#x1ECB;nh.</p>
+
+<p>C&oacute; th&#x1EC3; ghi r&otilde; t&ugrave;y ch&#x1ECD;n n&agrave;y trong t&#x1EAD;p tin c&#x1EA5;u h&igrave;nh, &#x111;&#x1EC3; x&aacute;c &#x111;&#x1ECB;nh &#x1EE9;ng x&#x1EED; m&#x1EB7;c &#x111;&#x1ECB;nh c&#x1EE7;a &lt;podebconf-report-po&gt;. Xem ph&#x1EA7;n <b>CONFIGURATION FILE</b> b&ecirc;n d&#x1B0;&#x1EDB;i.</p>
+
+</dd>
+<dt id="nolanguageteam"><b>--nolanguageteam</b></dt>
+<dd>
+
+<p>&#x110;&#x1EEB;ng g&#x1EED;i th&#x1B0; cho nh&oacute;m ng&ocirc;n ng&#x1EEF;.</p>
+
+<p>C&oacute; th&#x1EC3; ghi r&otilde; t&ugrave;y ch&#x1ECD;n n&agrave;y trong t&#x1EAD;p tin c&#x1EA5;u h&igrave;nh, &#x111;&#x1EC3; x&aacute;c &#x111;&#x1ECB;nh &#x1EE9;ng x&#x1EED; m&#x1EB7;c &#x111;&#x1ECB;nh c&#x1EE7;a &lt;podebconf-report-po&gt;. Xem ph&#x1EA7;n <b>CONFIGURATION FILE</b> b&ecirc;n d&#x1B0;&#x1EDB;i.</p>
+
+</dd>
+<dt id="mutt"><b>--mutt</b></dt>
+<dd>
+
+<p>G&#x1EED;i c&aacute;c th&#x1B0; b&#x1EB1;ng mutt. T&ugrave;y ch&#x1ECD;n n&agrave;y &#x111;&#x1EB7;t &#x111;&#x1ED1;i s&#x1ED1; <b>--postpone</b> th&agrave;nh <i>$HOME/postponed</i>.</p>
+
+</dd>
+<dt id="notdebconf"><b>--notdebconf</b></dt>
+<dd>
+
+<p>Ng&#x1EE5; &yacute; r&#x1EB1;ng n&oacute; kh&ocirc;ng ph&#x1EA3;i l&agrave; m&#x1ED9;t b&#x1EA3;n d&#x1ECB;ch c&#x1EA5;u h&igrave;nh debconf. <b>podebconf-report-po</b> s&#x1EBD; d&ugrave;ng m&#x1EAB;u <i>translator-po</i>, <i>call-po</i> hay <i>submit-po</i> (n&#x1EBF;u kh&ocirc;ng c&oacute; m&#x1EAB;u kh&aacute;c &#x111;&#x1B0;&#x1EE3;c y&ecirc;u c&#x1EA7;u trong t&#x1EAD;p tin c&#x1EA5;u h&igrave;nh ho&#x1EB7;c tr&ecirc;n d&ograve;ng l&#x1EC7;nh). Nh&#x1EEF;ng m&#x1EAB;u n&agrave;y kh&ocirc;ng n&oacute;i v&#x1EC1; debconf trong ch&#x1EE7; &#x111;&#x1EC1; hay th&acirc;n th&#x1B0;, do &#x111;&oacute; th&iacute;ch h&#x1EE3;p h&#x1A1;n v&#x1EDB;i b&#x1EA3;n d&#x1ECB;ch kh&aacute;c debconf.</p>
+
+<p>T&ugrave;y ch&#x1ECD;n n&agrave;y c&#x169;ng thay &#x111;&#x1ED5;i th&#x1B0; m&#x1EE5;c <i>po</i> m&#x1EB7;c &#x111;&#x1ECB;nh d&ugrave;ng b&#x1EDF;i <b>podebconf-report-po</b> (t&#x1EE9;c l&agrave; t&ugrave;y ch&#x1ECD;n <b>--podir</b> kh&ocirc;ng ph&#x1EA3;i c&#x1EA7;n thi&#x1EBF;t khi cu&#x1ED9;c g&#x1ECD;i &#x111;&#x1B0;&#x1EE3;c l&agrave;m t&#x1EEB; th&#x1B0; m&#x1EE5;c <i>po</i> ch&iacute;nh n&oacute; ho&#x1EB7;c t&#x1EEB; th&#x1B0; m&#x1EE5;c c&#x1EA5;p tr&ecirc;n).</p>
+
+<p>M&#x1EB7;c &#x111;&#x1ECB;nh l&agrave; m&#x1ED9;t th&#x1B0; m&#x1EE5;c <i>debian/po</i> c&oacute; m&#x1EE9;c &#x1B0;u ti&ecirc;n cao h&#x1A1;n m&#x1ED9;t th&#x1B0; m&#x1EE5;c <i>po</i>. B&#x1EAD;t t&ugrave;y ch&#x1ECD;n n&agrave;y th&igrave; ch&#x1EC9; th&#x1EA5;y m&#x1ED9;t th&#x1B0; m&#x1EE5;c <i>po</i>.</p>
+
+<p>T&ugrave;y ch&#x1ECD;n n&agrave;y th&#x1B0;&#x1EDD;ng kh&ocirc;ng c&#x1EA7;n thi&#x1EBF;t. <b>podebconf-report-po</b> th&#x1EED; quy&#x1EBF;t &#x111;&#x1ECB;nh ki&#x1EC3;u b&#x1EA3;n d&#x1ECB;ch d&#x1EF1;a v&agrave;o th&#x1B0; m&#x1EE5;c hi&#x1EC7;n th&#x1EDD;i v&agrave; s&#x1EF1; t&#x1ED3;n t&#x1EA1;i c&#x1EE7;a m&#x1ED9;t th&#x1B0; m&#x1EE5;c ki&#x1EC3;u <i>debian/po</i> hay <i>po</i>.</p>
+
+</dd>
+<dt id="package-GI"><b>--package=<i>G&Oacute;I</i></b></dt>
+<dd>
+
+<p>Ghi r&otilde; t&ecirc;n c&#x1EE7;a g&oacute;i (m&#x1EB7;c &#x111;&#x1ECB;nh l&agrave; t&ecirc;n c&#x1EE7;a g&oacute;i ngu&#x1ED3;n).</p>
+
+</dd>
+<dt id="podir-TH_MC"><b>--podir=<i>TH&#x1AF;_M&#x1EE4;C</i></b></dt>
+<dd>
+
+<p>X&aacute;c &#x111;&#x1ECB;nh v&#x1ECB; tr&iacute; c&#x1EE7;a c&aacute;c t&#x1EAD;p tin PO. M&#x1EB7;c &#x111;&#x1ECB;nh l&agrave; <b>podebconf-report-po</b> ki&#x1EC3;m tra n&#x1EBF;u n&oacute; &#x111;&#x1B0;&#x1EE3;c g&#x1ECD;i t&#x1EEB; m&#x1ED9;t th&#x1B0; m&#x1EE5;c <i>po</i>, kh&ocirc;ng th&igrave; n&oacute; t&igrave;m ki&#x1EBF;m m&#x1ED9;t th&#x1B0; m&#x1EE5;c <i>debian/po</i> (&#x1EE9;ng x&#x1EED; n&agrave;y c&oacute; th&#x1EC3; b&#x1ECB; t&#x1EAF;t d&ugrave;ng t&ugrave;y ch&#x1ECD;n <b>--notdebconf</b>), ho&#x1EB7;c m&#x1ED9;t th&#x1B0; m&#x1EE5;c <i>po</i>.</p>
+
+</dd>
+<dt id="postpone-HP_TH"><b>--postpone=<i>H&#x1ED8;P_TH&#x1AF;</i></b></dt>
+<dd>
+
+<p>&#x110;&#x1EEB;ng g&#x1EED;i c&aacute;c th&#x1B0;, ph&#x1EE5; th&ecirc;m ch&uacute;ng trong <i>H&#x1ED8;P_TH&#x1AF;</i>. V&#x1EAD;y c&oacute; th&#x1EC3; s&#x1EED; d&#x1EE5;ng t&#x1EAD;p tin n&agrave;y d&#x1EA1;ng h&#x1ED9;p th&#x1B0; b&#x1ECB; ho&atilde;n v&#x1EDB;i h&agrave;m <b>mutt -p</b>.</p>
+
+</dd>
+<dt id="potfile-TP_TIN_POT"><b>--potfile=<i>T&#x1EAC;P_TIN_POT</i></b></dt>
+<dd>
+
+<p>Ghi r&otilde; t&#x1EAD;p tin POT c&#x1EA7;n g&#x1EED;i &#x111;&#x1EC3; y&ecirc;u c&#x1EA7;u c&aacute;c b&#x1EA3;n d&#x1ECB;ch (<b>--call</b>). M&#x1EB7;c &#x111;&#x1ECB;nh l&agrave; <b>podebconf-report-po</b> d&ugrave;ng t&#x1EAD;p tin POT c&#x1EE7;a th&#x1B0; m&#x1EE5;c ch&#x1EE9;a c&aacute;c t&#x1EAD;p tin PO, n&#x1EBF;u ch&#x1EC9; c&oacute; m&#x1ED9;t t&#x1EAD;p tin POT &#x1EDF; &#x111;&oacute;.</p>
+
+<p>T&#x1EAD;p tin n&agrave;y c&#x169;ng &#x111;&#x1B0;&#x1EE3;c s&#x1EED; d&#x1EE5;ng &#x111;&#x1EC3; t&igrave;m t&ecirc;n v&agrave; phi&ecirc;n b&#x1EA3;n c&#x1EE7;a g&oacute;i, n&#x1EBF;u hai gi&aacute; tr&#x1ECB; n&agrave;y kh&ocirc;ng ph&#x1EA3;i &#x111;&#x1B0;&#x1EE3;c ghi r&otilde; b&#x1EB1;ng t&ugrave;y ch&#x1ECD;n, v&agrave; n&#x1EBF;u kh&ocirc;ng t&igrave;m th&#x1EA5;y t&#x1EAD;p tin ki&#x1EC3;u <i>debian/changelog</i>.</p>
+
+</dd>
+<dt id="sendmessage"><b>--sendmessage</b></dt>
+<dd>
+
+<p>Ch&#x1EC9; g&#x1EED;i m&#x1ED9;t th&#x1B0; kh&ocirc;ng &#x111;&iacute;nh k&egrave;m g&igrave;. T&ugrave;y ch&#x1ECD;n n&agrave;y c&oacute; th&#x1EC3; h&#x1EEF;u &iacute;ch n&#x1EBF;u ng&#x1B0;&#x1EDD;i d&#x1ECB;ch c&oacute; quy&#x1EC1;n g&agrave;i t&#x1EAD;p tin v&agrave;o kho g&oacute;i.</p>
+
+</dd>
+<dt id="smtp-MY_PHC_V"><b>--smtp=<i>M&Aacute;Y_PH&#x1EE4;C_V&#x1EE4;</i></b></dt>
+<dd>
+
+<p>X&aacute;c &#x111;&#x1ECB;nh m&aacute;y ph&#x1EE5;c v&#x1EE5; SMTP &#x111;&#x1EC3; g&#x1EED;i th&#x1B0; (m&#x1EB7;c &#x111;&#x1ECB;nh l&agrave; <code>localhost</code>).</p>
+
+<p>C&oacute; th&#x1EC3; ghi r&otilde; t&ugrave;y ch&#x1ECD;n n&agrave;y trong t&#x1EAD;p tin c&#x1EA5;u h&igrave;nh, &#x111;&#x1EC3; x&aacute;c &#x111;&#x1ECB;nh &#x1EE9;ng x&#x1EED; m&#x1EB7;c &#x111;&#x1ECB;nh c&#x1EE7;a &lt;podebconf-report-po&gt;. Xem ph&#x1EA7;n <b>CONFIGURATION FILE</b> b&ecirc;n d&#x1B0;&#x1EDB;i.</p>
+
+</dd>
+<dt id="submit"><b>--submit</b></dt>
+<dd>
+
+<p>Thay v&agrave;o g&#x1EED;i th&#x1B0; cho ng&#x1B0;&#x1EDD;i d&#x1ECB;ch, g&#x1EED;i b&aacute;o c&aacute;o l&#x1ED7;i &#x111;&#x1ED1;i v&#x1EDB;i g&oacute;i &#x111;&#x1EC3; y&ecirc;u c&#x1EA7;u c&aacute;c b&#x1EA3;n d&#x1ECB;ch. C&oacute; &iacute;ch, ch&#x1EB3;ng h&#x1EA1;n, khi chu&#x1EA9;n b&#x1ECB; b&#x1EA3;n t&#x1EA3;i l&ecirc;n kh&ocirc;ng ph&#x1EA3;i nh&agrave; duy tr&igrave;, &#x111;&#x1EC3; &#x111;&#x1EA3;m b&#x1EA3;o kh&ocirc;ng m&#x1EA5;t b&#x1EA3;n d&#x1ECB;ch.</p>
+
+</dd>
+<dt id="summary"><b>--summary</b></dt>
+<dd>
+
+<p>G&#x1EED;i cho nh&agrave; duy tr&igrave; b&aacute;o c&aacute;o tr&#x1EA1;ng th&aacute;i, ch&#x1EE9;a danh s&aacute;ch c&aacute;c th&#x1B0; &#x111;&#x1B0;&#x1EE3;c g&#x1EED;i cho ng&#x1B0;&#x1EDD;i d&#x1ECB;ch.</p>
+
+<p>C&oacute; th&#x1EC3; ghi r&otilde; t&ugrave;y ch&#x1ECD;n n&agrave;y trong t&#x1EAD;p tin c&#x1EA5;u h&igrave;nh, &#x111;&#x1EC3; x&aacute;c &#x111;&#x1ECB;nh &#x1EE9;ng x&#x1EED; m&#x1EB7;c &#x111;&#x1ECB;nh c&#x1EE7;a &lt;podebconf-report-po&gt;. Xem ph&#x1EA7;n <b>CONFIGURATION FILE</b> b&ecirc;n d&#x1B0;&#x1EDB;i.</p>
+
+</dd>
+<dt id="nosummary"><b>--nosummary</b></dt>
+<dd>
+
+<p>&#x110;&#x1EEB;ng g&#x1EED;i cho nh&agrave; duy tr&igrave; b&aacute;o c&aacute;o tr&#x1EA1;ng th&aacute;i.</p>
+
+</dd>
+<dt id="utf8"><b>--utf8</b></dt>
+<dd>
+
+<p>G&#x1EED;i th&#x1B0; theo UTF-8. T&ugrave;y ch&#x1ECD;n n&agrave;y cho ph&eacute;p k&yacute; t&#x1EF1; kh&aacute;c ASCII trong th&acirc;n th&#x1B0; v&agrave; d&ograve;ng &#x111;&#x1EA7;u th&#x1B0;. (Tr&igrave;nh so&#x1EA1;n th&#x1EA3;o c&#x169;ng ph&#x1EA3;i h&#x1ED7; tr&#x1EE3; UTF-8: ph&#x1EA7;n l&#x1EDB;n tr&igrave;nh th&#x1B0; c&oacute; ph&#x1EA3;i.)</p>
+
+<p>C&oacute; th&#x1EC3; ghi r&otilde; t&ugrave;y ch&#x1ECD;n n&agrave;y trong t&#x1EAD;p tin c&#x1EA5;u h&igrave;nh, &#x111;&#x1EC3; x&aacute;c &#x111;&#x1ECB;nh &#x1EE9;ng x&#x1EED; m&#x1EB7;c &#x111;&#x1ECB;nh c&#x1EE7;a &lt;podebconf-report-po&gt;. Xem ph&#x1EA7;n <b>CONFIGURATION FILE</b> b&ecirc;n d&#x1B0;&#x1EDB;i.</p>
+
+</dd>
+<dt id="noutf8"><b>--noutf8</b></dt>
+<dd>
+
+<p>G&#x1EED;i th&#x1B0; theo ASCII. K&yacute; t&#x1EF1; kh&aacute;c ASCII b&#x1ECB; thay th&#x1EBF; b&#x1EB1;ng d&#x1EA5;u h&#x1ECF;i.</p>
+
+</dd>
+<dt id="version"><b>--version</b></dt>
+<dd>
+
+<p>In ra th&ocirc;ng tin v&#x1EC1; phi&ecirc;n b&#x1EA3;n, r&#x1ED3;i tho&aacute;t.</p>
+
+</dd>
+<dt id="v---verbose"><b>-v</b>, <b>--verbose</b></dt>
+<dd>
+
+<p>Hi&#x1EC3;n th&#x1ECB; th&ocirc;ng tin th&ecirc;m trong khi ch&#x1EA1;y.</p>
+
+<p>C&oacute; th&#x1EC3; ghi r&otilde; t&ugrave;y ch&#x1ECD;n n&agrave;y trong t&#x1EAD;p tin c&#x1EA5;u h&igrave;nh, &#x111;&#x1EC3; x&aacute;c &#x111;&#x1ECB;nh &#x1EE9;ng x&#x1EED; m&#x1EB7;c &#x111;&#x1ECB;nh c&#x1EE7;a &lt;podebconf-report-po&gt;. Xem ph&#x1EA7;n <b>CONFIGURATION FILE</b> b&ecirc;n d&#x1B0;&#x1EDB;i.</p>
+
+</dd>
+<dt id="noverbose"><b>--noverbose</b></dt>
+<dd>
+
+<p>&#x110;&#x1EEB;ng xu&#x1EA5;t chi ti&#x1EBF;t.</p>
+
+</dd>
+<dt id="templatecall-MU"><b>--templatecall=<i>M&#x1EAA;U</i></b></dt>
+<dd>
+
+<p>Ghi r&otilde; m&#x1ED9;t t&#x1EAD;p tin c&#x1EA7;n d&ugrave;ng l&agrave;m m&#x1EAB;u cho c&aacute;c th&#x1B0; y&ecirc;u c&#x1EA7;u b&#x1EA3;n d&#x1ECB;ch. M&#x1EAB;u m&#x1EB7;c &#x111;&#x1ECB;nh l&agrave; <i>/usr/share/po-debconf/templates/call</i>.</p>
+
+<p>C&oacute; th&#x1EC3; ghi r&otilde; t&ugrave;y ch&#x1ECD;n n&agrave;y trong t&#x1EAD;p tin c&#x1EA5;u h&igrave;nh, &#x111;&#x1EC3; x&aacute;c &#x111;&#x1ECB;nh &#x1EE9;ng x&#x1EED; m&#x1EB7;c &#x111;&#x1ECB;nh c&#x1EE7;a &lt;podebconf-report-po&gt;. Xem ph&#x1EA7;n <b>CONFIGURATION FILE</b> b&ecirc;n d&#x1B0;&#x1EDB;i.</p>
+
+</dd>
+<dt id="templatesubmit-MU"><b>--templatesubmit=<i>M&#x1EAA;U</i></b></dt>
+<dd>
+
+<p>Ghi r&otilde; m&#x1ED9;t t&#x1EAD;p tin c&#x1EA7;n d&ugrave;ng l&agrave;m m&#x1EAB;u cho c&aacute;c th&#x1B0; &#x111;&#x1B0;&#x1EE3;c g&#x1EED;i cho ng&#x1B0;&#x1EDD;i d&#x1ECB;ch khi t&ugrave;y ch&#x1ECD;n <b>--submit</b> &#x111;&#x1B0;&#x1EE3;c b&#x1EAD;t. M&#x1EAB;u m&#x1EB7;c &#x111;&#x1ECB;nh l&agrave; <i>/usr/share/po-debconf/templates/submit</i>.</p>
+
+<p>C&oacute; th&#x1EC3; ghi r&otilde; t&ugrave;y ch&#x1ECD;n n&agrave;y trong t&#x1EAD;p tin c&#x1EA5;u h&igrave;nh, &#x111;&#x1EC3; x&aacute;c &#x111;&#x1ECB;nh &#x1EE9;ng x&#x1EED; m&#x1EB7;c &#x111;&#x1ECB;nh c&#x1EE7;a &lt;podebconf-report-po&gt;. Xem ph&#x1EA7;n <b>CONFIGURATION FILE</b> b&ecirc;n d&#x1B0;&#x1EDB;i.</p>
+
+</dd>
+<dt id="templatetranslators-MU"><b>--templatetranslators=<i>M&#x1EAA;U</i></b></dt>
+<dd>
+
+<p>Ghi r&otilde; m&#x1ED9;t t&#x1EAD;p tin c&#x1EA7;n d&ugrave;ng l&agrave;m m&#x1EAB;u cho c&aacute;c th&#x1B0; &#x111;&#x1B0;&#x1EE3;c g&#x1EED;i cho ng&#x1B0;&#x1EDD;i d&#x1ECB;ch. M&#x1EAB;u m&#x1EB7;c &#x111;&#x1ECB;nh l&agrave; <i>/usr/share/po-debconf/templates/translators</i>.</p>
+
+<p>C&oacute; th&#x1EC3; ghi r&otilde; t&ugrave;y ch&#x1ECD;n n&agrave;y trong t&#x1EAD;p tin c&#x1EA5;u h&igrave;nh, &#x111;&#x1EC3; x&aacute;c &#x111;&#x1ECB;nh &#x1EE9;ng x&#x1EED; m&#x1EB7;c &#x111;&#x1ECB;nh c&#x1EE7;a &lt;podebconf-report-po&gt;. Xem ph&#x1EA7;n <b>CONFIGURATION FILE</b> b&ecirc;n d&#x1B0;&#x1EDB;i.</p>
+
+</dd>
+<dt id="template-MU"><b>--template=<i>M&#x1EAA;U</i></b></dt>
+<dd>
+
+<p>Ghi r&otilde; t&#x1EAD;p tin c&#x1EA7;n d&ugrave;ng l&agrave;m m&#x1EAB;u cho c&aacute;c th&#x1B0;. M&#x1EAB;u &#x111;&#x1B0;&#x1EE3;c ghi r&otilde; b&#x1EB1;ng t&ugrave;y ch&#x1ECD;n n&agrave;y c&oacute; quy&#x1EC1;n cao h&#x1A1;n ba t&ugrave;y ch&#x1ECD;n <b>--templatetranslators</b>, <b>--templatesubmit</b>, <b>--templatecall</b>.</p>
+
+<p>C&oacute; th&#x1EC3; ghi r&otilde; t&ugrave;y ch&#x1ECD;n n&agrave;y trong t&#x1EAD;p tin c&#x1EA5;u h&igrave;nh, &#x111;&#x1EC3; x&aacute;c &#x111;&#x1ECB;nh &#x1EE9;ng x&#x1EED; m&#x1EB7;c &#x111;&#x1ECB;nh c&#x1EE7;a &lt;podebconf-report-po&gt;. Xem ph&#x1EA7;n <b>CONFIGURATION FILE</b> b&ecirc;n d&#x1B0;&#x1EDB;i.</p>
+
+</dd>
+<dt id="notemplate"><b>--notemplate</b></dt>
+<dd>
+
+<p>D&ugrave;ng m&#x1EAB;u m&#x1EB7;c &#x111;&#x1ECB;nh.</p>
+
+</dd>
+<dt id="withtranslators"><b>--withtranslators</b></dt>
+<dd>
+
+<p>Sau khi g&#x1EED;i th&#x1B0; y&ecirc;u c&#x1EA7;u b&#x1EA3;n d&#x1ECB;ch, c&#x169;ng g&#x1EED;i th&#x1B0; cho m&#x1ED7;i ng&#x1B0;&#x1EDD;i d&#x1ECB;ch tr&#x1B0;&#x1EDB;c, y&ecirc;u c&#x1EA7;u b&#x1EA3;n d&#x1ECB;ch &#x111;&atilde; c&#x1EAD;p nh&#x1EAD;t.</p>
+
+<p>T&ugrave;y ch&#x1ECD;n n&agrave;y b&#x1ECB; b&#x1ECF; qua khi t&ugrave;y ch&#x1ECD;n <b>--call</b> kh&ocirc;ng ph&#x1EA3;i &#x111;&#x1B0;&#x1EE3;c ghi r&otilde;. N&oacute; &#x111;&#x1B0;&#x1EE3;c hi&#x1EC7;u l&#x1EF1;c theo m&#x1EB7;c &#x111;&#x1ECB;nh.</p>
+
+<p>C&oacute; th&#x1EC3; ghi r&otilde; t&ugrave;y ch&#x1ECD;n n&agrave;y trong t&#x1EAD;p tin c&#x1EA5;u h&igrave;nh, &#x111;&#x1EC3; x&aacute;c &#x111;&#x1ECB;nh &#x1EE9;ng x&#x1EED; m&#x1EB7;c &#x111;&#x1ECB;nh c&#x1EE7;a &lt;podebconf-report-po&gt;. Xem ph&#x1EA7;n <b>CONFIGURATION FILE</b> b&ecirc;n d&#x1B0;&#x1EDB;i.</p>
+
+</dd>
+<dt id="withouttranslators"><b>--withouttranslators</b></dt>
+<dd>
+
+<p>Sau khi g&#x1EED;i th&#x1B0; y&ecirc;u c&#x1EA7;u b&#x1EA3;n d&#x1ECB;ch, &#x111;&#x1EEB;ng g&#x1EED;i th&#x1B0; cho m&#x1ED7;i ng&#x1B0;&#x1EDD;i d&#x1ECB;ch tr&#x1B0;&#x1EDB;c, y&ecirc;u c&#x1EA7;u b&#x1EA3;n d&#x1ECB;ch &#x111;&atilde; c&#x1EAD;p nh&#x1EAD;t.</p>
+
+<p>C&oacute; th&#x1EC3; ghi r&otilde; t&ugrave;y ch&#x1ECD;n n&agrave;y trong t&#x1EAD;p tin c&#x1EA5;u h&igrave;nh, &#x111;&#x1EC3; x&aacute;c &#x111;&#x1ECB;nh &#x1EE9;ng x&#x1EED; m&#x1EB7;c &#x111;&#x1ECB;nh c&#x1EE7;a &lt;podebconf-report-po&gt;. Xem ph&#x1EA7;n <b>CONFIGURATION FILE</b> b&ecirc;n d&#x1B0;&#x1EDB;i.</p>
+
+</dd>
+</dl>
+
+<h1 id="TP-TIN-CU-HNH">T&#x1EAC;P TIN C&#x1EA4;U H&Igrave;NH</h1>
+
+<p>M&#x1EB7;c &#x111;&#x1ECB;nh l&agrave; <b>podebconf-report-po</b> &#x111;&#x1ECD;c <i>$HOME/.podebconf-report-po.conf</i>. C&oacute; th&#x1EC3; l&#x1EAD;p t&#x1EAD;p tin c&#x1EA5;u h&igrave;nh b&#x1EB1;ng t&ugrave;y ch&#x1ECD;n <b>--conf</b>. C&#x169;ng c&oacute; th&#x1EC3; b&#x1ECF; qua m&#x1ECD;i t&#x1EAD;p tin c&#x1EA5;u h&igrave;nh b&#x1EB1;ng c&aacute;ch b&#x1EAD;t t&ugrave;y ch&#x1ECD;n <b>--noconf</b>. C&aacute;c t&ugrave;y ch&#x1ECD;n d&ograve;ng l&#x1EC7;nh c&#x169;ng c&oacute; th&#x1EC3; &#x111;&#x1B0;&#x1EE3;c s&#x1EED; d&#x1EE5;ng &#x111;&#x1EC3; ghi &#x111;&egrave; l&ecirc;n thi&#x1EBF;t l&#x1EAD;p t&#x1EAD;p tin c&#x1EA5;u h&igrave;nh.</p>
+
+<p>C&aacute;c t&#x1EAD;p tin c&#x1EA5;u h&igrave;nh ch&#x1EA5;p nh&#x1EAD;n ph&#x1EA7;n l&#x1EDB;n c&aacute;c t&ugrave;y ch&#x1ECD;n d&ograve;ng l&#x1EC7;nh m&agrave; kh&ocirc;ng c&oacute; chu&#x1ED7;i <b>--</b> &#x111;i tr&#x1B0;&#x1EDB;c: <b>deadline</b>, <b>nodeadline</b>, <b>smtp</b>, <b>from</b>, <b>verbose</b>, <b>force</b>, <b>templatetranslators</b>, <b>templatesubmit</b>, <b>templatecall</b>, <b>template</b>, <b>default</b>, <b>gzip</b>, <b>languageteam</b>, <b>nolanguageteam</b>, <b>addlanguageteam</b>, <b>summary</b>, <b>utf8</b>, <b>withouttranslators</b>, <b>withtranslators</b>.</p>
+
+<p>D&ograve;ng b&#x1EAF;t &#x111;&#x1EA7;u v&#x1EDB;i d&#x1EA5;u th&#x103;ng (c&oacute; th&#x1EC3; c&#x169;ng c&oacute; d&#x1EA5;u c&aacute;ch n&#x1EB1;m tr&#x1B0;&#x1EDB;c) l&agrave; ghi ch&uacute; th&igrave; b&#x1ECB; b&#x1ECF; qua.</p>
+
+<p>Ch&#x1EB3;ng h&#x1EA1;n: # &#x110;&acirc;y l&agrave; ch&uacute; th&iacute;ch smtp smtp.mydomain from = Me Myself &lt;me@mydomain&gt; utf8</p>
+
+<h1 id="MU">M&#x1EAA;U</h1>
+
+<p>C&aacute;c m&#x1EAB;u &#x111;&#x1B0;&#x1EE3;c x&aacute;c &#x111;&#x1ECB;nh b&#x1EB1;ng t&ugrave;y ch&#x1ECD;n <b>--template</b>, <b>--templatetranslators</b>, <b>--templatesubmit</b>, hay <b>--templatecall</b> th&igrave; c&oacute; th&#x1EC3; ch&#x1EE9;a nh&#x1EEF;ng th&#x1EBB; n&agrave;y:</p>
+
+<dl>
+
+<dt id="from-subject-reply-to"><b>&lt;from</b>&gt;, <b>&lt;subject</b>&gt;, <b>&lt;reply-to</b>&gt;</dt>
+<dd>
+
+<p>Thay th&#x1EBF; b&#x1EB1;ng d&ograve;ng &#x111;&#x1EA7;u t&#x1B0;&#x1A1;ng &#x1EE9;ng c&#x1EE7;a th&#x1B0; &#x111;i&#x1EC7;n t&#x1EED;.</p>
+
+</dd>
+<dt id="filelist"><b>&lt;filelist</b>&gt;</dt>
+<dd>
+
+<p>&#x1EDE; ch&#x1EBF; &#x111;&#x1ED9; m&#x1EB7;c &#x111;&#x1ECB;nh, n&oacute; &#x111;&#x1B0;&#x1EE3;c thay th&#x1EBF; b&#x1EB1;ng ch&uacute; th&iacute;ch li&#x1EC7;t k&ecirc; c&aacute;c ng&#x1B0;&#x1EDD;i d&#x1ECB;ch c&oacute; b&#x1EA3;n d&#x1ECB;ch qu&aacute; th&#x1EDD;i.</p>
+
+<p>&#x1EDE; ch&#x1EBF; &#x111;&#x1ED9; <b>--submit</b>, n&oacute; &#x111;&#x1B0;&#x1EE3;c thay th&#x1EBF; b&#x1EB1;ng danh s&aacute;ch c&aacute;c t&#x1EAD;p tin PO c&oacute; b&#x1EA3;n d&#x1ECB;ch qu&aacute; th&#x1EDD;i.</p>
+
+<p>&#x1EDE; ch&#x1EBF; &#x111;&#x1ED9; <b>--call</b>, n&oacute; &#x111;&#x1B0;&#x1EE3;c thay th&#x1EBF; b&#x1EB1;ng danh s&aacute;ch c&aacute;c t&#x1EAD;p tin PO n&#x1EB1;m trong th&#x1B0; m&#x1EE5;c PO.</p>
+
+</dd>
+<dt id="reply"><b>&lt;reply</b>&gt;</dt>
+<dd>
+
+<p>&#x110;&#x1B0;&#x1EE3;c thay th&#x1EBF; b&#x1EB1;ng m&#x1ED9;t chu&#x1ED7;i ng&#x1EE5; &yacute; ph&#x1B0;&#x1A1;ng ph&aacute;p &#x111;&aacute;p &#x1EE9;ng c&#x1EE7;a ng&#x1B0;&#x1EDD;i d&#x1ECB;ch (t&#x1EE9;c l&agrave; theo th&#x1EBB; <i>Reply-To</i> ho&#x1EB7;c g&#x1EED;i t&#x1EAD;p tin PO &#x111;&iacute;nh k&egrave;m m&#x1ED9;t th&#x1B0; b&aacute;o c&aacute;o l&#x1ED7;i ri&ecirc;ng).</p>
+
+</dd>
+<dt id="deadline"><b>&lt;deadline</b>&gt;</dt>
+<dd>
+
+<p>&#x110;&#x1B0;&#x1EE3;c thay th&#x1EBF; b&#x1EB1;ng m&#x1ED9;t chu&#x1ED7;i ng&#x1EE5; &yacute; ng&agrave;y t&#x1EDB;i h&#x1EA1;n &#x111;&#x1EC7; tr&igrave;nh b&#x1EA3;n d&#x1ECB;ch (xem <b>--deadline</b>).</p>
+
+</dd>
+<dt id="package"><b>&lt;package</b>&gt;</dt>
+<dd>
+
+<p>&#x110;&#x1B0;&#x1EE3;c thay th&#x1EBF; b&#x1EB1;ng t&ecirc;n c&#x1EE7;a g&oacute;i (n&#x1EBF;u n&oacute; &#x111;&#x1B0;&#x1EE3;c ph&aacute;t hi&#x1EC7;n).</p>
+
+</dd>
+<dt id="statistics"><b>&lt;statistics</b>&gt;</dt>
+<dd>
+
+<p>&#x110;&#x1B0;&#x1EE3;c thay th&#x1EBF; b&#x1EB1;ng th&#x1ED1;ng k&ecirc; c&#x1EE7;a c&aacute;c t&#x1EAD;p tin PO n&#x1EB1;m trong th&#x1B0; m&#x1EE5;c PO (ch&#x1EC9; trong ch&#x1EBF; &#x111;&#x1ED9; <b>--call</b>).</p>
+
+</dd>
+</dl>
+
+<p>Th&#x1B0; m&#x1EE5;c <i>/usr/share/po-debconf/templates</i> ch&#x1EE9;a c&aacute;c m&#x1EAB;u m&#x1EB7;c &#x111;&#x1ECB;nh.</p>
+
+<h1 id="V-D">V&Iacute; D&#x1EE4;</h1>
+
+<p>S&#x1EED; d&#x1EE5;ng khuy&#x1EBF;n kh&iacute;ch l&agrave; g&#x1ECD;i <b>podebconf-report-po</b> t&#x1EEB; th&#x1B0; m&#x1EE5;c <i>po</i> c&#x1EA7;n c&#x1EAD;p nh&#x1EAD;t:</p>
+
+<p>podebconf-report-po --call</p>
+
+<p>&#x110;&acirc;y s&#x1EBD; g&#x1EED;i m&#x1ED9;t th&#x1B0; y&ecirc;u c&#x1EA7;u b&#x1EA3;n d&#x1ECB;ch m&#x1EDB;i cho h&#x1ED9;p th&#x1B0; chung Qu&#x1ED1;c T&#x1EBF; Ho&aacute; Debian &lt;debian-i18n@lists.debian.org&gt;, c&#x169;ng y&ecirc;u c&#x1EA7;u m&#x1ED7;i ng&#x1B0;&#x1EDD;i d&#x1ECB;ch tr&#x1B0;&#x1EDB;c c&#x1EAD;p nh&#x1EAD;t b&#x1EA3;n d&#x1ECB;ch. C&aacute;c nh&oacute;m ng&ocirc;n ng&#x1EEF; c&#x169;ng &#x111;&#x1B0;&#x1EE3;c th&ocirc;ng b&aacute;o v&agrave; n&ecirc;n c&oacute; d&#x1ECB;p &#x111;&aacute;p &#x1EE9;ng n&#x1EBF;u ng&#x1B0;&#x1EDD;i d&#x1ECB;ch &#x111;&atilde; g&aacute;n &#x111;&#x1B0;&#x1EE3;c bi&#x1EBF;t l&agrave; kh&ocirc;ng s&#x1EB5;n s&agrave;ng.</p>
+
+<p>M&#x1ED9;t d&#x1EA5;u nh&#x1EAF;c s&#x1EBD; y&ecirc;u c&#x1EA7;u ng&#x1B0;&#x1EDD;i d&ugrave;ng nh&#x1EAD;p th&#x1EDD;i h&#x1EA1;n cu&#x1ED1;i c&ugrave;ng (m&#x1EB7;c &#x111;&#x1ECB;nh l&agrave; y&ecirc;u c&#x1EA7;u b&#x1EA3;n d&#x1ECB;ch v&agrave; b&#x1EA3;n c&#x1EAD;p nh&#x1EAD;t &#x111;&#x1B0;&#x1EE3;c &#x111;&#x1EC7; tr&igrave;nh trong 10 ng&agrave;y).</p>
+
+<p>Sau &#x111;&oacute;, m&#x1ED9;t tr&igrave;nh so&#x1EA1;n th&#x1EA3;o s&#x1EBD; hi&#x1EC3;n th&#x1ECB; th&#x1B0; c&#x1EA7;n g&#x1EED;i cho h&#x1ED9;p th&#x1B0; chung. Khi tr&igrave;nh so&#x1EA1;n th&#x1EA3;o n&agrave;y tho&aacute;t, <b>podebconf-report-po</b> s&#x1EBD; nh&#x1EAF;c ng&#x1B0;&#x1EDD;i d&ugrave;ng x&aacute;c nh&#x1EAD;n vi&#x1EC7;c g&#x1EED;i th&#x1B0; cho h&#x1ED9;p th&#x1B0; chung.</p>
+
+<p>X&aacute;c nh&#x1EAD;n &#x111;&#x1B0;&#x1EE3;c th&igrave; m&#x1ED9;t c&#x1EED;a s&#x1ED5; so&#x1EA1;n th&#x1EA3;o kh&aacute;c s&#x1EBD; hi&#x1EC3;n th&#x1ECB; th&#x1B0; c&#x1EA7;n g&#x1EED;i cho c&aacute;c ng&#x1B0;&#x1EDD;i d&#x1ECB;ch v&agrave; c&aacute;c nh&oacute;m ng&ocirc;n ng&#x1EEF;. <b>podebconf-report-po</b> s&#x1EBD; l&#x1EA1;i y&ecirc;u c&#x1EA7;u b&#x1EA1;n x&aacute;c nh&#x1EAD;n vi&#x1EC7;c g&#x1EED;i th&#x1B0; cho c&aacute;c ng&#x1B0;&#x1EDD;i/nh&oacute;m nh&#x1EAD;n n&agrave;y.</p>
+
+<p>Sau th&#x1EDD;i h&#x1EA1;n cu&#x1ED1;i c&ugrave;ng th&igrave; b&#x1EA1;n n&ecirc;n t&#x1EA1;o m&#x1ED9;t b&#x1EA3;n ph&aacute;t h&agrave;nh m&#x1EDB;i d&ugrave;ng nh&#x1EEF;ng b&#x1EA3;n d&#x1ECB;ch &#x111;&#x1B0;&#x1EE3;c nh&#x1EAD;n.</p>
+
+<h1 id="XEM-CNG">XEM C&#x168;NG</h1>
+
+<p><a href="http://man.he.net/man1/debconf-updatepo">debconf-updatepo(1)</a></p>
+
+<h1 id="TC-GI">T&Aacute;C GI&#x1EA2;</h1>
+
+<pre><code>  Fabio Tranchitella &lt;kobold@kobold.it&gt;</code></pre>
+
+
+</body>
+
+</html>
+
+

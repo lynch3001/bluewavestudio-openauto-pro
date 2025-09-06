@@ -1,0 +1,7 @@
+#! /bin/sh
+set -e
+
+if [ "$1" = rtupdate ]; then
+	py3clean -p thonny /usr/share/thonny
+	py3compile -p thonny  /usr/share/thonny
+fi

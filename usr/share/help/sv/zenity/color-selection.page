@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="color-selection" xml:lang="sv">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Använd flaggan <cmd>--color-selection</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2006, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+  <title>Färgväljardialog</title>
+  <p>Använd flaggan <cmd>--color-selection</cmd> för att skapa en färgväljardialog.</p>
+  <p>Färgväljardialogen har stöd för följande flaggor:</p>
+
+  <terms>
+
+    <item>
+      <title><cmd>--color</cmd>=<var>VÄRDE</var></title>
+      <p>Ställ in förvald färg.(ex: #FF0000)</p>
+    </item>
+
+    <item>
+      <title><cmd>--show-palette</cmd></title>
+      <p>Visa paletten.</p>
+    </item>
+
+  </terms>
+
+  <p>Följande exempelskript visar hur man skapar en färgväljardialog:</p>
+
+<code>
+#!/bin/sh
+
+COLOR=`zenity --color-selection --show-palette`
+
+case $? in
+         0)
+		echo "Du valde $COLOR.";;
+         1)
+                echo "Ingen färg vald.";;
+        -1)
+                echo "Ett oväntat fel har inträffat.";;
+esac
+</code>
+
+  <figure>
+    <title>Exempel på färgväljardialog</title>
+    <desc><app>Zenity</app>-exempel på färgväljardialog</desc>
+    <media type="image" mime="image/png" src="figures/zenity-colorselection-screenshot.png"/>
+  </figure>
+
+</page>

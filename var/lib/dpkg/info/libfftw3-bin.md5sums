@@ -1,0 +1,11 @@
+54d315c1c6a58640161e87b298b991a2  usr/bin/fftw-wisdom
+20ffc4c8c9c08a1f14a573ace9104177  usr/bin/fftw-wisdom-to-conf
+1120cdd5a90b0a39665c5f5aafdb320d  usr/bin/fftwf-wisdom
+319e3e93673c15a95adb78ac0c6c13a1  usr/share/doc/libfftw3-bin/NEWS.gz
+ed602a991a4207e4c6f2eb6fbee601f3  usr/share/doc/libfftw3-bin/README
+1deb4b676a4e312580a197b23f9802ee  usr/share/doc/libfftw3-bin/README.Debian
+3223a3ddd9cfe141c4b5ee2b7a190729  usr/share/doc/libfftw3-bin/changelog.Debian.gz
+38fdee10dcbbe61ccf4c0e2551a01e3e  usr/share/doc/libfftw3-bin/copyright
+d76905be336778af8937ea4ac417011f  usr/share/man/man1/fftw-wisdom-to-conf.1.gz
+fb3123de73b8036a52ee80c19a1036f7  usr/share/man/man1/fftw-wisdom.1.gz
+bf4f13254db7de54b67e093033e3d2a2  usr/share/man/man1/fftwf-wisdom.1.gz

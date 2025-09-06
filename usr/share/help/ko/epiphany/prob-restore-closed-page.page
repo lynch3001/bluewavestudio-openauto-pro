@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="prob-restore-closed-page" xml:lang="ko">
+
+  <info>
+    <link type="guide" xref="index#prob"/>
+    <revision pkgversion="3.12" date="2014-02-24" status="review"/>
+
+    <credit type="author copyright">
+      <name>Baptiste Mille-Mathias</name>
+      <email its:translate="no">baptistem@gnome.org</email>
+      <years>2014</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>실수로 닫은 웹 페이지를 다시 열고 싶습니다.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>ChangSeok Oh</mal:name>
+      <mal:email>changseok@gnome.org</mal:email>
+      <mal:years>2015, 2016, 2017, 2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gyuseok Jung</mal:name>
+      <mal:email>jgyuseok@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>어떻게 탭을 복구할 수 있나요?</title>
+
+  <p>최소 하나의 <app>웹</app>이 여전히 열려있는 한 당신이 닫은 페이지를 복구할 수 있습니다.</p>
+
+  <steps>
+    <item>
+      <p><guiseq><gui style="menu">웹</gui><gui style="menuitem">닫은 탭 다시 열기</gui></guiseq>를 여세요, 마지막 닫은 탭이 다시 열립니다.</p>
+    </item>
+  </steps>
+
+  <p>원하는 탭을 복구할 때까지 이 과정을 필요한 만큼 반복하세요. 탭을 닫은 순서와 반대 순서로 탭을 복구합니다. 일단 모든 닫은 탭을 복구하면, 더 이상의 탭을 복구할 수 없습니다.</p>
+
+  <note style="important">
+    <p><link xref="browse-private">개인정보 보호 브라우징</link>모드 내에서는 닫은 탭 복구가 가능하지 않습니다.</p>
+  </note>
+
+</page>

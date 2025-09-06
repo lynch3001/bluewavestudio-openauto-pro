@@ -1,0 +1,3747 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile>
+  <compound kind="class">
+    <name>BluezQt::Adapter</name>
+    <filename>classBluezQt_1_1Adapter.html</filename>
+    <member kind="signal">
+      <type>void</type>
+      <name>adapterChanged</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>a08ba73514c5809b4eb24e5ce2a711631</anchor>
+      <arglist>(AdapterPtr adapter)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>adapterClassChanged</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>a57cf0629786170fa7d75ffc21a49d349</anchor>
+      <arglist>(quint32 adapterClass)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>adapterRemoved</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>acaeffb68b84eb0ee30f51a2f91c5e238</anchor>
+      <arglist>(AdapterPtr adapter)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>deviceAdded</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>abe9ae9c9f59112defc12fc271080fdd7</anchor>
+      <arglist>(DevicePtr device)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>deviceChanged</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>a053f40491d4d98363d2606a7f98c1311</anchor>
+      <arglist>(DevicePtr device)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>deviceRemoved</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>a2375dcb10959ccc9bba8e1dfd94b7c0e</anchor>
+      <arglist>(DevicePtr device)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>discoverableChanged</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>afd3dd446eae2209e896bc59245b703f9</anchor>
+      <arglist>(bool discoverable)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>discoverableTimeoutChanged</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>aa444496de09fb58b756588b9f9d77bf4</anchor>
+      <arglist>(quint32 timeout)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>discoveringChanged</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>a4f4271b3a4001c68b91d7df878fad284</anchor>
+      <arglist>(bool discovering)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>modaliasChanged</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>af3ec66768253655af982886764396fbb</anchor>
+      <arglist>(const QString &amp;modalias)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>nameChanged</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>a184349204f17f8e76ab3d18b963e0a6d</anchor>
+      <arglist>(const QString &amp;name)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>pairableChanged</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>aa9db808775c566ccd41809e0fcca3cbe</anchor>
+      <arglist>(bool pairable)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>pairableTimeoutChanged</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>a940179dabdb803dfcdf3eaaa44530410</anchor>
+      <arglist>(quint32 timeout)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>poweredChanged</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>a9877100e8ddbe935269d5e6531fc2439</anchor>
+      <arglist>(bool powered)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>systemNameChanged</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>a0d35a799e6130c4f8da2558188b081ee</anchor>
+      <arglist>(const QString &amp;systemName)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>uuidsChanged</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>a38913a199cc78fe1c2c76efae7788191</anchor>
+      <arglist>(const QStringList &amp;uuids)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~Adapter</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>a68645cd23508eb5d5686e58f5ecec94e</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>quint32</type>
+      <name>adapterClass</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>a7fc49964ac84f42d20708ad5e95e74e2</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>address</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>a8c337ea5c8e2f3e23158c14f7f984b90</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>DevicePtr</type>
+      <name>deviceForAddress</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>a8089d4eadbde60d0e5e6af50785653f0</anchor>
+      <arglist>(const QString &amp;address) const</arglist>
+    </member>
+    <member kind="function">
+      <type>QList&lt; DevicePtr &gt;</type>
+      <name>devices</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>a9ad2b3cd1a03e326e8312c1af132bfe5</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>quint32</type>
+      <name>discoverableTimeout</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>a2daffb6b9336d8e831a437ffb828f4cb</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isDiscoverable</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>a89eb3f8d92a0c228c62f868e62a2a53c</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isDiscovering</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>adf327c0c88c41e93a7fd9372836114b4</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isPairable</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>a17baa92f3251e2797e61181a3aae7745</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isPowered</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>ac04bc3b33ecf55a920de0248e63b6af7</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>modalias</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>aaec1ef75363203855d618a1d3149e332</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>name</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>a73d6e3dd09a05534f27d6a6c0475cc1a</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>quint32</type>
+      <name>pairableTimeout</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>a86ff9a7ca694dc605d45dafa62e1d7d3</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>PendingCall *</type>
+      <name>removeDevice</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>abcbe851d095d53df6f58ea89bb4f05bd</anchor>
+      <arglist>(DevicePtr device)</arglist>
+    </member>
+    <member kind="function">
+      <type>PendingCall *</type>
+      <name>setDiscoverable</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>a3003672c7ce4bd0a3954a7ac557e650a</anchor>
+      <arglist>(bool discoverable)</arglist>
+    </member>
+    <member kind="function">
+      <type>PendingCall *</type>
+      <name>setDiscoverableTimeout</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>aa54239a30f7bcd6829285c7dd163b2ba</anchor>
+      <arglist>(quint32 timeout)</arglist>
+    </member>
+    <member kind="function">
+      <type>PendingCall *</type>
+      <name>setName</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>aaa4e11cf8445b5f3eb1cf26f1ff8e5e0</anchor>
+      <arglist>(const QString &amp;name)</arglist>
+    </member>
+    <member kind="function">
+      <type>PendingCall *</type>
+      <name>setPairable</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>a1f03fb9922ebc8b8cd2f75467be8e7a5</anchor>
+      <arglist>(bool pairable)</arglist>
+    </member>
+    <member kind="function">
+      <type>PendingCall *</type>
+      <name>setPairableTimeout</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>af57f4d0b2641f7d4bdd7a72dd7363104</anchor>
+      <arglist>(quint32 timeout)</arglist>
+    </member>
+    <member kind="function">
+      <type>PendingCall *</type>
+      <name>setPowered</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>a316cc20384bd47efaebe7c013a418e07</anchor>
+      <arglist>(bool powered)</arglist>
+    </member>
+    <member kind="function">
+      <type>PendingCall *</type>
+      <name>startDiscovery</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>a3196ed21609debaec7ad7cd48ab5034a</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>PendingCall *</type>
+      <name>stopDiscovery</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>a3ec877aa2f265606ad39894b8d6463c5</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>systemName</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>a3eef77d6c794262d19a6db0203acdaf2</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>AdapterPtr</type>
+      <name>toSharedPtr</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>a7ae201d9ada0775fa4adb02be1c2f474</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>ubi</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>ac60d3e06ad7f195298e1c711b279f7c1</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>QStringList</type>
+      <name>uuids</name>
+      <anchorfile>classBluezQt_1_1Adapter.html</anchorfile>
+      <anchor>af945373f535e0f52fff7979d929f5a0a</anchor>
+      <arglist>() const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>BluezQt::Agent</name>
+    <filename>classBluezQt_1_1Agent.html</filename>
+    <member kind="enumeration">
+      <type></type>
+      <name>Capability</name>
+      <anchorfile>classBluezQt_1_1Agent.html</anchorfile>
+      <anchor>a9c4fd2346e0ad69675db056323829fb1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Agent</name>
+      <anchorfile>classBluezQt_1_1Agent.html</anchorfile>
+      <anchor>a0f754d865cffc5b6b2f70c733b510980</anchor>
+      <arglist>(QObject *parent=nullptr)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>authorizeService</name>
+      <anchorfile>classBluezQt_1_1Agent.html</anchorfile>
+      <anchor>a272a7c001509927d589db639a76f0662</anchor>
+      <arglist>(DevicePtr device, const QString &amp;uuid, const Request&lt;&gt; &amp;request)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>cancel</name>
+      <anchorfile>classBluezQt_1_1Agent.html</anchorfile>
+      <anchor>a9c4f7a66a8c8225587c6bac6877986c0</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual Capability</type>
+      <name>capability</name>
+      <anchorfile>classBluezQt_1_1Agent.html</anchorfile>
+      <anchor>ac2f076ebd08c76fbc760c9f39c4f40d2</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>displayPasskey</name>
+      <anchorfile>classBluezQt_1_1Agent.html</anchorfile>
+      <anchor>a3fdf038ba2b37b6372877cfea400b5ac</anchor>
+      <arglist>(DevicePtr device, const QString &amp;passkey, const QString &amp;entered)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>displayPinCode</name>
+      <anchorfile>classBluezQt_1_1Agent.html</anchorfile>
+      <anchor>ace9333e66616eea108b090c5a4ef4dee</anchor>
+      <arglist>(DevicePtr device, const QString &amp;pinCode)</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual QDBusObjectPath</type>
+      <name>objectPath</name>
+      <anchorfile>classBluezQt_1_1Agent.html</anchorfile>
+      <anchor>aa1ccedce4ba55c11edfffc2a3368c650</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>release</name>
+      <anchorfile>classBluezQt_1_1Agent.html</anchorfile>
+      <anchor>a9a5e7378ac367d660c90ba106ec4be5c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>requestAuthorization</name>
+      <anchorfile>classBluezQt_1_1Agent.html</anchorfile>
+      <anchor>a2809732c634cd0f684f6f76320119288</anchor>
+      <arglist>(DevicePtr device, const Request&lt;&gt; &amp;request)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>requestConfirmation</name>
+      <anchorfile>classBluezQt_1_1Agent.html</anchorfile>
+      <anchor>acd956bf2fffb4a8d35290abe57bf58ba</anchor>
+      <arglist>(DevicePtr device, const QString &amp;passkey, const Request&lt;&gt; &amp;request)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>requestPasskey</name>
+      <anchorfile>classBluezQt_1_1Agent.html</anchorfile>
+      <anchor>a5616135d9f8adc1cac10b16e884b2e2b</anchor>
+      <arglist>(DevicePtr device, const Request&lt; quint32 &gt; &amp;request)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>requestPinCode</name>
+      <anchorfile>classBluezQt_1_1Agent.html</anchorfile>
+      <anchor>ae0beef3cbbf6d64162616480b878e564</anchor>
+      <arglist>(DevicePtr device, const Request&lt; QString &gt; &amp;request)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>BluezQt::MediaEndpoint::Configuration</name>
+    <filename>structBluezQt_1_1MediaEndpoint_1_1Configuration.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>BluezQt::Device</name>
+    <filename>classBluezQt_1_1Device.html</filename>
+    <member kind="enumvalue">
+      <name>AudioVideo</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2168543883d21bfee3d4a8b9975073a7a717b35073ad56493f81c10b5fbd4b02a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Camera</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2168543883d21bfee3d4a8b9975073a7a63c43093ac0d5af3d3d615d28fffdcbe</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Computer</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2168543883d21bfee3d4a8b9975073a7ae19b601c12f19724922ea5cd9384c2d4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Headphones</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2168543883d21bfee3d4a8b9975073a7ade280d9d484befbd6d68378e2303692b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Headset</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2168543883d21bfee3d4a8b9975073a7a47de8656d07802da35b5b0ed2477cbb5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Health</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2168543883d21bfee3d4a8b9975073a7af5ba37ee61ecf2f203f00675f4fe50c3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Imaging</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2168543883d21bfee3d4a8b9975073a7a563c5944c834482fcae23f59703dc575</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Joypad</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2168543883d21bfee3d4a8b9975073a7ae4300e9ca6c3657f7a46020db6716aaa</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Keyboard</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2168543883d21bfee3d4a8b9975073a7af14847fa0cef7e3e9aad46ea06c222c6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Modem</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2168543883d21bfee3d4a8b9975073a7a1d3d56fb146d8d8a4e40d2fc0b8396d8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Mouse</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2168543883d21bfee3d4a8b9975073a7ace5af2782b55da1e2d2364bd5747cea3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Network</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2168543883d21bfee3d4a8b9975073a7ac7a6e66cc94257d8327ffa4f45c3f01f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Peripheral</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2168543883d21bfee3d4a8b9975073a7a694533c8dbe8e41cf96db6afe88fcc77</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Phone</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2168543883d21bfee3d4a8b9975073a7adda317d2e0ef6ba46fcd403a714797f7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Printer</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2168543883d21bfee3d4a8b9975073a7ae5d0afc9d1b6363d333cd21c847730b1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Tablet</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2168543883d21bfee3d4a8b9975073a7a62857d1f6f1c25a6edb8749cb444c082</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Toy</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2168543883d21bfee3d4a8b9975073a7a9204102aa683dce65378df2b300f5092</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>Type</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2168543883d21bfee3d4a8b9975073a7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Phone</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2168543883d21bfee3d4a8b9975073a7adda317d2e0ef6ba46fcd403a714797f7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Modem</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2168543883d21bfee3d4a8b9975073a7a1d3d56fb146d8d8a4e40d2fc0b8396d8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Computer</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2168543883d21bfee3d4a8b9975073a7ae19b601c12f19724922ea5cd9384c2d4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Network</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2168543883d21bfee3d4a8b9975073a7ac7a6e66cc94257d8327ffa4f45c3f01f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Headset</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2168543883d21bfee3d4a8b9975073a7a47de8656d07802da35b5b0ed2477cbb5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Headphones</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2168543883d21bfee3d4a8b9975073a7ade280d9d484befbd6d68378e2303692b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>AudioVideo</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2168543883d21bfee3d4a8b9975073a7a717b35073ad56493f81c10b5fbd4b02a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Keyboard</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2168543883d21bfee3d4a8b9975073a7af14847fa0cef7e3e9aad46ea06c222c6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Mouse</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2168543883d21bfee3d4a8b9975073a7ace5af2782b55da1e2d2364bd5747cea3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Joypad</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2168543883d21bfee3d4a8b9975073a7ae4300e9ca6c3657f7a46020db6716aaa</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Tablet</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2168543883d21bfee3d4a8b9975073a7a62857d1f6f1c25a6edb8749cb444c082</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Peripheral</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2168543883d21bfee3d4a8b9975073a7a694533c8dbe8e41cf96db6afe88fcc77</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Camera</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2168543883d21bfee3d4a8b9975073a7a63c43093ac0d5af3d3d615d28fffdcbe</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Printer</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2168543883d21bfee3d4a8b9975073a7ae5d0afc9d1b6363d333cd21c847730b1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Imaging</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2168543883d21bfee3d4a8b9975073a7a563c5944c834482fcae23f59703dc575</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Wearable</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2168543883d21bfee3d4a8b9975073a7a2bc85e9dedd4ef41f721c2f103c4c3de</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Toy</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2168543883d21bfee3d4a8b9975073a7a9204102aa683dce65378df2b300f5092</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Health</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2168543883d21bfee3d4a8b9975073a7af5ba37ee61ecf2f203f00675f4fe50c3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Uncategorized</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2168543883d21bfee3d4a8b9975073a7a3bd3e13b261aa05bcd63f584290cda74</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Uncategorized</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2168543883d21bfee3d4a8b9975073a7a3bd3e13b261aa05bcd63f584290cda74</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Wearable</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2168543883d21bfee3d4a8b9975073a7a2bc85e9dedd4ef41f721c2f103c4c3de</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>addressChanged</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>afb42dcb22b28510382e8137efb91e11d</anchor>
+      <arglist>(const QString &amp;address)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>appearanceChanged</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a8ff373a7bd9bb013fa12a715fbc960ed</anchor>
+      <arglist>(quint16 appearance)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>blockedChanged</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a895728cee62e79d863cb7c2e39d0ee93</anchor>
+      <arglist>(bool blocked)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>connectedChanged</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>ab5f9fc28ba7cd53b30784f090167fdf3</anchor>
+      <arglist>(bool connected)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>deviceChanged</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>afb33e6b3f7fa33458518d3b6be7f1135</anchor>
+      <arglist>(DevicePtr device)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>deviceClassChanged</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>ad3fbbcd057769dce34435a75252298ac</anchor>
+      <arglist>(quint32 deviceClass)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>deviceRemoved</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a5578784a0c4d59a0f5c39168ec6067dd</anchor>
+      <arglist>(DevicePtr device)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>friendlyNameChanged</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a9e2decd846db19df6374a0e8fb6b097e</anchor>
+      <arglist>(const QString &amp;friendlyName)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>iconChanged</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a89a5539325bb50217c3c20a96df75d9d</anchor>
+      <arglist>(const QString &amp;icon)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>inputChanged</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a7a1c02bd411f875b5c21c09099f8dc0e</anchor>
+      <arglist>(InputPtr input)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>legacyPairingChanged</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a99159fdc9009824be45018f264dd3650</anchor>
+      <arglist>(bool legacyPairing)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>mediaPlayerChanged</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a8c08225b0f5cdbadcbab1fb931fcea8d</anchor>
+      <arglist>(MediaPlayerPtr mediaPlayer)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>modaliasChanged</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a189527c243fdb569597edc07d5ff5bea</anchor>
+      <arglist>(const QString &amp;modalias)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>nameChanged</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a05a32e415e8c754369695fa5468927a0</anchor>
+      <arglist>(const QString &amp;name)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>pairedChanged</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>ac996a823e7d353496f601338bc76aea8</anchor>
+      <arglist>(bool paired)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>remoteNameChanged</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>ab00185e5997282616e86c4f3fa7b6c34</anchor>
+      <arglist>(const QString &amp;remoteName)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>rssiChanged</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>aaf9a12001c404d7afaa468811c0800bd</anchor>
+      <arglist>(qint16 rssi)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>trustedChanged</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a6a4324a632be9d83bd74f4bc7ce2e517</anchor>
+      <arglist>(bool trusted)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>typeChanged</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a6964d94b9ab1a78eefc4a0a49bd2cf0a</anchor>
+      <arglist>(Type type)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>uuidsChanged</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>ade94001ab0b51bdc5c9a3746f27b8eae</anchor>
+      <arglist>(const QStringList &amp;uuids)</arglist>
+    </member>
+    <member kind="slot">
+      <type>PendingCall *</type>
+      <name>cancelPairing</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a2dcd7caa5e8fad585d67d6ab6455cf54</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="slot">
+      <type>PendingCall *</type>
+      <name>connectProfile</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>aa10f46e6b311b42ef2f201704fa9689c</anchor>
+      <arglist>(const QString &amp;uuid)</arglist>
+    </member>
+    <member kind="slot">
+      <type>PendingCall *</type>
+      <name>connectToDevice</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a95e5ed464b8eb1b8a25c3619db7a1917</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="slot">
+      <type>PendingCall *</type>
+      <name>disconnectFromDevice</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a3f3d3644d789daeb5359fa0a18f66bb1</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="slot">
+      <type>PendingCall *</type>
+      <name>disconnectProfile</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>afacfe60ed3823008d23669219e15bfc2</anchor>
+      <arglist>(const QString &amp;uuid)</arglist>
+    </member>
+    <member kind="slot">
+      <type>PendingCall *</type>
+      <name>pair</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a70a1e42b3916e2e62744cd4acd2c5e37</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~Device</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a661f3d3c7faed06b72c6b32427bbb207</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>AdapterPtr</type>
+      <name>adapter</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>af9f07694381288a10678eb0fe520b96e</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>address</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>aa3bd7585328895ecd09cc25da0443ee5</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>quint16</type>
+      <name>appearance</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>aa4483bbdf2c0bd59afb2920ff681d458</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>quint32</type>
+      <name>deviceClass</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a657f10d404b87236276b0c895264a40c</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>friendlyName</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>aaf64890eff6b898cd5eeaaa1ebff404a</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>hasLegacyPairing</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a097462b8a8ec8de0229fe0bd64e02ab8</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>icon</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a07d1dbd5f6032f9cd391002e818bf1b9</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>InputPtr</type>
+      <name>input</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a1328afec5cff4810ed412a7211820373</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isBlocked</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a56a9fd3e2afa2eefb73b052c945ff584</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isConnected</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a08ec358649cc51678a92b53662c9b541</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isPaired</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a4d4ac52b116551324b072c2924a823da</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isTrusted</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a05378bc9ecf7f10494eb0fe1e347edb8</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>MediaPlayerPtr</type>
+      <name>mediaPlayer</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>af1a29d43504db7499259958278da7787</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>modalias</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>abf57a96b84751ccc333294d8720a3b37</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>name</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a20788be70ebd854eb20ed8516bdcc0d2</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>remoteName</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a1d149980a462bc16f25101f0daba45b2</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>qint16</type>
+      <name>rssi</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a533a7aa0d55bd37080b9101d72a273ad</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>PendingCall *</type>
+      <name>setBlocked</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a7cd62bfc91fea11ff20e906465ceaef0</anchor>
+      <arglist>(bool blocked)</arglist>
+    </member>
+    <member kind="function">
+      <type>PendingCall *</type>
+      <name>setName</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a5953b3e58114d0a891ee50ff3fe16915</anchor>
+      <arglist>(const QString &amp;name)</arglist>
+    </member>
+    <member kind="function">
+      <type>PendingCall *</type>
+      <name>setTrusted</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>ad94db8e2f50f52e98caf4f562b41249e</anchor>
+      <arglist>(bool trusted)</arglist>
+    </member>
+    <member kind="function">
+      <type>DevicePtr</type>
+      <name>toSharedPtr</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>acca9d4dc55457c4b2ef36dbd3158f58a</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>Device::Type</type>
+      <name>type</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>aed060787644087a4f7fa935136ab5824</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>ubi</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>ae0c46c5b12932e24025036b022557823</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>QStringList</type>
+      <name>uuids</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a23c74d7f89cb600d52171c9b40b47cec</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static Device::Type</type>
+      <name>stringToType</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a4cc3d3479e89c6fc6202b1b603ca73af</anchor>
+      <arglist>(const QString &amp;typeString)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static QString</type>
+      <name>typeToString</name>
+      <anchorfile>classBluezQt_1_1Device.html</anchorfile>
+      <anchor>a311f3bcc832a4c3a575511968f52e96e</anchor>
+      <arglist>(Device::Type type)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>BluezQt::DevicesModel</name>
+    <filename>classBluezQt_1_1DevicesModel.html</filename>
+    <member kind="enumvalue">
+      <name>AdapterAddressRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea4dfeb716ccab78cb367dba21a0858901</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>AdapterDiscoverableRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea88e8b8dcbbdfa57855dc3d151dc157ae</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>AdapterDiscoveringRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea16717711f36043bf7f007421bed98d86</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>AdapterNameRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea03919f5fa1b6568051d73929421bfaa8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>AdapterPairableRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea37513ede849f3bf30bb8b00d91f87eaf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>AdapterPoweredRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eeac25ca74479b39bb3e1f2cbaade66d0ee</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>AdapterUuidsRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea9eadd71f5fcf8983418df87ebb6439ae</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>AddressRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea96ade6cab736ebc4f0fe595e01819074</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>AppearanceRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eeac8792be5610bed0006e171c7e4a4fecd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BlockedRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eeaeef17fb87545f0fe00e41d9cf3076aa1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>ClassRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea9058519ca1705a1020edc43d8762f19e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>ConnectedRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea6dbdb914b5293146fbe6be96c19aa5f4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>DeviceRoles</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814ee</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>UbiRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea5d492fb9f9536b11ade54647c7685b10</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>AddressRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea96ade6cab736ebc4f0fe595e01819074</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>NameRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea0c0d349d8c0349120666391a74897792</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>FriendlyNameRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea3f7c9f359356eacf63e6630088cbfeba</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RemoteNameRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea4a1743b8e59553b9b913f20319ec85ee</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>ClassRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea9058519ca1705a1020edc43d8762f19e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>TypeRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea5419f235e6c2fbd682945dee17c2ba27</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>AppearanceRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eeac8792be5610bed0006e171c7e4a4fecd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>IconRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea2416c30b9707acf7aa6d4a8315898de1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PairedRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea850c341d0acfa933b41ea80767769f78</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>TrustedRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eeae14fc605906c2525e29e386bc624582c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BlockedRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eeaeef17fb87545f0fe00e41d9cf3076aa1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>LegacyPairingRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea09b2557070672a87350766e2615e6bea</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RssiRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea65d3ac18a054112298b0162bf8143d2b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>ConnectedRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea6dbdb914b5293146fbe6be96c19aa5f4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>UuidsRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eeaa14c45f1953d488fc4f3438feede0600</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>ModaliasRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea877f12831310dcca7680ccdc3957a968</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>AdapterNameRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea03919f5fa1b6568051d73929421bfaa8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>AdapterAddressRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea4dfeb716ccab78cb367dba21a0858901</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>AdapterPoweredRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eeac25ca74479b39bb3e1f2cbaade66d0ee</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>AdapterDiscoverableRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea88e8b8dcbbdfa57855dc3d151dc157ae</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>AdapterPairableRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea37513ede849f3bf30bb8b00d91f87eaf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>AdapterDiscoveringRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea16717711f36043bf7f007421bed98d86</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>AdapterUuidsRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea9eadd71f5fcf8983418df87ebb6439ae</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>LastRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea42039539d9983570528624ea5ce48d92</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>FriendlyNameRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea3f7c9f359356eacf63e6630088cbfeba</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>IconRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea2416c30b9707acf7aa6d4a8315898de1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>LastRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea42039539d9983570528624ea5ce48d92</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>LegacyPairingRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea09b2557070672a87350766e2615e6bea</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>ModaliasRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea877f12831310dcca7680ccdc3957a968</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>NameRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea0c0d349d8c0349120666391a74897792</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PairedRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea850c341d0acfa933b41ea80767769f78</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RemoteNameRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea4a1743b8e59553b9b913f20319ec85ee</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RssiRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea65d3ac18a054112298b0162bf8143d2b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>TrustedRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eeae14fc605906c2525e29e386bc624582c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>TypeRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea5419f235e6c2fbd682945dee17c2ba27</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>UbiRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eea5d492fb9f9536b11ade54647c7685b10</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>UuidsRole</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a30bb8bb933c7704dd5ec2dabf7c814eeaa14c45f1953d488fc4f3438feede0600</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>DevicesModel</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a7c3bfe760aaf8fa24778467a2fff95c1</anchor>
+      <arglist>(Manager *manager, QObject *parent=nullptr)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~DevicesModel</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a4a7300ba39be202aff380c09412d0655</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>QVariant</type>
+      <name>data</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a46f1e222fae6e9797010e8249cde2dd8</anchor>
+      <arglist>(const QModelIndex &amp;index, int role) const override</arglist>
+    </member>
+    <member kind="function">
+      <type>DevicePtr</type>
+      <name>device</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>ada45ac8511616a9925e6748cd033e850</anchor>
+      <arglist>(const QModelIndex &amp;index) const</arglist>
+    </member>
+    <member kind="function">
+      <type>QModelIndex</type>
+      <name>index</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a5c53f7c2c53c4570e7963706585463d5</anchor>
+      <arglist>(int row, int column, const QModelIndex &amp;parent=QModelIndex()) const override</arglist>
+    </member>
+    <member kind="function">
+      <type>QHash&lt; int, QByteArray &gt;</type>
+      <name>roleNames</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a5288d6a443ffeccf678c07d7bb6fda26</anchor>
+      <arglist>() const override</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>rowCount</name>
+      <anchorfile>classBluezQt_1_1DevicesModel.html</anchorfile>
+      <anchor>a22ce71cb8d6fd21037eadf6ad74d72cb</anchor>
+      <arglist>(const QModelIndex &amp;parent=QModelIndex()) const override</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>BluezQt::InitManagerJob</name>
+    <filename>classBluezQt_1_1InitManagerJob.html</filename>
+    <base>BluezQt::Job</base>
+    <member kind="signal">
+      <type>void</type>
+      <name>result</name>
+      <anchorfile>classBluezQt_1_1InitManagerJob.html</anchorfile>
+      <anchor>ac61b04060b071a02d098afa7d91efafd</anchor>
+      <arglist>(InitManagerJob *job)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~InitManagerJob</name>
+      <anchorfile>classBluezQt_1_1InitManagerJob.html</anchorfile>
+      <anchor>aba62909f7fee5b2c328f33cdbab902fc</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>Manager *</type>
+      <name>manager</name>
+      <anchorfile>classBluezQt_1_1InitManagerJob.html</anchorfile>
+      <anchor>a098e5f296366b56103dc1debe2017436</anchor>
+      <arglist>() const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>BluezQt::InitObexManagerJob</name>
+    <filename>classBluezQt_1_1InitObexManagerJob.html</filename>
+    <base>BluezQt::Job</base>
+    <member kind="signal">
+      <type>void</type>
+      <name>result</name>
+      <anchorfile>classBluezQt_1_1InitObexManagerJob.html</anchorfile>
+      <anchor>a66a4370b8c9c04d73f20a072064805cc</anchor>
+      <arglist>(InitObexManagerJob *job)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~InitObexManagerJob</name>
+      <anchorfile>classBluezQt_1_1InitObexManagerJob.html</anchorfile>
+      <anchor>a79b383682ae27e2a5238ae47bba2e424</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>ObexManager *</type>
+      <name>manager</name>
+      <anchorfile>classBluezQt_1_1InitObexManagerJob.html</anchorfile>
+      <anchor>ad5a7c6199bce14665fd1fb1978ad1e64</anchor>
+      <arglist>() const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>BluezQt::Input</name>
+    <filename>classBluezQt_1_1Input.html</filename>
+    <member kind="enumvalue">
+      <name>AnyReconnect</name>
+      <anchorfile>classBluezQt_1_1Input.html</anchorfile>
+      <anchor>a19e734ba695a2656ca5b5190502c5bbfa8177c9792b363426972edc753e4a376a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>DeviceReconnect</name>
+      <anchorfile>classBluezQt_1_1Input.html</anchorfile>
+      <anchor>a19e734ba695a2656ca5b5190502c5bbfa11763e89404c3375aa8ce9dd176c653d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>HostReconnect</name>
+      <anchorfile>classBluezQt_1_1Input.html</anchorfile>
+      <anchor>a19e734ba695a2656ca5b5190502c5bbfa4bfa163fff44b6d7698c90059bf9b481</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>NoReconnect</name>
+      <anchorfile>classBluezQt_1_1Input.html</anchorfile>
+      <anchor>a19e734ba695a2656ca5b5190502c5bbfa3d9c17771190cbc9ca2d72f5cb25b3a5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>ReconnectMode</name>
+      <anchorfile>classBluezQt_1_1Input.html</anchorfile>
+      <anchor>a19e734ba695a2656ca5b5190502c5bbf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>NoReconnect</name>
+      <anchorfile>classBluezQt_1_1Input.html</anchorfile>
+      <anchor>a19e734ba695a2656ca5b5190502c5bbfa3d9c17771190cbc9ca2d72f5cb25b3a5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>HostReconnect</name>
+      <anchorfile>classBluezQt_1_1Input.html</anchorfile>
+      <anchor>a19e734ba695a2656ca5b5190502c5bbfa4bfa163fff44b6d7698c90059bf9b481</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>DeviceReconnect</name>
+      <anchorfile>classBluezQt_1_1Input.html</anchorfile>
+      <anchor>a19e734ba695a2656ca5b5190502c5bbfa11763e89404c3375aa8ce9dd176c653d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>AnyReconnect</name>
+      <anchorfile>classBluezQt_1_1Input.html</anchorfile>
+      <anchor>a19e734ba695a2656ca5b5190502c5bbfa8177c9792b363426972edc753e4a376a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>reconnectModeChanged</name>
+      <anchorfile>classBluezQt_1_1Input.html</anchorfile>
+      <anchor>a7d08c46c18c414e14c65d196887bdc37</anchor>
+      <arglist>(ReconnectMode mode)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~Input</name>
+      <anchorfile>classBluezQt_1_1Input.html</anchorfile>
+      <anchor>a91f7ac37c0c4a43b004ab4a502f4189b</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>ReconnectMode</type>
+      <name>reconnectMode</name>
+      <anchorfile>classBluezQt_1_1Input.html</anchorfile>
+      <anchor>a0a5d4cecdcf427240d52d1c7edab73a4</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>InputPtr</type>
+      <name>toSharedPtr</name>
+      <anchorfile>classBluezQt_1_1Input.html</anchorfile>
+      <anchor>a217860a5d141b3f76b2b1506a2b333a1</anchor>
+      <arglist>() const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>BluezQt::Job</name>
+    <filename>classBluezQt_1_1Job.html</filename>
+    <member kind="enumeration">
+      <type></type>
+      <name>Error</name>
+      <anchorfile>classBluezQt_1_1Job.html</anchorfile>
+      <anchor>ac3d7b30088e599146e186f1018884080</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>NoError</name>
+      <anchorfile>classBluezQt_1_1Job.html</anchorfile>
+      <anchor>ac3d7b30088e599146e186f1018884080a2d496174ac193470883c3a23e93c1930</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>UserDefinedError</name>
+      <anchorfile>classBluezQt_1_1Job.html</anchorfile>
+      <anchor>ac3d7b30088e599146e186f1018884080a869f0d8c39fdc0db97025e041288abe3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>NoError</name>
+      <anchorfile>classBluezQt_1_1Job.html</anchorfile>
+      <anchor>ac3d7b30088e599146e186f1018884080a2d496174ac193470883c3a23e93c1930</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>UserDefinedError</name>
+      <anchorfile>classBluezQt_1_1Job.html</anchorfile>
+      <anchor>ac3d7b30088e599146e186f1018884080a869f0d8c39fdc0db97025e041288abe3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="slot">
+      <type>void</type>
+      <name>kill</name>
+      <anchorfile>classBluezQt_1_1Job.html</anchorfile>
+      <anchor>a0ec952cf69d6b6d6d3b34fd394631a0c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="slot">
+      <type>void</type>
+      <name>start</name>
+      <anchorfile>classBluezQt_1_1Job.html</anchorfile>
+      <anchor>ab62c00ff2416346e746fefbe14d5e74f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Job</name>
+      <anchorfile>classBluezQt_1_1Job.html</anchorfile>
+      <anchor>a01fda332d01ce73c2c6d4bda180c79d2</anchor>
+      <arglist>(QObject *parent=nullptr)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~Job</name>
+      <anchorfile>classBluezQt_1_1Job.html</anchorfile>
+      <anchor>aad1087009d053ea5e4f6d014437dc74c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>error</name>
+      <anchorfile>classBluezQt_1_1Job.html</anchorfile>
+      <anchor>aa68b2998621280c9c43a630b5db5ffe4</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>errorText</name>
+      <anchorfile>classBluezQt_1_1Job.html</anchorfile>
+      <anchor>adbf0ddefd898d1acce6b4254e0d3c24b</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>exec</name>
+      <anchorfile>classBluezQt_1_1Job.html</anchorfile>
+      <anchor>aa1c04740ac2018ccef9793f3298af59f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isFinished</name>
+      <anchorfile>classBluezQt_1_1Job.html</anchorfile>
+      <anchor>a6e1fe5eb8d9c3be7754215c3591be2ea</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isRunning</name>
+      <anchorfile>classBluezQt_1_1Job.html</anchorfile>
+      <anchor>aa1de2def33655f72220c0ae684be3585</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="slot" protection="protected" virtualness="pure">
+      <type>virtual void</type>
+      <name>doStart</name>
+      <anchorfile>classBluezQt_1_1Job.html</anchorfile>
+      <anchor>a38a9d5e494bf352cfb455bd11fd23119</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="pure">
+      <type>virtual void</type>
+      <name>doEmitResult</name>
+      <anchorfile>classBluezQt_1_1Job.html</anchorfile>
+      <anchor>a1262841618416a358e0c1ab881515295</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>emitResult</name>
+      <anchorfile>classBluezQt_1_1Job.html</anchorfile>
+      <anchor>a4296c5399ddb16cd45a30a23e971e9e5</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>setError</name>
+      <anchorfile>classBluezQt_1_1Job.html</anchorfile>
+      <anchor>a0c90169db04c24e4e3b5f7ce94a9234d</anchor>
+      <arglist>(int errorCode)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>setErrorText</name>
+      <anchorfile>classBluezQt_1_1Job.html</anchorfile>
+      <anchor>aaa59b1ed5a371845783744f7a132347e</anchor>
+      <arglist>(const QString &amp;errorText)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>BluezQt::Manager</name>
+    <filename>classBluezQt_1_1Manager.html</filename>
+    <member kind="signal">
+      <type>void</type>
+      <name>adapterAdded</name>
+      <anchorfile>classBluezQt_1_1Manager.html</anchorfile>
+      <anchor>ad18f4cec0800cadcde70207f11894a37</anchor>
+      <arglist>(AdapterPtr adapter)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>adapterChanged</name>
+      <anchorfile>classBluezQt_1_1Manager.html</anchorfile>
+      <anchor>a0cc5ebfdf5008819d7892b7cd694294d</anchor>
+      <arglist>(AdapterPtr adapter)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>adapterRemoved</name>
+      <anchorfile>classBluezQt_1_1Manager.html</anchorfile>
+      <anchor>a22b83a6af9e72d43924da4cbe9915bcc</anchor>
+      <arglist>(AdapterPtr adapter)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>allAdaptersRemoved</name>
+      <anchorfile>classBluezQt_1_1Manager.html</anchorfile>
+      <anchor>ad45cb7232dc61c9e23e297850862a71c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>bluetoothBlockedChanged</name>
+      <anchorfile>classBluezQt_1_1Manager.html</anchorfile>
+      <anchor>aaff8e81e2400d78ea152e9e28019b213</anchor>
+      <arglist>(bool blocked)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>bluetoothOperationalChanged</name>
+      <anchorfile>classBluezQt_1_1Manager.html</anchorfile>
+      <anchor>a39d7e93b3a175c9fb8d5f9c60e18be15</anchor>
+      <arglist>(bool operational)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>deviceAdded</name>
+      <anchorfile>classBluezQt_1_1Manager.html</anchorfile>
+      <anchor>a04f8604a850cefa8ed989a72a281fd0d</anchor>
+      <arglist>(DevicePtr device)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>deviceChanged</name>
+      <anchorfile>classBluezQt_1_1Manager.html</anchorfile>
+      <anchor>abac2823d2c26fb1cb7781dc6094c52ef</anchor>
+      <arglist>(DevicePtr device)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>deviceRemoved</name>
+      <anchorfile>classBluezQt_1_1Manager.html</anchorfile>
+      <anchor>ac8311f9b4b19262d4036078bc447557d</anchor>
+      <arglist>(DevicePtr device)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>operationalChanged</name>
+      <anchorfile>classBluezQt_1_1Manager.html</anchorfile>
+      <anchor>a5d7b0dc2e59ecb32b6620a6a1af74aba</anchor>
+      <arglist>(bool operational)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>usableAdapterChanged</name>
+      <anchorfile>classBluezQt_1_1Manager.html</anchorfile>
+      <anchor>a83865e8de1ec225c4f815f78ae67a6be</anchor>
+      <arglist>(AdapterPtr adapter)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Manager</name>
+      <anchorfile>classBluezQt_1_1Manager.html</anchorfile>
+      <anchor>a565ee6ef0f5281337a85529030ccc2eb</anchor>
+      <arglist>(QObject *parent=nullptr)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~Manager</name>
+      <anchorfile>classBluezQt_1_1Manager.html</anchorfile>
+      <anchor>a2df98842b37aee1ad1ffe4fbf643b9b6</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>AdapterPtr</type>
+      <name>adapterForAddress</name>
+      <anchorfile>classBluezQt_1_1Manager.html</anchorfile>
+      <anchor>a87c499d84212d89a7be36c4cdb6792a0</anchor>
+      <arglist>(const QString &amp;address) const</arglist>
+    </member>
+    <member kind="function">
+      <type>AdapterPtr</type>
+      <name>adapterForUbi</name>
+      <anchorfile>classBluezQt_1_1Manager.html</anchorfile>
+      <anchor>a20073e6159569ae9f6e9f7fd0ba087da</anchor>
+      <arglist>(const QString &amp;ubi) const</arglist>
+    </member>
+    <member kind="function">
+      <type>QList&lt; AdapterPtr &gt;</type>
+      <name>adapters</name>
+      <anchorfile>classBluezQt_1_1Manager.html</anchorfile>
+      <anchor>af0813ef3d9c610e5c63e90689f4ded4f</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>DevicePtr</type>
+      <name>deviceForAddress</name>
+      <anchorfile>classBluezQt_1_1Manager.html</anchorfile>
+      <anchor>a2c9ee21e4a32bdc5e03037af4150887c</anchor>
+      <arglist>(const QString &amp;address) const</arglist>
+    </member>
+    <member kind="function">
+      <type>DevicePtr</type>
+      <name>deviceForUbi</name>
+      <anchorfile>classBluezQt_1_1Manager.html</anchorfile>
+      <anchor>a83d58f7a886894a25a6c68d6e3d7515a</anchor>
+      <arglist>(const QString &amp;ubi) const</arglist>
+    </member>
+    <member kind="function">
+      <type>QList&lt; DevicePtr &gt;</type>
+      <name>devices</name>
+      <anchorfile>classBluezQt_1_1Manager.html</anchorfile>
+      <anchor>a37f4f71e906ad88e7ee5c5a7d9e26130</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>InitManagerJob *</type>
+      <name>init</name>
+      <anchorfile>classBluezQt_1_1Manager.html</anchorfile>
+      <anchor>a68f966048bdffeb8691737b092702514</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isBluetoothBlocked</name>
+      <anchorfile>classBluezQt_1_1Manager.html</anchorfile>
+      <anchor>a5d5a78c766da8cff7cb399a387852d6e</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isBluetoothOperational</name>
+      <anchorfile>classBluezQt_1_1Manager.html</anchorfile>
+      <anchor>aa405d4f8699a55e733ab47c837d72902</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isInitialized</name>
+      <anchorfile>classBluezQt_1_1Manager.html</anchorfile>
+      <anchor>ac21b0d4223f29eacef54457940d3eae0</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isOperational</name>
+      <anchorfile>classBluezQt_1_1Manager.html</anchorfile>
+      <anchor>af3edfe30235fd2d04455ff3263a906b6</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>MediaPtr</type>
+      <name>media</name>
+      <anchorfile>classBluezQt_1_1Manager.html</anchorfile>
+      <anchor>aff714a3540c2c539ba1c224a53dde8a8</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>PendingCall *</type>
+      <name>registerAgent</name>
+      <anchorfile>classBluezQt_1_1Manager.html</anchorfile>
+      <anchor>a07b45413c0f4f78e823567f08617e6f7</anchor>
+      <arglist>(Agent *agent)</arglist>
+    </member>
+    <member kind="function">
+      <type>PendingCall *</type>
+      <name>registerProfile</name>
+      <anchorfile>classBluezQt_1_1Manager.html</anchorfile>
+      <anchor>ad61a37f5f5baf02779d864f236e28d2e</anchor>
+      <arglist>(Profile *profile)</arglist>
+    </member>
+    <member kind="function">
+      <type>PendingCall *</type>
+      <name>requestDefaultAgent</name>
+      <anchorfile>classBluezQt_1_1Manager.html</anchorfile>
+      <anchor>aa4863bc7c3b8ecaf76c913ea7fea7358</anchor>
+      <arglist>(Agent *agent)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>setBluetoothBlocked</name>
+      <anchorfile>classBluezQt_1_1Manager.html</anchorfile>
+      <anchor>a105514c958bd0cc2719ccb2365d6fe03</anchor>
+      <arglist>(bool blocked)</arglist>
+    </member>
+    <member kind="function">
+      <type>PendingCall *</type>
+      <name>unregisterAgent</name>
+      <anchorfile>classBluezQt_1_1Manager.html</anchorfile>
+      <anchor>a09caffc8f8d4fff57c0cfd4efc68d46a</anchor>
+      <arglist>(Agent *agent)</arglist>
+    </member>
+    <member kind="function">
+      <type>PendingCall *</type>
+      <name>unregisterProfile</name>
+      <anchorfile>classBluezQt_1_1Manager.html</anchorfile>
+      <anchor>a1941b4a8a55f96aa3a38b6046bb21faa</anchor>
+      <arglist>(Profile *profile)</arglist>
+    </member>
+    <member kind="function">
+      <type>AdapterPtr</type>
+      <name>usableAdapter</name>
+      <anchorfile>classBluezQt_1_1Manager.html</anchorfile>
+      <anchor>a302265dedfea97d9b8fb39936a095c2a</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static PendingCall *</type>
+      <name>startService</name>
+      <anchorfile>classBluezQt_1_1Manager.html</anchorfile>
+      <anchor>a9ea5f20e77b13fee53c3d7893ecf6c13</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>BluezQt::Media</name>
+    <filename>classBluezQt_1_1Media.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>~Media</name>
+      <anchorfile>classBluezQt_1_1Media.html</anchorfile>
+      <anchor>a91d2098e0cd686188a351dbe065c5a5a</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>PendingCall *</type>
+      <name>registerEndpoint</name>
+      <anchorfile>classBluezQt_1_1Media.html</anchorfile>
+      <anchor>ad2a1d085c7dfdcc171322c8a4a4e2033</anchor>
+      <arglist>(MediaEndpoint *endpoint)</arglist>
+    </member>
+    <member kind="function">
+      <type>PendingCall *</type>
+      <name>unregisterEndpoint</name>
+      <anchorfile>classBluezQt_1_1Media.html</anchorfile>
+      <anchor>a8642b7c4585ad3033b248bf12898f757</anchor>
+      <arglist>(MediaEndpoint *endpoint)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>BluezQt::MediaEndpoint</name>
+    <filename>classBluezQt_1_1MediaEndpoint.html</filename>
+    <class kind="struct">BluezQt::MediaEndpoint::Configuration</class>
+    <member kind="enumeration">
+      <type></type>
+      <name>Codec</name>
+      <anchorfile>classBluezQt_1_1MediaEndpoint.html</anchorfile>
+      <anchor>a30bd83b901d5f8fb75cb49b42ab27a00</anchor>
+      <arglist></arglist>
+      <enumvalue file="classBluezQt_1_1MediaEndpoint.html" anchor="a30bd83b901d5f8fb75cb49b42ab27a00ae85c199adb08126d482f6cfce20d571c">Sbc</enumvalue>
+      <enumvalue file="classBluezQt_1_1MediaEndpoint.html" anchor="a30bd83b901d5f8fb75cb49b42ab27a00a74787479717e3e2fa0e72ec5f96d47ff">Aac</enumvalue>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>Role</name>
+      <anchorfile>classBluezQt_1_1MediaEndpoint.html</anchorfile>
+      <anchor>aace06628bebd9c4b16447a4eb8f5834a</anchor>
+      <arglist></arglist>
+      <enumvalue file="classBluezQt_1_1MediaEndpoint.html" anchor="aace06628bebd9c4b16447a4eb8f5834aa0fd2d5b62fa9df24e76e12dac06db324">AudioSource</enumvalue>
+      <enumvalue file="classBluezQt_1_1MediaEndpoint.html" anchor="aace06628bebd9c4b16447a4eb8f5834aaa9b8306cf0d4a36710e7db1fd13345bc">AudioSink</enumvalue>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>configurationCleared</name>
+      <anchorfile>classBluezQt_1_1MediaEndpoint.html</anchorfile>
+      <anchor>a98943a34d14d33ce762b8173ddb7c861</anchor>
+      <arglist>(const QString &amp;transportObjectPath)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>configurationSelected</name>
+      <anchorfile>classBluezQt_1_1MediaEndpoint.html</anchorfile>
+      <anchor>adfebb40ec8ed73b0ce84ed4abf005bb7</anchor>
+      <arglist>(const QByteArray &amp;capabilities, const QByteArray &amp;configuration)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>configurationSet</name>
+      <anchorfile>classBluezQt_1_1MediaEndpoint.html</anchorfile>
+      <anchor>a144c7dde0ef124f90b9cd19ffb96f928</anchor>
+      <arglist>(const QString &amp;transportObjectPath, const QVariantMap &amp;properties)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>MediaEndpoint</name>
+      <anchorfile>classBluezQt_1_1MediaEndpoint.html</anchorfile>
+      <anchor>a88992890532e5031989d753276e93f78</anchor>
+      <arglist>(const Configuration &amp;configuration, QObject *parent=nullptr)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~MediaEndpoint</name>
+      <anchorfile>classBluezQt_1_1MediaEndpoint.html</anchorfile>
+      <anchor>ac0505110147c0cc18f2619e8f2d538f7</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>clearConfiguration</name>
+      <anchorfile>classBluezQt_1_1MediaEndpoint.html</anchorfile>
+      <anchor>a7b51e576f74a82da6f003c93dfc89798</anchor>
+      <arglist>(const QString &amp;transportObjectPath)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual QDBusObjectPath</type>
+      <name>objectPath</name>
+      <anchorfile>classBluezQt_1_1MediaEndpoint.html</anchorfile>
+      <anchor>acdebc23c991f44b9334ac6d1ebd7c0ff</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const QVariantMap &amp;</type>
+      <name>properties</name>
+      <anchorfile>classBluezQt_1_1MediaEndpoint.html</anchorfile>
+      <anchor>a33063a8c7e35b20811ce7ffc254283e0</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>release</name>
+      <anchorfile>classBluezQt_1_1MediaEndpoint.html</anchorfile>
+      <anchor>ace99e869d4e337326144afbc42bc0ac1</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>selectConfiguration</name>
+      <anchorfile>classBluezQt_1_1MediaEndpoint.html</anchorfile>
+      <anchor>aa7602ab6aa1e0c3ad3a193dd220dab12</anchor>
+      <arglist>(const QByteArray &amp;capabilities, const Request&lt; QByteArray &gt; &amp;request)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>setConfiguration</name>
+      <anchorfile>classBluezQt_1_1MediaEndpoint.html</anchorfile>
+      <anchor>ab0b22cab7d6d6cfbfab211f1da92562a</anchor>
+      <arglist>(const QString &amp;transportObjectPath, const QVariantMap &amp;properties)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>BluezQt::MediaPlayer</name>
+    <filename>classBluezQt_1_1MediaPlayer.html</filename>
+    <member kind="enumeration">
+      <type></type>
+      <name>Equalizer</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a8208a79e1218e23b9c8414ce02b743ca</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>EqualizerOn</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a8208a79e1218e23b9c8414ce02b743caab5383a54225ee5a7fac005ba5d7ce54b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>EqualizerOff</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a8208a79e1218e23b9c8414ce02b743caa5b48fffad13e2e244581ad6871518306</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>EqualizerOff</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a8208a79e1218e23b9c8414ce02b743caa5b48fffad13e2e244581ad6871518306</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>EqualizerOn</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a8208a79e1218e23b9c8414ce02b743caab5383a54225ee5a7fac005ba5d7ce54b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Error</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a8f3887fb7269052a092a8bb7d1036aa4a330ab2abc5e0220717d53d62fc384db2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>ForwardSeek</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a8f3887fb7269052a092a8bb7d1036aa4ade095348f4713d8cc92184bd565cc254</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Paused</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a8f3887fb7269052a092a8bb7d1036aa4a56893f4f8ba5d89672953bf828b5ff37</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Playing</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a8f3887fb7269052a092a8bb7d1036aa4a00d257d3acebb9e22c2ab87c413fd32f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>Repeat</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a0ce60790dd82196c15a7ace8acc619f8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RepeatOff</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a0ce60790dd82196c15a7ace8acc619f8a7a189f30fab8d8393fbe92613ae4971a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RepeatSingleTrack</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a0ce60790dd82196c15a7ace8acc619f8a4fc8428de682287e80bf1497cd2908c2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RepeatAllTracks</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a0ce60790dd82196c15a7ace8acc619f8af6237b6daf2a27fdb33967aba56b2fb1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RepeatGroup</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a0ce60790dd82196c15a7ace8acc619f8a2f5d7af8a8f0428bcd3eedcf1888ec55</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RepeatAllTracks</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a0ce60790dd82196c15a7ace8acc619f8af6237b6daf2a27fdb33967aba56b2fb1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RepeatGroup</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a0ce60790dd82196c15a7ace8acc619f8a2f5d7af8a8f0428bcd3eedcf1888ec55</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RepeatOff</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a0ce60790dd82196c15a7ace8acc619f8a7a189f30fab8d8393fbe92613ae4971a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RepeatSingleTrack</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a0ce60790dd82196c15a7ace8acc619f8a4fc8428de682287e80bf1497cd2908c2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>ReverseSeek</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a8f3887fb7269052a092a8bb7d1036aa4a3685110ad641254650fe4f6bcf4d0dcb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>Shuffle</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a2d24c80dae0689372df6d7aabd0810a7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>ShuffleOff</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a2d24c80dae0689372df6d7aabd0810a7a76771524a1c6ee4d336e6bca4f3f9cbb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>ShuffleAllTracks</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a2d24c80dae0689372df6d7aabd0810a7aa7a0b122832919481d25ee948bab6bf6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>ShuffleGroup</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a2d24c80dae0689372df6d7aabd0810a7a419cf6d4ee9020854c3931a37c097d75</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>ShuffleAllTracks</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a2d24c80dae0689372df6d7aabd0810a7aa7a0b122832919481d25ee948bab6bf6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>ShuffleGroup</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a2d24c80dae0689372df6d7aabd0810a7a419cf6d4ee9020854c3931a37c097d75</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>ShuffleOff</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a2d24c80dae0689372df6d7aabd0810a7a76771524a1c6ee4d336e6bca4f3f9cbb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>Status</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a8f3887fb7269052a092a8bb7d1036aa4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Playing</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a8f3887fb7269052a092a8bb7d1036aa4a00d257d3acebb9e22c2ab87c413fd32f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Stopped</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a8f3887fb7269052a092a8bb7d1036aa4a32ffdb88a3eda6b041f42801bc59540f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Paused</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a8f3887fb7269052a092a8bb7d1036aa4a56893f4f8ba5d89672953bf828b5ff37</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>ForwardSeek</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a8f3887fb7269052a092a8bb7d1036aa4ade095348f4713d8cc92184bd565cc254</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>ReverseSeek</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a8f3887fb7269052a092a8bb7d1036aa4a3685110ad641254650fe4f6bcf4d0dcb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Error</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a8f3887fb7269052a092a8bb7d1036aa4a330ab2abc5e0220717d53d62fc384db2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Stopped</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a8f3887fb7269052a092a8bb7d1036aa4a32ffdb88a3eda6b041f42801bc59540f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>equalizerChanged</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a0eb5f11a02e17bade13058ef3be760f5</anchor>
+      <arglist>(Equalizer equalizer)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>nameChanged</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>af1ab53860006d675a3943a0692666b31</anchor>
+      <arglist>(const QString &amp;name)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>positionChanged</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>ac6cd580c86836c122a795edb71864ead</anchor>
+      <arglist>(quint32 position)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>repeatChanged</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>ac410fbe2ab80608c022d3aa0bcc7f677</anchor>
+      <arglist>(Repeat repeat)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>shuffleChanged</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a9a077c712d6e51806c5012538f58f376</anchor>
+      <arglist>(Shuffle shuffle)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>statusChanged</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>af26511f9c372f1fe4974573f0ac0054d</anchor>
+      <arglist>(Status status)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>trackChanged</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a36ca99c813493d5076dce204727e7032</anchor>
+      <arglist>(MediaPlayerTrack track)</arglist>
+    </member>
+    <member kind="slot">
+      <type>PendingCall *</type>
+      <name>fastForward</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>ab64aa40c1bf622800aa3a7638bdc374b</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="slot">
+      <type>PendingCall *</type>
+      <name>next</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a40927d83b9dd2e7adbf3dd12145fae86</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="slot">
+      <type>PendingCall *</type>
+      <name>pause</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>afbc13f7564b96e6f4c5f736477452ce5</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="slot">
+      <type>PendingCall *</type>
+      <name>play</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a6a324f837c26c781d2b17f45a1c92048</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="slot">
+      <type>PendingCall *</type>
+      <name>previous</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a9bd34fcccb6d0083a80c48e324de57f2</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="slot">
+      <type>PendingCall *</type>
+      <name>rewind</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a8c7d4ff1cd99d0c8519482857e42e5e2</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="slot">
+      <type>PendingCall *</type>
+      <name>stop</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a3195ce6f1617b9c3fc6b991bdaebcbe8</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~MediaPlayer</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a6e5d73cd6242b39dfb6073806bc9610d</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>Equalizer</type>
+      <name>equalizer</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a04d2ceecd66e582d005b7eb457433763</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>name</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>afc6bb0efec6f008f15e89bbca0342fbe</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>quint32</type>
+      <name>position</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>addfdb31cdf029e590cdbc59ef3a08464</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>Repeat</type>
+      <name>repeat</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a4f837c4038961f75f42f877fff6e1d95</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>PendingCall *</type>
+      <name>setEqualizer</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>aec0cb8237f85422c2988d96a8d591681</anchor>
+      <arglist>(Equalizer equalizer)</arglist>
+    </member>
+    <member kind="function">
+      <type>PendingCall *</type>
+      <name>setRepeat</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a1cbc824ae0ece3f50e27bfce33b5f31c</anchor>
+      <arglist>(Repeat repeat)</arglist>
+    </member>
+    <member kind="function">
+      <type>PendingCall *</type>
+      <name>setShuffle</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>ac8a85872325c3c0b091887ae4c25bdbf</anchor>
+      <arglist>(Shuffle shuffle)</arglist>
+    </member>
+    <member kind="function">
+      <type>Shuffle</type>
+      <name>shuffle</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>abbce4428dc5d76a4d4ae2010386aead7</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>Status</type>
+      <name>status</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>ade738419149aade937260ca5919bbce5</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>MediaPlayerPtr</type>
+      <name>toSharedPtr</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a6410d845c0e3430fd93ab73d4d3978fd</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>MediaPlayerTrack</type>
+      <name>track</name>
+      <anchorfile>classBluezQt_1_1MediaPlayer.html</anchorfile>
+      <anchor>a07a072a1740aa1b20471b7eb26c2ae30</anchor>
+      <arglist>() const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>BluezQt::MediaPlayerTrack</name>
+    <filename>classBluezQt_1_1MediaPlayerTrack.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>MediaPlayerTrack</name>
+      <anchorfile>classBluezQt_1_1MediaPlayerTrack.html</anchorfile>
+      <anchor>a49fdf9243682b389730dd8b8fc2e87fe</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>MediaPlayerTrack</name>
+      <anchorfile>classBluezQt_1_1MediaPlayerTrack.html</anchorfile>
+      <anchor>a57f8602fb77d516028b074be3caa3e19</anchor>
+      <arglist>(const MediaPlayerTrack &amp;other)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~MediaPlayerTrack</name>
+      <anchorfile>classBluezQt_1_1MediaPlayerTrack.html</anchorfile>
+      <anchor>ab8dcb4d8134d47a2607d3e7c36e8d3c0</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>album</name>
+      <anchorfile>classBluezQt_1_1MediaPlayerTrack.html</anchorfile>
+      <anchor>a7301600683df7f342355467f2ba6c1fb</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>artist</name>
+      <anchorfile>classBluezQt_1_1MediaPlayerTrack.html</anchorfile>
+      <anchor>a15f8f357579a4ce50f728d2098de1a06</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>quint32</type>
+      <name>duration</name>
+      <anchorfile>classBluezQt_1_1MediaPlayerTrack.html</anchorfile>
+      <anchor>a9b08112d3a2653ca3ca515fb64ff7b23</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>genre</name>
+      <anchorfile>classBluezQt_1_1MediaPlayerTrack.html</anchorfile>
+      <anchor>aea880e8a16ace7399134f56520373ebc</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isValid</name>
+      <anchorfile>classBluezQt_1_1MediaPlayerTrack.html</anchorfile>
+      <anchor>a3c07752be9039e144a7131ddcb443049</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>quint32</type>
+      <name>numberOfTracks</name>
+      <anchorfile>classBluezQt_1_1MediaPlayerTrack.html</anchorfile>
+      <anchor>a29cca4582383822b9e637a468f774c62</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>MediaPlayerTrack &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classBluezQt_1_1MediaPlayerTrack.html</anchorfile>
+      <anchor>a6856fccd65af78e516be1a5448729abe</anchor>
+      <arglist>(const MediaPlayerTrack &amp;other)</arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>title</name>
+      <anchorfile>classBluezQt_1_1MediaPlayerTrack.html</anchorfile>
+      <anchor>ab2c45fd14c5c45e4dc150851567e5b71</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>quint32</type>
+      <name>trackNumber</name>
+      <anchorfile>classBluezQt_1_1MediaPlayerTrack.html</anchorfile>
+      <anchor>a93c85c25c00e5ba9f614c25d0ff352a4</anchor>
+      <arglist>() const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>BluezQt::ObexAgent</name>
+    <filename>classBluezQt_1_1ObexAgent.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>ObexAgent</name>
+      <anchorfile>classBluezQt_1_1ObexAgent.html</anchorfile>
+      <anchor>a115ea6f835ef39696ce37dd92c6fe3be</anchor>
+      <arglist>(QObject *parent=nullptr)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>authorizePush</name>
+      <anchorfile>classBluezQt_1_1ObexAgent.html</anchorfile>
+      <anchor>a9018ca4a1f511b323ce2e911d78753de</anchor>
+      <arglist>(ObexTransferPtr transfer, ObexSessionPtr session, const Request&lt; QString &gt; &amp;request)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>cancel</name>
+      <anchorfile>classBluezQt_1_1ObexAgent.html</anchorfile>
+      <anchor>a7f89be8668e461675269eb0737dcc364</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual QDBusObjectPath</type>
+      <name>objectPath</name>
+      <anchorfile>classBluezQt_1_1ObexAgent.html</anchorfile>
+      <anchor>a66bc721f89d4671442f8e64d05739f8f</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>release</name>
+      <anchorfile>classBluezQt_1_1ObexAgent.html</anchorfile>
+      <anchor>a7aa1473a7b3c3ee6dccef4e5081a13ef</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>BluezQt::ObexFileTransfer</name>
+    <filename>classBluezQt_1_1ObexFileTransfer.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>ObexFileTransfer</name>
+      <anchorfile>classBluezQt_1_1ObexFileTransfer.html</anchorfile>
+      <anchor>a73b47c72a63f3dfc41e41b58021d2328</anchor>
+      <arglist>(const QDBusObjectPath &amp;path, QObject *parent=nullptr)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~ObexFileTransfer</name>
+      <anchorfile>classBluezQt_1_1ObexFileTransfer.html</anchorfile>
+      <anchor>a2ad3272db85454dbfc07a8d71849c9d8</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>PendingCall *</type>
+      <name>changeFolder</name>
+      <anchorfile>classBluezQt_1_1ObexFileTransfer.html</anchorfile>
+      <anchor>a5fa6db3d2aa717616ef7b8105aa6db8c</anchor>
+      <arglist>(const QString &amp;folder)</arglist>
+    </member>
+    <member kind="function">
+      <type>PendingCall *</type>
+      <name>copyFile</name>
+      <anchorfile>classBluezQt_1_1ObexFileTransfer.html</anchorfile>
+      <anchor>aaa46100c64349694874125bf3bde7f2b</anchor>
+      <arglist>(const QString &amp;sourceFileName, const QString &amp;targetFileName)</arglist>
+    </member>
+    <member kind="function">
+      <type>PendingCall *</type>
+      <name>createFolder</name>
+      <anchorfile>classBluezQt_1_1ObexFileTransfer.html</anchorfile>
+      <anchor>ac1008efda944d7838fb5371042b52158</anchor>
+      <arglist>(const QString &amp;folder)</arglist>
+    </member>
+    <member kind="function">
+      <type>PendingCall *</type>
+      <name>deleteFile</name>
+      <anchorfile>classBluezQt_1_1ObexFileTransfer.html</anchorfile>
+      <anchor>a6b42dff545e9b838a31b07841a081d32</anchor>
+      <arglist>(const QString &amp;fileName)</arglist>
+    </member>
+    <member kind="function">
+      <type>PendingCall *</type>
+      <name>getFile</name>
+      <anchorfile>classBluezQt_1_1ObexFileTransfer.html</anchorfile>
+      <anchor>aa89eb3696ea10cc6ab778c19b02a0902</anchor>
+      <arglist>(const QString &amp;targetFileName, const QString &amp;sourceFileName)</arglist>
+    </member>
+    <member kind="function">
+      <type>PendingCall *</type>
+      <name>listFolder</name>
+      <anchorfile>classBluezQt_1_1ObexFileTransfer.html</anchorfile>
+      <anchor>adde9d2a063917d4ecd68cc1a142e6f4f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>PendingCall *</type>
+      <name>moveFile</name>
+      <anchorfile>classBluezQt_1_1ObexFileTransfer.html</anchorfile>
+      <anchor>a885c633ddf45717c60d68e31e2e79fac</anchor>
+      <arglist>(const QString &amp;sourceFileName, const QString &amp;targetFileName)</arglist>
+    </member>
+    <member kind="function">
+      <type>QDBusObjectPath</type>
+      <name>objectPath</name>
+      <anchorfile>classBluezQt_1_1ObexFileTransfer.html</anchorfile>
+      <anchor>a8ce7643489fb928c113f094645986c65</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>PendingCall *</type>
+      <name>putFile</name>
+      <anchorfile>classBluezQt_1_1ObexFileTransfer.html</anchorfile>
+      <anchor>afdd834e782f2b609c1ccb4fa4b25677e</anchor>
+      <arglist>(const QString &amp;sourceFileName, const QString &amp;targetFileName)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>BluezQt::ObexFileTransferEntry</name>
+    <filename>classBluezQt_1_1ObexFileTransferEntry.html</filename>
+    <member kind="enumvalue">
+      <name>File</name>
+      <anchorfile>classBluezQt_1_1ObexFileTransferEntry.html</anchorfile>
+      <anchor>a96cb81c16fc23e56026a6042dda2a5eaaaea379df6faa5bbf7891a37c3cf6f66a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Folder</name>
+      <anchorfile>classBluezQt_1_1ObexFileTransferEntry.html</anchorfile>
+      <anchor>a96cb81c16fc23e56026a6042dda2a5eaa1f8675c22c047431924839ebce1c2bd3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Invalid</name>
+      <anchorfile>classBluezQt_1_1ObexFileTransferEntry.html</anchorfile>
+      <anchor>a96cb81c16fc23e56026a6042dda2a5eaa61c874632260c063d5271d1b22008f74</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>Type</name>
+      <anchorfile>classBluezQt_1_1ObexFileTransferEntry.html</anchorfile>
+      <anchor>a96cb81c16fc23e56026a6042dda2a5ea</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>File</name>
+      <anchorfile>classBluezQt_1_1ObexFileTransferEntry.html</anchorfile>
+      <anchor>a96cb81c16fc23e56026a6042dda2a5eaaaea379df6faa5bbf7891a37c3cf6f66a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Folder</name>
+      <anchorfile>classBluezQt_1_1ObexFileTransferEntry.html</anchorfile>
+      <anchor>a96cb81c16fc23e56026a6042dda2a5eaa1f8675c22c047431924839ebce1c2bd3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Invalid</name>
+      <anchorfile>classBluezQt_1_1ObexFileTransferEntry.html</anchorfile>
+      <anchor>a96cb81c16fc23e56026a6042dda2a5eaa61c874632260c063d5271d1b22008f74</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>ObexFileTransferEntry</name>
+      <anchorfile>classBluezQt_1_1ObexFileTransferEntry.html</anchorfile>
+      <anchor>a5021646b12539a4a1b5fbe26ecabbcc5</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>ObexFileTransferEntry</name>
+      <anchorfile>classBluezQt_1_1ObexFileTransferEntry.html</anchorfile>
+      <anchor>a2377a1af2427263b76dafd32287a33c9</anchor>
+      <arglist>(const ObexFileTransferEntry &amp;other)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~ObexFileTransferEntry</name>
+      <anchorfile>classBluezQt_1_1ObexFileTransferEntry.html</anchorfile>
+      <anchor>a22c48a5d2d7a308db26ce11dc64d6183</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isValid</name>
+      <anchorfile>classBluezQt_1_1ObexFileTransferEntry.html</anchorfile>
+      <anchor>ab1cb1fe8bc799bd5b776556e3aecc450</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>label</name>
+      <anchorfile>classBluezQt_1_1ObexFileTransferEntry.html</anchorfile>
+      <anchor>a29a53df07a1af0d232b37d16d2a982e9</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>memoryType</name>
+      <anchorfile>classBluezQt_1_1ObexFileTransferEntry.html</anchorfile>
+      <anchor>aebaf421d45cdbca38501746d61402c7b</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>QDateTime</type>
+      <name>modificationTime</name>
+      <anchorfile>classBluezQt_1_1ObexFileTransferEntry.html</anchorfile>
+      <anchor>aad35feebdab195cb18e4d3c35d42bdf2</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>name</name>
+      <anchorfile>classBluezQt_1_1ObexFileTransferEntry.html</anchorfile>
+      <anchor>a6718d68874be22cccc1bd6fa08d551f3</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>ObexFileTransferEntry &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classBluezQt_1_1ObexFileTransferEntry.html</anchorfile>
+      <anchor>a86640ca8dd0d37bdd6298804c8f419e1</anchor>
+      <arglist>(const ObexFileTransferEntry &amp;other)</arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>permissions</name>
+      <anchorfile>classBluezQt_1_1ObexFileTransferEntry.html</anchorfile>
+      <anchor>af1f696873ec6e2339ace2ac309b5a72e</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>quint64</type>
+      <name>size</name>
+      <anchorfile>classBluezQt_1_1ObexFileTransferEntry.html</anchorfile>
+      <anchor>ad72e2de546a9535372eb4510af03b8c6</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>Type</type>
+      <name>type</name>
+      <anchorfile>classBluezQt_1_1ObexFileTransferEntry.html</anchorfile>
+      <anchor>ad3439d6272e82016e8180ddab2c670c4</anchor>
+      <arglist>() const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>BluezQt::ObexManager</name>
+    <filename>classBluezQt_1_1ObexManager.html</filename>
+    <member kind="signal">
+      <type>void</type>
+      <name>operationalChanged</name>
+      <anchorfile>classBluezQt_1_1ObexManager.html</anchorfile>
+      <anchor>a226ea92e183131a89d08d0fd489bd647</anchor>
+      <arglist>(bool operational)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>sessionAdded</name>
+      <anchorfile>classBluezQt_1_1ObexManager.html</anchorfile>
+      <anchor>a4ba57ebf20be3ffef5ff66a02f4996a9</anchor>
+      <arglist>(ObexSessionPtr session)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>sessionRemoved</name>
+      <anchorfile>classBluezQt_1_1ObexManager.html</anchorfile>
+      <anchor>abcdff30569184480a3c5b68610b234e6</anchor>
+      <arglist>(ObexSessionPtr session)</arglist>
+    </member>
+    <member kind="slot">
+      <type>PendingCall *</type>
+      <name>createSession</name>
+      <anchorfile>classBluezQt_1_1ObexManager.html</anchorfile>
+      <anchor>aac0ed95c06b3584cf8edf9ef3654842b</anchor>
+      <arglist>(const QString &amp;destination, const QVariantMap &amp;args)</arglist>
+    </member>
+    <member kind="slot">
+      <type>PendingCall *</type>
+      <name>registerAgent</name>
+      <anchorfile>classBluezQt_1_1ObexManager.html</anchorfile>
+      <anchor>a6cf632ea7220342e916bc35912316d4c</anchor>
+      <arglist>(ObexAgent *agent)</arglist>
+    </member>
+    <member kind="slot">
+      <type>PendingCall *</type>
+      <name>removeSession</name>
+      <anchorfile>classBluezQt_1_1ObexManager.html</anchorfile>
+      <anchor>a3f4deece669c60741698af1b1521f719</anchor>
+      <arglist>(const QDBusObjectPath &amp;session)</arglist>
+    </member>
+    <member kind="slot">
+      <type>PendingCall *</type>
+      <name>unregisterAgent</name>
+      <anchorfile>classBluezQt_1_1ObexManager.html</anchorfile>
+      <anchor>a9df6a2a68220ca8de485a6b8c5b2bc05</anchor>
+      <arglist>(ObexAgent *agent)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>ObexManager</name>
+      <anchorfile>classBluezQt_1_1ObexManager.html</anchorfile>
+      <anchor>aca82a396ab29da4b7d525a4739655992</anchor>
+      <arglist>(QObject *parent=nullptr)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~ObexManager</name>
+      <anchorfile>classBluezQt_1_1ObexManager.html</anchorfile>
+      <anchor>ac1d049a2bad293de325d75a8bb18773e</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>InitObexManagerJob *</type>
+      <name>init</name>
+      <anchorfile>classBluezQt_1_1ObexManager.html</anchorfile>
+      <anchor>a7565d3b20a1c055633c55909a81a796f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isInitialized</name>
+      <anchorfile>classBluezQt_1_1ObexManager.html</anchorfile>
+      <anchor>af0f22e5ff9ba30e631e69069eb4f2c60</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isOperational</name>
+      <anchorfile>classBluezQt_1_1ObexManager.html</anchorfile>
+      <anchor>a90f1fa91ad5484d17716fdf8344b2d94</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>ObexSessionPtr</type>
+      <name>sessionForPath</name>
+      <anchorfile>classBluezQt_1_1ObexManager.html</anchorfile>
+      <anchor>abfa3aa2e20f41abfda12f8679be46733</anchor>
+      <arglist>(const QDBusObjectPath &amp;path) const</arglist>
+    </member>
+    <member kind="function">
+      <type>QList&lt; ObexSessionPtr &gt;</type>
+      <name>sessions</name>
+      <anchorfile>classBluezQt_1_1ObexManager.html</anchorfile>
+      <anchor>a61784e20e2b313d001559dc13701ec06</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static PendingCall *</type>
+      <name>startService</name>
+      <anchorfile>classBluezQt_1_1ObexManager.html</anchorfile>
+      <anchor>aaaebd2b02a8bcadaa1628e7b6cb3edb1</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>BluezQt::ObexObjectPush</name>
+    <filename>classBluezQt_1_1ObexObjectPush.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>ObexObjectPush</name>
+      <anchorfile>classBluezQt_1_1ObexObjectPush.html</anchorfile>
+      <anchor>a1f905988a472daaec7b14a81ddf281ae</anchor>
+      <arglist>(const QDBusObjectPath &amp;path, QObject *parent=nullptr)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~ObexObjectPush</name>
+      <anchorfile>classBluezQt_1_1ObexObjectPush.html</anchorfile>
+      <anchor>ae7da96daeaf06793ab0b80236ae676f7</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>PendingCall *</type>
+      <name>exchangeBusinessCards</name>
+      <anchorfile>classBluezQt_1_1ObexObjectPush.html</anchorfile>
+      <anchor>a7792a29063e753a080d8cb0350b705a8</anchor>
+      <arglist>(const QString &amp;clientFileName, const QString &amp;targetFileName)</arglist>
+    </member>
+    <member kind="function">
+      <type>QDBusObjectPath</type>
+      <name>objectPath</name>
+      <anchorfile>classBluezQt_1_1ObexObjectPush.html</anchorfile>
+      <anchor>a79555d3e5439a097f6eb17e9b0684878</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>PendingCall *</type>
+      <name>pullBusinessCard</name>
+      <anchorfile>classBluezQt_1_1ObexObjectPush.html</anchorfile>
+      <anchor>a398649adad109f6d733be2f44b0c0ace</anchor>
+      <arglist>(const QString &amp;targetFileName)</arglist>
+    </member>
+    <member kind="function">
+      <type>PendingCall *</type>
+      <name>sendFile</name>
+      <anchorfile>classBluezQt_1_1ObexObjectPush.html</anchorfile>
+      <anchor>a938f8742f448dd2d23321269cfafe85a</anchor>
+      <arglist>(const QString &amp;fileName)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>BluezQt::ObexSession</name>
+    <filename>classBluezQt_1_1ObexSession.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>~ObexSession</name>
+      <anchorfile>classBluezQt_1_1ObexSession.html</anchorfile>
+      <anchor>add86c65ce8e674ca7be1ff48f73454f9</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>quint8</type>
+      <name>channel</name>
+      <anchorfile>classBluezQt_1_1ObexSession.html</anchorfile>
+      <anchor>a78b1b6a839fd22014130a35b82dd2ec7</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>destination</name>
+      <anchorfile>classBluezQt_1_1ObexSession.html</anchorfile>
+      <anchor>af6dcf806446e511104b87a079eee5e61</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>PendingCall *</type>
+      <name>getCapabilities</name>
+      <anchorfile>classBluezQt_1_1ObexSession.html</anchorfile>
+      <anchor>a059b9ef347b8b869b2344c656e1435e6</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>QDBusObjectPath</type>
+      <name>objectPath</name>
+      <anchorfile>classBluezQt_1_1ObexSession.html</anchorfile>
+      <anchor>af3a675a1af289c12d46866f0003a8609</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>root</name>
+      <anchorfile>classBluezQt_1_1ObexSession.html</anchorfile>
+      <anchor>a3684d12c6309490409d0aea7d88853ec</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>source</name>
+      <anchorfile>classBluezQt_1_1ObexSession.html</anchorfile>
+      <anchor>a48ab4357bb10ab11045725f792815f96</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>target</name>
+      <anchorfile>classBluezQt_1_1ObexSession.html</anchorfile>
+      <anchor>a8ec58c53de8a4b126ae07d37a66e1334</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>ObexSessionPtr</type>
+      <name>toSharedPtr</name>
+      <anchorfile>classBluezQt_1_1ObexSession.html</anchorfile>
+      <anchor>a21a98461b343ffbf17e1502d5a8add1e</anchor>
+      <arglist>() const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>BluezQt::ObexTransfer</name>
+    <filename>classBluezQt_1_1ObexTransfer.html</filename>
+    <member kind="enumvalue">
+      <name>Active</name>
+      <anchorfile>classBluezQt_1_1ObexTransfer.html</anchorfile>
+      <anchor>ac283f246e2fa61a3498df12b64bbeee9a8d703888a57232cc47598f7cc2c149d3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Complete</name>
+      <anchorfile>classBluezQt_1_1ObexTransfer.html</anchorfile>
+      <anchor>ac283f246e2fa61a3498df12b64bbeee9afdececc00f2c8bb424081da0a7c912a2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Error</name>
+      <anchorfile>classBluezQt_1_1ObexTransfer.html</anchorfile>
+      <anchor>ac283f246e2fa61a3498df12b64bbeee9a6ef54feec40f4f05e0ce1f0b142f99f1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Queued</name>
+      <anchorfile>classBluezQt_1_1ObexTransfer.html</anchorfile>
+      <anchor>ac283f246e2fa61a3498df12b64bbeee9ad450c5aaec82738e09ae6c511425aa64</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>Status</name>
+      <anchorfile>classBluezQt_1_1ObexTransfer.html</anchorfile>
+      <anchor>ac283f246e2fa61a3498df12b64bbeee9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Queued</name>
+      <anchorfile>classBluezQt_1_1ObexTransfer.html</anchorfile>
+      <anchor>ac283f246e2fa61a3498df12b64bbeee9ad450c5aaec82738e09ae6c511425aa64</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Active</name>
+      <anchorfile>classBluezQt_1_1ObexTransfer.html</anchorfile>
+      <anchor>ac283f246e2fa61a3498df12b64bbeee9a8d703888a57232cc47598f7cc2c149d3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Suspended</name>
+      <anchorfile>classBluezQt_1_1ObexTransfer.html</anchorfile>
+      <anchor>ac283f246e2fa61a3498df12b64bbeee9a929dd8c100813cb149ec25bb405302c1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Complete</name>
+      <anchorfile>classBluezQt_1_1ObexTransfer.html</anchorfile>
+      <anchor>ac283f246e2fa61a3498df12b64bbeee9afdececc00f2c8bb424081da0a7c912a2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Error</name>
+      <anchorfile>classBluezQt_1_1ObexTransfer.html</anchorfile>
+      <anchor>ac283f246e2fa61a3498df12b64bbeee9a6ef54feec40f4f05e0ce1f0b142f99f1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Unknown</name>
+      <anchorfile>classBluezQt_1_1ObexTransfer.html</anchorfile>
+      <anchor>ac283f246e2fa61a3498df12b64bbeee9a48da828ced3f069597ccaa2b83519282</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Suspended</name>
+      <anchorfile>classBluezQt_1_1ObexTransfer.html</anchorfile>
+      <anchor>ac283f246e2fa61a3498df12b64bbeee9a929dd8c100813cb149ec25bb405302c1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Unknown</name>
+      <anchorfile>classBluezQt_1_1ObexTransfer.html</anchorfile>
+      <anchor>ac283f246e2fa61a3498df12b64bbeee9a48da828ced3f069597ccaa2b83519282</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>fileNameChanged</name>
+      <anchorfile>classBluezQt_1_1ObexTransfer.html</anchorfile>
+      <anchor>a391bfcfebef73521166ef7efabf4bb5c</anchor>
+      <arglist>(const QString &amp;fileName)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>statusChanged</name>
+      <anchorfile>classBluezQt_1_1ObexTransfer.html</anchorfile>
+      <anchor>a0818260d205f1fb8f8272627319ca7b2</anchor>
+      <arglist>(Status status)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>transferredChanged</name>
+      <anchorfile>classBluezQt_1_1ObexTransfer.html</anchorfile>
+      <anchor>a2d49db94723ff051b9fad040f9bc8500</anchor>
+      <arglist>(quint64 transferred)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~ObexTransfer</name>
+      <anchorfile>classBluezQt_1_1ObexTransfer.html</anchorfile>
+      <anchor>abf58595fea2487aa9d7cc166547e08e4</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>PendingCall *</type>
+      <name>cancel</name>
+      <anchorfile>classBluezQt_1_1ObexTransfer.html</anchorfile>
+      <anchor>a293b3a566821e75706691d15e894ac49</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>fileName</name>
+      <anchorfile>classBluezQt_1_1ObexTransfer.html</anchorfile>
+      <anchor>af1452c724abb08927347fc24fee6cd31</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isSuspendable</name>
+      <anchorfile>classBluezQt_1_1ObexTransfer.html</anchorfile>
+      <anchor>a3537f70b7bf5f3acb63b4f6f9525c6cf</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>name</name>
+      <anchorfile>classBluezQt_1_1ObexTransfer.html</anchorfile>
+      <anchor>afeffbfe6d69b640e7008e3938a52f94f</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>QDBusObjectPath</type>
+      <name>objectPath</name>
+      <anchorfile>classBluezQt_1_1ObexTransfer.html</anchorfile>
+      <anchor>ae91e8ecce55914a801cec53f300b25c0</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>PendingCall *</type>
+      <name>resume</name>
+      <anchorfile>classBluezQt_1_1ObexTransfer.html</anchorfile>
+      <anchor>a53b610a72aed0a452e868d47fc300991</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>quint64</type>
+      <name>size</name>
+      <anchorfile>classBluezQt_1_1ObexTransfer.html</anchorfile>
+      <anchor>aa2c60836d78c464f773b486319d90d3a</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>Status</type>
+      <name>status</name>
+      <anchorfile>classBluezQt_1_1ObexTransfer.html</anchorfile>
+      <anchor>a6cf6fa19f8d264b0bd33451111e3aa74</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>PendingCall *</type>
+      <name>suspend</name>
+      <anchorfile>classBluezQt_1_1ObexTransfer.html</anchorfile>
+      <anchor>aba02526121016142ccc3fe8880e0b3f2</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>quint64</type>
+      <name>time</name>
+      <anchorfile>classBluezQt_1_1ObexTransfer.html</anchorfile>
+      <anchor>a94c6fb96816db236a377b08591b03f60</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>ObexTransferPtr</type>
+      <name>toSharedPtr</name>
+      <anchorfile>classBluezQt_1_1ObexTransfer.html</anchorfile>
+      <anchor>a2e40676d5bda37cecb721f4d360bb8b9</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>quint64</type>
+      <name>transferred</name>
+      <anchorfile>classBluezQt_1_1ObexTransfer.html</anchorfile>
+      <anchor>a703cdfb8879220e11cb4176dbb5bb4a9</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>type</name>
+      <anchorfile>classBluezQt_1_1ObexTransfer.html</anchorfile>
+      <anchor>aa9f88e3aa2d032b1aed555287c7a7db6</anchor>
+      <arglist>() const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>BluezQt::PendingCall</name>
+    <filename>classBluezQt_1_1PendingCall.html</filename>
+    <member kind="enumvalue">
+      <name>AlreadyConnected</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7a7f25f853c23e4f6831e804e94093ec7f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>AlreadyExists</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7a0574c4cd159bacccc86958d70119829d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>AuthenticationCanceled</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7a3fd1b983f8eea4472c6f190a1c10c515</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>AuthenticationFailed</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7ae7a798c6de42196c4f3ae7738da94a4d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>AuthenticationRejected</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7a49278195bdb01d6eacee4ee06381ed81</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>AuthenticationTimeout</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7a413ae598b8930a715e18fc833f8659c6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Canceled</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7ab7c7dba42cbde91d3663495bb750d86a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>ConnectFailed</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7a39af53db138a0ca49b507c10e5b40ec4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>ConnectionAttemptFailed</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7a1fcf503a7c83e70f2f888b011137f0b1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>DBusError</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7a92c546f983d5ad8b5c68e9fb6fba93d0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>DoesNotExist</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7a03ff6281dfdf9eca9df94c3f9d66132c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>Error</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>NoError</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7a088da05e76d7345bbabb61d1921375d1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>NotReady</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7a3d7385d2cf2c285a3a9ea2ed822a9869</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Failed</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7a4a8d78ece35cc628e7da3c12c2e1679b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Rejected</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7a9d5a08a6596112412986d91c53ee18fd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Canceled</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7ab7c7dba42cbde91d3663495bb750d86a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>InvalidArguments</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7a673110bd7dfbe5d0528c9f822de24bf4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>AlreadyExists</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7a0574c4cd159bacccc86958d70119829d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>DoesNotExist</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7a03ff6281dfdf9eca9df94c3f9d66132c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>InProgress</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7a70be30fb5a7dc53c8e0cac3d22253e8a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>NotInProgress</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7a9f7dcc7945e5584f9f700c4cac657665</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>AlreadyConnected</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7a7f25f853c23e4f6831e804e94093ec7f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>ConnectFailed</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7a39af53db138a0ca49b507c10e5b40ec4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>NotConnected</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7ab800fbef0817b5e7d58fa68591f6d76c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>NotSupported</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7a0e2ea9795148150ba4be4406283cfcd1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>NotAuthorized</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7a955c68192abe5031f73da36581c2b2c9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>AuthenticationCanceled</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7a3fd1b983f8eea4472c6f190a1c10c515</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>AuthenticationFailed</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7ae7a798c6de42196c4f3ae7738da94a4d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>AuthenticationRejected</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7a49278195bdb01d6eacee4ee06381ed81</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>AuthenticationTimeout</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7a413ae598b8930a715e18fc833f8659c6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>ConnectionAttemptFailed</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7a1fcf503a7c83e70f2f888b011137f0b1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>DBusError</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7a92c546f983d5ad8b5c68e9fb6fba93d0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>InternalError</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7ab604446bbccd8b7d58d3ed8764858abd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>UnknownError</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7a7f5290767f0ba74550b935810e3ac426</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Failed</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7a4a8d78ece35cc628e7da3c12c2e1679b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>InProgress</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7a70be30fb5a7dc53c8e0cac3d22253e8a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>InternalError</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7ab604446bbccd8b7d58d3ed8764858abd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>InvalidArguments</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7a673110bd7dfbe5d0528c9f822de24bf4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>NoError</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7a088da05e76d7345bbabb61d1921375d1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>NotAuthorized</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7a955c68192abe5031f73da36581c2b2c9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>NotConnected</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7ab800fbef0817b5e7d58fa68591f6d76c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>NotInProgress</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7a9f7dcc7945e5584f9f700c4cac657665</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>NotReady</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7a3d7385d2cf2c285a3a9ea2ed822a9869</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>NotSupported</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7a0e2ea9795148150ba4be4406283cfcd1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Rejected</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7a9d5a08a6596112412986d91c53ee18fd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>UnknownError</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>ad2ac68d186b5a977883992a8ac96b3c7a7f5290767f0ba74550b935810e3ac426</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>finished</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>a5d004c0aedfedfad41284584a22043ec</anchor>
+      <arglist>(PendingCall *call)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~PendingCall</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>aee041d74398603cb12b077f60f6ec229</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>error</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>a0f83383ee1464262e6a1044372e1b6be</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>errorText</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>abb9a0f09d3919963708bcc4efc62a1d1</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isFinished</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>a4a42e8e1db1a1c7bd64ccd937cd6aeb8</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setUserData</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>af7b7f29c5b2132cf726e086f23d1c67b</anchor>
+      <arglist>(const QVariant &amp;userData)</arglist>
+    </member>
+    <member kind="function">
+      <type>QVariant</type>
+      <name>userData</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>a4a104a42f5f949583fcf24b5c48f5fd5</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>QVariant</type>
+      <name>value</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>a03a64966657200c1e8210ce8e857c8a0</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>QVariantList</type>
+      <name>values</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>a5175e5b7e5a57e4f2a0a5f027ec471f4</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>waitForFinished</name>
+      <anchorfile>classBluezQt_1_1PendingCall.html</anchorfile>
+      <anchor>afe87b16dce673bbd3fa1c0b0c2049ee1</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>BluezQt::Profile</name>
+    <filename>classBluezQt_1_1Profile.html</filename>
+    <member kind="enumvalue">
+      <name>ClientRole</name>
+      <anchorfile>classBluezQt_1_1Profile.html</anchorfile>
+      <anchor>acbdb8866c1c46f0da1e15c644bfdc5b9a54ab171911ca47303aa13ab857b028a3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>LocalRole</name>
+      <anchorfile>classBluezQt_1_1Profile.html</anchorfile>
+      <anchor>acbdb8866c1c46f0da1e15c644bfdc5b9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>ClientRole</name>
+      <anchorfile>classBluezQt_1_1Profile.html</anchorfile>
+      <anchor>acbdb8866c1c46f0da1e15c644bfdc5b9a54ab171911ca47303aa13ab857b028a3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>ServerRole</name>
+      <anchorfile>classBluezQt_1_1Profile.html</anchorfile>
+      <anchor>acbdb8866c1c46f0da1e15c644bfdc5b9a55a788c0a8b0038acdd204e1b0ac487f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>ServerRole</name>
+      <anchorfile>classBluezQt_1_1Profile.html</anchorfile>
+      <anchor>acbdb8866c1c46f0da1e15c644bfdc5b9a55a788c0a8b0038acdd204e1b0ac487f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Profile</name>
+      <anchorfile>classBluezQt_1_1Profile.html</anchorfile>
+      <anchor>a490b2461cce1a0a105c1c031ed1c930a</anchor>
+      <arglist>(QObject *parent=nullptr)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~Profile</name>
+      <anchorfile>classBluezQt_1_1Profile.html</anchorfile>
+      <anchor>a56f36ebbee801fb3ea407108161fd79e</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>QSharedPointer&lt; QLocalSocket &gt;</type>
+      <name>createSocket</name>
+      <anchorfile>classBluezQt_1_1Profile.html</anchorfile>
+      <anchor>ae8051d7084719570914b4988d4a463bd</anchor>
+      <arglist>(const QDBusUnixFileDescriptor &amp;fd)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>newConnection</name>
+      <anchorfile>classBluezQt_1_1Profile.html</anchorfile>
+      <anchor>a0119c323ab12d76a36aa5b70c8f379e4</anchor>
+      <arglist>(DevicePtr device, const QDBusUnixFileDescriptor &amp;fd, const QVariantMap &amp;properties, const Request&lt;&gt; &amp;request)</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual QDBusObjectPath</type>
+      <name>objectPath</name>
+      <anchorfile>classBluezQt_1_1Profile.html</anchorfile>
+      <anchor>ae74c2ca928a7adca833540f2c7e1f215</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>release</name>
+      <anchorfile>classBluezQt_1_1Profile.html</anchorfile>
+      <anchor>a3435fb1a5b90140fe863881792b80cd2</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>requestDisconnection</name>
+      <anchorfile>classBluezQt_1_1Profile.html</anchorfile>
+      <anchor>abf46b0a0722222bf5c9ae7af6cdbd280</anchor>
+      <arglist>(DevicePtr device, const Request&lt;&gt; &amp;request)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setAutoConnect</name>
+      <anchorfile>classBluezQt_1_1Profile.html</anchorfile>
+      <anchor>a5e4a158c7f54af64dce55faf2454a952</anchor>
+      <arglist>(bool autoConnect)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setChannel</name>
+      <anchorfile>classBluezQt_1_1Profile.html</anchorfile>
+      <anchor>af46969c363fec0dcff837b048e0d0abc</anchor>
+      <arglist>(quint16 channel)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setFeatures</name>
+      <anchorfile>classBluezQt_1_1Profile.html</anchorfile>
+      <anchor>a8748e034e3297c8af1a6b1601ff14ebd</anchor>
+      <arglist>(quint16 features)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setLocalRole</name>
+      <anchorfile>classBluezQt_1_1Profile.html</anchorfile>
+      <anchor>a03e10c62ad52dd93ec88f5a315803016</anchor>
+      <arglist>(LocalRole role)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setName</name>
+      <anchorfile>classBluezQt_1_1Profile.html</anchorfile>
+      <anchor>a5161415f40ebb074b7f9b93c3cb325e7</anchor>
+      <arglist>(const QString &amp;name)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setPsm</name>
+      <anchorfile>classBluezQt_1_1Profile.html</anchorfile>
+      <anchor>acaf1a2d7772e1bd8ebd8f3dae4f6c0b8</anchor>
+      <arglist>(quint16 psm)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setRequireAuthentication</name>
+      <anchorfile>classBluezQt_1_1Profile.html</anchorfile>
+      <anchor>a68f5c802bb3fdae6775f8c2bc88669df</anchor>
+      <arglist>(bool require)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setRequireAuthorization</name>
+      <anchorfile>classBluezQt_1_1Profile.html</anchorfile>
+      <anchor>a2850d751c46fbbce9e901a4ff3797a4f</anchor>
+      <arglist>(bool require)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setService</name>
+      <anchorfile>classBluezQt_1_1Profile.html</anchorfile>
+      <anchor>aab67b47b754f6acb0629802f1a25723d</anchor>
+      <arglist>(const QString &amp;service)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setServiceRecord</name>
+      <anchorfile>classBluezQt_1_1Profile.html</anchorfile>
+      <anchor>a02b15e0cbea478541f6751a55e8d1c2d</anchor>
+      <arglist>(const QString &amp;serviceRecord)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setVersion</name>
+      <anchorfile>classBluezQt_1_1Profile.html</anchorfile>
+      <anchor>ada4d075f89070ca559b4baddd7bf9057</anchor>
+      <arglist>(quint16 version)</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual QString</type>
+      <name>uuid</name>
+      <anchorfile>classBluezQt_1_1Profile.html</anchorfile>
+      <anchor>a694522e8b5cfe4ceb8cc68c0185cb0b7</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>BluezQt::Request</name>
+    <filename>classBluezQt_1_1Request.html</filename>
+    <templarg>T</templarg>
+    <member kind="function">
+      <type></type>
+      <name>Request</name>
+      <anchorfile>classBluezQt_1_1Request.html</anchorfile>
+      <anchor>aee7757ccd841c066dcd38fb732c7e215</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Request</name>
+      <anchorfile>classBluezQt_1_1Request.html</anchorfile>
+      <anchor>afdef7a34acf86fdb1d26c8f8c72106f7</anchor>
+      <arglist>(const Request &amp;other)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~Request</name>
+      <anchorfile>classBluezQt_1_1Request.html</anchorfile>
+      <anchor>a696e65459d589c56910cf7342d3f7d4a</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>accept</name>
+      <anchorfile>classBluezQt_1_1Request.html</anchorfile>
+      <anchor>a474378b1e58ba5dacf1318c57f920fa0</anchor>
+      <arglist>(T returnValue) const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>cancel</name>
+      <anchorfile>classBluezQt_1_1Request.html</anchorfile>
+      <anchor>a6db9d93c346c9b4f204c86b8ab02d25b</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>Request &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classBluezQt_1_1Request.html</anchorfile>
+      <anchor>a0f5189b804d7213cdb5f38b4f84993e5</anchor>
+      <arglist>(const Request &amp;other)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>reject</name>
+      <anchorfile>classBluezQt_1_1Request.html</anchorfile>
+      <anchor>a7a2b537a6fb706fc3a343cd9e7aa4ffd</anchor>
+      <arglist>() const</arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>BluezQt::Services</name>
+    <filename>namespaceBluezQt_1_1Services.html</filename>
+  </compound>
+  <compound kind="page">
+    <name>index</name>
+    <title>BluezQt</title>
+    <filename>index</filename>
+  </compound>
+</tagfile>

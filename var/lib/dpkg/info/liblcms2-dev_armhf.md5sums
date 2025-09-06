@@ -1,0 +1,13 @@
+5e8d34c681c52fc62218e003f6cafa5b  usr/include/lcms2.h
+664e4322b2e6e915d47f66e8ba7b570a  usr/include/lcms2_plugin.h
+41bfb38330ae143d7db5648877e276f7  usr/lib/arm-linux-gnueabihf/pkgconfig/lcms2.pc
+1850b1223e45ec3f861b2bb594f3df87  usr/share/doc-base/lcms-api
+077941f6dc0e40ba2b8f0502b2906507  usr/share/doc-base/lcms-plugin
+ef4885fdac054663d3584c7250665e33  usr/share/doc-base/lcms-tutorial
+960fe8724c52672dd32c72a15abef68d  usr/share/doc/liblcms2-dev/LittleCMS2.9 API.pdf.gz
+88e3fcaf184e162ce7ece62512639429  usr/share/doc/liblcms2-dev/LittleCMS2.9 Plugin API.pdf.gz
+a100a0cbd8821f72bd7c13a990436a84  usr/share/doc/liblcms2-dev/LittleCMS2.9 tutorial.pdf.gz
+6b0ff6bc8d32d3c3c76d8d49fd3c74ad  usr/share/doc/liblcms2-dev/changelog.Debian.gz
+3d4ca3d72e40cb60804b6288e195a8b7  usr/share/doc/liblcms2-dev/changelog.gz
+8fa5ecfda9588d33fc74c1d8ef4b3c34  usr/share/doc/liblcms2-dev/copyright
+8f7e77a169b62c732f413028f254860f  usr/share/doc/liblcms2-dev/src.zip

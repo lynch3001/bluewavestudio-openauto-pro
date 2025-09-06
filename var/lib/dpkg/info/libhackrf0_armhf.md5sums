@@ -1,0 +1,5 @@
+ffd9ca8bb5d704fd67d149e49d0897f5  lib/udev/rules.d/60-libhackrf0.rules
+d93749f123df9a1ddf030ed26a271b28  usr/lib/arm-linux-gnueabihf/libhackrf.so.0.5.0
+6167e566a307ac9a73868559ff7d1d6d  usr/share/doc/libhackrf0/changelog.Debian.gz
+a2b3f2484c548ee59f4d55b1a5108a2b  usr/share/doc/libhackrf0/copyright
+5aca0cb10cdc4605b520d17aa357b662  usr/share/metainfo/com.greatscottgadgets.hackrf.metainfo.xml

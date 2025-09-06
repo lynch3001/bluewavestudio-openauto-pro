@@ -1,0 +1,10 @@
+Document: freetype2-doc
+Title: FreeType 2 Development Documentation
+Author: Various
+Abstract: Development documentation for FreeType 2.
+Section: Programming/C
+
+Format: HTML
+Index: /usr/share/doc/freetype2-doc/documentation.html
+Files: /usr/share/doc/freetype2-doc/*.html
+       /usr/share/doc/freetype2-doc/reference/*.html

@@ -1,0 +1,15 @@
+ac00408f78bb0ebe8f815f0776bc999e  usr/lib/python3/dist-packages/twython-3.7.0.egg-info
+7b2009f7c46824b1e21e9bee4811cf5e  usr/lib/python3/dist-packages/twython/__init__.py
+43e133575c342da2cc981bcd5d93caae  usr/lib/python3/dist-packages/twython/advisory.py
+5f6931c24752f99ca8a1651849939504  usr/lib/python3/dist-packages/twython/api.py
+3c475912767321432414ae26dea3dc33  usr/lib/python3/dist-packages/twython/compat.py
+bc2e0159bff2fde06531876629a1bd07  usr/lib/python3/dist-packages/twython/endpoints.py
+d8f630f4d0547f7b5a52153ee4343725  usr/lib/python3/dist-packages/twython/exceptions.py
+858f87743d1e15914fa6a758db919962  usr/lib/python3/dist-packages/twython/helpers.py
+d429cdf98383291519cdcb477749fca6  usr/lib/python3/dist-packages/twython/streaming/__init__.py
+5a1430ed68f36b6584a6060985495180  usr/lib/python3/dist-packages/twython/streaming/api.py
+3c8a820968860f183ee981fb26ab398b  usr/lib/python3/dist-packages/twython/streaming/types.py
+fa2d08b58520996461a9e0594271eb5e  usr/share/doc/python3-twython/README.rst.gz
+e06b57f9fd655bbfe7b34ba4c5cf30d1  usr/share/doc/python3-twython/changelog.Debian.gz
+46909f0f2e0c7dedbc74e15911f183c6  usr/share/doc/python3-twython/changelog.gz
+4bdfbf47feaf2f4bb541300a55ba7448  usr/share/doc/python3-twython/copyright

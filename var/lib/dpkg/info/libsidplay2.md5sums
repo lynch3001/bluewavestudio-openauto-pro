@@ -1,0 +1,5 @@
+df28ef994b162a2e4848d610c988953f  usr/lib/libsidplay2.so.1.0.1
+79a1ac68f457418d0880a25dd76ba0ca  usr/share/doc/libsidplay2/changelog.Debian.gz
+60208fb93e0b4a86c7f7165d73ddef6e  usr/share/doc/libsidplay2/changelog.gz
+8d468c3c215d5e7551aeb7502f2c6cba  usr/share/doc/libsidplay2/copyright
+79f4dd441e017027a03ffd6d07dc79f7  usr/share/lintian/overrides/libsidplay2

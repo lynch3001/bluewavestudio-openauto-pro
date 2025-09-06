@@ -1,0 +1,43 @@
+#!/bin/sh
+
+set -e
+
+ARCH=$(dpkg --print-architecture)
+
+case "$1" in
+  configure)
+      if [ -e /usr/bin/chromium-browser ] ; then
+	    update-alternatives --install /usr/bin/x-www-browser x-www-browser /usr/bin/chromium-browser 90
+      fi
+
+      if [ -e /usr/bin/chromium ] ; then
+	    update-alternatives --install /usr/bin/x-www-browser x-www-browser /usr/bin/chromium 60
+      fi
+      getent passwd | while read line; do
+        USHELL=$(echo $line | cut -d: -f7)
+        if grep -q $USHELL /etc/shells ; then
+          HOME_DIR=$(echo $line | cut -d: -f6)/
+          PREF_FILE=${HOME_DIR}.config/chromium/Default/Preferences
+          if [ -f "$PREF_FILE" ] ; then
+            sed "$PREF_FILE" -i -e 's/"default_content_setting_values":{"plugins":2}/"default_content_setting_values":{"plugins":0}/'
+          fi
+        fi
+      done
+      if [ "$ARCH" !=  "armhf" ] ; then
+		dpkg-divert --add --package rpi-chromium-mods --rename --divert /etc/chromium/master_preferences.distrib /etc/chromium/master_preferences
+		[ \! -e /etc/chromium/master_preferences -o -L /etc/chromium/master_preferences ] && ln -sf /etc/site/master_preferences /etc/chromium/master_preferences
+      fi
+  ;;
+
+  abort-upgrade|abort-remove|abort-deconfigure)
+  ;;
+
+  *)
+      echo "postinst called with unknown argument \`$1'" >&2
+      exit 1
+  ;;
+esac
+
+
+
+exit 0

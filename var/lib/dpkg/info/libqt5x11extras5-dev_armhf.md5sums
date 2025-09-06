@@ -1,0 +1,14 @@
+248942f801680fe5b4e1b9ecf6045db9  usr/include/arm-linux-gnueabihf/qt5/QtX11Extras/QX11Info
+5efe2f9f134a3cdccf21a03044520c6b  usr/include/arm-linux-gnueabihf/qt5/QtX11Extras/QtX11Extras
+791f79698486020f9e916ce207434b02  usr/include/arm-linux-gnueabihf/qt5/QtX11Extras/QtX11ExtrasDepends
+3ab45789d2f89f490790bd11092dc8ed  usr/include/arm-linux-gnueabihf/qt5/QtX11Extras/QtX11ExtrasVersion
+cee9a4fe4ab9cd33c711908eeaeaee23  usr/include/arm-linux-gnueabihf/qt5/QtX11Extras/qtx11extrasglobal.h
+84865aa9ccbdc508cf489fdaefde990e  usr/include/arm-linux-gnueabihf/qt5/QtX11Extras/qtx11extrasversion.h
+bf90dba6ff828dd2f7c2fffa4be2221f  usr/include/arm-linux-gnueabihf/qt5/QtX11Extras/qx11info_x11.h
+1d6b861146684e0569361fa3fe27494c  usr/lib/arm-linux-gnueabihf/cmake/Qt5X11Extras/Qt5X11ExtrasConfig.cmake
+1429bedf612e96ccdadfbe5852363e87  usr/lib/arm-linux-gnueabihf/cmake/Qt5X11Extras/Qt5X11ExtrasConfigVersion.cmake
+3a23ad4148d0dc59ff3149a2ea4694e9  usr/lib/arm-linux-gnueabihf/libQt5X11Extras.prl
+a1c0f81ca0a6e1878536c6d1aee36421  usr/lib/arm-linux-gnueabihf/pkgconfig/Qt5X11Extras.pc
+d53956d139e7bfcd77df23a93c54bf53  usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_x11extras.pri
+35c126fb26725deb16204df647e1714c  usr/share/doc/libqt5x11extras5-dev/changelog.Debian.gz
+68031219f675d9661efdddd66ff8f761  usr/share/doc/libqt5x11extras5-dev/copyright

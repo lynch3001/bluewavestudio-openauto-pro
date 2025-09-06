@@ -1,0 +1,4 @@
+/etc/logcheck/ignore.d.server/rng-tools
+/etc/logcheck/violations.ignore.d/rng-tools
+/etc/init.d/rng-tools
+/etc/default/rng-tools

@@ -1,0 +1,7 @@
+[Adding or changing system-wide CUPS settings]
+Identity=unix-group:lpadmin
+Action=org.opensuse.cupspkhelper.mechanism.*
+ResultAny=no
+ResultInactive=no
+ResultActive=yes
+

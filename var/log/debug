@@ -1,0 +1,38 @@
+Mar 17 20:56:46 raspberrypi rtkit-daemon[818]: Supervising 1 threads of 1 processes of 1 users.
+Mar 17 20:56:46 raspberrypi rtkit-daemon[818]: Supervising 2 threads of 1 processes of 1 users.
+Mar 17 20:56:46 raspberrypi rtkit-daemon[818]: Supervising 2 threads of 1 processes of 1 users.
+Mar 17 20:56:46 raspberrypi rtkit-daemon[818]: Supervising 3 threads of 1 processes of 1 users.
+Mar 17 20:58:57 raspberrypi PackageKit: daemon start
+Mar 17 21:04:02 raspberrypi PackageKit: daemon quit
+Mar 17 21:12:15 raspberrypi PackageKit: daemon start
+Mar 17 21:13:19 raspberrypi kernel: [    0.000000] On node 0 totalpages: 2061312
+Mar 17 21:13:19 raspberrypi kernel: [    0.000000]   DMA zone: 1728 pages used for memmap
+Mar 17 21:13:19 raspberrypi kernel: [    0.000000]   DMA zone: 0 pages reserved
+Mar 17 21:13:19 raspberrypi kernel: [    0.000000]   DMA zone: 196608 pages, LIFO batch:63
+Mar 17 21:13:19 raspberrypi kernel: [    0.000000]   HighMem zone: 1864704 pages, LIFO batch:63
+Mar 17 21:13:19 raspberrypi kernel: [    0.000000] pcpu-alloc: s50828 r8192 d22900 u81920 alloc=20*4096
+Mar 17 21:13:19 raspberrypi kernel: [    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+Mar 17 21:13:19 raspberrypi kernel: [    1.404324] dwc_otg: FIQ enabled
+Mar 17 21:13:19 raspberrypi kernel: [    1.404339] dwc_otg: NAK holdoff enabled
+Mar 17 21:13:19 raspberrypi kernel: [    1.404354] dwc_otg: FIQ split-transaction FSM enabled
+Mar 17 21:13:19 raspberrypi kernel: [    1.404371] Module dwc_common_port init
+Mar 17 21:13:19 raspberrypi thd[399]: Found socket passed from systemd
+Mar 17 21:13:19 raspberrypi kernel: [    1.725076]   with arguments:
+Mar 17 21:13:19 raspberrypi kernel: [    1.725090]     /sbin/init
+Mar 17 21:13:19 raspberrypi kernel: [    1.725105]     splash
+Mar 17 21:13:19 raspberrypi kernel: [    1.725119]   with environment:
+Mar 17 21:13:19 raspberrypi kernel: [    1.725134]     HOME=/
+Mar 17 21:13:19 raspberrypi kernel: [    1.725147]     TERM=linux
+Mar 17 21:13:19 raspberrypi kernel: [    5.070614] checking generic (3ea83000 177000) vs hw (0 ffffffffffffffff)
+Mar 17 21:13:19 raspberrypi kernel: [    5.325171] brcmfmac: F1 signature read @0x18000000=0x15264345
+Mar 17 21:13:33 raspberrypi rtkit-daemon[797]: Successfully called chroot.
+Mar 17 21:13:33 raspberrypi rtkit-daemon[797]: Successfully dropped privileges.
+Mar 17 21:13:33 raspberrypi rtkit-daemon[797]: Successfully limited resources.
+Mar 17 21:13:33 raspberrypi rtkit-daemon[797]: Running.
+Mar 17 21:13:33 raspberrypi rtkit-daemon[797]: Watchdog thread running.
+Mar 17 21:13:33 raspberrypi rtkit-daemon[797]: Canary thread running.
+Mar 17 21:13:34 raspberrypi rtkit-daemon[797]: Supervising 1 threads of 1 processes of 1 users.
+Mar 17 21:13:36 raspberrypi rtkit-daemon[797]: Supervising 1 threads of 1 processes of 1 users.
+Mar 17 21:13:36 raspberrypi rtkit-daemon[797]: Supervising 2 threads of 1 processes of 1 users.
+Mar 17 21:13:36 raspberrypi rtkit-daemon[797]: Supervising 2 threads of 1 processes of 1 users.
+Mar 17 21:13:36 raspberrypi rtkit-daemon[797]: Supervising 3 threads of 1 processes of 1 users.

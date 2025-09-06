@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libglusterfs.so.0.0.1
+/usr/share
+/usr/share/doc
+/usr/share/doc/libglusterfs0
+/usr/share/doc/libglusterfs0/changelog.Debian.gz
+/usr/share/doc/libglusterfs0/changelog.gz
+/usr/share/doc/libglusterfs0/copyright
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libglusterfs0
+/usr/lib/arm-linux-gnueabihf/libglusterfs.so.0

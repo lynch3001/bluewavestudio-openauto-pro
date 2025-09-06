@@ -1,0 +1,16 @@
+658a489e67a6180514234a49f21b86ca  usr/lib/mime/packages/vlc
+75c3af15068e9cb9c0639747d91a1a65  usr/share/applications/vlc.desktop
+143dd060cd683f7da6fa97b4de08f0bc  usr/share/bug/vlc/control
+db5a9ef7d588ac8bafe061d1968be5cd  usr/share/bug/vlc/presubj
+25d5c509236ddcaa56c81d19aea24848  usr/share/doc/vlc/AUTHORS.gz
+87fd508b24b301745f8614a32599dce0  usr/share/doc/vlc/README
+60df97ab30fe9c9b13f30b3bae342b30  usr/share/doc/vlc/THANKS.gz
+37467d5ce4d242efd1f03dc9e91b12dd  usr/share/doc/vlc/changelog.Debian.gz
+c6362b61e68a63912965a8c76532f3da  usr/share/doc/vlc/changelog.gz
+3d80bde9e43c6c323bf2f26bae755756  usr/share/doc/vlc/copyright
+75577cb6c85994d05d9588681cb82374  usr/share/lintian/overrides/vlc
+06d8cac65254a30c1e11384ff20e5340  usr/share/metainfo/vlc.appdata.xml
+d3b224997a87adedc5e66beb3b9e6757  usr/share/solid/actions/vlc-openbd.desktop
+6fd0d6ef27c2aa7c7efa91b281dede2d  usr/share/solid/actions/vlc-opencda.desktop
+9a2cea43b729ac43077ae19ca4fb718b  usr/share/solid/actions/vlc-opendvd.desktop
+56f96662953ddca2b3cacd0300a4bcfc  usr/share/solid/actions/vlc-openvcd.desktop

@@ -1,0 +1,38 @@
+# Policy Module for RedHat-based systems.
+# Compile with
+#   make -f /usr/share/selinux/devel/Makefile
+#   (may need to install selinux-policy-devel package)
+policy_module(realvnc-server-cups 1.1.0)
+
+require {
+	type tmp_t;
+	type user_tmp_t;
+	type init_t;
+	type initrc_t;
+	type cupsd_t;
+	type unconfined_t;
+	class sock_file write;
+	class unix_stream_socket connectto;
+	class dir search;
+}
+
+allow cupsd_t unconfined_t:unix_stream_socket connectto;
+allow cupsd_t initrc_t:unix_stream_socket connectto;
+allow cupsd_t user_tmp_t:dir search;
+allow cupsd_t user_tmp_t:sock_file write;
+
+allow cupsd_t init_t:unix_stream_socket connectto;
+allow cupsd_t tmp_t:dir search;
+allow cupsd_t tmp_t:sock_file write;
+
+
+## Fedora (23) only for virtual daemon
+optional_policy(`
+  gen_require(`
+    type cupsd_t;
+    type xserver_t;
+    class unix_stream_socket connectto;
+  ')
+  
+  allow cupsd_t xserver_t:unix_stream_socket connectto;
+')

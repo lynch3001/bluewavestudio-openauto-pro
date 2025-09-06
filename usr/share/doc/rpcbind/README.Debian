@@ -1,0 +1,11 @@
+rpcbind for Debian
+------------------
+Since version 1.2.5 due to security concerns upstream has turned off
+the remote calls functionality by default and added a configuration
+flag at build time to enable it.
+This functionality caused rpcbind to open up random listening ports.
+With remote calls turned off rpcbind stops to receive any broadcast query
+causing breakage on systems depending on this feature, e.g., NIS systems.
+
+On Debian systems the remote calls can be turned on at run-time using
+the command line argument 'r'. See rpcbind(8) for more details.

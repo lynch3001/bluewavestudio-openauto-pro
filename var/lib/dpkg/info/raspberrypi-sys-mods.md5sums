@@ -1,0 +1,12 @@
+7dfda8f6fe7d7b326409215eb7a4178d  lib/systemd/system/apply_noobs_os_config.service
+9fc9c8229012f93b0fdcde19ab001456  lib/systemd/system/regenerate_ssh_host_keys.service
+f9da5c9d595334ef806a4138332d57fe  lib/systemd/system/rpi-display-backlight.service
+95ff66a6c7706add4d60a13b104d13dd  lib/systemd/system/sshswitch.service
+8b990575624026bdace42b4770bb7008  lib/udev/rules.d/15-i2c-modprobe.rules
+b466943cdeb4ae78946a1d4d9c83d6a0  lib/udev/rules.d/70-microbit.rules
+2584bc8ca5ed8521ff441fb5b98a20ad  lib/udev/rules.d/80-noobs.rules
+b6907714c40598ff0b8087f21f5648de  usr/lib/raspberrypi-sys-mods/i2cprobe
+4d75f85d8f3cce52b012c29430952254  usr/share/doc/raspberrypi-sys-mods/NEWS.Debian.gz
+8f13bef6904486ef999173a896e3addd  usr/share/doc/raspberrypi-sys-mods/changelog.gz
+b5c3c8bb856fffaa0b83eaf6c7fffd08  usr/share/doc/raspberrypi-sys-mods/copyright
+ebe74a10edd6e1a0af4e11dfa5b3ccdd  var/lib/polkit-1/localauthority/10-vendor.d/55-storage.pkla

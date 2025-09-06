@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libXmu.a
+/usr/lib/arm-linux-gnueabihf/pkgconfig
+/usr/lib/arm-linux-gnueabihf/pkgconfig/xmu.pc
+/usr/share
+/usr/share/doc
+/usr/share/doc/libxmu-dev
+/usr/share/doc/libxmu-dev/changelog.Debian.armhf.gz
+/usr/share/doc/libxmu-dev/changelog.Debian.gz
+/usr/share/doc/libxmu-dev/changelog.gz
+/usr/share/doc/libxmu-dev/copyright
+/usr/lib/arm-linux-gnueabihf/libXmu.so

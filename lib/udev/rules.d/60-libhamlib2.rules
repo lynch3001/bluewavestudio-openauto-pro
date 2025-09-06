@@ -1,0 +1,12 @@
+#
+# Enable uaccess for common embedded USB-serial converters so that
+# applications which call usb_detach_kernel_driver_np() won't need sudo.
+#
+# This file was installed by the package 'libhamlib2'
+
+# FTDI USB Serial Device converter
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="0403", ATTR{idProduct}=="6001", TAG+="uaccess"
+
+# VOTI USBasp AVR Programmer
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="16c0", ATTR{idProduct}=="05dc", TAG+="uaccess"
+

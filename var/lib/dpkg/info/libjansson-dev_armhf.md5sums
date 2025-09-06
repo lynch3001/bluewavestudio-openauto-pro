@@ -1,0 +1,7 @@
+d3fccec4e3b264bc805d61e9a9b5ae12  usr/include/jansson.h
+2fbbd04c999ac7f3d1e6f746450765cd  usr/include/jansson_config.h
+6bf6aea8cef1c6b9b10a8e979cd25fe0  usr/lib/arm-linux-gnueabihf/libjansson.a
+c86643fb142dd191baabd517718d4184  usr/lib/arm-linux-gnueabihf/pkgconfig/jansson.pc
+0a498fe0fb7a15c0b977830f181cb1d1  usr/share/doc/libjansson-dev/changelog.Debian.gz
+895cfc5dd81957128b5b64ab44b85670  usr/share/doc/libjansson-dev/changelog.gz
+b973894ed7623da0c97e2b1fdfb307dc  usr/share/doc/libjansson-dev/copyright

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="browse-private" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="index#adv"/>
+    <revision pkgversion="3.10" date="2013-06-30" status="candidate"/>
+    <revision pkgversion="3.12" date="2014-01-28" status="final"/>
+
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+<!--    <credit type="copyright editor">
+      <name></name>
+      <email its:translate="no"></email>
+      <years></years>
+    </credit>-->
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>O que é modo <em>anônimo</em>?</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013,</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Navegação privativa</title>
+
+  <p>Navegação privada é um modo que limita a forma que seu computador e sites podem acessar suas informações de navegação. Ela geralmente é útil se você deseja emprestar seu computador para um amigo, por exemplo, para verificar e-mail usando webmail porque nenhum acesso a sites será registrado na janela de navegação privada, nem suas informações serão salvas. Isso também significa que a navegação privada é uma forma muito mais segura de acessar sites sensíveis tal como Internet banking e <link href="http://questionablecontent.net/">conteúdo questionável</link> porque é muito mais difícil para sites identificar você quando está no modo <em>anônimo</em>.</p>
+
+  <steps>
+    <title/>
+    <item>
+      <p>Selecione <guiseq><gui style="menu">Web</gui><gui style="menuitem">Nova janela anônima</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Navegue a web usando o modo anônimo.</p>
+    </item>
+    <item>
+      <p>Termine a sessão de navegação privada fechando a janela anônima.</p>
+    </item>
+  </steps>
+
+  <p>Você pode distinguir a navegação privada da navegação normal por meio da marca d'água da janela anônima:</p>
+
+  <figure>
+    <media type="image" mime="image/png" src="media/private-browsing-3-12.png">
+      <p>Captura de tela, em tela cheia, mostrando uma sessão normal em uma janela no lado esquerdo da tela e uma sessão de navegação privada em uma janela diferente no lado direito da tela.</p>
+    </media>
+    <p>Uma captura de tela mostrando uma sessão normal com algum histórico na janela da esquerda e uma sessão de navegação privada na janela da direita</p>
+  </figure>
+
+</page>

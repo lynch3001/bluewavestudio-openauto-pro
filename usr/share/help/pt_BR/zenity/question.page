@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="question" xml:lang="pt-BR">
+  <info>
+    <link type="guide" xref="message"/>
+    <desc>Use a opção <cmd>--question</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+  <title>Diálogo de pergunta</title>
+      <p>Use a opção <cmd>--question</cmd> para criar um diálogo de pergunta.</p>
+
+      <p>O script de exemplo a seguir mostra como criar um diálogo de pergunta:</p>
+
+<code>
+#!/bin/bash
+
+zenity --question \
+--text="Tem certeza de que deseja prosseguir?"
+</code>
+
+
+      <figure>
+        <title>Exemplo de diálogo de pergunta</title>
+	<desc>Exemplo de diálogo de pergunta do <app>Zenity</app></desc>
+        <media type="image" mime="image/png" src="figures/zenity-question-screenshot.png"/>
+      </figure>
+</page>

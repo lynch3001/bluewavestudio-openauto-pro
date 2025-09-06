@@ -1,0 +1,10 @@
+fb6d95a8e649847f3731b9464b01abd3  usr/lib/arm-linux-gnueabihf/qt5/plugins/audio/libqtaudio_alsa.so
+1e76f9194a735e0b029cec6e30158733  usr/lib/arm-linux-gnueabihf/qt5/plugins/audio/libqtmedia_pulse.so
+4a3557fadd24f86eb0f522bc06ab5783  usr/lib/arm-linux-gnueabihf/qt5/plugins/mediaservice/libgstaudiodecoder.so
+c067ae9eade08a51ee84da2498dc821e  usr/lib/arm-linux-gnueabihf/qt5/plugins/mediaservice/libgstcamerabin.so
+8aa58883753fed389ab2e090c6f5d607  usr/lib/arm-linux-gnueabihf/qt5/plugins/mediaservice/libgstmediacapture.so
+b0486b0e989f9f0b6034b63682b3e93b  usr/lib/arm-linux-gnueabihf/qt5/plugins/mediaservice/libgstmediaplayer.so
+539be6aaf8e42d073a7cf4bd5b52db2b  usr/lib/arm-linux-gnueabihf/qt5/plugins/playlistformats/libqtmultimedia_m3u.so
+debc0875a8bed25a0ce6ff1f6ce8e3a9  usr/lib/arm-linux-gnueabihf/qt5/plugins/video/videonode/libeglvideonode.so
+ae9c2b6779039e728ba1930aeb9c33e6  usr/share/doc/libqt5multimedia5-plugins/changelog.Debian.gz
+8d4bc0e2c2d1eda27a8c5928ca7caca3  usr/share/doc/libqt5multimedia5-plugins/copyright

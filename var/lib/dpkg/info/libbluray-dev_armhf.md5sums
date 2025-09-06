@@ -1,0 +1,14 @@
+390cf4a3cd2f2eac6e6d7c898a04714f  usr/include/libbluray/bluray-version.h
+885b7b2b55f0182d3ff5b20879d14f75  usr/include/libbluray/bluray.h
+efac13cb8bf8bd01ee2af8cc3a2b81d3  usr/include/libbluray/clpi_data.h
+20f94966aa6788b83450894f67dd9d73  usr/include/libbluray/filesystem.h
+d92cf8948fb4c994e668e5fe79c9b7ff  usr/include/libbluray/keys.h
+c12aaa0be610d66ec40a745e37f84964  usr/include/libbluray/log_control.h
+3a1157a121ad896dd950c8d346e8b206  usr/include/libbluray/meta_data.h
+8a110daec48ce9e7e9504231c3aea39b  usr/include/libbluray/overlay.h
+aa5f4567b3ea8f77a611c3b2b57fd591  usr/include/libbluray/player_settings.h
+23976c26bab81758e8518a3f4204b5d4  usr/lib/arm-linux-gnueabihf/libbluray.a
+af416a86e970b00e27bab32922956d5c  usr/lib/arm-linux-gnueabihf/pkgconfig/libbluray.pc
+7694c47933dea905b4d15e7aebc9e715  usr/share/doc/libbluray-dev/changelog.Debian.gz
+800b59a61df51c19b9382ccddac8d9c8  usr/share/doc/libbluray-dev/changelog.gz
+f185c269a5929bfc75e4dfc16cf65b6e  usr/share/doc/libbluray-dev/copyright

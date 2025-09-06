@@ -1,0 +1,7 @@
+1632324950119ac292652ac066a4db49  usr/include/ass/ass.h
+12dbbd9bf984bbc01bd51f057d6f4d2c  usr/include/ass/ass_types.h
+312da0da92f1dea5fda4532a0b42d9fd  usr/lib/arm-linux-gnueabihf/libass.a
+88c83825c131af2e1d0099e9e22f4a07  usr/lib/arm-linux-gnueabihf/pkgconfig/libass.pc
+a4932eac7323d1aed9414a974266b85a  usr/share/doc/libass-dev/changelog.Debian.gz
+3242536ddb3dca31e0369cc058e00cf3  usr/share/doc/libass-dev/changelog.gz
+19ffc3291d9ecbb8a0de1292e96a7152  usr/share/doc/libass-dev/copyright

@@ -1,0 +1,1707 @@
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+           "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<META NAME="GENERATOR" CONTENT="TtH 2.51">
+                                                                          
+<title> Steve Harris' LADSPA Plugin Docs</title>
+<style>
+  BODY {
+    font-family: sans-serif;
+    font-size: 10pt;
+    color: black;
+    background: white;
+  }
+
+  H1 {
+    font-size: 16pt;
+  }
+
+  H2 {
+    padding-top: 10pt;
+    font-size: 14pt;
+  }
+
+  H3 {
+    padding-top: 10pt;
+    font-size: 12pt;
+  }
+
+  P {
+    font-size: 10pt;
+  }
+
+  TD {
+    font-size: 10pt;
+  }
+
+  A {
+    text-decoration: none;
+  }
+</style>
+
+ 
+<H1 align=center>Steve Harris' LADSPA Plugin Docs </H1>
+
+<H3 align=center>2004-10-26 </H3>
+
+<H3 align=center>steve@plugin.org.uk </H3>
+
+<p>
+
+<H1>Contents </H1><A href="#tth_sEc1"
+>1&nbsp; Preamble</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc1.1"
+>1.1&nbsp; What plugins?</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc1.2"
+>1.2&nbsp; Where can I get them</A><br>
+<A href="#tth_sEc2"
+>2&nbsp; The plugins</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.1"
+>2.1&nbsp; Aliasing (alias, 1407)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.2"
+>2.2&nbsp; Allpass delay line, noninterpolating (allpass_n, 1895)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.3"
+>2.3&nbsp; Allpass delay line, linear interpolation (allpass_l, 1896)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.4"
+>2.4&nbsp; Allpass delay line, cubic spline interpolation (allpass_c, 1897)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.5"
+>2.5&nbsp; Simple amplifier (amp, 1181)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.6"
+>2.6&nbsp; AM pitchshifter (amPitchshift, 1433)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.7"
+>2.7&nbsp; Analogue Oscillator (analogueOsc, 1416)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.8"
+>2.8&nbsp; Glame Bandpass Analog Filter (bandpass_a_iir, 1893)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.9"
+>2.9&nbsp; Glame Bandpass Filter (bandpass_iir, 1892)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.10"
+>2.10&nbsp; Bode frequency shifter (bodeShifter, 1431)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.11"
+>2.11&nbsp; Bode frequency shifter (CV) (bodeShifterCV, 1432)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.12"
+>2.12&nbsp; Glame Butterworth X-over Filter (bwxover_iir, 1902)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.13"
+>2.13&nbsp; GLAME Butterworth Lowpass (buttlow_iir, 1903)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.14"
+>2.14&nbsp; GLAME Butterworth Highpass (butthigh_iir, 1904)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.15"
+>2.15&nbsp; Chebyshev distortion (chebstortion, 1430)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.16"
+>2.16&nbsp; Comb Filter (comb, 1190)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.17"
+>2.17&nbsp; Comb delay line, noninterpolating (comb_n, 1889)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.18"
+>2.18&nbsp; Comb delay line, linear interpolation (comb_l, 1887)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.19"
+>2.19&nbsp; Comb delay line, cubic spline interpolation (comb_c, 1888)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.20"
+>2.20&nbsp; Comb Splitter (combSplitter, 1411)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.21"
+>2.21&nbsp; Constant Signal Generator (const, 1909)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.22"
+>2.22&nbsp; Crossover distortion (crossoverDist, 1404)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.23"
+>2.23&nbsp; DC Offset Remover (dcRemove, 1207)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.24"
+>2.24&nbsp; Debug Plugin (debug, 1184)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.25"
+>2.25&nbsp; Exponential signal decay (decay, 1886)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.26"
+>2.26&nbsp; Decimator (decimator, 1202)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.27"
+>2.27&nbsp; Declipper (declip, 1195)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.28"
+>2.28&nbsp; Simple delay line, noninterpolating (delay_n, 1898)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.29"
+>2.29&nbsp; Simple delay line, linear interpolation (delay_l, 1899)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.30"
+>2.30&nbsp; Simple delay line, cubic spline interpolation (delay_c, 1900)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.31"
+>2.31&nbsp; Delayorama (delayorama, 1402)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.32"
+>2.32&nbsp; Diode Processor (diode, 1185)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.33"
+>2.33&nbsp; Audio Divider (Suboctave Generator) (divider, 1186)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.34"
+>2.34&nbsp; DJ EQ (mono) (dj_eq_mono, 1907)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.35"
+>2.35&nbsp; DJ EQ (dj_eq, 1901)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.36"
+>2.36&nbsp; DJ flanger (djFlanger, 1438)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.37"
+>2.37&nbsp; Dyson compressor (dysonCompress, 1403)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.38"
+>2.38&nbsp; Fractionally Addressed Delay Line (fadDelay, 1192)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.39"
+>2.39&nbsp; Fast Lookahead limiter (fastLookaheadLimiter, 1913)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.40"
+>2.40&nbsp; Flanger (flanger, 1191)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.41"
+>2.41&nbsp; FM Oscillator (fmOsc, 1415)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.42"
+>2.42&nbsp; Foldover distortion (foldover, 1213)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.43"
+>2.43&nbsp; Fast overdrive (foverdrive, 1196)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.44"
+>2.44&nbsp; Frequency tracker (freqTracker, 1418)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.45"
+>2.45&nbsp; Gate (gate, 1410)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.46"
+>2.46&nbsp; Gate (gate, 1921)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.47"
+>2.47&nbsp; Stereo Gate (stereo_gate, 1922)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.48"
+>2.48&nbsp; Giant flange (giantFlange, 1437)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.49"
+>2.49&nbsp; Gong model (gong, 1424)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.50"
+>2.50&nbsp; Gong beater (gongBeater, 1439)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.51"
+>2.51&nbsp; GSM simulator (gsm, 1215)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.52"
+>2.52&nbsp; GVerb (gverb, 1216)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.53"
+>2.53&nbsp; Hard Limiter (hardLimiter, 1413)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.54"
+>2.54&nbsp; Harmonic generator (harmonicGen, 1220)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;What does it do?<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Known bugs<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Examples<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.55"
+>2.55&nbsp; Hermes Filter (hermesFilter, 1200)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.56"
+>2.56&nbsp; Glame Highpass Filter (highpass_iir, 1890)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.57"
+>2.57&nbsp; Hilbert transformer (hilbert, 1440)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.58"
+>2.58&nbsp; Impulse convolver (imp, 1199)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.59"
+>2.59&nbsp; Nonbandlimited single-sample impulses (Frequency: Control) (impulse_fc, 1885)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.60"
+>2.60&nbsp; Inverter (inv, 1429)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.61"
+>2.61&nbsp; Karaoke (karaoke, 1409)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.62"
+>2.62&nbsp; Artificial latency (artificialLatency, 1914)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.63"
+>2.63&nbsp; L/C/R Delay (lcrDelay, 1436)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.64"
+>2.64&nbsp; Lookahead limiter (lookaheadLimiter, 1435)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.65"
+>2.65&nbsp; Lookahead limiter (fixed latency) (lookaheadLimiterConst, 1906)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.66"
+>2.66&nbsp; Glame Lowpass Filter (lowpass_iir, 1891)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.67"
+>2.67&nbsp; LS Filter (lsFilter, 1908)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.68"
+>2.68&nbsp; Matrix: MS to Stereo (matrixMSSt, 1421)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.69"
+>2.69&nbsp; Matrix Spatialiser (matrixSpatialiser, 1422)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.70"
+>2.70&nbsp; Matrix: Stereo to MS (matrixStMS, 1420)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.71"
+>2.71&nbsp; Multiband EQ (mbeq, 1197)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.72"
+>2.72&nbsp; Modulatable delay (modDelay, 1419)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.73"
+>2.73&nbsp; Multivoice Chorus (multivoiceChorus, 1201)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.74"
+>2.74&nbsp; Mag's Notch Filter (notch_iir, 1894)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.75"
+>2.75&nbsp; LFO Phaser (lfoPhaser, 1217)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.76"
+>2.76&nbsp; 4 x 4 pole allpass (fourByFourPole, 1218)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.77"
+>2.77&nbsp; Auto phaser (autoPhaser, 1219)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.78"
+>2.78&nbsp; Pitch Scaler (pitchScale, 1193)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.79"
+>2.79&nbsp; Higher Quality Pitch Scaler (pitchScaleHQ, 1194)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.80"
+>2.80&nbsp; Plate reverb (plate, 1423)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.81"
+>2.81&nbsp; Pointer cast distortion (pointerCastDistortion, 1910)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.82"
+>2.82&nbsp; Rate shifter (rateShifter, 1417)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.83"
+>2.83&nbsp; Retro Flanger (retroFlange, 1208)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.84"
+>2.84&nbsp; Reverse Delay (5s max) (revdelay, 1605)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.85"
+>2.85&nbsp; Ringmod with two inputs (ringmod_2i1o, 1188)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.86"
+>2.86&nbsp; Ringmod with LFO (ringmod_1i1o1l, 1189)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.87"
+>2.87&nbsp; Barry's Satan Maximiser (satanMaximiser, 1408)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.88"
+>2.88&nbsp; SC1 (sc1, 1425)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.89"
+>2.89&nbsp; SC2 (sc2, 1426)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.90"
+>2.90&nbsp; SC3 (sc3, 1427)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.91"
+>2.91&nbsp; SC4 (sc4, 1882)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.92"
+>2.92&nbsp; SE4 (se4, 1883)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.93"
+>2.93&nbsp; Wave shaper (shaper, 1187)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.94"
+>2.94&nbsp; Signal sifter (sifter, 1210)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.95"
+>2.95&nbsp; Sine + cosine oscillator (sinCos, 1881)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.96"
+>2.96&nbsp; Single band parametric (singlePara, 1203)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.97"
+>2.97&nbsp; Sinus wavewrapper (sinusWavewrapper, 1198)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.98"
+>2.98&nbsp; Smooth Decimator (smoothDecimate, 1414)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.99"
+>2.99&nbsp; Mono to Stereo splitter (split, 1406)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.100"
+>2.100&nbsp; Step Demuxer (stepMuxer, 1212)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.101"
+>2.101&nbsp; Surround matrix encoder (surroundEncoder, 1401)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;What does it do?<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Caveats<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Legalese<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.102"
+>2.102&nbsp; State Variable Filter (svf, 1214)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.103"
+>2.103&nbsp; Tape Delay Simulation (tapeDelay, 1211)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.104"
+>2.104&nbsp; Transient mangler (transient, 1206)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.105"
+>2.105&nbsp; Triple band parametric with shelves (triplePara, 1204)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.106"
+>2.106&nbsp; Valve saturation (valve, 1209)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.107"
+>2.107&nbsp; Valve rectifier (valveRect, 1405)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.108"
+>2.108&nbsp; VyNil (Vinyl Effect) (vynil, 1905)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.109"
+>2.109&nbsp; Wave Terrain Oscillator (waveTerrain, 1412)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.110"
+>2.110&nbsp; Crossfade (xfade, 1915)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.111"
+>2.111&nbsp; Crossfade (4 outs) (xfade4, 1916)</A><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<A href="#tth_sEc2.112"
+>2.112&nbsp; z-1 (zm1, 1428)</A><br>
+<A href="#tth_sEc3"
+>3&nbsp; Licensing</A><br>
+ 
+
+<p>
+        <H2><A NAME="tth_sEc1">
+1</A>&nbsp;&nbsp;Preamble</H2>
+
+<p>
+      <H3><A NAME="tth_sEc1.1">
+1.1</A>&nbsp;&nbsp;What plugins?</H3>
+This is the documentation for some plugins that I have written for the <em>Linux Audio Developers Simple Plugin Architecture</em>. It is a nice audio plugin architecture with a very easy learning curve.
+
+<p>
+      <H3><A NAME="tth_sEc1.2">
+1.2</A>&nbsp;&nbsp;Where can I get them</H3>
+From the website at <a href="http://plugin.org.uk/"><tt>http://plugin.org.uk/</tt></a>.
+
+<p>
+        <H2><A NAME="tth_sEc2">
+2</A>&nbsp;&nbsp;The plugins</H2>
+
+      <H3><A NAME="tth_sEc2.1">
+2.1</A>&nbsp;&nbsp;Aliasing (alias, 1407)<A NAME="alias">
+</A><A NAME="id1407">
+</A></H3>
+Simulates aliasing using nyquist frequency modulation. Produces wacky results if the blocks aren't even numbers of samples long.
+<H4>Aliasing level</H4>
+Controls the amount of simulated aliasing in the output.
+      <H3><A NAME="tth_sEc2.2">
+2.2</A>&nbsp;&nbsp;Allpass delay line, noninterpolating (allpass_n, 1895)<A NAME="allpass_n">
+</A><A NAME="id1895">
+</A></H3>
+Based on work by James McCartney in SuperCollider.
+<H4>Max Delay (s)</H4>
+
+<p>
+       Maximum delay. Used to set the delay buffer size upon activation. Cannot
+       be modulated. Note that if you do not connect to this port before
+       activation, it will default to 1 second. 
+      
+<H4>Decay Time (s)</H4>
+
+<p>
+       Time for the echoes to decay by 60 decibels. If this time is negative
+       then the feedback coefficient will be negative, thus emphasizing only odd
+       harmonics at an octave lower.
+      
+      <H3><A NAME="tth_sEc2.3">
+2.3</A>&nbsp;&nbsp;Allpass delay line, linear interpolation (allpass_l, 1896)<A NAME="allpass_l">
+</A><A NAME="id1896">
+</A></H3>
+Based on work by James McCartney in SuperCollider.
+<H4>Max Delay (s)</H4>
+
+<p>
+       Maximum delay. Used to set the delay buffer size upon activation. Cannot
+       be modulated. Note that if you do not connect to this port before
+       activation, it will default to 1 second. 
+      
+<H4>Decay Time (s)</H4>
+
+<p>
+       Time for the echoes to decay by 60 decibels. If this time is negative
+       then the feedback coefficient will be negative, thus emphasizing only odd
+       harmonics at an octave lower.
+      
+      <H3><A NAME="tth_sEc2.4">
+2.4</A>&nbsp;&nbsp;Allpass delay line, cubic spline interpolation (allpass_c, 1897)<A NAME="allpass_c">
+</A><A NAME="id1897">
+</A></H3>
+Based on work by James McCartney in SuperCollider.
+<H4>Max Delay (s)</H4>
+
+<p>
+       Maximum delay. Used to set the delay buffer size upon activation. Cannot
+       be modulated. Note that if you do not connect to this port before
+       activation, it will default to 1 second. 
+      
+<H4>Decay Time (s)</H4>
+
+<p>
+       Time for the echoes to decay by 60 decibels. If this time is negative
+       then the feedback coefficient will be negative, thus emphasizing only odd
+       harmonics at an octave lower.
+      
+      <H3><A NAME="tth_sEc2.5">
+2.5</A>&nbsp;&nbsp;Simple amplifier (amp, 1181)<A NAME="amp">
+</A><A NAME="id1181">
+</A></H3>
+CPU usage: 130 cycles/sample
+
+<p>
+
+<H4>Amps gain (dB)</H4>
+Controls the gain of the input signal in dB's.
+      <H3><A NAME="tth_sEc2.6">
+2.6</A>&nbsp;&nbsp;AM pitchshifter (amPitchshift, 1433)<A NAME="amPitchshift">
+</A><A NAME="id1433">
+</A></H3>
+This plugin works by running a single write pointer (monotonic) and two read pointers (pitchscaled) over a ringbuffer.The output is faded between the two readpointers according to the sine of the distance from the write pointer. The design is based on the mechanism of a mechanical pitchshifter I saw in the Gemeentemuseum in Den Haag, though I'm sure it is a common enough algorithm.
+<H4>Pitch shift</H4>
+The multiple of the output pitch, eg. 2.0 will increase the pitch by one octave.
+<H4>Buffer size</H4>
+The order of magnitude of the buffer size. Small buffers will sound fluttery, large buffers will have flangy sounding echos.I recommend a buffer size of 3 for a reasonable compromise, with wideband material at around 48KHz. For drums you might have to lower it, and for voiced background noises it can go higher.
+      <H3><A NAME="tth_sEc2.7">
+2.7</A>&nbsp;&nbsp;Analogue Oscillator (analogueOsc, 1416)<A NAME="analogueOsc">
+</A><A NAME="id1416">
+</A></H3>
+This plugin simulates the output you get from an analogue synth's osciallators.You can get a reasonable emualtion of a 303's square (for exmaple) if you set the warmth to about 0.4 and the instability to about 0.05.The frequency is currently a control input, and there is no interpolation, so if your host is using large block sieze it will sound steppy.I'm unsure whether to convert this to an audio input or inpolate the control in.
+<H4>Waveform (1=sin, 2=tri, 3=squ, 4=saw)</H4>
+
+<p>
+	The basic shape of the waveform is selected using this control:
+
+<p>
+	
+<TaBle border>
+<tr><td align="right">Value </td><td>Waveform </td><tr><td>
+<tr><td align="right">1 </td><td>Sine </td>
+<tr><td align="right">2 </td><td>Triangle </td>
+<tr><td align="right">3 </td><td>Square </td>
+<tr><td align="right">4 </td><td>Saw </td></TaBle>
+
+      
+<H4>Frequency (Hz)</H4>
+The frequency of the output (Hz).
+<H4>Warmth</H4>
+The degree of softening that is applied to the generted waveform, reduces the number of harmonics in the output.
+<H4>Instability</H4>
+The degree of pitch instability of the output. Turning this too high with square and saw waves will produce an anoying jittery sound, I want to fix this but it is tricky.
+      <H3><A NAME="tth_sEc2.8">
+2.8</A>&nbsp;&nbsp;Glame Bandpass Analog Filter (bandpass_a_iir, 1893)<A NAME="bandpass_a_iir">
+</A><A NAME="id1893">
+</A></H3>
+ IIR bandpass filter modeled after an analog circuit. This filter was ported from the glame multitrack editor to ladspa.
+                
+      <H3><A NAME="tth_sEc2.9">
+2.9</A>&nbsp;&nbsp;Glame Bandpass Filter (bandpass_iir, 1892)<A NAME="bandpass_iir">
+</A><A NAME="id1892">
+</A></H3>
+ IIR bandpass filter based using chebishev coefficients. The filter allows you to tweak the number of stages used for
+                filtering. Every stage adds two more poles, which leads to a steeper dropoff. More stages need more CPU power. This
+                filter was ported from the glame multitrack editor to ladspa.
+                
+      <H3><A NAME="tth_sEc2.10">
+2.10</A>&nbsp;&nbsp;Bode frequency shifter (bodeShifter, 1431)<A NAME="bodeShifter">
+</A><A NAME="id1431">
+</A></H3>
+A Bode/Moog Frequency Shifter is a popular analogue synth module, it works by shifting all the frequencies of an input signal up or down by a specified frequency. This version shifts in noth directions at the same time as its almost no extra work and its often useful to have both directions.It doesn't actually work in the same way as an analogue Bode/Moog, which use Dome filters as the core, it uses a Hilbert Transformer, which is much simpler to implemtent in digital systems. The output is very similar though, and people are familiar with the name Bode.The theory of operation is pretty simple, and uses some clever maths to cancel out the upper or lower sidebands of a ringmodulator applied to the input signal. Read the source if you want more information. The Hilbert Transformet coefficents came from mkfilter, the excellent filter calculator, available at <a href="http://www-users.cs.york.ac.uk/~fisher/mkfilter/"><tt>http://www-users.cs.york.ac.uk/~fisher/mkfilter/</tt></a>.
+<H4>Frequency shift</H4>
+Controls the frequency shift applied to the input signal, in Hz. Note, this is not a pitch shift, so you not get natural sounding results out, it is an audio effect popular with modular synthesists.
+      <H3><A NAME="tth_sEc2.11">
+2.11</A>&nbsp;&nbsp;Bode frequency shifter (CV) (bodeShifterCV, 1432)<A NAME="bodeShifterCV">
+</A><A NAME="id1432">
+</A></H3>
+See the non CV version for information.This is more or less a copy of the Doepfer A126, <a href="http://www.doepfer.de/a126.htm"><tt>http://www.doepfer.de/a126.htm</tt></a>.
+<H4>Shift CV</H4>
+Controls the frequency shift applied to the input signal, in KHz.
+      <H3><A NAME="tth_sEc2.12">
+2.12</A>&nbsp;&nbsp;Glame Butterworth X-over Filter (bwxover_iir, 1902)<A NAME="bwxover_iir">
+</A><A NAME="id1902">
+</A></H3>
+ Butterworth X-over filter
+                
+      <H3><A NAME="tth_sEc2.13">
+2.13</A>&nbsp;&nbsp;GLAME Butterworth Lowpass (buttlow_iir, 1903)<A NAME="buttlow_iir">
+</A><A NAME="id1903">
+</A></H3>
+ Butterworth lowpass filter
+                
+      <H3><A NAME="tth_sEc2.14">
+2.14</A>&nbsp;&nbsp;GLAME Butterworth Highpass (butthigh_iir, 1904)<A NAME="butthigh_iir">
+</A><A NAME="id1904">
+</A></H3>
+ Butterworth highpass filter
+                
+      <H3><A NAME="tth_sEc2.15">
+2.15</A>&nbsp;&nbsp;Chebyshev distortion (chebstortion, 1430)<A NAME="chebstortion">
+</A><A NAME="id1430">
+</A></H3>
+This is an interesting distortion effect that is seeded from incoming
+signal envelope. As the level of the signal rises more and more harmonics will
+for added to the output signal.The distortion control sets the sensitivity of the input.The effect eveolved from some experiments between Tim Goetze and myself,
+apptempting to emulate valve based guitar amp distortion. This was one of the
+failures, but it still makes an interesting noise.
+      <H3><A NAME="tth_sEc2.16">
+2.16</A>&nbsp;&nbsp;Comb Filter (comb, 1190)<A NAME="comb">
+</A><A NAME="id1190">
+</A></H3>
+CPU usage: 86 cycles/sample
+
+<p>
+
+<H4>Band separation (Hz)</H4>
+Controls the distance between the filters peaks.
+<H4>Feedback</H4>
+Feedback level, increases the distinctive wooshy phaser sound.
+      <H3><A NAME="tth_sEc2.17">
+2.17</A>&nbsp;&nbsp;Comb delay line, noninterpolating (comb_n, 1889)<A NAME="comb_n">
+</A><A NAME="id1889">
+</A></H3>
+Based on work by James McCartney in SuperCollider.
+<H4>Max Delay (s)</H4>
+
+<p>
+       Maximum delay. Used to set the delay buffer size upon activation. Cannot
+       be modulated. Note that if you do not connect to this port before
+       activation, it will default to 1 second. 
+      
+<H4>Decay Time (s)</H4>
+
+<p>
+       Time for the echoes to decay by 60 decibels. If this time is negative
+       then the feedback coefficient will be negative, thus emphasizing only odd
+       harmonics at an octave lower.
+      
+      <H3><A NAME="tth_sEc2.18">
+2.18</A>&nbsp;&nbsp;Comb delay line, linear interpolation (comb_l, 1887)<A NAME="comb_l">
+</A><A NAME="id1887">
+</A></H3>
+Based on work by James McCartney in SuperCollider.
+<H4>Max Delay (s)</H4>
+
+<p>
+       Maximum delay. Used to set the delay buffer size upon activation. Cannot
+       be modulated. Note that if you do not connect to this port before
+       activation, it will default to 1 second. 
+      
+<H4>Decay Time (s)</H4>
+
+<p>
+       Time for the echoes to decay by 60 decibels. If this time is negative
+       then the feedback coefficient will be negative, thus emphasizing only odd
+       harmonics at an octave lower.
+      
+      <H3><A NAME="tth_sEc2.19">
+2.19</A>&nbsp;&nbsp;Comb delay line, cubic spline interpolation (comb_c, 1888)<A NAME="comb_c">
+</A><A NAME="id1888">
+</A></H3>
+Based on work by James McCartney in SuperCollider.
+<H4>Max Delay (s)</H4>
+
+<p>
+       Maximum delay. Used to set the delay buffer size upon activation. Cannot
+       be modulated. Note that if you do not connect to this port before
+       activation, it will default to 1 second. 
+      
+<H4>Decay Time (s)</H4>
+
+<p>
+       Time for the echoes to decay by 60 decibels. If this time is negative
+       then the feedback coefficient will be negative, thus emphasizing only odd
+       harmonics at an octave lower.
+      
+      <H3><A NAME="tth_sEc2.20">
+2.20</A>&nbsp;&nbsp;Comb Splitter (combSplitter, 1411)<A NAME="combSplitter">
+</A><A NAME="id1411">
+</A></H3>
+Divides the input up into two parts with frequency peaks at f Hz intervals, skewed by f/2 Hz between the two outputs. Mixing the two outputs will get you exactly the input signal.I generally use this trick to divide up an input signal, process the two halves differently, then mix them again. It sounds pretty funky.
+<H4>Band separation (Hz)</H4>
+The distance between the frequency peaks.
+<H4>Output 1</H4>
+The sum output.
+<H4>Output 2</H4>
+The difference output.
+      <H3><A NAME="tth_sEc2.21">
+2.21</A>&nbsp;&nbsp;Constant Signal Generator (const, 1909)<A NAME="const">
+</A><A NAME="id1909">
+</A></H3>
+This plugin add an output DC offset at the given amplitude to the input
+signal. It has no real use other than for debugging and in modular synths.
+<H4>Signal amplitude</H4>
+Controls the amplitude of the output signal.
+      <H3><A NAME="tth_sEc2.22">
+2.22</A>&nbsp;&nbsp;Crossover distortion (crossoverDist, 1404)<A NAME="crossoverDist">
+</A><A NAME="id1404">
+</A></H3>
+This is a simulation of the distortion that happens in class B and AB power amps when the signal crosses 0.For class B simulations the smooth value should be set to about 0.3 +/- 0.2 and for AB it should be set to near 1.0.
+<H4>Crossover amplitude</H4>
+Controls the point at which the output signal becomes linear.
+<H4>Smoothing</H4>
+Controls degree of smoothing of the crossover point.
+      <H3><A NAME="tth_sEc2.23">
+2.23</A>&nbsp;&nbsp;DC Offset Remover (dcRemove, 1207)<A NAME="dcRemove">
+</A><A NAME="id1207">
+</A></H3>
+CPU usage: 10 cycles/sample
+
+<p>
+Simply removes the DC (0 Hz) component from an audio signal, uses a high pass filter, so has some side effects, but they should be minimal.
+      <H3><A NAME="tth_sEc2.24">
+2.24</A>&nbsp;&nbsp;Debug Plugin (debug, 1184)<A NAME="debug">
+</A><A NAME="id1184">
+</A></H3>
+Prints some stats about the input stream to stdout. Not intended for general use.
+      <H3><A NAME="tth_sEc2.25">
+2.25</A>&nbsp;&nbsp;Exponential signal decay (decay, 1886)<A NAME="decay">
+</A><A NAME="id1886">
+</A></H3>
+Based on work by James McCartney in SuperCollider.
+<H4>Decay Time (s)</H4>
+
+<p>
+       Time for the echoes to decay by 60 decibels.
+      
+      <H3><A NAME="tth_sEc2.26">
+2.26</A>&nbsp;&nbsp;Decimator (decimator, 1202)<A NAME="decimator">
+</A><A NAME="id1202">
+</A></H3>
+CPU usage: 29 cycles/sample
+
+<p>
+Decimates (reduces the effective sample rate), and reduces the bit depth of the input signal, allows non integer values for smooth transitions between clean and lofi signals.
+<H4>Bit depth</H4>
+The bit depth that the signal will be reduced to.
+<H4>Sample rate (Hz)</H4>
+The sample rate that the signal will be resampled at.
+      <H3><A NAME="tth_sEc2.27">
+2.27</A>&nbsp;&nbsp;Declipper (declip, 1195)<A NAME="declip">
+</A><A NAME="id1195">
+</A></H3>
+CPU usage: 11 cycles/sample
+
+<p>
+Removes nasty clicks from input signals, not very kind to them though.This code came from the music-dsp mailing list, but it was unattributed, if it's yours, please drop me a line and I'll credit you.
+      <H3><A NAME="tth_sEc2.28">
+2.28</A>&nbsp;&nbsp;Simple delay line, noninterpolating (delay_n, 1898)<A NAME="delay_n">
+</A><A NAME="id1898">
+</A></H3>
+Based on work by James McCartney in SuperCollider.
+<H4>Max Delay (s)</H4>
+
+<p>
+       Maximum delay. Used to set the delay buffer size upon activation. Cannot
+       be modulated. Note that if you do not connect to this port before
+       activation, it will default to 1 second. 
+      
+      <H3><A NAME="tth_sEc2.29">
+2.29</A>&nbsp;&nbsp;Simple delay line, linear interpolation (delay_l, 1899)<A NAME="delay_l">
+</A><A NAME="id1899">
+</A></H3>
+Based on work by James McCartney in SuperCollider.
+<H4>Max Delay (s)</H4>
+
+<p>
+       Maximum delay. Used to set the delay buffer size upon activation. Cannot
+       be modulated. Note that if you do not connect to this port before
+       activation, it will default to 1 second. 
+      
+      <H3><A NAME="tth_sEc2.30">
+2.30</A>&nbsp;&nbsp;Simple delay line, cubic spline interpolation (delay_c, 1900)<A NAME="delay_c">
+</A><A NAME="id1900">
+</A></H3>
+Based on work by James McCartney in SuperCollider.
+<H4>Max Delay (s)</H4>
+
+<p>
+       Maximum delay. Used to set the delay buffer size upon activation. Cannot
+       be modulated. Note that if you do not connect to this port before
+       activation, it will default to 1 second. 
+      
+      <H3><A NAME="tth_sEc2.31">
+2.31</A>&nbsp;&nbsp;Delayorama (delayorama, 1402)<A NAME="delayorama">
+</A><A NAME="id1402">
+</A></H3>
+
+<H4>Random seed</H4>
+Controls the random numbers that will be used to stagger the delays and amplitudes if random is turned up on them. Changing this forces the random values to be recalulated.
+<H4>Input gain (dB)</H4>
+Controls the gain of the input signal in dB's.
+<H4>Feedback (%)</H4>
+Controls the amount of output signal fed back into the input.
+<H4>Number of taps</H4>
+Controls the number of taps in the delay.
+<H4>First delay (s)</H4>
+The time of the first delay.
+<H4>Delay range (s)</H4>
+The time difference between the first and last delay.
+<H4>Delay change</H4>
+The scaling factor between one delay and the next.
+<H4>Delay random (%)</H4>
+The random factor applied to the delay.
+<H4>Amplitude change</H4>
+The scaling factor between one amplitude and the next.
+<H4>Amplitude random (%)</H4>
+The random factor applied to the amplitude.
+<H4>Dry/wet mix</H4>
+The level of delayed sound mixed into the output.
+      <H3><A NAME="tth_sEc2.32">
+2.32</A>&nbsp;&nbsp;Diode Processor (diode, 1185)<A NAME="diode">
+</A><A NAME="id1185">
+</A></H3>
+CPU usage: 13 cycles/sample
+
+<p>
+Mangles the signal as if it had been passed through a diode rectifier network.You should probably follow this with a DC offset remover, unless you want the offset.
+<H4>Mode (0 for none, 1 for half wave, 2 for full wave)</H4>
+The mode parameter is continuously variable from thru to half-wave rectification to full-wave to silence.
+      <H3><A NAME="tth_sEc2.33">
+2.33</A>&nbsp;&nbsp;Audio Divider (Suboctave Generator) (divider, 1186)<A NAME="divider">
+</A><A NAME="id1186">
+</A></H3>
+CPU usage: 55 cycles/sample
+
+<p>
+Reduces the period of the signal by the factor given, and makes it a square wave in the process. Has some amplitude tracking capability, but not really useful on complex signals.
+<H4>Denominator</H4>
+The factor the incoming frequency will be divided by.
+      <H3><A NAME="tth_sEc2.34">
+2.34</A>&nbsp;&nbsp;DJ EQ (mono) (dj_eq_mono, 1907)<A NAME="dj_eq_mono">
+</A><A NAME="id1907">
+</A></H3>
+The design for this plugin is taken from the Allen &amp; Heath Xone 32
+DJ mixer. It was suggested by Patrick Shirkey. Mono version requested by Adam King
+<H4>Lo gain (dB)</H4>
+Controls the gain of the low (100Hz) peak/dip band
+<H4>Mid gain (dB)</H4>
+Controls the gain of the mid (1000Hz) peak/dip band
+<H4>Hi gain (dB)</H4>
+Controls the gain of the high (10000Hz) shelf band
+      <H3><A NAME="tth_sEc2.35">
+2.35</A>&nbsp;&nbsp;DJ EQ (dj_eq, 1901)<A NAME="dj_eq">
+</A><A NAME="id1901">
+</A></H3>
+The design for this plugin is taken from the Allen &amp; Heath Xone 32
+DJ mixer. It was suggested by Patrick Shirkey.
+<H4>Lo gain (dB)</H4>
+Controls the gain of the low (100Hz) peak/dip band
+<H4>Mid gain (dB)</H4>
+Controls the gain of the mid (1000Hz) peak/dip band
+<H4>Hi gain (dB)</H4>
+Controls the gain of the high (10000Hz) shelf band
+      <H3><A NAME="tth_sEc2.36">
+2.36</A>&nbsp;&nbsp;DJ flanger (djFlanger, 1438)<A NAME="djFlanger">
+</A><A NAME="id1438">
+</A></H3>
+This is a flanger which is more or less typical of DJ mising desks. Requested by Patrick Shirkey.
+<H4>LFO sync</H4>
+When turned from off to on it resets the phase of the LFO back to the start of the cycle. Used to sync the LFO to the track.
+<H4>LFO period (s)</H4>
+The cycle period of the LFO in seconds.
+<H4>LFO depth (ms)</H4>
+The maximum delay the LFO will use to flange, in milliseconds.
+<H4>Feedback (%)</H4>
+The amount of the delays output that is mixed back into the delay.
+      <H3><A NAME="tth_sEc2.37">
+2.37</A>&nbsp;&nbsp;Dyson compressor (dysonCompress, 1403)<A NAME="dysonCompress">
+</A><A NAME="id1403">
+</A></H3>
+
+<H4>Peak limit (dB)</H4>
+Controls the desired limit of the output signal in dB's.
+<H4>Release time (s)</H4>
+Controls the time taken for the compressor to relax its gain control over the input signal.
+<H4>Fast compression ratio</H4>
+I have no clear idea what this controls.
+<H4>Compression ratio</H4>
+I have no clear idea what this controls.
+      <H3><A NAME="tth_sEc2.38">
+2.38</A>&nbsp;&nbsp;Fractionally Addressed Delay Line (fadDelay, 1192)<A NAME="fadDelay">
+</A><A NAME="id1192">
+</A></H3>
+CPU usage: 397 cycles/sample
+
+<p>
+A fixed ring buffer delay implementation. Has different dynamics to a normal delay, more suitable for certain things.Changes in delay length are generally more pleasing, but delays &#62;2s long have reduced sound quality.
+<H4>Delay (seconds)</H4>
+The neutral delay time is 2 seconds. Times above 2 seconds will have reduced quality and times below will have increased CPU usage.
+      <H3><A NAME="tth_sEc2.39">
+2.39</A>&nbsp;&nbsp;Fast Lookahead limiter (fastLookaheadLimiter, 1913)<A NAME="fastLookaheadLimiter">
+</A><A NAME="id1913">
+</A></H3>
+This is a limiter with an attack time of 5ms. It adds just over 5ms of
+lantecy to the input signal, but it guatantees that there will be no signals
+over the limit, and tries to get the minimum ammount of distortion.
+<H4>Input gain (dB)</H4>
+Gain that is applied to the input stage. Can be used to trim gain to
+bring it roughly under the limit or to push the signal against the limit.
+<H4>Limit (dB)</H4>
+The maximum output amplitude. Peaks over this level will be attenuated
+as smoothly as possible to bring them as close as possible to this level.
+<H4>Release time (s)</H4>
+The time taken for the limiters attenuation to return to 0 dB's
+<H4>Attenuation (dB)</H4>
+The current attenuation of the signal coming out of the delay buffer.
+      <H3><A NAME="tth_sEc2.40">
+2.40</A>&nbsp;&nbsp;Flanger (flanger, 1191)<A NAME="flanger">
+</A><A NAME="id1191">
+</A></H3>
+A digital flanger implementation. Uses a novel zero excursion, controlled bandwidth modulation function, which should make the modulation less repetitive and noticable.This effect is similar in character to a phaser (see section <A href="#lfoPhaser">2.75</A>). The main difference is that a phaser sounds more regular and stable.
+<H4>Delay base (ms)</H4>
+This is the offset from the input time that the detune delay moves around.10 is probably a good starting value.
+<H4>Max slowdown (ms)</H4>
+This is the maximum delay that will be applied to the delayed signal, relative to the dry signal.
+<H4>LFO frequency (Hz)</H4>
+This is the core frequency that the 'LFO' will move at. The LFO isn't actually an oscillator, but it does vary periodically.
+<H4>Feedback</H4>
+Feedback applied from the output to the input, increases the depth of the effect, but makes it sound less like a real flanger.
+      <H3><A NAME="tth_sEc2.41">
+2.41</A>&nbsp;&nbsp;FM Oscillator (fmOsc, 1415)<A NAME="fmOsc">
+</A><A NAME="id1415">
+</A></H3>
+
+<H4>Waveform (1=sin, 2=tri, 3=squ, 4=saw)</H4>
+The shape of the waveform.
+	
+<TaBle border>
+<tr><td align="right">Value </td><td>Waveform </td><tr><td>
+<tr><td align="right">1 </td><td>Sine </td>
+<tr><td align="right">2 </td><td>Triangle </td>
+<tr><td align="right">3 </td><td>Square </td>
+<tr><td align="right">4 </td><td>Saw </td></TaBle>
+
+      
+<H4>Frequency (Hz)</H4>
+The frequency of the output (in Hertz).
+      <H3><A NAME="tth_sEc2.42">
+2.42</A>&nbsp;&nbsp;Foldover distortion (foldover, 1213)<A NAME="foldover">
+</A><A NAME="id1213">
+</A></H3>
+CPU usage: 11 cycles/sample
+
+<p>
+Uses a sinwave approximation to simulate valve style foldover distortion.Probably should have a DC offset remover on the output, but it's not always necessary.
+<H4>Drive</H4>
+Controls the degree of distortion.
+<H4>Skew</H4>
+Controls the asymmetry of the waveform.
+      <H3><A NAME="tth_sEc2.43">
+2.43</A>&nbsp;&nbsp;Fast overdrive (foverdrive, 1196)<A NAME="foverdrive">
+</A><A NAME="id1196">
+</A></H3>
+CPU usage: 21 cycles/sample
+
+<p>
+A simple overdrive. Compresses the extreme peaks to make a sound similar to an overdriven amplifier.
+<H4>Drive level</H4>
+Controls the point at which the signal starts to distort, and the degree of distortion.
+      <H3><A NAME="tth_sEc2.44">
+2.44</A>&nbsp;&nbsp;Frequency tracker (freqTracker, 1418)<A NAME="freqTracker">
+</A><A NAME="id1418">
+</A></H3>
+
+<H4>Tracking speed</H4>
+This controls the level of damping applied to the output.High values will make the frequency output jump around, low values will make it a bit slow to respond.
+      <H3><A NAME="tth_sEc2.45">
+2.45</A>&nbsp;&nbsp;Gate (gate, 1410)<A NAME="gate">
+</A><A NAME="id1410">
+</A></H3>
+The parameters are copied from the Drawmer DS-201, but I've never used one, so if someone out there has one, please tell me if it behaves differently.
+<H4>LF key filter (Hz)</H4>
+Controls the cutoff of the low frequency filter (highpass).
+<H4>HF key filter (Hz)</H4>
+Controls the cutoff of the high frequency filter (lowpass).
+<H4>Threshold (dB)</H4>
+Controls the level at which the gate will open.
+<H4>Attack (ms)</H4>
+Controls the time the gate will take to open fully.
+<H4>Hold (ms)</H4>
+Controls the minimum time the gate will stay open for.
+<H4>Decay (ms)</H4>
+Controls the time the gate will take to close fully.
+<H4>Range (dB)</H4>
+Controls the difference between the gate's open and closed state.
+<H4>Output select (-1 = key listen, 0 = gate, 1 = bypass)</H4>
+Controls output monitor. -1 is the output of the key filters (so you can check what is being gated on). 0 is the normal, gated output. 1 is bypass mode.
+      <H3><A NAME="tth_sEc2.46">
+2.46</A>&nbsp;&nbsp;Gate (gate, 1921)<A NAME="gate">
+</A><A NAME="id1921">
+</A></H3>
+The parameters are copied from the Drawmer DS-201, but I've never used one, so if someone out there has one, please tell me if it behaves differently.
+<H4>LF key filter (Hz)</H4>
+Controls the cutoff of the low frequency filter (highpass).
+<H4>HF key filter (Hz)</H4>
+Controls the cutoff of the high frequency filter (lowpass).
+<H4>Key level (dB)</H4>
+Shows the current level of the key.
+<H4>Threshold (dB)</H4>
+Controls the level at which the gate will open.
+<H4>Attack (ms)</H4>
+Controls the time the gate will take to open fully.
+<H4>Hold (ms)</H4>
+Controls the minimum time the gate will stay open for.
+<H4>Decay (ms)</H4>
+Controls the time the gate will take to close fully.
+<H4>Range (dB)</H4>
+Controls the difference between the gate's open and closed state.
+<H4>Output select (-1 = key listen, 0 = gate, 1 = bypass)</H4>
+Controls output monitor. -1 is the output of the key filters (so you can check what is being gated on). 0 is the normal, gated output. 1 is bypass mode.
+      <H3><A NAME="tth_sEc2.47">
+2.47</A>&nbsp;&nbsp;Stereo Gate (stereo_gate, 1922)<A NAME="stereo_gate">
+</A><A NAME="id1922">
+</A></H3>
+Derived from Steve Harris' gate plugin
+<H4>LF key filter (Hz)</H4>
+Controls the cutoff of the low frequency filter (highpass).
+<H4>HF key filter (Hz)</H4>
+Controls the cutoff of the high frequency filter (lowpass).
+<H4>Key level (dB)</H4>
+Shows the current level of the key.
+<H4>Threshold (dB)</H4>
+Controls the level at which the gate will open.
+<H4>Attack (ms)</H4>
+Controls the time the gate will take to open fully.
+<H4>Hold (ms)</H4>
+Controls the minimum time the gate will stay open for.
+<H4>Decay (ms)</H4>
+Controls the time the gate will take to close fully.
+<H4>Range (dB)</H4>
+Controls the difference between the gate's open and closed state.
+<H4>Output select (-1 = key listen, 0 = gate, 1 = bypass)</H4>
+Controls output monitor. -1 is the output of the key filters (so you can check what is being gated on). 0 is the normal, gated output. 1 is bypass mode.
+      <H3><A NAME="tth_sEc2.48">
+2.48</A>&nbsp;&nbsp;Giant flange (giantFlange, 1437)<A NAME="giantFlange">
+</A><A NAME="id1437">
+</A></H3>
+This is a fairly normal flanger but with excessivly long delay times.
+Requested by Patrick Shirkey.To cut down the memory requirements the internal delay buffer noly has
+15bits or resolution, so there is no headroom, if you feed in signals over 0dB
+it will clip the output. There is code to soften the effect of the clipping,
+but beware of it.
+<H4>Double delay</H4>
+doubles the length of the delays, this will reduce the sound quality.
+<H4>LFO frequency 1 (Hz)</H4>
+The delay of the first LFO in seconds.
+<H4>Delay 1 range (s)</H4>
+The delay range of the first LFO in seconds.
+<H4>LFO frequency 2 (Hz)</H4>
+The delay of the second LFO in seconds.
+<H4>Delay 2 range (s)</H4>
+The delay range of the second LFO in seconds.
+<H4>Feedback</H4>
+The amount of the delays output that is mixed back into the delay.
+<H4>Dry/Wet level</H4>
+The ammounts of the input and effect mixed to produce the output.
+      <H3><A NAME="tth_sEc2.49">
+2.49</A>&nbsp;&nbsp;Gong model (gong, 1424)<A NAME="gong">
+</A><A NAME="id1424">
+</A></H3>
+A physical model of a metal gong.Based on Josep Comajuncosas' gong explorer, which was built in Sync Modular, it uses 8 linear waveguides with nonlinear filters to model the gong surface.
+<H4>Inner damping</H4>
+Controls the degree of damping in the centre of the gong.
+<H4>Outer damping</H4>
+Controls the degree of damping on the edge of the gong.
+<H4>Mic position</H4>
+Controls the vertical position of the "microphone", 0 is the centre and 1 is the edge.
+<H4>Inner size 1</H4>
+The size of the upper, inner waveguide.
+<H4>Inner stiffness 1 +</H4>
+The stiffness of the gong against deflections in the positive direction.
+<H4>Inner stiffness 1 -</H4>
+The stiffness of the gong against deflections in the negative direction.
+<H4>Inner size 2</H4>
+The size of the right, inner waveguide.
+<H4>Inner stiffness 2 +</H4>
+The stiffness of the gong against deflections in the positive direction.
+<H4>Inner stiffness 2 -</H4>
+The stiffness of the gong against deflections in the negative direction.
+<H4>Inner size 3</H4>
+The size of the lower, inner waveguide.
+<H4>Inner stiffness 3 +</H4>
+The stiffness of the gong against deflections in the positive direction.
+<H4>Inner stiffness 3 -</H4>
+The stiffness of the gong against deflections in the negative direction.
+<H4>Inner size 4</H4>
+The size of the left, inner waveguide.
+<H4>Inner stiffness 4 +</H4>
+The stiffness of the gong against deflections in the positive direction.
+<H4>Inner stiffness 4 -</H4>
+The stiffness of the gong against deflections in the negative direction.
+<H4>Outer size 1</H4>
+The size of the upper right, outer waveguide.
+<H4>Outer stiffness 1 +</H4>
+The stiffness of the gong against deflections in the positive direction.
+<H4>Outer stiffness 1 -</H4>
+The stiffness of the gong against deflections in the negative direction.
+<H4>Outer size 2</H4>
+The size of the lower right, outer waveguide.
+<H4>Outer stiffness 2 +</H4>
+The stiffness of the gong against deflections in the positive direction.
+<H4>Outer stiffness 2 -</H4>
+The stiffness of the gong against deflections in the negative direction.
+<H4>Outer size 3</H4>
+The size of the lower left, outer waveguide.
+<H4>Outer stiffness 3 +</H4>
+The stiffness of the gong against deflections in the positive direction.
+<H4>Outer stiffness 3 -</H4>
+The stiffness of the gong against deflections in the negative direction.
+<H4>Outer size 4</H4>
+The size of the upper left, outer waveguide.
+<H4>Outer stiffness 4 +</H4>
+The stiffness of the gong against deflections in the positive direction.
+<H4>Outer stiffness 4 -</H4>
+The stiffness of the gong against deflections in the negative direction.
+      <H3><A NAME="tth_sEc2.50">
+2.50</A>&nbsp;&nbsp;Gong beater (gongBeater, 1439)<A NAME="gongBeater">
+</A><A NAME="id1439">
+</A></H3>
+A plugin to simulator the action of a beator on a gong surface, used to trigger the gong physical model.It is triggered by an impulse on the input, eg. from a mic or piezo placed near a solid surface, for an event sequencer.
+<H4>Impulse gain (dB)</H4>
+The gain of the input impulse mixed into the output, bringing this up allows you to make the outputted strike more impulsive, but may reduce the gongyness of the resulting output sound.
+<H4>Strike gain (dB)</H4>
+The gain of the simulated pressure wave mixed into the output, bringing this up allows you to make the outputted strike more pure. The final output level is also proprtional to the amplitude of the trigger.
+<H4>Strike duration (s)</H4>
+The duration of the pressure wave used to simulate the action of the beater on the gong surface. The logner the duration the more sonorus the resulting gong sound.
+      <H3><A NAME="tth_sEc2.51">
+2.51</A>&nbsp;&nbsp;GSM simulator (gsm, 1215)<A NAME="gsm">
+</A><A NAME="id1215">
+</A></H3>
+CPU usage: 377 cycles/sample
+
+<p>
+Encodes and decodes a signal using the GSM voice compression system. Has the effect of making the signal sound like it is being sent over a European mobile phone network.
+<H4>Dry/wet mix</H4>
+Controls the dry/wet mix, 0 will give you the dry signal (but with the appropriate amount of delay), 1 will give you a totally wet signal.
+<H4>Number of passes</H4>
+The number of times the signal is sent through the encode/decode process. Increases the CPU consumption almost linearly, and it will become more peaky so less friendly to realtime processing.
+<H4>Error rate (bits/block)</H4>
+The number of simulated bits that get changed during the transmission process.I really wanted to reduce the bandwidth to get that &#223;houting down a drainpipe" effect, but I'm not sure how the reduced bandwidth is dealt with by real phones. I suspect it's heavily patented technology.
+      <H3><A NAME="tth_sEc2.52">
+2.52</A>&nbsp;&nbsp;GVerb (gverb, 1216)<A NAME="gverb">
+</A><A NAME="id1216">
+</A></H3>
+A mono in, stereo out reverb implementation by Juhana Sadeharju (kouhia at nic.funet.fi). I ported it to LADSPA and did some testing.Please contact Juhana directly regarding any bugs you find.
+      Paul Winkler recommends a good starting point for a "large hall" as follows:
+
+<p>
+	
+<TaBle border>
+<tr><td>Parameter </td><td align="right">amp; Value </td>
+<tr><td>Roomsize </td><td align="right">amp; 200 </td>
+<tr><td>Reverb time </td><td align="right">amp; 1.3 </td>
+<tr><td>Damping </td><td align="right">amp; 0.4 </td>
+<tr><td>Input bandwidth </td><td align="right">amp; 0.5 </td>
+<tr><td>Dry signal level </td><td align="right">amp; 0 </td>
+<tr><td>Early reflection level </td><td align="right">amp; -12 </td>
+<tr><td>Tail level </td><td align="right">amp; 0 </td></TaBle>
+
+    
+<H4>Roomsize (m)</H4>
+The size of the room, in meters. Excessivly large, and excessivly small values will make it sound a bit unrealistic.Values of around 30 sound good.
+<H4>Reverb time (s)</H4>
+Reverb decay time, in seconds. 7 is a good place to start.
+<H4>Damping</H4>
+This controls the high frequency damping (a lowpass filter), values near 1 will make it sound very bright, values near 0 will make it sound very dark.
+<H4>Input bandwidth</H4>
+This is like a damping control for the input, it has a similar effect to the damping control, but is subtly different.
+<H4>Dry signal level (dB)</H4>
+The amount of dry signal to be mixed with the reverberated signal.
+<H4>Early reflection level (dB)</H4>
+The quantity of early reflections (scatter reflections directly from the source). Think of Lexicons ambiance patches.
+<H4>Tail level (dB)</H4>
+The level of the classic reverb tail reflections.
+      <H3><A NAME="tth_sEc2.53">
+2.53</A>&nbsp;&nbsp;Hard Limiter (hardLimiter, 1413)<A NAME="hardLimiter">
+</A><A NAME="id1413">
+</A></H3>
+Brick hard limiter with residue mixer.
+<H4>Wet level</H4>
+Output level for limited signal.
+<H4>Residue level</H4>
+Output level for residue signal.
+      <H3><A NAME="tth_sEc2.54">
+2.54</A>&nbsp;&nbsp;Harmonic generator (harmonicGen, 1220)<A NAME="harmonicGen">
+</A><A NAME="id1220">
+</A></H3>
+CPU usage: 45 cycles/sample
+
+<p>
+
+<H4>What does it do?</H4>Allows you to add harmonics and remove the fundamental from any audio signal.
+<H4>Known bugs</H4>There is no bandwith limiting filter on the output, so it is easy to create excessively high frequency harmonics that could cause aliasing problems. In practive this doesn't seem to be a serious problem however.
+<H4>Examples</H4>There are many interesting effects you can achieve with sinewaves, one example is producing bandlimited squarewaves from sinewaves. To do this set the parameters to 1, 0, -0.3333, 0, 0.2, 0, -0.14285, 0, 0.11111.To get a triangle like signal use 1, 0, -0.3333, 0, -0.2, 0, -0.14285, 0, -0.11111.
+<H4>Fundamental magnitude</H4>
+The amplitude of the fundamental of the signal, reduce it to 0 to remove the base signal altogether, or -1 to phase invert it.
+<H4>2nd harmonic magnitude</H4>
+The 2nd harmonic, its frequency is twice the frequency of the harmonic.Even harmonics add a distorted feel to the sound, valve (tube) amplifiers introduce distortions at all the harmonics.
+<H4>3rd harmonic magnitude</H4>
+The 3rd harmonic, its frequency is three time the frequency of the fundamental.Transistor amplifiers only introduce distortion into the odd harmonics.
+      <H3><A NAME="tth_sEc2.55">
+2.55</A>&nbsp;&nbsp;Hermes Filter (hermesFilter, 1200)<A NAME="hermesFilter">
+</A><A NAME="id1200">
+</A></H3>
+CPU usage: 1400 cycles/sample
+
+<p>
+This plugin is a simulation of a modern analogue synth called a Pro Tone, with some extra features bolted on, like a crossover. I tried to make it as comprehensive as possible, without requiring ludicrous amounts of CPU juice.N.B. as far as I know, noone has tried to use this (I certainly haven't), so it may be full of bugs and what not. The parameters are all undocumented, but there is a diagram of the routing on the website. Without a custom interface however it would be very hard to use.Historical note: the name is a bad pun, it comes from the name Hermes Trimegistus given to the Egyptian god Thoth by the greeks, it means Thrice Blessed, or something similar.
+      <H3><A NAME="tth_sEc2.56">
+2.56</A>&nbsp;&nbsp;Glame Highpass Filter (highpass_iir, 1890)<A NAME="highpass_iir">
+</A><A NAME="id1890">
+</A></H3>
+ IIR highpass filter based using chebishev coefficients. The filter allows you to tweak the number of stages used for
+                filtering. Every stage adds two more poles, which leads to a steeper dropoff. More stages need more CPU power. This
+                filter was ported from the glame multitrack editor to ladspa.
+                
+      <H3><A NAME="tth_sEc2.57">
+2.57</A>&nbsp;&nbsp;Hilbert transformer (hilbert, 1440)<A NAME="hilbert">
+</A><A NAME="id1440">
+</A></H3>
+A Hilbert Transformer phase shifts the input signal by 90degrees. It outputs the 90 degree phase shifted signal and the unshifted signal, both delayed by an equivlaent ammountThis plugin was written for a demo at the LAD Meet in 2003.
+      <H3><A NAME="tth_sEc2.58">
+2.58</A>&nbsp;&nbsp;Impulse convolver (imp, 1199)<A NAME="imp">
+</A><A NAME="id1199">
+</A></H3>
+
+<p>
+    This is a convolver for a set of fairly short impulses.
+
+<p>
+    The set of impulses has to be compiled in, they are:
+
+<p>
+    
+<TaBle border>
+<tr><td align="right">Id </td><td>Impulse </td><tr><td>
+<tr><td align="right">1 </td><td>Unit impulse (identity) </td>
+<tr><td align="right">2 </td><td>My flat (light natural reverb) </td>
+<tr><td align="right">3 </td><td>Yamaha Marshall stack simulator </td>
+<tr><td align="right">4 </td><td>Fender 68 Vibrolux (SM57 on axis) </td>
+<tr><td align="right">5 </td><td>Fender 68 Vibrolux (SM57 off axis) </td>
+<tr><td align="right">6 </td><td>Fender 68 Vibrolux (Audio-technica AT4050) </td>
+<tr><td align="right">7 </td><td>Fender 68 Vibrolux (Neumann U87) </td>
+<tr><td align="right">8 </td><td>Fender Bassman (SM57 on axis) </td>
+<tr><td align="right">9 </td><td>Fender Bassman (SM57 off axis) </td>
+<tr><td align="right">10 </td><td>Fender Bassman (Audio-technica AT4050) </td>
+<tr><td align="right">11 </td><td>Fender Bassman (Neumann U87) </td>
+<tr><td align="right">12 </td><td>Fender Superchamp (SM57 on axis) </td>
+<tr><td align="right">13 </td><td>Fender Superchamp (SM57 off axis) </td>
+<tr><td align="right">14 </td><td>Fender Superchamp (Audio-technica AT4050) </td>
+<tr><td align="right">15 </td><td>Fender Superchamp (Neumann U87) </td>
+<tr><td align="right">16 </td><td>Marshall JCM2000 (SM57 on axis) </td>
+<tr><td align="right">17 </td><td>Marshall JCM2000 (SM57 off axis) </td>
+<tr><td align="right">18 </td><td>Marshall Plexi (SM57 on axis) </td>
+<tr><td align="right">19 </td><td>Marshall Plexi (SM57 off axis) </td>
+<tr><td align="right">20 </td><td>Matchless Chieftan (SM57 on axis) </td>
+<tr><td align="right">21 </td><td>Matchless Chieftan (SM57 off axis) </td></TaBle>
+
+
+<p>
+    The first three were quickly grabbed by me using jack_impulse_grabber, and the others we collected by someone else, but unfortunately I've lost his email address and can't find him on the web :(
+    
+<H4>Impulse ID</H4>
+Selects the impulse to convolve with. New impulses have to be compiled in.
+<H4>High latency mode</H4>
+If you are running with blocks that are not whole powers of two long, or you are hearing distortion, try changing this to 1.
+<H4>Gain (dB)</H4>
+Controls the gain of the output signal in dB's.
+      <H3><A NAME="tth_sEc2.59">
+2.59</A>&nbsp;&nbsp;Nonbandlimited single-sample impulses (Frequency: Control) (impulse_fc, 1885)<A NAME="impulse_fc">
+</A><A NAME="id1885">
+</A></H3>
+Based on work by James McCartney in SuperCollider.
+<H4>Frequency (Hz)</H4>
+
+<p>
+       Frequency for the impulses.
+      
+      <H3><A NAME="tth_sEc2.60">
+2.60</A>&nbsp;&nbsp;Inverter (inv, 1429)<A NAME="inv">
+</A><A NAME="id1429">
+</A></H3>
+A utility plugin that inverts the signal, also (wrongly) known as a 180 degree phase shift.
+      <H3><A NAME="tth_sEc2.61">
+2.61</A>&nbsp;&nbsp;Karaoke (karaoke, 1409)<A NAME="karaoke">
+</A><A NAME="id1409">
+</A></H3>
+Attempts to strip the vocals from a stereo signal.
+<H4>Vocal volume (dB)</H4>
+Controls the attenuation of the vocal (centre channel) in dB's.The greater the attenuation the greater the loss of stereo field.
+      <H3><A NAME="tth_sEc2.62">
+2.62</A>&nbsp;&nbsp;Artificial latency (artificialLatency, 1914)<A NAME="artificialLatency">
+</A><A NAME="id1914">
+</A></H3>
+Reports its  delay value as systemic latency. Does nothing else, *this is not a delay*.Can be used to correct for latency between channels.
+      <H3><A NAME="tth_sEc2.63">
+2.63</A>&nbsp;&nbsp;L/C/R Delay (lcrDelay, 1436)<A NAME="lcrDelay">
+</A><A NAME="id1436">
+</A></H3>
+This is a left/centre/right delay with feedback, based on the one in the Korg Trinity. Requested by Marek Peteraj.
+<H4>L delay (ms)</H4>
+The delay of the left output in milliseconds.
+<H4>L level</H4>
+The level of the left output.
+<H4>C delay (ms)</H4>
+The delay of the centre output in milliseconds.
+<H4>C level</H4>
+The level of the centre output.
+<H4>R delay (ms)</H4>
+The delay of the right output in milliseconds.
+<H4>R level</H4>
+The level of the right output.
+<H4>Feedback</H4>
+The amount of the C delay output that is mixed back into the delay.
+<H4>High damp (%)</H4>
+The damping of the high frequencies in the feedback path.
+<H4>Low damp (%)</H4>
+The damping of the low frequencies in the feedback path.
+<H4>Spread</H4>
+The width of the stereo image.
+<H4>Dry/Wet level</H4>
+The ammounts of the input and effect mixed to produce the output.
+      <H3><A NAME="tth_sEc2.64">
+2.64</A>&nbsp;&nbsp;Lookahead limiter (lookaheadLimiter, 1435)<A NAME="lookaheadLimiter">
+</A><A NAME="id1435">
+</A></H3>
+
+<H4>Limit (dB)</H4>
+The maximum output amplitude. Peaks over this level will be attenuated as smoothly as possible to bring them as close as possible to this level.
+<H4>Lookahead delay</H4>
+The delay used by the lookahead predictor. The longer the delay the smoother the limiting will be, but higher the latency.
+<H4>Attenuation (dB)</H4>
+The current attenuation of the signal coming out of the delay buffer.
+      <H3><A NAME="tth_sEc2.65">
+2.65</A>&nbsp;&nbsp;Lookahead limiter (fixed latency) (lookaheadLimiterConst, 1906)<A NAME="lookaheadLimiterConst">
+</A><A NAME="id1906">
+</A></H3>
+A lookahead limiter - similar to the original Lookahead Limiter, but
+with a constant latency of around 150ms and a reduacued maximum lookahead
+time.
+<H4>Limit (dB)</H4>
+The maximum output amplitude. Peaks over this level will be attenuated as smoothly as possible to bring them as close as possible to this level.
+<H4>Lookahead time (s)</H4>
+The lookahead time used by the lookahead predictor. The longer the time the smoother the limiting will be, but will tend to make the changes in dynamic range more obvious.
+<H4>Attenuation (dB)</H4>
+The current limiting attenuation of the signal coming out of the delay
+buffer.
+      <H3><A NAME="tth_sEc2.66">
+2.66</A>&nbsp;&nbsp;Glame Lowpass Filter (lowpass_iir, 1891)<A NAME="lowpass_iir">
+</A><A NAME="id1891">
+</A></H3>
+ IIR lowpass filter based using chebishev coefficients. The filter allows you to tweak the number of stages used for
+                filtering. Every stage adds two more poles, which leads to a steeper dropoff. More stages need more CPU power. This
+                filter was ported from the glame multitrack editor to ladspa.
+                
+      <H3><A NAME="tth_sEc2.67">
+2.67</A>&nbsp;&nbsp;LS Filter (lsFilter, 1908)<A NAME="lsFilter">
+</A><A NAME="id1908">
+</A></H3>
+This is a filter created for the LinkSampler project - its designed to closly follow the filter used in giga sampler.
+<H4>Filter type (0=LP, 1=BP, 2=HP)</H4>
+The type of the filter, 0 for low pass, 1 for band pass, 2 for high pass.
+<H4>Cutoff frequency (Hz)</H4>
+Controls the frequency at which the filter starts to effect the audio signal.eg. a lowpass filter with a cutoff frequency of 1000 Hz will only let frequencies below 100 Hz through.
+<H4>Resonance</H4>
+Creates a peak at the cutoff frequency, for the classic overdriven fileter sound. At high vlaues the peak at the cutoff will overwhelm the filtered signal.
+      <H3><A NAME="tth_sEc2.68">
+2.68</A>&nbsp;&nbsp;Matrix: MS to Stereo (matrixMSSt, 1421)<A NAME="matrixMSSt">
+</A><A NAME="id1421">
+</A></H3>
+
+<H4>Width</H4>
+The width of the dematrixed stereo field. 1 will give you normal width, 0 will make it completely mono, &lt; 1 will make it narrower and &#62; 1 will make it wider.
+      <H3><A NAME="tth_sEc2.69">
+2.69</A>&nbsp;&nbsp;Matrix Spatialiser (matrixSpatialiser, 1422)<A NAME="matrixSpatialiser">
+</A><A NAME="id1422">
+</A></H3>
+
+<p>
+      A simple spatializer that lets you control the width of a stereo signal.
+
+<p>
+      We convert it into a MS (mid/side) signal, manipulate the gain coefficients
+      with a constant-power panning function, and reconvert to left/right stereo.
+
+<p>
+      mid = (i_left + i_right) / 2
+
+<p>
+      side = (i_left - i_right) / 2
+
+<p>
+      width = (-pi/4)..0..(pi/4)
+
+<p>
+      o_left = mid * cos(width + pi/4)
+      o_right = side * sin(width + pi/4)
+
+<p>
+      <font size="-1">shifted by pi/4, so that 0 is neutral.</font>
+    
+<H4>Width</H4>
+
+<p>
+         0 is neutral (unmodified signal)
+	 + 128 is side only (=very wide)
+	 - 128 is mid only (=mono)
+       
+      <H3><A NAME="tth_sEc2.70">
+2.70</A>&nbsp;&nbsp;Matrix: Stereo to MS (matrixStMS, 1420)<A NAME="matrixStMS">
+</A><A NAME="id1420">
+</A></H3>
+
+      <H3><A NAME="tth_sEc2.71">
+2.71</A>&nbsp;&nbsp;Multiband EQ (mbeq, 1197)<A NAME="mbeq">
+</A><A NAME="id1197">
+</A></H3>
+This is a fairly typical multiband graphical equalizer. It's implemented using a FFT, so it takes quite a lot of CPU power, but should have less phase effects than an equivalent filter implementation.If the input signal is at too low a sample rate then the top bands will be ignored, the highest useful band will always be a high shelf.
+      <H3><A NAME="tth_sEc2.72">
+2.72</A>&nbsp;&nbsp;Modulatable delay (modDelay, 1419)<A NAME="modDelay">
+</A><A NAME="id1419">
+</A></H3>
+A delay whose tap can be modulated at audio rate.Requested by Matthias Nagorni at LinuxTag 2002, in order to make a Leslie simulator.
+      <H3><A NAME="tth_sEc2.73">
+2.73</A>&nbsp;&nbsp;Multivoice Chorus (multivoiceChorus, 1201)<A NAME="multivoiceChorus">
+</A><A NAME="id1201">
+</A></H3>
+This is an implementation of a Multivoice (as opposed to Multiscale) chorus algorithm. Its uses a novel, sinc based noise interpolation method to produce a subtle modulation law which makes it possible to get away with larger numbers of voices without the metallic, artificial sound common in chorus effects.
+<H4>Voice separation (ms)</H4>
+The individual voices can either be running at the same base delay (set this to zero) or staggered.Setting this to non-zero values can make the output sound richer, but will make it sound grainy with some type of signal.
+<H4>Detune (%)</H4>
+The maximum amount that a voice will be detuned by. I recommend a value of 1, but you may be able to get away with higher values if the signal is less harmonic.
+<H4>LFO frequency (Hz)</H4>
+The frequency that the detune effect will be modulated at. A matter of taste, for most types of input lower will be more subtle.
+<H4>Output attenuation (dB)</H4>
+With large numbers of voices the output can become too high, so use this to trim the amplitude to a more helpful level.
+      <H3><A NAME="tth_sEc2.74">
+2.74</A>&nbsp;&nbsp;Mag's Notch Filter (notch_iir, 1894)<A NAME="notch_iir">
+</A><A NAME="id1894">
+</A></H3>
+ IIR notch filter based using chebishev coefficients. The filter allows you to tweak the number of stages used for
+                filtering. Every stage adds two more poles, which leads to a steeper dropoff. More stages need more CPU power.
+                
+      <H3><A NAME="tth_sEc2.75">
+2.75</A>&nbsp;&nbsp;LFO Phaser (lfoPhaser, 1217)<A NAME="lfoPhaser">
+</A><A NAME="id1217">
+</A></H3>
+CPU usage: 197 cycles/sample
+
+<p>
+      <H3><A NAME="tth_sEc2.76">
+2.76</A>&nbsp;&nbsp;4 x 4 pole allpass (fourByFourPole, 1218)<A NAME="fourByFourPole">
+</A><A NAME="id1218">
+</A></H3>
+CPU usage: 262 cycles/sample
+
+<p>
+      <H3><A NAME="tth_sEc2.77">
+2.77</A>&nbsp;&nbsp;Auto phaser (autoPhaser, 1219)<A NAME="autoPhaser">
+</A><A NAME="id1219">
+</A></H3>
+CPU usage: 121 cycles/sample
+
+<p>
+      <H3><A NAME="tth_sEc2.78">
+2.78</A>&nbsp;&nbsp;Pitch Scaler (pitchScale, 1193)<A NAME="pitchScale">
+</A><A NAME="id1193">
+</A></H3>
+CPU usage: 1323 cycles/sample
+
+<p>
+A pitch shifter implementation that scales the harmonics appropriately with the base frequencies. It is an implementation of Stephen M. Sprengler's pitch scaler design. It gives reasonable, general purpose results for small changes, but won't give Antares or Eventide anything to worry about.The FFT block size and oversampling has been kept at a minimum to keep the CPU usage low.
+      <H3><A NAME="tth_sEc2.79">
+2.79</A>&nbsp;&nbsp;Higher Quality Pitch Scaler (pitchScaleHQ, 1194)<A NAME="pitchScaleHQ">
+</A><A NAME="id1194">
+</A></H3>
+A pitch shifter implementation that scales the harmonics appropriately with the base frequencies. It is an implementation of Stephen M. Sprengler's pitch scaler design. It gives reasonable, general purpose results for small changes, but won't give Antares or Eventide anything to worry about.The FFT block size and oversampling has been kept at reasonable levels to keep the CPU usage low, but it is smoother than the other Pitch Scaler.
+<H4>Pitch co-efficient</H4>
+The pitch scaling factor, a value of 2.0 will increase the pitch by one octave, etc.
+      <H3><A NAME="tth_sEc2.80">
+2.80</A>&nbsp;&nbsp;Plate reverb (plate, 1423)<A NAME="plate">
+</A><A NAME="id1423">
+</A></H3>
+A physical model of a steel plate reverb.Based on Josep Comajuncosas' gong model, it uses 8 linear waveguides to model the plate.
+<H4>Reverb time</H4>
+Controls the RT60 time of the reverb. Actually controls the size of the plate. The mapping betwwen plate size and RT60 time is just a heuristic, so it's not very accurate.
+<H4>Damping</H4>
+Controls the degree that the surface of the plate is damped.
+<H4>Dry/wet mix</H4>
+Controls the balance between the dry and wet signals.
+      <H3><A NAME="tth_sEc2.81">
+2.81</A>&nbsp;&nbsp;Pointer cast distortion (pointerCastDistortion, 1910)<A NAME="pointerCastDistortion">
+</A><A NAME="id1910">
+</A></H3>
+This distortion is created by treating the floating point repesentation
+of the input signal as a 0.32 1's complement fixedpoint integer. Its very
+unmusical but supprisingly recognisable. I'm not sure that its useful for
+anything, but it can make interesting noises.
+<H4>Effect cutoff freq (Hz)</H4>
+Controls the frequencies that will be passed to the effect.
+<H4>Dry/wet mix</H4>
+Controls the ammount of distioning mixed into the output.
+      <H3><A NAME="tth_sEc2.82">
+2.82</A>&nbsp;&nbsp;Rate shifter (rateShifter, 1417)<A NAME="rateShifter">
+</A><A NAME="id1417">
+</A></H3>
+Stretches or compresses the input with a ringbuffer.Because of the ringbuffer you will get stretches of silence or clicks when the read pointer passes the write pointer.The ringbuffer is about 2.7-3.0s long, depending on the sample rate.Versions with variable buffer sizes or declicking code would be easy (but a bit less efficient); shout if you would find them useful.
+<H4>Rate</H4>
+The rate of the output signal; eg. 2.0 will double the speed. Negative numbers will play backwards.Pretty much any value will work, but the ranges give what most people are going to want to use. You can get some interesting sounds with very high numbers (e.g. 2000).
+      <H3><A NAME="tth_sEc2.83">
+2.83</A>&nbsp;&nbsp;Retro Flanger (retroFlange, 1208)<A NAME="retroFlange">
+</A><A NAME="id1208">
+</A></H3>
+A model of someone flanging the input.Models the tape saturation effects, and frequency smear of a manual flanger. The results are a slightly distorted, but more subtle flanger sound that you get from a normal digial flanger.
+<H4>Average stall (ms)</H4>
+The average time difference between the two tapes, per stall
+<H4>Flange frequency (Hz)</H4>
+The rate the tape is stalled at.
+      <H3><A NAME="tth_sEc2.84">
+2.84</A>&nbsp;&nbsp;Reverse Delay (5s max) (revdelay, 1605)<A NAME="revdelay">
+</A><A NAME="id1605">
+</A></H3>
+ A reverse delay not really modelled on any existing one.  You'll want to set
+         the Crossfade Samples parameter to something reasonably small (but more than 20)
+         for most applications, but you can try larger values if you start getting clicking.
+    
+<H4>Dry Level (dB)</H4>
+Controls the level of the dry input signal in dB's.
+<H4>Wet Level (dB)</H4>
+Controls the level of the delayed signal in dB's.
+      <H3><A NAME="tth_sEc2.85">
+2.85</A>&nbsp;&nbsp;Ringmod with two inputs (ringmod_2i1o, 1188)<A NAME="ringmod_2i1o">
+</A><A NAME="id1188">
+</A></H3>
+This is a simple 2 input ring modulator.It is important that the modulator input is bounded to (-1, +1), otherwise you will get rubbish on the output.
+<H4>Input</H4>
+This is the audio input.
+<H4>Modulator</H4>
+This is the modulator input.
+      <H3><A NAME="tth_sEc2.86">
+2.86</A>&nbsp;&nbsp;Ringmod with LFO (ringmod_1i1o1l, 1189)<A NAME="ringmod_1i1o1l">
+</A><A NAME="id1189">
+</A></H3>
+CPU usage: 102 cycles/sample
+
+<p>
+This is a simple ring modulator and LFO.
+      <H3><A NAME="tth_sEc2.87">
+2.87</A>&nbsp;&nbsp;Barry's Satan Maximiser (satanMaximiser, 1408)<A NAME="satanMaximiser">
+</A><A NAME="id1408">
+</A></H3>
+Formerly Stupid Compressor. Thanks to Matt Yee-King for the name.Compresses signals with a stupidly short attack and decay, infinite
+ratio and hard knee. Not really as a compressor, but good harsh (non-musical)
+distortion.
+<H4>Decay time (samples)</H4>
+Controls the envelope decay time.
+<H4>Knee point (dB)</H4>
+Controls the knee roll-off point, ie. the point above which the compression kicks in. 0 will have no effect, -90 will remove virtually all dynamic range.
+      <H3><A NAME="tth_sEc2.88">
+2.88</A>&nbsp;&nbsp;SC1 (sc1, 1425)<A NAME="sc1">
+</A><A NAME="id1425">
+</A></H3>
+An high quality, reasonably low CPU cost RMS compressor designed for musical work.It has controls for the compression point, compression ratio and knee softness.
+<H4>Attack time (ms)</H4>
+The attack time in milliseconds.
+<H4>Release time (ms)</H4>
+The release time in milliseconds.
+<H4>Threshold level (dB)</H4>
+The point at which the compressor will start to kick in.
+<H4>Ratio (1:n)</H4>
+The gain reduction ratio used when the signal level exceeds the threshold.
+<H4>Knee radius (dB)</H4>
+The distance from the threshold where the knee curve starts.
+<H4>Makeup gain (dB)</H4>
+Controls the gain of the makeup input signal in dB's.
+      <H3><A NAME="tth_sEc2.89">
+2.89</A>&nbsp;&nbsp;SC2 (sc2, 1426)<A NAME="sc2">
+</A><A NAME="id1426">
+</A></H3>
+A compressor with sidechain. Based on the code for SC1.
+<H4>Attack time (ms)</H4>
+The attack time in milliseconds.
+<H4>Release time (ms)</H4>
+The release time in milliseconds.
+<H4>Threshold level (dB)</H4>
+The point at which the compressor will start to kick in.
+<H4>Ratio (1:n)</H4>
+The gain reduction ratio used when the signal level exceeds the threshold.
+<H4>Knee radius (dB)</H4>
+The distance from the threshold where the knee curve starts.
+<H4>Makeup gain (dB)</H4>
+Controls the gain of the makeup input signal in dB's.
+      <H3><A NAME="tth_sEc2.90">
+2.90</A>&nbsp;&nbsp;SC3 (sc3, 1427)<A NAME="sc3">
+</A><A NAME="id1427">
+</A></H3>
+A stereo compressor with sidechain input. Based on the code for SC1.
+<H4>Attack time (ms)</H4>
+The attack time in milliseconds.
+<H4>Release time (ms)</H4>
+The release time in milliseconds.
+<H4>Threshold level (dB)</H4>
+The point at which the compressor will start to kick in.
+<H4>Ratio (1:n)</H4>
+The gain reduction ratio used when the signal level exceeds the threshold.
+<H4>Knee radius (dB)</H4>
+The distance from the threshold where the knee curve starts.
+<H4>Makeup gain (dB)</H4>
+Controls the gain of the makeup input signal in dB's.
+<H4>Chain balance</H4>
+Controls the chain signal used, 0 = Left+right in, 1 = Sidechain.
+      <H3><A NAME="tth_sEc2.91">
+2.91</A>&nbsp;&nbsp;SC4 (sc4, 1882)<A NAME="sc4">
+</A><A NAME="id1882">
+</A></H3>
+A stereo compressor with variable envelope follower for RMS / peak behaviour. Based on the code for SC1.
+<H4>RMS/peak</H4>
+The blanace between the RMS and peak envelope followers.RMS is generally better for subtle, musical compression and peak is better for heavier, fast compression and percussion.
+<H4>Attack time (ms)</H4>
+The attack time in milliseconds.
+<H4>Release time (ms)</H4>
+The release time in milliseconds.
+<H4>Threshold level (dB)</H4>
+The point at which the compressor will start to kick in.
+<H4>Ratio (1:n)</H4>
+The gain reduction ratio used when the signal level exceeds the threshold.
+<H4>Knee radius (dB)</H4>
+The distance from the threshold where the knee curve starts.
+<H4>Makeup gain (dB)</H4>
+Controls the gain of the makeup input signal in dB's.
+<H4>Amplitude (dB)</H4>
+The level of the input signal, in decibels.
+<H4>Gain reduction (dB)</H4>
+The degree of gain reduction applied to the input signal, in decibels.
+      <H3><A NAME="tth_sEc2.92">
+2.92</A>&nbsp;&nbsp;SE4 (se4, 1883)<A NAME="se4">
+</A><A NAME="id1883">
+</A></H3>
+A stereo expander with variable envelope follower for RMS / peak behaviour. Based on the code for SC1.
+<H4>RMS/peak</H4>
+The blanace between the RMS and peak envelope followers.
+<H4>Attack time (ms)</H4>
+The attack time in milliseconds.
+<H4>Release time (ms)</H4>
+The release time in milliseconds.
+<H4>Threshold level (dB)</H4>
+The point at which the expander will start to kick in.
+<H4>Ratio (1:n)</H4>
+The gain expansion ratio used when the signal level exceeds the threshold.
+<H4>Knee radius (dB)</H4>
+The distance from the threshold where the knee curve starts.
+<H4>Attenuation (dB)</H4>
+Controls the gain of the output signal in dB's. Used to correct for excessive amplitude caused by the extra dynamic range.
+<H4>Amplitude (dB)</H4>
+The level of the input signal, in decibels.
+<H4>Gain expansion (dB)</H4>
+The degree of gain expansion applied to the input signal, in decibels.
+      <H3><A NAME="tth_sEc2.93">
+2.93</A>&nbsp;&nbsp;Wave shaper (shaper, 1187)<A NAME="shaper">
+</A><A NAME="id1187">
+</A></H3>
+CPU usage: 200 cycles/sample
+
+<p>
+This plugin reshapes the wave by an exponential function, inspiration was taken from the Nord module of the same name.If you are getting rubbish out then it's probably because the host isn't using the input/output range hints, which are very important for this plugin.
+<H4>Waveshape</H4>
+Positive values have an expanding effect, and negative values have a compressing effect.
+      <H3><A NAME="tth_sEc2.94">
+2.94</A>&nbsp;&nbsp;Signal sifter (sifter, 1210)<A NAME="sifter">
+</A><A NAME="id1210">
+</A></H3>
+Sorts and mixes blocks of the input signal to give a "bumpy ramp" effect.Certain types of input will produce silence on the output (mostly ones with only low frequency components).This is a very odd effect, and doesn't really have any music applications, but can produce some interesting noises.
+      <H3><A NAME="tth_sEc2.95">
+2.95</A>&nbsp;&nbsp;Sine + cosine oscillator (sinCos, 1881)<A NAME="sinCos">
+</A><A NAME="id1881">
+</A></H3>
+This is a simple oscillator that outputs sinewaves with a 90 degree phase shift between them.The current implementation is very inefficient, but I will improve it later.
+<H4>Base frequency (Hz)</H4>
+The base frequency of the output waves.
+<H4>Pitch offset</H4>
+The pitch offset of the output waves. Final oscillator frequency is base + 2<sup>p</sup>itch.
+      <H3><A NAME="tth_sEc2.96">
+2.96</A>&nbsp;&nbsp;Single band parametric (singlePara, 1203)<A NAME="singlePara">
+</A><A NAME="id1203">
+</A></H3>
+A single band of a parametric filter.
+<H4>Gain (dB)</H4>
+The attenuation/gain of the eq.
+<H4>Frequency (Hz)</H4>
+The centre frequency (ie. point of most/least attenuation).Beware of high values for Frequency and Bandwidth, if the high pitch (Frequency * 2<sup>Bandwidth</sup>) goes over half the sample rate you will get aliasing.Note: if your host offers you a frequency range between 0 and 0.4 then it's not rendering the input parameter correctly, the input frequency will actually be that number multiplied by the sample rate (e.g. 44.1kHz).
+<H4>Bandwidth (octaves)</H4>
+The pitch difference from the centre before the attenuation has reached half the gain.
+      <H3><A NAME="tth_sEc2.97">
+2.97</A>&nbsp;&nbsp;Sinus wavewrapper (sinusWavewrapper, 1198)<A NAME="sinusWavewrapper">
+</A><A NAME="id1198">
+</A></H3>
+Produces an unusual distortion effect, for a more amp like tone, see the valve saturation plugin (section <A href="#valve">2.106</A>).
+      <H3><A NAME="tth_sEc2.98">
+2.98</A>&nbsp;&nbsp;Smooth Decimator (smoothDecimate, 1414)<A NAME="smoothDecimate">
+</A><A NAME="id1414">
+</A></H3>
+
+<H4>Resample rate</H4>
+The rate at which the output signal will be resampled
+<H4>Smoothing</H4>
+The amount of smoothing on the output signal.
+      <H3><A NAME="tth_sEc2.99">
+2.99</A>&nbsp;&nbsp;Mono to Stereo splitter (split, 1406)<A NAME="split">
+</A><A NAME="id1406">
+</A></H3>
+Takes a mono input signal, and outputs it to both left and right channel, thus &#223;tereophizing" it.
+      <H3><A NAME="tth_sEc2.100">
+2.100</A>&nbsp;&nbsp;Step Demuxer (stepMuxer, 1212)<A NAME="stepMuxer">
+</A><A NAME="id1212">
+</A></H3>
+Inputs up to 8 signals and switches between them on the output when then signal on the clock input goes high.This plugin is untested, and may not work.
+      <H3><A NAME="tth_sEc2.101">
+2.101</A>&nbsp;&nbsp;Surround matrix encoder (surroundEncoder, 1401)<A NAME="surroundEncoder">
+</A><A NAME="id1401">
+</A></H3>
+I haven't been able to test this plugin, so there may be bugs. I have successfully tested the algorithm, but the implementation is suspect.
+<H4>What does it do?</H4>It allows you to encode four channels of sound into a stereo compatible stream that will be decoded by a Dolby<a href="#tthFtNtAAB" name="tthFrefAAB"><sup>1</sup></a> Surround/Pro-Logic decoder into Left, Right, Center and Surround signals.This is not a proper implementation of Pro-logic, there is no Dolby B processing done on the surround channel, which would help, but would be using Dolby intellectual property.
+<H4>Caveats</H4>Obviously you can't wedge four channels into two without loss, so something has to give. You will probably notice significant cross-talk between the channels, but the decoder should do cross-talk correction, which will help a lot. A side effect of this is that it will make left-right panning unusual, the sources will dwell near the left and right speakers and zip across the centre channel. Because of this it is only really possible to master surround recordings through a pre-logic decoder. Do not attempt to use a conventional 5 point surround multichannel setup, it behaves very differently.In addition to this, output from this process is not entirly mono compatible, in mono output the L, C and R will be preserved as per a stereo recording (centre will be mixed equally), but the surround channel will be totally lost.Careful gain control on the output is required, as the level of the output will be greater than the L and R inputs, but different to the sum amplitude of the input signals.Widely panned reverb fed to the L and R channels will often leak into the S channel, if this is not desired (often it is) reduce the width of the stereo image.The encoding will survive some processes (eg. copying to CD, MD etc.), but may not survive conversion to MP3 or recoding to tape with azimuth errors.
+<H4>Legalese</H4>This is a four channel matrix encoder, it happens to be compatible with Dolby Surround Pro-Logic.This implementation does not convey a license nor imply a right under any patent, or any other industrial or intellectual property right of Dolby Laboratories.
+<H4>L</H4>
+Left channel input. Can be treated as per normal stereo recoding, except that the speaker should be at -22.5<sup><font face=symbol>°</font
+></sup>, rather than the normal stereo -30<sup><font face=symbol>°</font
+></sup>.
+<H4>R</H4>
+Right channel input. As per left channel.
+<H4>C</H4>
+Center channel input. Will be directly in front of the listener, stereo and mono compatible.
+<H4>S</H4>
+Surround channel. Should sound from the rear speakers, may also leak into the left and right. Has slight delay and bandwidth reduction (cut below 100 Hz, and above 7 KHz) for leakage and noise reduction and enhanced psychoacoustic effects.Not mono compatible.
+      <H3><A NAME="tth_sEc2.102">
+2.102</A>&nbsp;&nbsp;State Variable Filter (svf, 1214)<A NAME="svf">
+</A><A NAME="id1214">
+</A></H3>
+An oversampled state variable filter with a few tweaksQuite a nice State Variable Filter, tends to be unstable with high resonance and Q values, but good when kept under control.
+<H4>Filter type (0=none, 1=LP, 2=HP, 3=BP, 4=BR, 5=AP)</H4>
+Select between no filtering, low-pass, high-pass, band-pass, band-reject and all-pass.
+<H4>Filter freq</H4>
+Cutoff frequency, beware of high values with low sample rates.
+<H4>Filter Q</H4>
+The filters Q, or cutoff slope.
+<H4>Filter resonance</H4>
+The filter's resonance, sort of separate from Q but very related (implemented with feedback).Do not use with the bandpass mode.
+      <H3><A NAME="tth_sEc2.103">
+2.103</A>&nbsp;&nbsp;Tape Delay Simulation (tapeDelay, 1211)<A NAME="tapeDelay">
+</A><A NAME="id1211">
+</A></H3>
+CPU usage: 405 cycles/sample
+
+<p>
+Correctly models the tape motion and some of the smear effect, there is no simulation fo the head saturation yet, as I don't have a good model of it. When I get one I will add it.The way the tape accelerates and decelerates gives a nicer delay effect for many purposes.
+      <H3><A NAME="tth_sEc2.104">
+2.104</A>&nbsp;&nbsp;Transient mangler (transient, 1206)<A NAME="transient">
+</A><A NAME="id1206">
+</A></H3>
+
+      <H3><A NAME="tth_sEc2.105">
+2.105</A>&nbsp;&nbsp;Triple band parametric with shelves (triplePara, 1204)<A NAME="triplePara">
+</A><A NAME="id1204">
+</A></H3>
+Actually five bands of eq, but the first and last are locked to shelving filters.For details see the single band parametric (section <A href="#singlePara">2.96</A>).
+      <H3><A NAME="tth_sEc2.106">
+2.106</A>&nbsp;&nbsp;Valve saturation (valve, 1209)<A NAME="valve">
+</A><A NAME="id1209">
+</A></H3>
+CPU usage: 317 cycles/sample
+
+<p>
+A model of valve (tube) distortion, lacking some of the harmonics you would get in a real tube amp, but sounds good nonetheless.Taken from Ragnar Bendiksen's thesis: <a href="http://www.notam02.no/~rbendiks/Diplom/Innhold.html"><tt>http://www.notam02.no/~rbendiks/Diplom/Innhold.html</tt></a>.
+<H4>Distortion level</H4>
+How hard the signal is driven against the limit of the amplifier.
+<H4>Distortion character</H4>
+The hardness of the sound, low for soft, high for hard.
+      <H3><A NAME="tth_sEc2.107">
+2.107</A>&nbsp;&nbsp;Valve rectifier (valveRect, 1405)<A NAME="valveRect">
+</A><A NAME="id1405">
+</A></H3>
+
+<H4>Sag level</H4>
+The level of power supply sag that will be caused by attacks.
+<H4>Distortion</H4>
+How harsh the distortion caused by the sag will be.
+      <H3><A NAME="tth_sEc2.108">
+2.108</A>&nbsp;&nbsp;VyNil (Vinyl Effect) (vynil, 1905)<A NAME="vynil">
+</A><A NAME="id1905">
+</A></H3>
+
+<H4>Year</H4>
+The date of the recording/playback equipment to be simulated.
+<H4>RPM</H4>
+The rotational speed of the platter.
+<H4>Surface warping</H4>
+The degree of variation in height of the record surface.
+<H4>Crackle</H4>
+The number of scratches on the record surface.
+<H4>Wear</H4>
+The ammount of wear on the grooves.
+      <H3><A NAME="tth_sEc2.109">
+2.109</A>&nbsp;&nbsp;Wave Terrain Oscillator (waveTerrain, 1412)<A NAME="waveTerrain">
+</A><A NAME="id1412">
+</A></H3>
+A Wave Terrain oscillator, taken from Curtis Roads' example in <em>The Computer Music Tutorial</em>.Inputs x and y move the cursor around on a 2D landscape "wavetable" that is used to generate the output. The function used is  z = (x - y) * (x - 1) * (x + 1) * (y - 1) * (y + 1).
+      <H3><A NAME="tth_sEc2.110">
+2.110</A>&nbsp;&nbsp;Crossfade (xfade, 1915)<A NAME="xfade">
+</A><A NAME="id1915">
+</A></H3>
+
+<H4>Crossfade</H4>
+Controls the degree to which the inputs are mixed into the output. A
+value of -1 means that the output is just the A input, and a value of 1.0
+means that it is just the B input.
+      <H3><A NAME="tth_sEc2.111">
+2.111</A>&nbsp;&nbsp;Crossfade (4 outs) (xfade4, 1916)<A NAME="xfade4">
+</A><A NAME="id1916">
+</A></H3>
+
+<H4>Crossfade</H4>
+Controls the degree to which the inputs are mixed into the output. A
+value of -1 means that the output is just the A input, and a value of 1.0
+means that it is just the B input.
+      <H3><A NAME="tth_sEc2.112">
+2.112</A>&nbsp;&nbsp;z-1 (zm1, 1428)<A NAME="zm1">
+</A><A NAME="id1428">
+</A></H3>
+A plugin that implements the z<sup>-1</sup> function (a single sample delay).
+        <H2><A NAME="tth_sEc3">
+3</A>&nbsp;&nbsp;Licensing</H2>
+All this code is available under the GNU Public Licence, see the file ''COPYING'' included with the source for more detials.
+
+<p>
+<hr><H3>Footnotes:</H3>
+
+<p><a name="tthFtNtAAB"></a><a href="#tthFrefAAB"><sup>1</sup></a> "Dolby" is a trademark of Dolby Laboratories.
+<p><hr><small>File translated from T<sub><font size="-1">E</font></sub>X by <a href="http://hutchinson.belmont.ma.us/tth/">T<sub><font size="-1">T</font></sub>H</a>, version 2.51.<br>On 26 Oct 2004, 14:38.</small>
+</HTML>

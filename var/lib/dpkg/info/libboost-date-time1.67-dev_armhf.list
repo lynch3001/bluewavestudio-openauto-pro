@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libboost_date_time.a
+/usr/share
+/usr/share/doc
+/usr/share/doc/libboost-date-time1.67-dev
+/usr/share/doc/libboost-date-time1.67-dev/changelog.Debian.gz
+/usr/share/doc/libboost-date-time1.67-dev/copyright
+/usr/share/doc/libboost-date-time1.67-dev/data
+/usr/share/doc/libboost-date-time1.67-dev/data/README.zone_spec_csv_file.gz
+/usr/share/doc/libboost-date-time1.67-dev/data/date_time_zonespec.csv.gz
+/usr/lib/arm-linux-gnueabihf/libboost_date_time.so

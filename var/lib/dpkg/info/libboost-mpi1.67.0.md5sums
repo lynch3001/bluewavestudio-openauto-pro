@@ -1,0 +1,4 @@
+873755cffacf68374244f5e9a5574936  usr/lib/arm-linux-gnueabihf/libboost_mpi.so.1.67.0
+fd9fd87aca681e8911194b0265a932bd  usr/share/doc/libboost-mpi1.67.0/changelog.Debian.gz
+190563c1ac07e6b6ab3c1b872d584bfe  usr/share/doc/libboost-mpi1.67.0/copyright
+1d5f130fc045ce53c8f2825b1ae31c15  usr/share/lintian/overrides/libboost-mpi1.67.0

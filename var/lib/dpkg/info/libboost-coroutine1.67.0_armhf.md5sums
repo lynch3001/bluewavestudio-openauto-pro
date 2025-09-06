@@ -1,0 +1,4 @@
+93ba25d8fdbd3f5babbc3e318b652c5c  usr/lib/arm-linux-gnueabihf/libboost_coroutine.so.1.67.0
+fd9fd87aca681e8911194b0265a932bd  usr/share/doc/libboost-coroutine1.67.0/changelog.Debian.gz
+190563c1ac07e6b6ab3c1b872d584bfe  usr/share/doc/libboost-coroutine1.67.0/copyright
+bf6796e10fc3eecc7d3cc7682ae0e9a0  usr/share/lintian/overrides/libboost-coroutine1.67.0

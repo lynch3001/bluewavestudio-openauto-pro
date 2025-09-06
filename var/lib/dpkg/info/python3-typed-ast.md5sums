@@ -1,0 +1,12 @@
+a4f20cf6e9b6764c1f255a67275eab57  usr/lib/python3/dist-packages/typed_ast-1.3.1.egg-info/PKG-INFO
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/typed_ast-1.3.1.egg-info/dependency_links.txt
+58da7fb7b84f0c575df249b069c062da  usr/lib/python3/dist-packages/typed_ast-1.3.1.egg-info/top_level.txt
+b5c1069befa7787d5925f9910266c92e  usr/lib/python3/dist-packages/typed_ast/__init__.py
+ca38b4470fccb519e463a503c8067a18  usr/lib/python3/dist-packages/typed_ast/_ast27.cpython-37m-arm-linux-gnueabihf.so
+32a5c50245f74a60a7f14d32c9c69028  usr/lib/python3/dist-packages/typed_ast/_ast3.cpython-37m-arm-linux-gnueabihf.so
+71552f31c3fcd99718185838e6e83978  usr/lib/python3/dist-packages/typed_ast/ast27.py
+35090c3eda8b6d9c9675f8a95d19186c  usr/lib/python3/dist-packages/typed_ast/ast3.py
+45896675089cc00a5b357a42f69a0ca8  usr/lib/python3/dist-packages/typed_ast/conversions.py
+a1c16c112297f93cac71f4e95932d437  usr/lib/python3/dist-packages/typed_ast/tests/test_basics.py
+59e306c2fbfc8c4c9270fb2b95758748  usr/share/doc/python3-typed-ast/changelog.Debian.gz
+b3632a80c93eccb227d4fed729013277  usr/share/doc/python3-typed-ast/copyright

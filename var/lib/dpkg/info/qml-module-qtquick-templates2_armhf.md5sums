@@ -1,0 +1,5 @@
+d21f95a836f5d9955b74fbeb265ef718  usr/lib/arm-linux-gnueabihf/qt5/qml/QtQuick/Templates.2/libqtquicktemplates2plugin.so
+04f75b0f4b7874d1d720f5ebbc0ffbf8  usr/lib/arm-linux-gnueabihf/qt5/qml/QtQuick/Templates.2/plugins.qmltypes
+b02aa6aca021ce2b799a71756cd7615d  usr/lib/arm-linux-gnueabihf/qt5/qml/QtQuick/Templates.2/qmldir
+8e12fa278dae414785060f6f6bd15770  usr/share/doc/qml-module-qtquick-templates2/changelog.Debian.gz
+64d72ac96c20446dcb0fef1a4c6944bc  usr/share/doc/qml-module-qtquick-templates2/copyright

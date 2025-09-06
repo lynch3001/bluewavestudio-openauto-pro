@@ -1,0 +1,5 @@
+dillo: possible-documentation-but-no-doc-base-registration
+dillo: desktop-entry-lacks-keywords-entry usr/share/applications/dillo.desktop
+
+# Ignore bogus tech-ctte decision imposed onto policy.
+dillo: command-in-menu-file-and-desktop-file dillo usr/share/menu/dillo:*

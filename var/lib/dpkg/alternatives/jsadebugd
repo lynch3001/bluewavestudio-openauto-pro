@@ -1,0 +1,9 @@
+auto
+/usr/bin/jsadebugd
+jsadebugd.1.gz
+/usr/share/man/man1/jsadebugd.1.gz
+
+/usr/lib/jvm/java-8-openjdk-armhf/bin/jsadebugd
+1081
+/usr/lib/jvm/java-8-openjdk-armhf/man/man1/jsadebugd.1.gz
+

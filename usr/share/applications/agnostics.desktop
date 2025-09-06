@@ -1,0 +1,21 @@
+[Desktop Entry]
+Type=Application
+Name=Raspberry Pi Diagnostics
+Name[en_GB]=Raspberry Pi Diagnostics
+Name[hy]=Raspberry Pi ախտորոշում
+Name[it]=Diagnostica Raspberry Pi
+Name[sk]=Diagnostika Raspberry Pi
+GenericName=Raspberry Pi Diagnostics
+GenericName[en_GB]=Raspberry Pi Diagnostics
+GenericName[hy]=Raspberry Pi ախտորոշում
+GenericName[it]=Diagnostica Raspberry Pi
+GenericName[sk]=Diagnostika Raspberry Pi
+Comment=Test the Raspberry Pi hardware
+Comment[en_GB]=Test the Raspberry Pi hardware
+Comment[hy]=Ստուգել Raspberry Pi ապարատը
+Comment[it]=Test dell'hardware di Raspberry Pi
+Comment[sk]=Otestujte hardvér Raspberry Pi
+Icon=rpi
+Exec=agnostics
+StartupNotify=true
+Categories=Utility;

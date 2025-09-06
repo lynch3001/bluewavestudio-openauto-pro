@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/android
+/usr/lib/arm-linux-gnueabihf/android/libadb.so.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/android-libadb
+/usr/share/doc/android-libadb/NOTICE.gz
+/usr/share/doc/android-libadb/changelog.Debian.gz
+/usr/share/doc/android-libadb/copyright

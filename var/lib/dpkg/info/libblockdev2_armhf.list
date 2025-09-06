@@ -1,0 +1,16 @@
+/.
+/etc
+/etc/libblockdev
+/etc/libblockdev/conf.d
+/etc/libblockdev/conf.d/00-default.cfg
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libblockdev.so.2.0.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libblockdev2
+/usr/share/doc/libblockdev2/changelog.Debian.armhf.gz
+/usr/share/doc/libblockdev2/changelog.Debian.gz
+/usr/share/doc/libblockdev2/copyright
+/usr/lib/arm-linux-gnueabihf/libblockdev.so.2

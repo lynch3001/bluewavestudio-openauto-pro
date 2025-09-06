@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+  <id>com.nuand.bladerf</id>
+  <metadata_license>MIT</metadata_license>
+  <name>bladerf</name>
+  <summary>Nuand bladeRF radio interface</summary>
+  <description>
+    <p>
+      The nuand bladeRF is an open-source software-defined radio (SDR) system,
+      comprised of an RF transceiver, a field-programmable gate array (FPGA),
+      a microcontroller driving a USB 3.0 interface, and a suite of host
+      libraries and drivers to facilitate interaction with the device.
+    </p>
+  </description>
+  <provides>
+    <modalias>usb:v1D50p6066d*</modalias>
+  </provides>
+</component>

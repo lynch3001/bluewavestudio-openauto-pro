@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="progress" xml:lang="sv">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Använd flaggan <cmd>--progress</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2006, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+  <title>Förloppsdialog</title>
+    <p>Använd flaggan <cmd>--progress</cmd> för att skapa en förloppsdialog.</p>
+
+    <p><app>Zenity</app> läser data rad för rad från standard in. Om en rad inleds med #, kommer texten att uppdateras med texten på den raden. Om en rad endast innehåller en tal, kommer procenttalet att uppdateras med det talet.</p>
+	
+    <p>Förloppsdialogen har stöd för följande flaggor:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--text</cmd>=<var>text</var></title>
+	  <p>Anger texten som visas i förloppsdialogen.</p>
+      </item>
+
+      <item>
+        <title><cmd>--percentage</cmd>=<var>procenttal</var></title>
+	  <p>Anger den initiala procenttalet som är inställt i förloppsdialogen.</p>
+      </item>
+
+      <item>
+	<title><cmd>--auto-close</cmd></title>
+	  <p>Stänger förloppsdialogen när 100% har nåtts.</p>
+      </item>
+
+      <item>
+        <title><cmd>--pulsate</cmd></title>
+	  <p>Anger att förloppsindikatorn pulserar tills ett EOF-tecken läses in från standard in.</p>
+      </item>
+
+    </terms>
+
+    <p>Följande exempelskript visar hur man skapar en förloppsdialog:</p>
+
+<code>
+#!/bin/sh
+(
+echo "10" ; sleep 1
+echo "# Uppdaterar e-postloggar" ; sleep 1
+echo "20" ; sleep 1
+echo "# Återställer cron-jobb" ; sleep 1
+echo "50" ; sleep 1
+echo "Den här raden kommer att ignoreras" ; sleep 1
+echo "75" ; sleep 1
+echo "# Startar om systemet" ; sleep 1
+echo "100" ; sleep 1
+) |
+zenity --progress \
+  --title="Uppdaterar systemloggar" \
+  --text="Söker av e-postloggarna..." \
+  --percentage=0
+
+if [ "$?" = -1 ] ; then
+        zenity --error \
+          --text="Uppdatering avbruten."
+fi
+</code>
+
+
+    <figure>
+      <title>Exempel på förloppsdialog</title>
+      <desc><app>Zenity</app>-exempel på förloppsdialog</desc>
+      <media type="image" mime="image/png" src="figures/zenity-progress-screenshot.png"/>
+    </figure>
+</page>

@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/lib
+/usr/lib/qpdfview
+/usr/lib/qpdfview/libqpdfview_djvu.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/qpdfview-djvu-plugin
+/usr/share/doc/qpdfview-djvu-plugin/changelog.Debian.gz
+/usr/share/doc/qpdfview-djvu-plugin/changelog.gz
+/usr/share/doc/qpdfview-djvu-plugin/copyright

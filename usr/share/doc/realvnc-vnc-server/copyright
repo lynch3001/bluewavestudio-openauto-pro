@@ -1,0 +1,321 @@
+VNC CONNECT END USER LICENSE AGREEMENT
+
+IN ORDER TO RETAIN THE SERVICES (AS DEFINED BELOW) OF REALVNC,
+YOU MUST FIRST ACCEPT THE TERMS AND CONDITIONS OF THIS AGREEMENT.
+BY USING ALL OR ANY PORTION OF THE SOFTWARE YOU ACCEPT ALL THE
+TERMS AND CONDITIONS OF THIS AGREEMENT. YOU AGREE THAT THIS
+AGREEMENT IS ENFORCEABLE LIKE ANY WRITTEN NEGOTIATED AGREEMENT
+SIGNED BY YOU. IF YOU DO NOT AGREE THEN DO NOT USE ANY PART OF
+THE SOFTWARE. BY INSTALLING ANY UPDATED VERSION OF THE SOFTWARE
+WHICH MAY BE MADE AVAILABLE, YOU ACCEPT THAT THE TERMS OF THIS
+AGREEMENT APPLY TO SUCH UPDATED SOFTWARE. REALVNC LIMITED
+(“REALVNC”) MAY MODIFY THESE TERMS AND CONDITIONS AT ANY TIME. BY
+INSTALLING ANY UPDATED VERSION OF THE SOFTWARE WHICH MAY BE MADE
+AVAILABLE, YOU ACCEPT THAT THE MODIFIED TERMS OF THIS AGREEMENT
+APPLY TO SUCH UPDATED SOFTWARE.
+
+
+1. DEFINITIONS
+
+   In this Agreement:
+
+   “Desktop” means a graphical user interface, whether accessible
+   via a console attached to the Raspberry Pi Host, via the
+   Software, or by any similar means.
+
+   “License Key” means a code obtained from RealVNC which enables
+   the Software to be used.
+
+   “Raspberry Pi Host” means the Raspberry Pi computer on which
+   the Software is run.
+
+   “Raspberry Pi License Key” means the License Key that is
+   automatically provided to users of a Raspberry Pi Host running
+   Raspbian August 2016, enabling enhanced functionality as
+   described on the Website.
+
+   “Raspbian” means the Raspberry Pi Foundation’s official
+   supported operating system.
+
+   “Raspbian August 2016” means the August 2016 version Raspbian.
+
+   “Raspbian Repositories” means the software package
+   repositories that are maintained by the Raspberry Pi
+   Foundation and made available for Raspbian.
+
+   “Server Software” means VNC Server Version 6.0 or later of the
+   programs available from the Website or Raspbian Repositories,
+   including documentation, updates, modified versions and copies
+   of the Server Software.
+
+   “Services” means the support services set out in clause 5.
+
+   “Software” means the Server Software and/or the Viewer
+   Software.
+
+   “Subscription” means a subscription purchased for or
+   by you and/or obtained from RealVNC that enables the Software.
+
+   “Viewer Software” means VNC Viewer Version 6.0 or later of the
+   programs available from the Website or Raspbian Repositories,
+   including documentation, updates, modified versions and copies
+   of the Viewer Software.
+
+   “Website” means https://www.realvnc.com and associated web
+   applications.
+
+
+2. RASPBERRY PI LICENSE
+
+2.1 In consideration of you agreeing to comply with the terms of
+    this Agreement, RealVNC grants you a perpetual,
+    non-exclusive, worldwide, royalty-free, non-transferable
+    (except as otherwise stated herein), non-sublicensable
+    license (the “License”) to use the pre-installed Software and
+    Raspberry Pi License Key on no more than 10 Desktops.
+
+2.2 If the Software is used with a Subscription, the licence to
+    use the Software will instead be granted on the terms of the
+    End User License Agreement for VNC Connect, available on the
+    Website.
+
+2.3 You are only permitted to use the Software for educational
+    and non-commercial purposes.
+
+2.4 Notwithstanding 2.3, should you require the Software for
+    commercial or corporate applications of any kind, you shall
+    first purchase a commercial software license, which shall be
+    governed by separate licensing terms and conditions.
+
+2.5 Except as expressly stated in this Agreement, RealVNC
+    provides the Software “as is” and makes no representations or
+    warranties of any kind in relation to the Software.
+
+2.6 The Raspberry Pi License Key (as defined above) is available
+    only on Raspbian August 2016 or later.
+
+2.7 You may make as many copies of the Server Software as you
+    require and use the Server Software on your  Raspberry Pi
+    Host. You are expressly prohibited from transferring or
+    distributing the Server Software in any format, in whole or
+    in part, for sale, for commercial use, or for any unlawful
+    purpose.
+
+2.8 You may not rent, lease or otherwise transfer the Software or
+    allow it to be copied except as expressly permitted under
+    this Agreement. Unless permitted by law, you may not modify,
+    reverse engineer, decompile or disassemble the Software or
+    use any of the confidential information of RealVNC contained
+    in or derived from the Software to develop or market any
+    software which is substantially similar in its function or
+    expression to any part of the Software.
+
+2.9 You must treat the source code of the Software as RealVNC’s
+    confidential information in accordance with the provisions of
+    clause 4
+
+2.10 During the term of this Agreement and as long as you comply
+     with the terms of this Agreement, RealVNC, on behalf of
+     itself, its subsidiaries and any licensors, hereby grants to
+     you a non-exclusive, worldwide, non-transferable,
+     non-sublicensable license to use the Viewer Software for
+     your personal use or for the internal use of your business
+     or organisation. You are expressly prohibited from
+     transferring or distributing the Viewer Software in any
+     format, in whole or in part, for sale, for commercial use,
+     or for any unlawful purpose.
+
+2.11 The Viewer Software is only warranted and supported to the
+     extent it is used in conjunction with a licensed copy of the
+     Server Software or of any other RealVNC Server product
+     explicitly stated to qualify for use with the Viewer
+     Software.
+
+2.12 You are expressly prohibited from sub-licensing the licences
+     granted to you pursuant to clauses 2.1 and 2.10.
+
+
+3. INTELLECTUAL PROPERTY RIGHTS
+
+   The Software, its structure and algorithms, and the
+   information provided with the Software or available on the
+   Website or Raspbian Repositories are protected by copyright
+   and other intellectual property laws, and all intellectual
+   property rights in them belong to RealVNC or are licensed to
+   it. You may not reproduce, publish, transmit, modify, create
+   derivative works from, or publicly display the Software or any
+   part of it. Copying or storing or using the Software other
+   than as permitted in this Agreement is expressly prohibited
+   unless you obtain prior written permission from RealVNC.
+
+
+4. CONFIDENTIALITY
+
+   Unless as may be required by law you shall keep confidential
+   all information supplied by RealVNC which is marked or
+   asserted as confidential at the time of its disclosure, and
+   shall not without the prior written consent of RealVNC use,
+   make copies, or disclose to any third party the confidential
+   information for any purpose whatsoever except for the purposes
+   permitted or set out under this Agreement and only to the
+   extent necessary for those purposes.
+
+
+5. SUPPORT SERVICES
+
+5.1 In consideration of you agreeing to comply with the terms of
+    this Agreement, during the terms of this Agreement and as
+    long as you comply with the terms of this Agreement, RealVNC
+    will provide the following Services to you in relation to the
+    Software in accordance with the terms and conditions of this
+    Agreement:
+
+5.1.1 provided that you promptly notify RealVNC of any material
+      defect in the Software (including, but not limited to, any
+      corrupt download), RealVNC shall, subject to clause 5.2,
+      use its reasonable endeavours to rectify the reported
+      problem and provide a corrected version as soon as
+      reasonably practicable after being so notified; and
+
+5.1.2 updates or improvements to the Software published by
+      RealVNC shall be made available on the Website or Raspbian
+      Repositories.
+
+5.2 The Services do not include the correction of any defects due
+    to:-
+
+5.2.1 any combination or inclusion of the Software with or in any
+      computer program, equipment or devices not on the approved
+      list on the Website;
+
+5.2.2 you not giving RealVNC a sufficiently detailed description
+      of the defect to enable RealVNC to identify the defect and
+      to perform the Services; or
+
+5.2.3 any improper or unauthorised use or operation of the
+      Software.
+
+5.3	If a defect cannot be resolved in a reasonable time your
+    sole and exclusive remedy will be for RealVNC to, at its sole
+    option replace the Software.
+
+5.4 The Services shall continue from the date of activation of
+    the Software until terminated in accordance with clause 9.
+
+
+6. LIMITED WARRANTY
+
+6.1 RealVNC warrants to the original licensee that the Software
+    will perform substantially in accordance with any
+    documentation provided for it for 90 days from the date of
+    activation of the Software	(the “Warranty Period”) when used
+    on Raspberry Pi Hosts meeting the minimum hardware and
+    software requirements specified on the Website.
+
+6.2 If the Software does not perform according to the above
+    warranty, then you must make a warranty claim in writing to
+    RealVNC and your exclusive remedy will be for RealVNC to, at
+    its sole option, replace the Software.
+
+6.3 This limited warranty set out in clause 6.1 applies only if
+    any problem is reported in writing to RealVNC during the
+    above Warranty Period. It is void if the failure of the
+    Software is the result of accident, abuse, misapplication or
+    inappropriate use of the Software or use with Raspbery Pi
+    Hosts not meeting the minimum hardware and software
+    requirements specified on the Website.
+
+
+7. LIMITATION ON LIABILITY
+
+7.1 Except for the express warranties given in this agreement, to
+    the extent permitted by law, RealVNC disclaims all warranties
+    conditions or representations on the software and/or
+    services, either express or implied, including but not
+    limited to the implied warranties of merchantability,
+    non-infringement of third party rights and fitness for
+    particular purpose.
+
+7.2 To the extent permitted by law RealVNC shall not be liable
+    for any direct, consequential indirect or incidental loss,
+    costs or damages whatsoever including lost profits or savings
+    arising from the services, the use of the software, reliance
+    on the data produced or inability to use the software, or
+    RealVNC’s negligence (including loss or damage to your (or
+    any other person's) data or computer programs) even if
+    RealVNC has been advised of the possibility of such damages.
+    RealVNC’s liability under or in connection with this
+    agreement shall be limited to the amount paid for the
+    software, if any.
+
+7.3 Nothing in this agreement limits liability for death or
+    personal injury arising from a party's negligence or from
+    fraudulent misrepresentation on the part of a party.
+
+
+8. EXPORT CONTROL
+
+8.1 The United States and other countries control the export of
+    Software and information. You are responsible for compliance
+    with the laws of your local jurisdiction regarding the
+    import, export or re-export of the Software, and agree to
+    comply with such restrictions and not to export or re-export
+    the Software where this is prohibited. By downloading the
+    Software, you are agreeing that you are not a person or
+    entity to which such export is prohibited. RealVNC is a
+    Limited company in England and Wales.
+
+
+9. TERM AND TERMINATION
+
+9.1 This License shall continue in force unless and until it is
+    terminated by RealVNC by e-mail notice to you, if it
+    reasonably believes that you have breached a material term of
+    this Agreement.
+
+9.2 In the case above, you must delete and destroy all copies of
+    the Software in your possession and control and overwrite any
+    electronic memory or storage locations containing the
+    Software.
+
+
+10. GENERAL TERMS
+
+10.1 The construction, validity and performance of this Agreement
+     shall be governed in all respects by English law, and the
+     parties agree to submit to the non-exclusive jurisdiction of
+     the English courts.
+
+10.2 If any provision of this Agreement is found to be invalid by
+     any court having competent jurisdiction, the invalidity of
+     such provision shall not affect the validity of the
+     remaining provisions of this Agreement, which shall remain
+     in full force and effect.
+
+10.3 Despite anything else contained in this Agreement, neither
+     party will be liable for any delay in performing its
+     obligations under this Agreement if that delay is caused by
+     circumstances beyond its reasonable control (including,
+     without limitation, any delay caused by an act or omission
+     of the other party) and the party affected will be entitled
+     to a reasonable extension of time for the performance of its
+     obligations.
+
+10.4 No waiver of any term of this Agreement shall be deemed a
+     further or continuing waiver of such term or any other term.
+
+10.5 You may not assign, subcontract, sublicense or otherwise
+     transfer any of your rights or obligations under this
+     Agreement.
+
+10.6 RealVNC may assign all or part of the benefits or all or
+     part of  its obligations under this Agreement to any
+     affiliated company.
+
+10.7 This Agreement constitutes the entire Agreement between you
+     and RealVNC in relation to the provision of the Software or
+     the Services.
+
+
+Version 4.0-raspi  October 2017
+

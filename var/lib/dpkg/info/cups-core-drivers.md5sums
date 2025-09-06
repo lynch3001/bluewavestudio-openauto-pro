@@ -1,0 +1,7 @@
+924b54b5d8e068ae299bf188ddfc7d23  usr/lib/cups/filter/commandtops
+50423bca11ec047c1124604ea37618bc  usr/lib/cups/filter/gziptoany
+c8b6a96029006b992ef94fcb3312bff1  usr/lib/cups/filter/pstops
+9ee2fbc48abe658c6cc1712549f75ace  usr/share/cups/mime/mime.convs
+c474388090702a9cb936b9cc836c1d88  usr/share/doc/cups-core-drivers/changelog.Debian.gz
+f412548d8dcb26cb08126bf9798189ca  usr/share/doc/cups-core-drivers/changelog.gz
+8941662d917f56d7eece9f4307f5fa38  usr/share/doc/cups-core-drivers/copyright

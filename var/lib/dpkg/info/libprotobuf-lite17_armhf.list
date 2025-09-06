@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libprotobuf-lite.so.17.0.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libprotobuf-lite17
+/usr/share/doc/libprotobuf-lite17/changelog.Debian.gz
+/usr/share/doc/libprotobuf-lite17/changelog.gz
+/usr/share/doc/libprotobuf-lite17/copyright
+/usr/lib/arm-linux-gnueabihf/libprotobuf-lite.so.17

@@ -1,0 +1,9 @@
+auto
+/usr/bin/wsimport
+wsimport.1.gz
+/usr/share/man/man1/wsimport.1.gz
+
+/usr/lib/jvm/java-8-openjdk-armhf/bin/wsimport
+1081
+/usr/lib/jvm/java-8-openjdk-armhf/man/man1/wsimport.1.gz
+

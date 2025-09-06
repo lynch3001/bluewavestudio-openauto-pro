@@ -1,0 +1,17 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_fortran_mod/0.12
+multiarch="arm-linux-gnueabihf"
+base="gfortran-mod-15"
+cmplr="gfortran-8"
+canoncomp="arm-linux-gnueabihf-gfortran-8"
+
+if test ! -d /usr/lib/$multiarch/fortran/$base ; then
+   rm -f /usr/lib/$multiarch/fortran/$cmplr
+   rm -f /usr/lib/$multiarch/fortran/$canoncomp
+fi
+
+if test -d /usr/lib/$multiarch/fortran/$base ; then
+  ( cd /usr/lib/$multiarch && rmdir --ignore-fail-on-non-empty --parents fortran/$base )
+fi
+# End automatically added section

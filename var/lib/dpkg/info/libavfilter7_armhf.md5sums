@@ -1,0 +1,6 @@
+37d9cbf4fcfa275183e9509c6c330ee9  usr/lib/arm-linux-gnueabihf/libavfilter.so.7.40.101
+459b4e8a41831773513809c6615fdabb  usr/lib/arm-linux-gnueabihf/neon/vfp/libavfilter.so.7.40.101
+c97abc6c325041c5779374c3c50a563a  usr/share/doc/libavfilter7/changelog.Debian.gz
+099ba7b289ce8a4e9e66051edb63b6b3  usr/share/doc/libavfilter7/changelog.gz
+61af5f05179be74293344b58d088a393  usr/share/doc/libavfilter7/copyright
+8854be2f4d8739594a35081c104e59b3  usr/share/lintian/overrides/libavfilter7

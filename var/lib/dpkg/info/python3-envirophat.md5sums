@@ -1,0 +1,13 @@
+cb1f7eaf64d3a09b0f5a471f36dcb9a6  usr/lib/python3/dist-packages/envirophat-1.0.0.egg-info/PKG-INFO
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/envirophat-1.0.0.egg-info/dependency_links.txt
+02c3f8a57ff9195086052b7528672175  usr/lib/python3/dist-packages/envirophat-1.0.0.egg-info/requires.txt
+db873c92c73cda528cf315e9d007b625  usr/lib/python3/dist-packages/envirophat-1.0.0.egg-info/top_level.txt
+639254a37985a78e48c4f2e86c04a7ba  usr/lib/python3/dist-packages/envirophat/__init__.py
+687e6bb143199a5925da642bd90265fd  usr/lib/python3/dist-packages/envirophat/ads1015.py
+687b83d8f25cb5e0b0879adf1a7eead8  usr/lib/python3/dist-packages/envirophat/bmp280.py
+352b23e8bc90ce9ff48105fcdfd7f861  usr/lib/python3/dist-packages/envirophat/i2c_bus.py
+3865c3a11bff15f1f4b7fec990b7dcbc  usr/lib/python3/dist-packages/envirophat/leds.py
+da138fb24bd482110e5621aa0580f163  usr/lib/python3/dist-packages/envirophat/lsm303d.py
+b49b08b9acb9fd2bb4e0bb3ec2bd2089  usr/lib/python3/dist-packages/envirophat/tcs3472.py
+b5c5ad345d5a5dbebca23a06cb1dee70  usr/share/doc/python3-envirophat/changelog.gz
+c908b64a5c8fb0f1468a15b7b7e14144  usr/share/doc/python3-envirophat/copyright

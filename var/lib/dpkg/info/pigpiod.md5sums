@@ -1,0 +1,5 @@
+31eb65de7dac1e952493071968d36217  lib/systemd/system/pigpiod.service
+bb1b0c03a520c14daa4614261821963c  usr/bin/pigpiod
+1b1d976f14263d26b0b0426229bd87e3  usr/share/doc/pigpiod/changelog.Debian.gz
+b63977edcd31d62a5f7409dd88a656ce  usr/share/doc/pigpiod/copyright
+1c5570a915f651c3307d4a1af084e115  usr/share/man/man1/pigpiod.1.gz

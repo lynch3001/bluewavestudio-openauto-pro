@@ -1,0 +1,12 @@
+6405aed80be777386eb3cb656b3355dc  lib/systemd/system/rpcbind.service
+ac999161cae111aaa77fe3278616c55d  lib/systemd/system/rpcbind.socket
+8951a44b46ada4b2bca66c3b0f4bf20d  sbin/rpcbind
+c7b61f593c71dee6c491a9dff121fcec  usr/bin/rpcinfo
+4b32e48bf5d61b078ff1f68f7de216c5  usr/lib/tmpfiles.d/rpcbind.conf
+4004217db4ccc4f9a38c62799c373986  usr/share/doc/rpcbind/NEWS.Debian.gz
+c82dbb9dd5aad2249d87fd6b88a9e04e  usr/share/doc/rpcbind/README.Debian
+65fbe02d6f7a9fabffb302b8e5d191f7  usr/share/doc/rpcbind/changelog.Debian.gz
+de8068b7b38af9a468406a5609cd9c3a  usr/share/doc/rpcbind/changelog.gz
+c059db74bf455d32542836ff2eed2cda  usr/share/doc/rpcbind/copyright
+fc5c84a598139f951b8de4dd45064987  usr/share/man/man8/rpcbind.8.gz
+b4a1a7af2651a5fe3704ff2283d43f4b  usr/share/man/man8/rpcinfo.8.gz

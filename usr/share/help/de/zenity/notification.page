@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="notification" xml:lang="de">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Die Option <cmd>--notifications</cmd> verwenden.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>Christian.Kirbach@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+  <title>Benachrichtigungssymbol</title>
+    <p>Verwenden Sie die Option <cmd>--notification</cmd>, um ein Benachrichtigungssymbol zu erzeugen.</p>
+
+  <terms>
+    <item>
+      <title><cmd>--text</cmd>=<var>Text</var></title>
+      <p>Legt den Text fest, der im Benachrichtigungsfeld angezeigt wird.</p>
+    </item>
+    <item>
+      <title><cmd>--listen</cmd>=icon: '<var>Text</var>', message: '<var>Text</var>', tooltip: '<var>Text</var>', visible: '<var>Text</var>',</title>
+      <p>Horcht auf Befehle von der Standardeingabe. Es muss mindestens ein Befehl angegeben werden. Befehle werden durch Kommata getrennt. Auf einen Befehl muss ein Doppelpunkt und ein Wert folgen.</p>
+      <note style="tip">
+        <p>Der Befehl <cmd>icon</cmd> akzeptiert auch vier Werte von Standard-Symbolen wie z.B. <var>error</var>, <var>info</var>, <var>question</var> und <var>warning</var>.</p>
+      </note>
+    </item>
+  </terms>
+
+  <p>Das folgende Beispielskript zeigt, wie Sie ein Benachrichtigungssymbol erzeugen:</p>
+  <code>
+ #!/bin/sh
+
+ zenity --notification\
+  --window-icon="info" \
+  --text="Systemaktualisierungen sind erforderlich!"
+  </code>
+
+  <figure>
+    <title>Beispiel für ein Benachrichtigungssymbol</title>
+    <desc>Beispiel für ein Benachrichtigungssymbol in <app>Zenity</app></desc>
+    <media type="image" mime="image/png" src="figures/zenity-notification-screenshot.png"/>
+  </figure>
+
+  <p>Das folgende Beispielskript zeigt, wie Sie ein Benachrichtigungssymbol zusammen mit <cmd>--listen</cmd> erzeugen:</p>
+  <code>
+  #!/bin/sh
+  cat &lt;&lt;EOH| zenity --notification --listen
+  Nachricht: Dies ist der Text
+  EOH
+  </code>
+
+  <figure>
+    <title>Beispiel für ein Benachrichtigungssymbol mit <cmd>--listen</cmd></title>
+    <desc>Beispiel für ein Benachrichtigungssymbol mit <cmd>--listen</cmd> in <app>Zenity</app></desc>
+    <media type="image" mime="image/png" src="figures/zenity-notification-listen-screenshot.png"/>
+  </figure>
+
+</page>

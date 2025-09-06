@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/lib
+/usr/lib/python3
+/usr/lib/python3/dist-packages
+/usr/lib/python3/dist-packages/itsdangerous-0.24.egg-info
+/usr/lib/python3/dist-packages/itsdangerous-0.24.egg-info/PKG-INFO
+/usr/lib/python3/dist-packages/itsdangerous-0.24.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/itsdangerous-0.24.egg-info/not-zip-safe
+/usr/lib/python3/dist-packages/itsdangerous-0.24.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/itsdangerous.py
+/usr/share
+/usr/share/doc
+/usr/share/doc/python3-itsdangerous
+/usr/share/doc/python3-itsdangerous/changelog.Debian.gz
+/usr/share/doc/python3-itsdangerous/changelog.gz
+/usr/share/doc/python3-itsdangerous/copyright

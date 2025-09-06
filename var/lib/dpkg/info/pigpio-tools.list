@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/bin
+/usr/bin/pig2vcd
+/usr/bin/pigs
+/usr/share
+/usr/share/doc
+/usr/share/doc/pigpio-tools
+/usr/share/doc/pigpio-tools/changelog.Debian.gz
+/usr/share/doc/pigpio-tools/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/pig2vcd.1.gz
+/usr/share/man/man1/pigs.1.gz

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pref-css" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="index#pref"/>
+    <link type="guide" xref="pref"/>
+    <revision pkgversion="3.10" date="2013-07-06" status="candidate"/>
+
+    <credit type="author copyright">
+      <name>Gordon Hill</name>
+      <email its:translate="no">caseyweederman@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Sobrescreva o tema que é usado para exibir as páginas web.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013,</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>CSS personalizado</title>
+
+  <p><app>Web</app> permite que você configure um CSS personalizado para alterar a aparência de toda página web que você visita. Você pode querer fazer isso para configurar o tamanho da fonte ou esquema de cores.</p>
+
+  <steps>
+    <item>
+      <p>Abra <guiseq><gui style="menu">Web</gui><gui style="menuitem">Preferências</gui> <gui style="tab">Fontes e estilos</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Pressione <gui style="button">Editar folha de estilo</gui>.</p>
+    </item>
+    <item>
+      <p>Seu editor de texto padrão será aberto. Adicione seu CSS personalizado e salve o arquivo.</p>
+    </item>
+    <item>
+      <p>Marque a caixa de seleção <gui>Usar folha de estilo personalizado</gui>.</p>
+    </item>
+  </steps>
+
+  <p>Um exemplo de um CSS personalizado:</p>
+  <code>
+body{
+    /*Faz tudo ficar de cabeça para baixo*/
+    -webkit-transform: rotate(180deg);
+}
+</code>
+
+  <p>Seu CSS personalizado sobrescreverá a folha de estilo em páginas que você visita após habilitá-lo.</p>
+
+</page>

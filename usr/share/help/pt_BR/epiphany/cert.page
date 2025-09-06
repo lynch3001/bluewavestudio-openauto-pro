@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="cert" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="index#privacy"/>
+    <revision pkgversion="3.15" date="2015-01-28" status="draft"/>
+
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2015</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Gerenciamento de certificado no <app>Web</app>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013,</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Certificados</title>
+
+  <p><app>Web</app> não possui suporte embarcado a gerenciamento de certificados, por enquanto.</p>
+
+  <note style="advanced">
+    <p>Você pode adicionar certificados por meio da linha de comando se você tiver p11-kit instalado. Para adicionar um certificado, você precisa baixar o certificado e executar o seguinte comando para importá-lo:</p>
+    <screen><output>$ </output><input>sudo trust anchor <var>/home/usuário/Downloads/certificado.crt</var></input></screen>
+    <p>Isso vai funcionar apenas em sistemas recentes.</p>
+  </note>
+
+</page>

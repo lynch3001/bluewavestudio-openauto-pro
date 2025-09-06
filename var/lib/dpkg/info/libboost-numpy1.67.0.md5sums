@@ -1,0 +1,5 @@
+d8c65da50450081b5d92197aa4e88c8d  usr/lib/arm-linux-gnueabihf/libboost_numpy27.so.1.67.0
+ade64deba0f6cd5e7347fa75d04aba91  usr/lib/arm-linux-gnueabihf/libboost_numpy37.so.1.67.0
+fd9fd87aca681e8911194b0265a932bd  usr/share/doc/libboost-numpy1.67.0/changelog.Debian.gz
+190563c1ac07e6b6ab3c1b872d584bfe  usr/share/doc/libboost-numpy1.67.0/copyright
+68776456f63700460fc678e7f08df27d  usr/share/lintian/overrides/libboost-numpy1.67.0

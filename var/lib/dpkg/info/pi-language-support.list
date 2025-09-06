@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/bin
+/usr/bin/check-language-support
+/usr/lib
+/usr/lib/python3
+/usr/lib/python3/dist-packages
+/usr/lib/python3/dist-packages/language_support_pkgs.py
+/usr/share
+/usr/share/doc
+/usr/share/doc/pi-language-support
+/usr/share/doc/pi-language-support/changelog.gz
+/usr/share/doc/pi-language-support/copyright
+/usr/share/pi-language-selector
+/usr/share/pi-language-selector/data
+/usr/share/pi-language-selector/data/pkg_depends

@@ -1,0 +1,5 @@
+35148a0f4bf0e61b57946d41c877dbcb  usr/lib/arm-linux-gnueabihf/libglusterfs.so.0.0.1
+7173f698e58c8f77b64ec647b69d041a  usr/share/doc/libglusterfs0/changelog.Debian.gz
+dc3255d157227f34909c70895d628a6c  usr/share/doc/libglusterfs0/changelog.gz
+522e22dc4f15515586658d48827e1a19  usr/share/doc/libglusterfs0/copyright
+952e3d917bef5197af539630431f4afd  usr/share/lintian/overrides/libglusterfs0

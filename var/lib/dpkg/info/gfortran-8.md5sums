@@ -1,0 +1,16 @@
+18a733b43d139f92df3bbfda0550d184  usr/bin/arm-linux-gnueabihf-gfortran-8
+796a7631ac2fefda5eb72d13837ed638  usr/lib/gcc/arm-linux-gnueabihf/8/f951
+24ecbafb89d99028467e255c9883001a  usr/lib/gcc/arm-linux-gnueabihf/8/finclude/ieee_arithmetic.mod
+70d3bc160dcbe0c9fecaa10ef53a08d1  usr/lib/gcc/arm-linux-gnueabihf/8/finclude/ieee_exceptions.mod
+4ce84cf784e5d92d5f09c0d91683221d  usr/lib/gcc/arm-linux-gnueabihf/8/finclude/ieee_features.mod
+e7cf6e699ae08d88faccaf19127375ac  usr/lib/gcc/arm-linux-gnueabihf/8/finclude/omp_lib.f90
+9544ebd4f46de1da4db7daef0db81f5e  usr/lib/gcc/arm-linux-gnueabihf/8/finclude/omp_lib.h
+2bb7e37286f26f6a6466e8cb798d0095  usr/lib/gcc/arm-linux-gnueabihf/8/finclude/omp_lib.mod
+1e8d3954f6d668053c3d79da22b59378  usr/lib/gcc/arm-linux-gnueabihf/8/finclude/omp_lib_kinds.mod
+1dae47d97eec74bc20f12e69e90001c9  usr/lib/gcc/arm-linux-gnueabihf/8/finclude/openacc.f90
+8823f73cbbf69a02643c3865fc806089  usr/lib/gcc/arm-linux-gnueabihf/8/finclude/openacc.mod
+c4c2c3374924f56519587e41a179a48b  usr/lib/gcc/arm-linux-gnueabihf/8/finclude/openacc_kinds.mod
+bd287e782ca9ca3513b447031eeaf99a  usr/lib/gcc/arm-linux-gnueabihf/8/finclude/openacc_lib.h
+cd8158e4e9383e955ced0effb48a7a9a  usr/lib/gcc/arm-linux-gnueabihf/8/libgfortran.spec
+ad38635cb4184a05723481170ee1e1a1  usr/share/doc/gcc-8-base/fortran/changelog.gz
+b105998bcf7726cc9fd573f587223a6a  usr/share/lintian/overrides/gfortran-8

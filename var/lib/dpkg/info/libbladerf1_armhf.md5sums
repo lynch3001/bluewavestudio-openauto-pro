@@ -1,0 +1,10 @@
+a1d2c3369269dab9c42bac33c31fc534  lib/udev/rules.d/88-nuand.rules
+35aed5f19ebf2298d633f97031851e41  usr/lib/arm-linux-gnueabihf/libbladeRF.so.1
+8570695f27fc482876a43b02fdc7aada  usr/share/Nuand/bladeRF/firmware.txt
+5edb4d059c69dd4c88b593aa87ef9798  usr/share/doc/libbladerf1/CONTRIBUTORS
+fbce362c8dfeb1074c94d496c5d047ed  usr/share/doc/libbladerf1/README.Debian
+d1f997d38fb63bd52dc29c57cb7a8d33  usr/share/doc/libbladerf1/README.md
+80c7797437d64547cb4f83acc29b2acd  usr/share/doc/libbladerf1/changelog.Debian.gz
+6bf1a9f0d3206a25ebd2e4f85ed29e73  usr/share/doc/libbladerf1/changelog.gz
+b73f5a6c270289c15fe6b1836ba80722  usr/share/doc/libbladerf1/copyright
+b7badf84a2b960042ce3c04217ab6994  usr/share/metainfo/com.nuand.bladerf.metainfo.xml

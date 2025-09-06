@@ -1,0 +1,19 @@
+#!/bin/sh
+set -e
+
+# Automatically added by dh_python2:
+if which pycompile >/dev/null 2>&1; then
+	pycompile -p libboost-mpi-python1.67.0 
+fi
+
+# End automatically added section
+
+# Automatically added by dh_python3:
+if which py3compile >/dev/null 2>&1; then
+	py3compile -p libboost-mpi-python1.67.0 
+fi
+if which pypy3compile >/dev/null 2>&1; then
+	pypy3compile -p libboost-mpi-python1.67.0  || true
+fi
+
+# End automatically added section

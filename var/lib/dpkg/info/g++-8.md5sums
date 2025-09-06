@@ -1,0 +1,5 @@
+f9dc64331ac071a02c5a36f43360e59f  usr/bin/arm-linux-gnueabihf-g++-8
+748322bf9d7e94d1d2e8196667b9e62f  usr/lib/gcc/arm-linux-gnueabihf/8/cc1plus
+d34e924e0b649f39a4c876c1a4ec4e1f  usr/share/doc/gcc-8-base/C++/README.C++
+d0771ff062aa82b7d1a8b8c156a2666f  usr/share/doc/gcc-8-base/C++/changelog.gz
+a89ae81e2bc26ab60e743086b3bf6453  usr/share/lintian/overrides/g++-8

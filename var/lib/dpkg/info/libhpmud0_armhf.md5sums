@@ -1,0 +1,8 @@
+b0dc78723aafa75c73e4f86477ee6373  usr/lib/arm-linux-gnueabihf/libhpdiscovery.so.0.0.1
+a6f0f1c837843796bdf8f8f5cef62ddc  usr/lib/arm-linux-gnueabihf/libhpip.so.0.0.1
+bbb62e4f5d2d18c406f9613ba73690dd  usr/lib/arm-linux-gnueabihf/libhpipp.so.0.0.1
+c7fad2e0bf58744bb6f4a4cbadaddf7a  usr/lib/arm-linux-gnueabihf/libhpmud.so.0.0.6
+3b257b86ebcbf292edb4e8ead018f5f3  usr/share/doc/libhpmud0/changelog.Debian.armhf.gz
+a65914530bf22bb71079c49521a58c82  usr/share/doc/libhpmud0/changelog.Debian.gz
+4eaa991ca5725174363536965c7a8f25  usr/share/doc/libhpmud0/copyright
+513b4e5ea0eadb1fd23d22026ab6192f  usr/share/lintian/overrides/libhpmud0

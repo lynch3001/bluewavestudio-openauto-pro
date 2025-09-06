@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="question" xml:lang="sv">
+  <info>
+    <link type="guide" xref="message"/>
+    <desc>Använd flaggan <cmd>--question</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2006, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+  <title>Frågedialog</title>
+      <p>Använd flaggan <cmd>--question</cmd> för att skapa en frågedialog.</p>
+
+      <p>Följande exempelskript visar hur man skapar en frågedialog:</p>
+
+<code>
+#!/bin/bash
+
+zenity --question \
+--text="Är du säker på att du vill fortsätta?"
+</code>
+
+
+      <figure>
+        <title>Exempel på frågedialog</title>
+	<desc><app>Zenity</app>-exempel på frågedialog</desc>
+        <media type="image" mime="image/png" src="figures/zenity-question-screenshot.png"/>
+      </figure>
+</page>

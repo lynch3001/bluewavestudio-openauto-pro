@@ -1,0 +1,6 @@
+c03907b6d7cd22ca8dab025a5ee5d8a4  usr/lib/arm-linux-gnueabihf/lxpanel/plugins/cputemp.so
+542d063c95e7b86b133c76b962982d34  usr/share/doc/lxplug-cputemp/changelog.gz
+caf3b7fc71754667d59fd4e5d6470e5c  usr/share/doc/lxplug-cputemp/copyright
+27acc8c4b75389f5fc4a1e3b7c7a1087  usr/share/locale/en_GB/LC_MESSAGES/lxplug_cputemp.mo
+676ada86dc9751e371716bfa98447c69  usr/share/locale/it/LC_MESSAGES/lxplug_cputemp.mo
+34937fb13eec550e9ec7f2f7ec2f8b63  usr/share/locale/sk/LC_MESSAGES/lxplug_cputemp.mo

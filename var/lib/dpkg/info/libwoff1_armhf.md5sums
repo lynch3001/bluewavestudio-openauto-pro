@@ -1,0 +1,6 @@
+64eb784736b24a5040547eb64ed09e5e  usr/lib/arm-linux-gnueabihf/libwoff2common.so.1.0.2
+6002db55e18a1a13ee42b9602e05f607  usr/lib/arm-linux-gnueabihf/libwoff2dec.so.1.0.2
+738e44cab5cd0c60bf298a93cdcbc5ad  usr/lib/arm-linux-gnueabihf/libwoff2enc.so.1.0.2
+963e3b50934f3032f4cf1874a45013d7  usr/share/doc/libwoff1/changelog.Debian.gz
+37986d05f55caded90d405063340d15b  usr/share/doc/libwoff1/copyright
+266e28c8efb64e476fa95db6ef6f2d1d  usr/share/lintian/overrides/libwoff1

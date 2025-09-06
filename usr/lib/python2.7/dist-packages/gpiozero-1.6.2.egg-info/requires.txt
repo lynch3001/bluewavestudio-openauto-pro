@@ -1,0 +1,11 @@
+colorzero
+
+[doc]
+sphinx
+sphinx-rtd-theme
+
+[test]
+RPI.GPIO
+pigpio
+pytest
+pytest-cov

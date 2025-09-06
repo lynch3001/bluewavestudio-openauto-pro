@@ -1,0 +1,5 @@
+dd05bf7c17e40ff7905d01e29b9aa0af  lib/udev/rules.d/60-libairspy0.rules
+40d1993595146d823fe5d96744470993  usr/lib/arm-linux-gnueabihf/libairspy.so.1.0.9
+b52acb5935d1be7bbfdf364ac10323cb  usr/share/doc/libairspy0/changelog.Debian.gz
+c42cbbfcb5725c374d4d49ad589f0044  usr/share/doc/libairspy0/copyright
+77b65c1a7e9f66149b3d42723637b772  usr/share/metainfo/com.airspy.host.metainfo.xml

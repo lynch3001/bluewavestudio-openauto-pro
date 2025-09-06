@@ -1,0 +1,5 @@
+922d06fcdc4e39c36ed0c9fa86f6890a  usr/lib/arm-linux-gnueabihf/libboost_prg_exec_monitor.so.1.67.0
+bacb210d5429b1c9b660974cbfd93f80  usr/lib/arm-linux-gnueabihf/libboost_unit_test_framework.so.1.67.0
+fd9fd87aca681e8911194b0265a932bd  usr/share/doc/libboost-test1.67.0/changelog.Debian.gz
+190563c1ac07e6b6ab3c1b872d584bfe  usr/share/doc/libboost-test1.67.0/copyright
+db3d96cc01966314b36d80a12f219830  usr/share/lintian/overrides/libboost-test1.67.0

@@ -1,0 +1,7 @@
+ce99200e51a537b21c896fc262094505  usr/lib/arm-linux-gnueabihf/vlc/plugins/visualization/libglspectrum_plugin.so
+e03cc83cde699e6c4b038372a6ad87eb  usr/lib/arm-linux-gnueabihf/vlc/plugins/visualization/libvisual_plugin.so
+143dd060cd683f7da6fa97b4de08f0bc  usr/share/bug/vlc-plugin-visualization/control
+db5a9ef7d588ac8bafe061d1968be5cd  usr/share/bug/vlc-plugin-visualization/presubj
+37467d5ce4d242efd1f03dc9e91b12dd  usr/share/doc/vlc-plugin-visualization/changelog.Debian.gz
+c6362b61e68a63912965a8c76532f3da  usr/share/doc/vlc-plugin-visualization/changelog.gz
+3d80bde9e43c6c323bf2f26bae755756  usr/share/doc/vlc-plugin-visualization/copyright

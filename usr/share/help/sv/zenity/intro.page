@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="intro" xml:lang="sv">
+<info>
+  <link type="guide" xref="index"/>
+  <desc><app>Zenity</app> låter dig skapa olika typer av enkla dialoger.</desc>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Nylander</mal:name>
+      <mal:email>po@danielnylander.se</mal:email>
+      <mal:years>2006, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sebastian Rasmussen</mal:name>
+      <mal:email>sebras@gmail.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  </info>
+<title>Introduktion</title>
+<p><app>Zenity</app> låter dig skapa följande typer av enkla dialoger:</p>
+
+<list>
+    <item><p>Kalender</p></item>
+    <item><p>Filval</p></item>
+    <item><p>Formulär</p></item>
+    <item><p>Lista</p></item>
+    <item><p>Aviseringsikon</p></item>
+    <item><p>Meddelande</p>
+        <list>
+            <item><p>Fel</p></item>
+    	<item><p>Information</p></item>
+    	<item><p>Fråga</p></item>
+    	<item><p>Varning</p></item>
+        </list>
+    </item>
+    <item><p>Lösenordsinmatning</p></item>
+    <item><p>Förlopp</p></item>
+    <item><p>Textinmatning</p></item>
+    <item><p>Textinformation</p></item>
+    <item><p>Skala</p></item>
+    <item><p>Färgval</p></item>
+</list>
+</page>

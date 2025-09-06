@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="progress" xml:lang="pt-BR">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Use a opção <cmd>--progress</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodolfo Ribeiro Gomes</mal:name>
+      <mal:email>rodolforg@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017</mal:years>
+    </mal:credit>
+  </info>
+  <title>Diálogo indicador de progresso</title>
+    <p>Use a opção <cmd>--progress</cmd> para criar um diálogo indicador de progresso.</p>
+
+    <p>O <app>Zenity</app> lê dados da entrada padrão linha por linha. Se uma linha for prefixada com #, o texto é atualizado com o texto dessa linha. Se uma linha contiver apenas um número, o percentual é atualizado com tal número.</p>
+	
+    <p>O diálogo indicador de progresso oferece suporte às seguintes opções:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--text</cmd>=<var>texto</var></title>
+	  <p>Especifica o texto que é exibido no diálogo indicador de progresso.</p>
+      </item>
+
+      <item>
+        <title><cmd>--percentage</cmd>=<var>porcentagem</var></title>
+	  <p>Especifica a porcentagem inicial definida para o diálogo indicador de progresso.</p>
+      </item>
+
+      <item>
+	<title><cmd>--auto-close</cmd></title>
+	  <p>Fecha o diálogo indicador de progresso quando atinge os 100%.</p>
+      </item>
+
+      <item>
+        <title><cmd>--pulsate</cmd></title>
+	  <p>Especifica que a barra de progresso pulse até que um caractere EOF (fim de arquivo) seja lido da entrada padrão.</p>
+      </item>
+
+    </terms>
+
+    <p>O script de exemplo a seguir mostra como criar um diálogo de indicador de progresso:</p>
+
+<code>
+#!/bin/sh
+(
+echo "10" ; sleep 1
+echo "# Atualizando os registros do correio" ; sleep 1
+echo "20" ; sleep 1
+echo "# Reconfigurando os trabalhos do cron" ; sleep 1
+echo "50" ; sleep 1
+echo "Esta linha será simplesmente ignorada" ; sleep 1
+echo "75" ; sleep 1
+echo "# Reiniciando o sistema" ; sleep 1
+echo "100" ; sleep 1
+) |
+zenity --progress \
+  --title="Registro de atualizações do sistema" \
+  --text="Varrendo os registros de correio..." \
+  --percentage=0
+
+if [ "$?" = -1 ] ; then
+        zenity --error \
+          --text="Atualização cancelada."
+fi
+</code>
+
+
+    <figure>
+      <title>Exemplo de diálogo indicador de progresso</title>
+      <desc>Exemplo de diálogo indicador de progresso do <app>Zenity</app></desc>
+      <media type="image" mime="image/png" src="figures/zenity-progress-screenshot.png"/>
+    </figure>
+</page>

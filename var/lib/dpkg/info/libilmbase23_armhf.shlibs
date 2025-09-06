@@ -1,0 +1,5 @@
+libHalf 23 libilmbase23 (>= 2.2.1)
+libIex-2_2 23 libilmbase23 (>= 2.2.1)
+libIexMath-2_2 23 libilmbase23 (>= 2.2.1)
+libIlmThread-2_2 23 libilmbase23 (>= 2.2.1)
+libImath-2_2 23 libilmbase23 (>= 2.2.1)

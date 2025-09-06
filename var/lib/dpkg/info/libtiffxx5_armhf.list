@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libtiffxx.so.5.5.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libtiffxx5
+/usr/share/doc/libtiffxx5/changelog.Debian.gz
+/usr/share/doc/libtiffxx5/changelog.gz
+/usr/share/doc/libtiffxx5/copyright
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libtiffxx5
+/usr/lib/arm-linux-gnueabihf/libtiffxx.so.5

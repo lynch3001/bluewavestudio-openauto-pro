@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libva-x11.so.2.400.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libva-x11-2
+/usr/share/doc/libva-x11-2/changelog.Debian.gz
+/usr/share/doc/libva-x11-2/changelog.gz
+/usr/share/doc/libva-x11-2/copyright
+/usr/lib/arm-linux-gnueabihf/libva-x11.so.2

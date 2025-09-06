@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/python3-pantilthat
+/usr/share/doc/python3-pantilthat/changelog.gz
+/usr/share/doc/python3-pantilthat/copyright
+/usr/lib
+/usr/lib/python3
+/usr/lib/python3/dist-packages
+/usr/lib/python3/dist-packages/pantilthat-0.0.7.egg-info
+/usr/lib/python3/dist-packages/pantilthat-0.0.7.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/pantilthat-0.0.7.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/pantilthat-0.0.7.egg-info/PKG-INFO
+/usr/lib/python3/dist-packages/pantilthat
+/usr/lib/python3/dist-packages/pantilthat/__init__.py
+/usr/lib/python3/dist-packages/pantilthat/pantilt.py

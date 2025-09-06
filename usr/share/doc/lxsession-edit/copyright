@@ -1,0 +1,81 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: LXSession
+Upstream-Contact: lxde-list@lists.sourceforge.net
+Source: https://sourceforge.net/projects/lxde/files/
+
+Files: *
+Copyright: 1994-1998 The Open Group
+           2008-2011 Hong Jen Yee (PCMan) <pcman.tw@gmail.com>
+           2012-2014 Julien Lavergne <gilir@ubuntu.com>
+License: GPL-2+
+
+Files: lxclipboard/clipboard.*
+Copyright: 2007 William Jon McCann <mccann@jhu.edu>
+           2007 Matthias Clasen
+           2007 Anders Carlsson
+           2007 Rodrigo Moya
+           2007 William Jon McCann <mccann@jhu.edu>
+           2011 Nick Schermer <nick@xfce.org>
+License: GPL-2+
+
+Files: lxsession-logout/lxsession-logout-dbus-interface.c
+Copyright: 2010-2011 Robert Ancell
+           2012 Fabrice THIROUX <fabrice.thiroux@free.fr>
+License: LGPL-3+
+
+Files: lxsettings-daemon/xsettings-common.*
+       lxsettings-daemon/xsettings-manager.*
+       lxsettings-daemon/xutils.*
+Copyright: 2001 Owen Taylor
+           2001 Matthias Clasen
+           2001-2004 Red Hat, Inc.
+License: MIT
+
+Files: debian/*
+Copyright: 2010-2012 Andrew Lee (李健秋) <ajqlee@debian.org>
+License: GPL-2+
+
+License: GPL-2+
+ This program is free software; you can redistribute it and/or
+ modify it under the terms of the GNU General Public License
+ as published by the Free Software Foundation; either version 2
+ of the License, or (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+ .
+ The complete text of the GNU General Public License
+ can be found in /usr/share/common-licenses/GPL-2 file.
+
+License: LGPL-3+
+ This library is free software; you can redistribute it and/or modify it under
+ the terms of the GNU Lesser General Public License as published by the Free
+ Software Foundation; either version 3 of the License, or (at your option) any
+ later version.
+ .
+ The complete text of the GNU General Public License
+ can be found in /usr/share/common-licenses/LGPL-3 file.
+
+License: MIT
+ Permission to use, copy, modify, distribute, and sell this software and its
+ documentation for any purpose is hereby granted without fee, provided that
+ the above copyright notice appear in all copies and that both that
+ copyright notice and this permission notice appear in supporting
+ documentation, and that the name of Red Hat not be used in advertising or
+ publicity pertaining to distribution of the software without specific,
+ written prior permission.  Red Hat makes no representations about the
+ suitability of this software for any purpose.  It is provided "as is"
+ without express or implied warranty.
+ .
+ RED HAT DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLUDING ALL
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO EVENT SHALL RED HAT
+ BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION
+ OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
+ CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.

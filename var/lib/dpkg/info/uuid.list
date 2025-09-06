@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/bin
+/usr/bin/uuid
+/usr/share
+/usr/share/doc
+/usr/share/doc/uuid
+/usr/share/doc/uuid/changelog.Debian.armhf.gz
+/usr/share/doc/uuid/changelog.Debian.gz
+/usr/share/doc/uuid/changelog.gz
+/usr/share/doc/uuid/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/uuid.1.gz

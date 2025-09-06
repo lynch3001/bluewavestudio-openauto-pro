@@ -1,0 +1,6 @@
+92a3945357c1b4a8c99f87320256cad3  usr/include/i2c/smbus.h
+46faa0c585ef10146dd5cbd26e467ad4  usr/lib/arm-linux-gnueabihf/libi2c.a
+e252510dbbd776b7d587b8f25987f2cf  usr/share/doc/libi2c-dev/changelog.Debian.gz
+7c0274064a52bd367ea3fee03cb7bd06  usr/share/doc/libi2c-dev/changelog.gz
+6bd733cee69c074fc3f43f75d44ad7c6  usr/share/doc/libi2c-dev/copyright
+47b737882c3fff366de225672cd09584  usr/share/doc/libi2c-dev/dev-interface.gz

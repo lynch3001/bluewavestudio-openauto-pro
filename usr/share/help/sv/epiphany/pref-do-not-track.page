@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="pref-do-not-track" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="index#privacy"/>
+    <link type="guide" xref="pref"/>
+    <revision pkgversion="3.12" date="2014-02-24" status="candidate"/>
+
+    <credit type="author copyright">
+      <name>Baptiste Mille-Mathias</name>
+      <email its:translate="no">baptistem@gnome.org</email>
+      <years>2014</years>
+    </credit>
+    <credit type="copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2014</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Hur säger jag till webbplatser att jag inte vill att de ska spåra mina aktiviteter på nätet?</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2015, 2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ställ in inställning för webbspårning</title>
+
+  <p>Vissa webbplatser övervakar din aktivitet då du besöker dem. Till exempel kanske de vill veta vilka sidor du tittar på eller vad du har sökt efter. Denna information kan användas för att förbättra din surfupplevelse, men kan också säljas eller delas med andra företag som kan använda den på ett illvilligt sätt. Du kan be webbplatser som du besöker att inte övervaka din aktivitet genom att aktivera <gui>Spåra mig inte</gui>.</p>
+
+  <steps>
+    <item>
+      <p>Öppna <guiseq><gui style="menu">Webb</gui><gui style="menuitem">Inställningar</gui><gui style="tab">Sekretess</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Kryssa i kryssrutan <gui style="checkbox">Säg till webbplatser att jag inte vill bli spårad</gui>.</p>
+    </item>
+  </steps>
+
+  <note style="important">
+    <p>Webbplatser måste inte följa denna inställning.</p>
+  </note>
+
+</page>

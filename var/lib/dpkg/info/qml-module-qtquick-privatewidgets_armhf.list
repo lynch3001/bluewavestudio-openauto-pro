@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/qt5
+/usr/lib/arm-linux-gnueabihf/qt5/qml
+/usr/lib/arm-linux-gnueabihf/qt5/qml/QtQuick
+/usr/lib/arm-linux-gnueabihf/qt5/qml/QtQuick/PrivateWidgets
+/usr/lib/arm-linux-gnueabihf/qt5/qml/QtQuick/PrivateWidgets/libwidgetsplugin.so
+/usr/lib/arm-linux-gnueabihf/qt5/qml/QtQuick/PrivateWidgets/plugins.qmltypes
+/usr/lib/arm-linux-gnueabihf/qt5/qml/QtQuick/PrivateWidgets/qmldir
+/usr/share
+/usr/share/doc
+/usr/share/doc/qml-module-qtquick-privatewidgets
+/usr/share/doc/qml-module-qtquick-privatewidgets/changelog.Debian.gz
+/usr/share/doc/qml-module-qtquick-privatewidgets/copyright

@@ -1,0 +1,5 @@
+6f4cb95087784ff0c0842a09138b097d  usr/bin/check-language-support
+6e6771a490d973af687696df6691545e  usr/lib/python3/dist-packages/language_support_pkgs.py
+a9e749413992ad38696cdc36c69632ef  usr/share/doc/pi-language-support/changelog.gz
+ac00aa67148654252321e0a2a63bfe84  usr/share/doc/pi-language-support/copyright
+5409700ab47b002087c1aa895ab0e791  usr/share/pi-language-selector/data/pkg_depends

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=VNC Server
+GenericName=VNC Server
+Type=Application
+Icon=/usr/share/icons/hicolor/48x48/apps/vncserver48x48.png
+Exec=vncserver-x11 -showstatus
+NoDisplay=true

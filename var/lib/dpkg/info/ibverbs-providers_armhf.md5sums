@@ -1,0 +1,6 @@
+ca8d36d4c1f0f5e1aaab22879f5236bb  usr/lib/arm-linux-gnueabihf/libibverbs/libhfi1verbs-rdmav22.so
+b1dc3ad1f4558513d5a2c4ad75446b66  usr/lib/arm-linux-gnueabihf/libibverbs/libipathverbs-rdmav22.so
+a1618ba17bae69f567652aad337ec75c  usr/lib/arm-linux-gnueabihf/libibverbs/librxe-rdmav22.so
+e731220d30f618896efb7bbc68d64a51  usr/share/doc/ibverbs-providers/changelog.Debian.gz
+245f94ad380794419598a4dd9727b1c0  usr/share/doc/ibverbs-providers/copyright
+5b704f8f5cb250e938e456142f1f6f8e  usr/share/lintian/overrides/ibverbs-providers

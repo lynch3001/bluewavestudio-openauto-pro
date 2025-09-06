@@ -1,0 +1,20 @@
+#!/bin/sh
+set -e
+
+# Tag to allow some debhelper commands to inject relevant code
+# Automatically added by dh_installdeb/12.1.1
+dpkg-maintscript-helper rm_conffile /etc/default/kdm.d/10_desktop-base 9.0.0\~ desktop-base -- "$@"
+# End automatically added section
+# Automatically added by dh_icons/12.1.1
+if which update-icon-caches >/dev/null 2>&1 ; then
+	update-icon-caches /usr/share/icons/desktop-base
+fi
+# End automatically added section
+
+
+if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
+    if which update-grub2 > /dev/null ; then
+        update-grub2 || true
+    fi
+fi
+

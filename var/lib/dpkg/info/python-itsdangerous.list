@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/lib
+/usr/lib/python2.7
+/usr/lib/python2.7/dist-packages
+/usr/lib/python2.7/dist-packages/itsdangerous-0.24.egg-info
+/usr/lib/python2.7/dist-packages/itsdangerous-0.24.egg-info/PKG-INFO
+/usr/lib/python2.7/dist-packages/itsdangerous-0.24.egg-info/dependency_links.txt
+/usr/lib/python2.7/dist-packages/itsdangerous-0.24.egg-info/not-zip-safe
+/usr/lib/python2.7/dist-packages/itsdangerous-0.24.egg-info/top_level.txt
+/usr/lib/python2.7/dist-packages/itsdangerous.py
+/usr/share
+/usr/share/doc
+/usr/share/doc/python-itsdangerous
+/usr/share/doc/python-itsdangerous/changelog.Debian.gz
+/usr/share/doc/python-itsdangerous/changelog.gz
+/usr/share/doc/python-itsdangerous/copyright

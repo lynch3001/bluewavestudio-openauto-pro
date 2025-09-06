@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libfl.so.2.0.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libfl2
+/usr/share/doc/libfl2/NEWS.Debian.gz
+/usr/share/doc/libfl2/README.md.gz
+/usr/share/doc/libfl2/changelog.Debian.gz
+/usr/share/doc/libfl2/changelog.gz
+/usr/share/doc/libfl2/copyright
+/usr/lib/arm-linux-gnueabihf/libfl.so.2

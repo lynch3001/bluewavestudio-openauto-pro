@@ -1,0 +1,3 @@
+libwbclient 0 libwbclient0 (>= 2:4.9.5+dfsg)
+libreplace 0 libwbclient0 (= 2:4.9.5+dfsg-5+deb10u1+rpi1)
+libwinbind-client 0 libwbclient0 (= 2:4.9.5+dfsg-5+deb10u1+rpi1)

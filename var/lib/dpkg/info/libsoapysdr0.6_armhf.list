@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libSoapySDR.so.0.6.1
+/usr/share
+/usr/share/doc
+/usr/share/doc/libsoapysdr0.6
+/usr/share/doc/libsoapysdr0.6/README.md
+/usr/share/doc/libsoapysdr0.6/changelog.Debian.armhf.gz
+/usr/share/doc/libsoapysdr0.6/changelog.Debian.gz
+/usr/share/doc/libsoapysdr0.6/changelog.gz
+/usr/share/doc/libsoapysdr0.6/copyright
+/usr/lib/arm-linux-gnueabihf/libSoapySDR.so.0.6

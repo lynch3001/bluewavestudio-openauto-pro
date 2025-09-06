@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="entry" xml:lang="da">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Brug tilvalget <cmd>--entry</cmd>.</desc>
+  </info>
+  <title>Tekstfeltdialog</title>
+    <p>Brug tilvalget <cmd>--entry</cmd> til at oprette en tekstfeltdialog. <app>Zenity</app> returnerer indholdet af tekstfeltet til standardoutput.</p>	
+    <p>Tekstfeltdialogen understøtter følgende tilvalg:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--text</cmd>=<var>tekst</var></title>
+	<p>Angiver teksten, der vises i tekstfeltdialogen.</p>
+      </item>
+
+      <item>
+        <title><cmd>--entry-text</cmd>=<var>tekst</var></title>
+	<p>Angiver teksten, der vises i tekstfeltdialogens indtastningsfelt.</p>
+      </item>
+
+      <item>
+        <title><cmd>--hide-text</cmd></title>
+	<p>Skjuler teksten i tekstfeltdialogens indtastningsfelt.</p>
+      </item>
+
+    </terms>
+
+    <p>Følgende eksempelscript viser, hvordan man opretter en tekstfeltdialog:</p>
+
+<code>
+#!/bin/sh
+
+if zenity --entry \
+--title="Tilføj ny profil" \
+--text="Indtast navn for ny profil:" \
+--entry-text "NyProfil"
+  then echo $?
+  else echo "Intet navn indtastet"
+fi
+</code>
+
+
+    <figure>
+      <title>Eksempel på tekstfeltdialog</title>
+      <desc>Eksempel på tekstfeltdialog til <app>Zenity</app></desc>
+      <media type="image" mime="image/png" src="figures/zenity-entry-screenshot.png"/>
+    </figure>
+</page>

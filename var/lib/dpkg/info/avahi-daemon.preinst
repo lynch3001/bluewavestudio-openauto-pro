@@ -1,0 +1,6 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installdeb/12.1.1
+dpkg-maintscript-helper rm_conffile /etc/network/if-up.d/avahi-daemon 0.7-4\+deb10u1\~ avahi-daemon -- "$@"
+dpkg-maintscript-helper rm_conffile /etc/resolvconf/update-libc.d/avahi-daemon 0.7.-4\+deb10u1\~ avahi-daemon -- "$@"
+# End automatically added section

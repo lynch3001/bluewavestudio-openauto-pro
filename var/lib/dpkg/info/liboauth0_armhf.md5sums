@@ -1,0 +1,5 @@
+082748cadf7f485464bbd08b1f56b702  usr/lib/arm-linux-gnueabihf/liboauth.so.0.8.7
+00a21fa37c046fbace58643b045a3f4b  usr/share/doc/liboauth0/changelog.Debian.gz
+ce2a43d3be44238c89b1a15b0cf57ac0  usr/share/doc/liboauth0/changelog.gz
+31274ced46700e2166eb8803fffca43c  usr/share/doc/liboauth0/copyright
+2af030e60cb19e0bd25631b4d6928026  usr/share/lintian/overrides/liboauth0

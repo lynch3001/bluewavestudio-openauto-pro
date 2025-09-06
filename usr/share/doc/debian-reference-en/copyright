@@ -1,0 +1,61 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: debian-reference
+Upstream-Contact: Osamu Aoki <osamu@debian.org>
+Source: https://salsa.debian.org/debian/debian-reference.git
+
+Files: *
+Copyright: 2007-2013 Osamu Aoki <osamu@debian.org>
+License: GPL-2+
+ This document may used under the terms the GNU General Public License
+ version 2 or higher.
+ .
+ Permission is granted to make and distribute verbatim copies of
+ this document provided the copyright notice and this permission notice
+ are preserved on all copies.
+ .
+ Permission is granted to copy and distribute modified versions of
+ this document under the conditions for verbatim copying, provided that
+ the entire resulting derived work is distributed under the terms of
+ a permission notice identical to this one.
+ .
+ Permission is granted to copy and distribute translations of this
+ document into another language, under the above conditions for
+ modified versions, except that this permission notice may be included
+ in translations approved by the Free Software Foundation instead of
+ in the original English.
+ .
+ [See /usr/share/common-licenses/GPL-2 for text of GPL v2]
+X-osamu: Translation licenses
+ The duration of license is for Debian Reference Version 2.
+ I have asked all contributors including translators to license their work
+ under the same copyright as I did (GPL).  List of translator names are
+ not included here.
+
+Files: bin/asciidoc bin/*.conf
+Copyright: 2000-2008 Stuart Rackham <srackham@gmail.com>
+License: GPL-2+
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or (at
+ your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston,
+ MA  02110-1301 USA
+ .
+ On Debian systems, the full text of the GNU General Public
+ License version 2 can be found in the file
+ `/usr/share/common-licenses/GPL-2'.
+X-osamu: Duration of copyright and FSF address adjusted.
+ The version 8.2.7, 4 July 2008 was used for this source.
+ Actual bin/asciidoc is provided as copyright (C) 2002-2008
+ Source has COPYRIGHT as copyright (C) 2000-2007
+ The original source in Debian lenny was shipped with older FSF address.
+ Inclusion of this source does not induce security concern and provide
+ stability to the XML conversion.

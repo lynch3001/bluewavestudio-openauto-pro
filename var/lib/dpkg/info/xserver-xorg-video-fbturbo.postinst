@@ -1,0 +1,7 @@
+#!/bin/sh
+
+set -e
+
+if grep -q -E "^dtoverlay=vc4-kms-v3d" /boot/config.txt; then
+    mv /usr/share/X11/xorg.conf.d/99-fbturbo.conf /usr/share/X11/xorg.conf.d/99-fbturbo.~	
+fi

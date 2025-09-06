@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/include
+/usr/include/enca.h
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libenca.a
+/usr/lib/arm-linux-gnueabihf/pkgconfig
+/usr/lib/arm-linux-gnueabihf/pkgconfig/enca.pc
+/usr/share
+/usr/share/doc
+/usr/share/doc/libenca-dev
+/usr/share/doc/libenca-dev/changelog.Debian.gz
+/usr/share/doc/libenca-dev/changelog.gz
+/usr/share/doc/libenca-dev/copyright
+/usr/lib/arm-linux-gnueabihf/libenca.so

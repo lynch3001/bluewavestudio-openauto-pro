@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/rss/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ephy="http://gnome.org/ns/epiphany#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <channel rdf:about="file:///usr/share/epiphany-browser/default-bookmarks.rdf">
+    <title>Web bookmarks</title>
+    <link>https://wiki.gnome.org/Apps/Web</link>
+    <items>
+      <rdf:Seq>
+        <rdf:li rdf:resource="https://www.gnome.org/"/>
+      </rdf:Seq>
+    </items>
+  </channel>
+  <item rdf:about="https://www.gnome.org/">
+    <title>GNOME</title>
+    <link>https://www.gnome.org/</link>
+  </item>
+  <item rdf:about="https://www.debian.org/">
+    <_title>Debian</_title>
+    <_link>https://www.debian.org/</_link>
+  </item>
+  <item rdf:about="https://www.gnome.org/">
+    <_title>GNOME</_title>
+    <_link>https://www.gnome.org/</_link>
+  </item>
+  <item rdf:about="http://planet.debian.org/">
+    <_title>Planet Debian</_title>
+    <_link>http://planet.debian.org/</_link>
+  </item>
+  <item rdf:about="https://bugs.debian.org/">
+    <_title>Debian Bug Tracking System</_title>
+    <_link>https://bugs.debian.org/</_link>
+    <_ephy:smartlink>https://bugs.debian.org/%s</_ephy:smartlink>
+  </item>
+</rdf:RDF>

@@ -1,0 +1,114 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title></title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+
+<h1 id="TN">T&Ecirc;N</h1>
+
+<p>debconf-gettextize &mdash; tr&iacute;ch ra t&#x1EAD;p tin PO b&#x1EA3;n d&#x1ECB;ch c&#x1EE7;a m&#x1EAB;u debconf</p>
+
+<h1 id="TM-TT">T&Oacute;M T&#x1EAE;T</h1>
+
+<p><b>debconf-gettextize</b> [<b>-v</b>] [<b>-h</b>] [<b>--podir=<i>TH&#x1AF;_M&#x1EE4;C</i></b>] [<b>--choices</b>] [<b>--merge</b>] <i>ch&#x1EE7;</i> [<i>ch&#x1EE7;</i> ...]</p>
+
+<h1 id="M-T">M&Ocirc; T&#x1EA2;</h1>
+
+<p>C&aacute;c t&#x1EAD;p tin <i>/var/lib/dpkg/info/*.templates</i> &#x111;&#x1B0;&#x1EE3;c debconf &#x111;&#x1ECD;c th&igrave; ch&#x1EE9;a c&#x1EA3; v&#x103;n b&#x1EA3;n ti&#x1EBF;ng Anh l&#x1EAB;n b&#x1EA3;n d&#x1ECB;ch &#x111;&#x1EC1;u trong c&ugrave;ng t&#x1EAD;p tin. Tuy nhi&ecirc;n, trong g&oacute;i m&atilde; ngu&#x1ED3;n c&aacute;c b&#x1EA3;n d&#x1ECB;ch &#x111;&#x1B0;&#x1EE3;c qu&#x1EA3;n l&yacute; trong t&#x1EAD;p tin ri&ecirc;ng &#x111;&#x1EC3; gi&uacute;p ng&#x1B0;&#x1EDD;i d&#x1ECB;ch. Trong b&#x1EA3;n th&#x1EF1;c hi&#x1EC7;n &#x111;&#x1EA7;u ti&ecirc;n, m&#x1ED9;t t&#x1EAD;p tin <i>templates</i> ch&#x1EE7; ch&#x1EC9; ch&#x1EE9;a v&#x103;n b&#x1EA3;n ti&#x1EBF;ng Anh, c&ograve;n t&#x1EAD;p tin <i>templates.<i>xx</i></i> ch&#x1EE9;a c&aacute;c chu&#x1ED7;i c&#x1EA3; hai g&#x1ED1;c v&agrave; &#x111;&#x1B0;&#x1EE3;c d&#x1ECB;ch cho ng&ocirc;n ng&#x1EEF; <i>xx</i>. Ch&#x1B0;&#x1A1;ng tr&igrave;nh <b>debconf-mergetemplate</b> &#x111;&atilde; tr&#x1ED9;n c&aacute;c t&#x1EAD;p tin m&#x1EAB;u ch&#x1EE7; v&agrave; &#x111;&#x1B0;&#x1EE3;c d&#x1ECB;ch.</p>
+
+<p>B&#x1EA3;n th&#x1EF1;c hi&#x1EC7;n m&#x1EDB;i v&#x1EDB;i <code>po-debconf</code> d&#x1EF1;a v&agrave;o <code>gettext</code>. Nh&agrave; duy tr&igrave; &#x111;&aacute;nh d&#x1EA5;u m&#x1ED7;i tr&#x1B0;&#x1EDD;ng c&oacute; th&#x1EC3; d&#x1ECB;ch &#x111;&#x1B0;&#x1EE3;c b&#x1EB1;ng c&aacute;ch th&ecirc;m d&#x1EA5;u g&#x1EA1;ch d&#x1B0;&#x1EDB;i v&agrave;o tr&#x1B0;&#x1EDB;c; c&aacute;c chu&#x1ED7;i ti&#x1EBF;ng Anh &#x111;&#x1B0;&#x1EE3;c tr&iacute;ch t&#x1EF1; &#x111;&#x1ED9;ng ra m&#x1ED9;t t&#x1EAD;p tin POT; ng&#x1B0;&#x1EDD;i d&#x1ECB;ch l&agrave;m vi&#x1EC7;c v&#x1EDB;i t&#x1EAD;p tin PO chu&#x1EA9;n; v&agrave; <b>po2debconf</b> t&#x1EA1;o ra m&#x1ED9;t t&#x1EAD;p tin m&#x1EAB;u &#x111;&atilde; tr&#x1ED9;n c&oacute; c&ugrave;ng c&#x1EA5;u tr&uacute;c.</p>
+
+<p>Ch&#x1B0;&#x1A1;ng tr&igrave;nh <b>debconf-gettextize</b> &#x111;&atilde; &#x111;&#x1B0;&#x1EE3;c thi&#x1EBF;t k&#x1EBF; ban &#x111;&#x1EA7;u &#x111;&#x1EC3; gi&uacute;p n&acirc;ng c&#x1EA5;p l&ecirc;n b&#x1EA3;n th&#x1EE9;c hi&#x1EC7;n m&#x1EDB;i.</p>
+
+<ul>
+
+<li><p>N&oacute; &#x111;&#x1ECD;c m&#x1ED9;t danh s&aacute;ch c&aacute;c t&#x1EAD;p tin ch&#x1EE7; v&agrave; c&aacute;c b&#x1EA3;n d&#x1ECB;ch t&#x1B0;&#x1A1;ng &#x1EE9;ng, r&#x1ED3;i t&#x1EA1;o ra c&aacute;c t&#x1EAD;p tin <i>po/*.po</i> cho m&#x1ED7;i ng&ocirc;n ng&#x1EEF; sang &#x111;&oacute; chu&#x1ED7;i &#x111;&atilde; &#x111;&#x1B0;&#x1EE3;c d&#x1ECB;ch.</p>
+
+</li>
+<li><p>M&#x1ED7;i t&#x1EAD;p tin nh&#x1EAD;p v&agrave;o c&oacute; t&ecirc;n m&#x1EDB;i v&#x1EDB;i h&#x1EAD;u t&#x1ED1; <code>.old</code> (c&#x169;), v&agrave; m&#x1ED9;t t&#x1EAD;p tin ch&#x1EE7; m&#x1EDB;i ghi &#x111;&egrave; l&ecirc;n t&#x1EAD;p tin c&#x169;; n&oacute; tr&ugrave;ng v&#x1EDB;i t&#x1EAD;p tin ch&#x1EE7; tr&#x1B0;&#x1EDB;c, tr&#x1EEB; c&oacute; m&#x1ED9;t d&#x1EA5;u g&#x1EA1;ch d&#x1B0;&#x1EDB;i &#x111;&#x1EB1;ng tr&#x1B0;&#x1EDB;c m&#x1ED7;i tr&#x1B0;&#x1EDD;ng c&oacute; th&#x1EC3; d&#x1ECB;ch &#x111;&#x1B0;&#x1EE3;c. Nh&agrave; ph&aacute;t tri&#x1EC3;n th&igrave; c&oacute; th&#x1EC3; ch&#x1ECD;n nh&#x1EEF;ng tr&#x1B0;&#x1EDD;ng c&#x1EA7;n d&#x1ECB;ch, v&agrave; nh&#x1EEF;ng tr&#x1B0;&#x1EDD;ng c&#x1EA7;n b&#x1ECF; qua v&igrave; kh&ocirc;ng ch&#x1EE9;a gi&aacute; tr&#x1ECB; ph&#x1EE5; thu&#x1ED9;c v&agrave;o mi&#x1EC1;n &#x111;&#x1ECB;a ph&#x1B0;&#x1A1;ng.</p>
+
+</li>
+<li><p>T&#x1EAD;p tin <i>po/POTFILES.in</i> c&#x169;ng &#x111;&#x1B0;&#x1EE3;c t&#x1EA1;o. N&oacute; ch&#x1EE9;a danh s&aacute;ch c&aacute;c t&#x1EAD;p tin <i>templates</i> n&ecirc;n &#x111;&#x1B0;&#x1EE3;c <b>debconf-updatepo</b> x&#x1EED; l&yacute;.</p>
+
+</li>
+</ul>
+
+<p>B&igrave;nh th&#x1B0;&#x1EDD;ng ch&#x1B0;&#x1A1;ng tr&igrave;nh <b>debconf-gettextize</b> n&ecirc;n &#x111;&#x1B0;&#x1EE3;c ch&#x1EA1;y ch&#x1EC9; m&#x1ED9;t l&#x1EA7;n khi chuy&#x1EC3;n d&#x1EA1;ng t&#x1EEB; b&#x1EA3;n th&#x1EF1;c hi&#x1EC7;n th&#x1EE9; nh&#x1EA5;t sang &#x111;&#x1ECB;nh d&#x1EA1;ng <code>po-debconf</code>, nh&#x1B0;ng n&oacute; c&#x169;ng c&oacute; th&#x1EC3; &#x111;&#x1B0;&#x1EE3;c d&ugrave;ng v&#x1EC1; sau &#x111;&#x1EC3; chuy&#x1EC3;n d&#x1EA1;ng m&#x1ED9;t tr&#x1B0;&#x1EDD;ng <code>_Choices</code> sang <code>__Choices</code> (hay ng&#x1B0;&#x1EE3;c l&#x1EA1;i) m&agrave; kh&ocirc;ng m&#x1EA5;t b&#x1EA3;n d&#x1ECB;ch, khi d&ugrave;ng c&#x1EDD; <code>--merge</code> (c&ugrave;ng v&#x1EDB;i <code>--choices</code> hay kh&ocirc;ng). M&#x1EAB;u &#x111;&atilde; mu&#x1ED1;n m&agrave; ch&#x1EE9;a c&aacute;c tr&#x1B0;&#x1EDD;ng <code>_Choices</code> hay <code>__Choices</code> c&#x1EA7;n s&#x1EED;a &#x111;&#x1ED5;i th&igrave; ph&#x1EA3;i &#x111;&#x1B0;&#x1EE3;c sao ch&eacute;p v&agrave;o m&#x1ED9;t t&#x1EAD;p tin m&#x1EAB;u t&#x1EA1;m th&#x1EDD;i, m&agrave; &#x111;&#x1B0;&#x1EE3;c g&#x1EED;i qua cho <b>debconf-gettextize</b> d&#x1B0;&#x1EDB;i d&#x1EA1;ng m&#x1ED9;t &#x111;&#x1ED1;i s&#x1ED1;. Sau &#x111;&oacute; th&igrave; l&agrave;m c&aacute;c b&#x1B0;&#x1EDB;c sau :</p>
+
+<ol>
+
+<li><p><b>po2debconf</b> &#x111;&#x1B0;&#x1EE3;c ch&#x1EA1;y tr&ecirc;n t&#x1EAD;p tin m&#x1EAB;u n&agrave;y &#x111;&#x1EC3; t&#x1EA1;o ra m&#x1ED9;t t&#x1EAD;p tin m&#x1EAB;u &#x111;&atilde; d&#x1ECB;ch.</p>
+
+</li>
+<li><p>T&#x1EAD;p tin m&#x1EAB;u &#x111;&atilde; d&#x1ECB;ch th&igrave; &#x111;&#x1B0;&#x1EE3;c x&#x1EED; l&yacute; nh&#x1B0; n&oacute;i tr&ecirc;n, v&agrave; c&aacute;c t&#x1EAD;p tin PO &#x111;&#x1B0;&#x1EE3;c t&#x1EA1;o ra.</p>
+
+</li>
+<li><p>T&#x1EAD;p tin PO m&#x1EDB;i t&#x1EA1;o &#x111;&#x1B0;&#x1EE3;c tr&#x1ED9;n v&#x1EDB;i t&#x1EAD;p tin PO &#x111;&atilde; t&#x1ED3;n t&#x1EA1;i.</p>
+
+</li>
+</ol>
+
+<p>Tr&#x1ED9;n c&aacute;c t&#x1EAD;p tin PO th&igrave; m&#x1ED7;i tr&#x1B0;&#x1EDD;ng ki&#x1EC3;u <code>_Choices</code> ph&#x1EA3;i b&#x1ECB; thay th&#x1EBF; b&#x1EB1;ng ki&#x1EC3;u<code>__Choices</code> (hay ng&#x1B0;&#x1EE3;c l&#x1EA1;i) trong t&#x1EAD;p tin m&#x1EAB;u g&#x1ED1;c tr&#x1B0;&#x1EDB;c khi ch&#x1EA1;y <b>debconf-updatepo</b>, kh&ocirc;ng th&igrave; c&aacute;c b&#x1EA3;n d&#x1ECB;ch m&#x1EDB;i b&#x1ECB; &#x111;&aacute;nh d&#x1EA5;u &laquo; d&#x1ECB;ch m&#x1EDD; &raquo;.</p>
+
+<h1 id="TY-CHN">T&Ugrave;Y CH&#x1ECC;N</h1>
+
+<dl>
+
+<dt id="h---help"><b>-h</b>, <b>--help</b></dt>
+<dd>
+
+<p>Hi&#x1EC3;n th&#x1ECB; b&#x1EA3;n t&oacute;m t&#x1EAF;t c&aacute;ch s&#x1EED; d&#x1EE5;ng ch&#x1B0;&#x1A1;ng tr&igrave;nh, sau &#x111;&oacute; tho&aacute;t.</p>
+
+</dd>
+<dt id="v---verbose"><b>-v</b>, <b>--verbose</b></dt>
+<dd>
+
+<p>X&#x1EED; l&yacute; &#x1EDF; ch&#x1EBF; &#x111;&#x1ED9; chi ti&#x1EBF;t (xu&#x1EA5;t nhi&#x1EC1;u d&#x1EEF; li&#x1EC7;u di&#x1EC5;n t&#x1EA3; ti&#x1EBF;n tr&igrave;nh, h&#x1EEF;u &iacute;ch &#x111;&#x1EC3; g&#x1EE1; l&#x1ED7;i).</p>
+
+</dd>
+<dt id="podir-TH_MC"><b>--podir=<i>TH&#x1AF;_M&#x1EE4;C</i></b></dt>
+<dd>
+
+<p>&#x110;&#x1EB7;t th&#x1B0; m&#x1EE5;c ch&#x1EE9;a c&aacute;c t&#x1EAD;p tin PO. M&#x1EB7;c &#x111;&#x1ECB;nh l&agrave; t&igrave;m c&aacute;c t&#x1EAD;p tin PO trong th&#x1B0; m&#x1EE5;c con <i>po</i> b&ecirc;n d&#x1B0;&#x1EDB;i v&#x1ECB; tr&iacute; c&#x1EE7;a t&#x1EAD;p tin ch&#x1EE7; th&#x1EE9; nh&#x1EA5;t.</p>
+
+</dd>
+<dt id="choices"><b>--choices</b></dt>
+<dd>
+
+<p>M&#x1EB7;c &#x111;&#x1ECB;nh l&agrave; <b>debconf-gettextize</b> thay th&#x1EBF; c&aacute;c tr&#x1B0;&#x1EDD;ng ki&#x1EC3;u <code>Choices</code> b&#x1EB1;ng ki&#x1EC3;u <code>_Choices</code>. B&#x1EAD;t c&#x1EDD; n&agrave;y th&igrave; ghi tr&#x1B0;&#x1EDD;ng ki&#x1EC3;u <code>__Choices</code> thay v&agrave;o &#x111;&oacute;.</p>
+
+</dd>
+<dt id="merge"><b>--merge</b></dt>
+<dd>
+
+<p>B&#x1EAD;t c&#x1EDD; n&agrave;y th&igrave; c&aacute;c chu&#x1ED7;i &#x111;&#x1B0;&#x1EE3;c tr&#x1ED9;n v&#x1EDB;i c&aacute;c t&#x1EAD;p tin PO &#x111;&atilde; t&#x1ED3;n t&#x1EA1;i. Kh&ocirc;ng s&#x1EED;a &#x111;&#x1ED5;i t&#x1EAD;p tin m&#x1EAB;u hay <i>po/POTFILES.in</i>.</p>
+
+</dd>
+</dl>
+
+<h1 id="CN-THN">C&#x1EA8;N TH&#x1EAC;N</h1>
+
+<p>Tr&#x1B0;&#x1EDD;ng <code>Default</code> l&agrave; &#x111;&#x1EB7;c bi&#x1EC7;t khi m&#x1EAB;u c&oacute; ki&#x1EC3;u <code>Select</code> hay <code>Multiselect</code>, v&igrave; ph&#x1EA3;i ch&#x1ECD;n m&#x1ED9;t gi&aacute; tr&#x1ECB; trong danh s&aacute;ch c&aacute;c t&ugrave;y ch&#x1ECD;n <b>English</b>, ngay c&#x1EA3; &#x111;&#x1ED1;i v&#x1EDB;i gi&aacute; tr&#x1ECB; &#x111;&atilde; &#x111;&#x1ECB;a ph&#x1B0;&#x1A1;ng ho&aacute;. B&igrave;nh th&#x1B0;&#x1EDD;ng kh&ocirc;ng cho ph&eacute;p thay &#x111;&#x1ED5;i tr&#x1B0;&#x1EDD;ng n&agrave;y, nh&#x1B0;ng trong r&#x1EA5;t &iacute;t tr&#x1B0;&#x1EDD;ng h&#x1EE3;p, gi&aacute; tr&#x1ECB; &#x111;&atilde; &#x111;&#x1ECB;a ph&#x1B0;&#x1A1;ng ho&aacute; v&#x1EAB;n c&oacute; &yacute; ngh&#x129;a (v.d. &#x111;&#x1EC3; ch&#x1ECD;n ng&ocirc;n ng&#x1EEF; m&#x1EB7;c &#x111;&#x1ECB;nh c&#x1EE7;a &#x1EE9;ng d&#x1EE5;ng). &#x110;&#x1EC3; cho ng&#x1B0;&#x1EDD;i d&#x1ECB;ch bi&#x1EBF;t tr&#x1B0;&#x1EDD;ng <code>Default</code> &#x111;&atilde; &#x111;&#x1ECB;a ph&#x1B0;&#x1A1;ng ho&aacute; c&#x169;ng l&agrave; &#x111;&#x1EB7;c bi&#x1EC7;t, theo quy &#x1B0;&#x1EDB;c b&#x1EA1;n c&#x1EA7;n ph&#x1EA3;i g&#x1ECD;i n&oacute; <code>_DefaultChoice</code> thay cho <code>_Default</code>.</p>
+
+<h1 id="XEM-CNG">XEM C&#x168;NG</h1>
+
+<p><a href="http://man.he.net/man1/debconf-updatepo">debconf-updatepo(1)</a>, <a href="http://man.he.net/man1/po2debconf">po2debconf(1)</a>, <a href="http://man.he.net/man7/debconf-devel">debconf-devel(7)</a>, <a href="http://man.he.net/man7/po-debconf">po-debconf(7)</a>.</p>
+
+<h1 id="TC-GI">T&Aacute;C GI&#x1EA2;</h1>
+
+<pre><code>  Denis Barbier &lt;barbier@linuxfr.org&gt;
+  Martin Quinson &lt;martin.quinson@ens-lyon.fr&gt;</code></pre>
+
+
+</body>
+
+</html>
+
+

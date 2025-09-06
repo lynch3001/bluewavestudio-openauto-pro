@@ -1,0 +1,6 @@
+/etc/dbus-1/system.d/dundee.conf
+/etc/dbus-1/system.d/ofono.conf
+/etc/default/ofono
+/etc/init.d/dundee
+/etc/init.d/ofono
+/etc/ofono/phonesim.conf

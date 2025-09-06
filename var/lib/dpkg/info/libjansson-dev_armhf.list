@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/include
+/usr/include/jansson.h
+/usr/include/jansson_config.h
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libjansson.a
+/usr/lib/arm-linux-gnueabihf/pkgconfig
+/usr/lib/arm-linux-gnueabihf/pkgconfig/jansson.pc
+/usr/share
+/usr/share/doc
+/usr/share/doc/libjansson-dev
+/usr/share/doc/libjansson-dev/changelog.Debian.gz
+/usr/share/doc/libjansson-dev/changelog.gz
+/usr/share/doc/libjansson-dev/copyright
+/usr/lib/arm-linux-gnueabihf/libjansson.so

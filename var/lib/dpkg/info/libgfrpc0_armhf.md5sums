@@ -1,0 +1,5 @@
+25e6c0e5ca2a1587de0312c578038fba  usr/lib/arm-linux-gnueabihf/libgfrpc.so.0.0.1
+7173f698e58c8f77b64ec647b69d041a  usr/share/doc/libgfrpc0/changelog.Debian.gz
+dc3255d157227f34909c70895d628a6c  usr/share/doc/libgfrpc0/changelog.gz
+522e22dc4f15515586658d48827e1a19  usr/share/doc/libgfrpc0/copyright
+95c865966666125198842a51dfcbfd32  usr/share/lintian/overrides/libgfrpc0

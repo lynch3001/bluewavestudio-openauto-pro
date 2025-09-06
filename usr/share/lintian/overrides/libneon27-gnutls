@@ -1,0 +1,2 @@
+# this is known due to common package naming
+libneon27-gnutls: package-name-doesnt-match-sonames libneon-gnutls27

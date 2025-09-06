@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/share
+/usr/share/bug
+/usr/share/bug/libgles2-mesa
+/usr/share/bug/libgles2-mesa/control
+/usr/share/bug/libgles2-mesa/script
+/usr/share/doc
+/usr/share/doc/libgles2-mesa
+/usr/share/doc/libgles2-mesa/changelog.Debian.gz
+/usr/share/doc/libgles2-mesa/copyright

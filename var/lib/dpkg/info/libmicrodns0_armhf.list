@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libmicrodns.so.0.0.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libmicrodns0
+/usr/share/doc/libmicrodns0/changelog.Debian.gz
+/usr/share/doc/libmicrodns0/changelog.gz
+/usr/share/doc/libmicrodns0/copyright
+/usr/lib/arm-linux-gnueabihf/libmicrodns.so.0

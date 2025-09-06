@@ -1,0 +1,2 @@
+# This is a false positive, no real problems in libfm-extra.so.4.1.2
+hardening-no-fortify-functions usr/lib/x86_64-linux-gnu/libfm-extra.so.4.1.2

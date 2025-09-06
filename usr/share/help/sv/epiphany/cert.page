@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="cert" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="index#privacy"/>
+    <revision pkgversion="3.15" date="2015-01-28" status="draft"/>
+
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2015</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Certifikathantering i <app>Webb</app>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2015, 2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Certifikat</title>
+
+  <p><app>Webb</app> har i nuläget inte inbyggt stöd för certifikathantering.</p>
+
+  <note style="advanced">
+    <p>Du kan lägga till certifikat genom kommandoraden om du har p11-kit installerat. För att lägga till ett certifikat behöver du hämta certifikatet och köra följande kommando för att importera det:</p>
+    <screen><output>$ </output><input>sudo trust anchor <var>/home/användarnamn/Hämtningar/certifikat.crt</var></input></screen>
+    <p>Detta kommer bara fungera på moderna system.</p>
+  </note>
+
+</page>

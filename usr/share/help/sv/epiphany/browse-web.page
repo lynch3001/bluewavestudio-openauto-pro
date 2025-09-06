@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="browse-web" xml:lang="sv">
+
+  <info>
+    <link type="guide" xref="index#start" group="#first"/>
+    <link type="seealso" xref="browse-private"/>
+    <link type="seealso" xref="browse-local"/>
+    <revision pkgversion="3.9" date="2013-06-30" status="incomplete"/>
+    <revision pkgversion="3.15" date="2014-12-02" status="review"/>
+
+    <credit type="author copyright">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+      <years>2013, 2014</years>
+    </credit>
+<!--    <credit type="copyright editor">
+      <name></name>
+      <email its:translate="no"></email>
+      <years></years>
+    </credit>-->
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Visa webbplatser på internet.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Anders Jonsson</mal:name>
+      <mal:email>anders.jonsson@norsjovallen.se</mal:email>
+      <mal:years>2015, 2017</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Surfa på nätet</title>
+
+  <p>Webbläsare kan användas för att visa sidor på internet då du har en internetanslutning. För att börja surfa på nätet:</p>
+
+  <steps>
+    <item>
+      <p>Då du startar <app xref="introduction">Webb</app> bör din markör vara i textinmatningsfältet högst upp i fönstret. Skriv in URL för webbsidan du vill besöka eller ditt sökord.</p>
+    </item>
+    <item>
+      <p>Tryck retur för att gå till webbsidan eller för att söka.</p>
+    </item>
+  </steps>
+
+  <p xml:id="tabs"><em>Flikar</em> används för att visa mer än en webbsida i ett fönster. Då du först startar <app>Webb</app> kommer inga flikar visas för dig. För att <em>öppna en ny flik</em>, tryck menyknappen högst upp till höger på skärmen, sedan <guiseq><gui style="menuitem">Ny flik</gui></guiseq>. Då den nya fliken har öppnats kan du använda den som du vanligen skulle använda ett nytt fönster.</p>
+
+  <p xml:id="tabs-alt">Du kan också använda tangentbordsgenvägen <keyseq><key>Ctrl</key><key>T</key></keyseq> för att öppna en ny flik eller ny flik-knappen högst upp till vänster i fönstret.</p>
+
+  <p xml:id="tabs-link">För att <em>öppna en länk i en ny flik</em>, högerklicka på länken och välj sedan <gui style="menuitem">Öppna länk i ny flik</gui> eller använd mittenmusknappen för att klicka på länken.</p>
+
+</page>

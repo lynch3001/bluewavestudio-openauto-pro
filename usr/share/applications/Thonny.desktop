@@ -1,0 +1,16 @@
+[Desktop Entry]
+Type=Application
+Name=Thonny Python IDE
+GenericName=Python IDE
+Exec=/usr/bin/thonny %F
+Comment=Python IDE for beginners
+Icon=thonny
+Terminal=false
+Categories=Application;Development;
+StartupNotify=true
+MimeType=text/x-python;
+Actions=Edit;
+
+[Desktop Action Edit]
+Exec=/usr/bin/thonny %F
+Name=Edit with Thonny
